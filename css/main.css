@@ -1,0 +1,191 @@
+/* Links */
+.links {
+    color: #8A2BE2;
+}
+.fab:hover .fab-share {
+    display:block;
+}
+.note {
+    color: #8B4513;
+}
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Material Icons */
+.select {
+  padding: 2dp;
+}
+.important {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+}
+/* From Wikipedia: https://en.wikipedia.org/wiki/Web_colors */
+/* Standard HTML colors */
+.material-icons.silver { color: #C0C0C0; }
+.material-icons.gray { color: #808080; }
+.material-icons.red { color: #FF0000; }
+.material-icons.maroon { color: #800000; }
+.material-icons.yellow { color: #FFFF00; }
+.material-icons.olive { color: #808000; }
+.material-icons.lime { color: #00FF00; }
+.material-icons.green { color: #008000; }
+.material-icons.aqua { color: #00FFFF; }
+.material-icons.teal { color: #008080; }
+.material-icons.blue { color: #0000FF; }
+.material-icons.navy { color: #000080; }
+.material-icons.fuchsia { color: #FF00FF; }
+.material-icons.purple { color: #800080; }
+
+/* Other colors
+Warning: This will be very long */
+/* Pink */
+.material-icons.pink { color: #FFC0CB; }
+.material-icons.lightPink { color: #FFB6C1; }
+.material-icons.hotPink { color: #FF69B4; }
+.material-icons.deepPink { color: #FF1493; }
+.material-icons.paleVioletRed { color: #DB7093; }
+.material-icons.mediumVioletRed { color: #C71585; }
+/* Red */
+.material-icons.lightSalmon { color: #FFA07A; }
+.material-icons.salmon { color: #FA8072; }
+.material-icons.darkSalmon { color: #E9967A; }
+.material-icons.lightCoral { color: #F08080; }
+.material-icons.indianRed { color: #CD5C5C; }
+.material-icons.crimson { color: #DC143C; }
+.material-icons.fireBrick { color: #B22222; }
+.material-icons.darkRed { color: #8B0000; }
+/* Orange */
+.material-icons.orangeRed { color: #FF4500; }
+.material-icons.tomato { color: #FF6347; }
+.material-icons.coral { color: #FF7F50; }
+.material-icons.darkOramge { color: #FF8C00; }
+.material-icons.orange { color: #FFA500; }
+/* Yellow */
+.material-icons.lightYellow { color: #FFFFE0; }
+.material-icons.lemonChiffon { color: #FFFACD; }
+.material-icons.lightGoldenrodYellow { color: #FAFAD2; }
+.material-icons.papayaWhip { color: #FFEFD5; }
+.material-icons.moccasin { color: #FFE4B5; }
+.material-icons.peachPuff { color: #FFDAB9; }
+.material-icons.paleGoldenrod { color: #EEE8AA; }
+.material-icons.khaki { color: #F0E68C; }
+.material-icons.darkKhaki { color: #BDB76B; }
+.material-icons.gold { color: #FFD700; }
+/* Brown */
+.material-icons.cornsilk { color: #FFF8DC; }
+.material-icons.blanchedAlmond { color: #FFEBCD; }
+.material-icons.bisque { color: #FFE4C4; }
+.material-icons.navajoWhite { color: #FFDEAD; }
+.material-icons.wheat { color: #F5DEB3; }
+.material-icons.burlyWood { color: #DEB887; }
+.material-icons.tan { color: #D2B48C; }
+.material-icons.rosyBrown { color: #BC8F8F; }
+.material-icons.sandyBrown { color: #F4A460; }
+.material-icons.goldenrod { color: #DAA520; }
+.material-icons.darkGoldenrod { color: #B8860B; }
+.material-icons.peru { color: #CD853F; }
+.material-icons.chocolate { color: #D2691E; }
+.material-icons.saddleBrown { color: #8B4513; }
+.material-icons.sienna { color: #A0522D; }
+.material-icons.brown { color: #A52A2A; }
+/* Green */
+.material-icons.darkOliveGreen { color: #556B2F; }
+.material-icons.oliveDrab { color: #6B8E23; }
+.material-icons.yellowGreen { color: #9ACD32; }
+.material-icons.limeGreen { color: #32CD32; }
+.material-icons.lawnGreen { color: #7CFC00; }
+.material-icons.chartreuse { color: #7FFF00; }
+.material-icons.greenYellow { color: #ADFF2F; }
+.material-icons.springGreen { color: #00FF7F; }
+.material-icons.mediumSpringGreen { color: #00FA9A; }
+.material-icons.lightGreen { color: #90EE90; }
+.material-icons.paleGreen { color: #98FB98; }
+.material-icons.darkSeaGreen { color: #8FBC8F; }
+.material-icons.mediumAquamarine { color: #66CDAA; }
+.material-icons.mediumSeaGreen { color: #3CB371; }
+.material-icons.seaGreen { color: #2E8B57; }
+.material-icons.forestGreen { color: #228B22; }
+.material-icons.darkGreen { color: #006400; }
+/* Cyan */
+.material-icons.cyan { color: #00FFFF; }
+.material-icons.lightCyan { color: #E0FFFF; }
+.material-icons.paleTurquiose { color: #AFEEEE; }
+.material-icons.aquamarine { color: #7FFFD4; }
+.material-icons.turquoise { color: #40E0D0; }
+.material-icons.mediumTurquoise { color: #48D1CC; }
+.material-icons.darkTurquoise { color: #00CED1; }
+.material-icons.lightSeaGreen { color: #20B2AA; }
+.material-icons.cadetBlue { color: #5F9EA0; }
+.material-icons.darkCyan { color: #008B8B; }
+.material-icons.teal { color: #008080; }
+/* Blue */
+.material-icons.lightSteelBlue { color: #B0C4DE; }
+.material-icons.powderBlue { color: #B0E0E6; }
+.material-icons.lightBlue { color: #ADD8E6; }
+.material-icons.skyBlue { color: #87CEEB; }
+.material-icons.lightSkyBlue { color: #87CEFA; }
+.material-icons.deepSkyBlue { color: #00BFFF; }
+.material-icons.dodgerBlue { color: #1E90FF; }
+.material-icons.cornflowerBlue { color: #6495ED; }
+.material-icons.steelBlue { color: #4682B4; }
+.material-icons.royalBlue { color: #4169E1; }
+.material-icons.mediumBlue { color: #0000CD; }
+.material-icons.darkBlue { color: #00008B; }
+.material-icons.midnightBlue { color: #191970; }
+/* Purple, violet and magneta */
+.material-icons.lavender { color: #E6E6FA; }
+.material-icons.thistle { color: #D8BFD8; }
+.material-icons.plum { color: #DDA0DD; }
+.material-icons.violet { color: #EE82EE; }
+.material-icons.orchid { color: #DA70D6; }
+.material-icons.magneta { color: #FF00FF; } /* Same as Fuschia*/
+.material-icons.mediumOrchid { color: #BA55D3; }
+.material-icons.mediumPurple { color: #9370DB; }
+.material-icons.blueViolet { color: #8A2BE2; }
+.material-icons.darkViolet { color: #9400D3; }
+.material-icons.darkOrchid { color: #9932CC; }
+.material-icons.darkMagneta { color: #8B008B; }
+.material-icons.indigo { color: #4B0082; }
+.material-icons.darkSlateBlue { color: #483D8B; }
+.material-icons.slateBlue { color: #6A5ACD; }
+.material-icons.mediumSlateBlue { color: #7B68EE; }
+/* White
+Note that white itself isn't shown here */
+.material-icons.snow { color: #FFFAFA; }
+.material-icons.honeydew { color: #F0FFF0; }
+.material-icons.mintCream { color: #F5FFFA; }
+.material-icons.azure { color: #F0FFFF; }
+.material-icons.aliceBlue { color: #F0F8FF; }
+.material-icons.ghostWhite { color: #F8F8FF; }
+.material-icons.whiteSmoke { color: #F5F5F5; }
+.material-icons.seashell { color: #FFF5EE; }
+.material-icons.beige { color: #F5F5DC; }
+.material-icons.oldLace { color: #FDF5E6; }
+.material-icons.floralWhite { color: #FFFAF0; }
+.material-icons.ivory { color: #FFFFF0; }
+.material-icons.antiqueWhite { color: #FAEBD7; }
+.material-icons.linen { color: #FAF0E6; }
+.material-icons.lavenderBlush { color: #FFF0F5; }
+.material-icons.mistyRose { color: #FFE4E1; }
+/* Gray and black */
+.material-icons.gainsboro { color: #DCDCDC; }
+.material-icons.lightGray { color: #D3D3D3; }
+.material-icons.silver { color: #C0C0C0; }
+.material-icons.darkGray { color: #A9A9A9; }
+.material-icons.gray { color: #808080; }
+.material-icons.dimGray { color: #696969; }
+.material-icons.lightSlateGray { color: #778899; }
+.material-icons.slateGray { color: #708090; }
+.material-icons.darkSlateGray { color: #2F4F4F; }
+/*END*/

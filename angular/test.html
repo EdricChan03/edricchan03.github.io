@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--WARNING: This is beta and might break, change or otherwise be modified
+Made with Angular Material and Angular-->
+<html ng-app="test">
+<head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <script src="/angular/app.js"></script>
+    <title>Beta - Chan4077.Github.io</title>
+</head>
+<div layout="row" ng-controller="MyController as myCtrl">
+    <md-toolbar class="md-hue-2">
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
+                <md-icon md-svg-icon="/img/menu-24.svg"></md-icon>
+            </md-button>
+            <h2>
+                <span>Chan4077.Github.io BETA</span>
+            </h2>
+            <span flex></span>
+            <md-button class="md-icon-button" aria-label="More">
+                <md-icon md-svg-icon="/img/more_vert-24.svg"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <div ng-controller="SideNavController">
+    <md-sidenav md-component-id="left" class="md-sidenav-left">
+        <md-content class="md-default-theme">
+            <md-list role="list" class="md-default-theme">
+                <md-list-item>
+                    <md-button ng-href="{{homeUrl}}" class="home md-button md-ink-ripple ng-binding">
+                        <div flex layout="row" class="ng-binding layout-row flex">
+                            <md-icon md-svg-src="/img/home-24.svg"></md-icon>
+                            <span flex class="flex"></span> Home
+                        </div>
+                    </md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-href="{{aboutUrl}}" class="about md-button md-ink-ripple ng-binding"><md-icon md-svg-src="/img/person-24.svg"></md-icon>Portfolio</md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-href="{{blogUrl}}" class="blog md-button md-ink-ripple ng-binding">Blog</md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-href="{{mediaUrl}}" class="social md-button md-ink-ripple ng-binding">Social Media</md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-href="{{noteUrl}}" class="notes md-button md-ink-ripple ng-binding"><md-icon md-svg-src="/img/insert_drive_file-24.svg"></md-icon>Notes</md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-href="{{preferencesUrl}}" class="preferences md-button md-ink-ripple ng-binding"><md-icon md-svg-src="/img/settings-24.svg"></md-icon>Preferences</md-button>
+                </md-list-item>
+            </md-list>
+        </md-content>
+    </md-sidenav>
+    </div>
+    <md-content layout-padding>
+        Center Content
+        <md-button ng-click="openRightMenu()">
+            Open Right Menu
+        </md-button>
+        <div class="lock-size" layout="row" layout-align="bottom right">
+            <md-fab-speed-dial md-direction="up" class="md-fling">
+                <md-fab-trigger>
+                <md-button aria-label="add" class="md-fab md-primary">
+                    <md-icon md-svg-src="/img/add-24.svg"></md-icon>
+                </md-button>
+                </md-fab-trigger>
+                <md-fab-actions>
+                    <md-button aria-label="Add User" class="md-fab md-raised md-mini">
+                        <md-icon md-svg-src="/img/person_add-24.svg"></md-icon>
+                    </md-button>
+                    <md-button aria-label="Add Group" class="md-fab md-raised md-mini">
+                        <md-icon md-svg-src="/img/group-24.svg"></md-icon>
+                    </md-button>
+                </md-fab-actions>
+            </md-fab-speed-dial>
+        </div>
+
+    </md-content>
+    <md-sidenav md-component-id="right" class="md-sidenav-right">
+        <form name="feedbackbeta">
+            <md-input-container>
+                <label>Name</label>
+                <input name="name" type="text" ng-model="name" md-autofocus required>
+                <div ng-messages="feedbackbeta.name.$error" ng-show="feedbackbeta.name.$dirty">
+                    <div ng-message="required">This is required</div>
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <label>Feedback</label>
+                <textarea name="feedback" ng-model="sendFeedback" required md-maxlength="150"></textarea>
+                <div ng-messages="feedback.sendFeedback.$error" ng-show="feedbackbeta.sendFeedback.$dirty"></div>
+            </md-input-container>
+        </form>
+    </md-sidenav>
+</div>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+Chan4077.Github.io
+All this content is made by me, apart from the Material Design
+Get Material Design on your website by heading to https://getmdl.io
+Text Editor: Atom (https://atom.io)
+Website: Github Pages (https://pages.github.com)
+Syncing: Github Desktop (https://desktop.github.com)
+Original: https://hankquinlan.github.io
+Project: https://github.com/Chan4077/chan4077.github.io
+Github Profile: https://github.com/Chan4077
+Reference: http://www.w3schools.com
+My Other Blog: https://chanziyangedric.blogspot.com
+Sample code available at https://getmdl.io/components/index.html
+Material Design Specs: https://material.google.com
+This is updated as of 7:17pm GMT+8 Singapore Standard Time, 5 July 2016
+
+MADE WITH HTML5, JAVASCRIPT AND CSS3
+
+-->
+
+<head>
+    <!--Title-->
+    <title>Chan4077.Github.io</title>
+    <!--Import Everything-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.yellow-cyan.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Chan4077.github.io</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="https://getmdl.io">getmdl.io</a>
+                    <a class="mdl-navigation__link" href="https://github.com/Chan4077">Github.com/Chan4077</a>
+                    <a class="mdl-navigation__link" href="https://twitter.com/Chan4077">@Chan4077</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Links</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="/" id="home"><i class="material-icons red select">home</i>&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+                <a class="mdl-navigation__link" href="/about" id="portfolio"><i class="material-icons orange select">person</i>&nbsp;&nbsp;&nbsp;&nbsp;Portfolio</a>
+                <a class="mdl-navigation__link" href="/blog" id="blog"><img src="/img/blogger.png" height="24px" width="24px">&nbsp;&nbsp;&nbsp;&nbsp;Blog</a>
+                <a class="mdl-navigation__link" href="/media" id="media">Social Media</a>
+                <a class="mdl-navigation__link" href="/preferences" id="preferences"><i class="material-icons blue select">settings</i>&nbsp;&nbsp;&nbsp;&nbsp;Preferences</a>
+                <a class="mdl-navigation__link" href="/notes" id="notes"><i class="material-icons red select">insert_drive_file</i>&nbsp;&nbsp;&nbsp;&nbsp;Notes</a>
+                <a class="mdl-navigation__link" href="/angular" id="angular">Angular</a>
+                <a class="mdl-navigation__link" id="gitPages" href="https://pages.github.com" target="_blank"><i class="material-icons green select">open_in_new</i>&nbsp;&nbsp;&nbsp;&nbsp;Github Pages</a>
+                <a class="mdl-navigation__link" href="https://github.com/Chan4077/chan4077.github.io" target="_blank"><i class="material-icons green select">open_in_new</i>&nbsp;&nbsp;&nbsp;&nbsp;Project on Github</a>
+
+        </div>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+
+            {{ content }}
+
+        </div>
+    </main>
+    </div>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" id="refresh" onclick="refresh()"><i class="material-icons">refresh</i>Refresh</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" id="main" onclick="home()"><i class="material-icons">home</i>Home</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary mdl-js-ripple-effect" id="search" onclick="search()"><i class="material-icons">search</i>Search</button>
+    <div class="fab" style="bottom: 45px; right: 24px;">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent">
+            <i class="material-icons">share</i>
+        </button>
+        <ul>
+            <li>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--accent mdl-button--mini-fab">
+                    <img src="/img/facebook-logo.svg">
+                </button>
+            </li>
+            <li>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--primary mdl-button--mini-fab">
+
+                </button>
+            </li>
+        </ul>
+
+    </div>
+    <!--Snackbar-->
+    <div class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action"></button>
+    </div>
+    <!--Scripts-->
+    <script>
+        'use strict';
+
+        function refresh() {
+            var notification = document.querySelector('.mdl-js-snackbar');
+            var data = {
+                message: 'Are you sure you want to refresh?',
+                actionHandler: function(event) {
+                    location.reload(true);
+                },
+                actionText: 'OK',
+                timeout: 5000
+            };
+            notification.MaterialSnackbar.showSnackbar(data);
+        }
+
+        function home() {
+            var notification = document.querySelector('.mdl-js-snackbar');
+            var data = {
+                message: 'Are you sure you want to go home?',
+                actionHandler: function(event) {
+                    window.location.href = 'https://chan4077.github.io'; //Go back
+                },
+                actionText: 'OK',
+                timeout: 5000
+            };
+            notification.MaterialSnackbar.showSnackbar(data);
+        }
+
+        function search() {
+            var notification = document.querySelector('.mdl-js-snackbar');
+            var data = {
+                message: 'Are you sure you want to go to Google™ Search?',
+                actionHandler: function(event) {
+                    window.location.href = 'https://google.com'; //Go back
+                },
+                actionText: 'OK',
+                timeout: 5000
+            };
+            notification.MaterialSnackbar.showSnackbar(data);
+        }
+
+    </script>
