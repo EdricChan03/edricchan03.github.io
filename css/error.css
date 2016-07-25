@@ -1,6 +1,7 @@
 /*Start*/
-h1 {
+body {
     font-family: "Open Sans";
+    font-size: 17px;
 }
 .error {
     margin: auto;
