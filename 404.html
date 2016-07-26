@@ -20,14 +20,11 @@ permalink: /404.html
     <h2>Looks like you lost your way!</h2>
     <button onclick="goBack()">Go Back</button>
     <h4>Or...</h4>
-    <button onclick="goHome()">Go Home</button>
+    <button ng-href="{{mainUrl}}">Go Home</button>
 </body>
 </html>
 <script>
     function goBack() {
         window.history.back();
-    };
-    function goHome() {
-        location.href="https://chan4077.github.io";
     };
 </script>
