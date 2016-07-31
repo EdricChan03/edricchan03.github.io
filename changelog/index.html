@@ -8,5 +8,20 @@ title: Readme
 <ul>
     <li>Changed directory</li>
 </ul>
-<a href="/changelog/licenses.html">Licenses</a>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" id="main" onclick="licenses()">Licenses</button>
 </html>
+<!--Scripts-->
+<script>
+       function licenses() {
+            var notification = document.querySelector('.mdl-js-snackbar');
+            var data = {
+                message: 'Are you sure you want to go to the licenses page?',
+                actionHandler: function(event) {
+                    window.location.href = 'https://chan4077.github.io/changelog/licenses'; //Go back
+                },
+                actionText: 'OK',
+                timeout: 5000
+            };
+            notification.MaterialSnackbar.showSnackbar(data);
+        }
+</script>
