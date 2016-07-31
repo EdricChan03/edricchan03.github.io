@@ -34,12 +34,10 @@ Made with Angular Material and Angular-->
         <md-content class="md-default-theme">
             <md-list role="list" class="md-default-theme">
                 <md-list-item>
-                    <md-button ng-href="{{homeUrl}}" class="home md-button md-ink-ripple ng-binding">
-                        <div flex layout="row" class="ng-binding layout-row flex">
-                            <md-icon md-svg-src="/img/home-24.svg"></md-icon>
-                            <span flex class="flex"></span> Home
-                        </div>
-                    </md-button>
+    <a class="md-button md-ink-ripple" ng-transclude="" ng-class="{'active' : isSelected()}" ng-href="getting-started" ng-click="focusSection()" href="getting-started" aria-label="Getting Started"><span class="ng-binding ng-scope">
+  Getting Started
+  </span><!-- ngIf: isSelected() -->
+</a>
                 </md-list-item>
                 <md-list-item>
                     <md-button ng-href="{{aboutUrl}}" class="about md-button md-ink-ripple ng-binding"><md-icon md-svg-src="/img/person-24.svg"></md-icon>Portfolio</md-button>
