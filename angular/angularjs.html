@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html ng-app>
+<html ng-app="nameApp">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc.5/angular-material.min.js"></script>
@@ -7,8 +7,8 @@
   <body>
     <md-content>
 <form name="nameForm">
-  <md-input-container>
-    <label>Favorite Color</label>
+  <md-input-container ng-controller="NameController">
+    <label>Enter Your Name!</label>
     <input name="yourName" ng-model="yourName" required>
     <div ng-messages="nameForm.yourName.$error">
       <div ng-message="required">This is required!</div>
@@ -18,5 +18,6 @@
       <hr>
       <h1>Hello {{yourName}}!</h1>
     </md-content>
+    <script src="/angular/yourname.js"></script>
   </body>
 </html>
