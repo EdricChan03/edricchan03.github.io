@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html ng-app="nameApp">
   <head>
+    <title>YourName - Chan4077.Github.io</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.css">
     <!-- Angular Material requires Angular.js Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
@@ -13,7 +15,7 @@
   <body>
     <md-content>
 <form name="nameForm">
-  <md-input-container ng-controller="NameController">
+  <md-input-container>
     <label>Enter Your Name!</label>
     <input name="yourName" ng-model="yourName" required>
     <div ng-messages="nameForm.yourName.$error">
