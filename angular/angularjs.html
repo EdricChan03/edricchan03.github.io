@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
-<html ng-app>
+<html ng-app="myApp">
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc.5/angular-material.min.js"></script>
   </head>
   <body>
-    <div>
+    <md-content>
       <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <md-input type="text" ng-model="yourName" placeholder="Enter a name here">
       <hr>
       <h1>Hello {{yourName}}!</h1>
-    </div>
+    </md-content>
   </body>
 </html>
