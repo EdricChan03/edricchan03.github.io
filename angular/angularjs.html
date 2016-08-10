@@ -6,8 +6,15 @@
   </head>
   <body>
     <md-content>
-      <label>Name:</label>
-      <md-input type="text" ng-model="yourName" placeholder="Enter a name here">
+<form name="nameForm">
+  <md-input-container>
+    <label>Favorite Color</label>
+    <input name="yourName" ng-model="yourName" required>
+    <div ng-messages="nameForm.yourName.$error">
+      <div ng-message="required">This is required!</div>
+    </div>
+  </md-input-container>
+</form>
       <hr>
       <h1>Hello {{yourName}}!</h1>
     </md-content>
