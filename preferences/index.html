@@ -5,6 +5,8 @@ title: Preferences
 <head>
   <!--Import Jquery 3.0.0-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
   <div class="preferences">
@@ -39,16 +41,6 @@ title: Preferences
 </body>
 
   <!--Scripts-->
-<script>
-  $(document).ready(function() {
-  $('#CheckAll').click(function(){
-    $("input:checkbox").prop('checked', true);
-  });
-  $('#UncheckAll').click(function(){
-    $("input:checkbox").prop('checked', false);
-  });
-});
-</script>
 <script type="text/javascript">
   function showProBar() {
     var notification = document.querySelector('.mdl-js-snackbar');
