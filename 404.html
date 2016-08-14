@@ -16,7 +16,7 @@ permalink: /404.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <title>You Lost Your Way! - Error 404</title>
-<body ng-controller="ErrorController">
+<body ng-controller="ErrorController" onload="debug()">
     <div flex-xs flex-gt-xs="50" layout="column">
       <md-card>
           <md-card-header>
@@ -41,7 +41,6 @@ permalink: /404.html
               <md-button onclick="goBack()">Go Back</md-button>
     <md-button href="https://chan4077.github.io">Go Home</md-button>
     <md-button href="https://chan4077.github.io/about/#angular">About This Page</md-button>
-    <md-button onclick="debug()">Debug</md-button>
         </md-card-actions>
       </md-card>
 </body>
@@ -51,7 +50,7 @@ permalink: /404.html
         window.history.back();
     };
     function debug() {
-      console.log('It works!');
+      console.error('Page does not exist');
     }
 </script>
 <!--END-->
