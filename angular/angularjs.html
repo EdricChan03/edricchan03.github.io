@@ -1,33 +1,36 @@
 <!DOCTYPE HTML>
 <html ng-app="nameApp">
-  <head>
-    <title>YourName - Chan4077.Github.io</title>
-    <link rel="shortcut icon" href="favicon.ico">
-     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Angular Material requires Angular.js Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-messages.min.js"></script>
-    <!-- Angular Material Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.js"></script>
-  </head>
-  <body>
-    <md-content ng-controller="NameController as name">
-<form name="nameForm">
-  <md-input-container>
-    <label>Enter Your Name!</label>
-    <input name="yourName" ng-model="yourName" required>
-    <div ng-messages="nameForm.yourName.$error">
-      <div ng-message="required">This is required!</div>
-    </div>
-    <md-button ng-show="">Submit</md-button>
-  </md-input-container>
-</form>
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
-    </md-content>
-    <script src="/angular/yourname.js"></script>
-  </body>
+
+<head>
+  <title>YourName - Chan4077.Github.io</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-messages.min.js"></script>
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.js"></script>
+</head>
+
+<body>
+  <md-content ng-controller="NameController as name">
+    <form name="nameForm">
+      <md-input-container>
+        <label>Enter Your Name!</label>
+        <input name="yourName" ng-model="yourName" required>
+        <div ng-messages="nameForm.yourName.$error">
+          <div ng-message="required">This is required!</div>
+        </div>
+        <md-button ng-show="">Submit</md-button>
+      </md-input-container>
+    </form>
+    <hr>
+    <h1>Hello {{yourName}}!</h1>
+  </md-content>
+  <script src="/angular/yourname.js"></script>
+</body>
+
 </html>

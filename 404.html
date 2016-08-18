@@ -1,64 +1,65 @@
----
-permalink: /404.html
----
+--- permalink: /404.html ---
 <html ng-app="error">
+
 <head>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.css">
-    <!-- Angular Material requires Angular.js Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
-    <!-- Angular Material Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.js"></script>
-    <script src="/angularJS/404.js"></script>
-    <link href="favicon.ico" rel="shortcut icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The 404 page." />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.css">
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc4/angular-material.min.js"></script>
+  <script src="/angularJS/404.js"></script>
+  <link href="favicon.ico" rel="shortcut icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The 404 page." />
 </head>
 <title>You Lost Your Way! - Error 404</title>
+
 <body ng-controller="ErrorController" onload="debug()">
-    <div flex-xs flex-gt-xs="50" layout="row">
-      <md-card>
-          <md-card-header>
-          <md-card-avatar>
-            <img src="/img/error.svg"/>
-          </md-card-avatar>
-          <md-card-header-text>
-            <span class="md-title">Error 404</span>
-            <span class="md-subhead">URL Not Found</span>
-          </md-card-header-text>
-        </md-card-header>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Error 404</span>
-            <span class="md-subhead">Unfortunately, you've reached a page that did not exist.</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-              <md-button onclick="goBack()">Go Back</md-button>
-    <md-button ng-click="main()">Go Home</md-button>
-    <md-button ng-click="about()">About This Page</md-button>
-        </md-card-actions>
-      </md-card>
+  <div flex-xs flex-gt-xs="50" layout="row">
     <md-card>
       <md-card-header>
-      <md-card-header-text>
-        <span class="md-title">Latest</span>
-        <span class="md-subhead">Commits</span>
-      </md-card-header-text>
-    </md-card-header>
-    <md-card-title>
-      <md-card-title-text>
-        <span class="md-headline">This <a href="https://chan4077.github.io">Website's Commits</a></span>
-        <span class="md-subhead">Check out the latest commits!</span>
-      </md-card-title-text>
-    </md-card-title>
-    <md-card-actions layout="row" layout-align="end center">
-          <md-button ng-click="commit()">Commits</md-button>
-    </md-card-actions>
+        <md-card-avatar>
+          <img src="/img/error.svg" />
+        </md-card-avatar>
+        <md-card-header-text>
+          <span class="md-title">Error 404</span>
+          <span class="md-subhead">URL Not Found</span>
+        </md-card-header-text>
+      </md-card-header>
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">Error 404</span>
+          <span class="md-subhead">Unfortunately, you've reached a page that did not exist.</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button onclick="goBack()">Go Back</md-button>
+        <md-button ng-click="main()">Go Home</md-button>
+        <md-button ng-click="about()">About This Page</md-button>
+      </md-card-actions>
+    </md-card>
+    <md-card>
+      <md-card-header>
+        <md-card-header-text>
+          <span class="md-title">Latest</span>
+          <span class="md-subhead">Commits</span>
+        </md-card-header-text>
+      </md-card-header>
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">This <a href="https://chan4077.github.io">Website's Commits</a></span>
+          <span class="md-subhead">Check out the latest commits!</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button ng-click="commit()">Commits</md-button>
+      </md-card-actions>
     </md-card>
 </body>
+
 </html>
 <script>
     function goBack() {
