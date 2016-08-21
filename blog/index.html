@@ -23,19 +23,18 @@ title: Edric Chan's Blog
             <img src="img/profile_1.svg"/>
           </md-card-avatar>
           <md-card-header-text>
-            <span class="md-title">{{author}}</span>
-            <span class="md-subhead">{{job}}</span>
+            <span class="md-title">{{post.author}}</span>
+            <span class="md-subhead">{{post.job}}</span>
           </md-card-header-text>
         </md-card-header>
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">{{headline}}</span>
+            <span class="md-headline">{{post.headline}}</span>
           </md-card-title-text>
         </md-card-title>
         <md-card-content>
           <p>
-            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-            two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            {{post.article}}
           </p>
         </md-card-content>
       </md-card>
