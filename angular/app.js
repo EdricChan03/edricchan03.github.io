@@ -1,5 +1,5 @@
-var app = angular.module('test', ['ngMaterial']);
-app.controller('MyController', function($scope, $mdSidenav) {
+var app = angular.module('testApp', ['ngMaterial']);
+app.controller('MainController', function($scope, $mdSidenav) {
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
     };

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--WARNING: This is beta and might break, change or otherwise be modified
 Made with Angular Material and Angular-->
-<html ng-app="test">
+<html ng-app="testApp">
 
 <head>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
@@ -18,7 +18,7 @@ Made with Angular Material and Angular-->
     <script src="/angular/app.js"></script>
     <title>Beta - Chan4077.Github.io</title>
 </head>
-<div layout="row" ng-controller="MyController as myCtrl">
+<div layout="row" ng-controller="MainController">
     <md-toolbar class="md-hue-2">
         <div class="md-toolbar-tools">
             <md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
@@ -31,6 +31,30 @@ Made with Angular Material and Angular-->
             <md-button class="md-icon-button" aria-label="More">
                 <md-icon md-svg-icon="/img/more_vert-24.svg"></md-icon>
             </md-button>
+        <md-content flex layout-padding>
+        Center Content
+        <md-button ng-click="openRightMenu()">
+            Open Right Menu
+        </md-button>
+        <div class="lock-size" layout="row" layout-align="bottom right">
+            <md-fab-speed-dial md-direction="up" class="md-fling">
+                <md-fab-trigger>
+                    <md-button aria-label="add" class="md-fab md-primary">
+                        <md-icon md-svg-src="/img/add-24.svg"></md-icon>
+                    </md-button>
+                </md-fab-trigger>
+                <md-fab-actions>
+                    <md-button aria-label="Add User" class="md-fab md-raised md-mini">
+                        <md-icon md-svg-src="/img/person_add-24.svg"></md-icon>
+                    </md-button>
+                    <md-button aria-label="Add Group" class="md-fab md-raised md-mini">
+                        <md-icon md-svg-src="/img/group-24.svg"></md-icon>
+                    </md-button>
+                </md-fab-actions>
+            </md-fab-speed-dial>
+        </div>
+
+    </md-content>
         </div>
     </md-toolbar>
     <div ng-controller="SideNavController">
@@ -67,30 +91,6 @@ Made with Angular Material and Angular-->
             </md-content>
         </md-sidenav>
     </div>
-    <md-content flex layout-padding>
-        Center Content
-        <md-button ng-click="openRightMenu()">
-            Open Right Menu
-        </md-button>
-        <div class="lock-size" layout="row" layout-align="bottom right">
-            <md-fab-speed-dial md-direction="up" class="md-fling">
-                <md-fab-trigger>
-                    <md-button aria-label="add" class="md-fab md-primary">
-                        <md-icon md-svg-src="/img/add-24.svg"></md-icon>
-                    </md-button>
-                </md-fab-trigger>
-                <md-fab-actions>
-                    <md-button aria-label="Add User" class="md-fab md-raised md-mini">
-                        <md-icon md-svg-src="/img/person_add-24.svg"></md-icon>
-                    </md-button>
-                    <md-button aria-label="Add Group" class="md-fab md-raised md-mini">
-                        <md-icon md-svg-src="/img/group-24.svg"></md-icon>
-                    </md-button>
-                </md-fab-actions>
-            </md-fab-speed-dial>
-        </div>
-
-    </md-content>
     <md-sidenav md-component-id="right" class="md-sidenav-right">
         <form name="feedbackbeta">
             <md-input-container>
