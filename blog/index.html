@@ -21,7 +21,7 @@ title: Edric Chan's Blog
 <br>
 <br>
 <br>
-<md-content ng-controller="PostController">
+<div ng-controller="PostController" class="posts">
       <md-card ng-repeat="post in posts">
         <md-card-header>
           <md-card-avatar>
@@ -43,7 +43,7 @@ title: Edric Chan's Blog
           </p>
         </md-card-content>
       </md-card>
-  </md-content>
+  </div>
 <h1>{{ page.title }}</h1>
 <ul class="posts">
 
