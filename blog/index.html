@@ -25,21 +25,21 @@ title: Edric Chan's Blog
       <md-card ng-repeat="post in posts">
         <md-card-header>
           <md-card-avatar>
-            <img src="../img/profile_1.svg"/>
+            <img ng-src="{{ post.AuthorPic }}"/>
           </md-card-avatar>
           <md-card-header-text>
-            <span class="md-title">{{ post.author }}</span>
-            <span class="md-subhead">{{ post.job }}</span>
+            <span class="md-title">{{ post.Author }}</span>
+            <span class="md-subhead">{{ post.Job }}</span>
           </md-card-header-text>
         </md-card-header>
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">{{ post.headline }}</span>
+            <span class="md-headline">{{ post.Headline }}</span>
           </md-card-title-text>
         </md-card-title>
         <md-card-content>
           <p>
-            {{ post.article }}
+            {{ post.Article }}
           </p>
         </md-card-content>
       </md-card>
