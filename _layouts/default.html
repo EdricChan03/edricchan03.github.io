@@ -31,10 +31,38 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
     <meta http-equiv="refresh" content="30">
     <!--Favicon-->
     <link rel="shortcut icon" href="favicon.ico">
+    <!--Import jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 
 <body>
+    <!--Spinner-->
+    <style>
+        #loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   opacity: 0.7;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-spinner {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
+}
+    </style>
+    <!--Show when page is loaded-->
+    <div id="loading">
+<div class="mdl-spinner mdl-js-spinner is-active" id="loading-spinner"></div>
+</div>
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
@@ -131,6 +159,11 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
         <button class="mdl-snackbar__action"></button>
     </div>
     <!--Scripts-->
+    <script language="javascript" type="text/javascript">
+     $(window).load(function() {
+     $('#loading').hide();
+  });
+</script>
     <script>
         'use strict';
 
