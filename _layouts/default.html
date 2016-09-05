@@ -17,7 +17,7 @@ Material Design Specs: https://material.google.com
 MADE WITH HTML5, JAVASCRIPT AND CSS3
 
 -->
-<html onload="hideSpinner()">
+<html class="loading">
 <head>
     <!--Title-->
     <title>Chan4077.Github.io</title>
@@ -39,22 +39,35 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
 <body>
     <!--Spinner-->
     <style>
-        #loading {
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-   position: fixed;
-   display: block;
-   opacity: 0.7;
-   background-color: #fff;
-   z-index: 99;
-   text-align: center;
+html {
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
 }
+html, body {
+    /* For the loading indicator to be vertically centered ensure */
+    /* the html and body elements take up the full viewport */
+    min-height: 100%;
+}
+html.loading {
+    /* Replace #333 with the background-color of your choice */
+    /* Replace loading.gif with the loading image of your choice */
+    background: #333 url('loading.gif') no-repeat 50% 50%;
 
-#loading-spinner {
-  position: center;
-  z-index: 100;
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: background-color 0;
+    transition: background-color 0;
+}
+body {
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+html.loading body {
+    /* Make the contents of the body opaque during loading */
+    opacity: 0;
+
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: opacity 0;
+    transition: opacity 0;
 }
     </style>
     <!--Show when page is loading-->
@@ -159,24 +172,13 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
 </body>
     <!--Scripts-->
     <script>
-    function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
+        window.onload = function() {
+            // IE10+
+document.getElementsByTagName( "html" )[0].classList.remove( "loading" );
 
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
-    show('page', true);
-    show('loading', false);
-});
+// All browsers
+document.getElementsByTagName( "html" )[0].className.replace( /loading/, "" );
+        };
         function refresh() {
             var notification = document.querySelector('.mdl-js-snackbar');
             var data = {
