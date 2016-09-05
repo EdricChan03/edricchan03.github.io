@@ -16,6 +16,6 @@ app.controller('SideNavController', function ($scope) {
         {url: 'https://chan4077.github.io/media', icon: 'group', color_icon: 'black'},
         {url: 'https://chan4077.github.io/notes', icon: 'insert_drive_file', color_icon: 'black'},
         {url: 'https://chan4077.github.io/preferences', icon: 'settings', color_icon: 'black'},
-        {url: 'https://chan4077.github.io/angular', icon: '', color_icon: 'black'},
+        {url: 'https://chan4077.github.io/angular', icon: '', color_icon: 'black'}
     ]
 });
