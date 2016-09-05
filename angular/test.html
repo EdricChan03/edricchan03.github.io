@@ -64,7 +64,7 @@ Made with Angular Material and Angular-->
             <md-content class="md-default-theme">
                 <md-list role="list" class="md-default-theme">
                     <md-list-item>
-                        <md-button ng-href="{{homeUrl}}" class="home md-button md-ink-ripple ng-binding">
+                        <md-button ng-href="{{homeUrl}}" class="home md-button md-ink-ripple ng-binding md-primary">
                             <div flex layout="row" class="ng-binding layout-row flex">
                                 <md-icon md-svg-src="/img/home-24.svg"></md-icon>
                                 <span flex class="flex"></span> Home
@@ -72,21 +72,21 @@ Made with Angular Material and Angular-->
                         </md-button>
                     </md-list-item>
                     <md-list-item>
-                        <md-button ng-href="{{aboutUrl}}" class="about md-button md-ink-ripple ng-binding">
+                        <md-button ng-href="{{aboutUrl}}" class="about md-button md-ink-ripple ng-binding md-primary">
                             <md-icon md-svg-src="/img/person-24.svg"></md-icon>Portfolio</md-button>
                     </md-list-item>
                     <md-list-item>
-                        <md-button ng-href="{{blogUrl}}" class="blog md-button md-ink-ripple ng-binding">Blog</md-button>
+                        <md-button ng-href="{{blogUrl}}" class="blog md-button md-ink-ripple ng-binding md-primary">Blog</md-button>
                     </md-list-item>
                     <md-list-item>
-                        <md-button ng-href="{{mediaUrl}}" class="social md-button md-ink-ripple ng-binding">Social Media</md-button>
+                        <md-button ng-href="{{mediaUrl}}" class="social md-button md-ink-ripple ng-binding md-primary">Social Media</md-button>
                     </md-list-item>
                     <md-list-item>
-                        <md-button ng-href="{{noteUrl}}" class="notes md-button md-ink-ripple ng-binding">
+                        <md-button ng-href="{{noteUrl}}" class="notes md-button md-ink-ripple ng-binding md-pimary">
                             <md-icon md-svg-src="/img/insert_drive_file-24.svg"></md-icon>Notes</md-button>
                     </md-list-item>
                     <md-list-item>
-                        <md-button ng-href="{{preferencesUrl}}" class="preferences md-button md-ink-ripple ng-binding">
+                        <md-button ng-href="{{preferencesUrl}}" class="preferences md-button md-ink-ripple ng-binding md-primary">
                             <md-icon md-svg-src="/img/settings-24.svg"></md-icon>Preferences</md-button>
                     </md-list-item>
                 </md-list>
@@ -109,6 +109,7 @@ Made with Angular Material and Angular-->
                     <div ng-message="required">This is required</div>
                 </div>
             </md-input-container>
+            <md-button ng-disabled="feddbackbeta.$invalid">Submit</md-button>
         </form>
     </md-sidenav>
 </div>
