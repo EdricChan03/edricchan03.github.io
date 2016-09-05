@@ -20,6 +20,8 @@ Made with Angular Material and Angular-->
     <script src="/angular/app.js"></script>
     <link rel="stylesheet" href="./test.css">
     <title>Beta - Chan4077.Github.io</title>
+    <!--Import Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <div layout="column" ng-controller="MainController" ng-cloak>
     <md-toolbar class="md-hue-2">
@@ -63,7 +65,7 @@ Made with Angular Material and Angular-->
     <div ng-controller="SideNavController">
         <md-sidenav md-component-id="left" class="md-sidenav-left">
             <md-content class="md-default-theme">
-                <md-list role="list" class="md-default-theme">
+                <md-list role="list" class="md-default-theme" ng-repeat="url in urls">
                     <md-list-item>
                         <md-button ng-href="{{homeUrl}}" class="home md-button md-ink-ripple ng-binding md-primary">
                             <div flex layout="row" class="ng-binding layout-row flex">

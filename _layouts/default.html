@@ -17,7 +17,7 @@ Material Design Specs: https://material.google.com
 MADE WITH HTML5, JAVASCRIPT AND CSS3
 
 -->
-
+<html onload="hideSpinner()">
 <head>
     <!--Title-->
     <title>Chan4077.Github.io</title>
@@ -53,11 +53,11 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
 }
 
 #loading-spinner {
-  position: absolute;
+  position: center;
   z-index: 100;
 }
     </style>
-    <!--Show when page is loaded-->
+    <!--Show when page is loading-->
     <div id="loading">
 <div class="mdl-spinner mdl-js-spinner is-active" id="loading-spinner"></div>
 </div>
@@ -156,15 +156,27 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
         <div class="mdl-snackbar__text"></div>
         <button class="mdl-snackbar__action"></button>
     </div>
+</body>
     <!--Scripts-->
     <script>
-     $(window).load(function() {
-     $('#loading').hide();
-  });
-</script>
-    <script>
-        'use strict';
+    function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
 
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
         function refresh() {
             var notification = document.querySelector('.mdl-js-snackbar');
             var data = {
@@ -205,3 +217,4 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
         }
 
     </script>
+</html>
