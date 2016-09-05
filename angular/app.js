@@ -7,11 +7,15 @@ app.controller('MainController', function($scope, $mdSidenav) {
         $mdSidenav('right').toggle();
     };
 });
+
 app.controller('SideNavController', function ($scope) {
-    $scope.homeUrl = 'https://chan4077.github.io';
-    $scope.aboutUrl = 'https://chan4077.github.io/about';
-    $scope.blogUrl = 'https://chan4077.github.io/blog';
-    $scope.mediaUrl = 'https://chan4077.github.io/media';
-    $scope.noteUrl = 'https://chan4077.github.io/notes';
-    $scope.preferencesUrl = 'https://chan4077.github.io/preferences';
+    $scope.links = [
+        {url: 'https://chan4077.github.io', icon: 'home', color_icon: 'black'},
+        {url: 'https://chan4077.github.io/about', icon: 'account_box', color_icon: 'black'},
+        {url: 'https://chan4077.github.io/blog', icon: '', color_icon: 'black'},
+        {url: 'https://chan4077.github.io/media', icon: 'group', color_icon: 'black'},
+        {url: 'https://chan4077.github.io/notes', icon: 'insert_drive_file', color_icon: 'black'},
+        {url: 'https://chan4077.github.io/preferences', icon: 'settings', color_icon: 'black'},
+        {url: 'https://chan4077.github.io/angular', icon: '', color_icon: 'black'},
+    ]
 });

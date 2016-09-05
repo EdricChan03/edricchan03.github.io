@@ -65,32 +65,14 @@ Made with Angular Material and Angular-->
     <div ng-controller="SideNavController">
         <md-sidenav md-component-id="left" class="md-sidenav-left">
             <md-content class="md-default-theme">
-                <md-list role="list" class="md-default-theme" ng-repeat="url in urls">
-                    <md-list-item>
-                        <md-button ng-href="{{homeUrl}}" class="home md-button md-ink-ripple ng-binding md-primary">
+                <md-list role="list" class="md-default-theme">
+                    <md-list-item ng-repeat="sidenav in urls">
+                        <md-button ng-href="{{sidenav.url}}" class="home md-button md-ink-ripple ng-binding md-primary">
                             <div flex layout="row" class="ng-binding layout-row flex">
-                                <md-icon md-svg-src="/img/home-24.svg"></md-icon>
+                                <md-icon ng-style="{color: sidenav.color_icon}" class="material-icons">{{sidenav.icon}}</md-icon>
                                 <span flex class="flex"></span> Home
                             </div>
                         </md-button>
-                    </md-list-item>
-                    <md-list-item>
-                        <md-button ng-href="{{aboutUrl}}" class="about md-button md-ink-ripple ng-binding md-primary">
-                            <md-icon md-svg-src="/img/person-24.svg"></md-icon>Portfolio</md-button>
-                    </md-list-item>
-                    <md-list-item>
-                        <md-button ng-href="{{blogUrl}}" class="blog md-button md-ink-ripple ng-binding md-primary">Blog</md-button>
-                    </md-list-item>
-                    <md-list-item>
-                        <md-button ng-href="{{mediaUrl}}" class="social md-button md-ink-ripple ng-binding md-primary">Social Media</md-button>
-                    </md-list-item>
-                    <md-list-item>
-                        <md-button ng-href="{{noteUrl}}" class="notes md-button md-ink-ripple ng-binding md-pimary">
-                            <md-icon md-svg-src="/img/insert_drive_file-24.svg"></md-icon>Notes</md-button>
-                    </md-list-item>
-                    <md-list-item>
-                        <md-button ng-href="{{preferencesUrl}}" class="preferences md-button md-ink-ripple ng-binding md-primary">
-                            <md-icon md-svg-src="/img/settings-24.svg"></md-icon>Preferences</md-button>
                     </md-list-item>
                 </md-list>
             </md-content>
