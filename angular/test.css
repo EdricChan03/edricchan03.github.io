@@ -1,3 +1,8 @@
 #feedback_btn {
     width: 180px;
 };
+form {
+    border-radius: 5px;
+    background: #F2F2F2;
+    padding: 20px;
+};
