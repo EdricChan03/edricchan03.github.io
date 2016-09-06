@@ -50,10 +50,10 @@ Made with Angular Material and Angular-->
                 </div>
             </md-input-container>
             <md-input-container>
-                <label>Email <span style="color: blue;">(optional)</span></label>
+                <label>Email</label>
                 <input name="email" type="email" ng-model="feedback.email" required></imput>
                 <div ng-messages="feedbackbeta.email.$error" ng-show="feedbackbeta.email.$touched">
-
+                    <div ng-message="email">Please input a valid email address.</div>
                 </div>
             </md-input-container>
             <md-input-container>
