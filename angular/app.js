@@ -2,8 +2,8 @@ var app = angular.module('testApp', ['ngMaterial']);
 // Config
 app.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-        .primaryPalette('red')
-        .accentPalette('pink');
+        .primaryPalette('green')
+        .accentPalette('purple');
 });
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
     $scope.openLeftMenu = function () {
