@@ -11,6 +11,8 @@ app.controller('MainController', function($scope, $mdSidenav) {
         email: "",
         sendFeedback: ""
     };
+    // Declare a variable called oriFeedback
+    var oriFeedback = angular.copy($scope.oriFeedback);
     $scope.reset = function () {
         $scope.feedback = angular.copy(oriFeedback);
         $scope.feedbackbeta.setPristine();
