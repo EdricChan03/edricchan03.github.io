@@ -18,6 +18,7 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
 
 -->
 <html class="loading">
+
 <head>
     <!--Title-->
     <title>Chan4077.Github.io</title>
@@ -37,39 +38,6 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
 
 
 <body>
-    <!--Spinner-->
-    <style>
-html {
-    -webkit-transition: background-color 3s;
-    transition: background-color 3s;
-}
-html, body {
-    /* For the loading indicator to be vertically centered ensure */
-    /* the html and body elements take up the full viewport */
-    min-height: 100%;
-}
-html.loading {
-    /* Replace #333 with the background-color of your choice */
-    /* Replace loading.gif with the loading image of your choice */
-    background: #333 url('http://blog.teamtreehouse.com/wp-content/uploads/2015/05/InternetSlowdown_Day.gif') no-repeat 50% 50%;
-
-    /* Ensures that the transition only runs in one direction */
-    -webkit-transition: background-color 0;
-    transition: background-color 0;
-}
-body {
-    -webkit-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
-}
-html.loading body {
-    /* Make the contents of the body opaque during loading */
-    opacity: 0;
-
-    /* Ensures that the transition only runs in one direction */
-    -webkit-transition: opacity 0;
-    transition: opacity 0;
-}
-    </style>
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
@@ -86,16 +54,16 @@ html.loading body {
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="https://getmdl.io" id="nav1">getmdl.io</a>
                     <div class="mdl-tooltip" data-mdl-for="nav1">
-                    Material Design Lite
-                </div>
+                        Material Design Lite
+                    </div>
                     <a class="mdl-navigation__link" href="https://github.com/Chan4077" id="nav2">Github.com/Chan4077</a>
                     <div class="mdl-tooltip" data-mdl-for="nav2">
-                    My Github Profile
-                </div>
+                        My Github Profile
+                    </div>
                     <a class="mdl-navigation__link" href="https://twitter.com/Chan4077" id="nav3">@Chan4077</a>
                     <div class="mdl-tooltip" data-mdl-for="nav3">
-                    Follow @Chan4077<br><span style="color: yellow;">(Twitter)</span>
-                </div>
+                        Follow @Chan4077<br><span style="color: yellow;">(Twitter)</span>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -153,12 +121,12 @@ html.loading body {
     </div>
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" id="refresh" onclick="refresh()"><i class="material-icons">refresh</i>Refresh</button>
     <div class="mdl-tooltip" data-mdl-for="refresh">
-                    Refresh
-                </div>
+        Refresh
+    </div>
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" id="main" onclick="home()"><i class="material-icons">home</i>Home</button>
     <div class="mdl-tooltip" data-mdl-for="main">
-                    Head Home
-                </div>
+        Head Home
+    </div>
 
     <!--Snackbar-->
     <div class="mdl-js-snackbar mdl-snackbar">
@@ -166,15 +134,8 @@ html.loading body {
         <button class="mdl-snackbar__action"></button>
     </div>
 </body>
-    <!--Scripts-->
-    <script>
-        window.onload = function() {
-            // IE10+
-document.getElementsByTagName( "html" )[0].classList.remove( "loading" );
-
-// All browsers
-document.getElementsByTagName( "html" )[0].className.replace( /loading/, "" );
-        };
+<!--Scripts-->
+<script>
         function refresh() {
             var notification = document.querySelector('.mdl-js-snackbar');
             var data = {
@@ -215,4 +176,5 @@ document.getElementsByTagName( "html" )[0].className.replace( /loading/, "" );
         }
 
     </script>
+
 </html>
