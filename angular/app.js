@@ -1,4 +1,10 @@
 var app = angular.module('testApp', ['ngMaterial']);
+// Config
+app.config(function ($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+        .primaryPalette('red')
+        .accentPalette('pink');
+});
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
@@ -44,7 +50,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
             clickOutsideToClose: true,
         });
     };
-    
+
     // $mdDialog (end)
     function DialogController($scope, $mdDialog) {
         $scope.hide = function () {
