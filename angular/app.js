@@ -44,6 +44,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
             clickOutsideToClose: true,
         });
     };
+    
     // $mdDialog (end)
     function DialogController($scope, $mdDialog) {
         $scope.hide = function () {
