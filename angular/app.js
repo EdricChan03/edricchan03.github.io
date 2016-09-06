@@ -13,6 +13,9 @@ app.controller('MainController', function($scope, $mdSidenav) {
     };
     // Declare a variable called oriFeedback
     var oriFeedback = angular.copy($scope.oriFeedback);
+    // On initial, set feedback to original
+    $scope.feedback = angular.copy(oriFeedback);
+    // Reset form
     $scope.reset = function () {
         $scope.feedback = angular.copy(oriFeedback);
         $scope.feedbackbeta.setPristine();
