@@ -18,7 +18,10 @@ app.controller('MainController', function($scope, $mdSidenav) {
     // Reset form
     $scope.reset = function () {
         $scope.feedback = angular.copy(oriFeedback);
+        // Reset form
         $scope.feedbackbeta.$setPristine();
+        // Reset validation errors
+        $scope.feedbackbeta.$setUntouched();
     };
 });
 
