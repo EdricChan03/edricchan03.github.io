@@ -65,8 +65,18 @@ Made with Angular Material and Angular-->
                     <div ng-message="minlength">Your feedback is too short</div>
                 </div>
             </md-input-container>
-            <md-button ng-disabled="feedbackbeta.$invalid" class="md-primary" type="submit">Submit</md-button>
-            <md-button ng-disabled="feedbackbeta.$valid" class="md-warn" ng-click="reset()">Reset</md-button>
+            <md-button ng-disabled="feedbackbeta.$invalid" class="md-primary" type="submit">
+                <md-tooltip>
+                    Submit
+                </md-tooltip>
+                Submit
+            </md-button>
+            <md-button ng-disabled="feedbackbeta.$valid" class="md-warn" ng-click="reset()">
+                <md-tooltip>
+                    Reset Form
+                </md-tooltip>
+                Reset
+            </md-button>
         </form>
         <div class="form_debug">
             feedback.name = <code>{{feedback.name}}</code>
