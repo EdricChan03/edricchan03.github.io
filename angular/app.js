@@ -6,14 +6,15 @@ app.controller('MainController', function($scope, $mdSidenav) {
     $scope.openRightMenu = function () {
         $mdSidenav('right').toggle();
     };
-    $scope.oriFeedback = {};
+    $scope.oriFeedback = {
+        name: "",
+        email: "",
+        sendFeedback: ""
+    };
     $scope.reset = function () {
         $scope.feedback = angular.copy(oriFeedback);
         $scope.feedbackbeta.setPristine();
-        
     };
-    
-
 });
 
 app.controller('SideNavController', function ($scope) {
