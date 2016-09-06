@@ -58,10 +58,11 @@ Made with Angular Material and Angular-->
             </md-input-container>
             <md-input-container>
                 <label>Feedback</label>
-                <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150"></textarea>
+                <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" minlength="4"></textarea>
                 <div ng-messages="feedback.sendFeedback.$error" ng-show="feedbackbeta.sendFeedback.$touched">
                     <div ng-message="required">This is required</div>
-                    <div ng-message="md-maxlength">Your feedback is too long. Please shorten it to 150 characters or below.</div>
+                    <div ng-message="md-maxlength">Your feedback is too long.</div>
+                    <div ng-message="minlength">Your feedback is too short</div>
                 </div>
             </md-input-container>
             <md-button ng-disabled="feedbackbeta.$invalid" class="md-primary" type="submit">Submit</md-button>
