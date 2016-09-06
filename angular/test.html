@@ -113,7 +113,8 @@ Made with Angular Material and Angular-->
                 Reset
             </md-button>
         </form>
-        <div class="form_debug">
+        <md-switch aria-label="Enable Form Debug" ng-model="switch.form_debug">Show Form Debug</md-switch>
+        <div class="form_debug" ng-show="switch.form_debug">
             feedback.name = <code>{{feedback.name}}</code>
             <br>
             feedback.email = <code>{{feedback.email}}</code>
