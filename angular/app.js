@@ -23,6 +23,13 @@ app.controller('MainController', function($scope, $mdSidenav) {
         // Reset validation errors
         $scope.feedbackbeta.$setUntouched();
     };
+    // More menu
+    var originatorEv;
+
+    $scope.openMenu = function($mdOpenMenu, ev) {
+      originatorEv = ev;
+      $mdOpenMenu(ev);
+    };
 });
 
 app.controller('SideNavController', function ($scope) {
