@@ -30,8 +30,9 @@ app.controller('MainController', function($scope, $mdSidenav) {
       originatorEv = ev;
       $mdOpenMenu(ev);
     };
+    // Initialize switches
     $scope.switch = {
-        form_debug : true,
+        form_debug : false,
     };
 });
 
