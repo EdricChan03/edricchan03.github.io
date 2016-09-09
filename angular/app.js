@@ -73,7 +73,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
 });
 
 app.controller('SideNavController', function ($scope) {
-    $scope.links = [
+    $scope.urls = [
         { url: 'https://chan4077.github.io', icon: 'home' },
         { url: 'https://chan4077.github.io/about', icon: 'account_box' },
         { url: 'https://chan4077.github.io/blog', icon: '' },
