@@ -74,12 +74,12 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
 
 app.controller('SideNavController', function ($scope) {
     $scope.links = [
-        { url: 'https://chan4077.github.io', icon: 'home', color_icon: 'black' },
-        { url: 'https://chan4077.github.io/about', icon: 'account_box', color_icon: 'black' },
-        { url: 'https://chan4077.github.io/blog', icon: '', color_icon: 'black' },
-        { url: 'https://chan4077.github.io/media', icon: 'group', color_icon: 'black' },
-        { url: 'https://chan4077.github.io/notes', icon: 'insert_drive_file', color_icon: 'black' },
-        { url: 'https://chan4077.github.io/preferences', icon: 'settings', color_icon: 'black' },
-        { url: 'https://chan4077.github.io/angular', icon: '', color_icon: 'black' }
-    ]
+        { url: 'https://chan4077.github.io', icon: 'home' },
+        { url: 'https://chan4077.github.io/about', icon: 'account_box' },
+        { url: 'https://chan4077.github.io/blog', icon: '' },
+        { url: 'https://chan4077.github.io/media', icon: 'group' },
+        { url: 'https://chan4077.github.io/notes', icon: 'insert_drive_file'},
+        { url: 'https://chan4077.github.io/preferences', icon: 'settings' },
+        { url: 'https://chan4077.github.io/angular', icon: '' }
+    ];
 });
