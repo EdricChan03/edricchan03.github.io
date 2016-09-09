@@ -79,6 +79,7 @@ app.controller('SideNavController', function ($scope) {
         { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: '' },
         { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'group' },
         { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
-        { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: '' }
+        { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: '' },
+        { url: 'https://chan4077.github.io/Chan4077/chan4077.github.io', title: 'Project Page', icon: '' }
     ];
 });
