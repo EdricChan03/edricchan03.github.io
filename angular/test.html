@@ -38,38 +38,38 @@ Made with Angular Material and Angular-->
             <span flex></span>
             <!--mdMenu-->
             <md-menu>
-            <md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
-                <md-tooltip>
-                    More
-                </md-tooltip>
-                <md-icon class="material-icons">more_vert</md-icon>
-            </md-button>
-            <md-menu-content>
-                <md-menu-item>
-                    <md-button ng-click="whats_new($event)">
-                        <md-icon class="material-icons" md-menu-align-target>new_releases</md-icon>
-                        What's New
-                    </md-button>
-                </md-menu-item>
-                <md-menu-item>
-                    <md-button ng-click="settings($event)">
-                        <md-icon class="material-icons" md-menu-align-target>settings</md-icon>
-                        Settings
-                    </md-button>
-                </md-menu-item>
-                <md-menu-item>
-                    <md-button ng-click="">
-                        <md-icon class="material-icons" md-menu-align-target>report_problem</md-icon>
-                        Report A Problem
-                    </md-button>
-                </md-menu-item>
-                <md-menu-item>
-                    <md-button ng-click="">
-                    <md-icon class="material-icons" md-menu-align-target>bug_report</md-icon>
-                    Submit Bug Report
-                    </md-button>
-                </md-menu-item>
-            </md-menu-content>
+                <md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
+                    <md-tooltip>
+                        More
+                    </md-tooltip>
+                    <md-icon class="material-icons">more_vert</md-icon>
+                </md-button>
+                <md-menu-content>
+                    <md-menu-item>
+                        <md-button ng-click="whats_new($event)">
+                            <md-icon class="material-icons" md-menu-align-target>new_releases</md-icon>
+                            What's New
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button ng-click="settings($event)">
+                            <md-icon class="material-icons" md-menu-align-target>settings</md-icon>
+                            Settings
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button ng-click="">
+                            <md-icon class="material-icons" md-menu-align-target>report_problem</md-icon>
+                            Report A Problem
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button ng-click="">
+                            <md-icon class="material-icons" md-menu-align-target>bug_report</md-icon>
+                            Submit Bug Report
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
             </md-menu>
     </md-toolbar>
     </div>
@@ -117,30 +117,27 @@ Made with Angular Material and Angular-->
         <md-switch aria-label="Enable Form Debug" ng-model="switch.form_debug">Show Form Debug</md-switch>
         <div class="form_debug" ng-show="switch.form_debug">
             feedback.name = <code>{{feedback.name}}</code>
-            <br>
-            feedback.email = <code>{{feedback.email}}</code>
-            <br>
-            feedback.sendFeedback = <code>{{feedback.sendFeedback}}</code>
-            <br>
-            feedback.$invalid = <code>{{feedbackbeta.$invalid}}</code>
+            <br> feedback.email = <code>{{feedback.email}}</code>
+            <br> feedback.sendFeedback = <code>{{feedback.sendFeedback}}</code>
+            <br> feedback.$invalid = <code>{{feedbackbeta.$invalid}}</code>
         </div>
     </md-content>
-    <div ng-controller="SideNavController">
-        <md-sidenav md-component-id="left" class="md-sidenav-left">
-            <md-content class="md-default-theme">
-                <md-list role="list" class="md-default-theme">
-                    <md-list-item ng-repeat="sidenav in urls">
-                        <md-button ng-href="{{sidenav.url}}" class="md-button md-ink-ripple ng-binding md-primary">
-                            <div flex layout="row" class="ng-binding layout-row flex">
-                                <md-icon ng-style="{color: sidenav.color_icon}" class="material-icons">{{sidenav.icon}}</md-icon>
-                                <span flex class="flex"></span>
-                            </div>
-                        </md-button>
-                    </md-list-item>
-                </md-list>
-            </md-content>
-        </md-sidenav>
-    </div>
+</div>
+<div ng-controller="SideNavController">
+    <md-sidenav md-component-id="left" class="md-sidenav-left">
+        <md-content class="md-default-theme">
+            <md-list role="list" class="md-default-theme">
+                <md-list-item ng-repeat="sidenav in urls">
+                    <md-button ng-href="{{sidenav.url}}" class="md-button md-ink-ripple ng-binding md-primary">
+                        <div flex layout="row" class="ng-binding layout-row flex">
+                            <md-icon ng-style="{color: sidenav.color_icon}" class="material-icons">{{sidenav.icon}}</md-icon>
+                            <span flex class="flex"></span>
+                        </div>
+                    </md-button>
+                </md-list-item>
+            </md-list>
+        </md-content>
+    </md-sidenav>
 </div>
 
 </html>
