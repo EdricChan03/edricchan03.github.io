@@ -128,14 +128,12 @@ Made with Angular Material and Angular-->
         <md-content class="md-default-theme">
             <md-list role="list" class="md-default-theme">
                 <md-list-item ng-repeat="sidenav in urls">
-                    <a ng-href="{{sidenav.url}}">
-                        <md-button class="md-button md-ink-ripple ng-binding md-primary">
-                            <div flex layout="row" class="ng-binding layout-row flex">
-                                <md-icon class="material-icons">{{sidenav.icon}}</md-icon>
-                                <span flex class="flex"></span>
-                            </div>
-                        </md-button>
-                    </a>
+                    <md-button ng-href="{{sidenav.url}}" class="md-button md-ink-ripple ng-binding md-primary">
+                        <div flex layout="row" class="ng-binding layout-row flex">
+                            <md-icon class="material-icons">{{sidenav.icon}}</md-icon>
+                            <span flex class="flex"></span>
+                        </div>
+                    </md-button>
                 </md-list-item>
             </md-list>
         </md-content>
