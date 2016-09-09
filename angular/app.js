@@ -54,7 +54,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
         $mdDialog.show({
             controller: DialogController,
             teplateUrl: 'settings_tmpl.html',
-            parent: anagular.element(document.body),
+            parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
         });
