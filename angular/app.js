@@ -50,6 +50,15 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
             clickOutsideToClose: true,
         });
     };
+    $scope.settings = function (ev) {
+        $mdDialog.show({
+            controller: DialogController,
+            teplateUrl: 'settings_tmpl.html',
+            parent: anagular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose: true,
+        });
+    };
 
     // $mdDialog (end)
     function DialogController($scope, $mdDialog) {
