@@ -74,12 +74,11 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
 
 app.controller('SideNavController', function ($scope) {
     $scope.urls = [
-        { url: 'https://chan4077.github.io', icon: 'home' },
-        { url: 'https://chan4077.github.io/about', icon: 'account_box' },
-        { url: 'https://chan4077.github.io/blog', icon: '' },
-        { url: 'https://chan4077.github.io/media', icon: 'group' },
-        { url: 'https://chan4077.github.io/notes', icon: 'insert_drive_file'},
-        { url: 'https://chan4077.github.io/preferences', icon: 'settings' },
-        { url: 'https://chan4077.github.io/angular', icon: '' }
+        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
+        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account_box' },
+        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: '' },
+        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'group' },
+        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
+        { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: '' }
     ];
 });
