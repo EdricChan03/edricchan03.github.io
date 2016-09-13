@@ -33,6 +33,15 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
         originatorEv = ev;
         $mdOpenMenu(ev);
     };
+    // Menu ngRepeat
+    $scope.menu = [
+        { text: 'What\'s New', icon: 'new_releases', onclick: 'whats_new($event)'},
+        { text: 'Settings', icon: 'settings', onclick: 'settings($event)'},
+        { text: 'Report A Problem', icon: 'report_problem', onclick: ''},
+        { text: 'Submit Bug Report', icon: 'bug_report', onclick: ''}
+    ];
+    // End ngRepeat
+
     // Initialize switches
     $scope.switch = {
         form_debug: false,
@@ -58,6 +67,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
     };
 
     // $mdDialog (end)
+    
     function DialogController($scope, $mdDialog) {
         $scope.hide = function () {
             $mdDialog.hide();
@@ -71,12 +81,12 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
 
 app.controller('SideNavController', function ($scope) {
     $scope.top = [
-        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
-        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account_box' },
-        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: '' },
-        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'group' },
-        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
+        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home', class: 'material-icons' },
+        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account_box', class: 'material-icons' },
+        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: '', class: '' },
+        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'group', class: 'material-icons' },
+        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings', class: 'material-icons' },
         { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: '' },
-        { url: 'https://chan4077.github.io/Chan4077/chan4077.github.io', title: 'Project Page', icon: '' }
+        { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: '' }
     ];
 });

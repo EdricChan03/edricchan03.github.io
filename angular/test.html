@@ -45,28 +45,10 @@ Made with Angular Material and Angular-->
                     <md-icon class="material-icons">more_vert</md-icon>
                 </md-button>
                 <md-menu-content>
-                    <md-menu-item>
-                        <md-button ng-click="whats_new($event)">
-                            <md-icon class="material-icons" md-menu-align-target>new_releases</md-icon>
-                            What's New
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="settings($event)">
-                            <md-icon class="material-icons" md-menu-align-target>settings</md-icon>
-                            Settings
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="">
-                            <md-icon class="material-icons" md-menu-align-target>report_problem</md-icon>
-                            Report A Problem
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="">
-                            <md-icon class="material-icons" md-menu-align-target>bug_report</md-icon>
-                            Submit Bug Report
+                    <md-menu-item ng-repeat="menuitem in menu">
+                        <md-button ng-click="{{ menuitem.onclick }}">
+                            <md-icon class="material-icons" md-menu-align-target>{{ menuitem.icon }}</md-icon>
+                            {{ menuitem.text }}
                         </md-button>
                     </md-menu-item>
                 </md-menu-content>
@@ -127,7 +109,7 @@ Made with Angular Material and Angular-->
         <md-content class="md-default-theme">
             <md-list>
                 <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}">
-                    <md-icon aria-label="{{url.title}}" class="material-icons">{{ url.icon }}</md-icon>
+                    <md-icon aria-label="{{url.title}}" ng-class="{{ url.class }}">{{ url.icon }}</md-icon>
                     <div class="md-list-item-text">
                         <span class="md-body-2">{{url.title}}</span>
                     </div>
