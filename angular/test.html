@@ -104,8 +104,9 @@ Made with Angular Material and Angular-->
         </div>
     </md-content>
 </div>
+<!--Sidenav-->
 <div ng-controller="SideNavController">
-    <md-sidenav md-component-id="left" class="md-sidenav-left">
+    <md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-md')">
         <md-content class="md-default-theme">
             <md-list>
                 <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}">
