@@ -126,7 +126,7 @@ Made with Angular Material and Angular-->
     <md-sidenav md-component-id="left" class="md-sidenav-left">
         <md-content class="md-default-theme">
             <md-list>
-                <md-list-item class="md-2-line" ng-repeat="url in urls" role="link" ng-href="{{ url.url }}">
+                <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}">
                     <md-icon aria-label="{{url.title}}" class="material-icons">{{ url.icon }}</md-icon>
                     <div class="md-list-item-text">
                         <span class="md-body-2">{{url.title}}</span>

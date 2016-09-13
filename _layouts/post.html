@@ -3,8 +3,8 @@
     <title>Chan4077.Github.io's Blog</title>
     <!--Import Everything-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.yellow-cyan.min.css">
-    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.yellow-cyan.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <link rel="stylesheet" href="/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Favicon-->
@@ -19,8 +19,15 @@
 </div>
 
 
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" onclick="back()"><i class="material-icons">arrow_back</i>Back</button>
-
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" onclick="back()" id="back"><i class="material-icons">arrow_back</i>Back</button>
+    <div class="mdl-tooltip" data-mdl-for="back">
+        Go Back
+    </div>
+    <!--Snackbar-->
+    <div class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action"></button>
+    </div>
 <script>
     function back() {
         var notification = document.querySelector('.mdl-js-snackbar');
