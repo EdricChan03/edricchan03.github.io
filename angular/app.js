@@ -9,9 +9,6 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
     };
-    $scope.openRightMenu = function () {
-        $mdSidenav('right').toggle();
-    };
     $scope.oriFeedback = {
         name: "",
         email: "",
