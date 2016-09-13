@@ -16,8 +16,10 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
     };
     // Declare a variable called oriFeedback
     var oriFeedback = angular.copy($scope.oriFeedback);
+
     // On initial, set feedback to original
     $scope.feedback = angular.copy(oriFeedback);
+
     // Reset form
     $scope.reset = function () {
         $scope.feedback = angular.copy(oriFeedback);
@@ -26,6 +28,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
         // Reset validation errors
         $scope.feedbackbeta.$setUntouched();
     };
+
     // More menu
     var originatorEv;
 
@@ -33,12 +36,13 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
         originatorEv = ev;
         $mdOpenMenu(ev);
     };
+
     // Menu ngRepeat
     $scope.menu = [
-        { text: 'What\'s New', icon: 'new_releases', onclick: 'whats_new($event)'},
-        { text: 'Settings', icon: 'settings', onclick: 'settings($event)'},
-        { text: 'Report A Problem', icon: 'report_problem', onclick: ''},
-        { text: 'Submit Bug Report', icon: 'bug_report', onclick: ''}
+        { text: 'What\'s New', icon: 'new_releases', onclick: 'whats_new($event)' },
+        { text: 'Settings', icon: 'settings', onclick: 'settings($event)' },
+        { text: 'Report A Problem', icon: 'report_problem', onclick: '' },
+        { text: 'Submit Bug Report', icon: 'bug_report', onclick: '' }
     ];
     // End ngRepeat
 
@@ -67,7 +71,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog) {
     };
 
     // $mdDialog (end)
-    
+
     function DialogController($scope, $mdDialog) {
         $scope.hide = function () {
             $mdDialog.hide();
