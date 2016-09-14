@@ -50,10 +50,28 @@ Made with Angular Material and Angular-->
                     <md-icon class="material-icons">more_vert</md-icon>
                 </md-button>
                 <md-menu-content>
-                    <md-menu-item ng-repeat="menuitem in menu" ng-click="menuitem.onclick">
-                        <md-button>
-                            <md-icon class="material-icons" md-menu-align-target>{{ menuitem.icon }}</md-icon>
-                            {{ menuitem.text }}
+                    <md-menu-item>
+                        <md-button ng-click="whats_new($event)">
+                            <md-icon class="material-icons" md-menu-align-target>whats_new</md-icon>
+                            What's New
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button ng-click="settings($event)">
+                            <md-icon class="material-icons" md-menu-align-target>settings</md-icon>
+                            Settings
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button ng-click="">
+                            <md-icon class="material-icons" md-menu-align-target>report_problem</md-icon>
+                            Report A Problem
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button ng-click="about_site()">
+                            <md-icon class="material-icons" md-menu-align-target>help</md-icon>
+                            About This Site
                         </md-button>
                     </md-menu-item>
                 </md-menu-content>
@@ -111,24 +129,25 @@ Made with Angular Material and Angular-->
 </div>
 <!--Sidenav-->
 <div ng-controller="SideNavController">
-    <md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-md')">
+    <md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4">
         <md-content class="md-default-theme">
             <md-list>
-                <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}">
+                <md-list-item ng-repeat="url in top" role="link" ng-href="{{ url.url }}">
                     <md-icon aria-label="{{url.title}}" ng-class="{{ url.class }}">{{ url.icon }}</md-icon>
                     <div class="md-list-item-text">
                         <span class="md-body-2">{{url.title}}</span>
                     </div>
                 </md-list-item>
-                <!--
+
                 <md-divider></md-divider>
-                <md-list-item class="md-2-line" ng-repeat="item in admin" role="link" ng-click="toggleSidenav('left')">
-                    <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
+                <md-subheader>Other</md-subheader>
+                <md-list-item class="md-2-line" ng-repeat="url in other" role="link">
+                    <md-icon aria-label="{{url.title}}" ng-class="{{url.class}}">{{url.icon}}</md-icon>
                     <div class="md-list-item-text">
-                        <span class="md-body-2">{{item.title}}</span>
+                        <span class="md-body-2">{{url.title}}</span>
                     </div>
                 </md-list-item>
-                -->
+
             </md-list>
         </md-content>
     </md-sidenav>
