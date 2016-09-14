@@ -50,8 +50,8 @@ Made with Angular Material and Angular-->
                     <md-icon class="material-icons">more_vert</md-icon>
                 </md-button>
                 <md-menu-content>
-                    <md-menu-item ng-repeat="menuitem in menu">
-                        <md-button ng-click="{{ menuitem.onclick }}">
+                    <md-menu-item ng-repeat="menuitem in menu" ng-click="menuitem.onclick">
+                        <md-button>
                             <md-icon class="material-icons" md-menu-align-target>{{ menuitem.icon }}</md-icon>
                             {{ menuitem.text }}
                         </md-button>
