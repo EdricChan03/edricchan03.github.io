@@ -4,6 +4,6 @@
     background: #F2F2F2;
     padding: 20px;
 };
-.formIcons {
+md-input-container:not(.md-input-invalid) > md-icon.formIcons {
     color: blue;
 };
