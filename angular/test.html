@@ -86,21 +86,21 @@ Made with Angular Material and Angular-->
             <md-input-container>
                 <label>Name</label>
                 <input name="name" type="text" ng-model="feedback.name" md-autofocus required>
-                <div ng-messages="feedbackbeta.name.$error" ng-show="feedbackbeta.name.$touched">
+                <div ng-messages="feedbackbeta.name.$error">
                     <div ng-message="required">This is required</div>
                 </div>
             </md-input-container>
             <md-input-container>
                 <label>Email</label>
                 <input name="email" type="email" ng-model="feedback.email" required>
-                <div ng-messages="feedbackbeta.email.$error" ng-show="feedbackbeta.email.$touched">
+                <div ng-messages="feedbackbeta.email.$error">
                     <div ng-message="email">Please input a valid email address.</div>
                 </div>
             </md-input-container>
             <md-input-container>
                 <label>Feedback</label>
                 <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150"></textarea>
-                <div ng-messages="feedback.sendFeedback.$error" ng-show="feedbackbeta.sendFeedback.$touched">
+                <div ng-messages="feedback.sendFeedback.$error">
                     <div ng-message="required">This is required</div>
                     <div ng-message="md-maxlength">Your feedback is too long.</div>
                 </div>
