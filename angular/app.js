@@ -54,10 +54,26 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
 
         last = angular.extend({}, current);
     }
- $scope.showActionToast = function() {
+ $scope.submitForm = function() {
     var pinTo = $scope.getToastPosition();
     var toast = $mdToast.simple()
       .textContent('Form submitted')
+      .action('UNDO')
+      .highlightAction(true)
+      .highlightClass('md-accent')// Accent is used by default, this just demonstrates the usage.
+      .position(pinTo);
+
+    $mdToast.show(toast).then(function(response) {
+      if ( response == 'ok' ) {
+        alert('You clicked the \'UNDO\' action.');
+        console.info('User clicked Undo.');
+      }
+    });
+  };
+ $scope.resetForm = function() {
+    var pinTo = $scope.getToastPosition();
+    var toast = $mdToast.simple()
+      .textContent('Form reset')
       .action('UNDO')
       .highlightAction(true)
       .highlightClass('md-accent')// Accent is used by default, this just demonstrates the usage.
