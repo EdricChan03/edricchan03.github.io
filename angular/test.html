@@ -105,7 +105,7 @@ Made with Angular Material and Angular-->
                     <div ng-message="md-maxlength">Your feedback is too long.</div>
                 </div>
             </md-input-container>
-            <md-button ng-disabled="feedbackbeta.$invalid" class="md-primary" type="submit">
+            <md-button ng-disabled="feedbackbeta.$invalid" class="md-primary" type="submit" ng-click="formSubmit()">
                 <md-tooltip>
                     Submit
                 </md-tooltip>
