@@ -4,6 +4,7 @@ app.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('green')
         .accentPalette('purple');
+    console.info('Successfully initialized!');
 });
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
     $scope.openLeftMenu = function () {
@@ -65,7 +66,6 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
 
     $mdToast.show(toast).then(function(response) {
       if ( response == 'ok' ) {
-        alert('You clicked the \'UNDO\' action.');
         console.info('User clicked Undo.');
       }
     });
