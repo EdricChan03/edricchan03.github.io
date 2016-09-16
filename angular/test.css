@@ -1,7 +1,7 @@
 /* Form */
 .form {
     border-radius: 5px;
-    background: #F2F2F2;
+    background: #000000;
     padding: 20px;
 };
 md-input-container:not(.md-input-invalid) > md-icon.formIcons {
