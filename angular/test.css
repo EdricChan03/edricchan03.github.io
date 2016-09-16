@@ -1,3 +1,6 @@
-md-input-container:not(.md-input-invalid) > md-icon.formIcons {
+.blue {
     color: blue;
-};
+}
+.orange {
+    color: orange;
+}
