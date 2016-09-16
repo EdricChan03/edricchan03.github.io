@@ -61,12 +61,12 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
       .textContent('Form submitted')
       .action('UNDO')
       .highlightAction(true)
-      .highlightClass('md-accent')// Accent is used by default, this just demonstrates the usage.
       .position(pinTo);
 
     $mdToast.show(toast).then(function(response) {
       if ( response == 'ok' ) {
         console.info('User clicked Undo.');
+        console.log('Successfully undone');
       }
     });
   };
@@ -76,13 +76,12 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
       .textContent('Form reset')
       .action('UNDO')
       .highlightAction(true)
-      .highlightClass('md-accent')// Accent is used by default, this just demonstrates the usage.
       .position(pinTo);
 
     $mdToast.show(toast).then(function(response) {
       if ( response == 'ok' ) {
-        alert('You clicked the \'UNDO\' action.');
         console.info('User clicked Undo.');
+        console.log('Successfully undone');
       }
     });
   };
