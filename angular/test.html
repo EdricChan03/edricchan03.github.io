@@ -83,14 +83,14 @@
             <br>
             <md-input-container class="md-icon-float md-block">
                 <label>Name</label>
-                <md-icon class="material-icons">person</md-icon>
+                <md-icon class="material-icons formIcons">person</md-icon>
                 <input name="name" type="text" ng-model="feedback.name" md-autofocus required>
                 <div ng-messages="feedbackbeta.name.$error">
                     <div ng-message="required">This is required</div>
                 </div>
             </md-input-container>
             <md-input-container class="md-icon-float md-block">
-                <md-icon class="material-icons">email</md-icon>
+                <md-icon class="material-icons formIcons">email</md-icon>
                 <label>Email</label>
                 <input name="email" type="email" ng-model="feedback.email" required>
                 <div ng-messages="feedbackbeta.email.$error">
@@ -99,7 +99,7 @@
             </md-input-container>
             <md-input-container>
                 <label>Feedback</label>
-                <md-icon class="material-icons">feedback</md-icon>
+                <md-icon class="material-icons formIcons">feedback</md-icon>
                 <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150"></textarea>
                 <div ng-messages="feedback.sendFeedback.$error">
                     <div ng-message="required">This is required</div>
