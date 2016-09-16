@@ -55,7 +55,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         last = angular.extend({}, current);
     }
     $scope.formSubmit = function () {
-        var pinTo = $scope.toastPosition();
+        var pinTo = $scope.getToastPosition();
         $mdToast.show(
             $mdToast.simple()
                 .textContent('Form was submitted!')
