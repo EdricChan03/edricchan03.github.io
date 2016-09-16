@@ -47,65 +47,61 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
 
     $scope.formSubmit = function () {
         var pinTo = $scope.getToastPosition();
- $mdToast.show(
-     $mdToast.simple()
-            .textContent('Form was submitted!')
-            .hideDelay(3000)
-            .position(pinTo)
-)
-        $mdToast.show(toast).then(function (response) {
-            if (response == 'ok') {
-                alert('You clicked the \'UNDO\' action.');
-            }
+        $mdToast.show(
+            $mdToast.simple()
+                .textContent('Form was submitted!')
+                .hideDelay(3000)
+                .position(pinTo)
+        );
+    };
+
+    // More menu
+    var originatorEv;
+
+    $scope.openMenu = function ($mdOpenMenu, ev) {
+        originatorEv = ev;
+        $mdOpenMenu(ev);
+    };
+
+    // Initialize switches
+    $scope.switch = {
+        form_debug: false,
+    };
+    // $mdDialog (start)
+    $scope.whats_new = function (ev) {
+        $mdDialog.show({
+            controller: DialogController,
+            templateUrl: 'whats_new_tmpl.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose: true,
         });
+    };
+    $scope.settings = function (ev) {
+        $mdDialog.show({
+            controller: DialogController,
+            teplateUrl: 'settings_tmpl.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose: true,
+        });
+    };
 
-        // More menu
-        var originatorEv;
+    // $mdDialog (end)
 
-        $scope.openMenu = function ($mdOpenMenu, ev) {
-            originatorEv = ev;
-            $mdOpenMenu(ev);
+    $scope.about_site = function () {
+        window.location.href = "https://chan4077.github.io/about#angular";
+    };
+    function DialogController($scope, $mdDialog) {
+        $scope.hide = function () {
+            $mdDialog.hide();
         };
+        $scope.cancel = function () {
+            $mdDialog.cancel();
+        };
+    };
 
-        // Initialize switches
-        $scope.switch = {
-            form_debug: false,
-        };
-        // $mdDialog (start)
-        $scope.whats_new = function (ev) {
-            $mdDialog.show({
-                controller: DialogController,
-                templateUrl: 'whats_new_tmpl.html',
-                parent: angular.element(document.body),
-                targetEvent: ev,
-                clickOutsideToClose: true,
-            });
-        };
-        $scope.settings = function (ev) {
-            $mdDialog.show({
-                controller: DialogController,
-                teplateUrl: 'settings_tmpl.html',
-                parent: angular.element(document.body),
-                targetEvent: ev,
-                clickOutsideToClose: true,
-            });
-        };
-
-        // $mdDialog (end)
-
-        $scope.about_site = function () {
-            window.location.href = "https://chan4077.github.io/about#angular";
-        };
-        function DialogController($scope, $mdDialog) {
-            $scope.hide = function () {
-                $mdDialog.hide();
-            };
-            $scope.cancel = function () {
-                $mdDialog.cancel();
-            };
-        };
-
-    });
+});
 
 app.controller('SideNavController', function ($scope) {
     $scope.top = [
