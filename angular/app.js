@@ -58,7 +58,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
  $scope.submitForm = function() {
     var pinTo = $scope.getToastPosition();
     var toast = $mdToast.simple()
-      .textContent('Form submitted')
+      .textContent('Form was submitted')
       .action('UNDO')
       .highlightAction(true)
       .position(pinTo);
@@ -73,7 +73,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
  $scope.resetForm = function() {
     var pinTo = $scope.getToastPosition();
     var toast = $mdToast.simple()
-      .textContent('Form reset')
+      .textContent('Form was reset')
       .action('UNDO')
       .highlightAction(true)
       .position(pinTo);
@@ -135,7 +135,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
 
 });
 
-app.controller('SideNavController', function ($scope) {
+app.controller('SideNavController', function ($scope, $mdSidenav) {
     $scope.top = [
         { url: 'https://chan4077.github.io', title: 'Main', icon: 'home', class: 'material-icons' },
         { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account_box', class: 'material-icons' },
@@ -150,4 +150,7 @@ app.controller('SideNavController', function ($scope) {
         { url: '', title: 'Get Help', icon: 'help' }
 
     ]
+    $scope.openLeftMenu = function() {
+        $mdSidenav('left').toggle();
+    }
 });
