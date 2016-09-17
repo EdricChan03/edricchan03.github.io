@@ -100,7 +100,7 @@
             <md-input-container>
                 <label>Feedback</label>
                 <md-icon class="material-icons md-dark">feedback</md-icon>
-                <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150"></textarea>
+                <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="5"></textarea>
                 <div ng-messages="feedback.sendFeedback.$error">
                     <div ng-message="required">This is required</div>
                     <div ng-message="md-maxlength">Your feedback is too long.</div>
