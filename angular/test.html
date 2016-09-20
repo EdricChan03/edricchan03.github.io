@@ -25,134 +25,148 @@
     <!--Import Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
-    <!--mdToolbar-->
-    <md-toolbar class="yellow" md-scroll-shrink>
-        <div class="md-toolbar-tools">
-            <md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
-                <md-tooltip>
-                    Side Navigation
-                </md-tooltip>
-                <md-icon class="material-icons">menu</md-icon>
-            </md-button>
-            <h2 class="md-flex">
-                Chan4077.Github.io BETA
-            </h2>
-            <span flex></span>
-            <!--mdMenu-->
-            <md-menu>
-                <md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
+
+<body>
+    <div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
+        <!--mdToolbar-->
+        <md-toolbar class="yellow" md-scroll-shrink>
+            <div class="md-toolbar-tools">
+                <md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
                     <md-tooltip>
-                        More
+                        Side Navigation
                     </md-tooltip>
-                    <md-icon class="material-icons">more_vert</md-icon>
+                    <md-icon class="material-icons">menu</md-icon>
                 </md-button>
-                <md-menu-content>
-                    <md-menu-item>
-                        <md-button ng-click="whats_new($event)">
-                            <md-icon class="material-icons" md-menu-align-target>new_releases</md-icon>
-                            What's New
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="settings($event)">
-                            <md-icon class="material-icons" md-menu-align-target>settings</md-icon>
-                            Settings
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="">
-                            <md-icon class="material-icons" md-menu-align-target>report_problem</md-icon>
-                            Report A Problem
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="about_site()">
-                            <md-icon class="material-icons" md-menu-align-target>help</md-icon>
-                            About This Site
-                        </md-button>
-                    </md-menu-item>
-                </md-menu-content>
-            </md-menu>
-    </md-toolbar>
-    </div>
-    <md-content layout="column" flex class="md-padding" layout-padding layout-gt-sm="row">
-        <h2>I would like to hear your feedback! Enter it below!</h2>
-        <form name="feedbackbeta" class="form">
-            <label style="color:red;">* Required</label>
-            <br>
-            <md-input-container class="md-icon-float md-block">
-                <label>Name</label>
-                <md-icon class="material-icons md-dark">person</md-icon>
-                <input name="name" type="text" ng-model="feedback.name" md-autofocus required>
-                <div ng-messages="feedbackbeta.name.$error">
-                    <div ng-message="required">This is required</div>
-                </div>
-            </md-input-container>
-            <md-input-container class="md-icon-float md-block">
-                <md-icon class="material-icons md-dark">email</md-icon>
-                <label>Email</label>
-                <input name="email" type="email" ng-model="feedback.email" required>
-                <div ng-messages="feedbackbeta.email.$error">
-                    <div ng-message="email">Please input a valid email address.</div>
-                </div>
-            </md-input-container>
-            <md-input-container>
-                <label>Feedback</label>
-                <md-icon class="material-icons md-dark">feedback</md-icon>
-                <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="5"></textarea>
-                <div ng-messages="feedback.sendFeedback.$error">
-                    <div ng-message="required">This is required</div>
-                    <div ng-message="md-maxlength">Your feedback is too long.</div>
-                </div>
-            </md-input-container>
-            <br>
-            <md-button ng-disabled="feedbackbeta.$invalid" class="md-primary" type="submit" ng-click="submitForm()">
-                <md-tooltip>
-                    Submit
-                </md-tooltip>
-                Submit
-            </md-button>
-            <md-button class="md-warn" ng-click="reset(); resetForm()">
-                <md-tooltip>
-                    Reset Form
-                </md-tooltip>
-                Reset
-            </md-button>
-        </form>
-        <md-switch aria-label="Enable Form Debug" ng-model="switch.form_debug">Show Form Debug</md-switch>
-        <div class="form_debug" ng-show="switch.form_debug">
-            feedback.name = <code>{{feedback.name}}</code>
-            <br> feedback.email = <code>{{feedback.email}}</code>
-            <br> feedback.sendFeedback = <code>{{feedback.sendFeedback}}</code>
-            <br> feedback.$invalid = <code>{{feedbackbeta.$invalid}}</code>
+                <h2 class="md-flex">
+                    Chan4077.Github.io BETA
+                </h2>
+                <span flex></span>
+                <!--mdMenu-->
+                <md-menu>
+                    <md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
+                        <md-tooltip>
+                            More
+                        </md-tooltip>
+                        <md-icon class="material-icons">more_vert</md-icon>
+                    </md-button>
+                    <md-menu-content>
+                        <md-menu-item>
+                            <md-button ng-click="whats_new($event)">
+                                <md-icon class="material-icons" md-menu-align-target>new_releases</md-icon>
+                                What's New
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="settings($event)">
+                                <md-icon class="material-icons" md-menu-align-target>settings</md-icon>
+                                Settings
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="">
+                                <md-icon class="material-icons" md-menu-align-target>report_problem</md-icon>
+                                Report A Problem
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="about_site()">
+                                <md-icon class="material-icons" md-menu-align-target>help</md-icon>
+                                About This Site
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+        </md-toolbar>
         </div>
-    </md-content>
-</div>
-<!--Sidenav-->
-<div ng-controller="SideNavController">
-    <md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4">
-        <md-content class="md-default-theme">
-            <md-list>
-                <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}">
-                    <md-icon aria-label="{{url.title}}" ng-class="{{ url.class }}">{{ url.icon }}</md-icon>
-                    <div class="md-list-item-text">
-                        <span class="md-body-2">{{url.title}}</span>
+        <md-content layout="column" flex class="md-padding" layout-padding layout-gt-sm="row">
+            <h2>I would like to hear your feedback! Enter it below!</h2>
+            <form name="feedbackbeta" class="form">
+                <label style="color:red;">* Required</label>
+                <br>
+                <md-input-container class="md-icon-float md-block">
+                    <label>Name</label>
+                    <md-icon class="material-icons md-dark">person</md-icon>
+                    <input name="name" type="text" ng-model="feedback.name" md-autofocus required>
+                    <div ng-messages="feedbackbeta.name.$error">
+                        <div ng-message="required">This is required</div>
                     </div>
-                </md-list-item>
-
-                <md-divider></md-divider>
-                <md-subheader>Other</md-subheader>
-                <md-list-item class="md-2-line" ng-repeat="url in other" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
-                    <md-icon aria-label="{{url.title}}" ng-class="{{url.class}}">{{url.icon}}</md-icon>
-                    <div class="md-list-item-text">
-                        <span class="md-body-2">{{url.title}}</span>
+                </md-input-container>
+                <md-input-container class="md-icon-float md-block">
+                    <md-icon class="material-icons md-dark">email</md-icon>
+                    <label>Email</label>
+                    <input name="email" type="email" ng-model="feedback.email" required>
+                    <div ng-messages="feedbackbeta.email.$error">
+                        <div ng-message="email">Please input a valid email address.</div>
                     </div>
-                </md-list-item>
-
-            </md-list>
+                </md-input-container>
+                <md-input-container>
+                    <label>Feedback</label>
+                    <md-icon class="material-icons md-dark">feedback</md-icon>
+                    <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="5"></textarea>
+                    <div ng-messages="feedback.sendFeedback.$error">
+                        <div ng-message="required">This is required</div>
+                        <div ng-message="md-maxlength">Your feedback is too long.</div>
+                    </div>
+                </md-input-container>
+                <br>
+                <md-button ng-disabled="feedbackbeta.$invalid" class="md-primary" type="submit" ng-click="submitForm()">
+                    <md-tooltip>
+                        Submit
+                    </md-tooltip>
+                    Submit
+                </md-button>
+                <md-button class="md-warn" ng-click="reset(); resetForm()">
+                    <md-tooltip>
+                        Reset Form
+                    </md-tooltip>
+                    Reset
+                </md-button>
+            </form>
+            <md-switch aria-label="Enable Form Debug" ng-model="switch.form_debug">Show Form Debug</md-switch>
+            <div class="form_debug" ng-show="switch.form_debug">
+                feedback.name = <code>{{feedback.name}}</code>
+                <br> feedback.email = <code>{{feedback.email}}</code>
+                <br> feedback.sendFeedback = <code>{{feedback.sendFeedback}}</code>
+                <br> feedback.$invalid = <code>{{feedbackbeta.$invalid}}</code>
+            </div>
         </md-content>
-    </md-sidenav>
-</div>
+    </div>
+    <!--Sidenav-->
+    <div ng-controller="SideNavController">
+        <md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4">
+            <md-content class="md-default-theme">
+                <md-list>
+                    <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}">
+                        <md-icon aria-label="{{url.title}}" ng-class="{{ url.class }}">{{ url.icon }}</md-icon>
+                        <div class="md-list-item-text">
+                            <span class="md-body-2">{{url.title}}</span>
+                        </div>
+                    </md-list-item>
+
+                    <md-divider></md-divider>
+                    <md-subheader>Other</md-subheader>
+                    <md-list-item class="md-2-line" ng-repeat="url in other" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
+                        <md-icon aria-label="{{url.title}}" ng-class="{{url.class}}">{{url.icon}}</md-icon>
+                        <div class="md-list-item-text">
+                            <span class="md-body-2">{{url.title}}</span>
+                        </div>
+                    </md-list-item>
+
+                </md-list>
+            </md-content>
+        </md-sidenav>
+    </div>
+</body>
+<!--Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82448435-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </html>
