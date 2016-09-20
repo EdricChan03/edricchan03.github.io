@@ -36,55 +36,36 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         left: false,
         right: true
     };
-    $scope.toastPosition = angular.extend({}, last);
-    $scope.getToastPosition = function () {
-        sanitizePosition();
+    $scope.submitForm = function () {
+        var toast = $mdToast.simple()
+            .textContent('Form was submitted')
+            .action('UNDO')
+            .highlightAction(true)
+            .position('top right')
+            .highlightDelay(3000);
 
-        return Object.keys($scope.toastPosition)
-            .filter(function (pos) { return $scope.toastPosition[pos]; })
-            .join(' ');
+        $mdToast.show(toast).then(function (response) {
+            if (response == 'ok') {
+                console.info('User clicked Undo.');
+                console.log('Successfully undone');
+            }
+        });
     };
+    $scope.resetForm = function () {
+        var toast = $mdToast.simple()
+            .textContent('Form was reset')
+            .action('UNDO')
+            .highlightAction(true)
+            .position('top right')
+            .highlightDelay(3000);
 
-    function sanitizePosition() {
-        var current = $scope.toastPosition;
-
-        if (current.bottom && last.top) current.top = false;
-        if (current.top && last.bottom) current.bottom = false;
-        if (current.right && last.left) current.left = false;
-        if (current.left && last.right) current.right = false;
-
-        last = angular.extend({}, current);
-    }
- $scope.submitForm = function() {
-    var pinTo = $scope.getToastPosition();
-    var toast = $mdToast.simple()
-      .textContent('Form was submitted')
-      .action('UNDO')
-      .highlightAction(true)
-      .position(pinTo);
-
-    $mdToast.show(toast).then(function(response) {
-      if ( response == 'ok' ) {
-        console.info('User clicked Undo.');
-        console.log('Successfully undone');
-      }
-    });
-  };
- $scope.resetForm = function() {
-    var pinTo = $scope.getToastPosition();
-    var toast = $mdToast.simple()
-      .textContent('Form was reset')
-      .action('UNDO')
-      .highlightAction(true)
-      .position(pinTo);
-
-    $mdToast.show(toast).then(function(response) {
-      if ( response == 'ok' ) {
-        console.info('User clicked Undo.');
-        console.log('Successfully undone');
-      }
-    });
-  };
+        $mdToast.show(toast).then(function (response) {
+            if (response == 'ok') {
+                console.info('User clicked Undo.');
+                console.log('Successfully undone');
+            }
+        });
+    };
 
 
     // More menu
@@ -150,7 +131,7 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
         { url: '', title: 'Get Help', icon: 'help' }
 
     ]
-    $scope.openLeftMenu = function() {
+    $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
     }
 });
