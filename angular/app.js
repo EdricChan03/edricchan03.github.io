@@ -42,7 +42,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             .action('UNDO')
             .highlightAction(true)
             .position('top right')
-            .highlightDelay(3000);
+            .hideDelay(3000);
 
         $mdToast.show(toast).then(function (response) {
             if (response == 'ok') {
@@ -57,7 +57,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             .action('UNDO')
             .highlightAction(true)
             .position('top right')
-            .highlightDelay(3000);
+            .hideDelay(3000);
 
         $mdToast.show(toast).then(function (response) {
             if (response == 'ok') {
