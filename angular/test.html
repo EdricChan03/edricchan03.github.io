@@ -47,30 +47,30 @@
                         <md-tooltip>
                             More
                         </md-tooltip>
-                        <md-icon class="material-icons">more_vert</md-icon>
+                        <md-icon md-svg-icon="dots-vertical"></md-icon>
                     </md-button>
                     <md-menu-content>
                         <md-menu-item>
                             <md-button ng-click="whats_new($event)">
-                                <md-icon class="material-icons" md-menu-align-target>new_releases</md-icon>
+                                <md-icon md-svg-icon="alert-octagon" md-menu-align-target></md-icon>
                                 What's New
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="settings($event)">
-                                <md-icon class="material-icons" md-menu-align-target>settings</md-icon>
+                                <md-icon md-svg-icon="settings" md-menu-align-target></md-icon>
                                 Settings
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="">
-                                <md-icon class="material-icons" md-menu-align-target>report_problem</md-icon>
+                                <md-icon md-svg-icon="alert" md-menu-align-target></md-icon>
                                 Report A Problem
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="about_site()">
-                                <md-icon class="material-icons" md-menu-align-target>help</md-icon>
+                                <md-icon md-svg-icon="help-circle-outline" md-menu-align-target></md-icon>
                                 About This Site
                             </md-button>
                         </md-menu-item>
@@ -85,14 +85,14 @@
                 <br>
                 <md-input-container class="md-icon-float md-block">
                     <label>Name</label>
-                    <md-icon class="material-icons md-dark">person</md-icon>
+                    <md-icon class="mdi-dark">person</md-icon>
                     <input name="name" type="text" ng-model="feedback.name" md-autofocus required>
                     <div ng-messages="feedbackbeta.name.$error">
                         <div ng-message="required">This is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-icon-float md-block">
-                    <md-icon class="material-icons md-dark">email</md-icon>
+                    <md-icon class="mdi-dark">email</md-icon>
                     <label>Email</label>
                     <input name="email" type="email" ng-model="feedback.email" required>
                     <div ng-messages="feedbackbeta.email.$error">
@@ -101,7 +101,7 @@
                 </md-input-container>
                 <md-input-container>
                     <label>Feedback</label>
-                    <md-icon class="material-icons md-dark">feedback</md-icon>
+                    <md-icon md-svg-icon="message-alert" class="mdi-dark"></md-icon>
                     <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="5"></textarea>
                     <div ng-messages="feedback.sendFeedback.$error">
                         <div ng-message="required">This is required</div>
