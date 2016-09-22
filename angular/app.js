@@ -5,7 +5,7 @@ app.config(function ($mdThemingProvider, $mdIconProvider) {
         .primaryPalette('green')
         .accentPalette('purple');
     $mdIconProvider
-        .defaultIconSet('/mdi.svg');
+        .defaultIconSet('/angular/mdi.svg');
     console.info('Successfully initialized!');
 });
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
