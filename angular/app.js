@@ -120,17 +120,17 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
 
 app.controller('SideNavController', function ($scope, $mdSidenav) {
     $scope.top = [
-        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home', class: 'material-icons' },
-        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account_box', class: 'material-icons' },
-        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: '', class: '' },
-        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'group', class: 'material-icons' },
-        { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: '' },
+        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home'},
+        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box'},
+        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger'},
+        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus'},
+        { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: 'angular' },
     ];
     $scope.other = [
-        { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: '' },
-        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings', class: 'material-icons' },
-        { url: '', title: 'Submit Feedback', icon: 'feedback' },
-        { url: '', title: 'Get Help', icon: 'help' }
+        { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
+        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings'},
+        { url: '', title: 'Submit Feedback', icon: 'message-alert' },
+        { url: '', title: 'Get Help', icon: 'help-circle' }
 
     ]
     $scope.openLeftMenu = function () {

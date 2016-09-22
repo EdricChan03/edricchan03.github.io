@@ -137,7 +137,7 @@
             <md-content class="md-default-theme">
                 <md-list>
                     <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}">
-                        <md-icon aria-label="{{url.title}}" ng-class="{{ url.class }}">{{ url.icon }}</md-icon>
+                        <md-icon aria-label="{{url.title}}" md-svg-icon="{{ url.icon }}"></md-icon>
                         <div class="md-list-item-text">
                             <span class="md-body-2">{{url.title}}</span>
                         </div>
