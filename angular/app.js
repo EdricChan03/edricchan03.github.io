@@ -1,9 +1,11 @@
 var app = angular.module('testApp', ['ngMaterial']);
 // Config
-app.config(function ($mdThemingProvider) {
+app.config(function ($mdThemingProvider, $mdIconProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('green')
         .accentPalette('purple');
+    $mdIconProvider
+        .defaultIconSet('/mdi.svg');
     console.info('Successfully initialized!');
 });
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
