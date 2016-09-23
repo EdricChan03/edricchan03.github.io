@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>template</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="template">
+            <rect id="Rectangle-2" fill="#F6A623" x="0" y="0" width="24" height="24" rx="2"></rect>
+            <rect id="Rectangle" fill="#FF0000" x="2" y="2" width="20" height="20"></rect>
+            <text id="C" font-family="Roboto-Regular, Roboto" font-size="20" font-weight="normal" fill="#FFFF00">
+                <tspan x="5" y="19">C</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
