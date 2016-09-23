@@ -83,14 +83,14 @@
                 <br>
                 <md-input-container class="md-icon-float md-block">
                     <label>Name</label>
-                    <md-icon class="mdi-dark">person</md-icon>
+                    <md-icon md-svg-icon="account" class="mdi-dark"></md-icon>
                     <input name="name" type="text" ng-model="feedback.name" md-autofocus required>
                     <div ng-messages="feedbackbeta.name.$error">
                         <div ng-message="required">This is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-icon-float md-block">
-                    <md-icon md-svg-icon="" class="mdi-dark">email</md-icon>
+                    <md-icon md-svg-icon="email" class="mdi-dark"></md-icon>
                     <label>Email</label>
                     <input name="email" type="email" ng-model="feedback.email" required>
                     <div ng-messages="feedbackbeta.email.$error">
