@@ -42,7 +42,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             .textContent('Form was submitted')
             .action('UNDO')
             .highlightAction(true)
-            .position('top right')
+            .position('bottom left')
             .hideDelay(3000);
 
         $mdToast.show(toast).then(function (response) {
@@ -58,7 +58,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             .textContent('Form was reset')
             .action('UNDO')
             .highlightAction(true)
-            .position('top right')
+            .position('bottom left')
             .hideDelay(3000);
 
         $mdToast.show(toast).then(function (response) {
