@@ -1,4 +1,4 @@
-var app = angular.module('testApp', ['ngMaterial']);
+var app = angular.module('testApp', ['ngMaterial', 'ngMessages']);
 // Config
 app.config(function ($mdThemingProvider, $mdIconProvider) {
     $mdThemingProvider.theme('default')
