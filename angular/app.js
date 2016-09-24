@@ -32,12 +32,6 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         $scope.feedbackbeta.$setUntouched();
     };
     // Feedback Form ($mdToast)
-    var last = {
-        bottom: false,
-        top: true,
-        left: false,
-        right: true
-    };
     $scope.submitForm = function () {
         var toast = $mdToast.simple()
             .textContent('Form was submitted')
