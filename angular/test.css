@@ -12,4 +12,6 @@ code {
     -webkit-font-smoothing: auto;
     padding: 0.125em 0.35em;
     border-radius: 2px;
+    font-size: 1.4rem;
+    background: rgba(0, 0, 0, 0.065)
 }
