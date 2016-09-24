@@ -2,10 +2,10 @@
     <form ng-cloak>
         <md-toolbar>
             <div class="md-toolbar-tools">
-                <h2>Settings</h2>
+                <h2 aria-label="Settings">Settings</h2>
                 <span flex></span>
                 <md-button class="md-icon-button" ng-click="cancel()">
-                    <md-icon class="material-icons">close</md-icon>
+                    <md-icon md-svg-icon="close" aria-label="close"></md-icon>
                 </md-button>
             </div>
         </md-toolbar>
@@ -17,7 +17,8 @@
         </md-dialog-content>
         <md-dialog-actions layout="row">
             <span flex></span>
-            <md-button ng-click="hide()" class="md-primary">Submit</md-button>
+            <md-button ng-click="hide()" class="md-primary">Cancel</md-button>
+            <md-button ng-click="hide()" class="md-primary">Finished</md-button>
         </md-dialog-actions>
     </form>
 </md-dialog>
