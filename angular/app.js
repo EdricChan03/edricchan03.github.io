@@ -9,6 +9,11 @@ app.config(function ($mdThemingProvider, $mdIconProvider) {
     console.info('Successfully initialized!');
 });
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
+    // Refresh page, direct from server
+    $scope.refreshPage = function () {
+        window.location.reload(true);
+    };
+    // Sidenav
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
     };
@@ -47,6 +52,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             }
         });
     };
+    // Reset Form
     $scope.resetForm = function () {
         var toast = $mdToast.simple()
             .textContent('Form was reset')
