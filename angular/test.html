@@ -148,11 +148,11 @@
                 <md-fab-actions>
                     <div ng-repeat="item in fabitems">
                         <md-button aria-label="{{item.name}}" class="md-fab md-raised md-mini" ng-click="">
-                            <md-tooltip md-direction="left" md-visible="tooltipVisible" md-autohide="false">
+                            <md-tooltip md-direction="left" md-autohide="false">
                                 {{item.name}}
                             </md-tooltip>
 
-                            <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.name}}"></md-icon>
+                            <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.name}}" class="mdi-dark"></md-icon>
                         </md-button>
                     </div>
                 </md-fab-actions>

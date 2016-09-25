@@ -109,7 +109,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
     };
     $scope.fabitems = [
         { item: 'Facebook', icon: 'facebook-box' },
-        { item: 'Twitter', icon: 'Twitter' },
+        { item: 'Twitter', icon: 'twitter-box' },
         { item: 'Google+', icon: 'google-plus' }
     ];
     function DialogController($scope, $mdDialog) {
