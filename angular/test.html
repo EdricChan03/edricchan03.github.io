@@ -137,6 +137,26 @@
                 <br> feedback.sendFeedback = <code>{{feedback.sendFeedback}}</code>
                 <br> feedback.$invalid = <code>{{feedbackbeta.$invalid}}</code>
             </div>
+            <!--FAB Speed Dial-->
+            <md-fab-speed-dial md-open="isOpen" md-direction="top" class="md-scale">
+                <md-fab-trigger>
+                    <md-button aria-label="menu" class="md-fab md-primary">
+                        <md-icon md-svg-icon="share-variant"></md-icon>
+                    </md-button>
+                </md-fab-trigger>
+
+                <md-fab-actions>
+                    <div ng-repeat="item in fabitems">
+                        <md-button aria-label="{{item.name}}" class="md-fab md-raised md-mini" ng-click="">
+                            <md-tooltip md-direction="left" md-visible="tooltipVisible" md-autohide="false">
+                                {{item.name}}
+                            </md-tooltip>
+
+                            <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.name}}"></md-icon>
+                        </md-button>
+                    </div>
+                </md-fab-actions>
+            </md-fab-speed-dial>
         </md-content>
     </div>
     <!--Sidenav-->
