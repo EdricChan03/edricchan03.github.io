@@ -139,7 +139,7 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
     ];
     $scope.made = [
         { url: 'https://materialdesignicons.com', title: 'MaterialDesignIcons', icon: 'vector-square'},
-        { url: 'https://material.angularjs.org/lastest', title: 'Angular Material', icon: 'angular'},
+        { url: 'https://material.angularjs.org/latest', title: 'Angular Material', icon: 'angular'},
         { url: 'https://angularjs.org', title: 'Angular', icon: 'angular'},
         { url: 'https://pages.github.com', title: 'Github Pages', icon: 'github-circle'}
     ]
