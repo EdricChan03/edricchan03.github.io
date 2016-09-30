@@ -2,6 +2,7 @@
 Website @ https://chan4077.github.io
 
 I am trying to use Material Design Lite in this website and there is also [Angular](https://chan4077.github.io/angular).
+There too, is [Angular Material](https://material.angularjs.org/latest)
 
 ## Other Links:
 1. [AngularToDo](https://chan4077.github.io/angular/angulartodo.html)
@@ -13,3 +14,4 @@ I am trying to use Material Design Lite in this website and there is also [Angul
 
 ## Notes:
 Google Analytics is now included in all the pages.
+`LICENSE` now included.
