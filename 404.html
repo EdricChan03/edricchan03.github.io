@@ -1,7 +1,7 @@
---- 
+---
 permalink: /404.html
 ---
-<html ng-app="error">
+<html ng-app="errorApp">
 
 <head>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
@@ -12,7 +12,7 @@ permalink: /404.html
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
   <!-- Angular Material Library -->
   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
-  <script src="/angularJS/404.js"></script>
+  <script src="/js/404.js"></script>
   <link href="favicon.ico" rel="shortcut icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="The 404 page. This is loaded when a URL is not found." />
@@ -38,7 +38,7 @@ permalink: /404.html
         </md-card-title-text>
       </md-card-title>
       <md-card-actions layout="row" layout-align="end center">
-        <md-button onclick="goBack()">Go Back</md-button>
+        <md-button ng-click="goBack()">Go Back</md-button>
         <md-button ng-click="main()">Go Home</md-button>
         <md-button ng-click="about()">About This Page</md-button>
       </md-card-actions>
@@ -52,7 +52,7 @@ permalink: /404.html
       </md-card-header>
       <md-card-title>
         <md-card-title-text>
-          <span class="md-headline">This <a href="https://chan4077.github.io">Website's Commits</a></span>
+          <span class="md-headline">This <a href="https://chan4077.github.io" style="text-decoration: none;">Website's Commits</a></span>
           <span class="md-subhead">Check out the latest commits!</span>
         </md-card-title-text>
       </md-card-title>
@@ -64,9 +64,7 @@ permalink: /404.html
 
 </html>
 <script>
-    function goBack() {
-        window.history.back();
-    };
+
     function debug() {
       console.error('Page does not exist!');
     }

@@ -8,16 +8,22 @@ title: TodoApp
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="/javascripts/todo.js"></script>
-    <link rel="stylesheet" href="todo.css">
+    <script src="/js/todo.js"></script>
+    <link rel="stylesheet" href="/css/todo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="favicon.ico" rel="shortcut icon">
 </head>
 
 <body>
+    <style>
+        .done-true {
+            text-decoration: line-through;
+            color: grey;
+        }
+    </style>
     <h2>Todo</h2>
     <div ng-controller="TodoListController as todoList">
-        <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span> [ <a href="" ng-click="todoList.archive()">archive</a> ]
+        <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span> [ <a href="" ng-click="todoList.archive()">archive</a>        ]
         <ul class="unstyled">
             <li ng-repeat="todo in todoList.todos">
                 <label class="checkbox">
@@ -44,4 +50,5 @@ title: TodoApp
   ga('send', 'pageview');
 
 </script>
+
 </html>
