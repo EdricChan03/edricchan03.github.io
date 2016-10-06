@@ -108,9 +108,9 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         window.location.href = "https://chan4077.github.io/about#angular";
     };
     $scope.fabitems = [
-        { item: 'Facebook', icon: 'facebook-box' },
-        { item: 'Twitter', icon: 'twitter-box' },
-        { item: 'Google+', icon: 'google-plus' }
+        { name: 'Facebook', icon: 'facebook-box' },
+        { name: 'Twitter', icon: 'twitter-box' },
+        { name: 'Google+', icon: 'google-plus' }
     ];
     function DialogController($scope, $mdDialog) {
         $scope.hide = function () {
