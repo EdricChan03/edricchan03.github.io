@@ -11,6 +11,7 @@ title: Angular
     <meta name="description" content="This is the Angular page where you can test out Angular.">
     <meta name="author" content="Edric Chan">
 </head>
+<body>
 <h1>This is a test on AngularJS and Angular Material.</h1>
 <h2>Get started with: <a href="https://material.angularjs.org/latest/getting-started" id="angular_material">Angular Material</a></h2>
 <h3>Below are the lists for examples:</h3>
@@ -33,4 +34,16 @@ title: Angular
 <div class="mdl-tooltip" data-mdl-for="angular_material">
      Angular Material
 </div>
+</body>
+    <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    // Registration was successful
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+  }).catch(function(err) {
+    // registration failed :(
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}
+    </script>
 </html>

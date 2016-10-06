@@ -2,7 +2,7 @@
 <html ng-app="testApp">
 
 <head>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+    <link rel="stylesheet" href="/css/angular-material.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/website.ico">
     <meta name="description" content="The Beta page. This is where I test on Angular Material.">
@@ -13,12 +13,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chan4077.github.io/angular/test.html">
     <!-- Angular Material requires Angular.js Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-animate.min.js"></script>
+    <script src="/js/angular-aria.min.js"></script>
+    <script src="/js/angular-messages.min.js"></script>
     <!-- Angular Material Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+    <script src="/js/angular-material.min.js"></script>
     <script src="/js/test.js"></script>
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
@@ -138,7 +138,7 @@
                 <br> feedback.$invalid = <code>{{feedbackbeta.$invalid}}</code>
             </div>
             <!--FAB Speed Dial-->
-            <md-fab-speed-dial md-open="isOpen" md-direction="top" class="md-scale">
+            <md-fab-speed-dial md-open="isOpen" md-direction="top" class="md-scale" id="FAB-share">
                 <md-fab-trigger>
                     <md-button aria-label="menu" class="md-fab md-primary md-fab-bottom-right">
                         <md-icon md-svg-icon="share-variant"></md-icon>
@@ -203,6 +203,16 @@
 
   ga('create', 'UA-82448435-1', 'auto');
   ga('send', 'pageview');
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    // Registration was successful
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+  }).catch(function(err) {
+    // registration failed :(
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}
 
 </script>
 

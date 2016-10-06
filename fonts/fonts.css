@@ -1,0 +1,28 @@
+/* Local Fonts */
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Roboto/Roboto.eot');
+  src: url('/fonts/Roboto/Roboto.eot?#iefix') format('embedded-opentype'),
+       local('Roboto'),
+       local('Roboto'),
+       url('/fonts/Roboto/Roboto.woff2') format('woff2'),
+       url('/fonts/Roboto/Roboto.woff') format('woff'),
+       url('/fonts/Roboto/Roboto.ttf') format('truetype'),
+       url('/fonts/Roboto/Roboto.svg#Roboto') format('svg');
+}
+
+/* Menlo Regular */
+@font-face {
+  font-family: "Menlo";
+  font-weight: 400;
+  font-style: normal;
+    src: url("/fonts/Menlo/Menlo.eot");
+    src: url("/fonts/Menlo/Menlo.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Menlo/Menlo.woff2") format("woff2"),
+    url("/fonts/Menlo/Menlo.woff") format("woff"),
+    url("/fonts/Menlo/Menlo.ttf") format("truetype"),
+    url("/fonts/Menlo/Menlo.svg#Menlo") format("svg");
+}
