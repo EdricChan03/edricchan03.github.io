@@ -38,7 +38,7 @@
                     <md-tooltip>
                         SideNav
                     </md-tooltip>
-                    <md-icon class="mdi mdi-24px mdi-menu" aria-label="menu"></md-icon>
+                    <i class="mdi mdi-24px mdi-menu" aria-label="menu"></i>
                 </md-button>
                 <h2 class="md-flex">
                     Chan4077.Github.io BETA
@@ -49,7 +49,7 @@
                     <md-tooltip>
                         Refresh
                     </md-tooltip>
-                    <md-icon class="mdi mdi-24px mdi-refresh" aria-label="refresh"></md-icon>
+                    <i class="mdi mdi-24px mdi-refresh" aria-label="refresh"></i>
                 </md-button>
                 <!--mdMenu-->
                 <md-menu>
@@ -57,30 +57,30 @@
                         <md-tooltip>
                             More
                         </md-tooltip>
-                        <md-icon md-menu-origin class="mdi mdi-24px mdi-dots-vertical"></md-icon>
+                        <i md-menu-origin class="mdi mdi-24px mdi-dots-vertical"></i>
                     </md-button>
                     <md-menu-content>
                         <md-menu-item>
                             <md-button ng-click="whats_new($event)">
-                                <md-icon class="mdi mdi-24px mdi-alert-octagon" md-menu-align-target></md-icon>
+                                <i class="mdi mdi-24px mdi-alert-octagon" md-menu-align-target></i>
                                 What's New
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="settings($event)">
-                                <md-icon class="mdi mdi-24px mdi-settings" md-menu-align-target></md-icon>
+                                <i class="mdi mdi-24px mdi-settings" md-menu-align-target></i>
                                 Settings
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="">
-                                <md-icon class="mdi mdi-24px mdi-alert" md-menu-align-target></md-icon>
+                                <i class="mdi mdi-24px mdi-alert" md-menu-align-target></i>
                                 Report A Problem
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="about_site()">
-                                <md-icon class="mdi mdi-24px mdi-help-circle-outline" md-menu-align-target></md-icon>
+                                <i class="mdi mdi-24px mdi-help-circle-outline" md-menu-align-target></i>
                                 About This Site
                             </md-button>
                         </md-menu-item>
@@ -95,14 +95,14 @@
                 <br>
                 <md-input-container class="md-icon-float md-block">
                     <label>Name</label>
-                    <md-icon class="mdi mdi-24px mdi-account" class="mdi-dark"></md-icon>
+                    <i class="mdi mdi-24px mdi-account" class="mdi-dark"></i>
                     <input name="name" type="text" ng-model="feedback.name" md-autofocus required>
                     <div ng-messages="feedbackbeta.name.$error">
                         <div ng-message="required">This is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-icon-float md-block">
-                    <md-icon class="mdi mdi-24px mdi-email" class="mdi-dark"></md-icon>
+                    <i class="mdi mdi-24px mdi-email" class="mdi-dark"></i>
                     <label>Email</label>
                     <input name="email" type="email" ng-model="feedback.email" required>
                     <div ng-messages="feedbackbeta.email.$error">
@@ -111,7 +111,7 @@
                 </md-input-container>
                 <md-input-container class="md-block">
                     <label>Feedback</label>
-                    <md-icon class="mdi mdi-24px mdi-message-alert" class="mdi-dark"></md-icon>
+                    <i class="mdi mdi-24px mdi-message-alert" class="mdi-dark"></i>
                     <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="5"></textarea>
                     <div ng-messages="feedback.sendFeedback.$error">
                         <div ng-message="required">This is required</div>
@@ -143,17 +143,17 @@
             <md-fab-speed-dial md-direction="top" class="md-fling">
                 <md-fab-trigger>
                     <md-button aria-label="Add" class="md-fab md-primary md-fab-bottom-right">
-                        <md-icon class="mdi mdi-24px mdi-plus"></md-icon>
+                        <i class="mdi mdi-24px mdi-plus"></i>
                     </md-button>
                 </md-fab-trigger>
 
                 <md-fab-actions>
                     <md-button aria-label="Add User" class="md-fab md-mini md-accent">
-                        <md-icon class="mdi mdi-24px mdi-account-plus"></md-icon>
+                        <i class="mdi mdi-24px mdi-account-plus"></i>
                     </md-button>
 
                     <md-button aria-label="Add Group" class="md-fab md-mini md-accent">
-                        <md-icon class="mdi mdi-24px mdi-account-multiple-plus"></md-icon>
+                        <i class="mdi mdi-24px mdi-account-multiple-plus"></i>
                     </md-button>
                 </md-fab-actions>
             </md-fab-speed-dial>
@@ -165,7 +165,7 @@
             <md-content class="md-default-theme">
                 <md-list>
                     <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}" ng-click="openLeftMenu()">
-                        <md-icon aria-label="{{url.title}}" class="mdi mdi-{{ url.icon }} mdi-24px"></md-icon>
+                        <i aria-label="{{url.title}}" class="mdi mdi-{{ url.icon }} mdi-24px"></i>
                         <div class="md-list-item-text">
                             <span class="md-body-2">{{url.title}}</span>
                         </div>
@@ -174,7 +174,7 @@
                     <md-divider></md-divider>
                     <md-subheader>Other</md-subheader>
                     <md-list-item class="md-2-line" ng-repeat="url in other" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
-                        <md-icon aria-label="{{url.title}}" class="mdi mdi-{{url.icon}} mdi-24px"></md-icon>
+                        <i aria-label="{{url.title}}" class="mdi mdi-{{url.icon}} mdi-24px"></i>
                         <div class="md-list-item-text">
                             <span class="md-body-2">{{url.title}}</span>
                         </div>
@@ -183,7 +183,7 @@
                     <md-divider></md-divider>
                     <md-subheader>Made With</md-subheader>
                     <md-list-item class="md-2-line" ng-repeat="url in made" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
-                        <md-icon aria-label="{{url.title}}" class="mdi mdi-{{url.icon}} mdi-24px"></md-icon>
+                        <i aria-label="{{url.title}}" class="mdi mdi-{{url.icon}} mdi-24px"></i>
                         <div class="md-list-item-text">
                             <span class="md-body-2">{{url.title}}</span>
                         </div>
