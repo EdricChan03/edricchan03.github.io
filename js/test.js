@@ -4,12 +4,11 @@ app.config(function ($mdThemingProvider, $mdIconProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('green')
         .accentPalette('purple');
-    $mdIconProvider
-        .defaultIconSet('/img/mdi.svg');
     console.info('Successfully initialized!');
 });
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
     // Refresh page, direct from server
+    console.info('MainController successfully loaded!');
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
@@ -124,24 +123,26 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
 });
 
 app.controller('SideNavController', function ($scope, $mdSidenav) {
+    console.info('SideNavController successfully loaded!');
+
     $scope.top = [
-        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home'},
-        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box'},
-        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger'},
-        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus'},
+        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
+        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box' },
+        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger' },
+        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus' },
         { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: 'angular' },
     ];
     $scope.other = [
         { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
-        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings'},
+        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
         { url: '', title: 'Submit Feedback', icon: 'message-alert' },
         { url: '', title: 'Get Help', icon: 'help-circle' },
     ];
     $scope.made = [
-        { url: 'https://materialdesignicons.com', title: 'MaterialDesignIcons', icon: 'vector-square'},
-        { url: 'https://material.angularjs.org/latest', title: 'Angular Material', icon: 'angular'},
-        { url: 'https://angularjs.org', title: 'Angular', icon: 'angular'},
-        { url: 'https://pages.github.com', title: 'Github Pages', icon: 'github-circle'}
+        { url: 'https://materialdesignicons.com', title: 'MaterialDesignIcons', icon: 'vector-square' },
+        { url: 'https://material.angularjs.org/latest', title: 'Angular Material', icon: 'angular' },
+        { url: 'https://angularjs.org', title: 'Angular', icon: 'angular' },
+        { url: 'https://pages.github.com', title: 'Github Pages', icon: 'github-circle' }
     ]
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
