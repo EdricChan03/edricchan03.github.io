@@ -98,17 +98,17 @@
                     <label>Name</label>
                     <md-icon md-font-icon="mdi" aria-label="account">&#xF004;</md-icon>
                     <md-iconnput name="name" type="text" ng-model="feedback.name" md-autofocus required>
-                    <div ng-messages="feedbackbeta.name.$error">
-                        <div ng-message="required">This is required</div>
-                    </div>
+                        <div ng-messages="feedbackbeta.name.$error">
+                            <div ng-message="required">This is required</div>
+                        </div>
                 </md-input-container>
                 <md-input-container class="md-icon-float md-block">
                     <md-icon md-font-icon="mdi" aria-label="email">&#xF1EE;</md-icon>
                     <label>Email</label>
                     <md-iconnput name="email" type="email" ng-model="feedback.email" required>
-                    <div ng-messages="feedbackbeta.email.$error">
-                        <div ng-message="email">Please input a valid email address.</div>
-                    </div>
+                        <div ng-messages="feedbackbeta.email.$error">
+                            <div ng-message="email">Please input a valid email address.</div>
+                        </div>
                 </md-input-container>
                 <md-input-container class="md-block">
                     <label>Feedback</label>
