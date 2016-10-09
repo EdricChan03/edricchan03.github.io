@@ -31,6 +31,7 @@
 <body>
     <div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
         <!--mdToolbar-->
+        <md-progress-linear md-mode="indeterminate" id="progress"></md-progress-linear>
         <md-toolbar class="yellow" md-scroll-shrink>
             <div class="md-toolbar-tools">
                 <!--Sidenav Button-->
@@ -213,7 +214,7 @@ if ('serviceWorker' in navigator) {
     console.error('ServiceWorker registration failed: ', err);
   });
 }
-
+setTimeout(document.getELementById('progress'.style.display = "none";) 5000);
 </script>
 
 </html>
