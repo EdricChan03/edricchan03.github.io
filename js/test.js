@@ -1,6 +1,6 @@
 var app = angular.module('testApp', ['ngMaterial', 'ngMessages']);
 // Config
-app.config(function ($mdThemingProvider, $mdIconProvider) {
+app.config(function ($mdThemingProvider, $mdunicodeProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('green')
         .accentPalette('purple');
@@ -109,9 +109,9 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         window.location.href = "https://chan4077.github.io/about#angular";
     };
     $scope.fabitems = [
-        { name: 'Facebook', icon: 'facebook-box' },
-        { name: 'Twitter', icon: 'twitter-box' },
-        { name: 'Google+', icon: 'google-plus' }
+        { name: 'Facebook', unicode: '&#xF20D;' },
+        { name: 'Twitter', unicode: '&#xF545;' },
+        { name: 'Google+', unicode: '&#xF2BD;' }
     ];
     function DialogController($scope, $mdDialog) {
         $scope.hide = function () {
@@ -128,23 +128,23 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
     console.info('SideNavController successfully loaded!');
 
     $scope.top = [
-        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
-        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box' },
-        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger' },
-        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus' },
-        { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: 'angular' },
+        { url: 'https://chan4077.github.io', title: 'Main', unicode: '&#xF2DC;' },
+        { url: 'https://chan4077.github.io/about', title: 'About Me', unicode: '&#xF006;' },
+        { url: 'https://chan4077.github.io/blog', title: 'Blog', unicode: '&#xF0AE;' },
+        { url: 'https://chan4077.github.io/media', title: 'Social Media', unicode: '&#xF2BD;' },
+        { url: 'https://chan4077.github.io/angular', title: 'Angular', unicode: '&#xF6B1;' },
     ];
     $scope.other = [
-        { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
-        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
-        { url: '', title: 'Submit Feedback', icon: 'message-alert' },
-        { url: '', title: 'Get Help', icon: 'help-circle' },
+        { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', unicode: '&#xF2A4;' },
+        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', unicode: '&#xF493;' },
+        { url: '', title: 'Submit Feedback', unicode: '&#xF362;' },
+        { url: '', title: 'Get Help', unicode: '&#xF2D7;' },
     ];
     $scope.made = [
-        { url: 'https://materialdesignicons.com', title: 'MaterialDesignIcons', icon: 'vector-square' },
-        { url: 'https://material.angularjs.org/latest', title: 'Angular Material', icon: 'angular' },
-        { url: 'https://angularjs.org', title: 'Angular', icon: 'angular' },
-        { url: 'https://pages.github.com', title: 'Github Pages', icon: 'github-circle' }
+        { url: 'https://materialdesignunicodes.com', title: 'MaterialDesignunicodes', unicode: '&#xF001;' },
+        { url: 'https://material.angularjs.org/latest', title: 'Angular Material', unicode: '&#xF6B1;' },
+        { url: 'https://angularjs.org', title: 'Angular', unicode: '&#xF6B1;' },
+        { url: 'https://pages.github.com', title: 'Github Pages', unicode: '&#xF2A4;' }
     ]
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
