@@ -96,7 +96,7 @@
                 <md-input-container class="md-icon-float md-block">
                     <label>Name</label>
                     <md-icon md-svg-icon="account"></md-icon>
-                    <md-iconnput name="name" type="text" ng-model="feedback.name" md-autofocus required>
+                    <input name="name" type="text" ng-model="feedback.name" md-autofocus required>
                     <div ng-messages="feedbackbeta.name.$error">
                         <div ng-message="required">This is required</div>
                     </div>
@@ -104,7 +104,7 @@
                 <md-input-container class="md-icon-float md-block">
                     <md-icon md-svg-icon="email"></md-icon>
                     <label>Email</label>
-                    <md-iconnput name="email" type="email" ng-model="feedback.email" required>
+                    <input name="email" type="email" ng-model="feedback.email" required>
                     <div ng-messages="feedbackbeta.email.$error">
                         <div ng-message="email">Please input a valid email address.</div>
                     </div>
