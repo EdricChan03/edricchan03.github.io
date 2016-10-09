@@ -4,8 +4,7 @@ app.config(function ($mdThemingProvider, $mdIconProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('green')
         .accentPalette('purple');
-    $mdIconProvider.defaultFontSet('mdi')
-                   .defaultIconSet('/img/mdi.svg');
+    $mdIconProvider.defaultIconSet('/img/mdi.svg');
     console.info('Successfully initialized!');
 });
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
