@@ -36,8 +36,6 @@ $duration: 1.4s;
   animation: rotator $duration linear infinite;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
 }
 
 @keyframes rotator {
