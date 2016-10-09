@@ -17,11 +17,10 @@
 /* This is just to center the spinner */
 
 #loading {
+  opacity: 0.8;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
+  top: 0%;
+  left: 0%;
   background-color: #ffffff;
   z-index: 1000;
   width: 100%;
