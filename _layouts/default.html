@@ -204,8 +204,7 @@ if ('serviceWorker' in navigator) {
     console.log('ServiceWorker registration failed: ', err);
   });
 }
-window.onload = function(){ document.getElementById("loading").style.display = "none" }   
-
+setTimeout(function() {document.getElementById(loading).style.display = 'none';}, 4000);
 </script>
 
 </html>
