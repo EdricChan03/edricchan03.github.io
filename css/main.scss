@@ -17,10 +17,9 @@
 /* This is just to center the spinner */
 
 #loading {
-  opacity: 0.8;
   position: fixed;
   top: 0%;
-  left: 0%;
+  left: 50%;
   background-color: #ffffff;
   z-index: 1000;
   width: 100%;
@@ -35,6 +34,10 @@ $duration: 1.4s;
 
 .spinner {
   animation: rotator $duration linear infinite;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
 }
 
 @keyframes rotator {
