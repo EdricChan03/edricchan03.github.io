@@ -38,7 +38,7 @@
                     <md-tooltip>
                         SideNav
                     </md-tooltip>
-                    <md-icon md-font-icon="mdi-menu" aria-label="menu"></md-icon>
+                    <md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
                 </md-button>
                 <h2 class="md-flex">
                     Chan4077.Github.io BETA
@@ -49,7 +49,7 @@
                     <md-tooltip>
                         Refresh
                     </md-tooltip>
-                    <md-icon md-font-icon="mdi-refresh" aria-label="refresh"></md-icon>
+                    <md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
                 </md-button>
                 <!--mdMenu-->
                 <md-menu>
@@ -57,30 +57,30 @@
                         <md-tooltip>
                             More
                         </md-tooltip>
-                        <md-icon md-menu-origin md-font-icon="mdi-dots-vertical"></md-icon>
+                        <md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
                     </md-button>
                     <md-menu-content>
                         <md-menu-item>
                             <md-button ng-click="whats_new($event)">
-                                <md-icon md-font-icon="mdi-alert-octagon" md-menu-align-target></md-icon>
+                                <md-icon md-svg-icon="alert-octagon" md-menu-align-target></md-icon>
                                 What's New
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="settings($event)">
-                                <md-icon md-font-icon="mdi-settings" md-menu-align-target></md-icon>
+                                <md-icon md-svg-icon="settings" md-menu-align-target></md-icon>
                                 Settings
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="">
-                                <md-icon md-font-icon="mdi-alert" md-menu-align-target></md-icon>
+                                <md-icon md-svg-icon="alert" md-menu-align-target></md-icon>
                                 Report A Problem
                             </md-button>
                         </md-menu-item>
                         <md-menu-item>
                             <md-button ng-click="about_site()">
-                                <md-icon md-font-icon="mdi-help-circle-outline" md-menu-align-target></md-icon>
+                                <md-icon md-svg-icon="help-circle-outline" md-menu-align-target></md-icon>
                                 About This Site
                             </md-button>
                         </md-menu-item>
@@ -95,14 +95,14 @@
                 <br>
                 <md-input-container class="md-icon-float md-block">
                     <label>Name</label>
-                    <md-icon md-font-icon="mdi-account"></md-icon>
+                    <md-icon md-svg-icon="account"></md-icon>
                     <md-iconnput name="name" type="text" ng-model="feedback.name" md-autofocus required>
                     <div ng-messages="feedbackbeta.name.$error">
                         <div ng-message="required">This is required</div>
                     </div>
                 </md-input-container>
                 <md-input-container class="md-icon-float md-block">
-                    <md-icon md-font-icon="mdi-email"></md-icon>
+                    <md-icon md-svg-icon="email"></md-icon>
                     <label>Email</label>
                     <md-iconnput name="email" type="email" ng-model="feedback.email" required>
                     <div ng-messages="feedbackbeta.email.$error">
@@ -111,7 +111,7 @@
                 </md-input-container>
                 <md-input-container class="md-block">
                     <label>Feedback</label>
-                    <md-icon md-font-icon="mdi-message-alert"></md-icon>
+                    <md-icon md-svg-icon="message-alert"></md-icon>
                     <textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="5"></textarea>
                     <div ng-messages="feedback.sendFeedback.$error">
                         <div ng-message="required">This is required</div>
@@ -143,17 +143,17 @@
             <md-fab-speed-dial md-direction="top" class="md-fling">
                 <md-fab-trigger>
                     <md-button aria-label="Add" class="md-fab md-primary md-fab-bottom-right">
-                        <md-icon md-font-icon="mdi-plus"></md-icon>
+                        <md-icon md-svg-icon="plus"></md-icon>
                     </md-button>
                 </md-fab-trigger>
 
                 <md-fab-actions>
                     <md-button aria-label="Add User" class="md-fab md-mini md-accent">
-                        <md-icon md-font-icon="mdi-account-plus"></md-icon>
+                        <md-icon md-svg-icon="account-plus"></md-icon>
                     </md-button>
 
                     <md-button aria-label="Add Group" class="md-fab md-mini md-accent">
-                        <md-icon md-font-icon="mdi-account-multiple-plus"></md-icon>
+                        <md-icon md-svg-icon="account-multiple-plus"></md-icon>
                     </md-button>
                 </md-fab-actions>
             </md-fab-speed-dial>
@@ -165,7 +165,7 @@
             <md-content class="md-default-theme">
                 <md-list>
                     <md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}" ng-click="openLeftMenu()">
-                        <md-icon aria-label="{{url.title}}" md-font-icon="mdi-{{url.icon}}"></md-icon>
+                        <md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
                         <div class="md-list-item-text">
                             <span class="md-body-2">{{url.title}}</span>
                         </div>
@@ -174,7 +174,7 @@
                     <md-divider></md-divider>
                     <md-subheader>Other</md-subheader>
                     <md-list-item class="md-2-line" ng-repeat="url in other" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
-                        <md-icon aria-label="{{url.title}}" md-font-icon="mdi-{{url.icon}}"></md-icon>
+                        <md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
                         <div class="md-list-item-text">
                             <span class="md-body-2">{{url.title}}</span>
                         </div>
@@ -183,7 +183,7 @@
                     <md-divider></md-divider>
                     <md-subheader>Made With</md-subheader>
                     <md-list-item class="md-2-line" ng-repeat="url in made" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
-                        <md-icon aria-label="{{url.title}}" md-font-icon="mdi-{{url.icon}}"></md-icon>
+                        <md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
                         <div class="md-list-item-text">
                             <span class="md-body-2">{{url.title}}</span>
                         </div>
