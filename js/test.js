@@ -86,7 +86,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
     $scope.whats_new = function (ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl: 'whats_new_tmpl.html',
+            templateUrl: '/templates/whats_new_tmpl.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
@@ -95,7 +95,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
     $scope.settings = function (ev) {
         $mdDialog.show({
             controller: DialogController,
-            teplateUrl: 'settings_tmpl.html',
+            teplateUrl: '/templates/settings_tmpl.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
