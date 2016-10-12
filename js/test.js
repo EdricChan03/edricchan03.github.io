@@ -154,7 +154,7 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
 app.directive('siteSidenav', function() {
     return {
         restrict: 'E',
-        templateUrl: '/templates/sitesidenav.html',
+        templateUrl: '/templates/sidenav.html',
         transclude: true
     };
 });
@@ -178,7 +178,7 @@ app.directive('siteToolbar', function() {
 app.directive('siteSpeedDial', function() {
     return {
         restrict: 'E',
-        templateUrl: '/templates/fab_speeddial.html',
+        templateUrl: '/templates/speeddial.html',
         transclude: true
     };
 });
