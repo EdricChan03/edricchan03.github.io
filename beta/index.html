@@ -64,19 +64,21 @@ if ('serviceWorker' in navigator) {
   });
 }
 setTimeout(function() {document.getElementById('progress').style.display = "none";}, 5000);
-window.onload = function internetCheck() {
+window.onload = function internetCheck($scope, $mdToast) {
 	// Variables
 	var xhttp = new XMLHttpRequest();
 	window.setInterval(function($mdToast) {
 		if (this.readyState == 4 && this.status == 200) {
 
     } else {
-        $mdToast.show({
+        $scope.nointernet = function() {
+			$mdToast.show({
           hideDelay   : 3000,
           position    : 'top right',
           controller  : 'ToastCtrl',
           templateUrl : '/templates/toastoffline.html'
         });
+		};
       };
   xhttp.open("GET", "/Data.txt", true);
   xhttp.send();
