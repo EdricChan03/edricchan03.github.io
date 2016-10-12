@@ -9,7 +9,7 @@ app.config(function ($mdIconProvider) {
 /*
 *  Main Controller
 */
-app.controller('MainController', function ($scope) {
+app.controller('MainController', function ($scope, $mdSidenav) {
   $scope.main = function () {
     window.location.href = "https://chan4077.github.io";
     console.info('Redirecting to main...');
