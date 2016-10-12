@@ -118,16 +118,6 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             $mdDialog.cancel();
         };
     };
-    
-    // Custom Toast
-    $scope.internetOffline = function() {
-        $mdToast.show({
-          hideDelay   : 3000,
-          position    : 'top right',
-          controller  : 'OfflineController',
-          templateUrl : '/templates/toastoffline.html'
-        });
-      };
 $scope.internetCheck = function internetCheck($scope, $mdToast) {
 	window.setInterval(function($mdToast) {
 		if (navigator.onLine) {
@@ -136,7 +126,7 @@ $scope.internetCheck = function internetCheck($scope, $mdToast) {
         $scope.nointernet = function() {
 			$mdToast.show({
           hideDelay   : 3000,
-          position    : 'top right',
+          position    : 'bottom left',
           controller  : 'ToastCtrl',
           templateUrl : '/templates/toastoffline.html'
         });
