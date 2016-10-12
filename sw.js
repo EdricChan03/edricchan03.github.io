@@ -12,6 +12,7 @@ self.addEventListener('install', e => {
         '/css/angular-material.min.css',
         '/css/angular.css',
         '/css/error.css',
+        '/css/material.min.css',
         '/css/main.css',
         '/css/test.css',
         // JS
@@ -22,6 +23,7 @@ self.addEventListener('install', e => {
         '/js/angular-messages.min.js',
         '/js/angular.min.js',
         '/js/main.js',
+        '/js/material.min.js',
         '/js/preferences.js',
         '/js/test.js',
         '/js/todo.js',
