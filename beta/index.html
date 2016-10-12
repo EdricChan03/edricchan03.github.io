@@ -70,7 +70,7 @@ window.onload = function internetCheck() {
 	window.setInterval(function() {
 		if (this.readyState == 4 && this.status == 200) {
      document.getElementById("demo").innerHTML = this.responseText;
-    }
+    };
   };
   xhttp.open("GET", "Data.txt", true);
   xhttp.send();
