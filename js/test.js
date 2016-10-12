@@ -1,6 +1,6 @@
 var app = angular.module('testApp', ['ngMaterial', 'ngMessages']);
 // Config
-app.config(function ($mdIconProvider, $mdAriaProvider) {
+app.config(function ($mdIconProvider, $mdAriaProvider, $mdToastProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg');
     console.info('Successfully initialized!');
     $mdAriaProvider.disableWarnings();
@@ -118,9 +118,28 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             $mdDialog.cancel();
         };
     };
+    
+    // Custom Toast
+    $scope.internetOffline = function() {
+        $mdToast.show({
+          hideDelay   : 3000,
+          position    : 'top right',
+          controller  : 'OfflineController',
+          templateUrl : '/templates/toastoffline.html'
+        });
+      };
+
 
 });
+app.controller('OfflineController', function($scope) {
+    console.info('OfflineController successfully loaded!');
 
+    $scope.closeToast = function($mdToast) {
+        $mdToast.hide();
+        console.info('You closed the offline toast.');
+    };
+
+});
 app.controller('SideNavController', function ($scope, $mdSidenav) {
     console.info('SideNavController successfully loaded!');
 

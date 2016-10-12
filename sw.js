@@ -68,6 +68,7 @@ self.addEventListener('install', e => {
         '/templates/feedback.html',
         '/templates/settings_tmpl.html',
         '/templates/sidenav.html',
+        '/templates/toastoffline.html',
         '/templates/toolbar.html',
         '/templates/whats_new_tmpl.html',
         // Images

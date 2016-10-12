@@ -67,15 +67,22 @@ setTimeout(function() {document.getElementById('progress').style.display = "none
 window.onload = function internetCheck() {
 	// Variables
 	var xhttp = new XMLHttpRequest();
-	window.setInterval(function() {
+	window.setInterval(function($mdToast) {
 		if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
-    };
+
+    } else {
+        $mdToast.show({
+          hideDelay   : 3000,
+          position    : 'top right',
+          controller  : 'ToastCtrl',
+          templateUrl : '/templates/toastoffline.html'
+        });
+      };
+	}
   };
   xhttp.open("GET", "Data.txt", true);
   xhttp.send();
 	}, 3000);
-}
 </script>
 
 </html>
