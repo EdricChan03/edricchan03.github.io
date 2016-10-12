@@ -41,7 +41,7 @@
 			</div>
 			<site-speed-dial></site-speed-dial>
 		</md-content>
-		</div>
+	</div>
 	<md-beta-sidenav></md-beta-sidenav>
 </body>
 <!--Google Analytics-->
@@ -64,6 +64,18 @@ if ('serviceWorker' in navigator) {
   });
 }
 setTimeout(function() {document.getElementById('progress').style.display = "none";}, 5000);
+window.onload = function internetCheck() {
+	// Variables
+	var xhttp = new XMLHttpRequest();
+	window.setInterval(function() {
+		if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "Data.txt", true);
+  xhttp.send();
+	}, 3000);
+}
 </script>
 
 </html>
