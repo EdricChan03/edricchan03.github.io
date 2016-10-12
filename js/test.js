@@ -149,10 +149,35 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
 /*
 *  Directives
 */
+// Sidenav
 app.directive('siteSidenav', function() {
     return {
         restrict: 'E',
         templateUrl: '/templates/sitesidenav.html',
+        transclude: true
+    };
+});
+// Feedback Form
+app.directive('siteFeedback', function() {
+    return {
+        restrict: 'E',
+        templateUrl: '/templates/feedback.html',
+        transclude: true
+    };
+});
+// Toolbar
+app.directive('siteToolbar', function() {
+    return {
+        restrict: 'E',
+        templateUrl: '/templates/toolbar.html',
+        transclude: true
+    };
+});
+// Speed Dial
+app.directive('siteSpeedDial', function() {
+    return {
+        restrict: 'E',
+        templateUrl: '/templates/fab_speeddial.html',
         transclude: true
     };
 });

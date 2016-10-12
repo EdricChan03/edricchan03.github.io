@@ -1,0 +1,58 @@
+		<!--mdToolbar-->
+		<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
+		<md-toolbar class="yellow" md-scroll-shrink>
+			<div class="md-toolbar-tools">
+				<!--Sidenav Button-->
+				<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
+					<md-tooltip>
+						SideNav
+					</md-tooltip>
+					<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
+				</md-button>
+				<h2 class="md-flex">
+					Chan4077.Github.io BETA
+				</h2>
+				<span flex></span>
+				<!--Refresh-->
+				<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
+					<md-tooltip>
+						Refresh
+					</md-tooltip>
+					<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
+				</md-button>
+				<!--mdMenu-->
+				<md-menu>
+					<md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
+						<md-tooltip>
+							More
+						</md-tooltip>
+						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
+					</md-button>
+					<md-menu-content>
+						<md-menu-item>
+							<md-button ng-click="whats_new($event)">
+								<md-icon md-svg-icon="alert-octagon" md-menu-align-target></md-icon>
+								What's New
+							</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button ng-click="settings($event)">
+								<md-icon md-svg-icon="settings" md-menu-align-target></md-icon>
+								Settings
+							</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button ng-click="">
+								<md-icon md-svg-icon="alert" md-menu-align-target></md-icon>
+								Report A Problem
+							</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button ng-click="about_site()">
+								<md-icon md-svg-icon="help-circle-outline" md-menu-align-target></md-icon>
+								About This Site
+							</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
+		</md-toolbar>
