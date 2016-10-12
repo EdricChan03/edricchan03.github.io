@@ -4,62 +4,84 @@ permalink: /404.html
 <html ng-app="errorApp">
 
 <head>
-  <link rel="stylesheet" href="/css/angular-material.min.css">
-  <!-- Angular Material requires Angular.js Libraries -->
-  <script src="/js/angular.min.js"></script>
-  <script src="/js/angular-animate.min.js"></script>
-  <script src="/js/angular-aria.min.js"></script>
-  <script src="/js/angular-messages.min.js"></script>
-  <!-- Angular Material Library -->
-  <script src="/js/angular-material.min.js"></script>
-  <script src="/js/404.js"></script>
-  <link href="favicon.ico" rel="shortcut icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The 404 page. This is loaded when a URL is not found." />
+	<link rel="stylesheet" href="/css/angular-material.min.css">
+	<!-- Angular Material requires Angular.js Libraries -->
+	<script src="/js/angular.min.js"></script>
+	<script src="/js/angular-animate.min.js"></script>
+	<script src="/js/angular-aria.min.js"></script>
+	<script src="/js/angular-messages.min.js"></script>
+	<!-- Angular Material Library -->
+	<script src="/js/angular-material.min.js"></script>
+	<script src="/js/404.js"></script>
+	<link href="favicon.ico" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="The 404 page. This is loaded when a URL is not found." />
 </head>
 <title>You Lost Your Way! - Error 404</title>
 
 <body ng-controller="ErrorController" onload="debug()">
-  <div flex-xs flex-gt-xs="50" layout="row">
-    <md-card>
-      <md-card-header>
-        <md-card-avatar>
-          <img src="/img/error.svg" />
-        </md-card-avatar>
-        <md-card-header-text>
-          <span class="md-title">Error 404</span>
-          <span class="md-subhead">URL Not Found</span>
-        </md-card-header-text>
-      </md-card-header>
-      <md-card-title>
-        <md-card-title-text>
-          <span class="md-headline">Error 404</span>
-          <span class="md-subhead">Unfortunately, you've reached a page that did not exist.</span>
-        </md-card-title-text>
-      </md-card-title>
-      <md-card-actions layout="row" layout-align="end center">
-        <md-button ng-click="goBack()">Go Back</md-button>
-        <md-button ng-click="main()">Go Home</md-button>
-        <md-button ng-click="about()">About This Page</md-button>
-      </md-card-actions>
-    </md-card>
-    <md-card>
-      <md-card-header>
-        <md-card-header-text>
-          <span class="md-title">Latest</span>
-          <span class="md-subhead">Commits</span>
-        </md-card-header-text>
-      </md-card-header>
-      <md-card-title>
-        <md-card-title-text>
-          <span class="md-headline">This <a href="https://chan4077.github.io" style="text-decoration: none;">Website's Commits</a></span>
-          <span class="md-subhead">Check out the latest commits!</span>
-        </md-card-title-text>
-      </md-card-title>
-      <md-card-actions layout="row" layout-align="end center">
-        <md-button ng-click="commit()">Commits</md-button>
-      </md-card-actions>
-    </md-card>
+	<!--mdToolbar-->
+	<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
+	<md-toolbar class="yellow" md-scroll-shrink>
+		<div class="md-toolbar-tools">
+			<!--Sidenav Button-->
+			<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
+				<md-tooltip>
+					SideNav
+				</md-tooltip>
+				<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
+			</md-button>
+			<h2 class="md-flex">
+				Chan4077.Github.io BETA
+			</h2>
+			<span flex></span>
+			<!--Refresh-->
+			<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
+				<md-tooltip>
+					Refresh
+				</md-tooltip>
+				<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
+			</md-button>
+			<div flex-xs flex-gt-xs="50" layout="row">
+				<md-card>
+					<md-card-header>
+						<md-card-avatar>
+							<img src="/img/error.svg" />
+						</md-card-avatar>
+						<md-card-header-text>
+							<span class="md-title">Error 404</span>
+							<span class="md-subhead">URL Not Found</span>
+						</md-card-header-text>
+					</md-card-header>
+					<md-card-title>
+						<md-card-title-text>
+							<span class="md-headline">Error 404</span>
+							<span class="md-subhead">Unfortunately, you've reached a page that did not exist.</span>
+						</md-card-title-text>
+					</md-card-title>
+					<md-card-actions layout="row" layout-align="end center">
+						<md-button ng-click="goBack()">Go Back</md-button>
+						<md-button ng-click="main()">Go Home</md-button>
+						<md-button ng-click="about()">About This Page</md-button>
+					</md-card-actions>
+				</md-card>
+				<md-card>
+					<md-card-header>
+						<md-card-header-text>
+							<span class="md-title">Latest</span>
+							<span class="md-subhead">Commits</span>
+						</md-card-header-text>
+					</md-card-header>
+					<md-card-title>
+						<md-card-title-text>
+							<span class="md-headline">This <a href="https://chan4077.github.io" style="text-decoration: none;">Website's Commits</a></span>
+							<span class="md-subhead">Check out the latest commits!</span>
+						</md-card-title-text>
+					</md-card-title>
+					<md-card-actions layout="row" layout-align="end center">
+						<md-button ng-click="commit()">Commits</md-button>
+					</md-card-actions>
+				</md-card>
 </body>
 
 </html>
@@ -68,9 +90,7 @@ permalink: /404.html
     function debug() {
       console.error('Page does not exist!');
     }
-</script>
-<!--Google Analytics-->
-<script>
+    // Google Analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

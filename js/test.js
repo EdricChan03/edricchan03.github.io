@@ -1,9 +1,6 @@
 var app = angular.module('testApp', ['ngMaterial', 'ngMessages']);
 // Config
-app.config(function ($mdThemingProvider, $mdIconProvider) {
-    $mdThemingProvider.theme('default')
-        .primaryPalette('green')
-        .accentPalette('purple');
+app.config(function ($mdIconProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg');
     console.info('Successfully initialized!');
 });
