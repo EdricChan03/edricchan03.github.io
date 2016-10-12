@@ -149,10 +149,10 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
 /*
 *  Directives
 */
-app.directive('mdBetaSidenav', function() {
+app.directive('siteSidenav', function() {
     return {
         restrict: 'E',
-        templateUrl: '/templates/mdbetasidenav.html',
+        templateUrl: '/templates/siteSidenav.html',
         transclude: true
     };
 });
