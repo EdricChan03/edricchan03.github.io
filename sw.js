@@ -42,6 +42,12 @@ self.addEventListener('install', e => {
         '/fonts/Menlo/Menlo.woff2',
         '/fonts/Menlo/Menlo.ttf',
         '/fonts/Menlo/Menlo.svg',
+        // Material Icons
+        '/fonts/MaterialIcons/MaterialIcons-Regular.eot',
+        '/fonts/MaterialIcons/MaterialIcons-Regular.woff',
+        '/fonts/MaterialIcons/MaterialIcons-Regular.woff2',
+        '/fonts/MaterialIcons/MaterialIcons-Regular.ttf',
+        '/fonts/MaterialIcons/MaterialIcons-Regular.svg',
         // Font.css
         '/fonts/fonts.css',
         // Angular
