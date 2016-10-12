@@ -10,9 +10,6 @@ self.addEventListener('install', e => {
         '/about/index.html',
         '/media/index.html',
         '/preferences/index.html',
-        // Layouts
-        '/_layouts/default.html',
-        '/_layouts/post.html',
         // YML
         '/_config.yml',
         // CSS

@@ -1,41 +1,35 @@
---- 
-layout: default
-title: Angular
----
+--- layout: default title: Angular ---
 
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="favicon.ico" rel="shortcut icon">
-    <meta name="description" content="This is the Angular page where you can test out Angular.">
-    <meta name="author" content="Edric Chan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="favicon.ico" rel="shortcut icon">
+	<meta name="description" content="This is the Angular page where you can test out Angular.">
+	<meta name="author" content="Edric Chan">
 </head>
+
 <body>
-<h1>This is a test on AngularJS and Angular Material.</h1>
-<h2>Get started with: <a href="https://material.angularjs.org/latest/getting-started" id="angular_material">Angular Material</a></h2>
-<h3>Below are the lists for examples:</h3>
-<ul>
-    <li><a href="/angular/angularjs.html" id="name">Write your name out!</a></li>
-    <li><a href="/angular/angulartodo.html" id="todo">Add todos and archive them!</a></li>
-    <li><a href="/angular/test.html" id="test">Test out my new site!</a></li>
-    <li>More coming soon!</li>
-</ul>
-<!--Tooltips-->
-<div class="mdl-tooltip" data-mdl-for="name">
-    Based On Angular Samples<br><span style="color: lightblue;">Now Uses Angular Material</span>
-</div>
-<div class="mdl-tooltip" data-mdl-for="todo">
-    Based On Angular Samples
-</div>
-<div class="mdl-tooltip" data-mdl-for="test">
-    (Finally Figured Out<br>What Went Wrong)
-</div>
-<div class="mdl-tooltip" data-mdl-for="angular_material">
-     Angular Material
-</div>
+	<h1>This is a test on AngularJS and Angular Material.</h1>
+	<h2>Get started with: <a href="https://material.angularjs.org/latest/getting-started" id="angular_material">Angular Material</a></h2>
+	<h3>Below are the lists for examples:</h3>
+	<ul>
+		<li><a href="/angular/angularjs.html" id="name">Write your name out!</a></li>
+		<li><a href="/angular/angulartodo.html" id="todo">Add todos and archive them!</a></li>
+		<li>More coming soon!</li>
+	</ul>
+	<!--Tooltips-->
+	<div class="mdl-tooltip" data-mdl-for="name">
+		Based On Angular Samples<br><span style="color: lightblue;">Now Uses Angular Material</span>
+	</div>
+	<div class="mdl-tooltip" data-mdl-for="todo">
+		Based On Angular Samples
+	</div>
+	<div class="mdl-tooltip" data-mdl-for="angular_material">
+		Angular Material
+	</div>
 </body>
-    <script>
+<script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(registration) {
     // Registration was successful
@@ -46,4 +40,5 @@ if ('serviceWorker' in navigator) {
   });
 }
     </script>
+
 </html>
