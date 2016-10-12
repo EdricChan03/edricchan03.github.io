@@ -28,7 +28,7 @@
 </head>
 
 <body>
-	<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
+	<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer" ng-init="internetCheck()">
 		<site-toolbar></site-toolbar>
 		<md-content layout="column" flex class="md-padding" layout-padding>
 			<site-feedback></site-feedback>
@@ -64,22 +64,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 setTimeout(function() {document.getElementById('progress').style.display = "none";}, 5000);
-window.onload = function internetCheck($scope, $mdToast) {
-	window.setInterval(function($mdToast) {
-		if (navigator.onLine) {
-			console.info('User is online!');
-    } else {
-        $scope.nointernet = function() {
-			$mdToast.show({
-          hideDelay   : 3000,
-          position    : 'top right',
-          controller  : 'ToastCtrl',
-          templateUrl : '/templates/toastoffline.html'
-        });
-		};
-      };
-	}, 3000);
-};
 </script>
 
 </html>

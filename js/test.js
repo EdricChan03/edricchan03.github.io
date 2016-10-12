@@ -128,7 +128,22 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
           templateUrl : '/templates/toastoffline.html'
         });
       };
-
+$scope.internetCheck = function internetCheck($scope, $mdToast) {
+	window.setInterval(function($mdToast) {
+		if (navigator.onLine) {
+			console.info('User is online!');
+    } else {
+        $scope.nointernet = function() {
+			$mdToast.show({
+          hideDelay   : 3000,
+          position    : 'top right',
+          controller  : 'ToastCtrl',
+          templateUrl : '/templates/toastoffline.html'
+        });
+		};
+      };
+	}, 3000);
+};
 
 });
 app.controller('OfflineController', function($scope) {
