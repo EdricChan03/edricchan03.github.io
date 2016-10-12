@@ -152,7 +152,7 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
 app.directive('siteSidenav', function() {
     return {
         restrict: 'E',
-        templateUrl: '/templates/siteSidenav.html',
+        templateUrl: '/templates/sitesidenav.html',
         transclude: true
     };
 });
