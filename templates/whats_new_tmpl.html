@@ -1,38 +1,42 @@
 <md-dialog aria-label="What's New'">
-    <form ng-cloak>
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <h2 aria-label="What's New">What's New</h2>
-                <span flex></span>
-                <md-button class="md-icon-button" ng-click="cancel()">
-                    <md-icon md-svg-icon="close" aria-label="Close"></md-icon>
-                </md-button>
-            </div>
-        </md-toolbar>
-        <md-dialog-content>
-            <div class="md-dialog-content">
-                <h2>Version 1.0.4</h2>
-                <h4><md-icon md-svg-icon="message-alert"></md-icon>Features</h4>
-                <ul class="rev_notes_featured">
-                    <li>Add navigation menu</li>
-                    <li>Add feedback form</li>
-                    <li>Add a cool side navigation</li>
-                    <li>Change to <a href="https://materialdesignicons.com">materialdesignicons</a></li>
-                </ul>
-                <h4><md-icon md-svg-icon="bug"></md-icon>Bugs</h4>
-                <ul>
-                    <li>Fix problem where website would not render properly.</li>
-                    <li>Fix problem where <code>md-menu</code> would not work.</li>
-                </ul>
-            </div>
-        </md-dialog-content>
-        <md-dialog-actions layout="row">
-            <md-button aria-label="Help" class="md-icon-button md-accent">
-              <md-tooltip>Help</md-tooltip>
-              <md-icon md-svg-icon="help" aria-label="help"></md-icon>
-            </md-button>
-            <span flex></span>
-            <md-button ng-click="hide()" class="md-primary">Dismiss</md-button>
-        </md-dialog-actions>
-    </form>
+	<form ng-cloak>
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2 aria-label="What's New">What's New</h2>
+				<span flex></span>
+				<md-button aria-label="Help" class="md-icon-button">
+					<md-tooltip>Help</md-tooltip>
+					<md-icon md-svg-icon="help" aria-label="help"></md-icon>
+				</md-button>
+				<md-button class="md-icon-button" ng-click="cancel()">
+					<md-icon md-svg-icon="close" aria-label="Close"></md-icon>
+                    <md-tooltip>Close</md-tooltip>
+				</md-button>
+			</div>
+		</md-toolbar>
+		<md-dialog-content>
+			<div class="md-dialog-content">
+				<h2>Version 1.0.4</h2>
+				<h4>
+					<md-icon md-svg-icon="message-alert"></md-icon>Features</h4>
+				<ul class="rev_notes_featured">
+					<li>Add navigation menu</li>
+					<li>Add feedback form</li>
+					<li>Add a cool side navigation</li>
+					<li>Change to <a href="https://materialdesignicons.com">materialdesignicons</a></li>
+				</ul>
+				<h4>
+					<md-icon md-svg-icon="bug"></md-icon>Bugs</h4>
+				<ul>
+					<li>Fix problem where website would not render properly.</li>
+					<li>Fix problem where <code>md-menu</code> would not work.</li>
+				</ul>
+			</div>
+		</md-dialog-content>
+		<md-dialog-actions layout="row">
+			<span flex></span>
+			<md-button ng-click="">More Info</md-button>
+			<md-button ng-click="hide()" class="md-primary">Dismiss</md-button>
+		</md-dialog-actions>
+	</form>
 </md-dialog>

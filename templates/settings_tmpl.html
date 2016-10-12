@@ -1,28 +1,28 @@
 <md-dialog aria-label="Settings">
-    <form ng-cloak>
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <h2 aria-label="Settings">Settings</h2>
-                <span flex></span>
-                <md-button class="md-icon-button" ng-click="cancel()">
-                    <md-icon md-svg-icon="close" aria-label="close"></md-icon>
-                </md-button>
-            </div>
-        </md-toolbar>
-        <md-dialog-content>
-            <div class="md-dialog-content">
-                <h1>Settings</h1>
-                <p>Currently not working.</p>
-            </div>
-        </md-dialog-content>
-        <md-dialog-actions layout="row">
-          <md-button aria-label="Help" class="md-icon-button md-accent">
-            <md-tooltip>Help</md-tooltip>
-            <md-icon md-svg-icon="help" aria-label="help"></md-icon>
-          </md-button>
-            <span flex></span>
-            <md-button ng-click="hide()" class="md-primary">Cancel</md-button>
-            <md-button ng-click="hide()" class="md-primary">Finished</md-button>
-        </md-dialog-actions>
-    </form>
+	<form ng-cloak>
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2 aria-label="Settings">Settings</h2>
+				<span flex></span>
+				<md-button aria-label="Help" class="md-icon-button">
+					<md-tooltip>Help</md-tooltip>
+					<md-icon md-svg-icon="help" aria-label="help"></md-icon>
+				</md-button>
+				<md-button class="md-icon-button" ng-click="cancel()">
+					<md-icon md-svg-icon="close" aria-label="close"></md-icon>
+				</md-button>
+			</div>
+		</md-toolbar>
+		<md-dialog-content>
+			<div class="md-dialog-content">
+				<h1>Settings</h1>
+				<p>Currently not working.</p>
+			</div>
+		</md-dialog-content>
+		<md-dialog-actions layout="row">
+			<span flex></span>
+			<md-button ng-click="hide()" class="md-primary">Cancel</md-button>
+			<md-button ng-click="hide()" class="md-primary">Finished</md-button>
+		</md-dialog-actions>
+	</form>
 </md-dialog>
