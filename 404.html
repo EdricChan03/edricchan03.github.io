@@ -42,9 +42,10 @@ permalink: /404.html
 				</md-tooltip>
 				<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
 			</md-button>
-      </div>
+		</div>
 	</md-toolbar>
-	<md-content flex-xs flex-gt-xs="50" layout="row">
+	<md-content flex-xs flex-gt-xs="50" layout="row" id="main">
+		<md-progress-circular md-mode="indeterminate" id="loading-main"></md-progress-circular>
 		<md-card>
 			<md-card-header>
 				<md-card-avatar>
@@ -84,6 +85,7 @@ permalink: /404.html
 				<md-button ng-click="commit()" class="md-primary">Commits</md-button>
 			</md-card-actions>
 		</md-card>
+		<md-switch class="md-accent"></md-switch>
 	</md-content>
 </body>
 
@@ -92,6 +94,18 @@ permalink: /404.html
 
     function debug() {
       console.error('Page does not exist!');
+      document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
     }
     // Google Analytics
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
