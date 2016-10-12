@@ -3,15 +3,11 @@ self.addEventListener('install', e => {
     caches.open('example1').then(cache => {
       return cache.addAll([
         '/',
+        // Main
         '/index.html',
-        '/index.html?homescreen=1',
-        '/?homescreen=1',
+        '/index.html',
+        // 404 Site
         '/404.html',
-        '/about/index.html',
-        '/media/index.html',
-        '/preferences/index.html',
-        // YML
-        '/_config.yml',
         // CSS
         '/css/angular-material.min.css',
         '/css/angular.css',
@@ -25,7 +21,6 @@ self.addEventListener('install', e => {
         '/js/angular-material.min.js',
         '/js/angular-messages.min.js',
         '/js/angular.min.js',
-        '/js/app.js',
         '/js/main.js',
         '/js/preferences.js',
         '/js/test.js',
@@ -47,6 +42,26 @@ self.addEventListener('install', e => {
         '/fonts/Menlo/Menlo.svg',
         // Font.css
         '/fonts/fonts.css',
+        // Angular
+        '/angular/angularjs.html',
+        '/angular/angulartodo.html',
+        '/angular/index.html',
+        '/angular/material.html',
+        // Beta Site
+        '/beta/index.html',
+        // About
+        '/about/index.html',
+        // Media
+        '/media/index.html',
+        // Preferences
+        '/preferences/index.html',
+        // Templates
+        '/templates/fab_speedial.html',
+        '/templates/feedback.html',
+        '/templates/settings_tmpl.html',
+        '/templates/sidenav.html',
+        '/templates/toolbar.html',
+        '/templates/whats_new_tmpl.html',
         // Images
         '/img/angular_1.jpeg',
         '/img/blogger.png',
@@ -54,7 +69,6 @@ self.addEventListener('install', e => {
         '/img/facebook-logo.svg',
         '/img/Github-Mark.svg',
         '/img/logo.svg',
-        // Material Design Icons
         '/img/mdi.svg',
         '/img/wallpaper.jpg',
         '/img/website.svg',
@@ -62,14 +76,16 @@ self.addEventListener('install', e => {
         '/wiki/img/wiki_beta.jpg',
         '/wiki/img/wiki_mainpage.jpg',
         '/wiki/img/wiki_nav.jpg',
-        '/wiki/img/wiki_project.jpg'
+        '/wiki/img/wiki_project.jpg',
+        // Favicon
+        '/favicon.ico'
       ])
-      .then(() => self.skipWaiting());
+        .then(() => self.skipWaiting());
     })
   )
 });
 
-self.addEventListener('activate',  event => {
+self.addEventListener('activate', event => {
   event.waitUntil(self.clients.claim());
 });
 
