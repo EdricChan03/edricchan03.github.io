@@ -146,3 +146,13 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
         $mdSidenav('left').toggle();
     }
 });
+/*
+*  Directives
+*/
+app.directive('mdBetaSidenav', function() {
+    return {
+        restrict: 'E',
+        templateUrl: '/templates/mdbetasidenav.html',
+        transclude: true
+    };
+});
