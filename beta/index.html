@@ -65,11 +65,9 @@ if ('serviceWorker' in navigator) {
 }
 setTimeout(function() {document.getElementById('progress').style.display = "none";}, 5000);
 window.onload = function internetCheck($scope, $mdToast) {
-	// Variables
-	var xhttp = new XMLHttpRequest();
 	window.setInterval(function($mdToast) {
-		if (this.readyState == 4 && this.status == 200) {
-
+		if (navigator.onLine) {
+			console.info('User is online!');
     } else {
         $scope.nointernet = function() {
 			$mdToast.show({
@@ -80,8 +78,6 @@ window.onload = function internetCheck($scope, $mdToast) {
         });
 		};
       };
-  xhttp.open("GET", "/Data.txt", true);
-  xhttp.send();
 	}, 3000);
 };
 </script>
