@@ -22,14 +22,14 @@ permalink: /404.html
 <body ng-controller="MainController" onload="debug()">
 	<!--mdToolbar-->
 	<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
-	<md-toolbar class="yellow" md-scroll-shrink>
+	<md-toolbar md-scroll-shrink>
 		<div class="md-toolbar-tools">
 			<!--Sidenav Button-->
-			<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
+			<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="goBack()">
 				<md-tooltip>
-					SideNav
+					Go Back
 				</md-tooltip>
-				<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
+				<md-icon md-svg-icon="arrow-left" aria-label="arrow-left"></md-icon>
 			</md-button>
 			<h2 class="md-flex">
 				Chan4077.Github.io BETA
@@ -85,40 +85,6 @@ permalink: /404.html
 			</md-card-actions>
 		</md-card>
 	</md-content>
-		<!--Sidenav-->
-		<div ng-controller="SideNavController">
-			<md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4">
-				<md-content class="md-default-theme">
-					<md-list>
-						<md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}" ng-click="openLeftMenu()">
-							<md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
-							<div class="md-list-item-text">
-								<span class="md-body-2">{{url.title}}</span>
-							</div>
-						</md-list-item>
-
-						<md-divider></md-divider>
-						<md-subheader>Other</md-subheader>
-						<md-list-item class="md-2-line" ng-repeat="url in other" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
-							<md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
-							<div class="md-list-item-text">
-								<span class="md-body-2">{{url.title}}</span>
-							</div>
-						</md-list-item>
-
-						<md-divider></md-divider>
-						<md-subheader>Made With</md-subheader>
-						<md-list-item class="md-2-line" ng-repeat="url in made" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
-							<md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
-							<div class="md-list-item-text">
-								<span class="md-body-2">{{url.title}}</span>
-							</div>
-						</md-list-item>
-
-					</md-list>
-				</md-content>
-			</md-sidenav>
-		</div>
 </body>
 
 </html>
