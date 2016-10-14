@@ -3,7 +3,7 @@
 		<md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4">
 			<md-content class="md-default-theme">
 				<md-list>
-					<md-list-item ng-repeat="url in top" role="link" ng-href="{{ url.url }}" ng-click="openLeftMenu()">
+					<md-list-item class="md-2-line" ng-repeat="url in top" role="link" ng-href="{{ url.url }}" ng-click="openLeftMenu()">
 						<md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
 						<div class="md-list-item-text">
 							<span class="md-body-2">{{url.title}}</span>
@@ -12,7 +12,7 @@
 
 					<md-divider></md-divider>
 					<md-subheader>Other</md-subheader>
-					<md-list-item ng-repeat="url in other" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
+					<md-list-item class="md-2-line" ng-repeat="url in other" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
 						<md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
 						<div class="md-list-item-text">
 							<span class="md-body-2">{{url.title}}</span>
@@ -21,7 +21,7 @@
 
 					<md-divider></md-divider>
 					<md-subheader>Made With</md-subheader>
-					<md-list-item ng-repeat="url in made" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
+					<md-list-item class="md-2-line" ng-repeat="url in made" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
 						<md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
 						<div class="md-list-item-text">
 							<span class="md-body-2">{{url.title}}</span>
