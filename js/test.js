@@ -1,4 +1,4 @@
-var app = angular.module('testApp', ['ngMaterial', 'ngMessages']);
+var app = angular.module('testApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria', ]);
 // Config
 app.config(function ($mdIconProvider, $mdAriaProvider, $mdToastProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg');
