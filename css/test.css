@@ -14,3 +14,10 @@ code {
     border-radius: 2px;
     background: rgba(0, 0, 0, 0.065)
 }
+.md-fab-bottom-right {
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    position: fixed;
+}
