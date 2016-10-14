@@ -31,6 +31,7 @@
 	<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer" ng-init="internetCheck()">
 		<site-toolbar></site-toolbar>
 		<md-content layout="column" flex class="md-padding" layout-padding>
+			<site-speed-dial></site-speed-dial>
 			<site-feedback></site-feedback>
 			<md-switch aria-label="Enable Form Debug" ng-model="switch.form_debug">Show Form Debug</md-switch>
 			<div class="form_debug" ng-show="switch.form_debug">
@@ -40,7 +41,7 @@
 				<br> feedback.$invalid = <code>{{feedbackbeta.$invalid}}</code>
 			</div>
 		</md-content>
-		<site-speed-dial></site-speed-dial>
+
 	</div>
 	<site-sidenav></site-sidenav>
 </body>
@@ -65,4 +66,5 @@ if ('serviceWorker' in navigator) {
 }
 setTimeout(function() {document.getElementById('progress').style.display = "none";}, 5000);
 </script>
+
 </html>
