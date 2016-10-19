@@ -1,4 +1,4 @@
-var app = angular.module('testApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria', ]);
+var app = angular.module('testApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria',]);
 // Config
 app.config(function ($mdIconProvider, $mdToastProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg');
@@ -117,28 +117,37 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             $mdDialog.cancel();
         };
     };
-$scope.internetCheck = function internetCheck($scope, $mdToast) {
-	window.setInterval(function($mdToast) {
-		if (navigator.onLine) {
-			console.info('User is online!');
-    } else {
-        $scope.nointernet = function() {
-			$mdToast.show({
-          hideDelay   : 3000,
-          position    : 'bottom left',
-          controller  : 'ToastCtrl',
-          templateUrl : '/templates/toastoffline.html'
-        });
-		};
-      };
-	}, 3000);
-};
-
 });
-app.controller('OfflineController', function($scope) {
+app.run(function ($window, $rootScope, $mdToast) {
+    $rootScope.online = navigator.onLine;
+    $window.addEventListener("offline", function () {
+        $rootScope.$apply(function () {
+            $rootScope.online = false;
+        });
+    }, false);
+    $window.addEventListener("online", function () {
+        $rootScope.$apply(function () {
+            $rootScope.online = true;
+        });
+    }, false);
+    if (online) {
+        console.info('User is online');
+    } else {
+        console.error('User is offline');
+        $mdToast.show({
+            hideDelay: 3000,
+            position: 'bottom left',
+            controller: 'ToastCtrl',
+            templateUrl: '/templates/toastoffline.html'
+        });
+
+    }
+});
+
+app.controller('OfflineController', function ($scope) {
     console.info('OfflineController successfully loaded!');
 
-    $scope.closeToast = function($mdToast) {
+    $scope.closeToast = function ($mdToast) {
         $mdToast.hide();
         console.info('You closed the offline toast.');
     };
@@ -174,7 +183,7 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
 *  Directives
 */
 // Sidenav
-app.directive('siteSidenav', function() {
+app.directive('siteSidenav', function () {
     return {
         restrict: 'E',
         templateUrl: '/templates/sidenav.html',
@@ -182,7 +191,7 @@ app.directive('siteSidenav', function() {
     };
 });
 // Feedback Form
-app.directive('siteFeedback', function() {
+app.directive('siteFeedback', function () {
     return {
         restrict: 'E',
         templateUrl: '/templates/feedback.html',
@@ -190,7 +199,7 @@ app.directive('siteFeedback', function() {
     };
 });
 // Toolbar
-app.directive('siteToolbar', function() {
+app.directive('siteToolbar', function () {
     return {
         restrict: 'E',
         templateUrl: '/templates/toolbar.html',
@@ -198,7 +207,7 @@ app.directive('siteToolbar', function() {
     };
 });
 // Speed Dial
-app.directive('siteSpeedDial', function() {
+app.directive('siteSpeedDial', function () {
     return {
         restrict: 'E',
         templateUrl: '/templates/speeddial.html',
