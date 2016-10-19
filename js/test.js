@@ -1,6 +1,6 @@
 var app = angular.module('testApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria',]);
 // Config
-app.config(function ($mdIconProvider, $mdToastProvider) {
+app.config(function ($mdIconProvider, $mdToastProvider, $rootScopeProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg');
     console.info('Successfully initialized!');
 });
