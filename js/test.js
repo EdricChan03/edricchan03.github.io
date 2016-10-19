@@ -118,7 +118,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         };
     };
 });
-app.run(function ($window, $rootScope, $mdToast) {
+app.run(function ($window, $rootScope, $mdToast, $scope) {
     $rootScope.online = navigator.onLine;
     $window.addEventListener("offline", function () {
         $rootScope.$apply(function () {
@@ -130,18 +130,21 @@ app.run(function ($window, $rootScope, $mdToast) {
             $rootScope.online = true;
         });
     }, false);
-    if ($rootScope.online) {
-        console.info('User is online');
-    } else {
-        console.error('User is offline');
-        $mdToast.show({
-            hideDelay: 3000,
-            position: 'bottom left',
-            controller: 'ToastCtrl',
-            templateUrl: '/templates/toastoffline.html'
-        });
+    $rootScope.$broadcast('online');
 
-    }
+    $scope.$on('online', function () {
+        if ($rootScope.online) {
+            console.info('User is online');
+        } else {
+            console.error('User is offline');
+            $mdToast.show({
+                hideDelay: 3000,
+                position: 'bottom left',
+                controller: 'ToastCtrl',
+                templateUrl: '/templates/toastoffline.html'
+            });
+        };
+    });
 });
 
 app.controller('OfflineController', function ($scope) {
