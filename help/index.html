@@ -9,7 +9,7 @@
 	<script src="/js/angular-aria.min.js"></script>
 	<script src="/js/angular-material.min.js"></script>
 	<script src="/js/angular-messages.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="/js/angular.min.js"></script>
 	<!--Angular Material CSS-->
 	<link href="/css/angular-material.min.css" rel="stylesheet">
 	<!--Site JS-->
@@ -17,47 +17,47 @@
 </head>
 
 <body ng-controller="HelpController">
-	<!--mdToolbar-->
-	<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
-	<md-toolbar md-scroll-shrink>
-		<div class="md-toolbar-tools">
-			<!--Sidenav Button-->
-			<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
+<!--mdToolbar-->
+<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
+<md-toolbar md-scroll-shrink>
+	<div class="md-toolbar-tools">
+		<!--Sidenav Button-->
+		<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
+			<md-tooltip>
+				SideNav
+			</md-tooltip>
+			<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
+		</md-button>
+		<h2 class="md-flex">
+			Chan4077.Github.io BETA
+		</h2>
+		<span flex></span>
+		<!--Refresh-->
+		<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
+			<md-tooltip>
+				Refresh
+			</md-tooltip>
+			<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
+		</md-button>
+		<!--mdMenu-->
+		<md-menu>
+			<md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
 				<md-tooltip>
-					SideNav
+					More
 				</md-tooltip>
-				<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
+				<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
 			</md-button>
-			<h2 class="md-flex">
-				Chan4077.Github.io BETA
-			</h2>
-			<span flex></span>
-			<!--Refresh-->
-			<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
-				<md-tooltip>
-					Refresh
-				</md-tooltip>
-				<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
-			</md-button>
-			<!--mdMenu-->
-			<md-menu>
-				<md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
-					<md-tooltip>
-						More
-					</md-tooltip>
-					<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
-				</md-button>
-				<md-menu-content>
-					<md-menu-item>
-						<md-button ng-click="sendFeedback($event)">
-							<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
-							Send Feedback
-						</md-button>
-					</md-menu-item>
-				</md-menu-content>
-			</md-menu>
-		</div>
-	</md-toolbar>
+			<md-menu-content>
+				<md-menu-item>
+					<md-button ng-click="sendFeedback($event)">
+						<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
+						Send Feedback
+					</md-button>
+				</md-menu-item>
+			</md-menu-content>
+		</md-menu>
+	</div>
+</md-toolbar>
 	<md-content>
 		<h1>Welcome to the Help Center!</h1>
 		<h5 class="coming-soon">COMING SOON</h5>
@@ -84,5 +84,4 @@ if ('serviceWorker' in navigator) {
 }
 setTimeout(function() {document.getElementById('progress').style.display = "none";}, 10000);
 </script>
-
 </html>

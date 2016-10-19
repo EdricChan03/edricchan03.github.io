@@ -20,7 +20,7 @@ $scope.sendFeedback = function(ev) {
       $scope.status = 'You cancelled the dialog.';
     });
   };
-
+});
 app.controller('SearchController', function ($scope) {
     console.info('Loaded SearchController!');
 });
@@ -42,7 +42,5 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
     ];
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
-    }
-});
-// Directives
-// Come from beta site
+    };
+})
