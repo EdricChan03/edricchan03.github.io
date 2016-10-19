@@ -1,9 +1,8 @@
 var app = angular.module('testApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria', ]);
 // Config
-app.config(function ($mdIconProvider, $mdAriaProvider, $mdToastProvider) {
+app.config(function ($mdIconProvider, $mdToastProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg');
     console.info('Successfully initialized!');
-    $mdAriaProvider.disableWarnings();
 });
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
     // Refresh page, direct from server
