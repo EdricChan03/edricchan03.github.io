@@ -130,7 +130,7 @@ app.run(function ($window, $rootScope, $mdToast) {
             $rootScope.online = true;
         });
     }, false);
-    if (online) {
+    if ($rootScope.online) {
         console.info('User is online');
     } else {
         console.error('User is offline');
