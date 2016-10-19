@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html ng-app="HelpApp">
 
 <head>
@@ -17,51 +18,53 @@
 </head>
 
 <body ng-controller="HelpController">
-<!--mdToolbar-->
-<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
-<md-toolbar md-scroll-shrink>
-	<div class="md-toolbar-tools">
-		<!--Sidenav Button-->
-		<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
-			<md-tooltip>
-				SideNav
-			</md-tooltip>
-			<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
-		</md-button>
-		<h2 class="md-flex">
-			Chan4077.Github.io BETA
-		</h2>
-		<span flex></span>
-		<!--Refresh-->
-		<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
-			<md-tooltip>
-				Refresh
-			</md-tooltip>
-			<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
-		</md-button>
-		<!--mdMenu-->
-		<md-menu>
-			<md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
-				<md-tooltip>
-					More
-				</md-tooltip>
-				<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
-			</md-button>
-			<md-menu-content>
-				<md-menu-item>
-					<md-button ng-click="sendFeedback($event)">
-						<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
-						Send Feedback
+	<!--mdToolbar-->
+	<div layout="column" ng-controller="HelpController" ng-cloak id="popupContainer">
+		<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
+		<md-toolbar md-scroll-shrink>
+			<div class="md-toolbar-tools">
+				<!--Sidenav Button-->
+				<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
+					<md-tooltip>
+						SideNav
+					</md-tooltip>
+					<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
+				</md-button>
+				<h2 class="md-flex">
+					Chan4077.Github.io BETA
+				</h2>
+				<span flex></span>
+				<!--Refresh-->
+				<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
+					<md-tooltip>
+						Refresh
+					</md-tooltip>
+					<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
+				</md-button>
+				<!--mdMenu-->
+				<md-menu>
+					<md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
+						<md-tooltip>
+							More
+						</md-tooltip>
+						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
 					</md-button>
-				</md-menu-item>
-			</md-menu-content>
-		</md-menu>
+					<md-menu-content>
+						<md-menu-item>
+							<md-button ng-click="sendFeedback($event)">
+								<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
+								Send Feedback
+							</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
+			</div>
+		</md-toolbar>
+		<md-content>
+			<h1>Welcome to the Help Center!</h1>
+			<h5 class="coming-soon">COMING SOON</h5>
+		</md-content>
 	</div>
-</md-toolbar>
-	<md-content>
-		<h1>Welcome to the Help Center!</h1>
-		<h5 class="coming-soon">COMING SOON</h5>
-	</md-content>
 </body>
 <!--Google Analytics-->
 <script>
@@ -99,4 +102,5 @@ setTimeout(function() {document.getElementById('progress').style.display = "none
   };
   firebase.initializeApp(config);
 </script>
+
 </html>
