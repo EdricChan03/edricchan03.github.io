@@ -158,7 +158,7 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
         { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
         { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
         { url: '', title: 'Submit Feedback', icon: 'message-alert' },
-        { url: '', title: 'Get Help', icon: 'help-circle' },
+        { url: 'https://chan4077.github.io/help', title: 'Get Help', icon: 'help-circle' },
     ];
     $scope.made = [
         { url: 'https://materialdesignicons.com', title: 'MaterialDesignIcons', icon: 'vector-square' },
