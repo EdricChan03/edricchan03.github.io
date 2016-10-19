@@ -6,20 +6,20 @@ app.config(function ($mdIconProvider) {
 });
 app.controller('HelpController', function ($scope, $mdDialog) {
     console.info('Loaded HelpController!');
-$scope.sendFeedback = function(ev) {
-    $mdDialog.show({
-      controller: FeedbackController,
-      templateUrl: '/templates/feedbackhelp.html',
-      parent: angular.element(document.body),
-      targetEvent: ev,
-      clickOutsideToClose: true
-    })
-    .then(function(answer) {
-      $scope.status = 'Your answer was: "' + answer + '".';
-    }, function() {
-      $scope.status = 'You cancelled the dialog.';
-    });
-  };
+    $scope.sendFeedback = function (ev) {
+        $mdDialog.show({
+            controller: FeedbackController,
+            templateUrl: '/templates/feedbackhelp.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose: true
+        })
+            .then(function (answer) {
+                $scope.status = 'Your answer was: "' + answer + '".';
+            }, function () {
+                $scope.status = 'You cancelled the dialog.';
+            });
+    };
 });
 app.controller('SearchController', function ($scope) {
     console.info('Loaded SearchController!');
