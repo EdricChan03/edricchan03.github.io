@@ -84,4 +84,18 @@ if ('serviceWorker' in navigator) {
 }
 setTimeout(function() {document.getElementById('progress').style.display = "none";}, 10000);
 </script>
+<!--Firebase-->
+
+<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD8Bq8Dg6yUYMMgunWAQUT7ubpwGoOyLXU",
+    authDomain: "githubpageschan4077.firebaseapp.com",
+    databaseURL: "https://githubpageschan4077.firebaseio.com",
+    storageBucket: "githubpageschan4077.appspot.com",
+    messagingSenderId: "667191939984"
+  };
+  firebase.initializeApp(config);
+</script>
 </html>
