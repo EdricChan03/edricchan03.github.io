@@ -23,6 +23,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
 });
 app.controller('SearchController', function ($scope) {
     console.info('Loaded SearchController!');
+    $scope.search = ' ';
 });
 // Sidenav
 app.controller('SideNavController', function ($scope, $mdSidenav) {
