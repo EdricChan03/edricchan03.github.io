@@ -118,7 +118,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         };
     };
 });
-app.run(function ($window, $rootScope, $mdToast, $scope) {
+app.run(['$rootScope', '$window', '$scope', '$mdToast', function ($window, $rootScope, $mdToast, $scope) {
     $rootScope.online = navigator.onLine;
     $window.addEventListener("offline", function () {
         $rootScope.$apply(function () {
@@ -145,7 +145,7 @@ app.run(function ($window, $rootScope, $mdToast, $scope) {
             });
         };
     });
-});
+}])
 
 app.controller('OfflineController', function ($scope) {
     console.info('OfflineController successfully loaded!');

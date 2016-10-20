@@ -1,4 +1,4 @@
-var app = angular.module('HelpApp', ['']);
+var app = angular.module('HelpApp', ['ngMaterial']);
 // Config
 app.config(function ($mdIconProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg');
