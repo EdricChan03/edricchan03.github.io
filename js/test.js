@@ -119,21 +119,21 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
     };
 });
 app.run(['$rootScope', '$window', '$scope', '$mdToast', function ($window, $rootScope, $mdToast, $scope) {
-    $rootScope.online = navigator.onLine;
+    var online = navigator.onLine;
     $window.addEventListener("offline", function () {
         $rootScope.$apply(function () {
-            $rootScope.online = false;
+            online = false;
         });
     }, false);
     $window.addEventListener("online", function () {
         $rootScope.$apply(function () {
-            $rootScope.online = true;
+            online = true;
         });
     }, false);
     $rootScope.$broadcast('online');
 
     $scope.$on('online', function () {
-        if ($rootScope.online) {
+        if (online) {
             console.info('User is online');
         } else {
             console.error('User is offline');
