@@ -45,7 +45,6 @@ permalink: /404.html
 		</div>
 	</md-toolbar>
 	<md-content flex-xs flex-gt-xs="50" layout="row" id="main">
-		<md-progress-circular md-mode="indeterminate" id="loading-main"></md-progress-circular>
 		<md-card>
 			<md-card-header>
 				<md-card-avatar>
@@ -126,6 +125,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 // Timeout for md-progress-linear
-setTimeout(function() {document.getElementById('progress').style.display = "none";}, 5000);
+setTimeout(function() {document.getElementById('progress').style.display = "none";}, 10000);
 </script>
 <!--END-->

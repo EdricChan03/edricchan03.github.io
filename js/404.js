@@ -28,4 +28,8 @@ app.controller('MainController', function ($scope, $mdSidenav) {
   $scope.refreshPage = function () {
     window.location.reload(true);
   };
+  $scope.help = function () {
+    window.location.href = "https://chan4077.github.io/help";
+    console.info('Redirecting to Help site...');
+  }
 })

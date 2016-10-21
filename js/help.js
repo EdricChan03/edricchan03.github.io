@@ -46,6 +46,10 @@ app.controller('HelpController', function ($scope, $mdDialog) {
         $scope.extra_settings = {
             showCredits: true,
             enableOffline: true
+        };
+        $scope.help = function () {
+            window.location.href = "https://chan4077.github.io/help";
+            console.info('Redirecting to Help site...');
         }
     };
     function FeedbackController($scope, $mdDialog, $mdToast) {
