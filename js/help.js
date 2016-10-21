@@ -23,7 +23,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
                 $scope.status = 'You cancelled the dialog.';
             });
     };
-    function FeedbackController($scope, $mdDialog, $mdToast) {
+    app.controller('FeedbackController', function ($scope, $mdDialog, $mdToast) {
         $scope.hide = function () {
             $mdDialog.hide();
         };
@@ -58,7 +58,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
                     .hideDelay(3000)
             );
         };
-    };
+    });
 });
 app.controller('SearchController', function ($scope) {
     console.info('Loaded SearchController!');
