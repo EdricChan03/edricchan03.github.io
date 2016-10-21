@@ -1,4 +1,4 @@
-var app = angular.module('HelpApp', ['ngMaterial']);
+var app = angular.module('HelpApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria']);
 // Config
 app.config(function ($mdIconProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg');
