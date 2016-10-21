@@ -26,12 +26,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
-        })
-            .then(function (answer) {
-                $scope.status = 'Your answer was: "' + answer + '".';
-            }, function () {
-                $scope.status = 'You cancelled the dialog.';
-            });
+        });
     };
     function DialogController($scope, $mdDialog) {
         $scope.hide = function () {

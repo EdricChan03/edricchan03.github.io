@@ -14,59 +14,6 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
     };
-    $scope.oriFeedback = {
-        name: "",
-        email: "",
-        sendFeedback: ""
-    };
-    // Declare a variable called oriFeedback
-    var oriFeedback = angular.copy($scope.oriFeedback);
-
-    // On initial, set feedback to original
-    $scope.feedback = angular.copy(oriFeedback);
-
-    // Reset form
-    $scope.reset = function () {
-        $scope.feedback = angular.copy(oriFeedback);
-        // Reset form
-        $scope.feedbackbeta.$setPristine();
-        // Reset validation errors
-        $scope.feedbackbeta.$setUntouched();
-    };
-    // Feedback Form ($mdToast)
-    $scope.submitForm = function () {
-        var toast = $mdToast.simple()
-            .textContent('Form was submitted')
-            .action('UNDO')
-            .highlightAction(true)
-            .position('bottom left')
-            .hideDelay(3000);
-
-        $mdToast.show(toast).then(function (response) {
-            if (response == 'ok') {
-                console.info('User clicked Undo.');
-                console.log('Successfully undone');
-            }
-        });
-    };
-    // Reset Form
-    $scope.resetForm = function () {
-        var toast = $mdToast.simple()
-            .textContent('Form was reset')
-            .action('UNDO')
-            .highlightAction(true)
-            .position('bottom left')
-            .hideDelay(3000);
-
-        $mdToast.show(toast).then(function (response) {
-            if (response == 'ok') {
-                console.info('User clicked Undo.');
-                console.log('Successfully undone');
-            }
-        });
-    };
-
-
     // More menu
     var originatorEv;
 
@@ -98,7 +45,51 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             clickOutsideToClose: true,
         });
     };
+    $scope.sendFeedback = function (ev) {
+        $mdDialog.show({
+            controller: FeedbackController,
+            templateUrl: '/templates/feedbackhelp.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose: true,
+        });
+    };
+    function FeedbackController($scope, $mdDialog, $mdToast) {
+        $scope.hide = function () {
+            $mdDialog.hide();
+        };
+        $scope.cancel = function () {
+            $mdDialog.cancel();
+        };
+        $scope.oriFeedback = {
+            name: "",
+            email: "",
+            sendFeedback: ""
+        };
+        // Declare a variable called oriFeedback
+        var oriFeedback = angular.copy($scope.oriFeedback);
 
+        // On initial, set feedback to original
+        $scope.feedback = angular.copy(oriFeedback);
+
+        // Reset form
+        $scope.reset = function () {
+            $scope.feedback = angular.copy(oriFeedback);
+            // Reset form
+            $scope.feedbackhelp.$setPristine();
+            // Reset validation errors
+            $scope.feedbackhelp.$setUntouched();
+        };
+        $scope.submitForm = function () {
+            $mdDialog.cancel();
+            $mdToast.show(
+                $mdToast.simple()
+                    .textContent('You submitted the form!')
+                    .position('bottom left')
+                    .hideDelay(3000)
+            );
+        };
+    };
     // $mdDialog (end)
 
     $scope.about_site = function () {
@@ -192,14 +183,6 @@ app.directive('siteSidenav', function () {
     return {
         restrict: 'E',
         templateUrl: '/templates/sidenav.html',
-        transclude: true
-    };
-});
-// Feedback Form
-app.directive('siteFeedback', function () {
-    return {
-        restrict: 'E',
-        templateUrl: '/templates/feedback.html',
         transclude: true
     };
 });
