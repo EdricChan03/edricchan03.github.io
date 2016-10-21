@@ -9,6 +9,8 @@ app.controller('HelpController', function ($scope, $mdDialog) {
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
+    var caps = document.getElementsByClassName('caps');
+    caps.toUpperCase;
     $scope.sendFeedback = function (ev) {
         $mdDialog.show({
             controller: FeedbackController,
