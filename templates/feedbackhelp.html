@@ -40,10 +40,14 @@
 					</div>
 				</md-input-container>
 				<p class="note"><strong>Note:</strong> This form is currently not working. Don't expect it to work!</p>
+				<p class="note"><strong>Note:</strong> The <span class="code">Submit</span> button is disabled with <code>ng-disabled</code>.</p>
 			</div>
 		</md-dialog-content>
 		<md-dialog-actions layout="row">
-			<md-button class="md-warn" ng-click="reset()">
+			<md-button ng-click="cancel()" aria-label="Cancel">
+				Cancel
+			</md-button>
+			<md-button class="md-warn" ng-click="reset()" aria-label="Reset">
 				Reset
 			</md-button>
 			<md-button ng-disabled="feedbackhelp.$invalid" class="md-primary" type="submit" ng-click="submitForm()">
