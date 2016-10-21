@@ -53,6 +53,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
         }
     };
     function SearchController($timeout, $q, $log) {
+        console.info('SearchController loaded!');
         var self = this;
 
         self.simulateQuery = true;
