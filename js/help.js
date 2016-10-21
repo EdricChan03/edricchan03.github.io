@@ -12,7 +12,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
     // mdDialog
     $scope.settings = function (ev) {
         $mdDialog.show({
-            controller: DialogController,
+            controller: SettingsController,
             templateUrl: '/templates/settings_tmpl.html',
             parent: angular.element(document.body),
             targetEvent: ev,
@@ -28,13 +28,25 @@ app.controller('HelpController', function ($scope, $mdDialog) {
             clickOutsideToClose: true,
         });
     };
-    function DialogController($scope, $mdDialog) {
+    function SettingsController($scope, $mdDialog) {
         $scope.hide = function () {
             $mdDialog.hide();
         };
         $scope.cancel = function () {
             $mdDialog.cancel();
         };
+        $scope.general_settings = {
+            proBar = true,
+            enableSound = true
+        };
+        $scope.developer_settings = {
+            consoleLog = false,
+            showExtraOptions = false
+        };
+        $scope.extra_settings = {
+            showCredits = true,
+            enableOffline = true
+        }
     };
     function FeedbackController($scope, $mdDialog, $mdToast) {
         $scope.hide = function () {

@@ -17,7 +17,19 @@
 		<md-dialog-content>
 			<div class="md-dialog-content">
 				<h1>Settings</h1>
-				<p>Currently not working.</p>
+				<h2>General</h2>
+				<md-switch ng-model="general_settings.proBar" aria-label="Enable Progress Bar">Enable Progress Bar <strong>(Default: true)</strong></md-switch>
+				<md-switch ng-model="general_settings.enableSound" aria-label="Enable Sound">Enable Sound <strong>(Default: true)</strong></md-switch>
+				<br>
+				<h2>Developer</h2>
+				<md-switch ng-model="developer_settings.consoleLog" aria-label="Enable Console logging">Enable Console Logging <strong>(Default: false)</strong></md-switch>
+				<md-switch ng-model="developer_settings.showExtraOptions" aria-label="Show Extra Options">Show Extra Options <strong>(Default: false)</strong></md-switch>
+				<br>
+				<h2>Extra</h2>
+				<md-switch ng-model="extra_settings.showCredits" aria-label="Show Credits">Show Credits <strong>(Default: true)</strong></md-switch>
+				<md-switch ng-model="extra_settings.enableOffline" aria-label="Enable Offline" ng-disabled="true">Enable Offline <strong>(Default: true)</strong></md-switch>
+				<br>
+				<p><strong>Note:</strong>Some of these settings, in fact, all of them, are not currently working at the moment.</p>
 			</div>
 		</md-dialog-content>
 		<md-dialog-actions layout="row">
