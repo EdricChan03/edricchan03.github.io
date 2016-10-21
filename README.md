@@ -12,7 +12,7 @@ There too, is [Angular Material](https://material.angularjs.org/latest)
 3. [Test My Beta Site](https://chan4077.github.io/beta/index.html)
 
 ## My Beta Site:
-![Beta Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io/master/wiki/img/wiki_beta.jpg)
+![Beta Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io/master/wiki/img/wiki_beta_new.jpg)
 
 ## Notes:
 Google Analytics is now included in all the pages.
