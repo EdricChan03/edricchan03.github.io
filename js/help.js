@@ -13,7 +13,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
     $scope.settings = function (ev) {
         $mdDialog.show({
             controller: DialogController,
-            teplateUrl: '/templates/settings_tmpl.html',
+            templateUrl: '/templates/settings_tmpl.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
