@@ -65,7 +65,6 @@ self.addEventListener('install', e => {
         '/preferences/index.html',
         // Templates
         '/templates/speeddial.html',
-        '/templates/feedback.html',
         '/templates/feedbackhelp.html',
         '/templates/settings_tmpl.html',
         '/templates/sidenav.html',
