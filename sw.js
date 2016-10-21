@@ -1,6 +1,6 @@
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open('example1').then(cache => {
+    caches.open('chan4077.github.io').then(cache => {
       return cache.addAll([
         '/',
         // Main
@@ -66,6 +66,7 @@ self.addEventListener('install', e => {
         // Templates
         '/templates/speeddial.html',
         '/templates/feedback.html',
+        '/templates/feedbackhelp.html',
         '/templates/settings_tmpl.html',
         '/templates/sidenav.html',
         '/templates/toastoffline.html',

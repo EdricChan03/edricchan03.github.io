@@ -12,7 +12,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
             templateUrl: '/templates/feedbackhelp.html',
             parent: angular.element(document.body),
             targetEvent: ev,
-            clickOutsideToClose: true
+            clickOutsideToClose: true,
         })
             .then(function (answer) {
                 $scope.status = 'Your answer was: "' + answer + '".';
@@ -20,10 +20,18 @@ app.controller('HelpController', function ($scope, $mdDialog) {
                 $scope.status = 'You cancelled the dialog.';
             });
     };
+    function FeedbackController($scope, $mdDialog) {
+        $scope.hide = function () {
+            $mdDialog.hide();
+        };
+        $scope.cancel = function () {
+            $mdDialog.cancel();
+        };
+    };
 });
 app.controller('SearchController', function ($scope) {
     console.info('Loaded SearchController!');
-    $scope.search = ' ';
+    $scope.search = '  ';
 });
 // Sidenav
 app.controller('SideNavController', function ($scope, $mdSidenav) {

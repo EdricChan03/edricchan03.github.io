@@ -28,8 +28,4 @@ app.controller('MainController', function ($scope, $mdSidenav) {
   $scope.refreshPage = function () {
     window.location.reload(true);
   };
-  // Sidenav
-  $scope.openLeftMenu = function () {
-    $mdSidenav('left').toggle();
-  };
 })
