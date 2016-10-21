@@ -38,7 +38,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
     };
     $scope.settings = function (ev) {
         $mdDialog.show({
-            controller: DialogController,
+            controller: SettingsController,
             templateUrl: '/templates/settings_tmpl.html',
             parent: angular.element(document.body),
             targetEvent: ev,
@@ -100,13 +100,25 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         { name: 'Twitter', icon: 'twitter-box' },
         { name: 'Google+', icon: 'google-plus' }
     ];
-    function DialogController($scope, $mdDialog) {
+    function SettingsController($scope, $mdDialog) {
         $scope.hide = function () {
             $mdDialog.hide();
         };
         $scope.cancel = function () {
             $mdDialog.cancel();
         };
+        $scope.general_settings = {
+            proBar = true,
+            enableSound = true
+        };
+        $scope.developer_settings = {
+            consoleLog = false,
+            showExtraOptions = false
+        };
+        $scope.extra_settings = {
+            showCredits = true,
+            enableOffline = true
+        }
     };
 });
 /*
