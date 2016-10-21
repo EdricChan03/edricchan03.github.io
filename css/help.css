@@ -1,0 +1,11 @@
+/* Code */
+code {
+    font-family: "Source Code Pro", monospace;
+    color: #106CC8;
+    margin-left: 1px;
+    margin-right: 1px;
+    -webkit-font-smoothing: auto;
+    padding: 0.125em 0.35em;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.065)
+}
