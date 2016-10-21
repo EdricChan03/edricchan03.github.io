@@ -4,7 +4,7 @@
 			<div class="md-toolbar-tools">
 				<h2>Settings</h2>
 				<span flex></span>
-				<md-button aria-label="Help" class="md-icon-button" ng-click="help()">
+				<md-button aria-label="Help" class="md-icon-button">
 					<md-tooltip>Help</md-tooltip>
 					<md-icon md-svg-icon="help" aria-label="help"></md-icon>
 				</md-button>
@@ -16,33 +16,29 @@
 		</md-toolbar>
 		<md-dialog-content>
 			<div class="md-dialog-content">
-				<md-tabs>
-					<md-tab label="General">
-						<md-content class="md-padding">
-							<h2>General</h2>
-							<md-switch ng-model="general_settings.proBar" aria-label="Enable Progress Bar">Enable Progress Bar <strong>(Default: true)</strong></md-switch>
-							<md-switch ng-model="general_settings.enableSound" aria-label="Enable Sound">Enable Sound <strong>(Default: true)</strong></md-switch>
-						</md-content>
-					</md-tab>
-					<md-tab label="Developer">
-						<md-content class="md-padding">
-							<h2>Developer</h2>
-							<md-switch ng-model="developer_settings.consoleLog" aria-label="Enable Console logging">Enable Console Logging <strong>(Default: false)</strong></md-switch>
-							<md-switch ng-model="developer_settings.showExtraOptions" aria-label="Show Extra Options">Show Extra Options <strong>(Default: false)</strong></md-switch>
-						</md-content>
-					</md-tab>
-					<md-tab label="Extra">
-						<md-content class="md-padding">
-							<h2>Extra</h2>
-							<md-switch ng-model="extra_settings.showCredits" aria-label="Show Credits">Show Credits <strong>(Default: true)</strong></md-switch>
-							<md-switch ng-model="extra_settings.enableOffline" aria-label="Enable Offline" ng-disabled="true">Enable Offline <strong>(Default: true)</strong></md-switch>
-						</md-content>
-					</md-tab>
-					<md-tab label="Notes">
-						<md-content class="md-padding">
-							<p><strong>Note:</strong>Some of these settings, in fact, all of them, are not currently working at the moment.</p>
-						</md-content>
-					</md-tab>
+				<h1>Settings</h1>
+				<md-subheader>General</md-subheader>
+				<md-switch ng-model="general_settings.proBar" aria-label="Enable Progress Bar">Enable Progress Bar <strong>(Default: true)</strong></md-switch>
+				Enable Progress Bar: {{general_settings.proBar}}
+				<md-switch ng-model="general_settings.enableSound" aria-label="Enable Sound">Enable Sound <strong>(Default: true)</strong></md-switch>
+				Enable Sound: {{general_settings.enableSound}}
+				<br>
+				<md-subheader>Developer</md-subheader>
+				<md-switch ng-model="developer_settings.consoleLog" aria-label="Enable Console logging">Enable Console Logging <strong>(Default: false)</strong></md-switch>
+				Enable Console Logging: {{developer_settings.consoleLog}}
+				<md-switch ng-model="developer_settings.showExtraOptions" aria-label="Show Extra Options">Show Extra Options <strong>(Default: false)</strong></md-switch>
+				Show Extra Options: {{developer_settings.showExtraOptions}}
+				<br>
+				<div ng-show="{{developer_settings.showExtraOptions}}">
+				<md-subheader>Extra</md-subheader>
+				<md-switch ng-model="extra_settings.showCredits" aria-label="Show Credits">Show Credits <strong>(Default: true)</strong></md-switch>
+				Show Credits: {{extra_settings.showCredits}}
+				<md-switch ng-model="extra_settings.enableOffline" aria-label="Enable Offline" ng-disabled="true">Enable Offline <strong>(Default: true)</strong></md-switch>
+				Enable Offline: {{extra_settings.enableOffline}}
+				</div>
+				<br>
+				<md-subheader class="md-warn">Notes</md-subheader>
+				<p><strong>Note:</strong> Some of these settings, in fact, all of them, are not currently working at the moment.</p>
 			</div>
 		</md-dialog-content>
 		<md-dialog-actions layout="row">
