@@ -32,15 +32,16 @@
 						<label>Feedback</label>
 						<md-icon md-svg-icon="message-alert"></md-icon>
 						<textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="5"></textarea>
-						<div ng-messages="feedhelp.sendFeedback.$error">
+						<div ng-messages="feedbackhelp.sendFeedback.$error">
 							<div ng-message="required">This is required</div>
 							<div ng-message="md-maxlength">Your feedback is too long.</div>
 						</div>
 					</md-input-container>
+					<p class="note"><strong>Note:</strong> This form is currently not working. Don't expect it to work!</p>
 			</div>
 		</md-dialog-content>
 		<md-dialog-actions layout="row">
-			<md-button class="md-warn" ng-click="reset(); resetForm()">
+			<md-button class="md-warn" ng-click="reset()">
 				Reset
 			</md-button>
 			<md-button ng-disabled="feedbackhelp.$invalid" class="md-primary" type="submit" ng-click="submitForm()">

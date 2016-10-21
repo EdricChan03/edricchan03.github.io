@@ -20,12 +20,40 @@ app.controller('HelpController', function ($scope, $mdDialog) {
                 $scope.status = 'You cancelled the dialog.';
             });
     };
-    function FeedbackController($scope, $mdDialog) {
+    function FeedbackController($scope, $mdDialog, $mdToast) {
         $scope.hide = function () {
             $mdDialog.hide();
         };
         $scope.cancel = function () {
             $mdDialog.cancel();
+        };
+        $scope.oriFeedback = {
+            name: "",
+            email: "",
+            sendFeedback: ""
+        };
+        // Declare a variable called oriFeedback
+        var oriFeedback = angular.copy($scope.oriFeedback);
+
+        // On initial, set feedback to original
+        $scope.feedback = angular.copy(oriFeedback);
+
+        // Reset form
+        $scope.reset = function () {
+            $scope.feedback = angular.copy(oriFeedback);
+            // Reset form
+            $scope.feedbackhelp.$setPristine();
+            // Reset validation errors
+            $scope.feedbackhelp.$setUntouched();
+        };
+        $scope.submitForm = function () {
+            $mdDialog.cancel();
+            $mdToast.show(
+                $mdToast.simple()
+                    .textContent('You submitted the form!')
+                    .position('bottom left')
+                    .hideDelay(3000)
+            );
         };
     };
 });
