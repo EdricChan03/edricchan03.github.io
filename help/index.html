@@ -61,9 +61,15 @@
 					</md-button>
 					<md-menu-content>
 						<md-menu-item>
-							<md-button ng-click="sendFeedback($event)">
+							<md-button ng-click="sendFeedback($event)" aria-label="Send Feedback">
 								<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
 								Send Feedback
+							</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button aria-label="Settings" ng-click="settings($event)">
+								<md-icon md-svg-icon="settings" md-menu-align-target></md-icon>
+								Settings
 							</md-button>
 						</md-menu-item>
 					</md-menu-content>

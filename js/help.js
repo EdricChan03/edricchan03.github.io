@@ -9,8 +9,16 @@ app.controller('HelpController', function ($scope, $mdDialog) {
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
-    var caps = document.getElementsByClassName('caps');
-    caps.toUpperCase;
+    // mdDialog
+    $scope.settings = function (ev) {
+        $mdDialog.show({
+            controller: DialogController,
+            teplateUrl: '/templates/settings_tmpl.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose: true,
+        });
+    };
     $scope.sendFeedback = function (ev) {
         $mdDialog.show({
             controller: FeedbackController,
@@ -24,6 +32,14 @@ app.controller('HelpController', function ($scope, $mdDialog) {
             }, function () {
                 $scope.status = 'You cancelled the dialog.';
             });
+    };
+    function DialogController($scope, $mdDialog) {
+        $scope.hide = function () {
+            $mdDialog.hide();
+        };
+        $scope.cancel = function () {
+            $mdDialog.cancel();
+        };
     };
     function FeedbackController($scope, $mdDialog, $mdToast) {
         $scope.hide = function () {
