@@ -52,10 +52,11 @@ app.controller('HelpController', function ($scope, $mdDialog) {
             console.info('Redirecting to Help site...');
         }
     };
-    app.controller('SearchController', function ($timeout, $q, $log) {
+    function SearchController($timeout, $q, $log) {
         var self = this;
 
         self.simulateQuery = true;
+        self.isDisabled = false;
 
         // list of `state` value/display objects
         self.states = loadAll();
@@ -128,7 +129,7 @@ app.controller('HelpController', function ($scope, $mdDialog) {
             };
 
         }
-    });
+    }
     function FeedbackController($scope, $mdDialog, $mdToast) {
         $scope.hide = function () {
             $mdDialog.hide();
