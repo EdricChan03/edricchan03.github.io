@@ -108,16 +108,16 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             $mdDialog.cancel();
         };
         $scope.general_settings = {
-            proBar = true,
-            enableSound = true
+            proBar: true,
+            enableSound: true
         };
         $scope.developer_settings = {
-            consoleLog = false,
-            showExtraOptions = false
+            consoleLog: false,
+            showExtraOptions: false
         };
         $scope.extra_settings = {
-            showCredits = true,
-            enableOffline = true
+            showCredits: true,
+            enableOffline: true
         }
     };
 });
