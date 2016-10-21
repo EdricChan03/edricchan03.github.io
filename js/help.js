@@ -6,6 +6,9 @@ app.config(function ($mdIconProvider) {
 });
 app.controller('HelpController', function ($scope, $mdDialog) {
     console.info('Loaded HelpController!');
+    $scope.refreshPage = function () {
+        window.location.reload(true);
+    };
     $scope.sendFeedback = function (ev) {
         $mdDialog.show({
             controller: FeedbackController,
