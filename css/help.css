@@ -20,3 +20,14 @@ span.code {
     border-radius: 2px;
     background: rgba(0, 0, 0, 0.065);
 }
+
+.table-of-contents {
+    margin: 1px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.065);
+    padding: 2px;
+    position: fixed;
+}
+.link {
+    
+}
