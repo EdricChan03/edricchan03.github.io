@@ -29,7 +29,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
     // $mdDialog (start)
     $scope.whats_new = function (ev) {
         $mdDialog.show({
-            controller: DialogController,
+            controller: WhatNewController,
             templateUrl: '/templates/whats_new_tmpl.html',
             parent: angular.element(document.body),
             targetEvent: ev,
@@ -53,6 +53,14 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             targetEvent: ev,
             clickOutsideToClose: true,
         });
+    };
+    function WhatNewController($scope, $mdDialog, $mdToast) {
+        $scope.hide = function() {
+            $mdDialog.hide();
+        };
+        $scope.cancel = function() {
+            $mdDialog.cancel();
+        };
     };
     function FeedbackController($scope, $mdDialog, $mdToast) {
         $scope.hide = function () {
