@@ -40,27 +40,8 @@
 					</md-tooltip>
 					<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
 				</md-button>
-                <form class="search" action="" method="GET" id="search-form">
-                    <md-autocomplete
-                       md-items="item in ctrl.querySearch(ctrl.searchText)"
-                       md-item-text="item.display"
-                       md-no-cache="true"
-                       md-selected-item="ctrl.selectedItem"
-                       md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
-                       md-search-text="ctrl.searchText"
-                       md-selected-item-change="ctrl.selectedItemChange(item)"
-                       md-min-length="0"
-                       placeholder="Enter your query here"
-                       >
-                       <md-item-template>
-                            <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
-                       </md-item-template>
-                       <md-not-found>
-                            No states matching "{{ctrl.searchText}}" were found.
-                            <a ng-click="ctrl.newState(ctrl.searchText)">Create a new one!</a>
-                       </md-not-found>
-                    </md-autocomplete>
-                </form>
+				<h2>Chan4077.Github.io Help</h2>
+				<span flex></span>
 				<!--Refresh-->
 				<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
 					<md-tooltip>
