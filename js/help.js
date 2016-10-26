@@ -112,15 +112,18 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
 
 // Directives
 
-app.directive('helpSidenav', function() {
+app.directive('helpSidenav', function () {
     return {
         restrict: 'E',
         templateUrl: '/templates/helpsidenav.html',
         transclude: true,
-        controller: function($scope) {
+        controller: function ($scope, $mdSidenav) {
             $scope.helpSites = [
                 { title: 'Main', link: 'https://chan4077.github.io/help', icon: 'home' }
-            ]
+            ];
+            $scope.openLeftMenu = function () {
+                $mdSidenav('left').toggle();
+            };
         }
     }
 })
