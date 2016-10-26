@@ -55,12 +55,16 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         });
     };
     function WhatNewController($scope, $mdDialog, $mdToast) {
-        $scope.hide = function() {
+        $scope.hide = function () {
             $mdDialog.hide();
         };
-        $scope.cancel = function() {
+        $scope.cancel = function () {
             $mdDialog.cancel();
         };
+        $scope.help = function () {
+            window.location.href = "https://chan4077.github.io/help";
+            console.info('Redirecting to Help site...');
+        }
     };
     function FeedbackController($scope, $mdDialog, $mdToast) {
         $scope.hide = function () {
@@ -69,6 +73,10 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         $scope.cancel = function () {
             $mdDialog.cancel();
         };
+        $scope.help = function () {
+            window.location.href = "https://chan4077.github.io/help";
+            console.info('Redirecting to Help site...');
+        }
         $scope.oriFeedback = {
             name: "",
             email: "",
@@ -98,16 +106,6 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             );
         };
     };
-    // $mdDialog (end)
-
-    $scope.about_site = function () {
-        window.location.href = "https://chan4077.github.io/about#angular";
-    };
-    $scope.fabitems = [
-        { name: 'Facebook', icon: 'facebook-box' },
-        { name: 'Twitter', icon: 'twitter-box' },
-        { name: 'Google+', icon: 'google-plus' }
-    ];
     function SettingsController($scope, $mdDialog) {
         $scope.hide = function () {
             $mdDialog.hide();
@@ -115,6 +113,10 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
         $scope.cancel = function () {
             $mdDialog.cancel();
         };
+        $scope.help = function () {
+            window.location.href = "https://chan4077.github.io/help";
+            console.info('Redirecting to Help site...');
+        }
         $scope.general_settings = {
             proBar: true,
             enableSound: true
@@ -127,11 +129,17 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             showCredits: true,
             enableOffline: true
         };
-        $scope.help = function() {
-            window.location.href = "https://chan4077.github.io/help";
-            console.info('Redirecting to Help site...');
-        }
     };
+    // $mdDialog (end)
+
+    $scope.about_site = function () {
+        window.location.href = "https://chan4077.github.io/about#angular";
+    };
+    $scope.fabitems = [
+        { name: 'Facebook', icon: 'facebook-box' },
+        { name: 'Twitter', icon: 'twitter-box' },
+        { name: 'Google+', icon: 'google-plus' }
+    ];
 });
 /*
 app.run(['$rootScope', '$window', '$scope', '$mdToast', function ($window, $rootScope, $mdToast, $scope) {
