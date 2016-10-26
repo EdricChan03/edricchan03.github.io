@@ -74,7 +74,7 @@ app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToa
             $mdDialog.cancel();
         };
         $scope.help = function () {
-            window.location.href = "https://chan4077.github.io/help";
+            window.location.href = "https://chan4077.github.io/help/about_feedback.html";
             console.info('Redirecting to Help site...');
         }
         $scope.oriFeedback = {
