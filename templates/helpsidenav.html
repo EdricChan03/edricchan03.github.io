@@ -4,6 +4,7 @@
 			<md-button>Help</md-button>
 			<md-list-item ng-repeat="site in helpSites" role="link" ng-href="{{ site.link }}" ng-click="openLeftMenu()">
 				<md-icon aria-label="{{site.title}}" md-svg-icon="{{site.icon}}"></md-icon>
+                <span flex></span>
 				<span>{{site.title}}</span>
 			</md-list-item>
 		</md-list>

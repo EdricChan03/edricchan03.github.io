@@ -5,6 +5,7 @@
 			<md-list>
 				<md-list-item ng-repeat="url in top" role="link" ng-href="{{ url.url }}" ng-click="openLeftMenu()">
 					<md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
+					<span flex></span>
 					<span>{{url.title}}</span>
 				</md-list-item>
 
@@ -12,6 +13,7 @@
 				<md-subheader>Other</md-subheader>
 				<md-list-item ng-repeat="url in other" role="link" ng-href="{{url.url}}" ng-click="openLeftMenu()">
 					<md-icon aria-label="{{url.title}}" md-svg-icon="{{url.icon}}"></md-icon>
+					<span flex></span>
 					<span>{{url.title}}</span>
 				</md-list-item>
 			</md-list>
