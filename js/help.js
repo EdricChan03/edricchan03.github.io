@@ -131,6 +131,7 @@ app.directive('helpSidenav', function () {
                 { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
                 { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box' },
                 { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: 'angular' },
+                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: 'website-logo'},
                 { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger' },
                 { url: 'https://chan4077.github.io/help', title: 'Help', icon: 'help-circle'},
                 { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus' },
