@@ -1,7 +1,9 @@
 var app = angular.module('HelpApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria']);
 // Config
 app.config(function ($mdIconProvider) {
-    $mdIconProvider.defaultIconSet('/img/mdi.svg');
+    $mdIconProvider
+        .defaultIconSet('/img/mdi.svg')
+        .icon('website-logo', '/img/website.svg');
     console.info('Successfully initialized!');
 });
 app.controller('HelpController', function ($scope, $mdDialog) {
@@ -120,7 +122,7 @@ app.directive('helpSidenav', function () {
         controller: function ($scope, $mdSidenav) {
             $scope.helpSites = [
                 { title: 'Main', link: 'https://chan4077.github.io/help', icon: 'home' },
-                { title: 'About Feedback', link: 'https://chan4077.github.io/help/about_feedback.html', icon: ''}
+                { title: 'About Feedback', link: 'https://chan4077.github.io/help/about_feedback.html', icon: '' }
             ];
             $scope.openLeftMenu = function () {
                 $mdSidenav('left').toggle();

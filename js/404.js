@@ -3,7 +3,9 @@ var app = angular.module('errorApp', ['ngMaterial']);
 * This came from test.js
 */
 app.config(function ($mdIconProvider) {
-  $mdIconProvider.defaultIconSet('/img/mdi.svg');
+  $mdIconProvider
+  .defaultIconSet('/img/mdi.svg')
+  .icon('website-logo', '/img/website.svg');
   console.info('Successfully initialized!');
 });
 /*
