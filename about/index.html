@@ -1,34 +1,87 @@
---- 
-layout: default
-title: About Edric Chan
----
-<html>
-<meta name="description" content="The About page. This is where you can find out all about me!">
+<html ng-app="AboutApp">
+
+<head>
+	<!-- Angular Material requires Angular.js Libraries -->
+	<script src="/js/angular.min.js"></script>
+	<script src="/js/angular-animate.min.js"></script>
+	<script src="/js/angular-aria.min.js"></script>
+	<script src="/js/angular-messages.min.js"></script>
+	<!-- Angular Material Library -->
+	<script src="/js/angular-material.min.js"></script>
+	<script src="/js/about.js"></script>
+	<meta name="description" content="The About page. This is where you can find out all about me!">
+</head>
+
 <body>
-	<div class="about">
-		<h1>About</h1>
-		<p>I am currently in the School of Science and Technology. I would like to work as a computer scientist.</p>
-		<label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-  				<input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
-  				<span class="mdl-checkbox__label" id="advanced_settings">Show Advanced Settings</span>
-			</label>
-		<div class="mdl-tooltip" data-mdl-for="advanced_settings">
-                    Show Advanced Settings<br><span style="color: red;">Just A Test</span>
-                </div>
-		<ul class="contacts">
-			<li><a href="https://chanziyangedric.blogspot.com" id="other_blog">My Other Blog</a></li>
-		</ul>
-		<div class="mdl-tooltip" data-mdl-for="other_blog">
-                    Check Out My<br>Other Blog
-                </div>
+	<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
+		<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
+		<md-toolbar md-scroll-shrink>
+			<div class="md-toolbar-tools">
+				<!--Sidenav Button-->
+				<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
+					<md-tooltip>
+						SideNav
+					</md-tooltip>
+					<md-icon md-svg-icon="menu"></md-icon>
+				</md-button>
+				<!--Website Logo-->
+				<md-icon md-svg-icon="website-logo"></md-icon>
+				<!--Some spacing-->
+				&nbsp;
+				<!--Text-->
+				<h2 class="md-flex">
+					About
+				</h2>
+				<span flex></span>
+				<!--Refresh-->
+				<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
+					<md-tooltip>
+						Refresh
+					</md-tooltip>
+					<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
+				</md-button>
+				<!--mdMenu-->
+				<md-menu>
+					<md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
+						<md-tooltip>
+							More
+						</md-tooltip>
+						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
+					</md-button>
+					<md-menu-content>
+						<md-menu-item>
+							<md-button ng-click="sendFeedback($event)" aria-label="Send Feedback">
+								<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
+								Send Feedback
+							</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button aria-label="Settings" ng-click="settings($event)">
+								<md-icon md-svg-icon="settings" md-menu-align-target></md-icon>
+								Settings
+							</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
+			</div>
+		</md-toolbar>
+		<!--Sidenav-->
+		<site-sidenav></site-sidenav>
+		<md-content>
+			<div class="about">
+				<h1>About</h1>
+				<p>I am currently in the School of Science and Technology. I would like to work as a computer scientist.</p>
+				<ul class="contacts">
+					<li><a href="https://chanziyangedric.blogspot.com" id="other_blog">My Other Blog</a></li>
+				</ul>
+			</div>
+			<div id="angular">
+				<h1>Angular</h1>
+				<p>Stay tuned for the upcoming Angular on this site! Want to see it now? Then head to this site: <a href="https://chan4077.github.io/beta">site</a>!</p>
+			</div>
+		</md-content>
 	</div>
-	<div id="angular">
-		<h1>Angular</h1>
-		<p>Stay tuned for the upcoming Angular on this site! Want to see it now? Then head to this site: <a href="https://chan4077.github.io/angular/test.html" id="angular_beta">Angular BETA Site</a></p>
-		<div class="mdl-tooltip" data-mdl-for="angular_beta">
-                    Angular Material<br><span style="color: red;">(Beta)</span>
-                </div>
-	</div>
+
 </body>
 
 </html>
