@@ -91,27 +91,6 @@ app.controller('HelpController', function ($scope, $mdDialog) {
         };
     };
 });
-// Sidenav
-app.controller('SideNavController', function ($scope, $mdSidenav) {
-    console.info('SideNavController successfully loaded!');
-
-    $scope.top = [
-        { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
-        { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box' },
-        { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger' },
-        { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus' },
-        { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: 'angular' },
-    ];
-    $scope.other = [
-        { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
-        { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
-        { url: 'https://chan4077.github.io/help', title: 'Get Help', icon: 'help-circle' },
-    ];
-    $scope.openLeftMenu = function () {
-        $mdSidenav('left').toggle();
-    };
-})
-
 // Directives
 
 app.directive('helpSidenav', function () {
@@ -128,14 +107,14 @@ app.directive('helpSidenav', function () {
                 $mdSidenav('left').toggle();
             };
             $scope.mainSites = [
-                { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
-                { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box' },
-                { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: 'angular' },
-                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: 'website-logo'},
-                { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger' },
-                { url: 'https://chan4077.github.io/help', title: 'Help', icon: 'help-circle'},
-                { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus' },
-                { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' }
+                { link: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
+                { link: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box' },
+                { link: 'https://chan4077.github.io/angular', title: 'Angular', icon: 'angular' },
+                { link: 'https://chan4077.github.io/beta', title: 'Beta', icon: 'website-logo'},
+                { link: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger' },
+                { link: 'https://chan4077.github.io/help', title: 'Help', icon: 'help-circle'},
+                { link: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus' },
+                { link: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' }
 
             ];
         }
