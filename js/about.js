@@ -8,8 +8,10 @@ app.config(function($mdIconProvider) {
     console.info('Successfully initialized!');
 })
 
-app.controller('MainController', function($scope) {
-
+app.controller('MainController', function($scope, $mdSidenav) {
+        $scope.openLeftMenu = function () {
+        $mdSidenav('left').toggle();
+    }
 });
 
 app.controller('SideNavController', function ($scope, $mdSidenav) {
