@@ -1,11 +1,17 @@
 <md-sidenav md-is-locked-open="$mdMedia('gt-md')" md-component-id="left">
 	<md-content>
 		<md-list>
-			<md-button>Help</md-button>
-			<md-list-item ng-repeat="site in helpSites" role="link" ng-href="{{ site.link }}" ng-click="openLeftMenu()">
+			<md-list-item>
+				<span>Help</span>
+				<span flex></span>
+				<md-button class="md-icon-button" aria-label="Toggle Links" ng-click="toggleLinks = !toggleLinks">
+					<md-icon md-svg-icon="chevron-down" aria-label="toggle"></md-icon>
+				</md-button>
+			</md-list-item>
+			<md-list-item ng-repeat="site in helpSites" role="link" ng-href="{{ site.link }}" ng-click="openLeftMenu()" ng-show="toggleLinks">
 				<md-icon aria-label="{{site.title}}" md-svg-icon="{{site.icon}}"></md-icon>
-                <span flex></span>
 				<span class="title">{{site.title}}</span>
+				<span flex></span>
 			</md-list-item>
 		</md-list>
 	</md-content>

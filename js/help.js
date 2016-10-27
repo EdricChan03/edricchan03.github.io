@@ -119,7 +119,8 @@ app.directive('helpSidenav', function () {
         transclude: true,
         controller: function ($scope, $mdSidenav) {
             $scope.helpSites = [
-                { title: 'Main', link: 'https://chan4077.github.io/help', icon: 'home' }
+                { title: 'Main', link: 'https://chan4077.github.io/help', icon: 'home' },
+                { title: 'About Feedback', link: 'https://chan4077.github.io/help/about_feedback.html', icon: ''}
             ];
             $scope.openLeftMenu = function () {
                 $mdSidenav('left').toggle();
