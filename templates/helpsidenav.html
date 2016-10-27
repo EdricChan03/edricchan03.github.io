@@ -5,8 +5,8 @@
 				<span>Help</span>
 				<span flex></span>
 				<md-button class="md-icon-button" aria-label="Toggle Links" ng-click="toggleLinks = !toggleLinks">
-					<md-icon md-svg-icon="chevron-down" ng-show="toggleLinks"></md-icon>
-					<md-icon md-svg-icon="chevron-up" ng-show="!toggleLinks"></md-icon>
+					<md-icon md-svg-icon="chevron-down" ng-show="!toggleLinks"></md-icon>
+					<md-icon md-svg-icon="chevron-up" ng-show="toggleLinks"></md-icon>
 				</md-button>
 			</md-list-item>
 			<md-list-item ng-repeat="site in helpSites" role="link" ng-href="{{ site.link }}" ng-click="openLeftMenu()" ng-show="toggleLinks">
