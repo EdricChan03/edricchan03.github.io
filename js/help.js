@@ -127,6 +127,16 @@ app.directive('helpSidenav', function () {
             $scope.openLeftMenu = function () {
                 $mdSidenav('left').toggle();
             };
+            $scope.mainSites = [
+                { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
+                { url: 'https://chan4077.github.io/about', title: 'About Me', icon: 'account-box' },
+                { url: 'https://chan4077.github.io/angular', title: 'Angular', icon: 'angular' },
+                { url: 'https://chan4077.github.io/blog', title: 'Blog', icon: 'blogger' },
+                { url: 'https://chan4077.github.io/help', title: 'Help', icon: 'help-circle'},
+                { url: 'https://chan4077.github.io/media', title: 'Social Media', icon: 'google-plus' },
+                { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' }
+
+            ];
         }
     }
 })

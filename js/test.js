@@ -199,12 +199,6 @@ app.controller('SideNavController', function ($scope, $mdSidenav) {
         { url: '', title: 'Submit Feedback', icon: 'message-alert' },
         { url: 'https://chan4077.github.io/help', title: 'Get Help', icon: 'help-circle' },
     ];
-    $scope.made = [
-        { url: 'https://materialdesignicons.com', title: 'MaterialDesignIcons', icon: 'vector-square' },
-        { url: 'https://material.angularjs.org/latest', title: 'Angular Material', icon: 'angular' },
-        { url: 'https://angularjs.org', title: 'Angular', icon: 'angular' },
-        { url: 'https://pages.github.com', title: 'Github Pages', icon: 'github-circle' }
-    ]
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
     }
