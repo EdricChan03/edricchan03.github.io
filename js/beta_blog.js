@@ -1,5 +1,12 @@
 var app = angular.module('BlogApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages']);
 
+app.config(function($mdIconProvider) {
+    $mdIconProvider
+    .defaultIconSet('/img/mdi.svg')
+    .icon('website-logo', '/img/website.svg');
+
+    console.info('Successfully initialized!');
+});
 app.controller('MainController', function($scope) {
     $scope.cards = [
         { avatar: '/img/logo.svg', name: 'Edric Chan', job: 'Owner', imagePath: '/img/angular_1.jpeg', imageAlt: 'Nice Flowers', postTitle: 'First Post', content: 'Welcome! This is some test post that will see if this works!', fullPost: ''},
