@@ -7,7 +7,7 @@ app.config(function ($mdIconProvider) {
 
     console.info('Successfully initialized!');
 });
-app.controller('MainController', function ($scope) {
+app.controller('MainController', function ($scope, $mdDialog) {
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
