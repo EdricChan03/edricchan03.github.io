@@ -1,0 +1,8 @@
+.half-size {
+    width: 50%;
+    height: 50%;
+}
+.fixed-size {
+    max-width: 400px;
+    max-height: 500px;
+}
