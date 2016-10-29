@@ -9,12 +9,12 @@
 					<md-icon md-svg-icon="chevron-down" ng-show="!toggleLinks"></md-icon>
 					<md-icon md-svg-icon="chevron-up" ng-show="toggleLinks"></md-icon>
 				</md-list-item>
-				<md-list-item ng-repeat="url in top" role="link" ng-href="{{ url.url }}" ng-click="openLeftMenu()" ng-show="toggleLinks">
+				<md-list-item ng-repeat="url in main" role="link" ng-href="{{ url.url }}" ng-click="openLeftMenu()" ng-show="toggleLinks">
 					<md-icon md-svg-icon="{{url.icon}}"></md-icon>
 					<span class="title">{{url.title}}</span>
 					<span flex></span>
 				</md-list-item>
-				
+
 				<md-divider></md-divider>
 				<md-list-item ng-click="toggleOtherLinks = !toggleOtherLinks">
 					<p>Other Sites</p>
