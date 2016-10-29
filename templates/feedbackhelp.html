@@ -1,4 +1,4 @@
-<md-dialog aria-label="Send Feedback">
+<md-dialog aria-label="Send Feedback" style="width:800px;height:810px;">
 	<form ng-cloak name="feedbackhelp" autocomplete="off">
 		<md-toolbar>
 			<div class="md-toolbar-tools">
@@ -14,10 +14,11 @@
 				</md-button>
 			</div>
 		</md-toolbar>
-		<md-dialog-content style="width:800px;height:810px;">
+		<md-dialog-content style="max-width:800px;max-height:810px;">
 			<md-tabs md-border-bottom>
 				<md-tab label="General Feedback">
 					<md-content class="md-padding">
+						<h1 class="md-display-2">Send your feedback about this site!</h1>
 						<label style="color:red;">* Required</label>
 						<br>
 						<md-input-container class="md-icon-float md-block">
@@ -33,13 +34,14 @@
 							<label>Email</label>
 							<input name="email" type="email" ng-model="feedback.email" required>
 							<div ng-messages="feedbackhelp.email.$error">
+								<div ng-message="required">This is required</div>
 								<div ng-message="email">Please input a valid email address.</div>
 							</div>
 						</md-input-container>
 						<md-input-container class="md-block">
 							<label>Feedback</label>
 							<md-icon md-svg-icon="message-alert"></md-icon>
-							<textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="5"></textarea>
+							<textarea name="feedback" ng-model="feedback.sendFeedback" required md-maxlength="150" rows="3"></textarea>
 							<div ng-messages="feedbackhelp.sendFeedback.$error">
 								<div ng-message="required">This is required</div>
 								<div ng-message="md-maxlength">Your feedback is too long.</div>
