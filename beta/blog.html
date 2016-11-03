@@ -102,7 +102,7 @@
 					</p>
 				</md-card-content>
 				<md-card-actions layout="row" layout-align="end center">
-					<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite($index)" ng-class="{'md-warn': markFavourite == $index}">
+					<md-button class="md-icon-button" aria-label="Favourite" ng-click="markFavourite = $index" ng-class="{'md-warn': markFavourite == $index}">
 						<md-icon md-svg-icon="heart"></md-icon>
 						<md-tooltip>Mark as Favourite</md-tooltip>
 					</md-button>
