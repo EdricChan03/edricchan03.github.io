@@ -38,7 +38,7 @@ By the way, I am using AngularJS 1.x, **not** Angular 2. This is for the purpose
 ## Making changes to the wiki
 - Make sure that you write appropriately **(Important)**
   - **No** spam _(LOLOL etc.)_
-  - **No** vulgarities _(F*** etc.)_
+  - **No** vulgarities _(F~~~ etc.)_
   - **No** code that is misleading _(What you have to do is to do etc.)_
 - Make sure that you add a commit referencing what you added **(Required)**
 
