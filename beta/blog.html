@@ -16,7 +16,6 @@
 	<meta name="author" content="Edric Chan">
 	<!-- Angular Material Library -->
 	<script src="/js/angular-material.min.js"></script>
-	<script src="/js/about.js"></script>
 	<meta name="description" content="The Beta blog page. This is where I test on the beta stage of the blog. COMING SOON!">
 	<!--Blog CSS-->
 	<link rel="stylesheet" href="/css/beta_blog.css">
@@ -101,7 +100,7 @@
 					</p>
 				</md-card-content>
 				<md-card-actions layout="row" layout-align="end center">
-					<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite = !toggleFavourite" ng-class="{md-warn: !toggleFavourite}">
+					<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite()" ng-class="markFavourite">
 						<md-icon md-svg-icon="heart"></md-icon>
 						<md-tooltip>Mark as Favourite</md-tooltip>
 					</md-button>

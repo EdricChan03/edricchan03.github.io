@@ -11,6 +11,14 @@ app.controller('MainController', function ($scope, $mdDialog) {
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
+    $scope.markFavourite = "";
+    $scope.toggleFavourite = function() {
+        if ($scope.markFavourite === "") {
+            $scope.markFavourite = "md-warn";
+        } else {
+            $scope.markFavourite = "";
+        }
+    }
     // More menu
     var originatorEv;
 
