@@ -12,7 +12,7 @@ app.controller('MainController', function ($scope, $mdDialog) {
         window.location.reload(true);
     };
     $scope.markFavourite = "";
-    $scope.toggleFavourite = function() {
+    $scope.toggleFavourite = function(toggle) {
         if ($scope.markFavourite === "") {
             $scope.markFavourite = "md-warn";
         } else {
