@@ -17,20 +17,21 @@ app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log) {
             $scope.markFavourite[id] = false;
             $mdToast.show(
                 $mdToast.simple()
-                    .textContent('Marked as favourite')
-                    .position('bottom left')
-                    .hideDelay(3000)
-            );
-            $log.info('Marked as favourite!');
-        } else {
-            $scope.markFavourite[id] = true;
-            $mdToast.show(
-                $mdToast.simple()
                     .textContent('Removed favourite')
                     .position('bottom left')
                     .hideDelay(3000)
             );
             $log.info('Removed Favourite!');
+        } else {
+            $scope.markFavourite[id] = true;
+
+            $mdToast.show(
+                $mdToast.simple()
+                    .textContent('Marked as favourite')
+                    .position('bottom left')
+                    .hideDelay(3000)
+            );
+            $log.info('Marked as favourite!');
         }
     }
     // More menu
