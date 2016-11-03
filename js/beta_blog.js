@@ -21,7 +21,7 @@ app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log) {
                     .position('bottom left')
                     .hideDelay(3000)
             );
-            $log('Marked as favourite!');
+            $log.info('Marked as favourite!');
         } else {
             $scope.markFavourite[id] = true;
             $mdToast.show(
@@ -30,7 +30,7 @@ app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log) {
                     .position('bottom left')
                     .hideDelay(3000)
             );
-            $log('Removed Favourite!');
+            $log.info('Removed Favourite!');
         }
     }
     // More menu
