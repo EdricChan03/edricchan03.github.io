@@ -7,16 +7,30 @@ app.config(function ($mdIconProvider) {
 
     console.info('Successfully initialized!');
 });
-app.controller('MainController', function ($scope, $mdDialog) {
+app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log) {
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
     $scope.markFavourite = {};
-    $scope.toggleFavourite = function(id) {
+    $scope.toggleFavourite = function (id) {
         if ($scope.markFavourite[id]) {
             $scope.markFavourite[id] = false;
+            $mdToast.show(
+                $mdToast.simple()
+                    .textContent('Marked as favourite')
+                    .position('bottom left')
+                    .hideDelay(3000)
+            );
+            $log('Marked as favourite!');
         } else {
             $scope.markFavourite[id] = true;
+            $mdToast.show(
+                $mdToast.simple()
+                    .textContent('Removed favourite')
+                    .position('bottom left')
+                    .hideDelay(3000)
+            );
+            $log('Removed Favourite!');
         }
     }
     // More menu
@@ -110,8 +124,8 @@ app.controller('MainController', function ($scope, $mdDialog) {
     };
     // $mdDialog (end)
     $scope.cards = [
-        { avatar: '/img/logo.svg', name: 'Edric Chan', job: 'Owner', imagePath: '/img/angular_1.jpeg', imageAlt: 'Nice Flowers', postTitle: 'First Post', content: 'Welcome! This is some test post that will see if this works!', fullPost: '', halfSize: true, fixedSize: false, id: 1},
-        { avatar: '', name: 'John Sim', job: 'Co-Author of Blog', imagePath: '', imageAlt: '', postTitle: 'Lorem ipsum dolor sit amet', content: 'Lorem ipsum dolor sit amet', fullPost: '', halfSize: false, fixedSize: false, id: 2},
-        { avatar: '', name: 'Joy', job: 'Designer', imagePath: '', imageAlt: '', postTitle: 'Another post!', content: 'This is my first post!', fullPost: '', halfSize: false, fixedSize: false, id: 3}
+        { avatar: '/img/logo.svg', name: 'Edric Chan', job: 'Owner', imagePath: '/img/angular_1.jpeg', imageAlt: 'Nice Flowers', postTitle: 'First Post', content: 'Welcome! This is some test post that will see if this works!', fullPost: '', halfSize: true, fixedSize: false, id: 1 },
+        { avatar: '', name: 'John Sim', job: 'Co-Author of Blog', imagePath: '', imageAlt: '', postTitle: 'Lorem ipsum dolor sit amet', content: 'Lorem ipsum dolor sit amet', fullPost: '', halfSize: false, fixedSize: false, id: 2 },
+        { avatar: '', name: 'Joy', job: 'Designer', imagePath: '', imageAlt: '', postTitle: 'Another post!', content: 'This is my first post!', fullPost: '', halfSize: false, fixedSize: false, id: 3 }
     ];
 });
