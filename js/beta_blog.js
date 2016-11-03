@@ -11,7 +11,14 @@ app.controller('MainController', function ($scope, $mdDialog) {
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
-    $scope.markFavourite = 1;
+    $scope.markFavourite = {};
+    $scope.toggleFavourite = function(id) {
+        if ($scope.markFavourite[id]) {
+            $scope.markFavourite[id] = false;
+        } else {
+            $scope.markFavourite = true;
+        }
+    }
     // More menu
     var originatorEv;
 
@@ -103,8 +110,8 @@ app.controller('MainController', function ($scope, $mdDialog) {
     };
     // $mdDialog (end)
     $scope.cards = [
-        { avatar: '/img/logo.svg', name: 'Edric Chan', job: 'Owner', imagePath: '/img/angular_1.jpeg', imageAlt: 'Nice Flowers', postTitle: 'First Post', content: 'Welcome! This is some test post that will see if this works!', fullPost: '', halfSize: true, fixedSize: false },
-        { avatar: '', name: 'John Sim', job: 'Co-Author of Blog', imagePath: '', imageAlt: '', postTitle: 'Lorem ipsum dolor sit amet', content: 'Lorem ipsum dolor sit amet', fullPost: '', halfSize: false, fixedSize: false },
-        { avatar: '', name: 'Joy', job: 'Designer', imagePath: '', imageAlt: '', postTitle: 'Another post!', content: 'This is my first post!', fullPost: '', halfSize: false, fixedSize: false }
+        { avatar: '/img/logo.svg', name: 'Edric Chan', job: 'Owner', imagePath: '/img/angular_1.jpeg', imageAlt: 'Nice Flowers', postTitle: 'First Post', content: 'Welcome! This is some test post that will see if this works!', fullPost: '', halfSize: true, fixedSize: false, id: 0},
+        { avatar: '', name: 'John Sim', job: 'Co-Author of Blog', imagePath: '', imageAlt: '', postTitle: 'Lorem ipsum dolor sit amet', content: 'Lorem ipsum dolor sit amet', fullPost: '', halfSize: false, fixedSize: false, id: 0 },
+        { avatar: '', name: 'Joy', job: 'Designer', imagePath: '', imageAlt: '', postTitle: 'Another post!', content: 'This is my first post!', fullPost: '', halfSize: false, fixedSize: false, id: 0 }
     ];
 });
