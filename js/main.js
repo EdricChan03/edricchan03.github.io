@@ -1,20 +1,62 @@
-//Bootstrap the app
-var start = function () {
-    "use strict";
+angular.module('AboutApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages'])
+.config(function($mdIconProvider) {
+  $mdIconProvider
+    .defaultIconSet('/img/mdi.svg')
+    .icon('website-logo', '/img/website.svg');
+})
+.controlller('MainController', function($scope) {
 
-
-
-};
-    angular.module('switchDemo1', ['ngMaterial'])
-.controller('SwitchDemoCtrl', function($scope) {
-  $scope.data = {
-    cb1: true,
-    cb4: true,
-    cb5: false
-  };
-  $scope.message = 'false';
-  $scope.onChange = function(cbState) {
-  	$scope.message = cbState;
-  };
 });
-}
+
+angular.module('BetaApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages'])
+.config(function($mdIconProvider) {
+  $mdIconProvider
+    .defaultIconSet('/img/mdi.svg')
+    .icon('website-logo', '/img/website.svg');
+})
+.controller('MainController', function($scope) {
+
+});
+
+angular.module('BlogApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages'])
+.config(function($mdIconProvider) {
+  $mdIconProvider
+    .defaultIconSet('/img/mdi.svg')
+    .icon('website-logo', '/img/website.svg');
+})
+.controlller('MainController', function($scope) {
+  
+});
+
+angular.module('HelpApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages'])
+.config(function($mdIconProvider) {
+  $mdIconProvider
+    .defaultIconSet('/img/mdi.svg')
+    .icon('website-logo', '/img/website.svg');
+})
+.controlller('MainController', function($scope) {
+  
+});
+
+angular.module('MediaApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages'])
+.config(function($mdIconProvider) {
+  $mdIconProvider
+    .defaultIconSet('/img/mdi.svg')
+    .icon('website-logo', '/img/website.svg');
+})
+.controlller('MainController', function($scope) {
+  
+});
+
+angular.module('PreferenceApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages'])
+.config(function($mdIconProvider) {
+  $mdIconProvider
+    .defaultIconSet('/img/mdi.svg')
+    .icon('website-logo', '/img/website.svg');
+})
+.controlller('MainController', function($scope) {
+  
+})
+.directive('siteSidenav', function() {
+
+})

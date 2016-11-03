@@ -79,8 +79,9 @@
 		</md-toolbar>
 		<!--Sidenav-->
 		<site-sidenav></site-sidenav>
-		<md-content>
-			<md-card ng-repeat="card in cards">
+		<md-content class="md-padding">
+			<div flex-xs flex-gt-xs="50" layout="column" ng-repeat="card in cards">
+			<md-card>
 				<md-card-header>
 					<md-card-avatar>
 						<img ng-src="{{card.avatar}}">
@@ -114,6 +115,7 @@
 					</md-button>
 				</md-card-actions>
 			</md-card>
+			</div>
 		</md-content>
 	</div>
 
