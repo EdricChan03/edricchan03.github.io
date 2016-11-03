@@ -16,7 +16,7 @@ app.controller('MainController', function ($scope, $mdDialog) {
         if ($scope.markFavourite[id]) {
             $scope.markFavourite[id] = false;
         } else {
-            $scope.markFavourite = true;
+            $scope.markFavourite[id] = true;
         }
     }
     // More menu
