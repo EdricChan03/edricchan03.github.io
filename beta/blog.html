@@ -89,7 +89,7 @@
 		</md-toolbar>
 		<!--Sidenav-->
 		<site-sidenav></site-sidenav>
-		<md-content class="md-padding" role="main" md-scroll-y>
+		<md-content class="md-padding" role="main" md-scroll-y layout="column">
 			<div flex-xs flex-gt-xs="50" layout="column" ng-repeat="card in cards">
 				<md-card>
 					<md-card-header>
@@ -113,15 +113,15 @@
 					<md-card-actions layout="row" layout-align="end center">
 						<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite(card.id)" ng-class="{'md-warn': markFavourite[card.id]}">
 							<md-icon md-svg-icon="heart"></md-icon>
-							<md-tooltip>Mark as Favourite</md-tooltip>
+							<md-tooltip md-direction="top">{{favouriteTooltip}}</md-tooltip>
 						</md-button>
 						<md-button class="md-icon-button" aria-label="Share">
 							<md-icon md-svg-icon="share"></md-icon>
-							<md-tooltip>Share Post</md-tooltip>
+							<md-tooltip md-direction="top">Share Post</md-tooltip>
 						</md-button>
 						<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{{card.fullPost}}">
 							<md-icon md-svg-icon="open-in-new"></md-icon>
-							<md-tooltip>Read Full Post</md-tooltip>
+							<md-tooltip md-direction="top">Read Full Post</md-tooltip>
 						</md-button>
 					</md-card-actions>
 				</md-card>

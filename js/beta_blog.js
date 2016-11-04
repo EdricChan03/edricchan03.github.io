@@ -11,10 +11,12 @@ app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log, $m
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
+    $scope.favouriteTooltip = {};
     $scope.markFavourite = {};
     $scope.toggleFavourite = function (id) {
         if ($scope.markFavourite[id]) {
             $scope.markFavourite[id] = false;
+            $scope.favouriteTooltip = 'Mark as favourite';
             $mdToast.show(
                 $mdToast.simple()
                     .textContent('Removed favourite')
@@ -24,7 +26,7 @@ app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log, $m
             $log.info('Removed Favourite!');
         } else {
             $scope.markFavourite[id] = true;
-
+            $scope.favouriteTooltip = 'Remove favourite';
             $mdToast.show(
                 $mdToast.simple()
                     .textContent('Marked as favourite')
@@ -131,7 +133,7 @@ app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log, $m
     ];
     var mainContent = document.querySelector("[role='main']");
     var scrollContent = mainContent.querySelector('md-content[md-scroll-y]')
-    $scope.scrollTop = function() {
+    $scope.scrollTop = function () {
         $mdUtil.animateScrollTo(scrollContent, 0, 200);
     };
 
