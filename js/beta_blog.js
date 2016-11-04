@@ -7,7 +7,7 @@ app.config(function ($mdIconProvider) {
 
     console.info('Successfully initialized!');
 });
-app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log) {
+app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log, $mdUtil) {
     $scope.refreshPage = function () {
         window.location.reload(true);
     };
@@ -129,4 +129,37 @@ app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log) {
         { avatar: '', name: 'John Sim', job: 'Co-Author of Blog', imagePath: '', imageAlt: '', postTitle: 'Lorem ipsum dolor sit amet', content: 'Lorem ipsum dolor sit amet', fullPost: '', halfSize: false, fixedSize: false, id: 2 },
         { avatar: '', name: 'Joy', job: 'Designer', imagePath: '', imageAlt: '', postTitle: 'Another post!', content: 'This is my first post!', fullPost: '', halfSize: false, fixedSize: false, id: 3 }
     ];
+    var mainContent = document.querySelector("[role='main']");
+    var scrollContent = mainContent.querySelector('md-content[md-scroll-y]')
+    $scope.scrollToTop = function() {
+        $mdUtil.animateScrollTo(scrollContent, 0, 200);
+    };
+
+});
+app.directive('blogScrollClass', function () {
+    /** Directive which applies a specified class to the element when being scrolled */
+    return {
+        restrict: 'A',
+        link: function (scope, element, attr) {
+
+            var scrollParent = element.parent();
+            var isScrolling = false;
+
+            // Initial update of the state.
+            updateState();
+
+            // Register a scroll listener, which updates the state.
+            scrollParent.on('scroll', updateState);
+
+            function updateState() {
+                var newState = scrollParent[0].scrollTop !== 0;
+
+                if (newState !== isScrolling) {
+                    element.toggleClass(attr.docsScrollClass, newState);
+                }
+
+                isScrolling = newState;
+            }
+        }
+    };
 });

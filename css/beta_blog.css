@@ -6,3 +6,12 @@
     max-width: 400px;
     max-height: 500px;
 }
+.md-fab.scroll-fab {
+    position: fixed !important;
+
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+.scroll-fab.scrolling {
+    transform: scale(1);
+}

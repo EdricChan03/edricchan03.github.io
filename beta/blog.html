@@ -6,8 +6,13 @@
 	<script src="/js/angular-animate.min.js"></script>
 	<script src="/js/angular-aria.min.js"></script>
 	<script src="/js/angular-messages.min.js"></script>
+	<link rel="stylesheet" href="https://gitcdn.link/repo/angular/bower-material/master/angular-material.css">
+
 	<!--Angular Material CSS-->
+	<!--Note: Now relying on latest HEAD instead.-->
+	<!--
 	<link rel="stylesheet" href="/css/angular-material.min.css">
+	-->
 	<!--The powerful meta tag for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!--The favicon; that small icon... Yes, THAT icon!-->
@@ -17,17 +22,21 @@
 	<!--Author-->
 	<meta name="author" content="Edric Chan">
 	<!-- Angular Material Library -->
+	<!--Note: Now relying on latest HEAD instead.-->
+	<!--
 	<script src="/js/angular-material.min.js"></script>
+	-->
+	<script src="https://gitcdn.link/repo/angular/bower-material/master/angular-material.js"></script>
 	<meta name="description" content="The Beta blog page. This is where I test on the beta stage of the blog. COMING SOON!">
 	<!--Blog CSS-->
 	<link rel="stylesheet" href="/css/beta_blog.css">
-    <!--Blog JS-->
-    <script src="/js/beta_blog.js"></script>
+	<!--Blog JS-->
+	<script src="/js/beta_blog.js"></script>
 </head>
 
 <body>
 	<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
-		<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
+		<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent" role="loading"></md-progress-linear>
 		<md-toolbar md-scroll-shrink>
 			<div class="md-toolbar-tools">
 				<!--Sidenav Button-->
@@ -80,43 +89,47 @@
 		</md-toolbar>
 		<!--Sidenav-->
 		<site-sidenav></site-sidenav>
-		<md-content class="md-padding">
+		<md-content class="md-padding" role="main" md-scroll-y>
 			<div flex-xs flex-gt-xs="50" layout="column" ng-repeat="card in cards">
-			<md-card>
-				<md-card-header>
-					<md-card-avatar>
-						<img ng-src="{{card.avatar}}">
-					</md-card-avatar>
-					<md-card-header-text>
-						<span class="md-title">{{card.name}}</span>
-						<span class="md-subhead">{{card.job}}</span>
-					</md-card-header-text>
-				</md-card-header>
-				<img ng-src="{{card.imagePath}}" class="md-card-image" alt="{{card.imageAlt}}" ng-class="{'half-size': halfSize, 'fixed-size': fixedSize}">
-				<md-card-title>
-					<span class="md-headline">{{card.postTitle}}</span>
-				</md-card-title>
-				<md-card-content>
-					<p>
-						{{card.content}}
-					</p>
-				</md-card-content>
-				<md-card-actions layout="row" layout-align="end center">
-					<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite(card.id)" ng-class="{'md-warn': markFavourite[card.id]}">
-						<md-icon md-svg-icon="heart"></md-icon>
-						<md-tooltip>Mark as Favourite</md-tooltip>
-					</md-button>
-					<md-button class="md-icon-button" aria-label="Share">
-						<md-icon md-svg-icon="share"></md-icon>
-						<md-tooltip>Share Post</md-tooltip>
-					</md-button>
-					<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{{card.fullPost}}">
-						<md-icon md-svg-icon="open-in-new"></md-icon>
-						<md-tooltip>Read Full Post</md-tooltip>
-					</md-button>
-				</md-card-actions>
-			</md-card>
+				<md-card>
+					<md-card-header>
+						<md-card-avatar>
+							<img ng-src="{{card.avatar}}">
+						</md-card-avatar>
+						<md-card-header-text>
+							<span class="md-title">{{card.name}}</span>
+							<span class="md-subhead">{{card.job}}</span>
+						</md-card-header-text>
+					</md-card-header>
+					<img ng-src="{{card.imagePath}}" class="md-card-image" alt="{{card.imageAlt}}" ng-class="{'half-size': halfSize, 'fixed-size': fixedSize}">
+					<md-card-title>
+						<span class="md-headline">{{card.postTitle}}</span>
+					</md-card-title>
+					<md-card-content>
+						<p>
+							{{card.content}}
+						</p>
+					</md-card-content>
+					<md-card-actions layout="row" layout-align="end center">
+						<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite(card.id)" ng-class="{'md-warn': markFavourite[card.id]}">
+							<md-icon md-svg-icon="heart"></md-icon>
+							<md-tooltip>Mark as Favourite</md-tooltip>
+						</md-button>
+						<md-button class="md-icon-button" aria-label="Share">
+							<md-icon md-svg-icon="share"></md-icon>
+							<md-tooltip>Share Post</md-tooltip>
+						</md-button>
+						<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{{card.fullPost}}">
+							<md-icon md-svg-icon="open-in-new"></md-icon>
+							<md-tooltip>Read Full Post</md-tooltip>
+						</md-button>
+					</md-card-actions>
+				</md-card>
 			</div>
+			<md-button class="md-fab scroll-fab md-fab-bottom-right" ng-click="scrollToTop()" aria-label="Back To Top" blog-scroll-class="scrolling">
+				<md-icon md-svg-icon="chevron-up"></md-icon>
+				<md-tooltip md-direction="up">Back To Top</md-tooltip>
+			</md-button>
 		</md-content>
 	</div>
 
