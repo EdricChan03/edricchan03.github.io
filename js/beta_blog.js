@@ -131,7 +131,7 @@ app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log, $m
     ];
     var mainContent = document.querySelector("[role='main']");
     var scrollContent = mainContent.querySelector('md-content[md-scroll-y]')
-    $scope.scrollToTop = function() {
+    $scope.scrollTop = function() {
         $mdUtil.animateScrollTo(scrollContent, 0, 200);
     };
 
