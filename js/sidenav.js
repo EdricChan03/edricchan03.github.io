@@ -1,6 +1,6 @@
 angular.module('app.sidenav', [])
-.controller('SideNavController', function ($scope, $mdSidenav) {
-    console.info('SideNavController successfully loaded!');
+.controller('SideNavController', function ($scope, $mdSidenav, $log) {
+    $log.debug('SideNavController successfully loaded!');
 
     $scope.main = [
         { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
@@ -17,6 +17,7 @@ angular.module('app.sidenav', [])
     $scope.projects = [
         { url: 'https://chan4077.github.io/projects', title: 'Projects', icon: ''},
         { url: 'https://chan4077.github.io/MyFirstApp', title: 'MyFirstApp', icon: ''},
+        { url: 'https://chan4077.github.io/icons', title: 'Icons', icon: ''}
     ]
     $scope.openLeftMenu = function () {
         $mdSidenav('left').toggle();
