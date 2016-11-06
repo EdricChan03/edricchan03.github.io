@@ -1,4 +1,4 @@
-var app = angular.module('errorApp', ['ngMaterial']);
+var app = angular.module('errorApp', ['ngAria', 'ngAnimate', 'ngMaterial', 'ngMessages', 'app.config']);
 /*
 *  Main Controller
 */

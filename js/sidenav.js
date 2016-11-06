@@ -1,4 +1,5 @@
-app.controller('SideNavController', function ($scope, $mdSidenav) {
+angular.module('app.sidenav', [])
+.controller('SideNavController', function ($scope, $mdSidenav) {
     console.info('SideNavController successfully loaded!');
 
     $scope.main = [

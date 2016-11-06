@@ -1,4 +1,4 @@
-var app = angular.module('testApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria']);
+var app = angular.module('testApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria', 'app.config', 'app.sidenav', 'app.directives']);
 
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
     // Refresh page, direct from server
