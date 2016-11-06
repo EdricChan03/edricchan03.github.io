@@ -1,11 +1,5 @@
-var app = angular.module('HelpApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria']);
+var app = angular.module('HelpApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria', 'app.config']);
 // Config
-app.config(function ($mdIconProvider) {
-    $mdIconProvider
-        .defaultIconSet('/img/mdi.svg')
-        .icon('website-logo', '/img/website.svg');
-    console.info('Successfully initialized!');
-});
 app.controller('HelpController', function ($scope, $mdDialog) {
     console.info('Loaded HelpController!');
     $scope.refreshPage = function () {
