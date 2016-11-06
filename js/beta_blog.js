@@ -1,12 +1,5 @@
 var app = angular.module('BlogApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages']);
 
-app.config(function ($mdIconProvider) {
-    $mdIconProvider
-        .defaultIconSet('/img/mdi.svg')
-        .icon('website-logo', '/img/website.svg');
-
-    console.info('Successfully initialized!');
-});
 app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log, $mdUtil) {
     $scope.refreshPage = function () {
         window.location.reload(true);

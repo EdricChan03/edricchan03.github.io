@@ -1,11 +1,5 @@
 var app = angular.module('testApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria']);
-// Config
-app.config(function ($mdIconProvider, $mdToastProvider, $rootScopeProvider) {
-    $mdIconProvider
-        .defaultIconSet('/img/mdi.svg')
-        .icon('website-logo', '/img/website.svg');
-    console.info('Successfully initialized!');
-});
+
 app.controller('MainController', function ($scope, $mdSidenav, $mdDialog, $mdToast) {
     // Refresh page, direct from server
     console.info('MainController successfully loaded!');
