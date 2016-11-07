@@ -1,4 +1,4 @@
-var app = angular.module('ProjectApp', ['ngAria', 'ngAnimate', 'ngMaterial', 'ngMessages', 'app.config', 'app.directive', 'app.sidenav']);
+var app = angular.module('ProjectApp', ['ngAria', 'ngAnimate', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives', 'app.sidenav']);
 
 app.controller('ProjectsController', function ($scope, $log) {
     $scope.projects = [
