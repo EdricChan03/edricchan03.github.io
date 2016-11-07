@@ -4,50 +4,46 @@
     <!--Title-->
     <title>Chan4077.Github.io's Blog</title>
     <!--Import-->
-    <!--Material Icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!--MDL-->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.yellow-cyan.min.css">
-    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-animate.min.js"></script>
+    <script src="/js/angular-aria.min.js"></script>
+    <script src="/js/angular-material.min.js"></script>
+    <script src="/js/angular-messages.min.js"></script>
+    <!--Site JS-->
+    <script src="/js/config.js"></script>
+    <script src="/js/directives.js"></script>
+    <script src="/js/post.js"></script>
+    <script src="/js/sidenav.js"></script>
     <!--CSS-->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/angular-material.min.css">
     <!--Mobile Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Favicon-->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
 </head>
 
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<body>
+    <site-toolbar></site-toolbar>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-    {{ content }}
-</div>
+    <div class="post">
+        {{ content }}
+    </div>
 
 
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" onclick="back()" id="back"><i class="material-icons">arrow_back</i>Back</button>
-<div class="mdl-tooltip" data-mdl-for="back">
-    Go Back
-</div>
-<!--Snackbar-->
-<div class="mdl-js-snackbar mdl-snackbar">
-    <div class="mdl-snackbar__text"></div>
-    <button class="mdl-snackbar__action"></button>
-</div>
-<script>
-    function back() {
-        var notification = document.querySelector('.mdl-js-snackbar');
-        var data = {
-            message: 'Are you sure you want to go back?',
-            actionHandler: function(event) {
-                location.href = "/blog";
-            },
-            actionText: 'OK',
-            timeout: 5000
-        };
-        notification.MaterialSnackbar.showSnackbar(data);
-    }
-</script>
+    <div class="related-posts">
+        {{ site.related_posts }}
+    </div>
+    <div class="tags">
+        Tags:
+        <ul class="list-tags">
+            <li><a href="/tags#{{tag}}" class="tag">{{tag}}</a></li>
+        </ul>
+    </div>
+    <site-sidenav></site-sidenav>
+</body>
 <!--Google Analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
