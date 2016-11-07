@@ -1,3 +1,5 @@
+<html ng-app="PostsApp">
+
 <head>
     <!--Webmaster-->
     <meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" />
@@ -22,6 +24,8 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="/favicon.ico">
 </head>
+
+<body>
     <site-toolbar></site-toolbar>
     <h1>{{ page.title }}</h1>
     <p class="meta">{{ page.date | date_to_string }}</p>
@@ -30,6 +34,7 @@
         {{ content }}
     </div>
     <site-sidenav></site-sidenav>
+</body>
 <!--Google Analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -51,3 +56,5 @@ if ('serviceWorker' in navigator) {
 }
 
 </script>
+
+</html>
