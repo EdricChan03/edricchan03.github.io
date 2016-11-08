@@ -8,8 +8,8 @@ angular.module('app.directives', [])
             restrict: 'E',
             templateUrl: '/templates/sidenav.html',
             transclude: true,
-            controller: function SidenavController($scope, $mdSidenav) {
-                console.info('SideNavController successfully loaded!');
+            controller: function ($scope, $mdSidenav) {
+                console.info('Successfully loaded!');
 
                 $scope.main = [
                     { url: 'https://chan4077.github.io', title: 'Main', icon: 'home' },
