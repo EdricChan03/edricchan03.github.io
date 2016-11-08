@@ -29,7 +29,7 @@ By the way, I am using AngularJS 1.x, **not** Angular 2. This is for the purpose
 - Make sure that you read this before commiting **(Required)**
 - Make sure that you **do not** add irrelevant things _(code that does not do anything etc.)_
   - Also note that this code might affect the page, so beware!
-- Make sure that you agree to the Code of Conduct **(Coming Soon)**
+- Make sure that you agree to the Code of Conduct [here](https://github.com/Chan4077/COC/blob/master/CODE_OF_CONDUCT.md)
 
 ## Making changes to the projects
 - Make sure you know about Github's new [Project](https://help.github.com/articles/tracking-the-progress-of-your-work-with-projects/) feature! **(DEFINITELY Required)**
