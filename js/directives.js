@@ -43,35 +43,32 @@ angular.module('app.directives', [])
             transclude: true,
             controller: function ToolbarController($scope, $location) {
                 console.info('Loaded!');
-                var path = $location.path();
-                if (path === '/beta') {
+                if ($location.path().indexOf('/beta') > -1) {
                     $scope.title = 'Beta';
-                } else if (path === '/beta/blog.html') {
+                } else if ($location.path().indexOf('/beta/blog.html') > -1) {
                     $scope.title = 'Beta Blog';
-                } else if (path === '/help') {
+                } else if ($location.path().indexOf('help')) {
                     $scope.title = 'Help';
-                } else if (path === '/about') {
+                } else if ($location.path().indexOf('about') > -1) {
                     $scope.title = 'About';
-                } else if (path === '/angular/material.html') {
+                } else if ($location.path().indexOf('/angular/material.html') > -1) {
                     $scope.title = 'Anglar Material Demo';
-                } else if (path === '/media') {
+                } else if ($location.path().indexOf('media') > -1) {
                     $scope.title = 'Social Media';
-                } else if (path === '/preferences') {
+                } else if ($location.path().indexOf('preferences') > -1) {
                     $scope.title = 'Preferences';
-                } else if (path === '/404.html') {
+                } else if ($location.path().indexOf('404.html') > -1) {
                     $scope.title = 'Error 404';
-                } else if (path === '/') {
+                } else if ($location.path().indexOf('/') > -1) {
                     $scope.title = 'Home';
-                } else if (path === '/blog') {
+                } else if ($location.path().indexOf('blog') > -1) {
                     $scope.title = 'Blog';
-                } else if (path === '/blog/') {
-                    $scope.title = '{{page.title}}';
-                } else if (path === '/projects') {
+                } else if ($location.path().indexOf('projects') > -1) {
                     $scope.title = 'Projects';
                 } else {
                     $scope.title = '{{title}}';
                 }
-                console.log('url visited: ' + path);
+                console.log('url visited: ' + $location.path());
             }
         };
     })
