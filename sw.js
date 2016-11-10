@@ -22,6 +22,7 @@ self.addEventListener('install', e => {
         '/js/angular-material.min.js',
         '/js/angular-messages.min.js',
         '/js/angular.min.js',
+        '/js/angular.js',
         '/js/main.js',
         '/js/material.min.js',
         '/js/preferences.js',
@@ -57,6 +58,7 @@ self.addEventListener('install', e => {
         '/angular/material.html',
         // Beta Site
         '/beta/index.html',
+        '/beta/blog.html',
         // About
         '/about/index.html',
         // Media
@@ -87,7 +89,13 @@ self.addEventListener('install', e => {
         '/wiki/img/wiki_nav.jpg',
         '/wiki/img/wiki_project.jpg',
         // Favicon
-        '/favicon.ico'
+        '/favicon.ico',
+        // Help
+        '/help/index.html',
+        '/help/about_feedback.html',
+        '/help/about_settings.html',
+        // jQuery
+        '/jquery/index.html'
       ])
         .then(() => self.skipWaiting());
     })
