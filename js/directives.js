@@ -47,7 +47,7 @@ angular.module('app.directives', [])
                     $scope.title = 'Beta';
                 } else if ($location.path().indexOf('beta/blog.html') > -1) {
                     $scope.title = 'Beta Blog';
-                } else if ($location.path().indexOf('help')) {
+                } else if ($location.path().indexOf('help') > -1) {
                     $scope.title = 'Help';
                 } else if ($location.path().indexOf('about') > -1) {
                     $scope.title = 'About';
