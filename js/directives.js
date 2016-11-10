@@ -43,15 +43,15 @@ angular.module('app.directives', [])
             transclude: true,
             controller: function ToolbarController($scope, $location) {
                 console.info('Loaded!');
-                if ($location.path().indexOf('/beta') > -1) {
+                if ($location.path().indexOf('beta') > -1) {
                     $scope.title = 'Beta';
-                } else if ($location.path().indexOf('/beta/blog.html') > -1) {
+                } else if ($location.path().indexOf('beta/blog.html') > -1) {
                     $scope.title = 'Beta Blog';
                 } else if ($location.path().indexOf('help')) {
                     $scope.title = 'Help';
                 } else if ($location.path().indexOf('about') > -1) {
                     $scope.title = 'About';
-                } else if ($location.path().indexOf('/angular/material.html') > -1) {
+                } else if ($location.path().indexOf('angular/material.html') > -1) {
                     $scope.title = 'Anglar Material Demo';
                 } else if ($location.path().indexOf('media') > -1) {
                     $scope.title = 'Social Media';
@@ -59,7 +59,7 @@ angular.module('app.directives', [])
                     $scope.title = 'Preferences';
                 } else if ($location.path().indexOf('404.html') > -1) {
                     $scope.title = 'Error 404';
-                } else if ($location.path().indexOf('/') > -1) {
+                } else if ($location.path().indexOf('') > -1) {
                     $scope.title = 'Home';
                 } else if ($location.path().indexOf('blog') > -1) {
                     $scope.title = 'Blog';
