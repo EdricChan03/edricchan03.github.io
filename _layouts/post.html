@@ -11,6 +11,7 @@
     <script src="/js/angular-aria.min.js"></script>
     <script src="/js/angular-material.min.js"></script>
     <script src="/js/angular-messages.min.js"></script>
+    <script src="/js/angular-route.min.js"></script>
     <!--Site JS-->
     <script src="/js/dependencies.js"></script>
     <script src="/js/post.js"></script>
@@ -30,6 +31,9 @@
 
     <div class="post">
         {{ content }}
+    </div>
+    <div class="tags">
+        {{ page.tags }}
     </div>
     <site-sidenav></site-sidenav>
 </body>
