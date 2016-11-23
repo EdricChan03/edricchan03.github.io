@@ -32,9 +32,13 @@
     <div class="post">
         {{ content }}
     </div>
-    <div class="tags">
-        {{ page.tags }}
-    </div>
+    <section>
+    {% for tag in post.tags %}
+    <md-button>
+      {% tag %}
+    </md-button>
+    {% endfor %}
+    </section>
     <site-sidenav></site-sidenav>
 </body>
 <!--Google Analytics-->
