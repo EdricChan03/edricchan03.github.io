@@ -1,3 +1,12 @@
 name: Edric Chan
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+tags: 
+- material-design
+- angular
+- angular-material
+- singapore
+- changelog
+- whats new
+- breaking change
+- news
