@@ -69,6 +69,9 @@ angular.module('app.directives', [])
                     $scope.title = '{{title}}';
                 }
                 console.log('url visited: ' + $location.path());
+                $scope.viewGithub = function () {
+                    window.location.href = "https://github.com/Chan4077/chan4077.github.io";
+                }
                 $scope.refreshPage = function () {
                     window.location.reload(true);
                 };
