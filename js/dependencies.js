@@ -17,7 +17,8 @@ angular.module('app.directives', [])
             $scope.other = [
                 { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
                 { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
-                { url: 'https://chan4077.github.io/help', title: 'Get Help', icon: 'help-circle' }
+                { url: 'https://chan4077.github.io/help', title: 'Get Help', icon: 'help-circle' },
+                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: ''}
             ];
             $scope.projects = [
                 { url: 'https://chan4077.github.io/projects', title: 'Projects', icon: '' },
