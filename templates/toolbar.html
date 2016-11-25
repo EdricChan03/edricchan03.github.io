@@ -23,7 +23,15 @@
 			<md-tooltip>
 				Refresh
 			</md-tooltip>
-			<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
+			<md-icon md-svg-icon="refresh"></md-icon>
+		</md-button>
+		<!--View on Github-->
+		<!--Hidden on mobile phones-->
+		<md-button class="md-icon-button" aria-label="View on Github" ng-click="viewGithub()" hide-xs>
+			<md-tooltip>
+				View on Github
+			</md-tooltip>
+			<md-icon md-svg-icon="github-circle"></md-icon>
 		</md-button>
 		<!--mdMenu-->
 		<md-menu>
@@ -35,27 +43,32 @@
 			</md-button>
 			<md-menu-content>
 				<md-menu-item>
-					<md-button ng-click="whats_new($event)">
+					<md-button ng-click="whats_new($event)" aria-label="What's New'">
 						<md-icon md-svg-icon="alert-octagon" md-menu-align-target></md-icon>
 						What's New
 					</md-button>
 				</md-menu-item>
 				<md-menu-item>
-					<md-button ng-click="settings($event)">
+					<md-button ng-click="settings($event)" aria-label="Settings">
 						<md-icon md-svg-icon="settings" md-menu-align-target></md-icon>
 						Settings
 					</md-button>
 				</md-menu-item>
 				<md-menu-item>
-					<md-button ng-click="sendFeedback($event)">
+					<md-button ng-click="sendFeedback($event)" aria-label="Send Feedback">
 						<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
 						Send Feedback
 					</md-button>
 				</md-menu-item>
 				<md-menu-item>
-					<md-button ng-click="about_site()">
+					<md-button ng-click="about_site()" aria-label="About Site">
 						<md-icon md-svg-icon="help-circle-outline" md-menu-align-target></md-icon>
 						About This Site
+					</md-button>
+				</md-menu-item>
+				<md-menu-item show-xs hide>
+					<md-button ng-click="viewGithub()" aria-label="View on Github">
+						<md-icon md-svg-icon="github-circle" md-menu-align-target></md-icon>
 					</md-button>
 				</md-menu-item>
 			</md-menu-content>
