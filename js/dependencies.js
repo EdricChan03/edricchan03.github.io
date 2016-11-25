@@ -41,7 +41,7 @@ angular.module('app.directives', [])
             restrict: 'E',
             templateUrl: '/templates/toolbar.html',
             transclude: true,
-            controller: function ToolbarController($scope, $location) {
+            controller: function ToolbarController($scope, $location, $mdDialog, $mdToast, $mdOpenMenu) {
                 console.info('Loaded!');
                 if ($location.path().indexOf('beta') > -1) {
                     $scope.title = 'Beta';
