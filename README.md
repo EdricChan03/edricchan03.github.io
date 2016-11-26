@@ -15,5 +15,6 @@ There too, is [Angular Material](https://material.angularjs.org/latest)!
 ![Beta Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io/master/wiki/img/wiki_beta_new.jpg)
 
 ## Notes:
-Google Analytics is now included in all the pages.
-`LICENSE` now included.
+* Google Analytics is now included in all the pages.
+* `LICENSE` now included.
+* If for some reason Google Chrome can't load the webpage, try **force reloading**. On the Mac, this is <kbd></kbd>+<kbd>⇧</kbd>+<kbd>R</kbd> or **Shift+Command+R**.
