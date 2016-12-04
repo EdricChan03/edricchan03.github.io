@@ -25,6 +25,7 @@ angular.module('app.directives', [])
                 { url: 'https://chan4077.github.io/MyFirstApp', title: 'MyFirstApp', icon: '' },
                 { url: 'https://chan4077.github.io/icons', title: 'Icons', icon: '' }
             ]
+            // Toggle left sidenav
             $scope.openLeftMenu = function () {
                 $mdSidenav('left').toggle();
             }
@@ -111,18 +112,32 @@ angular.module('app.directives', [])
                     originatorEv = ev;
                     $mdOpenMenu(ev);
                 };
+                // What's New
                 function WhatNewController($scope, $mdDialog, $mdToast) {
+                    // Hide button
                     $scope.hide = function () {
+                        // Hides $mdDialog
                         $mdDialog.hide();
                     };
+                    // Cancel button
                     $scope.cancel = function () {
+                        // Cancels $mdDialog
                         $mdDialog.cancel();
                     };
+                    // Help button
                     $scope.help = function () {
+                        // Redirect to help site
                         window.location.href = "https://chan4077.github.io/help";
                         console.info('Redirecting to Help site...');
                     }
+                    // More Info button
+                    $scope.moreInfo = function () {
+                        // Note that this is percent-encoded
+                        // More information: https://en.wikipedia.org/wiki/Percent-encoding
+                        window.location.href = "https://github.com/Chan4077/chan4077.github.io/wiki/What%27s-New";
+                    }
                 };
+                // Feedback
                 function FeedbackController($scope, $mdDialog, $mdToast) {
                     $scope.hide = function () {
                         $mdDialog.hide();
@@ -163,6 +178,7 @@ angular.module('app.directives', [])
                         );
                     };
                 };
+                // Settings
                 function SettingsController($scope, $mdDialog) {
                     $scope.hide = function () {
                         $mdDialog.hide();
@@ -207,6 +223,7 @@ angular.module('app.directives', [])
     .controller('SideNavController', function ($scope, $mdSidenav) {
 
     })
+    // App config
 angular.module('app.config', [])
     .config(function ($mdIconProvider, $mdToastProvider) {
         $mdIconProvider
