@@ -24,7 +24,7 @@ angular.module('app.directives', [])
                 { url: 'https://chan4077.github.io/projects', title: 'Projects', icon: '' },
                 { url: 'https://chan4077.github.io/MyFirstApp', title: 'MyFirstApp', icon: '' },
                 { url: 'https://chan4077.github.io/icons', title: 'Icons', icon: '' },
-                { url: 'https://chan4077.github.io/md-video', title: 'md-video', icon: 'play'}
+                { url: 'https://chan4077.github.io/mdVideo', title: 'mdVideo', icon: 'play'}
             ]
             // Toggle left sidenav
             $scope.openLeftMenu = function () {
