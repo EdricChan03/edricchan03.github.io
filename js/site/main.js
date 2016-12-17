@@ -9,7 +9,7 @@ angular.module('BetaApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'a
 });
 
 angular.module('BlogApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
-.controlller('MainController', function($scope) {
+.controller('MainController', function($scope) {
   
 });
 angular.module('DefaultApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
@@ -22,7 +22,7 @@ angular.module('HelpApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'a
 });
 
 angular.module('MediaApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
-.controlller('SocialController', function($scope) {
+.controller('SocialController', function($scope) {
   $scope.social = [
     {name: 'Facebook', url: 'https://facebook.com/Chan4077'},
     {name: 'Google+', url: 'https://plus.google.com/108173317645034603378'},
@@ -37,7 +37,7 @@ angular.module('MediaApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', '
 });
 
 angular.module('PreferenceApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
-.controlller('MainController', function($scope) {
+.controller('MainController', function($scope) {
   
 });
 // testApp
