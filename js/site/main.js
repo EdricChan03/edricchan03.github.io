@@ -20,7 +20,10 @@ angular.module('HelpApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'a
 .controller('MainController', function($scope) {
   
 });
-
+angular.module('MainApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
+.controller('MainController', function($scope) {
+  
+});
 angular.module('MediaApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
 .controller('SocialController', function($scope) {
   $scope.social = [
