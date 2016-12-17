@@ -1,5 +1,5 @@
 angular.module('AboutApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
-.controlller('MainController', function($scope) {
+.controller('MainController', function($scope) {
 
 });
 
