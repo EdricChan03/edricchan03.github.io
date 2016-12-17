@@ -17,7 +17,7 @@ angular.module('DefaultApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages',
 
 })
 angular.module('HelpApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
-.controlller('MainController', function($scope) {
+.controller('MainController', function($scope) {
   
 });
 
