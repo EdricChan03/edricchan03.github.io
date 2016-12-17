@@ -1,8 +1,6 @@
-var app = angular.module('materialApp', ['ngAnimate', 'mgAria', 'ngMaterial', 'ngMessages']);
+var app = angular.module('materialApp', ['ngAnimate', 'mgAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives']);
 // Configuration
 app.config(function($mdIconProvider, $mdThemingProvider) {
-    // Sets the following icon set as default
-    $mdIconProvider.defaultIconSet('/img/mdi.svg');
     $mdThemingProvider.enableBrowsingColor({
         theme: 'default',
         palette: 'primary',

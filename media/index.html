@@ -1,37 +1,30 @@
---- 
-layout: default
-title: Social Media
----
-<html>
+<html ng-app="MediaApp">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<meta name="description" content="This is the Media page. You can access my Social Media Profiles from here.">
+    <script src="/js/angular/1.6.0/angular.min.js"></script>
+    <scriot src="/js/angular/1.6.0/angular-animate.min.js"></scriot>
+    <script src="/js/angular/1.6.0/angular-aria.min.js"></script>
+    <script src="/js/angular/angular-material.min.js"></script>
+    <script src="/js/angular/1.6.0/angular-messages.min.js"></script>
+    <script src="/js/site/main.js"></script>
+    <link rel="stylesheet" href="/css/angular-material.min.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="author" content="Edric">
+    <meta charset="utf-8">
+    <meta name="keywords" content="social media, chan4077.github.io, social, Edric">
+    <meta name="description" content="Social media for my website.">
 </head>
-
 <body>
-	<div class="media">
-		<h1>Social Media Profiles</h1>
-		<p>Listed below are my profiles:</p>
-		<li><a href="https://twitter.com/Chan4077" id="twitter">Twitter</a></li>
-		<li><a href="https://plus.google.com/108173317645034603378" id="google">Google+</a></li>
-		<li><a href="https://facebook.com/Chan4077" id="facebook">Facebook</a></li>
-		<li><a href="https://instagram.com/chanedric" id="instagram">Instagram</a></li>
-		<!--Tooltips-->
-		<div class="mdl-tooltip" data-mdl-for="twitter">
-			Twitter
-		</div>
-		<div class="mdl-tooltip" data-mdl-for="google">
-			Google+
-		</div>
-		<div class="mdl-tooltip" data-mdl-for="facebook">
-			Facebook
-		</div>
-		<div class="mdl-tooltip" data-mdl-for="instagram">
-			Instagram
-		</div>
-	</div>
+    <site-sidenav></site-sidenav>
+    <site-toolbar></site-toolbar>
+    <md-content ng-controller="SocialController">
+        <h5 class="md-display-2">List of Social Media Profiles</h5>
+        <md-list>
+            <md-list-item ng-repeat="social in social | orderBy: 'name'" ng-href="{{social.url}}">
+                <h3>{{social.name}}</h3>
+            </md-list-item>
+        </md-list>
+    </md-content>
 </body>
 
 </html>
