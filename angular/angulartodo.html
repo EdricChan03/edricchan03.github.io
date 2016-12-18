@@ -33,9 +33,15 @@ title: TodoApp
           </label>
             </li>
         </ul>
-        <form ng-submit="todoList.addTodo()">
-            <input type="text" ng-model="todoList.todoText" size="30" placeholder="add new todo here">
-            <input class="btn-primary" type="submit" value="add">
+        <form ng-submit="todoList.addTodo()" name="addTodo">
+            <md-input-container>
+                <label>Add Item</label>
+                <input ng-model="todoList.text" required>
+                <div ng-messages="addTodo.text.$error">
+                    <div ng-message="required">This is required</div>
+                </div>
+            </md-input-container>
+            <md-button class="btn-primary" type="submit"></md-button>
         </form>
     </div>
 </body>
