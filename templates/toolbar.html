@@ -1,6 +1,5 @@
 <!--mdToolbar-->
-<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
-<md-toolbar md-scroll-shrink>
+<md-toolbar md-scroll-shrink md-whiteframe="1">
 	<div class="md-toolbar-tools">
 		<!--Sidenav Button-->
 		<md-button class="md-icon-button" aria-label="Side Navigation" ng-click="openLeftMenu()">
@@ -76,6 +75,3 @@
 		</md-menu>
 	</div>
 </md-toolbar>
-<script>
-	setTimeout(function() {document.getElementById('progress').style.display = "none";}, 10000);
-</script>
