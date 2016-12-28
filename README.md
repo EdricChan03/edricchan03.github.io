@@ -1,7 +1,9 @@
 # chan4077.github.io
 Website @ https://chan4077.github.io
 
-I am trying to use Material Design Lite in this website and there is also [Angular](https://chan4077.github.io/angular).
+I am trying to use ~~[Material Design Lite](https://getmdl.io) in this website and there is also~~ [Angular](https://angularjs.org).
+> Unfortunately, it appears that [Material Design Lite](https://getmdl.io) has moved to this [page](https://material.io/components.html) where the source code is at [material-components/material-components-web](https://github.com/material-components/material-components-web)
+> Therefore, I will be permanently updating the site to use [Angular Material](https://material.angularjs.org)
 
 There too, is [Angular Material](https://material.angularjs.org/latest)!
 
