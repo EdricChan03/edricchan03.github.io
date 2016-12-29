@@ -3,6 +3,7 @@
 */
 // Sidenav
 angular.module('app.directives', [])
+    // site-sidenav
     .directive('siteSidenav', function () {
         var SidenavController = function ($scope, $mdSidenav) {
             console.info('Successfully loaded!');
@@ -18,7 +19,8 @@ angular.module('app.directives', [])
                 { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
                 { url: 'https://chan4077.github.io/preferences', title: 'Preferences', icon: 'settings' },
                 { url: 'https://chan4077.github.io/help', title: 'Get Help', icon: 'help-circle' },
-                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: ''}
+                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: ''},
+                { url: 'https://github.com/Chan4077/chan4077.github.io/wiki/Sites', title: 'Sitemap', icon: 'sitemap'}
             ];
             $scope.projects = [
                 { url: 'https://chan4077.github.io/projects', title: 'Projects', icon: '' },
@@ -45,31 +47,38 @@ angular.module('app.directives', [])
             transclude: true,
             controller: function ToolbarController($scope, $location, $mdDialog, $mdToast) {
                 console.info('Loaded!');
-                if ($location.path().indexOf('beta') > -1) {
-                    $scope.title = 'Beta';
-                } else if ($location.path().indexOf('beta/blog.html') > -1) {
-                    $scope.title = 'Beta Blog';
-                } else if ($location.path().indexOf('help') > -1) {
-                    $scope.title = 'Help';
-                } else if ($location.path().indexOf('about') > -1) {
-                    $scope.title = 'About';
-                } else if ($location.path().indexOf('angular/material.html') > -1) {
-                    $scope.title = 'Anglar Material Demo';
-                } else if ($location.path().indexOf('media') > -1) {
-                    $scope.title = 'Social Media';
-                } else if ($location.path().indexOf('preferences') > -1) {
-                    $scope.title = 'Preferences';
-                } else if ($location.path().indexOf('404.html') > -1) {
-                    $scope.title = 'Error 404';
-                } else if ($location.path().indexOf('') > -1) {
-                    $scope.title = 'Home';
-                } else if ($location.path().indexOf('blog') > -1) {
-                    $scope.title = 'Blog';
-                } else if ($location.path().indexOf('projects') > -1) {
-                    $scope.title = 'Projects';
-                } else {
-                    $scope.title = '{{title}}';
-                }
+                $scope.data = [{
+                    "url": "/",
+                    "name": "Home"
+                }, {
+                    "url": "beta",
+                    "name": "Beta"
+                }, {
+                    "url": "cookies",
+                    "name": "Cookies"
+                }, {
+                    "url": "projects",
+                    "name": "Projects"
+                }, {
+                    "url": "help",
+                    "name": "Help"
+                }, {
+                    "url": "about",
+                    "name": "About"
+                }, {
+                    "url": "angular",
+                    "name": "Angular"
+                }]
+                var urls = ['/', 'beta', 'cookies', 'projects', 'help', 'about', 'angular']
+                angular.forEach($scope.data, function(value, key) {
+                    // Based on http://plnkr.co/edit/WeQhCb?p=preview
+                    if (urls.indexOf(value.url) !== -1) {
+                        $scope[value.url] = value.name;
+                    } else {
+                        console.error('Invalid value');
+                    }
+
+                })
                 console.log('url visited: ' + $location.path());
                 $scope.viewGithub = function () {
                     window.location.href = "https://github.com/Chan4077/chan4077.github.io";
