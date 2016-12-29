@@ -16,29 +16,32 @@
 		</md-toolbar>
 		<md-dialog-content>
 			<div class="md-dialog-content">
-				<h2>Version 1.0.5</h2>
+				<h2 class="md-display-2">Version 1.0.6</h2>
 				<h4>
 					<md-icon md-svg-icon="message-alert"></md-icon>&nbsp;Features</h4>
 				<ul class="rev_notes_featured">
 					<li>Add navigation menu</li>
 					<li>Add feedback form</li>
 					<li>Add a cool side navigation</li>
-					<li>Change to <a href="https://materialdesignicons.com">materialdesignicons</a></li>
+					<li>Change to <a href="https://materialdesignicons.com" class="md-accent">materialdesignicons</a></li>
 					<li>Add more things in Settings</li>
+					<li>Permanently migrated to <a href="https://material.angularjs.org" class="md-accent">Angular Material</a></li>
+					<li>Make links have class <code>md-accent</code></li>
+					<li><code>Dismiss</code> button is now <code>md-raised</code></li>
 				</ul>
 				<h4>
 					<md-icon md-svg-icon="bug"></md-icon>&nbsp;Bugs</h4>
 				<ul>
 					<li>Fix problem where website would not render properly.</li>
 					<li>Fix problem where <code>md-menu</code> would not work.</li>
-					<li>Fix rendering issues in <a href="https://chan4077.github.io/help">Help website</a></li>
+					<li>Fix rendering issues in <a href="https://chan4077.github.io/help" class="md-accent">Help website</a></li>
 				</ul>
 			</div>
 		</md-dialog-content>
 		<md-dialog-actions layout="row">
 			<span flex></span>
 			<md-button ng-click="moreInfo()">More Info</md-button>
-			<md-button ng-click="hide()" class="md-primary">Dismiss</md-button>
+			<md-button ng-click="hide()" class="md-primary md-raised">Dismiss</md-button>
 		</md-dialog-actions>
 	</form>
 </md-dialog>
