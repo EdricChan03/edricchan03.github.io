@@ -3,7 +3,6 @@
 */
 // Sidenav
 angular.module('app.directives', [])
-    // site-sidenav
     .directive('siteSidenav', function () {
         var SidenavController = function ($scope, $mdSidenav) {
             console.info('Successfully loaded!');
@@ -26,7 +25,7 @@ angular.module('app.directives', [])
                 { url: 'https://chan4077.github.io/projects', title: 'Projects', icon: '' },
                 { url: 'https://chan4077.github.io/MyFirstApp', title: 'MyFirstApp', icon: '' },
                 { url: 'https://chan4077.github.io/icons', title: 'Icons', icon: '' }
-            ]
+            ];
             // Toggle left sidenav
             $scope.openLeftMenu = function () {
                 $mdSidenav('left').toggle();
