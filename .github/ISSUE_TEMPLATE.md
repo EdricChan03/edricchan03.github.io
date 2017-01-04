@@ -1,9 +1,7 @@
 ### Expected behaviour
-
+- _(Couldn't load data, Error 404 etc.)_
 ### Actual behaviour
-
-### Steps to reproduce the behaviour
-
+- _(Data should be loaded, no errors etc.)_
 ### Other specs
 - OS Version: _(Windows 10, macOS Sierra etc.)_
 - Site: _(Insert Site here)_
