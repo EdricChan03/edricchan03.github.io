@@ -49,7 +49,7 @@ angular.module('testApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'a
     // Refresh page, direct from server
     console.info('MainController successfully loaded!');
     // Sidenav
-    $scope.openLeftMenu = function () {
+    $scope.toggleLeftMenu = function () {
         $mdSidenav('left').toggle();
     };
     // Initialize switches

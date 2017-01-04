@@ -97,7 +97,7 @@ app.directive('helpSidenav', function () {
                 { title: 'Main', link: 'https://chan4077.github.io/help', icon: 'home' },
                 { title: 'About Feedback', link: 'https://chan4077.github.io/help/about_feedback.html', icon: '' }
             ];
-            $scope.openLeftMenu = function () {
+            $scope.toggleLeftMenu = function () {
                 $mdSidenav('left').toggle();
             };
             $scope.mainSites = [

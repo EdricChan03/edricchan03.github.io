@@ -27,7 +27,7 @@ angular.module('app.directives', [])
                 { url: 'https://chan4077.github.io/icons', title: 'Icons', icon: '' }
             ];
             // Toggle left sidenav
-            $scope.openLeftMenu = function () {
+            $scope.toggleLeftMenu = function () {
                 $mdSidenav('left').toggle();
             }
         };
