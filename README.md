@@ -40,3 +40,4 @@ There too, is [Angular Material](https://material.angularjs.org/latest)!
 * `LICENSE` now included.
 * If for some reason Google Chrome can't load the webpage, try **force reloading**. On the Mac, this is <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>R</kbd> or **Shift+Command+R**.
 * All pages updated to Angular Material! See [#13](https://github.com/Chan4077/chan4077.github.io/issues/13) for more info.
+* Updated links for [Google+](https://plus.google.com/+EdricChan03)

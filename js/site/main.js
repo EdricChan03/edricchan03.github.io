@@ -28,7 +28,7 @@ angular.module('MediaApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', '
 .controller('SocialController', function($scope) {
   $scope.social = [
     {name: 'Facebook', url: 'https://facebook.com/Chan4077'},
-    {name: 'Google+', url: 'https://plus.google.com/108173317645034603378'},
+    {name: 'Google+', url: 'https://plus.google.com/+EdricChan03'},
     {name: 'Twitter', url: 'https://twitter.com/Chan4077'},
     {name: 'Github', url: 'https://github.com/Chan4077'},
     {name: 'YouTube', url: 'https://www.youtube.com/channel/UCr2qrcCxls5FnYXsNFtVEzw'},
