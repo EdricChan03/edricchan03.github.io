@@ -5,28 +5,37 @@ self.addEventListener('install', e => {
         '/',
         // Main
         '/index.html',
-        '/index.html',
         // 404 Site
         '/404.html',
         // CSS
         '/css/angular-material.min.css',
         '/css/angular.css',
+        '/css/beta_blog.css',
+        '/css/cse.css',
         '/css/error.css',
-        '/css/material.min.css',
+        '/css/error.css',
+        '/css/help.css',
         '/css/main.css',
+        '/css/post.css',
         '/css/test.css',
         // JS
-        '/js/site/404.js',
-        '/js/angular/1.6.0/angular-animate.min.js',
-        '/js/angular/1.6.0/angular-aria.min.js',
+        '/js/angular/1.5.8/angular-animate.min.js',
+        '/js/angular/1.5.8/angular-aria.min.js',
         '/js/angular/angular-material.min.js',
-        '/js/angular/1.6.0/angular-messages.min.js',
-        '/js/angular/1.6.0/angular.min.js',
-        '/js/angular/1.6.0/angular.js',
+        '/js/angular/1.5.8/angular-messages.min.js',
+        '/js/angular/1.5.8/angular.min.js',
+        '/js/angular/1.5.8/angular.js',
+        '/js/site/404.js',
+        '/js/site/about.js',
+        '/js/site/beta_blog.js',
+        '/js/site/cookies.js',
+        '/js/site/dependencies.js',
+        '/js/site/help.js',
         '/js/site/main.js',
-        '/js/material.min.js',
+        '/js/site/materialtest.js',
+        '/js/site/post.js',
         '/js/site/preferences.js',
-        '/js/site/test.js',
+        '/js/site/projects.js',
         '/js/site/todo.js',
         '/js/site/yourname.js',
         // Fonts
@@ -63,8 +72,6 @@ self.addEventListener('install', e => {
         '/about/index.html',
         // Media
         '/media/index.html',
-        // Preferences
-        '/preferences/index.html',
         // Templates
         '/templates/speeddial.html',
         '/templates/feedbackhelp.html',
@@ -85,6 +92,8 @@ self.addEventListener('install', e => {
         '/img/website.svg',
         // Wiki Images
         '/wiki/img/wiki_beta.jpg',
+        '/wiki/img/wiki_beta_new.jpg',
+        '/wiki/img/wiki_main.jpg',
         '/wiki/img/wiki_mainpage.jpg',
         '/wiki/img/wiki_nav.jpg',
         '/wiki/img/wiki_project.jpg',
@@ -95,7 +104,9 @@ self.addEventListener('install', e => {
         '/help/about_feedback.html',
         '/help/about_settings.html',
         // jQuery
-        '/jquery/index.html'
+        '/jquery/index.html',
+        // Cookies
+        '/cookies/index.html'
       ])
         .then(() => self.skipWaiting());
     })
