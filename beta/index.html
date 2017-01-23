@@ -56,16 +56,6 @@
 
   ga('create', 'UA-82448435-1', 'auto');
   ga('send', 'pageview');
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
-    // Registration was successful
-    console.info('ServiceWorker registration successful with scope: ', registration.scope);
-  }).catch(function(err) {
-    // registration failed :(
-    console.error('ServiceWorker registration failed: ', err);
-  });
-}
 </script>
 <!--Firebase-->
 
