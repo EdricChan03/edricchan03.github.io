@@ -37,12 +37,12 @@ comments: true
             <span>Blog > {{ page.title }}</span>
             <span flex></span>
             <md-menu>
-                <md-button class="md-icon-button" aria-label="Open menu">
+                <md-button class="md-icon-button" aria-label="Open menu" ng-click="$mdMenu.open($event)">
                     <md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
                 </md-button>
                 <md-menu-content>
                     <md-menu-item>
-                        <md-button ng-click="whats_new($event)" aria-label="What's New'">
+                        <md-button ng-click="whats_new($event)" aria-label="What's New">
                             <md-icon md-svg-icon="alert-octagon" md-menu-align-target></md-icon>
                             What's New
                         </md-button>
