@@ -2,7 +2,7 @@ angular.module('AboutApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', '
 .controller('MainController', function($scope) {
 
 });
-
+angular.module('AngularApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', ])
 angular.module('BetaApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages', 'app.config', 'app.directives'])
 .controller('MainController', function($scope) {
 

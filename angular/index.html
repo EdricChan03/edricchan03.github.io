@@ -1,14 +1,18 @@
----
-layout: default
-title: Angular
----
-
-<html>
+<html ng-app="AngularApp">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="This is the Angular page where you can test out Angular.">
-	<meta name="author" content="Edric Chan">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="/css/angular-material.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="/js/angular/1.5.8/angular.min.js"></script>
+  <script src="/js/angular/1.5.8/angular-animate.min.js"></script>
+  <script src="/js/angular/1.5.8/angular-aria.min.js"></script>
+  <script src="/js/angular/1.5.8/angular-messages.min.js"></script>
+  <!-- Angular Material Library -->
+  <script src="/js/angular/angular-material.min.js"></script>
+  <link rel="stylesheet" href="/fonts/fonts.css">
+	<script></script>
 </head>
 
 <body>
@@ -21,16 +25,5 @@ title: Angular
 		<li>More coming soon!</li>
 	</ul>
 </body>
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
-    // Registration was successful
-    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-  }).catch(function(err) {
-    // registration failed :(
-    console.log('ServiceWorker registration failed: ', err);
-  });
-}
-    </script>
 
 </html>
