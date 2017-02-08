@@ -83,13 +83,13 @@ comments: true
         {{ content }}
     </div>
     <section>
-        {% for tag in post.tags %}
         <md-chips>
+            {% for tag in post.tags %}
             <md-chip>
                 {{ tag }}
             </md-chip>
+            {% endfor %}
         </md-chips>
-        {% endfor %}
     </section>
     {% include disqus.html %}
 </body>
