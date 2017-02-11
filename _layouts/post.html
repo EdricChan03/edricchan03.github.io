@@ -25,54 +25,7 @@
 </head>
 
 <body>
-    <md-toolbar ng-controller="ToolbarPostController">
-        <div class="md-toolbar-tools">
-            <md-button class="md-icon-button" aria-label="Go back">
-                <md-icon md-svg-icon="arrow-left"></md-icon>
-                <md-tooltip md-direction="right">Go back</md-tooltip>
-            </md-button>
-            <span>Blog > {{ page.title }}</span>
-            <span flex></span>
-            <md-menu>
-                <md-button class="md-icon-button" aria-label="Open menu" ng-click="$mdMenu.open($event)">
-                    <md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
-                </md-button>
-                <md-menu-content>
-                    <md-menu-item>
-                        <md-button ng-click="whats_new($event)" aria-label="What's New">
-                            <md-icon md-svg-icon="alert-octagon" md-menu-align-target></md-icon>
-                            What's New
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="settings($event)" aria-label="Settings">
-                            <md-icon md-svg-icon="settings" md-menu-align-target></md-icon>
-                            Settings
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="sendFeedback($event)" aria-label="Send Feedback">
-                            <md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
-                            Send Feedback
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="about_site()" aria-label="About Site">
-                            <md-icon md-svg-icon="help-circle-outline" md-menu-align-target></md-icon>
-                            About This Site
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item show-xs hide>
-                        <md-button ng-click="viewGithub()" aria-label="View on Github">
-                            <md-icon md-svg-icon="github-circle" md-menu-align-target></md-icon>
-                            View on Github
-                        </md-button>
-                    </md-menu-item>
-                </md-menu-content>
-            </md-menu>
-        </div>
-    </md-toolbar>
-    <site-sidenav></site-sidenav>
+    <blog-toolbar></blog-toolbar>
     <h1>{{ page.title }}</h1>
     <p class="meta">{{ page.date | date_to_string }}</p>
 
