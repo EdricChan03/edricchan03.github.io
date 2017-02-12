@@ -178,9 +178,7 @@ angular.module('app.directives', [])
                 };
             }
         };
-            }
-        }
-    })
+            })
     .directive('siteToolbar', function () {
         return {
             restrict: 'E',
