@@ -17,9 +17,9 @@ angular.module('app.directives', [])
             $scope.other = [
                 { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
                 { url: 'https://chan4077.github.io/help', title: 'Get Help', icon: 'help-circle' },
-                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: ''},
-                { url: 'https://chan4077.github.io/beta/blog.html', title: 'Beta Blog', icon: ''},
-                { url: 'https://github.com/Chan4077/chan4077.github.io/wiki/Sites', title: 'Sitemap', icon: 'sitemap'}
+                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: '' },
+                { url: 'https://chan4077.github.io/beta/blog.html', title: 'Beta Blog', icon: '' },
+                { url: 'https://github.com/Chan4077/chan4077.github.io/wiki/Sites', title: 'Sitemap', icon: 'sitemap' }
             ];
             $scope.projects = [
                 { url: 'https://chan4077.github.io/projects', title: 'Projects', icon: '' },
@@ -39,14 +39,14 @@ angular.module('app.directives', [])
         };
     })
     // Toolbars
-    .directive('blogToolbar', function() {
+    .directive('blogToolbar', function () {
         return {
             restrict: 'E',
             templateUrl: '/templates/blogtoolbar.html',
             transclude: true,
             controller: function ToolbarPostController($scope, $mdDialog, $mdToast, $log) {
                 // Will be same as <site-toolbar></site-toolbar>
-                                $scope.viewGithub = function () {
+                $scope.viewGithub = function () {
                     window.location.href = "https://github.com/Chan4077/chan4077.github.io";
                 };
                 $scope.refreshPage = function () {
@@ -178,7 +178,7 @@ angular.module('app.directives', [])
                 };
             }
         };
-            })
+    })
     .directive('siteToolbar', function () {
         return {
             restrict: 'E',
@@ -209,7 +209,7 @@ angular.module('app.directives', [])
                     "name": "Angular"
                 }]
                 var urls = ['/', 'beta', 'cookies', 'projects', 'help', 'about', 'angular']
-                angular.forEach($scope.data, function(value, key) {
+                angular.forEach($scope.data, function (value, key) {
                     // Based on http://plnkr.co/edit/WeQhCb?p=preview
                     if (urls.indexOf(value.url) !== -1) {
                         $scope[value.url] = value.name;
@@ -364,11 +364,13 @@ angular.module('app.directives', [])
     .controller('SideNavController', function ($scope, $mdSidenav) {
 
     })
-    // App config
+// App config
 angular.module('app.config', [])
-    .config(function ($mdIconProvider, $mdToastProvider) {
+    .config(function ($mdIconProvider, $mdToastProvider, $interpolateProvider) {
         $mdIconProvider
             .defaultIconSet('/img/mdi.svg')
             .icon('website-logo', '/img/website.svg');
         console.info('Successfully initialized!');
+        $interpolateProvider.startSymbol('{(');
+        $interpolateProvider.endSymbol(')}');
     });

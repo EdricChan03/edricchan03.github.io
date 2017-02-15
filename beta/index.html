@@ -37,10 +37,10 @@
 			<site-feedback></site-feedback>
 			<md-switch aria-label="Enable Form Debug" ng-model="switch.form_debug">Show Form Debug</md-switch>
 			<div class="form_debug" ng-show="switch.form_debug">
-				feedback.name = <code>{{feedback.name}}</code>
-				<br> feedback.email = <code>{{feedback.email}}</code>
-				<br> feedback.sendFeedback = <code>{{feedback.sendFeedback}}</code>
-				<br> feedback.$invalid = <code>{{feedbackbeta.$invalid}}</code>
+				feedback.name = <code>{(feedback.name)}</code>
+				<br> feedback.email = <code>{(feedback.email)}</code>
+				<br> feedback.sendFeedback = <code>{(feedback.sendFeedback)}</code>
+				<br> feedback.$invalid = <code>{(feedbackbeta.$invalid)}</code>
 			</div>
 		</md-content>
 

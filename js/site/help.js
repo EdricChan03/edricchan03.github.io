@@ -1,5 +1,4 @@
 var app = angular.module('HelpApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria', 'app.config']);
-// Config
 app.controller('HelpController', function ($scope, $mdDialog) {
     console.info('Loaded HelpController!');
     $scope.refreshPage = function () {

@@ -96,32 +96,32 @@
 				<md-card>
 					<md-card-header>
 						<md-card-avatar>
-							<img ng-src="{{card.avatar}}">
+							<img ng-src="{(card.avatar)}">
 						</md-card-avatar>
 						<md-card-header-text>
-							<span class="md-title">{{card.name}}</span>
-							<span class="md-subhead">{{card.job}}</span>
+							<span class="md-title">{(card.name)}</span>
+							<span class="md-subhead">{(card.job)}</span>
 						</md-card-header-text>
 					</md-card-header>
-					<img ng-src="{{card.imagePath}}" class="md-card-image" alt="{{card.imageAlt}}" ng-class="{'half-size': halfSize, 'fixed-size': fixedSize}">
+					<img ng-src="{(card.imagePath)}" class="md-card-image" alt="{(card.imageAlt)}" ng-class="{'half-size': halfSize, 'fixed-size': fixedSize}">
 					<md-card-title>
-						<span class="md-headline">{{card.postTitle}}</span>
+						<span class="md-headline">{(card.postTitle)}</span>
 					</md-card-title>
 					<md-card-content>
 						<p>
-							{{card.content}}
+							{(card.content)}
 						</p>
 					</md-card-content>
 					<md-card-actions layout="row" layout-align="end center">
 						<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite(card.id)" ng-class="{'md-warn': markFavourite[card.id]}">
 							<md-icon md-svg-icon="heart"></md-icon>
-							<md-tooltip md-direction="top">{{favouriteTooltip}}</md-tooltip>
+							<md-tooltip md-direction="top">{(favouriteTooltip)}</md-tooltip>
 						</md-button>
 						<md-button class="md-icon-button" aria-label="Share">
 							<md-icon md-svg-icon="share"></md-icon>
 							<md-tooltip md-direction="top">Share Post</md-tooltip>
 						</md-button>
-						<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{{card.fullPost}}">
+						<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{(card.fullPost)}">
 							<md-icon md-svg-icon="open-in-new"></md-icon>
 							<md-tooltip md-direction="top">Read Full Post</md-tooltip>
 						</md-button>

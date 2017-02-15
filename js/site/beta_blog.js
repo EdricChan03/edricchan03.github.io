@@ -1,7 +1,9 @@
 var app = angular.module('BlogApp', ['ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages']);
-app.config(function ($mdIconProvider) {
+app.config(function ($mdIconProvider, $interpolateProvider) {
     $mdIconProvider.defaultIconSet('/img/mdi.svg')
         .icon('website-logo', '/img/website.svg');
+    $interpolateProvider.startSymbol('{(');
+    $interpolateProvider.endSymbol(')}');
 })
 
 app.controller('MainController', function ($scope, $mdDialog, $mdToast, $log, $mdUtil) {

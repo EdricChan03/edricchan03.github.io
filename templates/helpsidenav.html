@@ -8,9 +8,9 @@
 				<md-icon md-svg-icon="chevron-down" ng-show="!toggleLinks"></md-icon>
 				<md-icon md-svg-icon="chevron-up" ng-show="toggleLinks"></md-icon>
 			</md-list-item>
-			<md-list-item ng-repeat="site in helpSites" role="link" ng-href="{{ site.link }}" ng-click="toggleLeftMenu()" ng-show="toggleLinks">
-				<md-icon aria-label="{{site.title}}" md-svg-icon="{{site.icon}}"></md-icon>
-				<span class="title">{{site.title}}</span>
+			<md-list-item ng-repeat="site in helpSites" role="link" ng-href="{( site.link )}" ng-click="toggleLeftMenu()" ng-show="toggleLinks">
+				<md-icon aria-label="{(site.title)}" md-svg-icon="{(site.icon)}"></md-icon>
+				<span class="title">{(site.title)}</span>
 				<span flex></span>
 			</md-list-item>
 			<!--Site Links-->
@@ -20,9 +20,9 @@
 				<md-icon md-svg-icon="chevron-down" ng-show="!toggleMainLinks"></md-icon>
 				<md-icon md-svg-icon="chevron-up" ng-show="toggleMainLinks"></md-icon>
 			</md-list-item>
-			<md-list-item ng-repeat="site in mainSites" role="link" ng-href="{{ site.link }}" ng-click="toggleLeftMenu()" ng-show="toggleMainLinks">
-				<md-icon aria-label="{{site.title}}" md-svg-icon="{{site.icon}}"></md-icon>
-				<span class="title">{{site.title}}</span>
+			<md-list-item ng-repeat="site in mainSites" role="link" ng-href="{( site.link )}" ng-click="toggleLeftMenu()" ng-show="toggleMainLinks">
+				<md-icon aria-label="{(site.title)}" md-svg-icon="{(site.icon)}"></md-icon>
+				<span class="title">{(site.title)}</span>
 				<span flex></span>
 			</md-list-item>
 		</md-list>

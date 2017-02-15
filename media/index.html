@@ -21,11 +21,10 @@
     <md-content ng-controller="SocialController">
         <h5 class="md-display-2">List of Social Media Profiles</h5>
         <md-list>
-            <md-list-item ng-repeat="social in social | orderBy: 'name'" ng-href="{{social.url}}">
-                <h3>{{social.name}}</h3>
+            <md-list-item ng-repeat="social in social | orderBy: 'name'" ng-href="{(social.url)}">
+                <h3>{(social.name)}</h3>
             </md-list-item>
         </md-list>
     </md-content>
 </body>
-
 </html>
