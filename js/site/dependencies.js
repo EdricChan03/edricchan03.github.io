@@ -46,14 +46,21 @@ angular.module('app.directives', [])
             transclude: true,
             controller: function ToolbarPostController($scope, $mdDialog, $mdToast, $log) {
                 // Will be same as <site-toolbar></site-toolbar>
+                $scope.goBack = function() {
+                    console.debug('Redirecting to blog');
+                    window.location.href = "https://chan4077.github.io/blog";
+                }
                 $scope.viewGithub = function () {
+                    console.debug('Redirecting to Github');
                     window.location.href = "https://github.com/Chan4077/chan4077.github.io";
                 };
                 $scope.refreshPage = function () {
+                    console.debug('Reloading');
                     window.location.reload(true);
                 };
                 // $mdDialog (start)
                 $scope.whats_new = function (ev) {
+                    console.debug('Showing what\'s new dialog');
                     $mdDialog.show({
                         controller: WhatNewController,
                         templateUrl: '/templates/whats_new_tmpl.html',
@@ -63,6 +70,7 @@ angular.module('app.directives', [])
                     });
                 };
                 $scope.settings = function (ev) {
+                    console.debug('Showing settings dialog');
                     $mdDialog.show({
                         controller: SettingsController,
                         templateUrl: '/templates/settings_tmpl.html',
@@ -72,6 +80,7 @@ angular.module('app.directives', [])
                     });
                 };
                 $scope.sendFeedback = function (ev) {
+                    console.debug('Showing feedback dialog.');
                     $mdDialog.show({
                         controller: FeedbackController,
                         templateUrl: '/templates/feedbackhelp.html',
