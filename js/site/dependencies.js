@@ -17,175 +17,25 @@ angular.module('app.directives', [])
             $scope.other = [
                 { url: 'https://github.com/Chan4077/chan4077.github.io', title: 'Project Page', icon: 'github-circle' },
                 { url: 'https://chan4077.github.io/help', title: 'Get Help', icon: 'help-circle' },
-                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: '' },
-                { url: 'https://chan4077.github.io/beta/blog.html', title: 'Beta Blog', icon: '' },
+                { url: 'https://chan4077.github.io/beta', title: 'Beta', icon: 'flask' },
+                { url: 'https://chan4077.github.io/beta/blog.html', title: 'Beta Blog', icon: 'flask' },
                 { url: 'https://github.com/Chan4077/chan4077.github.io/wiki/Sites', title: 'Sitemap', icon: 'sitemap' }
             ];
             $scope.projects = [
-                { url: 'https://chan4077.github.io/projects', title: 'Projects', icon: '' },
-                { url: 'https://chan4077.github.io/MyFirstApp', title: 'MyFirstApp', icon: '' },
-                { url: 'https://chan4077.github.io/icons', title: 'Icons', icon: '' }
+                { url: 'https://chan4077.github.io/projects', title: 'Projects', icon: 'code-tags' },
+                { url: 'https://chan4077.github.io/MyFirstApp', title: 'MyFirstApp', icon: 'code-tags' },
+                { url: 'https://chan4077.github.io/icons', title: 'Icons', icon: 'code-tags' }
             ];
             // Toggle left sidenav
             $scope.toggleLeftMenu = function () {
                 $mdSidenav('left').toggle();
-            }
+            };
         };
         return {
             restrict: 'E',
             templateUrl: '/templates/sidenav.html',
             transclude: true,
             controller: SidenavController
-        };
-    })
-    // Toolbars
-    .directive('blogToolbar', function () {
-        return {
-            restrict: 'E',
-            templateUrl: '/templates/blogtoolbar.html',
-            transclude: true,
-            controller: function ToolbarPostController($scope, $mdDialog, $mdToast, $log) {
-                // Will be same as <site-toolbar></site-toolbar>
-                $scope.goBack = function() {
-                    console.debug('Redirecting to blog');
-                    window.location.href = "https://chan4077.github.io/blog";
-                }
-                $scope.viewGithub = function () {
-                    console.debug('Redirecting to Github');
-                    window.location.href = "https://github.com/Chan4077/chan4077.github.io";
-                };
-                $scope.refreshPage = function () {
-                    console.debug('Reloading');
-                    window.location.reload(true);
-                };
-                // $mdDialog (start)
-                $scope.whats_new = function (ev) {
-                    console.debug('Showing what\'s new dialog');
-                    $mdDialog.show({
-                        controller: WhatNewController,
-                        templateUrl: '/templates/whats_new_tmpl.html',
-                        parent: angular.element(document.body),
-                        targetEvent: ev,
-                        clickOutsideToClose: true,
-                    });
-                };
-                $scope.settings = function (ev) {
-                    console.debug('Showing settings dialog');
-                    $mdDialog.show({
-                        controller: SettingsController,
-                        templateUrl: '/templates/settings_tmpl.html',
-                        parent: angular.element(document.body),
-                        targetEvent: ev,
-                        clickOutsideToClose: true,
-                    });
-                };
-                $scope.sendFeedback = function (ev) {
-                    console.debug('Showing feedback dialog.');
-                    $mdDialog.show({
-                        controller: FeedbackController,
-                        templateUrl: '/templates/feedbackhelp.html',
-                        parent: angular.element(document.body),
-                        targetEvent: ev,
-                        clickOutsideToClose: true,
-                    });
-                };
-                // What's New
-                function WhatNewController($scope, $mdDialog, $mdToast) {
-                    // Hide button
-                    $scope.hide = function () {
-                        // Hides $mdDialog
-                        $mdDialog.hide();
-                    };
-                    // Cancel button
-                    $scope.cancel = function () {
-                        // Cancels $mdDialog
-                        $mdDialog.cancel();
-                    };
-                    // Help button
-                    $scope.help = function () {
-                        // Redirect to help site
-                        window.location.href = "https://chan4077.github.io/help";
-                        console.info('Redirecting to Help site...');
-                    }
-                    // More Info button
-                    $scope.moreInfo = function () {
-                        // Note that this is percent-encoded
-                        // More information: https://en.wikipedia.org/wiki/Percent-encoding
-                        window.location.href = "https://github.com/Chan4077/chan4077.github.io/wiki/What%27s-New";
-                    }
-                };
-                // Feedback
-                function FeedbackController($scope, $mdDialog, $mdToast) {
-                    $scope.hide = function () {
-                        $mdDialog.hide();
-                    };
-                    $scope.cancel = function () {
-                        $mdDialog.cancel();
-                    };
-                    $scope.help = function () {
-                        window.location.href = "https://chan4077.github.io/help/about_feedback.html";
-                        console.info('Redirecting to Help site...');
-                    }
-                    $scope.oriFeedback = {
-                        name: "",
-                        email: "",
-                        sendFeedback: ""
-                    };
-                    // Declare a variable called oriFeedback
-                    var oriFeedback = angular.copy($scope.oriFeedback);
-
-                    // On initial, set feedback to original
-                    $scope.feedback = angular.copy(oriFeedback);
-
-                    // Reset form
-                    $scope.reset = function () {
-                        $scope.feedback = angular.copy(oriFeedback);
-                        // Reset form
-                        $scope.feedbackhelp.$setPristine();
-                        // Reset validation errors
-                        $scope.feedbackhelp.$setUntouched();
-                    };
-                    $scope.submitForm = function () {
-                        $mdDialog.cancel();
-                        $mdToast.show(
-                            $mdToast.simple()
-                                .textContent('You submitted the form!')
-                                .position('bottom left')
-                                .hideDelay(3000)
-                        );
-                    };
-                };
-                // Settings
-                function SettingsController($scope, $mdDialog) {
-                    $scope.hide = function () {
-                        $mdDialog.hide();
-                    };
-                    $scope.cancel = function () {
-                        $mdDialog.cancel();
-                    };
-                    $scope.help = function () {
-                        window.location.href = "https://chan4077.github.io/help";
-                        console.info('Redirecting to Help site...');
-                    }
-                    $scope.general_settings = {
-                        proBar: true,
-                        enableSound: true
-                    };
-                    $scope.developer_settings = {
-                        consoleLog: false,
-                        showExtraOptions: false
-                    };
-                    $scope.extra_settings = {
-                        showCredits: true,
-                        enableOffline: true
-                    };
-                };
-                // $mdDialog (end)
-
-                $scope.about_site = function () {
-                    window.location.href = "https://chan4077.github.io/about#angular";
-                };
-            }
         };
     })
     .directive('siteToolbar', function () {
@@ -294,38 +144,41 @@ angular.module('app.directives', [])
                     };
                     $scope.cancel = function () {
                         $mdDialog.cancel();
+                        $mdToast.show(
+                            $mdToast.simple()
+                                .textContent('Feedback cancelled')
+                                .position('bottom left')
+                                .hideDelay(3000)
+                        );
                     };
                     $scope.help = function () {
                         window.location.href = "https://chan4077.github.io/help/about_feedback.html";
                         console.info('Redirecting to Help site...');
-                    }
-                    $scope.oriFeedback = {
-                        name: "",
-                        email: "",
-                        sendFeedback: ""
-                    };
-                    // Declare a variable called oriFeedback
-                    var oriFeedback = angular.copy($scope.oriFeedback);
+                        // }
+                        // $scope.oriFeedback = {
+                        //     name: "",
+                        //     email: "",
+                        //     sendFeedback: ""
+                        // };
+                        // // Declare a variable called oriFeedback
+                        // var oriFeedback = angular.copy($scope.oriFeedback);
 
-                    // On initial, set feedback to original
-                    $scope.feedback = angular.copy(oriFeedback);
+                        // // On initial, set feedback to original
+                        // $scope.feedback = angular.copy(oriFeedback);
 
-                    // Reset form
-                    $scope.reset = function () {
-                        $scope.feedback = angular.copy(oriFeedback);
-                        // Reset form
-                        $scope.feedbackhelp.$setPristine();
-                        // Reset validation errors
-                        $scope.feedbackhelp.$setUntouched();
-                    };
-                    $scope.submitForm = function () {
-                        $mdDialog.cancel();
-                        $mdToast.show(
-                            $mdToast.simple()
-                                .textContent('You submitted the form!')
-                                .position('bottom left')
-                                .hideDelay(3000)
-                        );
+                        // // Reset form
+                        // $scope.reset = function () {
+                        //     $scope.feedback = angular.copy(oriFeedback);
+                        //     // Reset form
+                        //     $scope.feedbackhelp.$setPristine();
+                        //     // Reset validation errors
+                        //     $scope.feedbackhelp.$setUntouched();
+                        // };
+                        $scope.postOnGithub = function () {
+                            $mdDialog.cancel();
+                            console.debug('Redirecting to Github...');
+                            window.location.href = "https://github.com/Chan4077/chan4077.github.io/issues/new"
+                        };
                     };
                 };
                 // Settings
@@ -352,11 +205,11 @@ angular.module('app.directives', [])
                         showCredits: true,
                         enableOffline: true
                     };
-                };
-                // $mdDialog (end)
+                    // $mdDialog (end)
 
-                $scope.about_site = function () {
-                    window.location.href = "https://chan4077.github.io/about#angular";
+                    $scope.about_site = function () {
+                        window.location.href = "https://chan4077.github.io/about#angular";
+                    };
                 };
             }
         };

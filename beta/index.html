@@ -33,14 +33,8 @@
 	<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer" ng-init="internetCheck()">
 		<site-toolbar></site-toolbar>
 		<md-content layout="column" flex class="md-padding" layout-padding>
-			<site-feedback></site-feedback>
-			<md-switch aria-label="Enable Form Debug" ng-model="switch.form_debug">Show Form Debug</md-switch>
-			<div class="form_debug" ng-show="switch.form_debug">
-				feedback.name = <code>{(feedback.name)}</code>
-				<br> feedback.email = <code>{(feedback.email)}</code>
-				<br> feedback.sendFeedback = <code>{(feedback.sendFeedback)}</code>
-				<br> feedback.$invalid = <code>{(feedbackbeta.$invalid)}</code>
-			</div>
+			<p>Welcome to the beta page!</p><br />
+			<p>Here you will see some stuff before it will be released to the main site!</p>
 		</md-content>
 			<site-speed-dial></site-speed-dial>
 	</div>

@@ -1,5 +1,4 @@
 <md-dialog aria-label="Send Feedback" style="width:800px;height:810px;">
-	<form ng-cloak name="feedbackhelp" autocomplete="off">
 		<md-toolbar>
 			<div class="md-toolbar-tools">
 				<h2>Send Feedback</h2>
@@ -16,7 +15,7 @@
 		</md-toolbar>
 		<md-dialog-content>
 					<md-content class="md-padding">
-						<h1 class="md-display-2">Send your feedback about this site!</h1>
+						<!--<h1 class="md-display-2">Send your feedback about this site!</h1>
 						<label style="color:red;">* Required</label>
 						<br>
 						<md-input-container class="md-icon-float md-block">
@@ -46,19 +45,16 @@
 							</div>
 						</md-input-container>
 						<p class="note"><strong>Note:</strong> This form is currently not working. Don't expect it to work!</p>
-						<p class="note"><strong>Note:</strong> The <span class="code">Submit</span> button is disabled with <code>ng-disabled</code>.</p>
+						<p class="note"><strong>Note:</strong> The <span class="code">Submit</span> button is disabled with <code>ng-disabled</code>.</p>-->
+						<p><strong>UPDATE:</strong> Please post feedback/issue on Github.</p>
 					</md-content>
 		</md-dialog-content>
 		<md-dialog-actions layout="row">
-			<md-button ng-click="cancel()" aria-label="Cancel">
+			<md-button ng-click="cancel()" aria-label="Cancel" class="md-primary">
 				Cancel
 			</md-button>
-			<md-button class="md-warn md-raised" ng-click="reset()" aria-label="Reset">
-				Reset
-			</md-button>
-			<md-button ng-disabled="feedbackhelp.$invalid" class="md-primary md-raised" type="submit" ng-click="submitForm()">
-				Submit
+			<md-button class="md-primary" ng-click="postOnGithub()">
+				Post on Github
 			</md-button>
 		</md-dialog-actions>
-	</form>
 </md-dialog>
