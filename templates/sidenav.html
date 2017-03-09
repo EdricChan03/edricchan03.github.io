@@ -17,7 +17,7 @@
 				<md-list-item ng-click="toggleLinks = !toggleLinks">
 					<p>Sites</p>
 					<span flex></span>
-					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggleLinks}" class="md-toggle-icon"></md-icon>
+					<md-icon md-svg-icon="chevron-down" ng-class="{toggleLinks ? 'toggled':''}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
 				<md-list-item ng-repeat="url in main" role="link" ng-href="{( url.url )}" ng-click="toggleLeftMenu()" ng-show="toggleLinks">
 					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
@@ -29,7 +29,7 @@
 				<md-list-item ng-click="toggleOtherLinks = !toggleOtherLinks">
 					<p>Other Sites</p>
 					<span flex></span>
-					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggleOtherLinks}" class="md-toggle-icon"></md-icon>
+					<md-icon md-svg-icon="chevron-down" ng-class="{toggleOtherLinks ? 'toggled':''}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
 				<md-list-item ng-repeat="url in other" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggleOtherLinks">
 					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
@@ -41,7 +41,7 @@
 				<md-list-item ng-click="toggleProjectLinks = !toggleProjectLinks">
 					<p>Project Sites</p>
 					<span flex></span>
-					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggleProjectLinks}" class="md-toggle-icon"></md-icon>
+					<md-icon md-svg-icon="chevron-down" ng-class="{toggleProjectLinks ? 'toggled':''}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
 				<md-list-item ng-repeat="url in projects" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggleProjectLinks">
 					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
