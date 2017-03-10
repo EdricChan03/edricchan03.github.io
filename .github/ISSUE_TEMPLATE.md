@@ -1,12 +1,28 @@
+<!--
+The tag and all other tags that you see here are commented out stuff.
+NOTE: Please fill in all the sections below or it might result in your issue being closed.
+-->
+
 ### Expected behaviour
-- _(Couldn't load data, Error 404 etc.)_
+<!--
+Insert the behaviour that you expected to happen here
+E.g. Data should have loaded with HTTP status 200, no errors on load, etc.
+-->
 ### Actual behaviour
-- _(Data should be loaded, no errors etc.)_
+<!--
+Insert the behaviour that actually happened
+E.g. Data loaded with status 500, error could not find module, etc.
+-->
 ### Other specs
-- OS Version: _(Windows 10, macOS Sierra etc.)_
-- Site: _(Insert Site here)_
-- Browser: _(Chrome 55, Safari 10 etc.)_
-- Stacktrace: _(something.js: error 404 etc.)_ _([More Info](https://developer.chrome.com/devtools))_
+- OS Version: <!--Enter your OS Version here e.g. Windows 10 Build 1603, macOS Sierra 10.12.3 16D32-->
+- Site: <!--Enter the site that encountered the problem. OPTIONAL, delete this if necessary.-->
+- Browser: <!--Enter the type of browser that you have along with the version number e.g. Chrome 57.0.2987.98, Safari 10.1-->
+- Stacktrace: <!--Enter the stacktrace that caused this error, if any. OPTIONAL, delete this if necessary. To access stacktrace, follow this information: https://developer.chrome.com/devtools-->
 
 ### Notes:
-_(Add notes here)_
+<!--Enter any relevant notes that you want here-->
+
+<!--
+NOTE:
+Feel free to delete sections that are not required, even the commented out parts
+-->
