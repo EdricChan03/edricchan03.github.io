@@ -13,36 +13,36 @@
 		</md-toolbar>
 		<md-content class="md-default-theme">
 			<md-list>
-				<md-list-item ng-click="toggleLinks = !toggleLinks">
+				<md-list-item ng-click="toggleLinks()">
 					<p>Sites</p>
 					<span flex></span>
-					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggleLinks}" class="md-toggle-icon"></md-icon>
+					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledLinks}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
-				<md-list-item ng-repeat="url in main" role="link" ng-href="{( url.url )}" ng-click="toggleLeftMenu()" ng-show="toggleLinks">
+				<md-list-item ng-repeat="url in main" role="link" ng-href="{( url.url )}" ng-click="toggleLeftMenu()" ng-show="toggledLinks">
 					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
 					<span class="title">{(url.title)}</span>
 					<span flex></span>
 				</md-list-item>
 
 				<md-divider></md-divider>
-				<md-list-item ng-click="toggleOtherLinks = !toggleOtherLinks">
+				<md-list-item ng-click="toggleOtherLinks()">
 					<p>Other Sites</p>
 					<span flex></span>
-					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggleOtherLinks}" class="md-toggle-icon"></md-icon>
+					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledOtherLinks}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
-				<md-list-item ng-repeat="url in other" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggleOtherLinks">
+				<md-list-item ng-repeat="url in other" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggledOtherLinks">
 					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
 					<span class="title">{(url.title)}</span>
 					<span flex></span>
 				</md-list-item>
 
 				<md-divider></md-divider>
-				<md-list-item ng-click="toggleProjectLinks = !toggleProjectLinks">
+				<md-list-item ng-click="toggleProjectLinks()">
 					<p>Project Sites</p>
 					<span flex></span>
-					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggleProjectLinks}" class="md-toggle-icon"></md-icon>
+					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledProjectLinks}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
-				<md-list-item ng-repeat="url in projects" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggleProjectLinks">
+				<md-list-item ng-repeat="url in projects" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggledProjectLinks">
 					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
 					<span class="title">{(url.title)}</span>
 					<span flex></span>

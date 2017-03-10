@@ -30,17 +30,27 @@ angular.module('app.directives', [])
             $scope.toggleLeftMenu = function () {
                 $mdSidenav('left').toggle();
             };
-            $scope.toggleLinks = false;
-            $scope.toggleOtherLinks = false;
-            $scope.toggleProjectLinks = false;
-            $scope.toggledAllLinks = false;
             $scope.toggleAllLinks = function () {
                 if ($scope.toggleLinks && $scope.toggleOtherLinks && $scope.toggleProjectLinks) {
                     $scope.toggledAllLinks = true;
+                    console.log('All are expanded.');
                 } else {
                     $scope.toggledAllLinks = false;
+                    console.log('They are not all expanded.');
                 }
             };
+            $scope.toggleLinks = function() {
+                $scope.toggledLinks = !$scope.toggledLinks;
+                console.log('Toggled links: '+$scope.toggledLinks);
+            }
+            $scope.toggleOtherLinks = function() {
+                $scope.toggledOtherLinks = !$scope.toggledOtherLinks;
+                console.log('Toggled other links: '+$scope.toggledOtherLinks);
+            }
+            $scope.toggleProjectLinks = function() {
+                $scope.toggledProjectLinks = !$scope.toggledProjectLinks;
+                console.log('Toggled project links: '+$scope.toggledProjectLinks);
+            }
         };
         return {
             restrict: 'E',
