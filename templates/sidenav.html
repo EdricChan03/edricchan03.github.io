@@ -5,10 +5,9 @@
 			<div class="md-toolbar-tools">
 				<h2 class="md-title">Site Links</h2>
 				<span flex></span>
-				<md-button class="md-icon-button" ng-click="toggleLinks = !toggleLinks; toggleOtherLinks = !toggleOtherLinks; toggleProjectLinks = !toggleProjectLinks">
-					<md-icon md-svg-icon="chevron-down" ng-show="!toggleProjectLinks"></md-icon>
-					<md-icon md-svg-icon="chevron-up" ng-show="toggleProjectLinks"></md-icon>
-					<md-tooltip>{{toggleProjectLinks ? 'Collapse':'Expand'}} All</md-tooltip>
+				<md-button class="md-icon-button" ng-click="toggleAllLinks()">
+					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledAllLinks}"></md-icon>
+					<md-tooltip>{{toggledAllLinks ? 'Collapse':'Expand'}} All</md-tooltip>
 				</md-button>
 			</div>
 		</md-toolbar>

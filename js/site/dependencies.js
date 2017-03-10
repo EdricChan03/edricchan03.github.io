@@ -30,6 +30,16 @@ angular.module('app.directives', [])
             $scope.toggleLeftMenu = function () {
                 $mdSidenav('left').toggle();
             };
+            $scope.toggleLinks = false;
+            $scope.toggleOtherLinks = false;
+            $scope.toggleProjectLinks = false;
+            $scope.toggledAllLinks = false;
+            $scope.toggleAllLinks = function() {
+                if ($scope.toggleLinks && $scope.toggleOtherLinks && $scope.toggleProjectLinks) {
+                    $scope.toggledAllLinks = true;
+                } else {
+                    $scope.toggledAllLinks = false;
+                }
         };
         return {
             restrict: 'E',
