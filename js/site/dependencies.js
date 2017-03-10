@@ -109,7 +109,7 @@ angular.module('app.directives', [])
                         .textContent('Send feedback here: ')
                         .action('GO TO GITHUB')
                         .highlightAction(true)
-                        .position(pinTo);
+                        .position("bottom left");
 
                     $mdToast.show(toast).then(function (response) {
                         if (response == 'ok') {
