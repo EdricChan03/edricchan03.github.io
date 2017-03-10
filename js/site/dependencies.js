@@ -34,12 +34,13 @@ angular.module('app.directives', [])
             $scope.toggleOtherLinks = false;
             $scope.toggleProjectLinks = false;
             $scope.toggledAllLinks = false;
-            $scope.toggleAllLinks = function() {
+            $scope.toggleAllLinks = function () {
                 if ($scope.toggleLinks && $scope.toggleOtherLinks && $scope.toggleProjectLinks) {
                     $scope.toggledAllLinks = true;
                 } else {
                     $scope.toggledAllLinks = false;
                 }
+            };
         };
         return {
             restrict: 'E',
