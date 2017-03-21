@@ -31,12 +31,18 @@ angular.module('app.directives', [])
                 $mdSidenav('left').toggle();
             };
             $scope.toggleAllLinks = function () {
-                if ($scope.toggleLinks && $scope.toggleOtherLinks && $scope.toggleProjectLinks) {
+                if (!$scope.toggleLinks && !$scope.toggleOtherLinks && !$scope.toggleProjectLinks) {
                     $scope.toggledAllLinks = true;
+                    $scope.toggledLinks = true;
+                    $scope.toggledProjectLinks = true;
+                    $scope.toggledOtherLinks = true;
                     console.log('All are expanded.');
                 } else {
                     $scope.toggledAllLinks = false;
-                    console.log('They are not all expanded.');
+                    $scope.toggledLinks = false;
+                    $scope.toggledProjectLinks = false;
+                    $scope.toggledOtherLinks = false;
+                    console.log('They are collapsed.');
                 }
             };
             $scope.toggleLinks = function() {
