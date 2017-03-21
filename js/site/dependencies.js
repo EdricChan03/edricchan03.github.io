@@ -260,11 +260,12 @@ angular.module('app.directives', [])
     })
 // App config
 angular.module('app.config', [])
-    .config(function ($mdIconProvider, $mdToastProvider, $interpolateProvider) {
+    .config(function ($mdIconProvider, $mdToastProvider, $interpolateProvider, $locationProvider) {
         $mdIconProvider
             .defaultIconSet('/img/mdi.svg')
             .icon('website-logo', '/img/website.svg');
         console.info('Successfully initialized!');
         $interpolateProvider.startSymbol('{(');
         $interpolateProvider.endSymbol(')}');
+        $locationProvider.html5Mode(true);
     });
