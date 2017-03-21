@@ -2,25 +2,39 @@
 layout: default
 title: Edric Chan's Blog
 ---
-<html>
+<html ng-app="BlogApp">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="description" content="The Blog page. This is where you can find my latest posts.">
 </head>
+
 <body>
-<br>
-<br>
-<br>
-<h1>{{ page.title }}</h1>
-<ul class="posts">
+    <!--TODO: Add navigation tabs leading to posts, tags and authors?-->
+    <md-nav-bar>
+        <md-nav-item md-nav-href="#posts" name="Posts">Posts</md-nav-item>
+        <md-nav-item md-nav-href="#tags" name="Tags">Tags</md-nav-item>
+        <md-nav-item md-nav-href="#contributors" name="Contributors">Contributors</md-nav-item>
+    </md-nav-bar>
+    <h1>{{ page.title }}</h1>
+    <div id="posts">
+        <ul class="posts">
 
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &gt; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
+            {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> &gt; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
 
-    <h3>Tags</h3>
-    <a href="tags.html">List of Tags</a>
-</ul>
+            <h3>Tags</h3>
+            <a href="tags.html">List of Tags</a>
+        </ul>
+    </div>
+    <div id="tags">
+        <strong>COMING SOON</strong>
+    </div>
+    <div id="contributors">
+        <strong>COMING SOON</strong>
+    </div>
 </body>
+
 </html>
