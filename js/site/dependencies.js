@@ -71,40 +71,8 @@ angular.module('app.directives', [])
             templateUrl: '/templates/toolbar.html',
             transclude: true,
             controller: function ToolbarController($scope, $location, $mdDialog, $mdToast) {
-                console.info('Loaded!');
-                $scope.data = [{
-                    "url": "/",
-                    "name": "Home"
-                }, {
-                    "url": "beta",
-                    "name": "Beta"
-                }, {
-                    "url": "cookies",
-                    "name": "Cookies"
-                }, {
-                    "url": "projects",
-                    "name": "Projects"
-                }, {
-                    "url": "help",
-                    "name": "Help"
-                }, {
-                    "url": "about",
-                    "name": "About"
-                }, {
-                    "url": "angular",
-                    "name": "Angular"
-                }]
-                var urls = ['/', 'beta', 'cookies', 'projects', 'help', 'about', 'angular']
-                angular.forEach($scope.data, function (value, key) {
-                    // Based on http://plnkr.co/edit/WeQhCb?p=preview
-                    if (urls.indexOf(value.url) !== -1) {
-                        $scope[value.url] = value.name;
-                    } else {
-                        console.error('Invalid value');
-                    }
-
-                })
-                console.log('url visited: ' + $location.path());
+                console.info('Loaded site-toolbar!');
+                $scope.title = document.getElementsByTagName("title")[0].innerHTML;
                 $scope.viewGithub = function () {
                     window.location.href = "https://github.com/Chan4077/chan4077.github.io";
                 };
