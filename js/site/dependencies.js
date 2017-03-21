@@ -31,7 +31,7 @@ angular.module('app.directives', [])
                 $mdSidenav('left').toggle();
             };
             $scope.toggleAllLinks = function () {
-                if (!$scope.toggleLinks && !$scope.toggleOtherLinks && !$scope.toggleProjectLinks) {
+                if (!$scope.toggledLinks && !$scope.toggledOtherLinks && !$scope.toggledProjectLinks) {
                     $scope.toggledAllLinks = true;
                     $scope.toggledLinks = true;
                     $scope.toggledProjectLinks = true;
