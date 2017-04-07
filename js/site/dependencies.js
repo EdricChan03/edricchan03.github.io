@@ -45,17 +45,17 @@ angular.module('app.directives', [])
                     console.log('They are collapsed.');
                 }
             };
-            $scope.toggleLinks = function() {
+            $scope.toggleLinks = function () {
                 $scope.toggledLinks = !$scope.toggledLinks;
-                console.log('Toggled links: '+$scope.toggledLinks);
+                console.log('Toggled links: ' + $scope.toggledLinks);
             }
-            $scope.toggleOtherLinks = function() {
+            $scope.toggleOtherLinks = function () {
                 $scope.toggledOtherLinks = !$scope.toggledOtherLinks;
-                console.log('Toggled other links: '+$scope.toggledOtherLinks);
+                console.log('Toggled other links: ' + $scope.toggledOtherLinks);
             }
-            $scope.toggleProjectLinks = function() {
+            $scope.toggleProjectLinks = function () {
                 $scope.toggledProjectLinks = !$scope.toggledProjectLinks;
-                console.log('Toggled project links: '+$scope.toggledProjectLinks);
+                console.log('Toggled project links: ' + $scope.toggledProjectLinks);
             }
         };
         return {
@@ -100,18 +100,8 @@ angular.module('app.directives', [])
                 };
                 $scope.sendFeedback = function () {
                     // Head to Github -> Create new issue
-                    var toast = $mdToast.simple()
-                        .textContent('Send feedback here: ')
-                        .action('GO TO GITHUB')
-                        .highlightAction(true)
-                        .position("bottom left");
-
-                    $mdToast.show(toast).then(function (response) {
-                        if (response == 'ok') {
-                            alert('Redirecting to Github...');
-                            window.location.href = 'https://github.com/Chan4077/chan4077.github.io/issues/new';
-                        }
-                    })
+                    alert('Redirecting to Github...');
+                    window.location.href = 'https://github.com/Chan4077/chan4077.github.io/issues/new';
                 };
                 // What's New
                 function WhatNewController($scope, $mdDialog, $mdToast) {
