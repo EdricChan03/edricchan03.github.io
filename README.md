@@ -9,30 +9,31 @@
 
 ---
 # chan4077.github.io
-Website @ https://chan4077.github.io
+Website @ https://chan4077.github.io/chan4077.github.io_old
 
 ## Disclaimer
 I am trying to use ~~[Material Design Lite](https://getmdl.io) in this website and there is also~~ [AngularJS](https://angularjs.org).
 > Unfortunately, it appears that [Material Design Lite](https://getmdl.io) has moved to this [page](https://material.io/components.html) where the source code is at [material-components/material-components-web](https://github.com/material-components/material-components-web). Therefore, I will be permanently updating the site to use [AngularJS Material](https://material.angularjs.org)
+> **NOTE:** Since the site has been upgraded to [`Material2`](https://github.com/angular/material2), the old code will still remain here and will also remain accessible at https://chan4077.github.io/chan4077.github.io_old.
 
 There too, is [AngularJS Material](https://material.angularjs.org/latest)!
 
 ---
 ## Other Links:
-1. [AngularToDo](https://chan4077.github.io/angular/angulartodo.html)
-2. [AngularJS](https://chan4077.github.io/angular/angularjs.html)
-3. [AngularJS Material Test Page](https://chan4077.github.io/angular/material.html)
-4. [Test My Beta Site](https://chan4077.github.io/beta/index.html)
-5. [Beta Blog](https://chan4077.github.io/beta/blog.html) _(**WARNING**: Might break)_ _(Uses latest version of [Angular Material](https://material.angularjs.org/HEAD))_
+1. [AngularToDo](https://chan4077.github.io/chan4077.github.io_old/angular/angulartodo.html)
+2. [AngularJS](https://chan4077.github.io/chan4077.github.io_old/angular/angularjs.html)
+3. [AngularJS Material Test Page](https://chan4077.github.io/chan4077.github.io_old/angular/material.html)
+4. [Test My Beta Site](https://chan4077.github.io/chan4077.github.io_old/beta/index.html)
+5. [Beta Blog](https://chan4077.github.io/chan4077.github.io_old/beta/blog.html) _(**WARNING**: Might break)_ _(Uses latest version of [Angular Material](https://material.angularjs.org/HEAD))_
 
 ---
 ## Screenshots:
 
 ### Main Site:
-![Main Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io/master/wiki/img/wiki_main.jpg)
+![Main Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io_old/master/wiki/img/wiki_main.jpg)
 
 ### Beta Site:
-![Beta Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io/master/wiki/img/wiki_beta_new.jpg)
+![Beta Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io_old/master/wiki/img/wiki_beta_new.jpg)
 
 ---
 ## Notes:
