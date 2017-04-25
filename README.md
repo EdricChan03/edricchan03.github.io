@@ -9,7 +9,7 @@
 
 ---
 # chan4077.github.io
-Website @ https://chan4077.github.io/chan4077.github.io_old
+Website @ https://chan4077.github.io
 
 ## Disclaimer
 I am trying to use ~~[Material Design Lite](https://getmdl.io) in this website and there is also~~ [AngularJS](https://angularjs.org).
@@ -17,15 +17,17 @@ I am trying to use ~~[Material Design Lite](https://getmdl.io) in this website a
 
 > **NOTE:** Since the site has been upgraded to [`Material2`](https://github.com/angular/material2), the old code will still remain here and will also remain accessible at https://chan4077.github.io/chan4077.github.io_old.
 
+> **UPDATE:** Since Github Pages can't host single page applications (SPAs), I will be switching over to firebase, available at https://githubpageschan4077.firebaseapp.com. Thus, the code here will be back up! :tada:
+
 There too, is [AngularJS Material](https://material.angularjs.org/latest)!
 
 ---
 ## Other Links:
-1. [AngularToDo](https://chan4077.github.io/chan4077.github.io_old/angular/angulartodo.html)
-2. [AngularJS](https://chan4077.github.io/chan4077.github.io_old/angular/angularjs.html)
-3. [AngularJS Material Test Page](https://chan4077.github.io/chan4077.github.io_old/angular/material.html)
-4. [Test My Beta Site](https://chan4077.github.io/chan4077.github.io_old/beta/index.html)
-5. [Beta Blog](https://chan4077.github.io/chan4077.github.io_old/beta/blog.html) _(**WARNING**: Might break)_ _(Uses latest version of [Angular Material](https://material.angularjs.org/HEAD))_
+1. [AngularToDo](https://chan4077.github.io/angular/angulartodo.html)
+2. [AngularJS](https://chan4077.github.io/angular/angularjs.html)
+3. [AngularJS Material Test Page](https://chan4077.github.io/angular/material.html)
+4. [Test My Beta Site](https://chan4077.github.io/beta/index.html)
+5. [Beta Blog](https://chan4077.github.io/beta/blog.html) _(**WARNING**: Might break)_ _(Uses latest version of [Angular Material](https://material.angularjs.org/HEAD))_
 
 ---
 ## Screenshots:
