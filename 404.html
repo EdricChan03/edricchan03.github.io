@@ -12,8 +12,8 @@ permalink: /404.html
 	<script src="/js/angular/1.5.11/angular-messages.min.js"></script>
 	<!-- Angular Material Library -->
 	<script src="/js/angular/angular-material.min.js"></script>
-	<script src="/js/site/404.js"></script>
-	<script src="/js/site/dependencies.js"></script>
+	<script src="/lib/404.js"></script>
+	<script src="/lib/dependencies.js"></script>
 	<link href="favicon.ico" rel="shortcut icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="The 404 page. This is loaded when a URL is not found." />
@@ -33,7 +33,7 @@ permalink: /404.html
 				<md-icon md-svg-icon="arrow-left" aria-label="arrow-left"></md-icon>
 			</md-button>
 			<h2 class="md-flex">
-				Chan4077.Github.io BETA
+				Chan4077.Github.io - Not Found
 			</h2>
 			<span flex></span>
 			<!--Refresh-->
@@ -85,8 +85,9 @@ permalink: /404.html
 				<md-button ng-click="commit()" class="md-primary">Commits</md-button>
 			</md-card-actions>
 		</md-card>
-		<md-switch class="md-accent"></md-switch>
 	</md-content>
+	<!--The toast for when offline and online-->
+	<network-toast></network-toast>
 </body>
 
 </html>

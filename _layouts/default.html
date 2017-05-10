@@ -52,9 +52,11 @@ MADE WITH HTML5, JAVASCRIPT AND CSS3
 <body>
 	<site-sidenav></site-sidenav>
 	<site-toolbar></site-toolbar>
-		<md-content ng-controller="DefaultController" class="md-padding">
-			{{content}}
-		</md-content>
+	<md-content ng-controller="DefaultController" class="md-padding">
+		{{content}}
+	</md-content>
+  	<!--The toast for when offline and online-->
+	<network-toast></network-toast>
 </body>
 <!--Scripts-->
 <!--Google Analytics-->
