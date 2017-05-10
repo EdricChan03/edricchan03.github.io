@@ -1,47 +1,46 @@
 <!DOCTYPE HTML>
 <html ng-app="nameApp">
 
-<head>
-  <title>YourName - Chan4077.Github.io</title>
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="/css/angular-material.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Angular Material requires Angular.js Libraries -->
-  <script src="/js/angular/1.5.11/angular.min.js"></script>
-  <script src="/js/angular/1.5.11/angular-animate.min.js"></script>
-  <script src="/js/angular/1.5.11/angular-aria.min.js"></script>
-  <script src="/js/angular/1.5.11/angular-messages.min.js"></script>
-  <!-- Angular Material Library -->
-  <script src="/js/angular/angular-material.min.js"></script>
-  <link rel="stylesheet" href="/fonts/fonts.css">
-</head>
+	<head>
+		<title>YourName - Chan4077.Github.io</title>
+		<link rel="shortcut icon" href="favicon.ico">
+    	<!--Import-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  		<link rel="stylesheet" href="/fonts/fonts.css">
+	</head>
 
-<body>
-  <md-content ng-controller="NameController as name">
-    <form name="nameForm">
-      <md-input-container>
-        <label>Enter Your Name!</label>
-        <input name="yourName" ng-model="yourName" required>
-        <div ng-messages="nameForm.yourName.$error">
-          <div ng-message="required">This is required!</div>
-        </div>
-        <md-button ng-show="">Submit</md-button>
-      </md-input-container>
-    </form>
-    <hr>
-    <h1>Hello {(yourName)}!</h1>
-  </md-content>
-  <script src="/js/site/yourname.js"></script>
-</body>
-<!--Scripts-->
-<!--Google Analytics-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<body>
+  		<md-content ng-controller="NameController as name">
+    		<form name="nameForm">
+      			<md-input-container>
+        			<label>Enter Your Name!</label>
+        			<input name="yourName" ng-model="yourName" required>
+        			<div ng-messages="nameForm.yourName.$error">
+          				<div ng-message="required">This is required!</div>
+        			</div>
+      			</md-input-container>
+        		<md-button type="submit">Submit</md-button>
+    		</form>
+    		<hr>
+    		<h1>Hello {(yourName)}!</h1>
+  		</md-content>
+  		<script src="/lib/yourname.js"></script>
+	</body>
+	<!--Scripts-->
+	<!--Google Analytics-->
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-82448435-1', 'auto');
-  ga('send', 'pageview');
-</script>
+  		ga('create', 'UA-82448435-1', 'auto');
+  		ga('send', 'pageview');
+	</script>
 </html>

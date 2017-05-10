@@ -1,152 +1,137 @@
 <html ng-app="BlogApp">
 
-<head>
-	<!-- Angular Material requires Angular.js Libraries -->
-	<script src="/js/angular/1.5.11/angular.min.js"></script>
-	<script src="/js/angular/1.5.11/angular-animate.min.js"></script>
-	<script src="/js/angular/1.5.11/angular-aria.min.js"></script>
-	<script src="/js/angular/1.5.11/angular-messages.min.js"></script>
-	<link rel="stylesheet" href="https://gitcdn.link/repo/angular/bower-material/master/angular-material.min.css">
+	<head>
+	    <!--Import-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
+		<script src="https://gitcdn.link/repo/angular/bower-material/master/angular-material.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
+		<link rel="stylesheet" href="https://gitcdn.link/repo/angular/bower-material/master/angular-material.min.css">
+		<!--The powerful meta tag for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--The favicon; that small icon... Yes, THAT icon!-->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<!--The powerful title of the website-->
+		<title>Chan4077.Github.io - Beta Blog</title>
+		<!--Author-->
+		<meta name="author" content="Edric Chan">
+		<meta name="description" content="The Beta blog page. This is where I test on the beta stage of the blog. COMING SOON!">
+		<meta name="author" content="Edric Chan">
+		<meta name="keywords" content="blog, chan4077.github.io, Blog, Chan4077.Github.io, Beta, beta">
+		<!--Blog CSS-->
+		<link rel="stylesheet" href="/css/beta_blog.css">
+		<!--Blog JS-->
+		<script src="/lib/beta_blog.js"></script>
+	</head>
 
-	<!--Angular Material CSS-->
-	<!--Note: Now relying on latest HEAD instead.-->
-	<!--
-	<link rel="stylesheet" href="/css/angular-material.min.css">
-	-->
-	<!--The powerful meta tag for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!--The favicon; that small icon... Yes, THAT icon!-->
-	<link rel="shortcut icon" href="/favicon.ico">
-	<!--The powerful title of the website-->
-	<title>Chan4077.Github.io - Beta Blog</title>
-	<!--Author-->
-	<meta name="author" content="Edric Chan">
-	<!-- Angular Material Library -->
-	<!--Note: Now relying on latest HEAD instead.-->
-	<!--
-	<script src="/js/angular/angular-material.min.js"></script>
-	-->
-	<script src="https://gitcdn.link/repo/angular/bower-material/master/angular-material.js"></script>
-	<meta name="description" content="The Beta blog page. This is where I test on the beta stage of the blog. COMING SOON!">
-	<meta name="author" content="Edric Chan">
-	<meta name="keywords" content="blog, chan4077.github.io, Blog, Chan4077.Github.io, Beta, beta">
-	<!--Blog CSS-->
-	<link rel="stylesheet" href="/css/beta_blog.css">
-	<!--Blog JS-->
-	<script src="/js/site/beta_blog.js"></script>
-</head>
-
-<body>
-	<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
-		<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent" role="loading"></md-progress-linear>
-		<md-toolbar md-scroll-shrink>
-			<div class="md-toolbar-tools">
-				<!--Sidenav Button-->
-				<md-button class="md-icon-button" aria-label="Toggle Side Navigation" ng-click="toggleLeftMenu()">
-					<md-tooltip>
-						SideNav
-					</md-tooltip>
-					<md-icon md-svg-icon="menu"></md-icon>
-				</md-button>
-				<!--Website Logo-->
-				<md-icon md-svg-icon="website-logo"></md-icon>
-				<!--Some spacing-->
-				&nbsp;
-				<!--Text-->
-				<h2 class="md-flex">
-					About
-				</h2>
-				<span flex></span>
-				<!--Refresh-->
-				<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
-					<md-tooltip>
-						Refresh
-					</md-tooltip>
-					<md-icon md-svg-icon="refresh" aria-label="refresh"></md-icon>
-				</md-button>
-				<!--mdMenu-->
-				<md-menu>
-					<md-button class="md-icon-button" aria-label="More" ng-click="$mdMenu.open($event)">
+	<body>
+		<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
+			<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent" role="loading"></md-progress-linear>
+			<md-toolbar md-scroll-shrink>
+				<div class="md-toolbar-tools">
+					<!--Sidenav Button-->
+					<md-button class="md-icon-button" aria-label="Toggle Side Navigation" ng-click="toggleLeftMenu()">
 						<md-tooltip>
-							More
+							SideNav
 						</md-tooltip>
-						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
+						<md-icon md-svg-icon="menu" />
 					</md-button>
-					<md-menu-content>
-						<md-menu-item>
-							<md-button ng-click="sendFeedback($event)" aria-label="Send Feedback">
-								<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
-								Send Feedback
+					<!--Website Logo-->
+					<md-icon md-svg-icon="website-logo" />
+					<!--Some spacing-->
+					&nbsp;
+					<!--Text-->
+					<h2 class="md-display-2">
+						About
+					</h2>
+					<span flex></span>
+					<!--Refresh-->
+					<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
+						<md-tooltip>
+							Refresh
+						</md-tooltip>
+						<md-icon md-svg-icon="refresh" />
+					</md-button>
+					<!--mdMenu-->
+					<md-menu>
+						<md-button class="md-icon-button" aria-label="More" ng-click="$mdMenu.open($event)">
+							<md-tooltip>
+								More
+							</md-tooltip>
+							<md-icon md-menu-origin md-svg-icon="dots-vertical" />
+						</md-button>
+						<md-menu-content>
+							<md-menu-item>
+								<md-button ng-click="sendFeedback($event)" aria-label="Send Feedback">
+									<md-icon md-svg-icon="message-alert" md-menu-align-target />
+									Send Feedback
+								</md-button>
+							</md-menu-item>
+							<md-menu-item>
+								<md-button aria-label="Settings" ng-click="settings($event)">
+									<md-icon md-svg-icon="settings" md-menu-align-target />
+									Settings
+								</md-button>
+							</md-menu-item>
+						</md-menu-content>
+					</md-menu>
+				</div>
+			</md-toolbar>
+			<!--Sidenav-->
+			<site-sidenav></site-sidenav>
+			<md-content class="md-padding" role="main" md-scroll-y layout="column">
+				<div flex-xs flex-gt-xs="50" layout="column" ng-repeat="card in cards">
+					<md-card>
+						<md-card-header>
+							<md-card-avatar>
+								<img ng-src="{(card.avatar)}">
+							</md-card-avatar>
+							<md-card-header-text>
+								<span class="md-title">{(card.name)}</span>
+								<span class="md-subhead">{(card.job)}</span>
+							</md-card-header-text>
+						</md-card-header>
+						<img ng-src="{(card.imagePath)}" class="md-card-image" alt="{(card.imageAlt)}" ng-class="{'half-size': halfSize, 'fixed-size': fixedSize}">
+						<md-card-title>
+							<span class="md-headline">{(card.postTitle)}</span>
+						</md-card-title>
+						<md-card-content>
+							<p>
+								{(card.content)}
+							</p>
+						</md-card-content>
+						<md-card-actions layout="row" layout-align="end center">
+							<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite(card.id)" ng-class="{'md-warn': markFavourite[card.id]}">
+								<md-icon md-svg-icon="heart" />
+								<md-tooltip md-direction="top">{(favouriteTooltip)}</md-tooltip>
 							</md-button>
-						</md-menu-item>
-						<md-menu-item>
-							<md-button aria-label="Settings" ng-click="settings($event)">
-								<md-icon md-svg-icon="settings" md-menu-align-target></md-icon>
-								Settings
+							<md-button class="md-icon-button" aria-label="Share">
+								<md-icon md-svg-icon="share" />
+								<md-tooltip md-direction="top">Share Post</md-tooltip>
 							</md-button>
-						</md-menu-item>
-					</md-menu-content>
-				</md-menu>
-			</div>
-		</md-toolbar>
-		<!--Sidenav-->
-		<site-sidenav></site-sidenav>
-		<md-content class="md-padding" role="main" md-scroll-y layout="column">
-			<div flex-xs flex-gt-xs="50" layout="column" ng-repeat="card in cards">
-				<md-card>
-					<md-card-header>
-						<md-card-avatar>
-							<img ng-src="{(card.avatar)}">
-						</md-card-avatar>
-						<md-card-header-text>
-							<span class="md-title">{(card.name)}</span>
-							<span class="md-subhead">{(card.job)}</span>
-						</md-card-header-text>
-					</md-card-header>
-					<img ng-src="{(card.imagePath)}" class="md-card-image" alt="{(card.imageAlt)}" ng-class="{'half-size': halfSize, 'fixed-size': fixedSize}">
-					<md-card-title>
-						<span class="md-headline">{(card.postTitle)}</span>
-					</md-card-title>
-					<md-card-content>
-						<p>
-							{(card.content)}
-						</p>
-					</md-card-content>
-					<md-card-actions layout="row" layout-align="end center">
-						<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite(card.id)" ng-class="{'md-warn': markFavourite[card.id]}">
-							<md-icon md-svg-icon="heart"></md-icon>
-							<md-tooltip md-direction="top">{(favouriteTooltip)}</md-tooltip>
-						</md-button>
-						<md-button class="md-icon-button" aria-label="Share">
-							<md-icon md-svg-icon="share"></md-icon>
-							<md-tooltip md-direction="top">Share Post</md-tooltip>
-						</md-button>
-						<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{(card.fullPost)}">
-							<md-icon md-svg-icon="open-in-new"></md-icon>
-							<md-tooltip md-direction="top">Read Full Post</md-tooltip>
-						</md-button>
-					</md-card-actions>
-				</md-card>
-			</div>
-			<md-button class="md-fab scroll-fab md-fab-bottom-right" ng-click="scrollTop()" aria-label="Back To Top" blog-scroll-class="scrolling">
-				<md-icon md-svg-icon="chevron-up"></md-icon>
-				<md-tooltip md-direction="up">Back To Top</md-tooltip>
-			</md-button>
-		</md-content>
-	</div>
+							<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{(card.fullPost)}">
+								<md-icon md-svg-icon="open-in-new" />
+								<md-tooltip md-direction="top">Read Full Post</md-tooltip>
+							</md-button>
+						</md-card-actions>
+					</md-card>
+				</div>
+				<md-button class="md-fab scroll-fab md-fab-bottom-right" ng-click="scrollTop()" aria-label="Back To Top" blog-scroll-class="scrolling">
+					<md-icon md-svg-icon="chevron-up" />
+					<md-tooltip md-direction="up">Back To Top</md-tooltip>
+				</md-button>
+			</md-content>
+		</div>
+	</body>
+	<!--Some scripts-->
+	<script>
+ 	 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 		 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 		 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-</body>
-<!--Some scripts-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-82448435-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-</body>
-
+ 		 ga('create', 'UA-82448435-1', 'auto');
+ 		 ga('send', 'pageview');
+	</script>
 </html>

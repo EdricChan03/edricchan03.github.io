@@ -1,30 +1,31 @@
 <html ng-app="MediaApp">
 
-<head>
-    <script src="/js/angular/1.5.11/angular.js"></script>
-    <script src="/js/angular/1.5.11/angular-animate.min.js"></script>
-    <script src="/js/angular/1.5.11/angular-aria.min.js"></script>
-    <script src="/js/angular/angular-material.min.js"></script>
-    <script src="/js/angular/1.5.11/angular-messages.min.js"></script>
-    <script src="/js/site/dependencies.js"></script>
-    <script src="/js/site/main.js"></script>
-    <link rel="stylesheet" href="/css/angular-material.min.css">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="author" content="Edric">
-    <meta charset="utf-8">
-    <meta name="keywords" content="social media, chan4077.github.io, social, Edric">
-    <meta name="description" content="Social media for my website.">
-</head>
-<body>
-    <site-sidenav></site-sidenav>
-    <site-toolbar></site-toolbar>
-    <md-content ng-controller="SocialController">
-        <h5 class="md-display-2">List of Social Media Profiles</h5>
-        <md-list>
-            <md-list-item ng-repeat="social in social | orderBy: 'name'" ng-href="{(social.url)}">
-                <h3>{(social.name)}</h3>
-            </md-list-item>
-        </md-list>
-    </md-content>
-</body>
+	<head>
+		<!--Import-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css">
+		<script src="/lib/dependencies.js"></script>
+		<script src="/lib/main.js"></script>
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="author" content="Edric">
+		<meta charset="utf-8">
+		<meta name="keywords" content="social media, chan4077.github.io, social, Edric">
+		<meta name="description" content="Social media for my website.">
+	</head>
+	<body>
+		<site-sidenav></site-sidenav>
+		<site-toolbar></site-toolbar>
+		<md-content ng-controller="SocialController">
+			<h5 class="md-display-2">List of Social Media Profiles</h5>
+			<md-list>
+				<md-list-item ng-repeat="social in social | orderBy: 'name'" ng-href="{(social.url)}">
+					<h3>{(social.name)}</h3>
+				</md-list-item>
+			</md-list>
+		</md-content>
+	</body>
 </html>
