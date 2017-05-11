@@ -17,7 +17,7 @@ I am trying to use ~~[Material Design Lite](https://getmdl.io) in this website a
 
 > **NOTE:** Since the site has been upgraded to [`Material2`](https://github.com/angular/material2), the old code will still remain here and will also remain accessible at https://chan4077.github.io/chan4077.github.io_old.
 
-> **UPDATE:** Since Github Pages can't host single page applications (SPAs), I will be switching over to firebase, available at https://githubpageschan4077.firebaseapp.com. Thus, the code here will be back up! :tada:
+> **UPDATE:** Since Github Pages can't host single page applications (SPAs), I will be switching over to firebase (for version 2), available at https://githubpageschan4077.firebaseapp.com. Thus, the code here will be back up! :tada:
 
 There too, is [AngularJS Material](https://material.angularjs.org/latest)!
 
