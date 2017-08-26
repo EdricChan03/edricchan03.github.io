@@ -1,5 +1,6 @@
 # Table of contents
 - [A note before you contribute](#a-note-before-you-contribute)
+- [Another important thing](#another-important-thing)
 - [Getting started](#getting-started)
 - [Making changes to the code](#making-changes-to-the-code)
 - [Making changes to the projects](#making-changes-to-the-projects)
@@ -11,6 +12,8 @@
 Please take note that your commit will benefit me and whoever else is working on this repo. I can't be the only one working on this website. You, too, can contribute to the hard work that I have put into this repo by adding a commit.
 Note that your commit may affect the website in terms of design, loading and scripting. Therefore, you should fork [this repo](https://help.github.com/articles/fork-a-repo/) to help me make this project last.
 Without your support, this would not be possible. Anyways, enough of the yabba gabba. On to the docs!
+## Another important thing
+Sorry about this, but I am officially depreceating this repo in favour of the v2 of the site, available [here](https://githubpageschan4077.firebaseapp.com) and the source code [here](https://github.com/Chan4077/githubpageschan4077). PRs and issues will be marked with the [`rejected`](https://github.com/Chan4077/chan4077.github.io/issues?q=label%3Arejected+is%3Aclosed) label except for issue [#34](https://github.com/Chan4077/chan4077.github.io/issues/34).
 
 ---
 ## Getting started
@@ -44,7 +47,7 @@ By the way, I am using AngularJS 1.x, **not** Angular 2. This is for the purpose
 
 ---
 ## Notes
-- This file was last edited on 3 Nov 2016
+- This file was last edited on `27 Aug 2017`
 - You may treat this as merely guidelines for commiting, these text will not force you to do things.
 - Note that there might be some exceptions to the guidelines
 - This file is in .github, FYI

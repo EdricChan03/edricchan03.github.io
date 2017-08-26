@@ -1,48 +1,25 @@
-## Contents
+## Table of contents
+- [**Update**](#update)
 - [chan4077.github.io](#chan4077githubio)
-- [Disclaimer](#disclaimer)
-- [Other Links](#other-links)
 - [Screenshots](#screenshots)
   - [Main Site](#main-site)
   - [Beta Site](#beta-site)
-- [Notes](#notes)
+
+---
+
+# Update
+I will be depreceating this project in favour of the new v2 available [here](https://githubpageschan4077.firebaseapp.com) and the source code available [here](https://github.com/Chan4077/githubpageschan4077). This change will take effect from `27 Aug 2017`. The source code for the website is still here and the website is still up and running.
+
+Commits will no longer be accepted and will be added with the `rejected` label.
 
 ---
 # chan4077.github.io
-Website @ https://chan4077.github.io
-
-## Disclaimer
-I am trying to use ~~[Material Design Lite](https://getmdl.io) in this website and there is also~~ [AngularJS](https://angularjs.org).
-> Unfortunately, it appears that [Material Design Lite](https://getmdl.io) has moved to this [page](https://material.io/components.html) where the source code is at [material-components/material-components-web](https://github.com/material-components/material-components-web). Therefore, I will be permanently updating the site to use [AngularJS Material](https://material.angularjs.org)
-
-> **NOTE:** Since the site has been upgraded to [`Material2`](https://github.com/angular/material2), the old code will still remain here and will also remain accessible at https://chan4077.github.io/chan4077.github.io_old.
-
-> **UPDATE:** Since Github Pages can't host single page applications (SPAs), I will be switching over to firebase (for version 2), available at https://githubpageschan4077.firebaseapp.com. Thus, the code here will be back up! :tada:
-
-There too, is [AngularJS Material](https://material.angularjs.org/latest)!
-
----
-## Other Links:
-1. [AngularToDo](https://chan4077.github.io/angular/angulartodo.html)
-2. [AngularJS](https://chan4077.github.io/angular/angularjs.html)
-3. [AngularJS Material Test Page](https://chan4077.github.io/angular/material.html)
-4. [Test My Beta Site](https://chan4077.github.io/beta/index.html)
-5. [Beta Blog](https://chan4077.github.io/beta/blog.html) _(**WARNING**: Might break)_ _(Uses latest version of [Angular Material](https://material.angularjs.org/HEAD))_
+Website available at <https://chan4077.github.io>.
 
 ---
 ## Screenshots:
-
 ### Main Site:
-![Main Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io_old/master/wiki/img/wiki_main.jpg)
+![Main Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io/master/wiki/img/wiki_main.jpg)
 
 ### Beta Site:
-![Beta Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io_old/master/wiki/img/wiki_beta_new.jpg)
-
----
-## Notes:
-* Google Analytics is now included in all the pages.
-* `LICENSE` now included.
-* If for some reason Google Chrome can't load the webpage, try **force reloading**, which is **Shift+Command+R** or **Shift+Ctrl+R** <!--TODO: Check that this shortcut for force reloading on Windows is valid.-->.
-  * Another way is to go to chrome://serviceworker-internals, then **Command+F** or **Ctrl+F** to search for my website, then click on the `Unregister` button. :arrow_right: This is proven to work **permanently**.
-* All pages updated to Angular Material! See [#13](https://github.com/Chan4077/chan4077.github.io/issues/13) for more info.
-* Updated links for [Google+](https://plus.google.com/+EdricChan03)
+![Beta Site](https://raw.githubusercontent.com/Chan4077/chan4077.github.io/master/wiki/img/wiki_beta_new.jpg)
