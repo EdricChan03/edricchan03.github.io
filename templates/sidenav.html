@@ -5,6 +5,10 @@
 			<div class="md-toolbar-tools">
 				<h2 class="md-title">Site Links</h2>
 				<span flex></span>
+				<md-button class="md-icon-button" href="/">
+					<md-icon md-svg-icon="home"></md-icon>
+					<md-tooltip>Go to home</md-tooltip>
+				</md-button>
 				<md-button class="md-icon-button" ng-click="toggleAllLinks()">
 					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledAllLinks}" class="md-toggle-icon"></md-icon>
 					<md-tooltip>{{toggledAllLinks ? 'Collapse':'Expand'}} All</md-tooltip>

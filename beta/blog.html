@@ -1,7 +1,7 @@
 <html ng-app="BlogApp">
 
 	<head>
-	    <!--Import-->
+		<!--Import-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
@@ -21,113 +21,122 @@
 		<meta name="keywords" content="blog, chan4077.github.io, Blog, Chan4077.Github.io, Beta, beta">
 		<!--Blog CSS-->
 		<link rel="stylesheet" href="/css/beta_blog.css">
+		<link rel="stylesheet" href="/css/main.css">
 		<script src="/lib/dependencies.js"></script>
 		<!--Blog JS-->
 		<script src="/lib/beta_blog.js"></script>
 		<base href="/">
 	</head>
 
-	<body>
-		<div layout="column" ng-controller="MainController" ng-cloak id="popupContainer">
-			<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent" role="loading"></md-progress-linear>
-			<md-toolbar md-scroll-shrink>
-				<div class="md-toolbar-tools">
-					<!--Sidenav Button-->
-					<md-button class="md-icon-button" aria-label="Toggle Side Navigation" ng-click="toggleLeftMenu()">
-						<md-tooltip>
-							SideNav
-						</md-tooltip>
-						<md-icon md-svg-icon="menu" />
-					</md-button>
-					<!--Website Logo-->
-					<md-icon md-svg-icon="website-logo" />
-					<!--Some spacing-->
-					&nbsp;
-					<!--Text-->
-					<h2 class="md-display-2">
-						About
-					</h2>
-					<span flex></span>
-					<!--Refresh-->
-					<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
-						<md-tooltip>
-							Refresh
-						</md-tooltip>
-						<md-icon md-svg-icon="refresh" />
-					</md-button>
-					<!--mdMenu-->
-					<md-menu>
-						<md-button class="md-icon-button" aria-label="More" ng-click="$mdMenu.open($event)">
-							<md-tooltip>
-								More
-							</md-tooltip>
-							<md-icon md-menu-origin md-svg-icon="dots-vertical" />
-						</md-button>
-						<md-menu-content>
-							<md-menu-item>
-								<md-button ng-click="sendFeedback($event)" aria-label="Send Feedback">
-									<md-icon md-svg-icon="message-alert" md-menu-align-target />
-									Send Feedback
-								</md-button>
-							</md-menu-item>
-						</md-menu-content>
-					</md-menu>
-				</div>
-			</md-toolbar>
-			<!--Sidenav-->
-			<site-sidenav></site-sidenav>
-			<md-content class="md-padding" role="main" md-scroll-y layout="column">
-				<div layout="column" ng-repeat="card in cards">
-					<md-card>
-						<md-card-header>
-							<md-card-avatar>
-								<img ng-src="{(card.avatar)}">
-							</md-card-avatar>
-							<md-card-header-text>
-								<span class="md-title">{(card.name)}</span>
-								<span class="md-subhead">{(card.job)}</span>
-							</md-card-header-text>
-						</md-card-header>
-						<img ng-src="{(card.imagePath)}" class="md-card-image" alt="{(card.imageAlt)}" ng-class="{'half-size': halfSize, 'fixed-size': fixedSize}">
-						<md-card-title>
-							<span class="md-headline">{(card.postTitle)}</span>
-						</md-card-title>
-						<md-card-content>
-							<p>
-								{(card.content)}
-							</p>
-						</md-card-content>
-						<md-card-actions layout="row" layout-align="end center">
-							<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite(card.id)" ng-class="{'md-warn': markFavourite[card.id]}">
-								<md-icon md-svg-icon="heart" />
-								<md-tooltip md-direction="top">{(favouriteTooltip)}</md-tooltip>
-							</md-button>
-							<md-button class="md-icon-button" aria-label="Share">
-								<md-icon md-svg-icon="share" />
-								<md-tooltip md-direction="top">Share Post</md-tooltip>
-							</md-button>
-							<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{(card.fullPost)}">
-								<md-icon md-svg-icon="open-in-new" />
-								<md-tooltip md-direction="top">Read Full Post</md-tooltip>
-							</md-button>
-						</md-card-actions>
-					</md-card>
-				</div>
-				<md-button class="md-fab scroll-fab md-fab-bottom-right" ng-click="scrollTop()" aria-label="Back To Top" blog-scroll-class="scrolling">
-					<md-icon md-svg-icon="chevron-up" />
-					<md-tooltip md-direction="up">Back To Top</md-tooltip>
+	<body layout-fill>
+		<div class="site-notice" ng-hide="hideAlert" flex layout="row">
+				<md-icon md-svg-icon="alert"></md-icon>
+				<p>This website will be deprecated soon in favour of the new site.</p>
+				<span flex></span>
+				<md-button href="https://github.com/Chan4077/chan4077.github.io/issues/34" hide-xs>Learn more</md-button>
+				<md-button href="https://githubpageschan4077.firebaseapp.com" class="md-raised" hide-xs>Visit new site</md-button>
+				<md-button href="https://github.com/Chan4077/chan4077.github.io/issues/34" hide show-xs class="md-icon-button">
+					<md-icon md-svg-icon="information"></md-icon>
+					<md-tooltip>Learn more</md-tooltip>
 				</md-button>
-			</md-content>
-		</div>
+				<md-button href="https://githubpageschan4077.firebaseapp.com" class="md-icon-button" hide show-xs>
+					<md-icon md-svg-icon="open-in-new"></md-icon>
+					<md-tooltip>Visit new site</md-tooltip>
+				</md-button>
+			</div>
+		<site-sidenav></site-sidenav>
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<!--Sidenav Button-->
+				<md-button class="md-icon-button" aria-label="Toggle Side Navigation" ng-click="toggleLeftMenu()">
+					<md-tooltip>
+						SideNav
+					</md-tooltip>
+					<md-icon md-svg-icon="menu" />
+				</md-button>
+				<!--Website Logo-->
+				<md-icon md-svg-icon="website-logo" />
+				<!--Some spacing-->
+				&nbsp;
+				<!--Text-->
+				<h2 class="md-display-2">
+					About
+				</h2>
+				<span flex></span>
+				<!--Refresh-->
+				<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
+					<md-tooltip>
+						Refresh
+					</md-tooltip>
+					<md-icon md-svg-icon="refresh" />
+				</md-button>
+				<!--mdMenu-->
+				<md-menu>
+					<md-button class="md-icon-button" aria-label="More" ng-click="$mdMenu.open($event)">
+						<md-tooltip>
+							More
+						</md-tooltip>
+						<md-icon md-menu-origin md-svg-icon="dots-vertical" />
+					</md-button>
+					<md-menu-content>
+						<md-menu-item>
+							<md-button ng-click="sendFeedback($event)" aria-label="Send Feedback">
+								<md-icon md-svg-icon="message-alert" md-menu-align-target /> Send Feedback
+							</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
+			</div>
+		</md-toolbar>
+		<!--Sidenav-->
+		<md-content ng-controller="MainController" id="container">
+			<md-card ng-repeat="card in cards">
+				<md-card-header>
+					<md-card-avatar>
+						<img ng-src="{(card.avatar)}">
+					</md-card-avatar>
+					<md-card-header-text>
+						<span class="md-title">{(card.name)}</span>
+						<span class="md-subhead">{(card.job)}</span>
+					</md-card-header-text>
+				</md-card-header>
+				<img ng-src="{(card.imagePath)}" class="md-card-image" alt="{(card.imageAlt)}" ng-class="{'half-size': halfSize, 'fixed-size': fixedSize}">
+				<md-card-title>
+					<span class="md-headline">{(card.postTitle)}</span>
+				</md-card-title>
+				<md-card-content>
+					<p>
+						{(card.content)}
+					</p>
+				</md-card-content>
+				<md-card-actions layout="row" layout-align="end center">
+					<md-button class="md-icon-button" aria-label="Favourite" ng-click="toggleFavourite(card.id)" ng-class="{'md-warn': markFavourite[card.id]}">
+						<md-icon md-svg-icon="heart" />
+						<md-tooltip md-direction="top">{(favouriteTooltip)}</md-tooltip>
+					</md-button>
+					<md-button class="md-icon-button" aria-label="Share" ng-click="share(card)">
+						<md-icon md-svg-icon="share" />
+						<md-tooltip md-direction="top">Share Post</md-tooltip>
+					</md-button>
+					<md-button class="md-icon-button" aria-label="Read Full Post" ng-href="{(card.fullPost)}">
+						<md-icon md-svg-icon="open-in-new" />
+						<md-tooltip md-direction="top">Read Full Post</md-tooltip>
+					</md-button>
+				</md-card-actions>
+			</md-card>
+		</md-content>
 	</body>
 	<!--Some scripts-->
 	<script>
- 	 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- 		 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- 		 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
- 		 ga('create', 'UA-82448435-1', 'auto');
- 		 ga('send', 'pageview');
+		ga('create', 'UA-82448435-1', 'auto');
+		ga('send', 'pageview');
 	</script>
+
 </html>
