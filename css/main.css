@@ -1,3 +1,16 @@
+.site-notice {
+	/* Add a material design warn colour */
+	background-color: rgb(255,87,34);
+	color: white;
+	align-items: center;
+}
+.site-notice > md-icon {
+	padding-left: 15px;
+	color: white;
+}
+.site-notice > p {
+	padding-left: 15px;
+}
 /* Links */
 .links {
     color: #8A2BE2;
