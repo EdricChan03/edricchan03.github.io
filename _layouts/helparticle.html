@@ -2,43 +2,30 @@
 <html ng-app="HelpApp" ng-cloak>
 
 <head>
-    <!--Angular Material CSS-->
-	<link rel="stylesheet" href="/css/angular-material.min.css">
-    <!--The powerful meta tag for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--The favicon; that small icon... Yes, THAT icon!-->
 	<link rel="shortcut icon" href="/favicon.ico">
-    <!--Description of Page-->
 	<meta name="description" content="The Help page. Work In Progress.">
-    <!--Author-->
 	<meta name="author" content="Edric Chan">
-	<!--Open Graph-->
 	<meta property="og:description" content="The Help page. Work In Progress.">
 	<meta property="og:title" content="Chan4077.Github.io Help">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://chan4077.github.io/help/index.html">
-    <!--Import-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css">
-	<!--Fonts-->
-    <!--Source Code Pro-->
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-	<!--CSS-->
 	<link rel="stylesheet" href="/css/help.css">
-    <!--Title of page-->
-	<title>Chan4077.Github.io Help</title>
-	<!--Help.js-->
+	<title>Chan4077.Github.io > Help</title>
+	<script src="/lib/dependencies.js"></script>
 	<script src="/lib/help.js"></script>
 </head>
 
 <body>
 	<!--mdToolbar-->
 	<div layout="column" ng-controller="HelpController" ng-cloak id="popupContainer">
-		<md-progress-linear md-mode="indeterminate" id="progress" class="md-accent"></md-progress-linear>
 		<md-toolbar md-scroll-shrink md-whiteframe="1">
 			<div class="md-toolbar-tools">
 				<!--Sidenav Button-->
@@ -87,6 +74,7 @@
 		<md-content>
             {{ content }}
 		</md-content>
+		<site-speed-dial></site-speed-dial>
 	</div>
 </body>
 <!--Google Analytics-->
