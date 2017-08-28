@@ -1,14 +1,10 @@
 <!--Sidenav-->
 <div ng-controller="SideNavController">
 	<md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4">
-		<md-toolbar class="md-accent" md-scroll-shrink md-whiteframe="1">
+		<md-toolbar class="md-accent" md-whiteframe="1">
 			<div class="md-toolbar-tools">
 				<h2 class="md-title">Site Links</h2>
 				<span flex></span>
-				<md-button class="md-icon-button" href="/">
-					<md-icon md-svg-icon="home"></md-icon>
-					<md-tooltip>Go to home</md-tooltip>
-				</md-button>
 				<md-button class="md-icon-button" ng-click="toggleAllLinks()">
 					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledAllLinks}" class="md-toggle-icon"></md-icon>
 					<md-tooltip>{{toggledAllLinks ? 'Collapse':'Expand'}} All</md-tooltip>
@@ -17,38 +13,75 @@
 		</md-toolbar>
 		<md-content class="md-default-theme">
 			<md-list>
-				<md-list-item ng-click="toggleLinks()">
-					<p>Sites</p>
+				<md-list-item href="/">
+					<md-icon md-svg-icon="home"></md-icon>
+					<p>Home</p>
+					<span flex></span>
+				</md-list-item>
+				<md-list-item href="https://githubpageschan4077.firebaseapp.com">
+					<md-icon md-svg-icon="open-in-new"></md-icon>
+					<p>Visit new site</p>
+					<span flex></span>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item ng-click="toggleLinks()" class="md-2-line">
+					<md-icon md-svg-icon="web"></md-icon>
+					<div class="md-list-item-text">
+						<h3>Sites</h3>
+						<p>A list of the main sites.</p>
+					</div>
 					<span flex></span>
 					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledLinks}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
 				<md-list-item ng-repeat="url in main" role="link" ng-href="{( url.url )}" ng-click="toggleLeftMenu()" ng-show="toggledLinks">
 					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
-					<span class="title">{(url.title)}</span>
+					<p>{(url.title)}</p>
 					<span flex></span>
 				</md-list-item>
 
 				<md-divider></md-divider>
-				<md-list-item ng-click="toggleOtherLinks()">
-					<p>Other Sites</p>
+				<md-list-item ng-click="toggleBetaLinks()" class="md-2-line">
+					<md-icon md-svg-icon="flask"></md-icon>
+					<div class="md-list-item-text">
+						<h3>Beta Sites</h3>
+						<p>A list of sites that are undergoing testing. (Archived)</p>
+					</div>
+					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledBetaLinks}" class="md-toggle-icon"></md-icon>
+				</md-list-item>
+				<md-list-item ng-repeat="url in beta" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggledBetaLinks">
+					<md-icon md-svg-icon="flask"></md-icon>
+					<p>{(url.title)}</p>
+					<span flex></span>
+				</md-list-item>
+				<md-divider></md-divider>
+				<md-list-item ng-click="toggleOtherLinks()" class="md-2-line">
+					<md-icon md-svg-icon="star"></md-icon>
+					<div class="md-list-item-text">
+						<h3>Other Sites</h3>
+						<p>Other miscellaneous sites which can't be sorted into the previous ones.</p>
+					</div>
 					<span flex></span>
 					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledOtherLinks}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
 				<md-list-item ng-repeat="url in other" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggledOtherLinks">
 					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
-					<span class="title">{(url.title)}</span>
+					<p>{(url.title)}</p>
 					<span flex></span>
 				</md-list-item>
 
 				<md-divider></md-divider>
-				<md-list-item ng-click="toggleProjectLinks()">
-					<p>Project Sites</p>
+				<md-list-item ng-click="toggleProjectLinks()" class="md-2-line">
+					<md-icon md-svg-icon="pencil-box"></md-icon>
+					<div class="md-list-item-text">
+						<h3>Project Sites</h3>
+						<p>A list of project sites which are hosted on seporate repos.</p>
+					</div>
 					<span flex></span>
 					<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledProjectLinks}" class="md-toggle-icon"></md-icon>
 				</md-list-item>
 				<md-list-item ng-repeat="url in projects" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggledProjectLinks">
-					<md-icon md-svg-icon="{(url.icon)}"></md-icon>
-					<span class="title">{(url.title)}</span>
+					<md-icon md-svg-icon="pencil-box"></md-icon>
+					<p>{(url.title)}</p>
 					<span flex></span>
 				</md-list-item>
 			</md-list>
