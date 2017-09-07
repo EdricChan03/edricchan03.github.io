@@ -1,30 +1,41 @@
 <html ng-app="AngularApp">
 
-<head>
-	<!--Import-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css">
-	<link rel="shortcut icon" href="favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<script src="/lib/main.js"></script>
-	<script src="/lib/dependencies.js"></script>
-</head>
+	<head>
+		<!--Import-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.css">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="/lib/main.js"></script>
+		<script src="/lib/dependencies.js"></script>
+		<link href="/css/main.css" rel="stylesheet">
+		
+		<title>Chan4077.Github.io > Angular</title>
+	</head>
 
-<body>
-	<h1>This is a test on AngularJS and Angular Material.</h1>
-	<h2>Get started with: <a href="https://material.angularjs.org/latest/getting-started" id="angular_material">Angular Material</a></h2>
-	<h3>Below are the lists for examples:</h3>
-	<ul>
-		<li><a href="/angular/angularjs.html" id="name">Write your name out!</a></li>
-		<li><a href="/angular/angulartodo.html" id="todo">Add todos and archive them!</a></li>
-		<li>More coming soon!</li>
-	</ul>
-	<!--The toast for when offline and online-->
-	<network-toast></network-toast>
-</body>
+	<body>
+		<site-toolbar></site-toolbar>
+		<site-sidenav></site-sidenav>
+		<md-content ng-controller="AngularController">
+			<h1>This is a test on AngularJS and AngularJS Material.</h1>
+			<h2>Get started with: <a href="https://material.angularjs.org/latest/getting-started" id="angular_material">AngularJS Material</a></h2>
+			<h3>Below are the lists for examples:</h3>
+			<md-list>
+				<md-list-item ng-repeat="link in links" class="md-2-line" ng-href="/angular/{(link.url)}">
+					<md-icon md-svg-icon="{(link.icon)}"></md-icon>
+					<div class="md-list-item-text">
+						<h3>{(link.title)}</h3>
+						<p>{(link.desc)}</p>
+					</div>
+				</md-list-item>
+			</md-list>
+		</md-content>
+		<!--The toast for when offline and online-->
+		<network-toast></network-toast>
+	</body>
 
 </html>

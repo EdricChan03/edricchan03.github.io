@@ -5,9 +5,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.4/angular-material.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.css">
 		<script src="/lib/dependencies.js"></script>
 		<script src="/lib/main.js"></script>
 		<link rel="shortcut icon" href="/favicon.ico">
@@ -15,19 +15,42 @@
 		<meta charset="utf-8">
 		<meta name="keywords" content="social media, chan4077.github.io, social, Edric">
 		<meta name="description" content="Social media for my website.">
+		
+		<link rel="stylesheet" href="/css/main.css">
+		<title>Chan4077.Github.io > Media</title>
 	</head>
+
 	<body>
-		<site-sidenav></site-sidenav>
-		<site-toolbar></site-toolbar>
-		<md-content ng-controller="SocialController">
-			<h5 class="md-display-2">List of Social Media Profiles</h5>
-			<md-list>
-				<md-list-item ng-repeat="social in social | orderBy: 'name'" ng-href="{(social.url)}">
-					<h3>{(social.name)}</h3>
-				</md-list-item>
-			</md-list>
+		<site-speed-dial></site-speed-dial>
+		<md-content ng-controller="SocialController" layout="column" layout-fill>
+			<site-toolbar></site-toolbar>
+			<div class="md-padding">
+				<h2 class="md-title">List of Social Media Profiles</h2>
+				<fieldset layout="column">
+					<legend>Sorting Options</legend>
+					<md-input-container>
+						<label>Sort by</label>
+						<md-select ng-model="orderby" class="md-select-field">
+							<md-option value>None</md-option>
+							<md-option value="name">Name</md-option>
+							<md-option value="url">URL</md-option>
+							<md-option value="icon">Icon</md-option>
+						</md-select>
+					</md-input-container>
+					<md-checkbox ng-model="reverseOrder">Reverse sorting?</md-checkbox>
+					<md-checkbox ng-model="openNewTab">Open links in a new tab</md-checkbox>
+				</fieldset>
+				<md-list>
+					<md-list-item ng-repeat="social in social | orderBy:orderby:reverseOrder" ng-href="{(social.url)}" target="{(openNewTab ? '_blank' : '_self')}">
+						<md-icon md-svg-icon="{(social.icon)}" ng-if="social.icon"></md-icon>
+						<p>{(social.name)}</p>
+					</md-list-item>
+				</md-list>
+			</div>
 		</md-content>
 		<!--The toast for when offline and online-->
+		<site-sidenav></site-sidenav>
 		<network-toast></network-toast>
 	</body>
+
 </html>

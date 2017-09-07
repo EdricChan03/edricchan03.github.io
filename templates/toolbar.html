@@ -14,7 +14,7 @@
 	</md-button>
 </div>
 <!--mdToolbar-->
-<md-toolbar md-scroll-shrink md-whiteframe="1">
+<md-toolbar md-whiteframe="2">
 	<div class="md-toolbar-tools">
 		<!--Sidenav Button-->
 		<md-button class="md-icon-button" aria-label="Toggle Side Navigation" ng-click="toggleLeftMenu()">
@@ -36,11 +36,11 @@
 			</md-tooltip>
 			<md-icon md-svg-icon="refresh"></md-icon>
 		</md-button>
-		<!--View on Github-->
+		<!--View source code-->
 		<!--Hidden on mobile phones-->
-		<md-button class="md-icon-button" aria-label="View on Github" ng-click="viewGithub()" hide-xs>
+		<md-button class="md-icon-button" aria-label="View source code" ng-click="viewGithub()" hide-xs>
 			<md-tooltip>
-				View on Github
+				View source code
 			</md-tooltip>
 			<md-icon md-svg-icon="github-circle"></md-icon>
 		</md-button>
@@ -60,9 +60,9 @@
 					</md-button>
 				</md-menu-item>
 				<md-menu-item show-xs hide>
-					<md-button ng-click="viewGithub()" aria-label="View on Github">
+					<md-button ng-click="viewGithub()" aria-label="View source code">
 						<md-icon md-svg-icon="github-circle" md-menu-align-target></md-icon>
-						View on Github
+						View source code
 					</md-button>
 				</md-menu-item>
 			</md-menu-content>

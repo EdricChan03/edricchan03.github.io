@@ -6,8 +6,8 @@ timezone: Asia/Singapore
 # Tags
 tags: 
 - material-design
-- angular
-- angular-material
+- angularjs
+- angularjs-material
 - singapore
 - changelog
 - whats new

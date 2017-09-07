@@ -44,3 +44,18 @@
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
 }
+site-toolbar {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 30;
+}
+.md-select-field {
+	width: 200px;
+}
+fieldset > legend {
+	color: #3F51B5;
+}
+md-content.md-padding > site-toolbar {
+	padding: 0;
+}
