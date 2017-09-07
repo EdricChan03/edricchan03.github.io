@@ -1,68 +1,75 @@
 <html ng-app="MainApp">
 
-<head>
-    <!--Webmaster-->
-    <meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" />
-    <!--Title-->
-    <title>Chan4077.Github.io</title>
-    <!--Import-->
+	<head>
+		<!--Webmaster-->
+		<meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" />
+		<!--Title-->
+		<title>Chan4077.Github.io</title>
+		<!--Import-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.css">
 		<script src="/lib/dependencies.js"></script>
 		<script src="/lib/main.js"></script>
-    <!--CSS-->
-    <link rel="stylesheet" href="/css/main.css">
-    <!--End Import-->
-    <!--Meta Tags-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Edric Chan">
-    <meta name="description" content="The default HTML page for all the sites in Chan4077.Github.io.">
-    <!--End Meta Tags-->
-    <!--Favicon-->
-    <link rel="shortcut icon" href="/favicon.ico">
-    
-</head>
+		<!--CSS-->
+		<link rel="stylesheet" href="/css/main.css">
+		<!--End Import-->
+		<!--Meta Tags-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Edric Chan">
+		<meta name="description" content="The default HTML page for all the sites in Chan4077.Github.io.">
+		<!--End Meta Tags-->
+		<!--Favicon-->
+		<link rel="shortcut icon" href="/favicon.ico">
+
+	</head>
 
 
-<body>
-	<site-sidenav></site-sidenav>
-	<site-toolbar></site-toolbar>
-		<md-content ng-controller="MainController">
-			<h5 class="md-display-2">Landing Page</h5>
-			<p class="md-body">Welcome to the site. If you see this, <code>ngMaterial</code> should have been successfully initialized.</p>
+	<body>
+		<site-sidenav></site-sidenav>
+		<site-toolbar></site-toolbar>
+		<md-content ng-controller="MainController" layout="column" layout-fill>
+			<div class="md-padding">
+				<h5 class="md-display-2">Landing Page</h5>
+				<p class="md-body">Welcome to the site. If you see this, <code>ngMaterial</code> should have been successfully initialized.</p>
+			</div>
 		</md-content>
-  	<!--The toast for when offline and online-->
-	<network-toast></network-toast>
-	<site-speed-dial></site-speed-dial>
-</body>
-<!--Scripts-->
-<!--Google Analytics-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		<!--The toast for when offline and online-->
+		<network-toast></network-toast>
+		<site-speed-dial></site-speed-dial>
+	</body>
+	<!--Scripts-->
+	<!--Google Analytics-->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-82448435-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<!--Firebase-->
-<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD8Bq8Dg6yUYMMgunWAQUT7ubpwGoOyLXU",
-    authDomain: "githubpageschan4077.firebaseapp.com",
-    databaseURL: "https://githubpageschan4077.firebaseio.com",
-    storageBucket: "githubpageschan4077.appspot.com",
-    messagingSenderId: "667191939984"
-  };
-  firebase.initializeApp(config);
-</script>
+		ga('create', 'UA-82448435-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyD8Bq8Dg6yUYMMgunWAQUT7ubpwGoOyLXU",
+			authDomain: "githubpageschan4077.firebaseapp.com",
+			databaseURL: "https://githubpageschan4077.firebaseio.com",
+			storageBucket: "githubpageschan4077.appspot.com",
+			messagingSenderId: "667191939984"
+		};
+		firebase.initializeApp(config);
+
+	</script>
+
 </html>

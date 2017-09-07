@@ -1,3 +1,4 @@
+
 .site-notice {
 	/* Add a material design warn colour */
 	background-color: #FF5722;
@@ -44,12 +45,12 @@
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
 }
-site-toolbar {
+/* site-toolbar {
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
 	z-index: 30;
-}
+} */
 .md-select-field {
 	width: 200px;
 }
@@ -58,4 +59,28 @@ fieldset > legend {
 }
 md-content.md-padding > site-toolbar {
 	padding: 0;
+}
+code {
+	color: #106CC8;
+	margin-left: 1px;
+	margin-right: 1px;
+	-webkit-font-smoothing: auto;
+	padding: 0.125em 0.35em;
+	border-radius: 2px;
+	background: rgba(0, 0, 0, 0.065);
+	font-family: 'Roboto Mono', monospace;
+}
+button.md-button.no-flex {
+	width: fit-content;
+}
+.view-code-btn {
+	top: auto;
+	right: 20px;
+	bottom: 20px;
+	left: auto;
+	position: absolute;
+}
+div.md-padding {
+	overflow-y: auto;
+	height: 100%;
 }

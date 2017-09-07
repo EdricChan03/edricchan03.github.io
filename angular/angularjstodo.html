@@ -31,13 +31,14 @@
 		<md-content ng-controller="TodoListController" class="md-padding">
 			<h2>Todo</h2>
 			<h3 class="md-title">{(remaining())} of {(todos.length)} remaining</h3>
-			<p>Hey there! To get started, simply enter something in the input below and click "Add Todo"!</p>
+			<p>Hey there! To get started, simply enter something in the input below and click <code>Add Todo</code>!</p>
 			<br>
-			<div class="md-actions">
+			<fieldset>
+				<legend>Actions</legend>
 				<md-button ng-click="archive()">Archive</md-button>
 				<md-button ng-click="selectAll(true)">Mark all as done</md-button>
 				<md-button ng-click="selectAll(false)">Mark all as not done</md-button>
-			</div>
+			</fieldset>
 			<md-list>
 				<md-list-item ng-repeat="todo in todos">
 					<md-checkbox ng-model="todo.done" ng-change="updateDoneStatus()"></md-checkbox>
