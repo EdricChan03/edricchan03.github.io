@@ -1,9 +1,9 @@
 <html ng-app="materialApp">
 
 	<head>
-		<link rel='shortcut icon' href='favicon.ico'>
+		<link rel="shortcut icon" href="/favicon.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="A test site on Angular Material's components.'">
+		<meta name="description" content="A test site on Angular Material's components.">
 		<!--Import-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
@@ -14,7 +14,7 @@
 		<script src="/lib/dependencies.js"></script>
 		<script src="/lib/materialtest.js"></script>
 		<link rel="stylesheet" href="/css/main.css">
-		<title>Chan4077.Github.io > Demos > AngularJS Material</title>
+		<title>Chan4077.Github.io > Demos > Material Playground</title>
 	</head>
 
 	<body>
@@ -24,11 +24,24 @@
 			<div class="md-padding">
 				<site-toc></site-toc>
 				<div id="properties" class="section">
-					<h3 class="md-title">Global Properties</h3>
-					<fieldset layout="column">
+					<h3 class="md-headline">Global Properties</h3>
+					<fieldset layout="column" id="other-prop">
+						<legend>Other Properties</legend>
+						<md-switch ng-model="showSrcCodeBtn">Toggle source code button</md-switch>
+						<a href="#">Back to examples</a>
+					</fieldset>
+					<fieldset layout="column" id="btn-prop">
 						<legend>Button Properties</legend>
-						<md-checkbox ng-model="isRaised">Toggle <code>md-raised</code> class</md-checkbox>
-						<md-checkbox ng-model="isDisabled">Toggle <code>disabled</code></md-checkbox>
+						<md-switch ng-model="isRaised">Toggle <code>md-raised</code> class</md-switch>
+						<md-switch ng-model="isDisabled">Toggle <code>disabled</code></md-switch>
+						<a href="#button">Back to button examples</a>
+					</fieldset>
+					<fieldset layout="column" id="list-prop">
+						<legend>List Properties</legend>
+						<md-switch ng-model="showListIcon">Show list icon?</md-switch>
+						<md-switch ng-model="showListDivider">Show list dividers?</md-switch>
+						<md-switch ng-model="hasListClass">Has custom list class?</md-switch>
+						<a href="#list">Back to list examples</a>
 					</fieldset>
 				</div>
 				<div id="button" class="section">
@@ -37,6 +50,7 @@
 					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-primary" ng-disabled="isDisabled">Button</md-button>
 					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-accent" ng-disabled="isDisabled">Button</md-button>
 					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-warn" ng-disabled="isDisabled">Button</md-button>
+					<a href="#btn-prop">Configure button properties</a>
 				</div>
 				<div id="fab-button" class="section">
 					<h3 class="md-subhead">FABs</h3>
@@ -50,6 +64,7 @@
 					<md-button class="md-fab md-mini md-warn" md-no-ink ng-disabled="isDisabled">
 						<md-icon md-svg-icon="plus"></md-icon>
 					</md-button>
+					<a href="#btn-prop">Configure button properties</a>
 				</div>
 				<div id="icon-button" class="section">
 					<h3 class="md-subhead">Icon Buttons</h3>
@@ -63,9 +78,66 @@
 					<md-button class="md-icon-button md-accent" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
 						<md-icon md-svg-icon="calendar-check"></md-icon>
 					</md-button>
+					<a href="#btn-prop">Configure button properties</a>
+				</div>
+				<div id="list" class="section">
+					<h3 class="md-title">Lists</h3>
+					<md-list ng-class="{'example-list': hasListClass}">
+						<md-list-item ng-repeat="status in statuses">
+							<p>{(status)}</p>
+						</md-list-item>
+					</md-list>
+					<a href="#list-prop">Configure list properties</a>
+					<h4 class="md-subhead">Messages</h4>
+					<md-list ng-class="{'example-list': hasListClass}">
+						<md-list-item ng-repeat="message in messages" class="md-2-line">
+							<img ng-src="{(message.imgSrc)}" class="md-avatar">
+							<div class="md-list-item-text">
+								<h3>{(message.author)}</h3>
+								<p>{(message.text)}</p>
+							</div>
+							<md-button class="md-secondary" ng-click="reply(message, $event)">Reply</md-button>
+							<md-divider ng-if="!$last"></md-divider>
+						</md-list-item>
+					</md-list>
+					<a href="#list-prop">Configure list properties</a>
+					<h4 class="md-subhead">Navigation list</h4>
+					<md-list ng-class="{'example-list': hasListClass}">
+						<md-list-item href="https://google.com">
+							<md-icon md-svg-icon="google" ng-if="showListIcon"></md-icon>
+							<p>Google</p>
+						</md-list-item>
+						<md-divider ng-if="showListDivider"></md-divider>
+						<md-list-item href="https://github.com">
+							<md-icon md-svg-icon="github-box" ng-if="showListIcon"></md-icon>
+							<p>Github</p>
+						</md-list-item>
+						<md-divider ng-if="showListDivider"></md-divider>
+						<md-list-item href="https://twitter.com">
+							<md-icon md-svg-icon="twitter-box" ng-if="showListIcon"></md-icon>
+							<p>Twitter</p>
+						</md-list-item>
+					</md-list>
+					<a href="#list-prop">Configure list properties</a>
+					<h4 class="md-subhead">List controls</h4>
+					<md-list ng-class="{'example-list': hasListClass}">
+						<md-list-item>
+							<p>Content #1</p>
+							<md-checkbox class="md-secondary"></md-checkbox>
+						</md-list-item>
+						<md-list-item>
+							<p>Content #2</p>
+							<md-checkbox class="md-secondary"></md-checkbox>
+						</md-list-item>
+						<md-list-item>
+							<p>Content #3</p>
+							<md-checkbox class="md-secondary"></md-checkbox>
+						</md-list-item>
+					</md-list>
+					<a href="#list-prop">Configure list properties</a>
 				</div>
 		</md-content>
-		<md-button ng-click="goToSrc()" class="md-raised md-primary view-code-btn">
+		<md-button ng-click="goToSrc()" class="md-raised md-primary view-code-btn" ng-if="showSrcCodeBtn">
 			<md-icon md-svg-icon="code-tags"></md-icon>
 			View Source code
 		</md-button>

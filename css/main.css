@@ -79,8 +79,12 @@ button.md-button.no-flex {
 	bottom: 20px;
 	left: auto;
 	position: absolute;
+	z-index: 20;
 }
 div.md-padding {
 	overflow-y: auto;
 	height: 100%;
+}
+.example-list {
+	border: 1px solid rgba(0, 0, 0, 0.1);
 }
