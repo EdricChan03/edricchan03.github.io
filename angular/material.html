@@ -22,15 +22,8 @@
 		<site-toolbar></site-toolbar>
 		<md-content ng-controller="MaterialController" layout-fill layout="column">
 			<div class="md-padding">
-				<div id="toc">
-					<h3 class="md-title">Table of contents</h3>
-					<md-list>
-						<md-list-item ng-repeat="id in ids" href="#{(id.id)}">
-							<p>{(id.name)}</p>
-						</md-list-item>
-					</md-list>
-				</div>
-				<div id="properties">
+				<site-toc></site-toc>
+				<div id="properties" class="section">
 					<h3 class="md-title">Global Properties</h3>
 					<fieldset layout="column">
 						<legend>Button Properties</legend>
@@ -38,14 +31,14 @@
 						<md-checkbox ng-model="isDisabled">Toggle <code>disabled</code></md-checkbox>
 					</fieldset>
 				</div>
-				<div id="button">
+				<div id="button" class="section">
 					<h3 class="md-title">Button</h3>
 					<md-button ng-class="{'md-raised': isRaised}" class="no-flex" ng-disabled="isDisabled">Button</md-button>
 					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-primary" ng-disabled="isDisabled">Button</md-button>
 					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-accent" ng-disabled="isDisabled">Button</md-button>
 					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-warn" ng-disabled="isDisabled">Button</md-button>
 				</div>
-				<div id="fab-button">
+				<div id="fab-button" class="section">
 					<h3 class="md-subhead">FABs</h3>
 					<!-- Default FAB -->
 					<md-button class="md-fab" ng-disabled="isDisabled">
@@ -58,7 +51,7 @@
 						<md-icon md-svg-icon="plus"></md-icon>
 					</md-button>
 				</div>
-				<div id="icon-button">
+				<div id="icon-button" class="section">
 					<h3 class="md-subhead">Icon Buttons</h3>
 					<p>Note: Since this uses SVG icons by default, I can't really show you Material Icons by Google.</p>
 					<md-button class="md-icon-button" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
