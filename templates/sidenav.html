@@ -74,7 +74,8 @@
 			</md-list-item>
 			<md-list-item ng-repeat="url in projects" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggledProjectLinks"
 			 class="md-2-line">
-				<md-icon md-svg-icon="pencil-box"></md-icon>
+				<md-icon md-svg-icon="pencil-box" ng-if="!url.icon"></md-icon>
+				<md-icon md-svg-icon="{{url.icon}}" ng-if="url.icon"></md-icon>
 				<div class="md-list-item-text">
 					<h3>{(url.title)}</h3>
 					<p>{(url.desc)}</p>
