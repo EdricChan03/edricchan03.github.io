@@ -4,12 +4,12 @@
 		<!--Webmaster-->
 		<meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" />
 		<!--Title-->
-		<title>Chan4077.Github.io</title>
+		<title>Home | Chan4077.Github.io</title>
 		<!--Import-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.css">
 		<script src="/lib/dependencies.js"></script>
@@ -29,8 +29,8 @@
 
 
 	<body>
-		<site-sidenav></site-sidenav>
-		<site-toolbar></site-toolbar>
+		<site-sidenav selected-item="'Home'"></site-sidenav>
+		<site-toolbar toolbar-title="'Home'"></site-toolbar>
 		<md-content ng-controller="MainController" layout="column" layout-fill>
 			<div class="md-padding">
 				<h5 class="md-display-2">Landing Page</h5>
@@ -55,21 +55,4 @@
 		ga('send', 'pageview');
 
 	</script>
-	<!--Firebase-->
-	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
-	<script>
-		// Initialize Firebase
-		var config = {
-			apiKey: "AIzaSyD8Bq8Dg6yUYMMgunWAQUT7ubpwGoOyLXU",
-			authDomain: "githubpageschan4077.firebaseapp.com",
-			databaseURL: "https://githubpageschan4077.firebaseio.com",
-			storageBucket: "githubpageschan4077.appspot.com",
-			messagingSenderId: "667191939984"
-		};
-		firebase.initializeApp(config);
-
-	</script>
-
 </html>

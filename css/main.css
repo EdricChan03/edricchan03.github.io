@@ -88,3 +88,40 @@ div.md-padding {
 .example-list {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* Sidenav styles */
+.active-link > div.md-button > div.md-list-item-inner > md-icon > svg, .active-link {
+	color: #3F51B5;
+}
+.active-link {
+	background-color: rgba(0, 0, 0, 0.15) !important;
+}
+.site-notice {
+	align-items: center;
+}
+.site-notice.site-notice-warn {
+	/* Add a material design warn colour */
+	background-color: #ff5722;
+	color: white;
+	align-items: center;
+}
+.site-notice.site-notice-warn > md-icon {
+	color: white;
+}
+.site-notice.site-notice-success {
+	background-color: #4CAF50;
+	color: white;
+}
+.site-notice.site-notice-success > md-icon {
+	color: white;
+}
+.site-notice.site-notice-warn {
+	background-color: #FFEB3B;
+	color: black;
+}
+.site-notice.site-notice-warn > md-icon {
+	color: black;
+}
+.site-notice > p, .site-notice > md-icon {
+	padding-left: 15px;
+}

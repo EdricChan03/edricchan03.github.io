@@ -2,7 +2,7 @@
 <md-toolbar md-whiteframe="2">
 	<div class="md-toolbar-tools">
 		<!--Sidenav Button-->
-		<md-button class="md-icon-button" aria-label="Toggle Side Navigation" ng-click="toggleLeftMenu()">
+		<md-button class="md-icon-button" aria-label="Toggle Side Navigation" ng-click="toggleLeftSidenav()">
 			<md-icon md-svg-icon="menu" aria-label="menu"></md-icon>
 		</md-button>
 		<!--Website Logo-->
@@ -11,7 +11,7 @@
 		&nbsp;
 		<!--Title-->
 		<h2 class="md-flex">
-			{(title)}
+			{(toolbarTitle ? toolbarTitle : 'Chan4077.Github.io')}
 		</h2>
 		<span flex></span>
 		<!--Refresh-->

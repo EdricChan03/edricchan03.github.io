@@ -1,49 +1,99 @@
----
-layout: default
-title: Edric Chan's Blog
----
+<!DOCTYPE html>
 <html ng-app="BlogApp">
-
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="/favicon.ico">
 		<meta name="description" content="The Blog page. This is where you can find my latest posts.">
-		
+		<!--Webmaster-->
+		<meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" />
+		<!--Title-->
+		<title>Chan4077.Github.io</title>
+		<!--Import-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.css">
+		<script src="/lib/dependencies.js"></script>
+		<script src="/lib/main.js"></script>
+		<!--CSS-->
+		<link rel="stylesheet" href="/css/main.css">
+		<!--End Import-->
+		<!--Meta Tags-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Edric Chan">
+		<meta name="description" content="The default HTML page for all the sites in Chan4077.Github.io.">
+		<!--End Meta Tags-->
+		<!--Favicon-->
+		<link rel="shortcut icon" href="/favicon.ico">
 	</head>
 
+
 	<body>
-		<!--TODO: Add navigation tabs leading to posts, tags and authors?-->
-		<!--<md-nav-bar>
-        <md-nav-item md-nav-href="#posts" name="Posts">Posts</md-nav-item>
-        <md-nav-item md-nav-href="#tags" name="Tags">Tags</md-nav-item>
-        <md-nav-item md-nav-href="#contributors" name="Contributors">Contributors</md-nav-item>
-    </md-nav-bar>-->
-		<h1>{{ page.title }}</h1>
-		<md-tabs>
-			<md-tab label="Posts">
-				<div id="posts">
-					<ul class="posts">
+		<div class="site-notice site-notice-warn" flex layout="row">
+			<md-icon md-svg-icon="truck-delivery"></md-icon>
+			<p>This blog has moved to Blogger.</p>
+			<span flex></span>
+			<md-button href="https://chanziyangedric.blogspot.com" hide-xs>Visit blog</md-button>
+			<md-button href="https://chanziyangedric.blogspot.com" hide show-xs class="md-icon-button">
+				<md-icon md-svg-icon="information"></md-icon>
+				<md-tooltip>Visit blog</md-tooltip>
+			</md-button>
+		</div>
+		<site-toolbar toolbar-title="'Blog'"></site-toolbar>
+		<site-sidenav selected-item="'Blog'"></site-sidenav>
+		<site-speed-dial></site-speed-dial>
+		<network-toast></network-toast>
+		<md-content ng-controller="BlogController">
+			<div class="md-padding">
+				<h1>{{ page.title }}</h1>
+				<md-tabs>
+					<md-tab label="Posts">
+						<div id="posts">
+							<ul class="posts">
+								
+								{% for post in site.posts %}
+								<li>
+									<span>{{ post.date | date_to_string }}</span> &gt;
+									<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+								</li>
+								{% endfor %}
+								
+								<h3>Tags</h3>
+								<a href="#">List of Tags</a>
+							</ul>
+						</div>
+					</md-tab>
+					<md-tab label="Tags">
+						<div id="tags">
+							<strong>COMING SOON</strong>
+						</div>
+					</md-tab>
+					<md-tab label="Contributors">
+						<div id="contributors">
+							<strong>COMING SOON</strong>
+						</div>
+					</md-tab>
+				</md-tabs>
+			</div>
+		</md-content>
+		<!--The toast for when offline and online-->
+		
+		<body>
+		</body>
+		<!--Scripts-->
+		<!--Google Analytics-->
+		<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-						{% for post in site.posts %}
-						<li><span>{{ post.date | date_to_string }}</span> &gt; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-						{% endfor %}
-
-						<h3>Tags</h3>
-						<a href="#">List of Tags</a>
-					</ul>
-				</div>
-			</md-tab>
-			<md-tab label="Tags">
-				<div id="tags">
-					<strong>COMING SOON</strong>
-				</div>
-			</md-tab>
-			<md-tab label="Contributors">
-				<div id="contributors">
-					<strong>COMING SOON</strong>
-				</div>
-			</md-tab>
-		</md-tabs>
-	</body>
+		ga('create', 'UA-82448435-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 
 </html>
