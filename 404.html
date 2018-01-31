@@ -20,12 +20,12 @@ permalink: /404.html
 		<meta name="description" content="The 404 page. This is loaded when a URL is not found.">
 		
 	</head>
-	<title>You Lost Your Way! - Error 404</title>
+	<title>Document Not Found | Chan4077.Github.io</title>
 
 	<body ng-controller="MainController">
 		<site-sidenav></site-sidenav>
 		<md-content layout="column" layout-fill>
-			<site-toolbar></site-toolbar>
+			<site-toolbar toolbar-title="'404 Document Not Found'"></site-toolbar>
 			<md-card>
 				<md-card-header>
 					<md-card-avatar>
@@ -44,8 +44,7 @@ permalink: /404.html
 				</md-card-title>
 				<md-card-actions layout="row" layout-align="end center">
 					<md-button ng-click="goBack()" class="md-accent">Go Back</md-button>
-					<md-button ng-click="main()" class="md-primary">Go Home</md-button>
-					<md-button ng-click="about()">About This Page</md-button>
+					<md-button href="https://chan4077.github.io" class="md-primary">Go Home</md-button>
 				</md-card-actions>
 			</md-card>
 			<md-card>
@@ -62,7 +61,7 @@ permalink: /404.html
 					</md-card-title-text>
 				</md-card-title>
 				<md-card-actions layout="row" layout-align="end center">
-					<md-button ng-click="commit()" class="md-primary">Commits</md-button>
+					<md-button href="https://github.com/Chan4077/chan4077.github.io/commits/master" class="md-primary">View Commits</md-button>
 				</md-card-actions>
 			</md-card>
 		</md-content>
