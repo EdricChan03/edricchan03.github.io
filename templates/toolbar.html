@@ -1,5 +1,4 @@
-<!--mdToolbar-->
-<md-toolbar md-whiteframe="2">
+<md-toolbar md-whiteframe="2" ng-cloak>
 	<div class="md-toolbar-tools">
 		<!--Sidenav Button-->
 		<md-button class="md-icon-button" aria-label="Toggle Side Navigation" ng-click="toggleLeftSidenav()">
@@ -14,13 +13,6 @@
 			{(toolbarTitle ? toolbarTitle : 'Chan4077.Github.io')}
 		</h2>
 		<span flex></span>
-		<!--Refresh-->
-		<md-button class="md-icon-button" aria-label="Refresh" ng-click="refreshPage()">
-			<md-tooltip>
-				Refresh
-			</md-tooltip>
-			<md-icon md-svg-icon="refresh"></md-icon>
-		</md-button>
 		<!--View source code-->
 		<!--Hidden on mobile phones-->
 		<md-button class="md-icon-button" aria-label="View source code" ng-click="viewGithub()" hide-xs>
