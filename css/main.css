@@ -78,6 +78,7 @@ div.md-padding {
 /* Sidenav styles */
 .active-link > div.md-button > div.md-list-item-inner > md-icon > svg, .active-link {
 	color: #3F51B5;
+	fill: #3F51B5;
 }
 .active-link {
 	background-color: rgba(0, 0, 0, 0.15) !important;
