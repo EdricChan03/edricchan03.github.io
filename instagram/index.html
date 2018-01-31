@@ -44,6 +44,7 @@
 					<md-button
 						ng-repeat="action in link.linkActions"
 						ng-href="{(action.btnLink)}">
+						<md-icon md-svg-icon="{(action.btnIcon)}" ng-if="action.btnIcon"></md-icon>
 						{(action.btnText)}
 					</md-button>
 				</md-card-actions>
