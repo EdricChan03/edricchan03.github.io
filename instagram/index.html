@@ -43,10 +43,26 @@
 				<md-card-actions layout="row" layout-align="end center">
 					<md-button
 						ng-repeat="action in link.linkActions"
-						ng-href="{(action.btnLink)}">
-						<md-icon md-svg-icon="{(action.btnIcon)}" ng-if="action.btnIcon"></md-icon>
+						ng-href="{(action.btnLink)}" hide-xs>
+						<md-icon
+							md-svg-icon="{(action.btnIcon)}"
+							ng-if="action.btnIcon">
+						</md-icon>
 						{(action.btnText)}
 					</md-button>
+					<md-button
+						ng-repeat="action in link.linkActions"
+						ng-href="{(action.btnLink)}"
+						hide show-xs
+						class="md-icon-button">
+						<md-icon
+							md-svg-icon="{(action.btnIcon)}">
+						</md-icon>
+						<md-tooltip>
+							{(action.btnText)}
+						</md-tooltip>
+					</md-button>
+
 				</md-card-actions>
 			</md-card>
 		</md-content>
