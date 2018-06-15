@@ -1,0 +1,35 @@
+<html ng-app="ProjectApp">
+	<head>
+		<title>Chan4077.Github.io > Projects</title>
+		<!--Import-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.7/angular-material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.7/angular-material.min.css">
+		<!--Favicon-->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<!--Meta tags-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Edric Chan">
+		<meta name="description" content="The project site. This lists all my projects on Github.">
+		<meta name="keywords" content="project, chan4077.github.io, icons, MyFirstApp">
+		<!--Site JS-->
+		<script src="/lib/dependencies.js"></script>
+		<script src="/lib/projects.js"></script>
+		
+		<link href="/css/main.css" rel="stylesheet">
+		<!--Other JS-->
+	</head>
+	<body>
+		<site-toolbar></site-toolbar>
+		<md-content ng-controller="ProjectsController">
+			<h1>List of Projects</h1>
+			<p class="md-body-1 coming-soon">Coming soon...</p>
+		</md-content>
+		<site-sidenav></site-sidenav>
+		<!--The toast for when offline and online-->
+		<network-toast></network-toast>
+	</body>
+</html>
