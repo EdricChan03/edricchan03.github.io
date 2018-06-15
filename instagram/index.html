@@ -28,10 +28,11 @@
 		<script src="/lib/instagram_links.js"></script>
 	</head>
 
-	<body>
+	<body ng-cloak>
 		<site-sidenav selected-item="'Instagram Links'"></site-sidenav>
 		<site-toolbar toolbar-title="'Instagram Links'"></site-toolbar>
 		<md-content layout="column" ng-controller="MainController" class="md-padding" ng-cloak>
+
 			<md-card ng-repeat="link in links" id="{(link.linkId)}">
 				<md-card-header>
 					<md-card-header-text>
