@@ -18,12 +18,13 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Instagram Links | Chan4077.Github.io</title>
 		<!--Import-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-aria.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.7/angular-material.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-messages.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.7/angular-material.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,400i,500,700" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-aria.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
 		<script src="/lib/dependencies.js"></script>
 		<script src="/lib/instagram_links.js"></script>
 	</head>
@@ -50,24 +51,15 @@
 					</md-card-title-text>
 				</md-card-title>
 				<md-card-actions layout="row" layout-align="end center">
-					<md-button
-						ng-repeat="action in link.linkActions"
-						ng-href="{(action.btnLink)}" hide-xs>
-						<md-icon
-							md-svg-icon="{(action.btnIcon)}"
-							ng-if="action.btnIcon">
+					<md-button ng-repeat="action in link.linkActions" ng-href="{(action.btnLink)}" hide-xs>
+						<md-icon md-svg-icon="{(action.btnIcon)}" ng-if="action.btnIcon">
 						</md-icon>
 						{(action.btnText)}
 					</md-button>
-					<md-button
-						ng-repeat="action in link.linkActions"
-						ng-href="{(action.btnLink)}"
-						hide show-xs
-						class="md-icon-button">
-						<md-icon
-							md-svg-icon="{(action.btnIcon)}">
+					<md-button ng-repeat="action in link.linkActions" ng-href="{(action.btnLink)}" hide show-xs class="md-icon-button">
+						<md-icon md-svg-icon="{(action.btnIcon)}">
 						</md-icon>
-						<md-tooltip> 
+						<md-tooltip>
 							{(action.btnText)}
 						</md-tooltip>
 					</md-button>
