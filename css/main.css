@@ -1,130 +1,189 @@
+body {
+  overflow: hidden;
+}
 /* Links */
+
 .links {
-    color: #8A2BE2;
+  color: #8A2BE2;
 }
+
 .fab:hover .fab-share {
-    display:block;
+  display: block;
 }
+
 .note {
-    color: #8B4513;
+  color: #8B4513;
 }
+
 .wip {
-    color: red;
+  color: red;
 }
+
 /* Material Icons */
+
 .select {
   padding: 2dp;
 }
+
 .important {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 13px;
 }
+
 .md-toggle-icon {
-    display: block;
-    margin-left: auto;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transition: transform 0.15s ease-in-out;
-    -webkit-transition: -webkit-transform 0.15s ease-in-out;
+  display: block;
+  margin-left: auto;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 0.15s ease-in-out;
+  -webkit-transition: -webkit-transform 0.15s ease-in-out;
 }
+
 .md-toggle-icon.toggled {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
 }
+
 /* site-toolbar {
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0;
-	z-index: 30;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 30;
 } */
+
 .md-select-field {
-	width: 200px;
+  width: 200px;
 }
-fieldset > legend {
-	color: #3F51B5;
+
+fieldset>legend {
+  color: #3F51B5;
 }
-md-content.md-padding > site-toolbar {
-	padding: 0;
+
+md-content.md-padding>site-toolbar {
+  padding: 0;
 }
+
 code {
-	color: #106CC8;
-	margin-left: 1px;
-	margin-right: 1px;
-	-webkit-font-smoothing: auto;
-	padding: 0.125em 0.35em;
-	border-radius: 2px;
-	background: rgba(0, 0, 0, 0.065);
-	font-family: 'Roboto Mono', monospace;
+  color: #106CC8;
+  margin-left: 1px;
+  margin-right: 1px;
+  -webkit-font-smoothing: auto;
+  padding: 0.125em 0.35em;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.065);
+  font-family: 'Roboto Mono', monospace;
 }
+
 button.md-button.no-flex {
-	width: fit-content;
+  width: fit-content;
 }
+
 .view-code-btn {
-	top: auto;
-	right: 20px;
-	bottom: 20px;
-	left: auto;
-	position: absolute;
-	z-index: 20;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+  position: absolute;
+  z-index: 20;
 }
+
 div.md-padding {
-	overflow-y: auto;
-	height: 100%;
+  overflow-y: auto;
+  height: 100%;
 }
+
 .example-list {
-	border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Sidenav styles */
-.active-link > div.md-button > div.md-list-item-inner > md-icon > svg, .active-link {
-	color: #3F51B5;
-	fill: #3F51B5;
-}
+
+.active-link>div.md-button>div.md-list-item-inner>md-icon>svg,
 .active-link {
-	background-color: rgba(0, 0, 0, 0.15) !important;
+  color: #3F51B5;
+  fill: #3F51B5;
 }
+
+.active-link {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
 .site-notice {
-	align-items: center;
+  align-items: center;
 }
+
 .site-notice.site-notice-warn {
-	/* Add a material design warn colour */
-	background-color: #ff5722;
-	color: white;
-	align-items: center;
+  /* Add a material design warn colour */
+  background-color: #ff5722;
+  color: white;
+  align-items: center;
 }
-.site-notice.site-notice-warn > md-icon {
-	color: white;
+
+.site-notice.site-notice-warn>md-icon {
+  color: white;
 }
+
 .site-notice.site-notice-success {
-	background-color: #4CAF50;
-	color: white;
+  background-color: #4CAF50;
+  color: white;
 }
-.site-notice.site-notice-success > md-icon {
-	color: white;
+
+.site-notice.site-notice-success>md-icon {
+  color: white;
 }
+
 .site-notice.site-notice-warn {
-	background-color: #FFEB3B;
-	color: black;
+  background-color: #FFEB3B;
+  color: black;
 }
-.site-notice.site-notice-warn > md-icon {
-	color: black;
+
+.site-notice.site-notice-warn>md-icon {
+  color: black;
 }
-.site-notice > p, .site-notice > md-icon {
-	padding-left: 15px;
+
+.site-notice>p,
+.site-notice>md-icon {
+  padding-left: 15px;
 }
+
 .card-media {
-	background-color: #999999;
+  background-color: #999999;
 }
+
 .badge {
-	border-radius: 4px;
-	padding: 4px 16px;
-	display: inline;
-	font-size: 14px;
-	color: #fff;
-	margin: 0 8px 0 16px;
-	font-weight: 500;
-	text-transform: uppercase;
+  border-radius: 4px;
+  padding: 4px 16px;
+  display: inline;
+  font-size: 14px;
+  color: #fff;
+  margin: 0 8px 0 16px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
+
 .badge.new-badge {
-	background-color: #4CAF50;
+  background-color: #4CAF50;
+}
+
+/* Code adapted from https://github.com/angular/angular/blob/d243baf48a66369030acd8a97c55ac15486a5c4e/aio/src/styles/1-layouts/_sidenav.scss#L108-L124
+*/
+
+.links-section.expanded {
+  visibility: visible;
+  opacity: 1;
+  max-height: 4000px;
+  /* Arbitrary max-height. Can increase if needed. Must have measurement to transition height. */
+  transition: visibility 500ms, opacity 500ms, max-height 500ms;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.links-section.collapsed {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 1px;
+  /* Must have measurement to transition height. */
+  transition: visibility 275ms, opacity 275ms, max-height 280ms;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }

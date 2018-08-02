@@ -1,87 +1,88 @@
 <!--Sidenav-->
 <md-sidenav md-component-id="left" class="md-sidenav-left" md-whiteframe="4">
-	<md-toolbar class="md-accent" md-whiteframe="1" id="sidenav-toolbar" sticky>
-		<div class="md-toolbar-tools">
-			<h2 class="md-title">Site Links</h2>
-			<span flex></span>
-			<md-button class="md-icon-button" ng-click="toggleAllLinks()">
-				<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledAllLinks}" class="md-toggle-icon"></md-icon>
-				<md-tooltip>{{toggledAllLinks ? 'Collapse':'Expand'}} All</md-tooltip>
-			</md-button>
-			<md-button class="md-icon-button" ng-click="closeLeftSidenav()">
-				<md-icon md-svg-icon="chevron-left"></md-icon>
-				<md-tooltip>Close sidenav</md-tooltip>
-			</md-button>
-		</div>
-	</md-toolbar>
-	<md-content class="md-default-theme">
-		<md-list>
-			<md-list-item href="/" ng-click="toggleLeftMenu()" ng-class="{'active-link': selectedItem == 'Home' ? true : false}">
-				<md-icon md-svg-icon="home"></md-icon>
-				<p>Home</p>
-				<span flex></span>
-			</md-list-item>
-			<md-list-item href="https://githubpageschan4077.firebaseapp.com" ng-click="toggleLeftMenu()">
-				<md-icon md-svg-icon="open-in-new"></md-icon>
-				<p>Visit new site</p>
-				<span flex></span>
-			</md-list-item>
-			<md-list-item href="https://github.com/Chan4077/chan4077.github.io/wiki/Sites" ng-click="toggleLeftMenu()">
-				<md-icon md-svg-icon="sitemap"></md-icon>
-				<p>Sitemap</p>
-				<span flex></span>
-			</md-list-item>
-			<md-divider></md-divider>
-			<md-list-item ng-click="toggleLinks()" class="md-2-line">
-				<md-icon md-svg-icon="web"></md-icon>
-				<div class="md-list-item-text">
-					<h3>Sites</h3>
-					<p>A list of the main sites.</p>
-				</div>
-				<span flex></span>
-				<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledLinks}" class="md-toggle-icon"></md-icon>
-			</md-list-item>
-			<md-list-item ng-repeat="url in main" role="link" ng-href="{( url.url )}" ng-click="toggleLeftMenu()" ng-show="toggledLinks" ng-class="{'active-link': selectedItem == '{(url.title)}' ? true : false}">
-				<md-icon md-svg-icon="{(url.icon)}"></md-icon>
-				<p>{(url.title)}</p>
-				<span flex></span>
-			</md-list-item>
+  <md-toolbar class="md-accent" md-whiteframe="1" id="sidenav-toolbar" sticky>
+    <div class="md-toolbar-tools">
+      <h2 class="md-title">Site Links</h2>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="toggleAllLinks()">
+        <md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledAllLinks}" class="md-toggle-icon"></md-icon>
+        <md-tooltip>{{toggledAllLinks ? 'Collapse':'Expand'}} All</md-tooltip>
+      </md-button>
+      <md-button class="md-icon-button" ng-click="closeLeftSidenav()">
+        <md-icon md-svg-icon="chevron-left"></md-icon>
+        <md-tooltip>Close sidenav</md-tooltip>
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-content class="md-default-theme">
+    <md-list>
+      <md-list-item href="/" ng-click="toggleLeftMenu()" ng-class="{'active-link': selectedItem == 'Home' ? true : false}">
+        <md-icon md-svg-icon="home"></md-icon>
+        <p>Home</p>
+        <span flex></span>
+      </md-list-item>
+      <md-list-item href="https://github.com/Chan4077/chan4077.github.io/wiki/Sites" ng-click="toggleLeftMenu()">
+        <md-icon md-svg-icon="sitemap"></md-icon>
+        <p>Sitemap</p>
+        <span flex></span>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item ng-click="toggleLinks()" class="md-2-line">
+        <md-icon md-svg-icon="web"></md-icon>
+        <div class="md-list-item-text">
+          <h3>Sites</h3>
+          <p>A list of the main sites.</p>
+        </div>
+        <span flex></span>
+        <md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledLinks}" class="md-toggle-icon"></md-icon>
+      </md-list-item>
+      <div ng-class="{'expanded': toggledLinks, 'collapsed': !toggledLinks}" class="links-section">
+        <md-list-item ng-repeat="url in main" role="link" ng-href="{( url.url )}" ng-click="toggleLeftMenu()" ng-class="{'active-link': selectedItem == '{(url.title)}' ? true : false}">
+          <md-icon md-svg-icon="{(url.icon)}"></md-icon>
+          <p>{(url.title)}</p>
+          <span flex></span>
+        </md-list-item>
+      </div>
 
-			<md-divider></md-divider>
-			<md-list-item ng-click="toggleBetaLinks()" class="md-2-line">
-				<md-icon md-svg-icon="flask"></md-icon>
-				<div class="md-list-item-text">
-					<h3>Beta Sites</h3>
-					<p>A list of sites that are undergoing testing. (Archived)</p>
-				</div>
-				<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledBetaLinks}" class="md-toggle-icon"></md-icon>
-			</md-list-item>
-			<md-list-item ng-repeat="url in beta" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggledBetaLinks" ng-class="{'active-link': selectedItem == '{(url.title)}' ? true : false}">
-				<md-icon md-svg-icon="flask"></md-icon>
-				<p>{(url.title)}</p>
-				<span flex></span>
-			</md-list-item>
+      <md-divider></md-divider>
+      <md-list-item ng-click="toggleBetaLinks()" class="md-2-line">
+        <md-icon md-svg-icon="flask"></md-icon>
+        <div class="md-list-item-text">
+          <h3>Beta Sites</h3>
+          <p>A list of sites that are undergoing testing. (Archived)</p>
+        </div>
+        <md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledBetaLinks}" class="md-toggle-icon"></md-icon>
+      </md-list-item>
+      <div ng-class="{'expanded': toggledBetaLinks, 'collapsed': !toggledBetaLinks}" class="links-section">
+        <md-list-item ng-repeat="url in beta" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-class="{'active-link': selectedItem == '{(url.title)}' ? true : false}">
+          <md-icon md-svg-icon="flask"></md-icon>
+          <p>{(url.title)}</p>
+          <span flex></span>
+        </md-list-item>
+      </div>
 
-			<md-divider></md-divider>
-			<md-list-item ng-click="toggleProjectLinks()" class="md-2-line">
-				<md-icon md-svg-icon="pencil-box"></md-icon>
-				<div class="md-list-item-text">
-					<h3>Project Sites</h3>
-					<p>A list of project sites which are hosted on seporate repos.</p>
-				</div>
-				<span flex></span>
-				<md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledProjectLinks}" class="md-toggle-icon"></md-icon>
-			</md-list-item>
-			<md-list-item ng-repeat="url in projects" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" ng-show="toggledProjectLinks"
-			 class="md-2-line" ng-class="{'active-link': selectedItem == '{(url.title)}' ? true : false}">
-				<md-icon md-svg-icon="pencil-box" ng-if="!url.icon"></md-icon>
-				<md-icon md-svg-icon="{{url.icon}}" ng-if="url.icon"></md-icon>
-				<div class="md-list-item-text">
-					<h3>{(url.title)}</h3>
-					<p>{(url.desc)}</p>
-				</div>
-				<span flex></span>
-			</md-list-item>
-		</md-list>
-	</md-content>
+      <md-divider></md-divider>
+      <md-list-item ng-click="toggleProjectLinks()" class="md-2-line">
+        <md-icon md-svg-icon="pencil-box"></md-icon>
+        <div class="md-list-item-text">
+          <h3>Project Sites</h3>
+          <p>A list of project sites which are hosted on seporate repos.</p>
+        </div>
+        <span flex></span>
+        <md-icon md-svg-icon="chevron-up" ng-class="{'toggled': toggledProjectLinks}" class="md-toggle-icon"></md-icon>
+      </md-list-item>
+      <div ng-class="{'expanded': toggledProjectLinks, 'collapsed': !toggledProjectLinks}" class="links-section">
+        <md-list-item ng-repeat="url in projects" role="link" ng-href="{(url.url)}" ng-click="toggleLeftMenu()" class="md-2-line"
+          ng-class="{'active-link': selectedItem == '{(url.title)}' ? true : false}">
+          <md-icon md-svg-icon="pencil-box" ng-if="!url.icon"></md-icon>
+          <md-icon md-svg-icon="{{url.icon}}" ng-if="url.icon"></md-icon>
+          <div class="md-list-item-text">
+            <h3>{(url.title)}</h3>
+            <p>{(url.desc)}</p>
+          </div>
+          <span flex></span>
+        </md-list-item>
+      </div>
+    </md-list>
+  </md-content>
 </md-sidenav>

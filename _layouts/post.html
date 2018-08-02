@@ -1,90 +1,90 @@
 <html ng-app="PostsApp">
 
-	<head>
-		<!--Webmaster-->
-		<meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" />
-		<!--Title-->
-		<title>Chan4077.Github.io's Blog</title>
-		<!--Import-->
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,400i,500,700" rel="stylesheet">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-aria.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
-		<!--Site JS-->
-		<script src="/lib/dependencies.js"></script>
-		<script src="/lib/post.js"></script>
-		<!--CSS-->
-		<link rel="stylesheet" href="/css/post.css">
-		<!--Mobile Tag-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--Favicon-->
-		<link rel="shortcut icon" href="/favicon.ico">
-	</head>
+  <head>
+    <!--Webmaster-->
+    <meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" />
+    <!--Title-->
+    <title>Chan4077.Github.io's Blog</title>
+    <!--Import-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,400i,500,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
+    <!--Site JS-->
+    <script src="/lib/dependencies.js"></script>
+    <script src="/lib/post.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/post.css">
+    <!--Mobile Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
 
-	<body>
-		<md-toolbar md-scroll-shrink md-whiteframe="1" ng-controller="ToolbarController">
-			<div class="md-toolbar-tools">
-				<md-button class="md-icon-button" aria-label="Go back" ng-click="goBack()">
-					<md-icon md-svg-icon="arrow-left"></md-icon>
-					<md-tooltip md-direction="right">Go back</md-tooltip>
-				</md-button>
-				<span>Blog > {{ page.title }}</span>
-				<span flex></span>
-				<md-menu>
-					<md-button class="md-icon-button" aria-label="Open menu" ng-click="$mdMenu.open($event)">
-						<md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
-					</md-button>
-					<md-menu-content>
-						<md-menu-item>
-							<md-button href="https://github.com/Chan4077/chan4077.github.io/issues/new" aria-label="Send Feedback">
-								<md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
-								Send Feedback
-							</md-button>
-						</md-menu-item>
-						<md-menu-item>
-							<md-button href="https://github.com/Chan4077/chan4077.github.io" aria-label="View source code">
-								<md-icon md-svg-icon="code-tags" md-menu-align-target></md-icon>
-								View source code
-							</md-button>
-						</md-menu-item>
-					</md-menu-content>
-				</md-menu>
-			</div>
-		</md-toolbar>
-		<h1>{{ page.title }}</h1>
-		<p class="meta">{{ page.date | date_to_string }}</p>
+  <body>
+    <md-toolbar md-scroll-shrink md-whiteframe="1" ng-controller="ToolbarController">
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Go back" ng-click="goBack()">
+          <md-icon md-svg-icon="arrow-left"></md-icon>
+          <md-tooltip md-direction="right">Go back</md-tooltip>
+        </md-button>
+        <span>Blog > {{ page.title }}</span>
+        <span flex></span>
+        <md-menu>
+          <md-button class="md-icon-button" aria-label="Open menu" ng-click="$mdMenu.open($event)">
+            <md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
+          </md-button>
+          <md-menu-content>
+            <md-menu-item>
+              <md-button href="https://github.com/Chan4077/chan4077.github.io/issues/new" aria-label="Send Feedback">
+                <md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
+                Send Feedback
+              </md-button>
+            </md-menu-item>
+            <md-menu-item>
+              <md-button href="https://github.com/Chan4077/chan4077.github.io" aria-label="View source code">
+                <md-icon md-svg-icon="code-tags" md-menu-align-target></md-icon>
+                View source code
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
+      </div>
+    </md-toolbar>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date_to_string }}</p>
 
-		<div class="post">
-			{{ content }}
-		</div>
-		<section>
-			<md-chips>
-				{% for tag in post.tags %}
-				<md-chip>
-					{{ tag }}
-				</md-chip>
-				{% endfor %}
-			</md-chips>
-		</section>
-		{% include disqus.html %}
-		<!--The toast for when offline and online-->
-		<network-toast></network-toast>
-	</body>
-	<!--Google Analytics-->
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <div class="post">
+      {{ content }}
+    </div>
+    <section>
+      <md-chips>
+        {% for tag in post.tags %}
+        <md-chip>
+          {{ tag }}
+        </md-chip>
+        {% endfor %}
+      </md-chips>
+    </section>
+    {% include disqus.html %}
+    <!--The toast for when offline and online-->
+    <network-toast></network-toast>
+  </body>
+  <!--Google Analytics-->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-		ga('create', 'UA-82448435-1', 'auto');
-		ga('send', 'pageview');
+    ga('create', 'UA-82448435-1', 'auto');
+    ga('send', 'pageview');
 
-	</script>
+  </script>
 
 </html>

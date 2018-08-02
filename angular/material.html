@@ -1,249 +1,249 @@
 <html ng-app="materialApp">
 
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,400i,500,700" rel="stylesheet">
-		<link rel="shortcut icon" href="/favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="A test site on Angular Material's components.">
-		<!--Import-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-aria.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
-		<script src="/lib/dependencies.js"></script>
-		<script src="/lib/materialtest.js"></script>
-		<link rel="stylesheet" href="/css/main.css">
-		<title>Material Playground | Chan4077.Github.io</title>
-	</head>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,400i,500,700" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A test site on Angular Material's components.">
+    <!--Import-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
+    <script src="/lib/dependencies.js"></script>
+    <script src="/lib/beta_site.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Material Playground | Chan4077.Github.io</title>
+  </head>
 
-	<body class="material-demo">
-		<site-sidenav selected-item="'Angular'"></site-sidenav>
-		<site-toolbar toolbar-title="'Material Playground'"></site-toolbar>
-		<md-content ng-controller="MaterialController" layout-fill layout="column">
-			<div class="md-padding">
-				<site-toc></site-toc>
-				<div id="properties" class="section">
-					<h3 class="md-headline">Global Properties</h3>
-					<fieldset layout="column" id="other-prop">
-						<legend>Other Properties</legend>
-						<md-switch ng-model="showSrcCodeBtn">Toggle source code button</md-switch>
-						<a href="#">Back to examples</a>
-					</fieldset>
-					<fieldset layout="column" id="btn-prop">
-						<legend>Button Properties</legend>
-						<md-switch ng-model="isRaised">Toggle
-							<code>md-raised</code> class</md-switch>
-						<md-switch ng-model="isDisabled">Toggle
-							<code>disabled</code>
-						</md-switch>
-						<a href="#button">Back to button examples</a>
-					</fieldset>
-					<fieldset layout="column" id="list-prop">
-						<legend>List Properties</legend>
-						<md-switch ng-model="showListIcon">Show list icon?</md-switch>
-						<md-switch ng-model="showListDivider">Show list dividers?</md-switch>
-						<md-switch ng-model="hasListClass">Has custom list class?</md-switch>
-						<a href="#list">Back to list examples</a>
-					</fieldset>
-				</div>
-				<div id="button" class="section">
-					<h3 class="md-title">Button</h3>
-					<md-button ng-class="{'md-raised': isRaised}" class="no-flex" ng-disabled="isDisabled">Button</md-button>
-					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-primary" ng-disabled="isDisabled">Button</md-button>
-					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-accent" ng-disabled="isDisabled">Button</md-button>
-					<md-button ng-class="{'md-raised': isRaised}" class="no-flex md-warn" ng-disabled="isDisabled">Button</md-button>
-					<a href="#btn-prop">Configure button properties</a>
-				</div>
-				<div id="fab-button" class="section">
-					<h3 class="md-subhead">FABs</h3>
-					<!-- Default FAB -->
-					<md-button class="md-fab" ng-disabled="isDisabled">
-						<md-icon md-svg-icon="share-variant"></md-icon>
-					</md-button>
-					<md-button class="md-fab md-primary" ng-disabled="isDisabled">
-						<md-icon md-svg-icon="android"></md-icon>
-					</md-button>
-					<md-button class="md-fab md-mini md-warn" md-no-ink ng-disabled="isDisabled">
-						<md-icon md-svg-icon="plus"></md-icon>
-					</md-button>
-					<a href="#btn-prop">Configure button properties</a>
-				</div>
-				<div id="icon-button" class="section">
-					<h3 class="md-subhead">Icon Buttons</h3>
-					<p>Note: Since this uses SVG icons by default, I can't really show you Material Icons by Google.</p>
-					<md-button class="md-icon-button" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
-						<md-icon md-svg-icon="calendar-check"></md-icon>
-					</md-button>
-					<md-button class="md-icon-button md-primary" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
-						<md-icon md-svg-icon="calendar-check"></md-icon>
-					</md-button>
-					<md-button class="md-icon-button md-accent" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
-						<md-icon md-svg-icon="calendar-check"></md-icon>
-					</md-button>
-					<a href="#btn-prop">Configure button properties</a>
-				</div>
-				<div id="card" class="section">
-					<h3 class="md-title">Cards
-						<span class="badge new-badge">NEW!</span>
-					</h3>
-					<div id="cards-with-colours" class="section">
-						<h3 class="md-subhead">Cards with colours :D</h3>
-						<div layout-xs="column" layout="row">
+  <body class="material-demo">
+    <site-sidenav selected-item="'Angular'"></site-sidenav>
+    <site-toolbar toolbar-title="'Material Playground'"></site-toolbar>
+    <md-content ng-controller="MaterialController" layout-fill layout="column">
+      <div class="md-padding">
+        <site-toc></site-toc>
+        <div id="properties" class="section">
+          <h3 class="md-headline">Global Properties</h3>
+          <fieldset layout="column" id="other-prop">
+            <legend>Other Properties</legend>
+            <md-switch ng-model="showSrcCodeBtn">Toggle source code button</md-switch>
+            <a href="#">Back to examples</a>
+          </fieldset>
+          <fieldset layout="column" id="btn-prop">
+            <legend>Button Properties</legend>
+            <md-switch ng-model="isRaised">Toggle
+              <code>md-raised</code> class</md-switch>
+            <md-switch ng-model="isDisabled">Toggle
+              <code>disabled</code>
+            </md-switch>
+            <a href="#button">Back to button examples</a>
+          </fieldset>
+          <fieldset layout="column" id="list-prop">
+            <legend>List Properties</legend>
+            <md-switch ng-model="showListIcon">Show list icon?</md-switch>
+            <md-switch ng-model="showListDivider">Show list dividers?</md-switch>
+            <md-switch ng-model="hasListClass">Has custom list class?</md-switch>
+            <a href="#list">Back to list examples</a>
+          </fieldset>
+        </div>
+        <div id="button" class="section">
+          <h3 class="md-title">Button</h3>
+          <md-button ng-class="{'md-raised': isRaised}" class="no-flex" ng-disabled="isDisabled">Button</md-button>
+          <md-button ng-class="{'md-raised': isRaised}" class="no-flex md-primary" ng-disabled="isDisabled">Button</md-button>
+          <md-button ng-class="{'md-raised': isRaised}" class="no-flex md-accent" ng-disabled="isDisabled">Button</md-button>
+          <md-button ng-class="{'md-raised': isRaised}" class="no-flex md-warn" ng-disabled="isDisabled">Button</md-button>
+          <a href="#btn-prop">Configure button properties</a>
+        </div>
+        <div id="fab-button" class="section">
+          <h3 class="md-subhead">FABs</h3>
+          <!-- Default FAB -->
+          <md-button class="md-fab" ng-disabled="isDisabled">
+            <md-icon md-svg-icon="share-variant"></md-icon>
+          </md-button>
+          <md-button class="md-fab md-primary" ng-disabled="isDisabled">
+            <md-icon md-svg-icon="android"></md-icon>
+          </md-button>
+          <md-button class="md-fab md-mini md-warn" md-no-ink ng-disabled="isDisabled">
+            <md-icon md-svg-icon="plus"></md-icon>
+          </md-button>
+          <a href="#btn-prop">Configure button properties</a>
+        </div>
+        <div id="icon-button" class="section">
+          <h3 class="md-subhead">Icon Buttons</h3>
+          <p>Note: Since this uses SVG icons by default, I can't really show you Material Icons by Google.</p>
+          <md-button class="md-icon-button" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
+            <md-icon md-svg-icon="calendar-check"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button md-primary" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
+            <md-icon md-svg-icon="calendar-check"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button md-accent" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
+            <md-icon md-svg-icon="calendar-check"></md-icon>
+          </md-button>
+          <a href="#btn-prop">Configure button properties</a>
+        </div>
+        <div id="card" class="section">
+          <h3 class="md-title">Cards
+            <span class="badge new-badge">NEW!</span>
+          </h3>
+          <div id="cards-with-colours" class="section">
+            <h3 class="md-subhead">Cards with colours :D</h3>
+            <div layout-xs="column" layout="row">
 
-							<div flex-xs flex-gt-xs="50" layout="column">
-								<md-card md-theme="{( showDarkTheme ? 'dark-grey' : 'default' )}" md-theme-watch>
-									<md-card-title>
-										<md-card-title-text>
-											<span class="md-headline">Card with image</span>
-											<span class="md-subhead">Large</span>
-										</md-card-title-text>
-										<md-card-title-media>
-											<div class="md-media-lg card-media"></div>
-										</md-card-title-media>
-									</md-card-title>
-									<md-card-actions layout="row" layout-align="end center">
-										<md-button>Action 1</md-button>
-										<md-button>Action 2</md-button>
-									</md-card-actions>
-								</md-card>
-								<md-card md-theme="{( showDarkTheme ? 'dark-orange' : 'default' )}" md-theme-watch>
-									<md-card-title>
-										<md-card-title-text>
-											<span class="md-headline">Card with image</span>
-											<span class="md-subhead">Extra Large</span>
-										</md-card-title-text>
-									</md-card-title>
-									<md-card-content layout="row" layout-align="space-between">
-										<div class="md-media-xl card-media"></div>
+              <div flex-xs flex-gt-xs="50" layout="column">
+                <md-card md-theme="{( showDarkTheme ? 'dark-grey' : 'default' )}" md-theme-watch>
+                  <md-card-title>
+                    <md-card-title-text>
+                      <span class="md-headline">Card with image</span>
+                      <span class="md-subhead">Large</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                      <div class="md-media-lg card-media"></div>
+                    </md-card-title-media>
+                  </md-card-title>
+                  <md-card-actions layout="row" layout-align="end center">
+                    <md-button>Action 1</md-button>
+                    <md-button>Action 2</md-button>
+                  </md-card-actions>
+                </md-card>
+                <md-card md-theme="{( showDarkTheme ? 'dark-orange' : 'default' )}" md-theme-watch>
+                  <md-card-title>
+                    <md-card-title-text>
+                      <span class="md-headline">Card with image</span>
+                      <span class="md-subhead">Extra Large</span>
+                    </md-card-title-text>
+                  </md-card-title>
+                  <md-card-content layout="row" layout-align="space-between">
+                    <div class="md-media-xl card-media"></div>
 
-										<md-card-actions layout="column">
-											<md-button class="md-icon-button" aria-label="Favorite">
-												<md-icon md-svg-icon="heart"></md-icon>
-											</md-button>
-											<md-button class="md-icon-button" aria-label="Settings">
-												<md-icon md-svg-icon="menu"></md-icon>
-											</md-button>
-											<md-button class="md-icon-button" aria-label="Share">
-												<md-icon md-svg-icon="share"></md-icon>
-											</md-button>
-										</md-card-actions>
-									</md-card-content>
-								</md-card>
-							</div>
-							<div flex-xs flex-gt-xs="50" layout="column">
-								<md-card md-theme="{( showDarkTheme ? 'dark-purple' : 'default' )}" md-theme-watch>
-									<md-card-title>
-										<md-card-title-text>
-											<span class="md-headline">Card with image</span>
-											<span class="md-subhead">Small</span>
-										</md-card-title-text>
-										<md-card-title-media>
-											<div class="md-media-sm card-media"></div>
-										</md-card-title-media>
-									</md-card-title>
-									<md-card-actions layout="row" layout-align="end center">
-										<md-button>Action 1</md-button>
-										<md-button>Action 2</md-button>
-									</md-card-actions>
-								</md-card>
-								<md-card md-theme="{( showDarkTheme ? 'dark-blue' : 'default' )}" md-theme-watch>
-									<md-card-title>
-										<md-card-title-text>
-											<span class="md-headline">Card with image</span>
-											<span class="md-subhead">Medium</span>
-										</md-card-title-text>
-										<md-card-title-media>
-											<div class="md-media-md card-media"></div>
-										</md-card-title-media>
-									</md-card-title>
-									<md-card-actions layout="row" layout-align="end center">
-										<md-button>Action 1</md-button>
-										<md-button>Action 2</md-button>
-									</md-card-actions>
-								</md-card>
-								<div layout layout-padding layout-align="center end" style="height:200px">
-									<md-checkbox ng-model="showDarkTheme">Use 'Dark' Themed Cards</md-checkbox>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="list" class="section">
-					<h3 class="md-title">Lists</h3>
-					<md-list ng-class="{'example-list': hasListClass}">
-						<md-list-item ng-repeat="status in statuses">
-							<p>{(status)}</p>
-						</md-list-item>
-					</md-list>
-					<a href="#list-prop">Configure list properties</a>
-					<h4 class="md-subhead">Messages</h4>
-					<md-list ng-class="{'example-list': hasListClass}">
-						<md-list-item ng-repeat="message in messages" class="md-2-line">
-							<img ng-src="{(message.imgSrc)}" class="md-avatar">
-							<div class="md-list-item-text">
-								<h3>{(message.author)}</h3>
-								<p>{(message.text)}</p>
-							</div>
-							<md-button class="md-secondary" ng-click="reply(message, $event)">Reply</md-button>
-							<md-divider ng-if="!$last"></md-divider>
-						</md-list-item>
-					</md-list>
-					<a href="#list-prop">Configure list properties</a>
-					<h4 class="md-subhead">Navigation list</h4>
-					<md-list ng-class="{'example-list': hasListClass}">
-						<md-list-item href="https://google.com">
-							<md-icon md-svg-icon="google" ng-if="showListIcon"></md-icon>
-							<p>Google</p>
-						</md-list-item>
-						<md-divider ng-if="showListDivider"></md-divider>
-						<md-list-item href="https://github.com">
-							<md-icon md-svg-icon="github-box" ng-if="showListIcon"></md-icon>
-							<p>Github</p>
-						</md-list-item>
-						<md-divider ng-if="showListDivider"></md-divider>
-						<md-list-item href="https://twitter.com">
-							<md-icon md-svg-icon="twitter-box" ng-if="showListIcon"></md-icon>
-							<p>Twitter</p>
-						</md-list-item>
-					</md-list>
-					<a href="#list-prop">Configure list properties</a>
-					<h4 class="md-subhead">List controls</h4>
-					<md-list ng-class="{'example-list': hasListClass}">
-						<md-list-item>
-							<p>Content #1</p>
-							<md-checkbox class="md-secondary"></md-checkbox>
-						</md-list-item>
-						<md-list-item>
-							<p>Content #2</p>
-							<md-checkbox class="md-secondary"></md-checkbox>
-						</md-list-item>
-						<md-list-item>
-							<p>Content #3</p>
-							<md-checkbox class="md-secondary"></md-checkbox>
-						</md-list-item>
-					</md-list>
-					<a href="#list-prop">Configure list properties</a>
-				</div>
-		</md-content>
-		<md-button ng-click="goToSrc()" class="md-raised md-primary view-code-btn" ng-if="showSrcCodeBtn">
-			<md-icon md-svg-icon="code-tags"></md-icon>
-			View Source code
-		</md-button>
-	</body>
-	<!--Scripts-->
-	<!--Google Analytics-->
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                    <md-card-actions layout="column">
+                      <md-button class="md-icon-button" aria-label="Favorite">
+                        <md-icon md-svg-icon="heart"></md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button" aria-label="Settings">
+                        <md-icon md-svg-icon="menu"></md-icon>
+                      </md-button>
+                      <md-button class="md-icon-button" aria-label="Share">
+                        <md-icon md-svg-icon="share"></md-icon>
+                      </md-button>
+                    </md-card-actions>
+                  </md-card-content>
+                </md-card>
+              </div>
+              <div flex-xs flex-gt-xs="50" layout="column">
+                <md-card md-theme="{( showDarkTheme ? 'dark-purple' : 'default' )}" md-theme-watch>
+                  <md-card-title>
+                    <md-card-title-text>
+                      <span class="md-headline">Card with image</span>
+                      <span class="md-subhead">Small</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                      <div class="md-media-sm card-media"></div>
+                    </md-card-title-media>
+                  </md-card-title>
+                  <md-card-actions layout="row" layout-align="end center">
+                    <md-button>Action 1</md-button>
+                    <md-button>Action 2</md-button>
+                  </md-card-actions>
+                </md-card>
+                <md-card md-theme="{( showDarkTheme ? 'dark-blue' : 'default' )}" md-theme-watch>
+                  <md-card-title>
+                    <md-card-title-text>
+                      <span class="md-headline">Card with image</span>
+                      <span class="md-subhead">Medium</span>
+                    </md-card-title-text>
+                    <md-card-title-media>
+                      <div class="md-media-md card-media"></div>
+                    </md-card-title-media>
+                  </md-card-title>
+                  <md-card-actions layout="row" layout-align="end center">
+                    <md-button>Action 1</md-button>
+                    <md-button>Action 2</md-button>
+                  </md-card-actions>
+                </md-card>
+                <div layout layout-padding layout-align="center end" style="height:200px">
+                  <md-checkbox ng-model="showDarkTheme">Use 'Dark' Themed Cards</md-checkbox>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="list" class="section">
+          <h3 class="md-title">Lists</h3>
+          <md-list ng-class="{'example-list': hasListClass}">
+            <md-list-item ng-repeat="status in statuses">
+              <p>{(status)}</p>
+            </md-list-item>
+          </md-list>
+          <a href="#list-prop">Configure list properties</a>
+          <h4 class="md-subhead">Messages</h4>
+          <md-list ng-class="{'example-list': hasListClass}">
+            <md-list-item ng-repeat="message in messages" class="md-2-line">
+              <img ng-src="{(message.imgSrc)}" class="md-avatar">
+              <div class="md-list-item-text">
+                <h3>{(message.author)}</h3>
+                <p>{(message.text)}</p>
+              </div>
+              <md-button class="md-secondary" ng-click="reply(message, $event)">Reply</md-button>
+              <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+          </md-list>
+          <a href="#list-prop">Configure list properties</a>
+          <h4 class="md-subhead">Navigation list</h4>
+          <md-list ng-class="{'example-list': hasListClass}">
+            <md-list-item href="https://google.com">
+              <md-icon md-svg-icon="google" ng-if="showListIcon"></md-icon>
+              <p>Google</p>
+            </md-list-item>
+            <md-divider ng-if="showListDivider"></md-divider>
+            <md-list-item href="https://github.com">
+              <md-icon md-svg-icon="github-box" ng-if="showListIcon"></md-icon>
+              <p>Github</p>
+            </md-list-item>
+            <md-divider ng-if="showListDivider"></md-divider>
+            <md-list-item href="https://twitter.com">
+              <md-icon md-svg-icon="twitter-box" ng-if="showListIcon"></md-icon>
+              <p>Twitter</p>
+            </md-list-item>
+          </md-list>
+          <a href="#list-prop">Configure list properties</a>
+          <h4 class="md-subhead">List controls</h4>
+          <md-list ng-class="{'example-list': hasListClass}">
+            <md-list-item>
+              <p>Content #1</p>
+              <md-checkbox class="md-secondary"></md-checkbox>
+            </md-list-item>
+            <md-list-item>
+              <p>Content #2</p>
+              <md-checkbox class="md-secondary"></md-checkbox>
+            </md-list-item>
+            <md-list-item>
+              <p>Content #3</p>
+              <md-checkbox class="md-secondary"></md-checkbox>
+            </md-list-item>
+          </md-list>
+          <a href="#list-prop">Configure list properties</a>
+        </div>
+    </md-content>
+    <md-button ng-click="goToSrc()" class="md-raised md-primary view-code-btn" ng-if="showSrcCodeBtn">
+      <md-icon md-svg-icon="code-tags"></md-icon>
+      View Source code
+    </md-button>
+  </body>
+  <!--Scripts-->
+  <!--Google Analytics-->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-		ga('create', 'UA-82448435-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+    ga('create', 'UA-82448435-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
 </html>

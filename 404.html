@@ -3,85 +3,87 @@ permalink: /404.html
 ---
 <html ng-app="errorApp">
 
-	<head>
-		<!--Import-->
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,400i,500,700" rel="stylesheet">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-aria.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-sanitize.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
-		<link href="/css/main.css" rel="stylesheet">
-		<script src="/lib/dependencies.js"></script>
-		<script src="/lib/404.js"></script>
-		<link href="favicon.ico" rel="shortcut icon">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="The 404 page. This is loaded when a URL is not found.">
-		
-	</head>
-	<title>Document Not Found | Chan4077.Github.io</title>
+  <head>
+    <!--Import-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,400i,500,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-sanitize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
+    <link href="/css/main.css" rel="stylesheet">
+    <script src="/lib/dependencies.js"></script>
+    <script src="/lib/404.js"></script>
+    <link href="favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The 404 page. This is loaded when a URL is not found.">
 
-	<body ng-controller="MainController">
-		<site-sidenav></site-sidenav>
-		<md-content layout="column" layout-fill>
-			<site-toolbar toolbar-title="'404 Document Not Found'"></site-toolbar>
-			<md-card>
-				<md-card-header>
-					<md-card-avatar>
-						<img src="/img/error.svg">
-					</md-card-avatar>
-					<md-card-header-text>
-						<span class="md-title">Error 404</span>
-						<span class="md-subhead">URL Not Found</span>
-					</md-card-header-text>
-				</md-card-header>
-				<md-card-title>
-					<md-card-title-text>
-						<span class="md-headline">Error 404</span>
-						<span class="md-subhead">Unfortunately, you've reached a page that either does not exist or there used to be but now not.</span>
-					</md-card-title-text>
-				</md-card-title>
-				<md-card-actions layout="row" layout-align="end center">
-					<md-button ng-click="goBack()" class="md-accent">Go Back</md-button>
-					<md-button href="https://chan4077.github.io" class="md-primary">Go Home</md-button>
-				</md-card-actions>
-			</md-card>
-			<md-card>
-				<md-card-header>
-					<md-card-header-text>
-						<span class="md-title">Latest</span>
-						<span class="md-subhead">Commits</span>
-					</md-card-header-text>
-				</md-card-header>
-				<md-card-title>
-					<md-card-title-text>
-						<span class="md-headline">This <a href="https://chan4077.github.io" style="text-decoration: none;">Website's Commits</a></span>
-						<span class="md-subhead">Check out the latest commits!</span>
-					</md-card-title-text>
-				</md-card-title>
-				<md-card-actions layout="row" layout-align="end center">
-					<md-button href="https://github.com/Chan4077/chan4077.github.io/commits/master" class="md-primary">View Commits</md-button>
-				</md-card-actions>
-			</md-card>
-		</md-content>
-		<!--The toast for when offline and online-->
-		<network-toast></network-toast>
-	</body>
+  </head>
+  <title>Document Not Found | Chan4077.Github.io</title>
+
+  <body ng-controller="MainController">
+    <site-sidenav></site-sidenav>
+    <md-content layout="column" layout-fill>
+      <site-toolbar toolbar-title="'404 Document Not Found'"></site-toolbar>
+      <md-card>
+        <md-card-header>
+          <md-card-avatar>
+            <img src="/img/error.svg">
+          </md-card-avatar>
+          <md-card-header-text>
+            <span class="md-title">Error 404</span>
+            <span class="md-subhead">URL Not Found</span>
+          </md-card-header-text>
+        </md-card-header>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Error 404</span>
+            <span class="md-subhead">Unfortunately, you've reached a page that either does not exist or there used to be but now not.</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ng-click="goBack()" class="md-accent">Go Back</md-button>
+          <md-button href="https://chan4077.github.io" class="md-primary">Go Home</md-button>
+        </md-card-actions>
+      </md-card>
+      <md-card>
+        <md-card-header>
+          <md-card-header-text>
+            <span class="md-title">Latest</span>
+            <span class="md-subhead">Commits</span>
+          </md-card-header-text>
+        </md-card-header>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">This
+              <a href="https://chan4077.github.io" style="text-decoration: none;">Website's Commits</a>
+            </span>
+            <span class="md-subhead">Check out the latest commits!</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button href="https://github.com/Chan4077/chan4077.github.io/commits/master" class="md-primary">View Commits</md-button>
+        </md-card-actions>
+      </md-card>
+    </md-content>
+    <!--The toast for when offline and online-->
+    <network-toast></network-toast>
+  </body>
 
 </html>
 <script>
-	// Google Analytics
-	(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date(); a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  // Google Analytics
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-	ga('create', 'UA-82448435-1', 'auto');
-	ga('send', 'pageview');
+  ga('create', 'UA-82448435-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
 <!--END-->

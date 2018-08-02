@@ -1,20 +1,17 @@
 .half-size {
-    width: 50%;
-    height: 50%;
+  width: 50%;
+  height: 50%;
 }
 .fixed-size {
-    max-width: 400px;
-    max-height: 500px;
+  max-width: 400px;
+  max-height: 500px;
 }
 .md-fab.scroll-fab {
-    position: fixed !important;
+  position: fixed !important;
 
-    transform: scale(0);
-    transition: transform 0.2s;
+  transform: scale(0);
+  transition: transform 0.2s;
 }
 .scroll-fab.scrolling {
-    transform: scale(1);
-}
-.test {
-    color: rgb("")
+  transform: scale(1);
 }
