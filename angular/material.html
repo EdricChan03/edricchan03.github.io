@@ -15,10 +15,11 @@
     <script src="/lib/dependencies.js"></script>
     <script src="/lib/beta_site.js"></script>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/material_refresh.css">
     <title>Material Playground | Chan4077.Github.io</title>
   </head>
 
-  <body class="material-demo">
+  <body class="material-demo" ng-class="{'md-refresh': $root.materialRefresh}">
     <site-sidenav selected-item="'Angular'"></site-sidenav>
     <site-toolbar toolbar-title="'Material Playground'"></site-toolbar>
     <md-content ng-controller="MaterialController" layout-fill layout="column">
@@ -29,6 +30,7 @@
           <fieldset layout="column" id="other-prop">
             <legend>Other Properties</legend>
             <md-switch ng-model="showSrcCodeBtn">Toggle source code button</md-switch>
+            <md-switch ng-model="$root.materialRefresh">Enable Material Design refresh styles</md-switch>
             <a href="#">Back to examples</a>
           </fieldset>
           <fieldset layout="column" id="btn-prop">
@@ -39,6 +41,15 @@
               <code>disabled</code>
             </md-switch>
             <a href="#button">Back to button examples</a>
+          </fieldset>
+          <fieldset layout="column" id="checkbox-prop">
+            <legend>Checkbox Properties</legend>
+            <md-radio-group ng-model="checkboxColor">
+              <md-radio-button value>Default</md-radio-button>
+              <md-radio-button value="primary">Primary</md-radio-button>
+              <md-radio-button value="accent">Accent</md-radio-button>
+              <md-radio-button value="warn">Warn</md-radio-button>
+            </md-radio-group>
           </fieldset>
           <fieldset layout="column" id="list-prop">
             <legend>List Properties</legend>
@@ -55,6 +66,11 @@
           <md-button ng-class="{'md-raised': isRaised}" class="no-flex md-accent" ng-disabled="isDisabled">Button</md-button>
           <md-button ng-class="{'md-raised': isRaised}" class="no-flex md-warn" ng-disabled="isDisabled">Button</md-button>
           <a href="#btn-prop">Configure button properties</a>
+          <div ng-if="$root.materialRefresh">
+            <h4 class="md-title">Outline/stroked button</h4>
+            <md-button ng-class="{'md-primary': color === 'primary', 'md-accent': color === 'accent', 'md-warn': color === 'warn'}"
+              class="no-flex md-outline-button" ng-repeat="color in ['', 'primary', 'accent', 'warn']" ng-disabled="isDisabled">Button</md-button>
+          </div>
         </div>
         <div id="fab-button" class="section">
           <h3 class="md-subhead">FABs</h3>
@@ -72,26 +88,16 @@
         </div>
         <div id="icon-button" class="section">
           <h3 class="md-subhead">Icon Buttons</h3>
-          <p>Note: Since this uses SVG icons by default, I can't really show you Material Icons by Google.</p>
-          <md-button class="md-icon-button" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
-            <md-icon md-svg-icon="calendar-check"></md-icon>
-          </md-button>
-          <md-button class="md-icon-button md-primary" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
-            <md-icon md-svg-icon="calendar-check"></md-icon>
-          </md-button>
-          <md-button class="md-icon-button md-accent" ng-class="{'md-raised': isRaised}" ng-disabled="isDisabled">
+          <md-button class="md-icon-button" ng-class="{'md-raised': isRaised, 'md-primary': color === 'primary', 'md-accent': color === 'accent', 'md-warn': color === warn}" ng-disabled="isDisabled" ng-repeat="color in ['', 'primary', 'accent', 'warn']">
             <md-icon md-svg-icon="calendar-check"></md-icon>
           </md-button>
           <a href="#btn-prop">Configure button properties</a>
         </div>
         <div id="card" class="section">
-          <h3 class="md-title">Cards
-            <span class="badge new-badge">NEW!</span>
-          </h3>
+          <h3 class="md-title">Cards</h3>
           <div id="cards-with-colours" class="section">
-            <h3 class="md-subhead">Cards with colours :D</h3>
+            <h3 class="md-subhead">Cards with colours</h3>
             <div layout-xs="column" layout="row">
-
               <div flex-xs flex-gt-xs="50" layout="column">
                 <md-card md-theme="{( showDarkTheme ? 'dark-grey' : 'default' )}" md-theme-watch>
                   <md-card-title>
@@ -170,6 +176,15 @@
             </div>
           </div>
         </div>
+        <div id="checkbox" class="section">
+          <h3 class="md-title">Checkbox</h3>
+          <md-checkbox ng-class="{'md-accent': checkboxColor === 'accent', 'md-primary': checkboxColor === 'primary', 'md-warn': checkboxColor === 'warn'}"
+            ng-model="checkMeCheckbox">Check me!</md-checkbox>
+            <p>Result: {(checkMeCheckbox)}</p>
+            <h4 class="md-title">Round checkboxes</h4>
+            <md-checkbox ng-class="{'md-accent': checkboxColor === 'accent', 'md-primary': checkboxColor === 'primary', 'md-warn': checkboxColor === 'warn'}" class="md-round-checkbox"
+              ng-model="roundCheckbox">Round checkbox!</md-checkbox>
+          </div>
         <div id="list" class="section">
           <h3 class="md-title">Lists</h3>
           <md-list ng-class="{'example-list': hasListClass}">

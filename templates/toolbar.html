@@ -13,36 +13,11 @@
       {(toolbarTitle ? toolbarTitle : 'Chan4077.Github.io')}
     </h2>
     <span flex></span>
-    <!--View source code-->
-    <!--Hidden on mobile phones-->
-    <md-button class="md-icon-button" aria-label="View source code" ng-click="viewGithub()" hide-xs>
+    <md-button class="md-icon-button" aria-label="View source code" href="{(srcCode ? srcCode: 'https://github.com/Chan4077/chan4077.github.io')}">
       <md-tooltip>
         View source code
       </md-tooltip>
       <md-icon md-svg-icon="code-tags"></md-icon>
     </md-button>
-    <!--mdMenu-->
-    <md-menu>
-      <md-button class="md-icon-button" aria-label="More" ng-click="$mdMenu.open($event)">
-        <md-tooltip>
-          More
-        </md-tooltip>
-        <md-icon md-menu-origin md-svg-icon="dots-vertical"></md-icon>
-      </md-button>
-      <md-menu-content>
-        <md-menu-item>
-          <md-button ng-click="sendFeedback()" aria-label="Send Feedback">
-            <md-icon md-svg-icon="message-alert" md-menu-align-target></md-icon>
-            Send Feedback
-          </md-button>
-        </md-menu-item>
-        <md-menu-item show-xs hide>
-          <md-button ng-click="viewGithub()" aria-label="View source code">
-            <md-icon md-svg-icon="code-tags" md-menu-align-target></md-icon>
-            View source code
-          </md-button>
-        </md-menu-item>
-      </md-menu-content>
-    </md-menu>
   </div>
 </md-toolbar>

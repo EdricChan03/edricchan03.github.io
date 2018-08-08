@@ -14,3 +14,6 @@ tags:
 - breaking change
 - news
 - future
+# Options for SCSS compiling
+sass:
+  style: compressed
