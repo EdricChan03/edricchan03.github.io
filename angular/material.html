@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
     <script src="/lib/dependencies.js"></script>
-    <script src="/lib/beta_site.js"></script>
+    <script src="/lib/material_subpage.js"></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/material_refresh.css">
     <title>Material Playground | Chan4077.Github.io</title>
@@ -21,7 +21,7 @@
 
   <body class="material-demo" ng-class="{'md-refresh': $root.materialRefresh}">
     <site-sidenav selected-item="'Angular'"></site-sidenav>
-    <site-toolbar toolbar-title="'Material Playground'"></site-toolbar>
+    <site-toolbar toolbar-title="'Material Playground'" src-code="'https://github.com/Chan4077/chan4077.github.io/blob/master/angular/material.html'"></site-toolbar>
     <md-content ng-controller="MaterialController" layout-fill layout="column">
       <div class="md-padding">
         <site-toc></site-toc>
@@ -241,11 +241,14 @@
           </md-list>
           <a href="#list-prop">Configure list properties</a>
         </div>
+        <div id="snackbar" class="section">
+          <h3 class="md-title">Snack bar</h3>
+          <md-input-container>
+             <input type="text" ng-model="snackBarAction" placeholder="Snack bar action text">
+          </md-input-container>
+          <md-button ng-click="showSnackBar(snackBarAction)">Show snack bar</md-button>
+        </div>
     </md-content>
-    <md-button ng-click="goToSrc()" class="md-raised md-primary view-code-btn" ng-if="showSrcCodeBtn">
-      <md-icon md-svg-icon="code-tags"></md-icon>
-      View Source code
-    </md-button>
   </body>
   <!--Scripts-->
   <!--Google Analytics-->
