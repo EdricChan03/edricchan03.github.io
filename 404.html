@@ -25,51 +25,28 @@ permalink: /404.html
 
   <body ng-controller="MainController">
     <site-sidenav></site-sidenav>
-    <md-content layout="column" layout-fill>
-      <site-toolbar toolbar-title="'404 Document Not Found'"></site-toolbar>
-      <md-card>
-        <md-card-header>
-          <md-card-avatar>
-            <img src="/img/error.svg">
-          </md-card-avatar>
-          <md-card-header-text>
-            <span class="md-title">Error 404</span>
-            <span class="md-subhead">URL Not Found</span>
-          </md-card-header-text>
-        </md-card-header>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Error 404</span>
-            <span class="md-subhead">Unfortunately, you've reached a page that either does not exist or there used to be but now not.</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button ng-click="goBack()" class="md-accent">Go Back</md-button>
-          <md-button href="https://chan4077.github.io" class="md-primary">Go Home</md-button>
-        </md-card-actions>
-      </md-card>
-      <md-card>
-        <md-card-header>
-          <md-card-header-text>
-            <span class="md-title">Latest</span>
-            <span class="md-subhead">Commits</span>
-          </md-card-header-text>
-        </md-card-header>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">This
-              <a href="https://chan4077.github.io" style="text-decoration: none;">Website's Commits</a>
-            </span>
-            <span class="md-subhead">Check out the latest commits!</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button href="https://github.com/Chan4077/chan4077.github.io/commits/master" class="md-primary">View Commits</md-button>
-        </md-card-actions>
-      </md-card>
+    <md-content layout="column" layout-align="center center" layout-fill>
+      <div>
+        <img src="img/error.svg">
+        <h2>404 - These are not the documents that you are looking for.</h2>
+        <p>Oops! Looks like you reached a non-existent document!</p>
+        <p>Don't worry; this will be resolved ASAP. At the meantime, check out the links below!</p>
+        <ul>
+          <li>
+            <a onclick="window.history.back()" href="#">Go back</a>
+          </li>
+          <li>
+            <a href="/">Home page</a>
+          </li>
+          <li>
+            <a href="/rss-reader">RSS Reader</a>
+          </li>
+          <li>
+            <a href="/angular">AngularJS demos</a>
+          </li>
+        </ul>
+      </div>
     </md-content>
-    <!--The toast for when offline and online-->
-    <network-toast></network-toast>
   </body>
 
 </html>
