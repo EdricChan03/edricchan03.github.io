@@ -4,3 +4,5 @@
 # Icon file
 Icon
 _site
+# Cache from Jekyll's SASS
+.sass-cache
