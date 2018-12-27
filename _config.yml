@@ -1,0 +1,20 @@
+exclude: ["README.md"]
+markdown: kramdown
+title: Chan4077.GitHub.io
+future: true
+sass:
+  style: compressed
+  sass_dir: node_modules
+defaults:
+  - 
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      excerpt_separator: "<!-- End of excerpt -->"
+paginate: 5
+paginate_path: "/blog/page/:num"
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag

@@ -1,0 +1,22 @@
+{
+  "name": "chan4077.github.io",
+  "version": "0.0.0",
+  "description": "Sources for chan4077.github.io",
+  "main": ".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chan4077/chan4077.github.io.git"
+  },
+  "author": "Chan4077",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chan4077/chan4077.github.io/issues"
+  },
+  "homepage": "https://github.com/Chan4077/chan4077.github.io#readme",
+  "dependencies": {
+    "material-components-web": "^0.42.1"
+  }
+}

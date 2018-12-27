@@ -1,0 +1,80 @@
+---
+# Required by Jekyll
+---
+@charset "utf-8";
+
+$mdc-theme-primary: #3948ab;
+$mdc-theme-secondary: #ff4081;
+$mdc-theme-background: #fafafa;
+$mdc-theme-error: #f44336;
+
+@import "@material/button/mdc-button";
+@import "@material/card/mdc-card";
+@import "@material/chips/mdc-chips";
+@import "@material/drawer/mdc-drawer";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/list/mdc-list";
+@import "@material/ripple/mdc-ripple";
+@import "@material/theme/mdc-theme";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/typography/mdc-typography";
+
+body {
+  margin: 0;
+}
+
+#page-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  // h1 {
+  //   @extend .mdc-typography--headline1;
+  // }
+  // h2 {
+  //   @extend .mdc-typography--headline2;
+  // }
+  // h3 {
+  //   @extend .mdc-typography--headline3;
+  // }
+  // h4 {
+  //   @extend .mdc-typography--headline4;
+  // }
+  // h5 {
+  //   @extend .mdc-typography--headline5;
+  // }
+  // h6 {
+  //   @extend .mdc-typography--headline6;
+  // }
+  // caption {
+  //   @extend .mdc-typography--caption;
+  // }
+}
+
+.post-card {
+  margin-top: 8px;
+  .post-card__primary {
+    padding: 1rem;
+  }
+  .post-card__secondary {
+    padding: 0 1rem 8px;
+  }
+  .post-card__title, .post-card__subtitle {
+    margin: 0;
+  }
+  
+  .post-card__secondary, .post-card__subtitle {
+    color: var(--mdc-theme-text-secondary-on-background, rgba(0,0,0,.54));
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media print {
+  #app-bar {
+    display: none;
+  }
+}
