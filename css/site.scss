@@ -51,7 +51,9 @@ body {
 }
 
 .post-card {
-  margin-top: 8px;
+  &:not(:first-child) {
+    margin-top: 8px;
+  }
   .post-card__primary {
     padding: 1rem;
   }
@@ -76,5 +78,14 @@ body {
 @media print {
   #app-bar {
     display: none;
+  }
+}
+
+#page-content {
+  padding-top: calc(5% + 64px);
+}
+@media (max-width: 599px) {
+  #page-content {
+    padding-top: calc(5% + 56px);
   }
 }
