@@ -57,6 +57,7 @@ So far, I love music by artists (and their songs) including (in alphabetical ord
   - See You Again
 - Coldplay
   - Hymn For The Weekend
+  - Hymn For The Weekend - Seeb Remix (w/ Seeb)
   - Paradise
 - Imagine Dragons
   - Born To Be Yours
@@ -87,6 +88,8 @@ So far, I love music by artists (and their songs) including (in alphabetical ord
 - P!NK
   - A Million Dreams (Reimagined)
   - What About Us
+- Seeb
+  - Grip (w/ Bastille)
 - The Chainsmokers
   - Beach House
   - Closer
@@ -115,10 +118,12 @@ So far, I love music by artists (and their songs) including (in alphabetical ord
 - Demons _- Imagine Dragons_
 - Digital _- Imagine Dragons_
 - Faded _- Alan Walker_
+- Grip _- Seeb, Bastille_
 - Happier _- Marshmello, Bastille_
 - High Hopes _- Panic! At The Disco_
 - How Long _- Charlie Puth_
 - Hymn For The Weekend _- Coldplay_
+- Hymn For The Weekend - Seeb Remix _- Coldplay, Seeb_
 - Levitate - From The Original Motion Picture "Passengers" _- Imagine Dragons_
 - Love _- Imagine Dragons_
 - Machine _- Imagine Dragons_
