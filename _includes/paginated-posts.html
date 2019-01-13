@@ -46,7 +46,7 @@
   {% if paginator.page == pageNum %}
   <button class="mdc-button" disabled>{{pageNum}}</button>
   {% else %}
-  <a href="/blog/{%if pageNum > 1%}page/{{pageNum}}{% else %}{%endif%}" class="mdc-button">{{pageNum}}</a>
+  <a href="/blog/{%if pageNum > 1%}page/{{pageNum}}{% else %}{%endif%}" class="mdc-button" data-mdc-auto-init="MDCRipple">{{pageNum}}</a>
   {% endif %}
   {% endfor %}
   {% if paginator.next_page %}
