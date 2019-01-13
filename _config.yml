@@ -13,8 +13,14 @@ defaults:
     values:
       layout: "post"
       excerpt_separator: "<!-- End of excerpt -->"
-paginate: 5
-paginate_path: "/blog/page/:num"
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title_suffix: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 plugins:
-  - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-paginate-v2
