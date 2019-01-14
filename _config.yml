@@ -21,6 +21,11 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+autopages:
+  # Use default configuration
+  enabled: true
+  tags:
+    permalink: '/blog/tagged/:tag'
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate-v2
