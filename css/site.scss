@@ -19,6 +19,7 @@ $mdc-theme-error: #f44336;
 @import "@material/theme/mdc-theme";
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/typography/mdc-typography";
+@import "../syntax-highlighting";
 
 body {
   margin: 0;
