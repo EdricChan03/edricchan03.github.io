@@ -2,6 +2,7 @@
   "name": "chan4077.github.io",
   "version": "0.0.0",
   "description": "Sources for chan4077.github.io",
+  "private": true,
   "main": ".",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
