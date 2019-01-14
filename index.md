@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: page
+title: Welcome
 ---
-## Welcome
 
 Welcome to v2 of the site!
 

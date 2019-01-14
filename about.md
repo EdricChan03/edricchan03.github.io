@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: About me
 description: About the creator of this website (Edric Chan)
 ---
-# About me
-{: .mdc-typography--headline2}
 
 I'm a 15 year old Singaporean who's interested in IT. I've created a few side projects, as well as some big projects that has taken me a year or more. I currently own a Early 2015 MacBook Pro that I store my projects on.
 
