@@ -51,21 +51,30 @@ body {
   // }
 }
 
-.post-card {
+code, kbd, samp, pre, var {
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+}
+
+.post-card, .project-card {
   &:not(:first-child) {
     margin-top: 8px;
   }
-  .post-card__primary {
+  img.post-card__media, img.project-card__media {
+    width: 100%;
+  }
+  .post-card__primary, .project-card__primary {
     padding: 1rem;
   }
-  .post-card__secondary {
+  .post-card__secondary, .project-card__secondary {
     padding: 0 1rem 8px;
   }
-  .post-card__title, .post-card__subtitle {
+  .post-card__title, .post-card__subtitle,
+  .project-card__title, .project-card__subtitle {
     margin: 0;
   }
   
-  .post-card__secondary, .post-card__subtitle {
+  .post-card__secondary, .post-card__subtitle,
+  .project-card__secondary, .project-card__subtitle {
     color: var(--mdc-theme-text-secondary-on-background, rgba(0,0,0,.54));
   }
 }
