@@ -5,7 +5,7 @@
   "private": true,
   "main": ".",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "echo \"Copying node_modules to _sass directory...\" && cp -Rf node_modules _sass/"
   },
   "repository": {
     "type": "git",
