@@ -4,7 +4,7 @@ title: Chan4077.GitHub.io
 future: true
 sass:
   style: compressed
-  sass_dir: node_modules
+  sass_dir: _sass/node_modules
 defaults:
   - 
     scope:
