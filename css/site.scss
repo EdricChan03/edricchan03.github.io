@@ -56,9 +56,6 @@ code, kbd, samp, pre, var {
 }
 
 .post-card, .project-card {
-  &:not(:first-child) {
-    margin-top: 8px;
-  }
   img.post-card__media, img.project-card__media {
     width: 100%;
   }
