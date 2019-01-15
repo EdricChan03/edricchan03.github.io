@@ -46,6 +46,7 @@ To get started, ensure that you have a code editor (ideally [Visual Studio Code]
 ## Creating code
 
 To create code, surround some text with `<code>` (which can be optionally nested within a `<pre>`).
+
 ```html
 <pre><code>Hello, World! Here is some useful content in a code block!</code></pre>
 ```
