@@ -5,7 +5,7 @@
   "private": true,
   "main": ".",
   "scripts": {
-    "postinstall": "echo \"Copying node_modules to _sass directory...\" && cp -Rf node_modules _sass/"
+    "postinstall": "bash ./postinstall.sh"
   },
   "repository": {
     "type": "git",
