@@ -5,7 +5,7 @@ workflow "Build and deploy to GitHub Pages on push" {
 
 action "Install dependencies" {
   uses = "actions/npm@e7aaefed7c9f2e83d493ff810f17fa5ccd7ed437"
-  args = "install"
+  args = "install --unsafe-perm"
 }
 
 action "Build & Deploy to GitHub Pages" {
