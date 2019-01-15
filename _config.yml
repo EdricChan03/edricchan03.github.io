@@ -26,6 +26,8 @@ autopages:
   enabled: true
   tags:
     permalink: '/blog/tagged/:tag'
+  categories:
+    permalink: '/blog/category/:cat'
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate-v2
