@@ -15,5 +15,7 @@ action "Build & Deploy to GitHub Pages" {
   secrets = ["GITHUB_TOKEN"]
   env = {
     GH_PAGES_BRANCH = "master"
+    GIT_FORCE = "false"
+    OVERRIDE_GH_PAGES_BRANCH = "true"
   }
 }
