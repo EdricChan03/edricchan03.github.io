@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chan4077.GitHub.io</title>
+    <description>My personal Github pages website.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 16 Jan 2019 13:52:03 +0000</pubDate>
+    <lastBuildDate>Wed, 16 Jan 2019 13:52:03 +0000</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>How v2 of the website was created</title>
+        <description>&lt;p&gt;So how was version 2 of this created?&lt;/p&gt;
+
+&lt;p&gt;Well, it all began when I found out that someone was using Material Components for the Web on a Github Page, I got excited and decided to implement Material Components for the Web on my own site.&lt;/p&gt;
+
+&lt;!-- End of excerpt --&gt;
+
+&lt;h2 class=&quot;mdc-typography--headline3&quot; id=&quot;deciding-on-site-layouts&quot;&gt;Deciding on site layouts&lt;/h2&gt;
+
+&lt;p&gt;I began thinking of potential site layouts. However, as I’m not a good designer, I could only think of a few.&lt;/p&gt;
+
+&lt;p&gt;As I could only think of a few, I decided to see how the author of &lt;a href=&quot;https://blog.davidmedenjak.com/&quot;&gt;this site&lt;/a&gt; had done the layout.&lt;/p&gt;
+
+&lt;p&gt;I discovered that he was using the Layout Grid component to have a grid-based layout.&lt;/p&gt;
+
+&lt;p&gt;I decided on doing exactly that: a grid-based layout.&lt;/p&gt;
+
+&lt;h3 class=&quot;mdc-typography--headline4&quot; id=&quot;copy-pasta-code&quot;&gt;Copy-pasta code&lt;/h3&gt;
+
+&lt;p&gt;Once I decided on what to do, I headed to the &lt;a href=&quot;https://material.io/develop/web&quot;&gt;Material Components for the Web&lt;/a&gt; page to get started.&lt;/p&gt;
+
+&lt;p&gt;On the docs, it suggested to either install Material Components with the minimised JavaScript and CSS file from Unpkg, or I install it with NPM. I went with NPM.&lt;/p&gt;
+
+&lt;p&gt;However, I also discovered that a recent release was pushed to remove &lt;code class=&quot;highlighter-rouge&quot;&gt;node_modules&lt;/code&gt; artifacts to reduce building time. This could actually impact what I was doing.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+        <link>/blog/programming/2018/12/14/how-v2-was-created.html</link>
+        <guid isPermaLink="true">/blog/programming/2018/12/14/how-v2-was-created.html</guid>
+        
+        <category>website</category>
+        
+        <category>mdc-components</category>
+        
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>Code snippet of the week - code/pre elements</title>
+        <description>&lt;p&gt;&lt;a name=&quot;top&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: This blog post originally appeared on my &lt;a href=&quot;https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html&quot;&gt;blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Another code snippet! This week, I’ll be covering how to create code snippets with the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; HTML tags.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: If you haven’t seen it, I’ve designed a new header image for these kind of posts! Look out for posts with the image on the top of the post!&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- End of excerpt --&gt;
+
+&lt;h1 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h1&gt;
+
+&lt;p&gt;To get started, ensure that you have a code editor (ideally &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;, &lt;a href=&quot;https://www.sublimetext.com/&amp;quot;&quot;&gt;Sublime Text&lt;/a&gt;, &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;, etc.).&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Get started by downloading either of the coding editors as stated above (or you can search some online; &lt;strong&gt;don’t use your built-in text editor as this may screw things up in the encoding&lt;/strong&gt;)&lt;/li&gt;
+  &lt;li&gt;Next, open up the code editor and create a new file. We’ll name the file &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create the bare minimal for an HTML file. Copy the code below:&lt;/p&gt;
+
+    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- This is the line that is required in order for the page to work properly. --&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+     &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+     &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Document title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+     &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- I'm a comment! --&amp;gt;&lt;/span&gt;
+     &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Multiline comments
+     are&amp;lt;br&amp;gt;
+     okay too --&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+     &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Your page content goes here --&amp;gt;&lt;/span&gt;
+     &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;creating-code&quot;&gt;Creating code&lt;/h2&gt;
+
+&lt;p&gt;To create code, surround some text with &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; (which can be optionally nested within a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&lt;/span&gt;Hello, World! Here is some useful content in a code block!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;See the MDN web docs for more info:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;highlightjs-example&quot;&gt;Highlight.js Example&lt;/h2&gt;
+
+&lt;p&gt;This example assumes that you’ve included &lt;a href=&quot;https://highlightjs.org&quot;&gt;Highlight.js&lt;/a&gt; and that you’ve initialized Highlight.js in your main HTML file.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;pre&amp;gt;&amp;lt;code&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lang-html&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;ni&quot;&gt;&amp;amp;amp;&lt;/span&gt;lt;p&lt;span class=&quot;ni&quot;&gt;&amp;amp;amp;&lt;/span&gt;gt;Displaying a code snippet within an actual code snippet? Codeception!&lt;span class=&quot;ni&quot;&gt;&amp;amp;amp;&lt;/span&gt;lt;/p&lt;span class=&quot;ni&quot;&gt;&amp;amp;amp;&lt;/span&gt;gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
+
+&lt;p&gt;Here’s a working demo for you to play with!&lt;/p&gt;
+
+&lt;p data-height=&quot;307&quot; data-theme-id=&quot;31098&quot; data-slug-hash=&quot;MVEdgb&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;Chan4077&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Code/ Pre Element&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/Chan4077/pen/MVEdgb/&quot;&gt;Code/ Pre Element&lt;/a&gt; by Edric Chan (&lt;a href=&quot;https://codepen.io/Chan4077&quot;&gt;@Chan4077&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a class=&quot;mdc-button mdc-button--raised mdc-button--secondary&quot; href=&quot;https://codepen.io/Chan4077/pen/MVEdgb&quot; target=&quot;_blank&quot; data-mdc-auto-init=&quot;MDCRipple&quot;&gt;&lt;svg style=&quot;height: 24px; width: 24px;&quot; viewbox=&quot;0 0 24 24&quot; class=&quot;mdc-button__icon&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M15.09,12L12,14.08V14.09L8.91,12L12,9.92V9.92L15.09,12M12,2C11.84,2 11.68,2.06 11.53,2.15L2.5,8.11C2.27,8.22 2.09,8.43 2,8.67V14.92C2,15.33 2,15.33 2.15,15.53L11.53,21.86C11.67,21.96 11.84,22 12,22C12.16,22 12.33,21.95 12.47,21.85L21.85,15.5C22,15.33 22,15.33 22,14.92V8.67C21.91,8.42 21.73,8.22 21.5,8.1L12.47,2.15C12.32,2.05 12.16,2 12,2M16.58,13L19.59,15.04L12.83,19.6V15.53L16.58,13M19.69,8.9L16.58,11L12.83,8.47V4.38L19.69,8.9M20.33,10.47V13.53L18.07,12L20.33,10.47M7.42,13L11.17,15.54V19.6L4.41,15.04L7.42,13M4.31,8.9L11.17,4.39V8.5L7.42,11L4.31,8.9M3.67,10.5L5.93,12L3.67,13.54V10.5Z&quot;&gt; &lt;/path&gt;&lt;/svg&gt; View Demo&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
+        <link>/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html</link>
+        <guid isPermaLink="true">/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html</guid>
+        
+        <category>code-snippet-of-the-week</category>
+        
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+      </item>
+    
+  </channel>
+</rss>
