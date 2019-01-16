@@ -1,6 +1,7 @@
 exclude: ["README.md", "Gemfile", "Gemfile.lock", "package-lock.json", "package.json", "postinstall.sh"]
 markdown: kramdown
 title: Chan4077.GitHub.io
+# Enable future posts
 future: true
 sass:
   style: compressed
