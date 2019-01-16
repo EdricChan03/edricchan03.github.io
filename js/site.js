@@ -44,4 +44,6 @@ if (path === '/about') {
   document.getElementById('blog-list-item').classList.toggle(activeListItemClass);
 } else if (path === '/') {
   document.getElementById('home-list-item').classList.toggle(activeListItemClass);
+} else if (path === '/projects') {
+  document.getElementById('projects-list-item').classList.toggle(activeListItemClass);
 }
