@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Current directory/file permissions:"
+# echo "Current directory/file permissions:"
 
-ls -hAFl
+# ls -hAFl
 
 echo "Copying node_modules to _sass directory..."
 if [[ -z "$GITHUB_WORKSPACE" ]]; then
@@ -11,3 +11,5 @@ if [[ -z "$GITHUB_WORKSPACE" ]]; then
 else
   cp -Rf node_modules _sass/
 fi
+
+echo "Done copying."
