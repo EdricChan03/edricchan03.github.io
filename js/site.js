@@ -9,6 +9,7 @@ var listEl = document.querySelector('.mdc-drawer .mdc-list');
 var mainContentEl = document.getElementById('page-content');
 var scrimEl = document.querySelector('.mdc-drawer-scrim');
 
+// Close drawer on scrim click
 scrimEl.addEventListener('click', (event) => {
   if (drawer.open) {
     drawer.open = false;
