@@ -9,6 +9,7 @@ if [[ -z "$GITHUB_WORKSPACE" ]]; then
   # Running in GitHub Action Docker container
   sudo cp -Rf node_modules _sass/
 else
+  # Running locally
   cp -Rf node_modules _sass/
 fi
 
