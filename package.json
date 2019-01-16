@@ -1,7 +1,7 @@
 {
   "name": "chan4077.github.io",
   "version": "0.0.0",
-  "description": "Sources for chan4077.github.io",
+  "description": "The source code for chan4077.github.io",
   "private": true,
   "main": ".",
   "scripts": {
