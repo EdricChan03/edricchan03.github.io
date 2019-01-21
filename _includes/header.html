@@ -6,6 +6,19 @@
     </section>
 
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar">
+      {% if page.toolbar_buttons %}
+      {% for button in page.toolbar_buttons %}
+      {% if button.link %}
+      {% if button.is_site_link and button.is_site_link == true %}
+      <a class="material-icons mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
+      {% else %}
+      <a class="material-icons mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
+      {% endif %}
+      {% else %}
+      <button class="material-icons mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" id="button-{{ forloop.index }}">{{ button.icon }}</button>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
       <button id="print-btn" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" title="Print this page">print</button>
     </section>
   </div>
