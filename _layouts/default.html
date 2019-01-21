@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+  {%- include head.html %}
 
   <body class="mdc-typography">
-    {% include drawer.html %}
-    {% include header.html %}
+    {%- include drawer.html -%}
+    {%- include header.html -%}
     <main class="mdc-top-app-bar--fixed-adjust" id="page-content">
       {{content}}
     </main>
   </body>
-  {% include foot.html %}
+  {%- include foot.html -%}
 
 </html>
