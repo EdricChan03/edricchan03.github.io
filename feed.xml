@@ -5,50 +5,9 @@
     <description>My personal Github pages website.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Jan 2019 02:40:14 +0000</pubDate>
-    <lastBuildDate>Mon, 21 Jan 2019 02:40:14 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Jan 2019 02:45:39 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Jan 2019 02:45:39 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
-    
-      <item>
-        <title>How v2 of the website was created</title>
-        <description>&lt;p&gt;So how was version 2 of this created?&lt;/p&gt;
-
-&lt;p&gt;Well, it all began when I found out that someone was using Material Components for the Web on a Github Page, I got excited and decided to implement Material Components for the Web on my own site.&lt;/p&gt;
-
-&lt;!-- End of excerpt --&gt;
-
-&lt;h2 class=&quot;mdc-typography--headline3&quot; id=&quot;deciding-on-site-layouts&quot;&gt;Deciding on site layouts&lt;/h2&gt;
-
-&lt;p&gt;I began thinking of potential site layouts. However, as I’m not a good designer, I could only think of a few.&lt;/p&gt;
-
-&lt;p&gt;As I could only think of a few, I decided to see how the author of &lt;a href=&quot;https://blog.davidmedenjak.com/&quot;&gt;this site&lt;/a&gt; had done the layout.&lt;/p&gt;
-
-&lt;p&gt;I discovered that he was using the Layout Grid component to have a grid-based layout.&lt;/p&gt;
-
-&lt;p&gt;I decided on doing exactly that: a grid-based layout.&lt;/p&gt;
-
-&lt;h3 class=&quot;mdc-typography--headline4&quot; id=&quot;copy-pasta-code&quot;&gt;Copy-pasta code&lt;/h3&gt;
-
-&lt;p&gt;Once I decided on what to do, I headed to the &lt;a href=&quot;https://material.io/develop/web&quot;&gt;Material Components for the Web&lt;/a&gt; page to get started.&lt;/p&gt;
-
-&lt;p&gt;On the docs, it suggested to either install Material Components with the minimised JavaScript and CSS file from Unpkg, or I install it with NPM. I went with NPM.&lt;/p&gt;
-
-&lt;p&gt;However, I also discovered that a recent release was pushed to remove &lt;code class=&quot;highlighter-rouge&quot;&gt;node_modules&lt;/code&gt; artifacts to reduce building time. This could actually impact what I was doing.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
-        <link>/blog/programming/2018/12/14/how-v2-was-created.html</link>
-        <guid isPermaLink="true">/blog/programming/2018/12/14/how-v2-was-created.html</guid>
-        
-        <category>website</category>
-        
-        <category>mdc-components</category>
-        
-        
-        <category>blog</category>
-        
-        <category>programming</category>
-        
-      </item>
     
       <item>
         <title>Code snippet of the week - code/pre elements</title>
