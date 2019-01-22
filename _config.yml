@@ -14,6 +14,8 @@ defaults:
     values:
       layout: "post"
       excerpt_separator: "<!-- End of excerpt -->"
+      # Custom Jekyll config to enable comments on all blog post pages
+      comments: true
 pagination:
   enabled: true
   per_page: 3
