@@ -3,6 +3,7 @@ layout: post
 title: Code snippet of the week | Unordered and Ordered lists
 tags:
   - "code-snippet-of-the-week"
+  - "html"
 categories:
   - "programming"
 hero_img: /assets/code-snippet-of-the-week/header.png
