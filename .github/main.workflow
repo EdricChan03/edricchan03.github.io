@@ -11,9 +11,9 @@ action "Install dependencies" {
 action "Build & Deploy to GitHub Pages" {
   uses = "Chan4077/actions/githubPages@master"
   needs = ["Install dependencies"]
-  args = "install"
   secrets = [
     "GH_PAGES_TOKEN",
+    "GITHUB_TOKEN",
   ]
   env = {
     GH_PAGES_BRANCH = "master"
