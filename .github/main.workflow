@@ -12,7 +12,9 @@ action "Build & Deploy to GitHub Pages" {
   uses = "Chan4077/actions/githubPages@master"
   needs = ["Install dependencies"]
   args = "install"
-  secrets = ["GITHUB_TOKEN"]
+  secrets = [
+    "GH_PAGES_TOKEN",
+  ]
   env = {
     GH_PAGES_BRANCH = "master"
     GIT_FORCE = "false"
