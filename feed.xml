@@ -5,8 +5,8 @@
     <description>My personal Github pages website.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Jan 2019 15:02:28 +0000</pubDate>
-    <lastBuildDate>Tue, 22 Jan 2019 15:02:28 +0000</lastBuildDate>
+    <pubDate>Wed, 23 Jan 2019 11:02:48 +0000</pubDate>
+    <lastBuildDate>Wed, 23 Jan 2019 11:02:48 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -86,6 +86,8 @@
         <guid isPermaLink="true">/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html</guid>
         
         <category>code-snippet-of-the-week</category>
+        
+        <category>html</category>
         
         
         <category>blog</category>
@@ -171,6 +173,8 @@
         <guid isPermaLink="true">/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html</guid>
         
         <category>code-snippet-of-the-week</category>
+        
+        <category>html</category>
         
         
         <category>blog</category>
