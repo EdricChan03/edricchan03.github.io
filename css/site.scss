@@ -33,6 +33,27 @@ code, kbd, samp, pre, var {
   font-family: "Roboto Mono", 'Courier New', Courier, monospace;
 }
 
+.article {
+  h1 {
+    @extend .mdc-typography--headline2;
+  }
+  h2 {
+    @extend .mdc-typography--headline3;
+  }
+  h3 {
+    @extend .mdc-typography--headline4;
+  }
+  h4 {
+    @extend .mdc-typography--headline5;
+  }
+  h5 {
+    @extend .mdc-typography--headline6;
+  }
+  h6 {
+    @extend .mdc-typography--subtitle1;
+  }
+}
+
 .post-card, .project-card {
   img.post-card__media, img.project-card__media {
     width: 100%;
