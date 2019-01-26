@@ -1,0 +1,68 @@
+- name: StudyBuddy for Android
+  description: An app that helps you in your studies and includes useful functions such as a task manager and the ability to have chat study groups. This is the Android version.
+  labels:
+  - Android
+  - Kotlin
+  - Java
+  - StudyBuddy
+  categories:
+  - Application
+  links:
+  - name: Source code
+    link: https://github.com/Chan4077/StudyBuddy
+- name: StudyBuddy for web
+  description: An app that helps you in your studies and includes useful functions such as a task manager and the ability to have chat study groups. This is the web version.
+  labels:
+  - Web
+  - Angular
+  - TypeScript
+  - HTML
+  - StudyBuddy
+  categories:
+  - Application
+  links:
+  - name: Website
+    link: https://studybuddy-e5f46.firebaseapp.com
+  - name: Source code
+    link: https://github.com/Chan4077/StudyBuddy-web
+- name: RSS Reader
+  description: A typical RSS reader but with support for reading the current headlines of a specified country code and is fully open source.
+  labels:
+  - Angular
+  - RSS
+  - RSS Reader
+  categories:
+  - Application
+  links:
+  - name: Website
+    link: https://chan4077.github.io/rss-reader
+  - name: Source code
+    link: https://github.com/Chan4077/rss-reader
+- name: ngx-ytd-api
+  description: An unofficial Angular library wrapper of the YouTube Data v3 API.
+  labels:
+  - Angular
+  - Library
+  - Angular Library
+  - YouTube Data v3 API
+  - API
+  categories:
+  - Library
+  links:
+  - name: Website
+    link: https://ngx-ytd-api.firebaseapp.com/master
+  - name: Source code
+    link: https://github.com/Chan4077/ngx-ytd-api
+- name: ngx-simple-http
+  description: A wrapper of the HttpClient class provided by @angular/common/http which is simplified for easy use. Internally used by the ngx-ytd-api library.
+  labels:
+  - Angular
+  - Library
+  - Angular Library
+  - HttpClient
+  - ngx-ytd-api
+  categories:
+  - Library
+  links:
+  - name: Source code
+    link: https://github.com/Chan4077/ngx-simple-http
