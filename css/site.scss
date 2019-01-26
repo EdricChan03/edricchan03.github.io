@@ -54,23 +54,21 @@ code, kbd, samp, pre, var {
   }
 }
 
-.post-card, .project-card {
-  img.post-card__media, img.project-card__media {
+.card {
+  img.card__media {
     width: 100%;
   }
-  .post-card__primary, .project-card__primary {
+  .card__primary {
     padding: 1rem;
   }
-  .post-card__secondary, .project-card__secondary {
+  .card__secondary {
     padding: 0 1rem 8px;
   }
-  .post-card__title, .post-card__subtitle,
-  .project-card__title, .project-card__subtitle {
+  .card__title, .card__subtitle, .card__overline {
     margin: 0;
   }
   
-  .post-card__secondary, .post-card__subtitle,
-  .project-card__secondary, .project-card__subtitle {
+  .card__secondary, .card__subtitle {
     color: var(--mdc-theme-text-secondary-on-background, rgba(0,0,0,.54));
   }
 }
