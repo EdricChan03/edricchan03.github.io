@@ -9,6 +9,18 @@
           <img class="mdc-card__media mdc-card__media--16-9 card__media" src="{{post.hero_img | prepend: site.baseurl}}">
           {%- endif -%}
           <div class="card__primary">
+            {%- if post.categories -%}
+            <h5 class="card__overline mdc-typography--overline">
+              {%- for category in post.categories -%}
+              {%- if category != "blog" -%}
+              {{ category }}
+              {%- if forloop.last == false -%}
+              ,&nbsp;
+              {%- endif -%}
+              {%- endif -%}
+              {%- endfor -%}
+            </h5>
+            {%- endif -%}
             <h2 class="card__title mdc-typography--headline6">{{post.title}}</h2>
             {%- if author -%}
             <h3 class="card__subtitle mdc-typography--subtitle2">by {{author.name}}</h3>
