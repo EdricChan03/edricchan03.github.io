@@ -1,0 +1,41 @@
+---
+layout: page
+title: Blog Authors
+description: A list of all authors of the blog
+---
+
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    {%- if site.data.authors -%}
+    {%- for dataAuthor in site.data.authors -%}
+    {%- assign author = dataAuthor[1] -%}
+    <script>
+      console.log('{{author | jsonify}}');
+      console.log('{{author | json}}');
+    </script>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+      <div class="mdc-card card">
+        <div class="card__primary">
+          <h2 class="card__title mdc-typography--headline6">About {{author.name}}</h2>
+        </div>
+        <div class="card__secondary">
+          <p>{{author.bio}}</p>
+        </div>
+        {%- if author.email -%}
+        <div class="mdc-card__actions">
+          <div class="mdc-card__action-buttons">
+            <a class="mdc-button mdc-card__action mdc-card__action--button" href="mailto:{{author.email}}"
+              data-mdc-auto-init="MDCRipple">
+              <i class="material-icons mdc-button__icon" aria-hidden="true">email</i>
+              <span class="mdc-button__label">Email author</span>
+            </a>
+          </div>
+        </div>
+        {%- endif -%}
+        </a>
+      </div>
+    </div>
+    {%- endfor -%}
+    {%- endif -%}
+  </div>
+</div>
