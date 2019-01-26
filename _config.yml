@@ -17,6 +17,8 @@ defaults:
       excerpt_separator: "<!-- End of excerpt -->"
       # Custom Jekyll config to enable comments on all blog post pages
       comments: true
+      # The default author of a post if unset
+      author: edric_chan
 pagination:
   enabled: true
   per_page: 3

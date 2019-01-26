@@ -1,6 +1,7 @@
 <div class="mdc-layout-grid">
   <div class="mdc-layout-grid__inner">
     {%- for post in paginator.posts -%}
+    {%- assign author = site.data.authors[post.author] -%}
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
       <div class="mdc-card card">
         <a class="mdc-card__primary-action" data-mdc-auto-init="MDCRipple" href="{{ post.url | prepend: site.baseurl }}">
@@ -9,10 +10,11 @@
           {%- endif -%}
           <div class="card__primary">
             <h2 class="card__title mdc-typography--headline6">{{post.title}}</h2>
-            {%- if post.author -%}
-            <h3 class="card__subtitle mdc-typography--subtitle2">by {{post.author}}</h3>
-            {%- elsif post.date -%}
-            <h3 class="post-card__subtitle mdc-typography--subtitle2">{{post.date | date_to_string}}</h3>
+            {%- if author -%}
+            <h3 class="card__subtitle mdc-typography--subtitle2">by {{author.name}}</h3>
+            {%- endif -%}
+            {%- if post.date -%}
+            <h3 class="card__subtitle mdc-typography--subtitle2">{{post.date | date_to_string}}</h3>
             {%- endif -%}
           </div>
           {%- if post.excerpt -%}
