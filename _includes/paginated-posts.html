@@ -31,18 +31,18 @@
           </div>
           {%- if post.excerpt -%}
           <div class="card__secondary">
-            {{post.excerpt}}
-            <div class="mdc-chip-set">
-              {%- for tag in post.tags -%}
-              <a class="mdc-chip" tabindex="0" href="/blog/tagged/{{tag}}" data-mdc-auto-init="MDCRipple">
-                <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">label</i>
-                <div class="mdc-chip__text">{{tag}}</div>
-              </a>
-              {%- endfor -%}
-            </div>
+            {{post.excerpt | strip_html}}
           </div>
           {%- endif -%}
         </a>
+        <div class="mdc-chip-set">
+          {%- for tag in post.tags -%}
+          <a class="mdc-chip" tabindex="0" href="/blog/tagged/{{tag}}" data-mdc-auto-init="MDCRipple">
+            <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">label</i>
+            <div class="mdc-chip__text">{{tag}}</div>
+          </a>
+          {%- endfor -%}
+        </div>
         <div class="mdc-card__actions">
           <div class="mdc-card__action-buttons">
             <a class="mdc-button mdc-card__action mdc-card__action--button" href="{{ post.url | prepend: site.baseurl }}"
