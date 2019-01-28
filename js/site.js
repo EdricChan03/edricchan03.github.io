@@ -42,6 +42,20 @@ if (path === '/about') {
   document.getElementById('about-list-item').classList.toggle(activeListItemClass);
 } else if (path.indexOf('/blog/') > -1) {
   document.getElementById('blog-list-item').classList.toggle(activeListItemClass);
+  if (path === '/blog/authors') {
+    document.querySelectorAll('.follow-author-menu')
+      .forEach((element) => {
+        var menu = mdc.menu.MDCMenu.attachTo(element);
+        var menuButton = element.parentElement.children[0];
+        if (menuButton.nodeName !== 'BUTTON') {
+          console.error('The first child element of the follow author menu should be a button.');
+        } else {
+          menuButton.addEventListener('click', (event) => {
+            menu.open = !menu.open;
+          })
+        }
+      })
+  }
 } else if (path === '/') {
   document.getElementById('home-list-item').classList.toggle(activeListItemClass);
 } else if (path === '/projects') {
