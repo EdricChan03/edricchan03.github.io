@@ -7,6 +7,7 @@ tags:
 categories:
   - "programming"
 hero_img: /assets/code-snippet-of-the-week/header.png
+author: edric_chan
 ---
 
 <a name="top"></a>

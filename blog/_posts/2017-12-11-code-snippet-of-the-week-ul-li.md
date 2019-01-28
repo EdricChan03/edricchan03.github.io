@@ -7,6 +7,7 @@ tags:
 categories:
   - "programming"
 hero_img: /assets/code-snippet-of-the-week/header.png
+author: edric_chan
 ---
 
 _Note: This blog post originally appeared on my [blog](https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html)._
