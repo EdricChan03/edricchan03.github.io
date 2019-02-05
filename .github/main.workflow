@@ -1,10 +1,14 @@
 workflow "Build and deploy to GitHub Pages on push" {
   on = "push"
-  resolves = ["Build & Deploy to GitHub Pages"]
+  resolves = [
+    "Build & Deploy to GitHub Pages",
+    "Only allow website-v2 branch",
+  ]
 }
 
 action "Install dependencies" {
-  uses = "actions/npm@e7aaefed7c9f2e83d493ff810f17fa5ccd7ed437"
+  needs = ["Only allow website-v2 branch"]
+  uses = "actions/npm@master"
   args = "install --unsafe-perm"
 }
 
@@ -20,4 +24,9 @@ action "Build & Deploy to GitHub Pages" {
     GIT_FORCE = "false"
     OVERRIDE_GH_PAGES_BRANCH = "true"
   }
+}
+
+action "Only allow website-v2 branch" {
+  uses = "actions/bin/filter@master"
+  args = "branch website-v2"
 }
