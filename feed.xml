@@ -5,9 +5,65 @@
     <description>My personal Github pages website.</description>
     <link>https://chan4077.github.io/</link>
     <atom:link href="https://chan4077.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Feb 2019 15:01:28 +0000</pubDate>
-    <lastBuildDate>Tue, 26 Feb 2019 15:01:28 +0000</lastBuildDate>
+    <pubDate>Tue, 26 Feb 2019 15:24:01 +0000</pubDate>
+    <lastBuildDate>Tue, 26 Feb 2019 15:24:01 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Status Update | February</title>
+        <description>&lt;p&gt;This is a new form of blog post where I cover what I’ve done so far and plans for the following month. Expect to see this at the end of each month starting from February!&lt;/p&gt;
+
+&lt;!-- End of excerpt --&gt;
+
+&lt;h2 id=&quot;what-ive-done-in-february&quot;&gt;What I’ve done in February&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’ve enabled &lt;a href=&quot;https://dependabot.com&quot;&gt;Dependabot&lt;/a&gt; on most of my repositories. So far, it’s much better than my previous setup involving Greenkeeper (which does not automatically resolve merge conflicts/rebase with the current project’s files).&lt;/li&gt;
+  &lt;li&gt;I’ve created a few projects which include:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/Chan4077/actions&quot;&gt;Chan4077/actions&lt;/a&gt; - A list of GitHub Actions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I’ve continued work on &lt;a href=&quot;https://github.com/Chan4077/ngx-ytd-api&quot;&gt;Chan4077/ngx-ytd-api&lt;/a&gt; including restructuring the library by extracting the core functionality to a &lt;code class=&quot;highlighter-rouge&quot;&gt;common&lt;/code&gt; entry point, enabled &lt;a href=&quot;https://dependabot.com&quot;&gt;Dependabot&lt;/a&gt; and added initial schematics (which are currently not committed).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;plans-for-march&quot;&gt;Plans for March&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Release of &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.0-alpha.5&lt;/code&gt; for &lt;a href=&quot;https://github.com/Chan4077/ngx-ytd-api&quot;&gt;Chan4077/ngx-ytd-api&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Bump to beta&lt;/li&gt;
+      &lt;li&gt;Fix bugs&lt;/li&gt;
+      &lt;li&gt;Full schematic support&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Update my website
+    &lt;ul&gt;
+      &lt;li&gt;New blog posts&lt;/li&gt;
+      &lt;li&gt;Possible redesign of website&lt;/li&gt;
+      &lt;li&gt;Support dark mode&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;New release for &lt;a href=&quot;https://github.com/Chan4077/StudyBuddy&quot;&gt;Chan4077/StudyBuddy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Initial API for &lt;a href=&quot;https://github.com/Chan4077/StudyBuddy-web&quot;&gt;Chan4077/StudyBuddy-web&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Update the hosted website&lt;/li&gt;
+      &lt;li&gt;TravisCI integration for automatic deploying&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Take a short break from programming&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
+        <link>https://chan4077.github.io/blog/2019/02/24/status-update.html</link>
+        <guid isPermaLink="true">https://chan4077.github.io/blog/2019/02/24/status-update.html</guid>
+        
+        <category>status-update</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>TIL: StackOverflow supports backticks</title>
