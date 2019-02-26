@@ -29,7 +29,7 @@
             <h3 class="card__subtitle mdc-typography--subtitle2">{{post.date | date_to_string}}</h3>
             {%- endif -%}
           </div>
-          {%- if post.excerpt -%}
+          {%- if post.excerpt and post.show_excerpt -%}
           <div class="card__secondary">
             {{post.excerpt | strip_html}}
           </div>

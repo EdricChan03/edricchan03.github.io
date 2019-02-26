@@ -1,4 +1,4 @@
-exclude: ["README.md", "Gemfile", "Gemfile.lock", "package-lock.json", "package.json", "postinstall.sh"]
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'package-lock.json', 'package.json', 'postinstall.sh']
 markdown: kramdown
 title: Chan4077.GitHub.io
 url: https://chan4077.github.io
@@ -19,19 +19,22 @@ defaults:
       type: 'posts'
     values:
       layout: 'post'
+      show_excerpt: true
       excerpt_separator: '<!-- End of excerpt -->'
-  - 
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      excerpt_separator: "<!-- End of excerpt -->"
       # Custom Jekyll config to enable comments on all blog post pages
       comments: true
       # The default author of a post if unset
       author: edric_chan
+  -
+    scope:
+      path: 'til'
+      type: 'posts'
+    values:
+      # Whether to show an excerpt of the post
+      # Default: false (hides excerpt)
+      show_excerpt: false
 pagination:
+  # debug: true
   enabled: true
   per_page: 3
   permalink: '/page/:num/'
@@ -46,6 +49,8 @@ autopages:
     permalink: '/blog/tagged/:tag'
   categories:
     permalink: '/blog/category/:cat'
+  collection:
+    enabled: false
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate-v2
