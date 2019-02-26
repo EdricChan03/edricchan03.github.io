@@ -5,9 +5,96 @@
     <description>My personal Github pages website.</description>
     <link>https://chan4077.github.io/</link>
     <atom:link href="https://chan4077.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Feb 2019 14:56:30 +0000</pubDate>
-    <lastBuildDate>Wed, 20 Feb 2019 14:56:30 +0000</lastBuildDate>
+    <pubDate>Tue, 26 Feb 2019 14:57:12 +0000</pubDate>
+    <lastBuildDate>Tue, 26 Feb 2019 14:57:12 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>TIL: StackOverflow supports backticks</title>
+        <description>&lt;p&gt;Today I Learned that StackOverflow supports 3 backticks to create a code block, similar to a fenced code block in GitHub’s Flavoured Markdown.&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sb&quot;&gt;```html
+&amp;lt;h1&amp;gt;Header!&amp;lt;/h1&amp;gt;
+&amp;lt;p id=&quot;paragraph1&quot;&amp;gt;Hello, HTML code!&amp;lt;/p&amp;gt;
+```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And here’s the other form of syntax for a code block on StackOverflow:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- language: lang-html --&amp;gt;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;
+
+    &amp;lt;h1&amp;gt;Header!&amp;lt;/h1&amp;gt;
+    &amp;lt;p id=&quot;paragraph1&quot;&amp;gt;Hello, HTML code!&amp;lt;/p&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;EDIT: I also learnt that it is possible to have 3 backticks in a code block. (See the source for this post for more info)&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
+        <link>https://chan4077.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html</link>
+        <guid isPermaLink="true">https://chan4077.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html</guid>
+        
+        <category>stackoverflow</category>
+        
+        <category>markdown</category>
+        
+        
+        <category>til</category>
+        
+        <category>stackoverflow</category>
+        
+      </item>
+    
+      <item>
+        <title>TIL: The greedy algorithm</title>
+        <description>&lt;p&gt;Today I Learned about the &lt;a href=&quot;https://brilliant.org/wiki/greedy-algorithm/&quot;&gt;Greedy Algorithm&lt;/a&gt;, which can be used to calculate the minimum elements required from a list that will sum up to a number.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# An integer&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# A list of integers&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;V&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+Write a function to determine the minimum number of elements in list V that can be summed up to S
+&quot;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;minElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# V.sort()&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# Edge case where there can only be one element&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(Note that this is Python)&lt;/p&gt;
+
+&lt;p&gt;The code above will output &lt;code class=&quot;highlighter-rouge&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here’s a detailed explanation of how the code works:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First, the variables &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;V&lt;/code&gt; are passed in to the function which is called in the last line. (In this example, &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;V&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;[1,2,5]&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Next, the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; specified is checked if the number is &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;. This is an edge case as there can’t be any number of elements that can form &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;. (In this case, this zero check is skipped)&lt;/li&gt;
+  &lt;li&gt;Next, the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; specified is checked if&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+        <link>https://chan4077.github.io/til/algorithm/2019/01/31/greedy-algorithm.html</link>
+        <guid isPermaLink="true">https://chan4077.github.io/til/algorithm/2019/01/31/greedy-algorithm.html</guid>
+        
+        <category>python</category>
+        
+        <category>algorithm</category>
+        
+        
+        <category>til</category>
+        
+        <category>algorithm</category>
+        
+      </item>
     
       <item>
         <title>Code snippet of the week - code/pre elements</title>
