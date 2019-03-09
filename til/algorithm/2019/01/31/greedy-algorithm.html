@@ -25,7 +25,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-31T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if","headline":"TIL: The greedy algorithm","dateModified":"2019-01-31T00:00:00+00:00","datePublished":"2019-01-31T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://chan4077.github.io/til/algorithm/2019/01/31/greedy-algorithm.html"},"url":"https://chan4077.github.io/til/algorithm/2019/01/31/greedy-algorithm.html","author":{"@type":"Person","name":"Edric Chan"},"@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://chan4077.github.io/til/algorithm/2019/01/31/greedy-algorithm.html"},"description":"Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if","@type":"BlogPosting","url":"https://chan4077.github.io/til/algorithm/2019/01/31/greedy-algorithm.html","headline":"TIL: The greedy algorithm","dateModified":"2019-01-31T00:00:00+00:00","datePublished":"2019-01-31T00:00:00+00:00","author":{"@type":"Person","name":"Edric Chan"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -152,4 +152,15 @@ Write a function to determine the minimum number of elements in list V that can 
     </main>
   </body><script src="/node_modules/material-components-web/dist/material-components-web.min.js"></script>
 <script src="/js/site.js"></script>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-82448435-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 </html>
