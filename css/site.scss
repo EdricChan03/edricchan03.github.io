@@ -32,7 +32,11 @@ body {
 }
 
 code, kbd, samp, pre, var {
-  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+}
+
+strong {
+  font-weight: 500;
 }
 
 .article {
@@ -98,3 +102,4 @@ code, kbd, samp, pre, var {
     padding-top: calc(5% + 56px);
   }
 }
+
