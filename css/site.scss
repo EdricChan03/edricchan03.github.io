@@ -37,22 +37,25 @@ code, kbd, samp, pre, var {
 
 .article {
   h1 {
-    @extend .mdc-typography--headline2;
-  }
-  h2 {
     @extend .mdc-typography--headline3;
   }
-  h3 {
+  h2 {
     @extend .mdc-typography--headline4;
   }
-  h4 {
+  h3 {
     @extend .mdc-typography--headline5;
   }
-  h5 {
+  h4 {
     @extend .mdc-typography--headline6;
   }
-  h6 {
+  h5 {
     @extend .mdc-typography--subtitle1;
+  }
+  h6 {
+    @extend .mdc-typography--subtitle2;
+  }
+  p, li {
+    @extend .mdc-typography--body1;
   }
 }
 
