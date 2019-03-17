@@ -4,7 +4,7 @@
  * See https://developers.google.com/web/tools/workbox/guides/generate-complete-sw#configure for more info
  */
 module.exports = {
-  "globDirectory": ".",
+  "globDirectory": "_site",
   "globPatterns": [
     "**/*.{html,png,css,ico,js}"
   ],
