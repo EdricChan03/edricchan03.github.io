@@ -6,10 +6,11 @@
   <meta name="theme-color" content="#3948ab">
   <meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" /><meta name="description" content="My personal Github pages website.">
   
-
+  
   <link rel="stylesheet" href="/css/site.css">
   <link rel="canonical" href="https://chan4077.github.io/blog/tagged/python/">
-  <link rel="alternate" type="application/rss+xml" title="Chan4077.GitHub.io" href="https://chan4077.github.io/feed.xml"><link href='https://fonts.googleapis.com/css?family=Material+Icons|Roboto+Condensed:400,300,700|Roboto:300,400,500|Roboto+Mono:300'
+  <link rel="alternate" type="application/rss+xml" title="Chan4077.GitHub.io" href="https://chan4077.github.io/feed.xml">
+  <link rel="manifest" href="/manifest.json"><link href='https://fonts.googleapis.com/css?family=Material+Icons|Roboto+Condensed:400,300,700|Roboto:300,400,500|Roboto+Mono:300'
     rel='stylesheet' type='text/css' />
   <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Posts tagged with python | Chan4077.GitHub.io</title>
@@ -131,4 +132,15 @@
   ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
+<!-- Workbox initialisation -->
+<script>
+  // Check that service workers are registered
+  if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+</script>
+<!-- End Workbox initialisation -->
 </html>
