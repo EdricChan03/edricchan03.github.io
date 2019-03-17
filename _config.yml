@@ -1,4 +1,4 @@
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'package-lock.json', 'package.json', 'postinstall.sh']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'package-lock.json', 'package.json', 'postinstall.sh', 'workbox-config.js', 'art/']
 markdown: kramdown
 title: Chan4077.GitHub.io
 url: https://chan4077.github.io

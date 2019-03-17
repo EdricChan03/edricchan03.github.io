@@ -4,14 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#3948ab">
   <meta name="google-site-verification" content="vUIz5bcO8VS4oqWX-A9VBtLKrqwl5ZrnbuUw4serhEU" />
-
+  
   {%- if page.description or page.excerpt or site.description -%}
   <meta name="description" content="{%- if page.description -%}{{- page.description -}}{%- else -%}{%- if page.excerpt -%}{{- page.excerpt | strip_html | strip_newlines | truncate: 160 -}}{%- else -%}{{- site.description -}}{%- endif -%}{%- endif -%}">
   {% endif %}
-
+  
   <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="manifest" href="/manifest.json">
 
   {%- if paginator.page > 1 -%}
   <meta name="robots" content="noindex">
