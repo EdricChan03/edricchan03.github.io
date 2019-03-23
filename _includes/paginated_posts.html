@@ -38,7 +38,7 @@
         <div class="mdc-chip-set">
           {%- for tag in post.tags -%}
           <a class="mdc-chip" tabindex="0" href="/blog/tagged/{{tag}}" data-mdc-auto-init="MDCRipple">
-            <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">label</i>
+            <span class="material-icons mdc-chip__icon mdc-chip__icon--leading">label</span>
             <div class="mdc-chip__text">{{tag}}</div>
           </a>
           {%- endfor -%}
