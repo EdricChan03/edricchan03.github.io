@@ -60,6 +60,8 @@ if (path === '/about') {
   document.getElementById('home-list-item').classList.toggle(activeListItemClass);
 } else if (path === '/projects') {
   document.getElementById('projects-list-item').classList.toggle(activeListItemClass);
-} else  if (path.indexOf('/til/') > -1) {
+} else if (path === '/privacy-policy') {
+  document.getElementById('privacy-policy-list-item').classList.toggle(activeListItemClass);
+} else if (path.indexOf('/til/') > -1) {
   document.getElementById('til-list-item').classList.toggle(activeListItemClass);
 }
