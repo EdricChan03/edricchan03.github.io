@@ -30,7 +30,7 @@ description: A list of all authors of the blog
           <div class="mdc-card__action-buttons">
             <a class="mdc-button mdc-card__action mdc-card__action--button" href="mailto:{{author.email}}"
               data-mdc-auto-init="MDCRipple">
-              <span class="material-icons mdc-button__icon" aria-hidden="true">email</span>
+              <span class="material-icons-outlined mdc-button__icon" aria-hidden="true">email</span>
               <span class="mdc-button__label">Email author</span>
             </a>
           </div>
@@ -38,7 +38,7 @@ description: A list of all authors of the blog
           {%- if author.social -%}
           <div class="mdc-card__action-icons">
             <div class="mdc-menu-surface--anchor">
-              <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Follow author on&hellip;">person_add</button>
+              <button class="material-icons-outlined mdc-icon-button mdc-card__action mdc-card__action--icon" title="Follow author on&hellip;">person_add</button>
               <div class="mdc-menu mdc-menu-surface follow-author-menu">
                 <div class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
                   {%- for link in author.social -%}

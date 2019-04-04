@@ -38,7 +38,7 @@
         <div class="mdc-chip-set">
           {%- for tag in post.tags -%}
           <a class="mdc-chip" tabindex="0" href="/blog/tagged/{{tag}}" data-mdc-auto-init="MDCRipple">
-            <span class="material-icons mdc-chip__icon mdc-chip__icon--leading">label</span>
+            <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
             <div class="mdc-chip__text">{{tag}}</div>
           </a>
           {%- endfor -%}
@@ -60,9 +60,9 @@
 <!-- Pagination links -->
 <div class="pagination mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
   {%- if paginator.previous_page -%}
-  <a href="{{ paginator.previous_page_path }}" class="mdc-icon-button material-icons">navigate_before</a>
+  <a href="{{ paginator.previous_page_path }}" class="mdc-icon-button material-icons-outlined">navigate_before</a>
   {%- else -%}
-  <button class="mdc-icon-button material-icons" disabled>navigate_before</button>
+  <button class="mdc-icon-button material-icons-outlined" disabled>navigate_before</button>
   {%- endif -%}
   {%- for pageNum in (1..paginator.total_pages) -%}
   {%- if paginator.page == pageNum -%}
@@ -72,8 +72,8 @@
   {%- endif -%}
   {%- endfor -%}
   {%- if paginator.next_page -%}
-  <a href="{{ paginator.next_page_path }}" class="mdc-icon-button material-icons">navigate_next</a>
+  <a href="{{ paginator.next_page_path }}" class="mdc-icon-button material-icons-outlined">navigate_next</a>
   {%- else -%}
-  <button class="mdc-icon-button material-icons" disabled>navigate_next</button>
+  <button class="mdc-icon-button material-icons-outlined" disabled>navigate_next</button>
   {%- endif -%}
 </div>
