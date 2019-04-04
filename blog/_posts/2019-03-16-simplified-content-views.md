@@ -1,5 +1,5 @@
 ---
-title: Inflating layouts with the ContentView annotation
+title: "[Update: New syntax] Inflating layouts with the ContentView annotation"
 tags:
 - kotlin
 - androidx
@@ -15,6 +15,62 @@ In this post, I'll be covering how to simplify inflating layouts in your fragmen
 <!-- End of excerpt -->
 
 _Note: The `ContentView` annotation was introduced in version `1.1.0-alpha01` of the `androidx.annotation:annotation` library. See the [release notes](https://developer.android.com/jetpack/androidx/releases/annotation#1.1.0-alpha01) for more info._
+
+## Update (4/4/2019)
+
+The `ContentView` annotation is now to be used as a constructor of `AppCompatActivity` or a `Fragment`. The former implementation has been removed in [`1.0.0-alpha06`](https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha06) of the `androidx.activity:activity` dependency and in [`1.1.0-alpha05`](https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha06) of the `androidx.fragment:fragment` dependency.
+
+Instead, use the following syntax:
+
+### Java (Fragment)
+
+```java
+import androidx.fragment.app.Fragment;
+// ...
+
+public class HomeFragment extends Fragment {
+  // ...
+  public HomeFragment() {
+    // Pass the layout resource ID to the super constructor
+    super(R.layout.frag_home);
+  }
+}
+```
+
+### Kotlin (Fragment)
+
+```kotlin
+import androidx.fragment.app.Fragment
+// ...
+
+class HomeFragment: Fragment(R.layout.frag_home) {
+  // ...
+}
+```
+
+### Java (Activity)
+
+```java
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+  // ...
+  public MainActivity() {
+    // Pass the layout resource ID to the super constructor
+    super(R.layout.activity_main);
+  }
+}
+```
+
+### Kotlin (Activity)
+
+```kotlin
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
+  // ...
+}
+```
 
 ---
 
@@ -74,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
 
 ```kotlin
 import android.os.Bundle
-import androidx.appcompat.AppCompatActivity;
+import androidx.appcompat.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -127,14 +183,16 @@ public class MainActivity extends AppCompatActivity {
 ### Kotlin (Activity)
 
 ```kotlin
-import androidx.annotation.ContentView;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.ContentView
+import androidx.appcompat.app.AppCompatActivity
 
 @ContentView(R.layout.activity_main)
 class MainActivity : AppCompatActivity() {
   // ...
 }
 ```
+
+---
 
 ## Notes
 
