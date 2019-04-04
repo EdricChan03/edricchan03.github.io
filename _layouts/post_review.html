@@ -1,0 +1,26 @@
+---
+layout: post
+---
+
+<div class="mdc-list-group">
+  {%- if page.review_type == 'game' -%}
+  {%- include post_review_game_metadata.html -%}
+  {%- endif -%}
+  {%- if page.links -%}
+  <h3 class="mdc-list-group__subheader">Links</h3>
+  <div class="mdc-list mdc-list--two-line">
+    {%- for link in page.links -%}
+    <a class="mdc-list-item" href="{{ link.url }}" data-mdc-auto-init="MDCRipple">
+      <span class="material-icons-outlined mdc-list-item__graphic"
+        aria-hidden="true">{%- if link.icon -%}{{ link.icon }}{%- else -%}link{%- endif -%}</span>
+      <span class="mdc-list-item__text">
+        <span class="mdc-list-item__primary-text">{{ link.title }}</span>
+        <span class="mdc-list-item__secondary-text">{{ link.description }}</span>
+      </span>
+      <span class="material-icons-outlined mdc-list-item__meta" aria-hidden="true">open_in_new</span>
+    </a>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+</div>
+{{ content }}
