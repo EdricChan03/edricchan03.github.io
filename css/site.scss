@@ -40,26 +40,27 @@ strong {
   font-weight: 500;
 }
 
-.article {
-  h1 {
+// Does not override any elements with any existing classes
+.article, .page, .post {
+  h1:not([class]) {
     @extend .mdc-typography--headline3;
   }
-  h2 {
+  h2:not([class]) {
     @extend .mdc-typography--headline4;
   }
-  h3 {
+  h3:not([class]) {
     @extend .mdc-typography--headline5;
   }
-  h4 {
+  h4:not([class]) {
     @extend .mdc-typography--headline6;
   }
-  h5 {
+  h5:not([class]) {
     @extend .mdc-typography--subtitle1;
   }
-  h6 {
+  h6:not([class]) {
     @extend .mdc-typography--subtitle2;
   }
-  p, li {
+  p:not([class]), li:not([class]) {
     @extend .mdc-typography--body1;
   }
 }
