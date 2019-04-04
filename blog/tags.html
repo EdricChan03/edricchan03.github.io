@@ -17,7 +17,7 @@ to the `site_tags` variable. -->
   {%- for item in (0..site.tags.size) -%}{%- unless forloop.last -%}
   {%- capture this_word -%}{{ tag_words[item] }}{%- endcapture -%}
   <a class="mdc-chip" tabindex="0" href="#{{ this_word | cgi_escape }}" data-mdc-auto-init="MDCRipple">
-    <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">label</i>
+    <span class="material-icons mdc-chip__icon mdc-chip__icon--leading">label</span>
     <div class="mdc-chip__text">
       {{ this_word }}
       <span>({{ site.tags[this_word].size }})</span>
