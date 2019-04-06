@@ -1,3 +1,15 @@
+- name: Computing Performance Task 2k18
+  description: "A student grouper for my Applied Subject's Performance Task. Based on an idea from the teachers."
+  labels:
+  - Python
+  - Computing
+  - Applied Subject
+  - Excel
+  categories:
+  - Application
+  links:
+  - name: Source code
+    link: https://github.com/Chan4077/computing-pt
 - name: StudyBuddy for Android
   description: An app that helps you in your studies and includes useful functions such as a task manager and the ability to have chat study groups. This is the Android version.
   labels:
