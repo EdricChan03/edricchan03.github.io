@@ -2,37 +2,56 @@
 layout: page
 title: List of projects
 ---
+
 <div class="mdc-layout-grid__inner">
   {%- for project in site.data.projects -%}
   <div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4" id="StudyBuddy-android">
     <!-- <img class="mdc-card__media mdc-card__media--16-9 card__media" src=""> -->
+    {%- if project.categories or project.name or project.version or
+    project.status -%}
     <div class="card__primary">
       <h5 class="card__overline mdc-typography--overline">
         {%- for category in project.categories -%}
         {{ category }}
-        {%- if forloop.last == false -%}
-        ,&nbsp;
-        {%- endif -%}
-        {%- endfor -%}
+        {%- if forloop.last == false -%} ,&nbsp; {%- endif -%} {%- endfor -%}
       </h5>
-      <h2 class="card__title mdc-typography--headline6">{{project.name}}</h2>
+      <h2 class="card__title mdc-typography--headline6">{{ project.name }}</h2>
       {%- if project.version -%}
-      <h3 class="card__subtitle mdc-typography--subtitle2">Version: <code>{{project.version}}</code></h3>
+      <h3 class="card__subtitle mdc-typography--subtitle2">
+        Version: <code>{{ project.version }}</code>
+      </h3>
+      {%- endif -%}
+      {%- if project.status -%}
+      <h3 class="card__subtitle mdc-typography--subtitle2">
+        Status: {{ project.status }}
+      </h3>
       {%- endif -%}
     </div>
-    {%- if project.description -%}
+    {%- endif -%}
+    {%- if project.description or project.tags -%}
     <div class="card__secondary">
-      <p>{{project.description}}</p>
+      {%- if project.description -%}
+      <p>{{ project.description }}</p>
+      {%- endif -%}
+      {%- if project.tags -%}
+      <div class="mdc-chip-set">
+        {%- for tag in project.tags -%}
+        <span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
+          <div class="mdc-chip__text">{{ tag }}</div>
+        </span>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
     </div>
     {%- endif -%}
-    </a>
     {%- if project.links -%}
     <div class="mdc-card__actions">
       <div class="mdc-card__action-buttons">
         {%- for link in project.links -%}
-        <a class="mdc-button mdc-card__action mdc-card__action--button" href="{{link.link}}"
+        <a class="mdc-button mdc-card__action mdc-card__action--button" href="{{ link.link }}"
           data-mdc-auto-init="MDCRipple">
-          <span class="mdc-button__label">{{link.name}}</span>
+          <span class="mdc-button__label">{{ link.name }}</span>
         </a>
         {%- endfor -%}
       </div>

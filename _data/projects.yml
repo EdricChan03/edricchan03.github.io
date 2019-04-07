@@ -1,5 +1,5 @@
-- name: Computing Performance Task 2k18
-  description: "A student grouper for my Applied Subject's Performance Task. Based on an idea from the teachers."
+- name: Computing Performance Task 2018
+  description: "A student grouper for my Applied Subject's Performance Task. Based on an idea from my teachers."
   labels:
   - Python
   - Computing
@@ -7,6 +7,7 @@
   - Excel
   categories:
   - Application
+  status: done
   links:
   - name: Source code
     link: https://github.com/Chan4077/computing-pt
@@ -19,6 +20,7 @@
   - StudyBuddy
   categories:
   - Application
+  status: in development
   links:
   - name: Source code
     link: https://github.com/Chan4077/StudyBuddy
@@ -32,6 +34,7 @@
   - StudyBuddy
   categories:
   - Application
+  status: in development
   links:
   - name: Website
     link: https://studybuddy-e5f46.firebaseapp.com
@@ -45,6 +48,7 @@
   - RSS Reader
   categories:
   - Application
+  status: deprecated
   links:
   - name: Website
     link: https://chan4077.github.io/rss-reader
@@ -60,6 +64,7 @@
   - API
   categories:
   - Library
+  status: in development
   links:
   - name: Website
     link: https://ngx-ytd-api.firebaseapp.com/master
@@ -75,6 +80,7 @@
   - ngx-ytd-api
   categories:
   - Library
+  status: in development
   links:
   - name: Source code
     link: https://github.com/Chan4077/ngx-simple-http

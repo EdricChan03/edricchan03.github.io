@@ -163,7 +163,7 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/tags.html",
-    "revision": "554f84df4be330ac7d0a6556ab015d3a"
+    "revision": "9c5d35914bfad8424d11d88b456a8577"
   },
   {
     "url": "collection/posts/index.html",
@@ -1611,7 +1611,7 @@ self.__precacheManifest = [
   },
   {
     "url": "projects.html",
-    "revision": "acf8032fc64343247258cbe1be45e965"
+    "revision": "64fa09a8ac1d687323c037c1bd452a4d"
   },
   {
     "url": "til/algorithm/2019/01/31/greedy-algorithm.html",
