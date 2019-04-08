@@ -1,5 +1,9 @@
 ---
 layout: default
+toolbar_buttons:
+- icon: share
+  id: share-button
+  title: "Share&hellip;"
 ---
 <div class="mdc-layout-grid">
   <div class="mdc-layout-grid__inner">
@@ -13,12 +17,12 @@ layout: default
       /**
       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-      
+
       var disqus_config = function () {
-      this.page.url = '{{ page.url | prepend: site.url }}';  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = '{{ page.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = '{{ page.url | prepend: site.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '{{ page.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
-     
+
       (function () { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://chan4077-github-io.disqus.com/embed.js';
@@ -29,5 +33,55 @@ layout: default
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
         Disqus.</a></noscript>
     {%- endif -%}
+  </div>
+</div>
+<div class="mdc-dialog" role="alertdialog" aria-modal="true" aria-labelledby="share-dialog-title"
+  aria-describedby="share-dialog-content" id="share-dialog">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface">
+      <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+      <h2 class="mdc-dialog__title" id="share-dialog-title">
+        <!--
+     -->Share "{{page.title}}"
+        <!--
+   -->
+      </h2>
+      <div class="mdc-dialog__content" id="share-dialog-content">
+        <div class="mdc-text-field" id="share-dialog-text-field">
+          <input type="text" id="share-dialog-text-field-input" class="mdc-text-field__input"
+            value="{{site.url}}{{page.url}}" readonly>
+          <label class="mdc-floating-label" for="my-text-field">URL</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+      </div>
+      <footer class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-dialog__button" id="share-dialog-copy-link-button">
+          <span class="mdc-button__label">Copy link</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
+<div class="mdc-snackbar" id="share-dialog-success-snackbar">
+  <div class="mdc-snackbar__surface">
+    <div class="mdc-snackbar__label" role="status" aria-live="polite">
+      Successfully copied to the clipboard!
+    </div>
+    <div class="mdc-snackbar__actions">
+      <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined" title="Dismiss"
+        data-mdc-auto-init="MDCRipple">close</button>
+    </div>
+  </div>
+</div>
+<div class="mdc-snackbar" id="share-dialog-failure-snackbar">
+  <div class="mdc-snackbar__surface">
+    <div class="mdc-snackbar__label" role="status" aria-live="polite">
+      An error occurred while attempting to copy to the clipboard
+    </div>
+    <div class="mdc-snackbar__actions">
+      <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined" title="Dismiss"
+        data-mdc-auto-init="MDCRipple">close</button>
+    </div>
   </div>
 </div>

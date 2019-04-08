@@ -15,7 +15,19 @@
       <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
       {%- endif -%}
       {%- else -%}
-      <button class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" id="button-{{ forloop.index }}">{{ button.icon }}</button>
+      <button class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" id="{%- if button.id -%}{{ button.id }}{%- else -%}button-{{ forloop.index }}{%- endif -%}">{{ button.icon }}</button>
+      {%- endif -%}
+      {%- endfor -%}
+      {%- elsif layout.toolbar_buttons -%}
+      {%- for button in layout.toolbar_buttons -%}
+      {%- if button.link -%}
+      {%- if button.is_site_link and button.is_site_link == true -%}
+      <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
+      {%- else -%}
+      <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
+      {%- endif -%}
+      {%- else -%}
+      <button class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" id="{%- if button.id -%}{{ button.id }}{%- else -%}button-{{ forloop.index }}{%- endif -%}">{{ button.icon }}</button>
       {%- endif -%}
       {%- endfor -%}
       {%- endif -%}

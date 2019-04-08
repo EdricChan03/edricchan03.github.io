@@ -10,6 +10,7 @@ $mdc-theme-error: #f44336;
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
 @import "@material/chips/mdc-chips";
+@import "@material/dialog/mdc-dialog";
 @import "@material/drawer/mdc-drawer";
 @import "@material/icon-button/mdc-icon-button";
 @import "@material/layout-grid/mdc-layout-grid";
@@ -18,6 +19,7 @@ $mdc-theme-error: #f44336;
 @import "@material/menu/mdc-menu";
 @import "@material/ripple/mdc-ripple";
 @import "@material/snackbar/mdc-snackbar";
+@import "@material/textfield/mdc-text-field";
 @import "@material/theme/mdc-theme";
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/typography/mdc-typography";
@@ -106,3 +108,6 @@ strong {
   }
 }
 
+#share-dialog-text-field {
+  width: 100%;
+}
