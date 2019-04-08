@@ -76,46 +76,6 @@ if (path === '/about') {
   document.getElementById('about-list-item').classList.toggle(activeListItemClass);
 } else if (path.indexOf('/blog/') > -1) {
   document.getElementById('blog-list-item').classList.toggle(activeListItemClass);
-  if (document.getElementById('share-dialog') && document.getElementById('share-button')) {
-    const shareDialog = mdc.dialog.MDCDialog.attachTo(document.getElementById('share-dialog'));
-    const shareDialogSuccessSnackbar = mdc.snackbar.MDCSnackbar.attachTo(document.getElementById('share-dialog-success-snackbar'));
-    const shareDialogFailureSnackbar = mdc.snackbar.MDCSnackbar.attachTo(document.getElementById('share-dialog-failure-snackbar'));
-  
-    document.getElementById('share-button').addEventListener('click', () => {
-      shareDialog.open();
-    })
-    if (document.querySelectorAll('.mdc-text-field')) {
-      document.querySelectorAll('.mdc-text-field').forEach((el) => {
-        mdc.textField.MDCTextField.attachTo(el);
-      })
-    }
-    document.getElementById('share-dialog-copy-link-button')
-      .addEventListener('click', () => {
-        const copyVal = copyText(window.location.href, document.getElementById('share-dialog-text-field-input').value);
-        Promise.resolve(copyVal).then((value) => {
-          if (typeof value === 'boolean') {
-            if (value === true) {
-              // Successfully copied to the clipboard!
-              console.log('Successfully copied to the clipboard!');
-              shareDialogSuccessSnackbar.open();
-            } else {
-              // Could not copy
-              console.error('An error occurred while attempting to copy to the clipboard');
-              shareDialogFailureSnackbar.open();
-            }
-          } else {
-            // Successfully copied to the clipboard!
-            console.log('Successfully copied to the clipboard!');
-            shareDialogSuccessSnackbar.open();
-          }
-        })
-        .catch((error) => {
-          // Could not copy
-          console.error('An error occurred while attempting to copy to the clipboard:', error);
-          shareDialogFailureSnackbar.open();
-        })
-      })
-  }
   if (path === '/blog/authors') {
     document.querySelectorAll('.follow-author-menu')
       .forEach((element) => {
@@ -138,4 +98,46 @@ if (path === '/about') {
   document.getElementById('privacy-policy-list-item').classList.toggle(activeListItemClass);
 } else if (path.indexOf('/til/') > -1) {
   document.getElementById('til-list-item').classList.toggle(activeListItemClass);
+}
+
+// Share functionality
+if (document.getElementById('share-dialog') && document.getElementById('share-button')) {
+  const shareDialog = mdc.dialog.MDCDialog.attachTo(document.getElementById('share-dialog'));
+  const shareDialogSuccessSnackbar = mdc.snackbar.MDCSnackbar.attachTo(document.getElementById('share-dialog-success-snackbar'));
+  const shareDialogFailureSnackbar = mdc.snackbar.MDCSnackbar.attachTo(document.getElementById('share-dialog-failure-snackbar'));
+
+  document.getElementById('share-button').addEventListener('click', () => {
+    shareDialog.open();
+  })
+  if (document.querySelectorAll('.mdc-text-field')) {
+    document.querySelectorAll('.mdc-text-field').forEach((el) => {
+      mdc.textField.MDCTextField.attachTo(el);
+    })
+  }
+  document.getElementById('share-dialog-copy-link-button')
+    .addEventListener('click', () => {
+      const copyVal = copyText(window.location.href, document.getElementById('share-dialog-text-field-input').value);
+      Promise.resolve(copyVal).then((value) => {
+        if (typeof value === 'boolean') {
+          if (value === true) {
+            // Successfully copied to the clipboard!
+            console.log('Successfully copied to the clipboard!');
+            shareDialogSuccessSnackbar.open();
+          } else {
+            // Could not copy
+            console.error('An error occurred while attempting to copy to the clipboard');
+            shareDialogFailureSnackbar.open();
+          }
+        } else {
+          // Successfully copied to the clipboard!
+          console.log('Successfully copied to the clipboard!');
+          shareDialogSuccessSnackbar.open();
+        }
+      })
+        .catch((error) => {
+          // Could not copy
+          console.error('An error occurred while attempting to copy to the clipboard:', error);
+          shareDialogFailureSnackbar.open();
+        })
+    })
 }
