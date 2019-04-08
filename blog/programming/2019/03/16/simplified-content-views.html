@@ -88,7 +88,7 @@
       <span class="mdc-top-app-bar__title">[Update: New syntax] Inflating layouts with the ContentView annotation</span>
     </section>
 
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar"><button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="Print this page" title="Print this page">print</button>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar"><button class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="Share&hellip;" title="Share&hellip;" id="share-button">share</button><button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="Print this page" title="Print this page">print</button>
     </section>
   </div>
 </header>
@@ -281,12 +281,12 @@
       /**
       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-      
+
       var disqus_config = function () {
-      this.page.url = 'https://chan4077.github.io/blog/programming/2019/03/16/simplified-content-views.html';  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = '/blog/programming/2019/03/16/simplified-content-views'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'https://chan4077.github.io/blog/programming/2019/03/16/simplified-content-views.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '/blog/programming/2019/03/16/simplified-content-views'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
-     
+
       (function () { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://chan4077-github-io.disqus.com/embed.js';
@@ -296,6 +296,56 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
         Disqus.</a></noscript></div>
+</div>
+<div class="mdc-dialog" role="alertdialog" aria-modal="true" aria-labelledby="share-dialog-title"
+  aria-describedby="share-dialog-content" id="share-dialog">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface">
+      <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+      <h2 class="mdc-dialog__title" id="share-dialog-title">
+        <!--
+     -->Share "[Update: New syntax] Inflating layouts with the ContentView annotation"
+        <!--
+   -->
+      </h2>
+      <div class="mdc-dialog__content" id="share-dialog-content">
+        <div class="mdc-text-field" id="share-dialog-text-field">
+          <input type="text" id="share-dialog-text-field-input" class="mdc-text-field__input"
+            value="https://chan4077.github.io/blog/programming/2019/03/16/simplified-content-views.html" readonly>
+          <label class="mdc-floating-label" for="my-text-field">URL</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+      </div>
+      <footer class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-dialog__button" id="share-dialog-copy-link-button">
+          <span class="mdc-button__label">Copy link</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
+<div class="mdc-snackbar" id="share-dialog-success-snackbar">
+  <div class="mdc-snackbar__surface">
+    <div class="mdc-snackbar__label" role="status" aria-live="polite">
+      Successfully copied to the clipboard!
+    </div>
+    <div class="mdc-snackbar__actions">
+      <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined" title="Dismiss"
+        data-mdc-auto-init="MDCRipple">close</button>
+    </div>
+  </div>
+</div>
+<div class="mdc-snackbar" id="share-dialog-failure-snackbar">
+  <div class="mdc-snackbar__surface">
+    <div class="mdc-snackbar__label" role="status" aria-live="polite">
+      An error occurred while attempting to copy to the clipboard
+    </div>
+    <div class="mdc-snackbar__actions">
+      <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined" title="Dismiss"
+        data-mdc-auto-init="MDCRipple">close</button>
+    </div>
+  </div>
 </div>
 
     </main><div class="mdc-snackbar" id="update-available-snackbar">
