@@ -78,6 +78,10 @@ self.__precacheManifest = [
     "revision": "3444228f5173ac425786b7d542562cd7"
   },
   {
+    "url": "blog/2019/04/21/easy-calculus-differentiation-integration.html",
+    "revision": "53f4c13f24f35e32c73fb72317a97c12"
+  },
+  {
     "url": "blog/authors.html",
     "revision": "5a1fe054a5943580feb1e3a84955b99b"
   },
@@ -87,7 +91,7 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/category/blog/index.html",
-    "revision": "8fefdcaa191043395009595bfeb5b264"
+    "revision": "f5e2c20ec178754e294da6d68484aaa3"
   },
   {
     "url": "blog/category/programming/index.html",
@@ -103,7 +107,7 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/index.html",
-    "revision": "1c3b8f8e927359bc13507eead175d018"
+    "revision": "4b2e1a88ac079f811a6f4addf184bf92"
   },
   {
     "url": "blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html",
@@ -134,12 +138,28 @@ self.__precacheManifest = [
     "revision": "a4c2ad5ce0e2d488c1334600ed163aef"
   },
   {
+    "url": "blog/tagged/calculator/index.html",
+    "revision": "c7a002bc5d9db5b4dd2d9f9b20a72410"
+  },
+  {
+    "url": "blog/tagged/calculus/index.html",
+    "revision": "96bda4c09d35a9df4d6d5a0dbbd48d64"
+  },
+  {
     "url": "blog/tagged/code-snippet-of-the-week/index.html",
     "revision": "7ca70dc8b715c61f76191e10fc449adb"
   },
   {
+    "url": "blog/tagged/differentiation/index.html",
+    "revision": "4bcda680f59582ef19dc2f63f8fc35ea"
+  },
+  {
     "url": "blog/tagged/html/index.html",
     "revision": "3a3bc3c14ec0706ab2adfa48f355a864"
+  },
+  {
+    "url": "blog/tagged/integration/index.html",
+    "revision": "d30f7fe2017db29bec505a4f5529702b"
   },
   {
     "url": "blog/tagged/kotlin/index.html",
@@ -162,8 +182,16 @@ self.__precacheManifest = [
     "revision": "986e4473ef368698b36a5038c73a5b05"
   },
   {
+    "url": "blog/tagged/tip-of-the-day/index.html",
+    "revision": "268a473c8434ef5fd0e40cc21d4653bc"
+  },
+  {
+    "url": "blog/tagged/tip/index.html",
+    "revision": "675e04153f474a99d558bb60b4606629"
+  },
+  {
     "url": "blog/tags.html",
-    "revision": "458ec2d4cc83aec704ea82c741c832f0"
+    "revision": "eb615e07c50c06ccc8f1853842a5f8e8"
   },
   {
     "url": "collection/posts/index.html",

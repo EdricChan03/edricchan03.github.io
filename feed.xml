@@ -5,9 +5,47 @@
     <description>My personal Github pages website.</description>
     <link>https://chan4077.github.io/</link>
     <atom:link href="https://chan4077.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Apr 2019 00:38:35 +0000</pubDate>
-    <lastBuildDate>Wed, 10 Apr 2019 00:38:35 +0000</lastBuildDate>
+    <pubDate>Tue, 23 Apr 2019 08:34:41 +0000</pubDate>
+    <lastBuildDate>Tue, 23 Apr 2019 08:34:41 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>TOTD: Solve differentiation/integration equations with this web calculator</title>
+        <description>&lt;p&gt;&lt;em&gt;NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I discovered the calculators when looking up for a solution to an integration question.&lt;/p&gt;
+
+&lt;p&gt;The calculators are made by David Scherfgen.&lt;/p&gt;
+
+&lt;!-- End of excerpt --&gt;
+
+&lt;p&gt;The calculators can be accessed by visiting the following URLS:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://derivative-calculator.net&quot;&gt;Deriative calculator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://integral-calculator.com&quot;&gt;Integral calculator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+        <link>https://chan4077.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html</link>
+        <guid isPermaLink="true">https://chan4077.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html</guid>
+        
+        <category>calculator</category>
+        
+        <category>calculus</category>
+        
+        <category>differentiation</category>
+        
+        <category>integration</category>
+        
+        <category>tip</category>
+        
+        <category>tip-of-the-day</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>[Update: New syntax] Inflating layouts with the ContentView annotation</title>
