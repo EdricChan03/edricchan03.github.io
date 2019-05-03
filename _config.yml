@@ -1,7 +1,7 @@
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'package-lock.json', 'package.json', 'postinstall.sh', 'workbox-config.js', 'art/', 'docs/']
 markdown: kramdown
-title: Chan4077.GitHub.io
-url: https://chan4077.github.io
+title: EdricChan03.GitHub.io
+url: https://edricchan03.github.io
 # Enable future posts
 future: true
 sass:
