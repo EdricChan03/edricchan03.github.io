@@ -9,11 +9,11 @@
   
   <link rel="stylesheet" href="/css/site.css">
   <link rel="canonical" href="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html">
-  <link rel="alternate" type="application/rss+xml" title="EdricChan03.GitHub.io" href="https://edricchan03.github.io/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Edric\'s website" href="https://edricchan03.github.io/feed.xml">
   <link rel="manifest" href="/manifest.json"><link href='https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Roboto+Condensed:400,300,700|Roboto:300,400,500|Roboto+Mono:300'
     rel='stylesheet' type='text/css' />
   <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>TIL: The greedy algorithm | EdricChan03.GitHub.io</title>
+<title>TIL: The greedy algorithm | Edric&#39;s website</title>
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="TIL: The greedy algorithm" />
 <meta name="author" content="Edric Chan" />
@@ -22,7 +22,7 @@
 <meta property="og:description" content="Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if" />
 <link rel="canonical" href="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html" />
 <meta property="og:url" content="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html" />
-<meta property="og:site_name" content="EdricChan03.GitHub.io" />
+<meta property="og:site_name" content="Edric&#39;s website" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-31T00:00:00+00:00" />
 <script type="application/ld+json">
