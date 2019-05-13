@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Chan4077/chan4077.github.io#readme",
   "dependencies": {
-    "material-components-web": "^2.1.1"
+    "material-components-web": "^2.2.0"
   }
 }
