@@ -5,7 +5,7 @@
 # ls -hAFl
 
 echo "Copying node_modules to _sass directory..."
-if [[ -z "$GITHUB_WORKSPACE" ]]; then
+if [[ -n "$GITHUB_WORKSPACE" ]]; then
   # Running in GitHub Action Docker container
   sudo cp -Rf node_modules _sass/
 else
