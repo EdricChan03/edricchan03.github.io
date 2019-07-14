@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "470c7be857410ee3086575073ca0619c"
+    "revision": "048e2043d1b67be0de8195f737a1b868"
   },
   {
     "url": "about.html",
-    "revision": "6d3e89bde5e49e4dbb7f90ebd7a0e317"
+    "revision": "83549dd760a37e25464d5f65513e105b"
   },
   {
     "url": "assets/code-snippet-of-the-week/header.png",
@@ -75,123 +75,135 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/2019/02/24/status-update.html",
-    "revision": "748e788ec2b3687aa74cb227cadd027d"
+    "revision": "6274c35c24daf885baedb5ad3919c6aa"
   },
   {
     "url": "blog/2019/04/21/easy-calculus-differentiation-integration.html",
-    "revision": "f2906f69e469fe96ba41fbe91c00e869"
+    "revision": "01f4c66226ffc631ca4b933bcd2f48b3"
   },
   {
     "url": "blog/authors.html",
-    "revision": "294b88b877bc08df2c8aa09ee44618ec"
+    "revision": "d42d8eea4b8b0f6ecd8a932626aee5fa"
   },
   {
     "url": "blog/category/algorithm/index.html",
-    "revision": "72c4538482dc084ac5d267bfae46db83"
+    "revision": "ec6fe0f6563fb5deb41e6d1df11b2477"
   },
   {
     "url": "blog/category/blog/index.html",
-    "revision": "9cedb3e7b294a2f80eac48d6a3f3bc24"
+    "revision": "dc5f951aeb0f72fa5fc83e99d4d67de1"
   },
   {
     "url": "blog/category/programming/index.html",
-    "revision": "caae62ff6f9724ead996bb2507d989bc"
+    "revision": "614fc49bd635dc1a42e43fc8fb85bc60"
   },
   {
     "url": "blog/category/stackoverflow/index.html",
-    "revision": "f61bd18d8ac6d3fce1250c4489465226"
+    "revision": "58994bbaa30c682069d587441d39bacf"
   },
   {
     "url": "blog/category/til/index.html",
-    "revision": "fda58bb632fd015f9b752c03386001cd"
+    "revision": "89365427f7f73fd32b2b7b303c7c20b5"
+  },
+  {
+    "url": "blog/category/website/index.html",
+    "revision": "9d99314121278b6726cb4884ad651582"
   },
   {
     "url": "blog/index.html",
-    "revision": "2b61b7ecff093e26a53a3b489d142a8e"
+    "revision": "f2ebfff2b9df82d90d4151b073ed2977"
   },
   {
     "url": "blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html",
-    "revision": "e2fcdd9b585d6dc327a3fd80f5786906"
+    "revision": "d820bd0e275d9ecf6bf96125370996d7"
   },
   {
     "url": "blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html",
-    "revision": "e016147d967c5bc428757fcae0ce2ce8"
+    "revision": "8572ff4c8371f54c98632e9ddffbb251"
   },
   {
     "url": "blog/programming/2019/03/16/simplified-content-views.html",
-    "revision": "c7f7b93fd5df3dc6f7c556184b050dc7"
+    "revision": "718e3f8052501df1abc3f722e500bcca"
   },
   {
     "url": "blog/tagged/algorithm/index.html",
-    "revision": "3e518fa003b3007d37981c359b61fb24"
+    "revision": "a39da14527de2fdce8e513e7ffe23534"
   },
   {
     "url": "blog/tagged/android/index.html",
-    "revision": "c134c28cfd2c49a746611b2d0eaebeb6"
+    "revision": "89f0867f3cd62aad8fe767bf0200d31d"
   },
   {
     "url": "blog/tagged/androidx/index.html",
-    "revision": "00033ad01038003f46065dd47325c6e7"
+    "revision": "7098f5c8c3fa8faeb436be61ddf2409c"
   },
   {
     "url": "blog/tagged/annotation/index.html",
-    "revision": "c7fae99bab06210adcfde56cd0f515a0"
+    "revision": "e25fbef6b60d288505899bb15cf4e714"
   },
   {
     "url": "blog/tagged/calculator/index.html",
-    "revision": "59aed31ca5b8f7732dc6aede998ec5e7"
+    "revision": "e5e7d945a72f878f004222eb2fb6ac54"
   },
   {
     "url": "blog/tagged/calculus/index.html",
-    "revision": "e7e0f9c1abb20590c9352280e6710919"
+    "revision": "4bd71109269cb000579e73d0eea81ab1"
   },
   {
     "url": "blog/tagged/code-snippet-of-the-week/index.html",
-    "revision": "5d9f2c106d77adc705b35d2053c6a4c7"
+    "revision": "a98f3f26317f9270ee7b76880fa8a662"
   },
   {
     "url": "blog/tagged/differentiation/index.html",
-    "revision": "28f65af88eb0a54f870cea4e2ea150a9"
+    "revision": "6c318c7cc08077c6acc01b8d814a244e"
   },
   {
     "url": "blog/tagged/html/index.html",
-    "revision": "21d5ebcef464b58dbc9fbd5a66857ac0"
+    "revision": "0d7886935fdcbb4ceaaa8c54679e7b35"
   },
   {
     "url": "blog/tagged/integration/index.html",
-    "revision": "2a1bc6c38ac3dad1b61cb595feb4cf3f"
+    "revision": "b8fbe8d1e5f78f8afb8e063353ef9164"
   },
   {
     "url": "blog/tagged/kotlin/index.html",
-    "revision": "52d7500af0166452411488af5f20c477"
+    "revision": "4c1e00c3140d7b34008903fbc19e4f69"
   },
   {
     "url": "blog/tagged/markdown/index.html",
-    "revision": "fdb18c6501a7b8aeca3804e6f098ca20"
+    "revision": "6459639c4b8436ef5a4067d1917ef193"
   },
   {
     "url": "blog/tagged/python/index.html",
-    "revision": "c12115897d83f5b2b13c2456a20ae2ec"
+    "revision": "c386ad129235cf57475c806fefb129a9"
   },
   {
     "url": "blog/tagged/stackoverflow/index.html",
-    "revision": "a7942b809b154922868de34b3fa20a65"
+    "revision": "b7e9203c90e604659c6e80410c035756"
   },
   {
     "url": "blog/tagged/status-update/index.html",
-    "revision": "9829111217414cc08aab6915932bce22"
+    "revision": "ade9f917edfa857c61d215af47ab283f"
   },
   {
     "url": "blog/tagged/tip-of-the-day/index.html",
-    "revision": "c79a8d1f6149ddda8cd947bad1bd8283"
+    "revision": "7219829af20f742b4adf4be5141689bb"
   },
   {
     "url": "blog/tagged/tip/index.html",
-    "revision": "5158a57b35dd9c1e18e53461979bed3b"
+    "revision": "740066721c2b96f7bc571990775f944e"
+  },
+  {
+    "url": "blog/tagged/updates/index.html",
+    "revision": "e16e4127af6974d2a2cb3e7379d27a26"
   },
   {
     "url": "blog/tags.html",
-    "revision": "72951741c019fff4c099700d72a01d3d"
+    "revision": "2d39c1dc366c2bfa2f33cbc9f5e3db44"
+  },
+  {
+    "url": "blog/website/2019/07/10/important-updates.html",
+    "revision": "476992ae7ec370364352985305a542af"
   },
   {
     "url": "collection/posts/index.html",
@@ -199,7 +211,7 @@ self.__precacheManifest = [
   },
   {
     "url": "css/site.css",
-    "revision": "0a511c4ba81c10d9cce57b2b069b4923"
+    "revision": "da581290dc1c22f649952bbb7e8ffa25"
   },
   {
     "url": "favicon.ico",
@@ -207,7 +219,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "455c3574d38cc6fbb31fa43b38564ea8"
+    "revision": "92f1a6302e426f4c94ec2030032501fb"
   },
   {
     "url": "js/site.js",
@@ -215,15 +227,15 @@ self.__precacheManifest = [
   },
   {
     "url": "mdc-test.html",
-    "revision": "4235a08d61236a293c26a436d45a5a40"
+    "revision": "bdff1f0f84cce53a1e222af411311342"
   },
   {
     "url": "node_modules/@material/animation/dist/mdc.animation.js",
-    "revision": "31e99e813e3db5ddf72d3a7eeda03599"
+    "revision": "7d9d684905304f057507c4fa1c07bcfe"
   },
   {
     "url": "node_modules/@material/animation/dist/mdc.animation.min.js",
-    "revision": "06b6bbaeadf923be50c89a1d76cc4daa"
+    "revision": "160218c23f7201038a6eb088c9ccf059"
   },
   {
     "url": "node_modules/@material/animation/index.js",
@@ -238,28 +250,32 @@ self.__precacheManifest = [
     "revision": "8524033f0513f847c8e2dfd104db89fa"
   },
   {
+    "url": "node_modules/@material/auto-init/constants.js",
+    "revision": "e1bd85f86919e1743a6c1fdef3b6c2ab"
+  },
+  {
     "url": "node_modules/@material/auto-init/dist/mdc.autoInit.js",
-    "revision": "57495d8df63fe9eede79f467be49e20a"
+    "revision": "d17e0ace200638fe91c7cfc41c7a27d8"
   },
   {
     "url": "node_modules/@material/auto-init/dist/mdc.autoInit.min.js",
-    "revision": "08a4dbeaec8d2e114caae49f283ed6b8"
+    "revision": "e56ae32e90adca07dee3203152fca0ca"
   },
   {
     "url": "node_modules/@material/auto-init/index.js",
-    "revision": "3b474e00a7f533999e6c918db02015de"
+    "revision": "0bc4ddeeedaa15cadfe1b7bd6d658d32"
   },
   {
     "url": "node_modules/@material/base/component.js",
-    "revision": "30e9dff5ff1b0b895f5fdff499eab071"
+    "revision": "ecd811c9edbe8943d4eefcff7ba6a56f"
   },
   {
     "url": "node_modules/@material/base/dist/mdc.base.js",
-    "revision": "f1b9b64597331d8b1f3ae9b14d80e2d2"
+    "revision": "03f2d7c97079f1bb50765e3941b422f7"
   },
   {
     "url": "node_modules/@material/base/dist/mdc.base.min.js",
-    "revision": "208c8f6370184dcd2d24588401fc6c7b"
+    "revision": "c230fe557a8e700638a4552807986379"
   },
   {
     "url": "node_modules/@material/base/externs.js",
@@ -279,19 +295,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/button/dist/mdc.button.css",
-    "revision": "ad166e132a4446d8f29d5a5df53a21eb"
+    "revision": "5ce876a763fa0ae4607dd86050d38972"
   },
   {
     "url": "node_modules/@material/button/dist/mdc.button.min.css",
-    "revision": "dbf76503d7fe912c87553dd6d8bc0123"
+    "revision": "861f4dd81d52d17e1f4104291b033b63"
   },
   {
     "url": "node_modules/@material/card/dist/mdc.card.css",
-    "revision": "d830f2f3fc3d73c52fc5bbd7d528a487"
+    "revision": "3ba692b528a78cd6325324d1cd598534"
   },
   {
     "url": "node_modules/@material/card/dist/mdc.card.min.css",
-    "revision": "54017e9516a39ac1e75361f929681c90"
+    "revision": "b32a533a1913b7555cd3e6c34b039eb3"
   },
   {
     "url": "node_modules/@material/checkbox/adapter.js",
@@ -299,27 +315,27 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/checkbox/component.js",
-    "revision": "0628876b37e6d9d82d42c8f3f69e869d"
+    "revision": "a4ada272e01fbcaa1d77b9a014fe83f9"
   },
   {
     "url": "node_modules/@material/checkbox/constants.js",
-    "revision": "2acb52e64eb779d62f0bb3d1f41511f9"
+    "revision": "89f0f44e54cf4f4f390987643600a24a"
   },
   {
     "url": "node_modules/@material/checkbox/dist/mdc.checkbox.css",
-    "revision": "c84c88efe6246065682b73ad1e71240a"
+    "revision": "9f7fbdb06798c33600dc4109e3510923"
   },
   {
     "url": "node_modules/@material/checkbox/dist/mdc.checkbox.js",
-    "revision": "e865cb86f216e9da96958bd02922607e"
+    "revision": "92f027dbe12c5e0d0045a7ebf08daab6"
   },
   {
     "url": "node_modules/@material/checkbox/dist/mdc.checkbox.min.css",
-    "revision": "e8053108a5206f9ba28b3ab2e3ae9383"
+    "revision": "ac30c0977d97e6398da0c74c3fe6b6b1"
   },
   {
     "url": "node_modules/@material/checkbox/dist/mdc.checkbox.min.js",
-    "revision": "680f005030c8e64c063b5faab533f28a"
+    "revision": "a65fdf76bc3ad3bbe94f94d3376b25a7"
   },
   {
     "url": "node_modules/@material/checkbox/foundation.js",
@@ -327,7 +343,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/checkbox/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/chips/chip-set/adapter.js",
@@ -347,7 +363,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/chips/chip-set/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "72d29b8858e323fbb415a0da61c6eb27"
   },
   {
     "url": "node_modules/@material/chips/chip/adapter.js",
@@ -355,19 +371,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/chips/chip/component.js",
-    "revision": "5dc29e1938de55f7ea83e0bbac2dd959"
+    "revision": "d5484d841ffddfe03f7e6c42017e4a30"
   },
   {
     "url": "node_modules/@material/chips/chip/constants.js",
-    "revision": "378cfc9f22dc30303936c68248b57111"
+    "revision": "6b65af71c9610f7d05d88619d747eb5e"
   },
   {
     "url": "node_modules/@material/chips/chip/foundation.js",
-    "revision": "62509e606301d41c1a7ae7e391524296"
+    "revision": "84c9435dd1babe659e793ac8c9f46f69"
   },
   {
     "url": "node_modules/@material/chips/chip/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "b57464dd8d5ddfab8f1af6c45140879a"
   },
   {
     "url": "node_modules/@material/chips/chip/types.js",
@@ -375,19 +391,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/chips/dist/mdc.chips.css",
-    "revision": "6ef24138966a9f22dedb54a6198cad3c"
+    "revision": "f181746978320b4133b88807b09b65f6"
   },
   {
     "url": "node_modules/@material/chips/dist/mdc.chips.js",
-    "revision": "45dbece8fb3900ba98148b33e891f56f"
+    "revision": "53dbef829f50f7eaf19af048f1edb444"
   },
   {
     "url": "node_modules/@material/chips/dist/mdc.chips.min.css",
-    "revision": "dfcf1e586fa2a754f0fbc074f66a6c92"
+    "revision": "a1ad6bb5473b3888563e240bb506e7e7"
   },
   {
     "url": "node_modules/@material/chips/dist/mdc.chips.min.js",
-    "revision": "8220a397cb9a97542d2223619cb12c6b"
+    "revision": "41ff2bf1bdf523a772f909cd8c2d5fd1"
   },
   {
     "url": "node_modules/@material/chips/index.js",
@@ -399,35 +415,35 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/dialog/component.js",
-    "revision": "25812da36e5cf69230cafbe2af2c278e"
+    "revision": "8632c48031cddb1fb3acf9f98a68d4ac"
   },
   {
     "url": "node_modules/@material/dialog/constants.js",
-    "revision": "9c4b14eea16868d07df8fd7a6515f276"
+    "revision": "ba02ad851da26acdb11b7cf02382bc8d"
   },
   {
     "url": "node_modules/@material/dialog/dist/mdc.dialog.css",
-    "revision": "758a3fe062a73a9112c35033334d6006"
+    "revision": "9cb42890d4009ef2b352089c8423e3b9"
   },
   {
     "url": "node_modules/@material/dialog/dist/mdc.dialog.js",
-    "revision": "9e96774ab47699744e6e314a669118ea"
+    "revision": "7040aa9faadddf24d4f0329dd0091e5f"
   },
   {
     "url": "node_modules/@material/dialog/dist/mdc.dialog.min.css",
-    "revision": "3367cd8f2eda3d63a4dba58ce557e4d7"
+    "revision": "6692d6408308d8f2a492d731983ea777"
   },
   {
     "url": "node_modules/@material/dialog/dist/mdc.dialog.min.js",
-    "revision": "2fe891694130cf84707d4f1a53bd71b2"
+    "revision": "107a65de42a144fb56fcf71a3fb98055"
   },
   {
     "url": "node_modules/@material/dialog/foundation.js",
-    "revision": "8598113f07a5f52078617d7e1bac9e22"
+    "revision": "44342fccb47f44773f247f1da4b398f4"
   },
   {
     "url": "node_modules/@material/dialog/index.js",
-    "revision": "616b325ae71cfef510d6440b1611992e"
+    "revision": "cc0bd27ad944c3a592e2dd8c80f6a007"
   },
   {
     "url": "node_modules/@material/dialog/types.js",
@@ -439,15 +455,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/dom/dist/mdc.dom.js",
-    "revision": "f7a7d92e06d5fe75bf97720c4ee23aed"
+    "revision": "77f5171e2cf1b679df503aa43953f0f9"
   },
   {
     "url": "node_modules/@material/dom/dist/mdc.dom.min.js",
-    "revision": "8f0e8f16bf3219d9448597f37fb75adf"
+    "revision": "945ded60e9b0a25a6dbf06300e9404c8"
+  },
+  {
+    "url": "node_modules/@material/dom/events.js",
+    "revision": "5180b28e3dfa1831dffcc11a178b18f5"
   },
   {
     "url": "node_modules/@material/dom/index.js",
-    "revision": "fba6c39ac149cf819485cb55b1f34584"
+    "revision": "9351ef0496ed83ab861c0cb7b4642cfa"
   },
   {
     "url": "node_modules/@material/dom/ponyfill.js",
@@ -475,19 +495,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/drawer/dist/mdc.drawer.js",
-    "revision": "82a9c6bc19d258185ade7566214bb8e3"
+    "revision": "31739c0ecd63d559ddffe54d0dcbdca1"
   },
   {
     "url": "node_modules/@material/drawer/dist/mdc.drawer.min.css",
-    "revision": "ac121a1bce607ff12e95bb770b41e62e"
+    "revision": "c633768d4bcb0110f85202f6454f729f"
   },
   {
     "url": "node_modules/@material/drawer/dist/mdc.drawer.min.js",
-    "revision": "2c138c2e5cdec4f0b0d4d2a8cc1b39d4"
+    "revision": "81d76281090c8fda89a050ee428980f0"
   },
   {
     "url": "node_modules/@material/drawer/index.js",
-    "revision": "bb7747b5cd716cbf438effca448ccc79"
+    "revision": "de033a4ac1500f012f5c9e7f39b8850d"
   },
   {
     "url": "node_modules/@material/drawer/modal/foundation.js",
@@ -499,19 +519,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/elevation/dist/mdc.elevation.css",
-    "revision": "954f18358759dd47204254f27af6e6e3"
+    "revision": "aee8c898bbf6b87a03cfc20ce83f8804"
   },
   {
     "url": "node_modules/@material/elevation/dist/mdc.elevation.min.css",
-    "revision": "21f49181542a4ddb3cb2c08233339729"
+    "revision": "79babdefbab5176299320c8728127979"
   },
   {
     "url": "node_modules/@material/fab/dist/mdc.fab.css",
-    "revision": "4313d297ac2ff13c83db1b8dddd4cb3c"
+    "revision": "7a498b63bb52108f5525c8dcf1771bd5"
   },
   {
     "url": "node_modules/@material/fab/dist/mdc.fab.min.css",
-    "revision": "964f699a7ba90fcc98f8a40d44531dc7"
+    "revision": "f684a26192e824f178c6a524952849c7"
   },
   {
     "url": "node_modules/@material/floating-label/adapter.js",
@@ -527,19 +547,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/floating-label/dist/mdc.floating-label.css",
-    "revision": "560a868475696dfcfc46cdfdde226654"
+    "revision": "5ae4f4494ae090191f488a8e99fafc72"
   },
   {
     "url": "node_modules/@material/floating-label/dist/mdc.floating-label.min.css",
-    "revision": "3198e35a114826626756b38d21dd3d91"
+    "revision": "f2ecebbe603e569574064513bc5c4359"
   },
   {
     "url": "node_modules/@material/floating-label/dist/mdc.floatingLabel.js",
-    "revision": "0a4f232167cd8b7251f24f4d0aa74142"
+    "revision": "8312efa6e2ae549b85dfe678d045fbcb"
   },
   {
     "url": "node_modules/@material/floating-label/dist/mdc.floatingLabel.min.js",
-    "revision": "a5037dedf46ae36936730d06f8fab44f"
+    "revision": "540ed1c65585f6465cf592b543670003"
   },
   {
     "url": "node_modules/@material/floating-label/foundation.js",
@@ -547,7 +567,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/floating-label/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/form-field/adapter.js",
@@ -567,15 +587,15 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/form-field/dist/mdc.form-field.min.css",
-    "revision": "b2bdaff2c549d810d235c5135b2cd3fe"
+    "revision": "77827e9faa96bdc36cd62a48989ba9fc"
   },
   {
     "url": "node_modules/@material/form-field/dist/mdc.formField.js",
-    "revision": "cb66d8f0551906e6b43b04e50771a54c"
+    "revision": "141ccbb5c1be179e034f6e4d6350381b"
   },
   {
     "url": "node_modules/@material/form-field/dist/mdc.formField.min.js",
-    "revision": "0da060d5860fe5121b131a7a80534149"
+    "revision": "6509cf3e24ece2659c91453089b3e74a"
   },
   {
     "url": "node_modules/@material/form-field/foundation.js",
@@ -583,7 +603,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/form-field/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/grid-list/adapter.js",
@@ -599,19 +619,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/grid-list/dist/mdc.grid-list.css",
-    "revision": "4e26f0d754dd514e91deaf01624f5194"
+    "revision": "69c862e60ade1e35aa816047acf26fcd"
   },
   {
     "url": "node_modules/@material/grid-list/dist/mdc.grid-list.min.css",
-    "revision": "de9d9cbf72fb3e2b1bb4f55d97a4b438"
+    "revision": "6af9947f5dc6b1ac2d7acd8afc713760"
   },
   {
     "url": "node_modules/@material/grid-list/dist/mdc.gridList.js",
-    "revision": "2d5c65c38e50c836c79c014e0b5d72ea"
+    "revision": "3321caaf128eeab6fa8adf4e041a27d0"
   },
   {
     "url": "node_modules/@material/grid-list/dist/mdc.gridList.min.js",
-    "revision": "4ab346d776ccaf73b6c89bcc86ab5f2d"
+    "revision": "6c05003ab436a88e8e62775c4a37abc0"
   },
   {
     "url": "node_modules/@material/grid-list/foundation.js",
@@ -619,7 +639,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/grid-list/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/icon-button/adapter.js",
@@ -635,19 +655,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/icon-button/dist/mdc.icon-button.css",
-    "revision": "9f9cc5a9ff90cf45d5e5fe09c2a33bb9"
+    "revision": "a121026efca5ea22aa96ffae2f9f0df4"
   },
   {
     "url": "node_modules/@material/icon-button/dist/mdc.icon-button.min.css",
-    "revision": "df132eb67aafb6471936fec91e7ee62c"
+    "revision": "d0831d71e783c580488a9fc619749dc6"
   },
   {
     "url": "node_modules/@material/icon-button/dist/mdc.iconButton.js",
-    "revision": "f7a465faff9982a114da7a27aa458f07"
+    "revision": "bd1855a41410aa7ea92619472306e867"
   },
   {
     "url": "node_modules/@material/icon-button/dist/mdc.iconButton.min.js",
-    "revision": "691a74ad09241027d998043bd92acd5e"
+    "revision": "f5fa8b1e2ba00b1ae9579321f193dabe"
   },
   {
     "url": "node_modules/@material/icon-button/foundation.js",
@@ -655,7 +675,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/icon-button/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/icon-button/types.js",
@@ -663,19 +683,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/image-list/dist/mdc.image-list.css",
-    "revision": "1b1c5e3325ca1d5da2accabeaddac3d5"
+    "revision": "d6690fe177b7d7320355659025be03b2"
   },
   {
     "url": "node_modules/@material/image-list/dist/mdc.image-list.min.css",
-    "revision": "3fa2f2060c0549ec5f27c7a87f0c91de"
+    "revision": "d64a84b8c197e5db2d261756d5550812"
   },
   {
     "url": "node_modules/@material/layout-grid/dist/mdc.layout-grid.css",
-    "revision": "bff6a8860fd5fbd1914816a3b0ec628f"
+    "revision": "e106d82a6339173d5967851e55528866"
   },
   {
     "url": "node_modules/@material/layout-grid/dist/mdc.layout-grid.min.css",
-    "revision": "8d1ad7dc00082cded2eb6efc1b3cec56"
+    "revision": "82d08c549237bda76eafc673296bcc49"
   },
   {
     "url": "node_modules/@material/line-ripple/adapter.js",
@@ -691,19 +711,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/line-ripple/dist/mdc.line-ripple.css",
-    "revision": "0abfbf46fb1b8795b6e51016e7ea5081"
+    "revision": "dcd077134be85dbad1d55dabcd5e2d8c"
   },
   {
     "url": "node_modules/@material/line-ripple/dist/mdc.line-ripple.min.css",
-    "revision": "2645872316762e767906cb8564af6406"
+    "revision": "f23856bae59cde2758cab55396870591"
   },
   {
     "url": "node_modules/@material/line-ripple/dist/mdc.lineRipple.js",
-    "revision": "32d172261f33d24491e18687850e598f"
+    "revision": "0c44b179c50d26cf6439e9f2b5268c66"
   },
   {
     "url": "node_modules/@material/line-ripple/dist/mdc.lineRipple.min.js",
-    "revision": "9a5f61cd6691679e20764df5b624c7b0"
+    "revision": "71ec38a4486b79af075ab12a0bf67e2a"
   },
   {
     "url": "node_modules/@material/line-ripple/foundation.js",
@@ -711,7 +731,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/line-ripple/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/linear-progress/adapter.js",
@@ -727,19 +747,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/linear-progress/dist/mdc.linear-progress.css",
-    "revision": "7b8717d1f700f77f5e3ca81150c7c948"
+    "revision": "5af720d7a9748b5de2d5ecf56241e9d7"
   },
   {
     "url": "node_modules/@material/linear-progress/dist/mdc.linear-progress.min.css",
-    "revision": "7cc4c3cfcebb023c669cc5ea24b2559a"
+    "revision": "5caac28d89e782343d4d4f5437801d35"
   },
   {
     "url": "node_modules/@material/linear-progress/dist/mdc.linearProgress.js",
-    "revision": "bec39b32b0d386863523adda48cb99fa"
+    "revision": "19de3d2881beb4cf786bebe2b22f153b"
   },
   {
     "url": "node_modules/@material/linear-progress/dist/mdc.linearProgress.min.js",
-    "revision": "a87bafd26a220fcc273c5faa1dbb35ed"
+    "revision": "a472db0ea900eb39fcf8e85305a087b3"
   },
   {
     "url": "node_modules/@material/linear-progress/foundation.js",
@@ -747,7 +767,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/linear-progress/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/list/adapter.js",
@@ -763,19 +783,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/list/dist/mdc.list.css",
-    "revision": "50c10e326dfc6650dfd9361762204ee1"
+    "revision": "df208583437f6c9a5bd69a10529aa5e2"
   },
   {
     "url": "node_modules/@material/list/dist/mdc.list.js",
-    "revision": "565a9e0d56777953950d3a5a4e28337a"
+    "revision": "c0a884b9735a8476b262d42a38101f14"
   },
   {
     "url": "node_modules/@material/list/dist/mdc.list.min.css",
-    "revision": "354c6db146858976ae5a99bd6a6310a2"
+    "revision": "c79c1a10fa6bd5b3ac53480f7e1b8f8d"
   },
   {
     "url": "node_modules/@material/list/dist/mdc.list.min.js",
-    "revision": "8ab6d21d30b4d86edd0328c45852f1f0"
+    "revision": "aab871c9f10e1f0f2480ba30379080c1"
   },
   {
     "url": "node_modules/@material/list/foundation.js",
@@ -783,7 +803,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/list/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/list/types.js",
@@ -795,7 +815,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/menu-surface/component.js",
-    "revision": "de017b5bb73ccbc7d6bd4af5f9206caa"
+    "revision": "c5f43a0c7e8c01ca98501db71b57ae10"
   },
   {
     "url": "node_modules/@material/menu-surface/constants.js",
@@ -803,27 +823,27 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/menu-surface/dist/mdc.menu-surface.css",
-    "revision": "3d515fc0efca27c442befaec8613f94d"
+    "revision": "65c2478a4a1e07c34de40f93f8c41239"
   },
   {
     "url": "node_modules/@material/menu-surface/dist/mdc.menu-surface.min.css",
-    "revision": "de36adf5587a4ede5a1d12cbb4eee74b"
+    "revision": "4d6752bf40ef81b826c02e33b4ac5aa6"
   },
   {
     "url": "node_modules/@material/menu-surface/dist/mdc.menuSurface.js",
-    "revision": "bef4d0fc03baeecd95dbb67331bb7fdc"
+    "revision": "c6409bacb0a5540c59d231d2a8003d18"
   },
   {
     "url": "node_modules/@material/menu-surface/dist/mdc.menuSurface.min.js",
-    "revision": "2693c80f54d36096e05a1b6c370ff3ad"
+    "revision": "97e27a9652587e25494a42042045ee26"
   },
   {
     "url": "node_modules/@material/menu-surface/foundation.js",
-    "revision": "21c82bdae33774eeb81dd6802c9efb1d"
+    "revision": "6966c8209b7a2912273c0b915cf85c9d"
   },
   {
     "url": "node_modules/@material/menu-surface/index.js",
-    "revision": "4914afb483593d1d7ef42ad3e3bb14f0"
+    "revision": "1f204fba6f847e12cbcc8c1679d8905d"
   },
   {
     "url": "node_modules/@material/menu-surface/types.js",
@@ -839,35 +859,35 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/menu/component.js",
-    "revision": "f4e2f9d5dde36538744ecc66d9dbd1fe"
+    "revision": "94df75b68163db3500dd3b067ac9c3c4"
   },
   {
     "url": "node_modules/@material/menu/constants.js",
-    "revision": "6b16699e11d95e2b6779cc1b77aba3cd"
+    "revision": "95b4926e26726d5ca473994a496db460"
   },
   {
     "url": "node_modules/@material/menu/dist/mdc.menu.css",
-    "revision": "be3b9c55b6a10228be4fa9e596af4eb7"
+    "revision": "7fb67a62bd1d9b0528c2ed0ed64b02c2"
   },
   {
     "url": "node_modules/@material/menu/dist/mdc.menu.js",
-    "revision": "7461456c2f91b68750c7eb1d141c67cd"
+    "revision": "2b05fde5e4610abacf75ca0efe98dbe1"
   },
   {
     "url": "node_modules/@material/menu/dist/mdc.menu.min.css",
-    "revision": "89b9287c11976da78aaf015459a6e0bb"
+    "revision": "1b2bb1cd7a051ed55e1d26047bea725e"
   },
   {
     "url": "node_modules/@material/menu/dist/mdc.menu.min.js",
-    "revision": "ae26f31765fe768fd8f041b97d9e8bdc"
+    "revision": "3819f853c31bb14a55a4ff063459ec49"
   },
   {
     "url": "node_modules/@material/menu/foundation.js",
-    "revision": "cef6fc91b109ce69cff70263707702fa"
+    "revision": "bc0be1eded6d2147688b35ac1db7cc35"
   },
   {
     "url": "node_modules/@material/menu/index.js",
-    "revision": "5de76c04a0cb4d1299773f4c7a11b4e9"
+    "revision": "17da7a19e5abed22e9c8dcf670a5ede9"
   },
   {
     "url": "node_modules/@material/menu/types.js",
@@ -887,19 +907,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/notched-outline/dist/mdc.notched-outline.css",
-    "revision": "9d71aba562c5272eac1266ea733ceeb7"
+    "revision": "9221a00cae6572e8c8e7094737df4041"
   },
   {
     "url": "node_modules/@material/notched-outline/dist/mdc.notched-outline.min.css",
-    "revision": "4de41a014155586a6ddcee6853f5bcf4"
+    "revision": "16892260d5ba250953a2cf3dfe171ff2"
   },
   {
     "url": "node_modules/@material/notched-outline/dist/mdc.notchedOutline.js",
-    "revision": "fdccb38ad94ad78dcb8a7006fde92039"
+    "revision": "2eafdfabf8d398d19ee16490bc8158a9"
   },
   {
     "url": "node_modules/@material/notched-outline/dist/mdc.notchedOutline.min.js",
-    "revision": "57152331d95609c8553af99dd24d1140"
+    "revision": "6d9fbd0f49ae71b55d88a4b7b927eb80"
   },
   {
     "url": "node_modules/@material/notched-outline/foundation.js",
@@ -907,7 +927,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/notched-outline/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/radio/adapter.js",
@@ -915,7 +935,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/radio/component.js",
-    "revision": "2183b39c8f79f337b581b668beb83a45"
+    "revision": "f512831a86c2d431d286d3ea57276350"
   },
   {
     "url": "node_modules/@material/radio/constants.js",
@@ -923,19 +943,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/radio/dist/mdc.radio.css",
-    "revision": "9bc837b44c3fa73f21550f4b5c5a6fd4"
+    "revision": "45af8be42f722de3c5874ad0a916a890"
   },
   {
     "url": "node_modules/@material/radio/dist/mdc.radio.js",
-    "revision": "cc938687e8d78d9ec4862d08eeca8269"
+    "revision": "b9c2b4f3f2c9a1b53ac4aa9215cee846"
   },
   {
     "url": "node_modules/@material/radio/dist/mdc.radio.min.css",
-    "revision": "eadd142e78b0ca828a22683f404ebcd0"
+    "revision": "047686700c817cd086bed5c5b3d6453e"
   },
   {
     "url": "node_modules/@material/radio/dist/mdc.radio.min.js",
-    "revision": "0552c9ffb2d0c7e47b07811b8615bc1e"
+    "revision": "1f8c8b94301347c6d2286bd99c774dfb"
   },
   {
     "url": "node_modules/@material/radio/foundation.js",
@@ -943,7 +963,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/radio/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/ripple/adapter.js",
@@ -951,7 +971,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/ripple/component.js",
-    "revision": "191a731abe1422cc1b5384df6ce47afd"
+    "revision": "74f3e117a658cf90dc54f045e4e61afa"
   },
   {
     "url": "node_modules/@material/ripple/constants.js",
@@ -959,19 +979,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/ripple/dist/mdc.ripple.css",
-    "revision": "ed40d55302c37bee917e99d9a664a44e"
+    "revision": "a334615c382e0e1334493e2a4d38cccc"
   },
   {
     "url": "node_modules/@material/ripple/dist/mdc.ripple.js",
-    "revision": "2bc11499227db760ee779ede93d6ceab"
+    "revision": "dfc527b0fe88b695bd02c9f6ebcd45e1"
   },
   {
     "url": "node_modules/@material/ripple/dist/mdc.ripple.min.css",
-    "revision": "ca028c1ea4203dcf5f5b7fae8df87797"
+    "revision": "1a92f866fdcfae945605c4af0ee87f34"
   },
   {
     "url": "node_modules/@material/ripple/dist/mdc.ripple.min.js",
-    "revision": "d8763bbf25066344d44e996274a9f071"
+    "revision": "3b11926481330abb88885f3f5f8ebaa4"
   },
   {
     "url": "node_modules/@material/ripple/foundation.js",
@@ -979,7 +999,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/ripple/index.js",
-    "revision": "616b325ae71cfef510d6440b1611992e"
+    "revision": "cc0bd27ad944c3a592e2dd8c80f6a007"
   },
   {
     "url": "node_modules/@material/ripple/types.js",
@@ -987,7 +1007,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/ripple/util.js",
-    "revision": "45c5ceb2c34009ea783ec503b482b23d"
+    "revision": "a7a66158394b2e6f945c0479bde1685f"
   },
   {
     "url": "node_modules/@material/select/adapter.js",
@@ -995,31 +1015,31 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/select/component.js",
-    "revision": "8be46d6f6df359572e537002200ceb21"
+    "revision": "a9bbc19bc8988b0ec75116eda205abbd"
   },
   {
     "url": "node_modules/@material/select/constants.js",
-    "revision": "e5ce2fecc3756c96b3bcf330c2ba2325"
+    "revision": "e9443c041a4b15cbec6882cb7dad88ad"
   },
   {
     "url": "node_modules/@material/select/dist/mdc.select.css",
-    "revision": "aea11dc8fca0dacdb075fce00b338ec5"
+    "revision": "2b10455d2c2d98be154389768414c984"
   },
   {
     "url": "node_modules/@material/select/dist/mdc.select.js",
-    "revision": "97b1ff9ad4bff5f18b0c92e0ecf1b16f"
+    "revision": "5706b68356b325568d13a2f45a7d52da"
   },
   {
     "url": "node_modules/@material/select/dist/mdc.select.min.css",
-    "revision": "997754dad2df2285da4000ea78b57c9a"
+    "revision": "85c1d579b244db2843a83f3c0538e43e"
   },
   {
     "url": "node_modules/@material/select/dist/mdc.select.min.js",
-    "revision": "5a2e3aa6bfbc3246e7c313e3c931515f"
+    "revision": "404b75cca82c1355aae5f28ba75b5382"
   },
   {
     "url": "node_modules/@material/select/foundation.js",
-    "revision": "f2abc9050aa506b1f57be7cabd40ca1f"
+    "revision": "130b4a3aaa10331085571d46079c4e0f"
   },
   {
     "url": "node_modules/@material/select/helper-text/adapter.js",
@@ -1039,7 +1059,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/select/helper-text/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "b34f09b3dc078b3dd09e2afb007a1d03"
   },
   {
     "url": "node_modules/@material/select/icon/adapter.js",
@@ -1059,11 +1079,11 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/select/icon/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "20b23431197be5dd62647a5d75ebf547"
   },
   {
     "url": "node_modules/@material/select/index.js",
-    "revision": "e586f882013acd157582a44d6491ce86"
+    "revision": "dc18efdd095ec93a410be727f9b4f40a"
   },
   {
     "url": "node_modules/@material/select/types.js",
@@ -1075,7 +1095,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/slider/component.js",
-    "revision": "06ebf39d334f4e278512ada6a3bb88b5"
+    "revision": "9d7320682e46fa8272c0c6091d679274"
   },
   {
     "url": "node_modules/@material/slider/constants.js",
@@ -1083,19 +1103,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/slider/dist/mdc.slider.css",
-    "revision": "d2cb718312291e68208a24d4e8c253ee"
+    "revision": "27f347564a3dd1b7e775c059ca8a878c"
   },
   {
     "url": "node_modules/@material/slider/dist/mdc.slider.js",
-    "revision": "0aeebb33a19bb9bf315b9464d0b9e45a"
+    "revision": "2c7c32915e4f130e6e01167f34f8b0a7"
   },
   {
     "url": "node_modules/@material/slider/dist/mdc.slider.min.css",
-    "revision": "8d82e93371cc5ccb28a37d3336637a57"
+    "revision": "6643664a7bce60618efac3ca2f5e0ddd"
   },
   {
     "url": "node_modules/@material/slider/dist/mdc.slider.min.js",
-    "revision": "6ec5dfffb5cf80040e68a372bab3042b"
+    "revision": "4560673d34edcafc40a701041e190f89"
   },
   {
     "url": "node_modules/@material/slider/foundation.js",
@@ -1103,7 +1123,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/slider/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/snackbar/adapter.js",
@@ -1123,15 +1143,15 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/snackbar/dist/mdc.snackbar.js",
-    "revision": "fd0afaf5dd8670dda6d17ad8eb3d086c"
+    "revision": "716c4400395615ca54733395ac29cd83"
   },
   {
     "url": "node_modules/@material/snackbar/dist/mdc.snackbar.min.css",
-    "revision": "094cad84deba0dc744327d089e053872"
+    "revision": "a8f0e0b56aae6ae3aac116a0d25c86df"
   },
   {
     "url": "node_modules/@material/snackbar/dist/mdc.snackbar.min.js",
-    "revision": "710bd691279da66b35e3ca2f287f4b78"
+    "revision": "d79b430ac18a3adc53676dd8d1104324"
   },
   {
     "url": "node_modules/@material/snackbar/foundation.js",
@@ -1139,7 +1159,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/snackbar/index.js",
-    "revision": "616b325ae71cfef510d6440b1611992e"
+    "revision": "cc0bd27ad944c3a592e2dd8c80f6a007"
   },
   {
     "url": "node_modules/@material/snackbar/types.js",
@@ -1155,7 +1175,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/switch/component.js",
-    "revision": "6ed8fbb803b300f96112606ee06704fd"
+    "revision": "7c08d4f3b574b2be7883cc4e0d46d1fd"
   },
   {
     "url": "node_modules/@material/switch/constants.js",
@@ -1163,19 +1183,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/switch/dist/mdc.switch.css",
-    "revision": "a7464186b9d64c6320835d9ba4a74e4b"
+    "revision": "a6f6b9dfd888e6ba644565b3f0daee53"
   },
   {
     "url": "node_modules/@material/switch/dist/mdc.switch.js",
-    "revision": "5ce05316d7e9e1f3ee4b32b26b6da2fa"
+    "revision": "d052e938adb311ccf82f5aaf49371031"
   },
   {
     "url": "node_modules/@material/switch/dist/mdc.switch.min.css",
-    "revision": "102eae7e8d7cbe94ee10c84dbb66b298"
+    "revision": "d3cd85057a46d88db15601fd2ffe1e5c"
   },
   {
     "url": "node_modules/@material/switch/dist/mdc.switch.min.js",
-    "revision": "2363a0ef06b43599a4f907aaa61d6070"
+    "revision": "b16930ffebe3eb18e8574e6196ef945b"
   },
   {
     "url": "node_modules/@material/switch/foundation.js",
@@ -1183,7 +1203,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/switch/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/tab-bar/adapter.js",
@@ -1199,7 +1219,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-bar/dist/mdc.tab-bar.css",
-    "revision": "23b3aa6f9612cb66c90af2241cb32155"
+    "revision": "8dfcf8caaedf6faa7a59f18d6cc3ce4d"
   },
   {
     "url": "node_modules/@material/tab-bar/dist/mdc.tab-bar.min.css",
@@ -1207,11 +1227,11 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-bar/dist/mdc.tabBar.js",
-    "revision": "7740ef86cdf1f5188d0239398dc5ff97"
+    "revision": "874496ad471690a48286352375dfe30c"
   },
   {
     "url": "node_modules/@material/tab-bar/dist/mdc.tabBar.min.js",
-    "revision": "136abbc9d84759d612e7fcf232d3e89e"
+    "revision": "94ab24521c7cdbe1d311ee7c7c5a56e9"
   },
   {
     "url": "node_modules/@material/tab-bar/foundation.js",
@@ -1219,7 +1239,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-bar/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/tab-bar/types.js",
@@ -1239,19 +1259,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-indicator/dist/mdc.tab-indicator.css",
-    "revision": "1f13756d96dba9ee7f91e60be4287deb"
+    "revision": "89e47d750fad5bcade9a0623a56295f9"
   },
   {
     "url": "node_modules/@material/tab-indicator/dist/mdc.tab-indicator.min.css",
-    "revision": "fc0da32e6e48b330c6a7b48279c5e82b"
+    "revision": "e6a6ac97b1e0413e5c83e6f2fc612e93"
   },
   {
     "url": "node_modules/@material/tab-indicator/dist/mdc.tabIndicator.js",
-    "revision": "01a7b761e78834baac330252b69f77e4"
+    "revision": "eef352ffd21c5e33b3b024300825a29a"
   },
   {
     "url": "node_modules/@material/tab-indicator/dist/mdc.tabIndicator.min.js",
-    "revision": "7c50c1f6fd8efdb0a59d9644b8df5177"
+    "revision": "78a597e6e36239afc3a021de4337b3e3"
   },
   {
     "url": "node_modules/@material/tab-indicator/fading-foundation.js",
@@ -1263,7 +1283,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-indicator/index.js",
-    "revision": "cd0be73bc4d9cf3097bd1115a4e2be2c"
+    "revision": "773747909e9a4c66e80043748b77bcde"
   },
   {
     "url": "node_modules/@material/tab-indicator/sliding-foundation.js",
@@ -1275,7 +1295,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-scroller/component.js",
-    "revision": "f498bf14c7c9008a5e4c31b031a7014b"
+    "revision": "3d0fc13368a10a6f6118b447b2585b26"
   },
   {
     "url": "node_modules/@material/tab-scroller/constants.js",
@@ -1283,7 +1303,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-scroller/dist/mdc.tab-scroller.css",
-    "revision": "dfad44d894df2b1251623c1b401d42a4"
+    "revision": "b6e0032d3cc27e1730ad9fc4d4d426c6"
   },
   {
     "url": "node_modules/@material/tab-scroller/dist/mdc.tab-scroller.min.css",
@@ -1291,11 +1311,11 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-scroller/dist/mdc.tabScroller.js",
-    "revision": "39e25ae8a669e3c14b4f1c619f7ae0a1"
+    "revision": "77e52c837f414c734d0a427cda98333c"
   },
   {
     "url": "node_modules/@material/tab-scroller/dist/mdc.tabScroller.min.js",
-    "revision": "25fc583df23e47ed8c71222e5d91fd5f"
+    "revision": "c39cef037e7260802932371d666eec4c"
   },
   {
     "url": "node_modules/@material/tab-scroller/foundation.js",
@@ -1303,7 +1323,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab-scroller/index.js",
-    "revision": "616b325ae71cfef510d6440b1611992e"
+    "revision": "cc0bd27ad944c3a592e2dd8c80f6a007"
   },
   {
     "url": "node_modules/@material/tab-scroller/rtl-default-scroller.js",
@@ -1343,19 +1363,19 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab/dist/mdc.tab.css",
-    "revision": "6546f79a2c05ace4c294cfb999bcbfe6"
+    "revision": "257862a59cb8a3ed0a33d1cf12bbcb06"
   },
   {
     "url": "node_modules/@material/tab/dist/mdc.tab.js",
-    "revision": "351a017801ec465e63336100fb1e7c4d"
+    "revision": "031303050c8403f26c198a114c27a896"
   },
   {
     "url": "node_modules/@material/tab/dist/mdc.tab.min.css",
-    "revision": "aab0fc10b2fc78bd7098c3b9ff5ed9a6"
+    "revision": "b40b9297c01c404d43412c718bacc524"
   },
   {
     "url": "node_modules/@material/tab/dist/mdc.tab.min.js",
-    "revision": "547745d5e03b50395533c5f053f8a06b"
+    "revision": "726a303bb18bc6e2daacf05899172554"
   },
   {
     "url": "node_modules/@material/tab/foundation.js",
@@ -1363,7 +1383,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/tab/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "720673b46d47d3c16acd0947e73756d9"
   },
   {
     "url": "node_modules/@material/tab/types.js",
@@ -1391,11 +1411,11 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/textfield/character-counter/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "07e94abd9c7166701f5f44d2483d15e8"
   },
   {
     "url": "node_modules/@material/textfield/component.js",
-    "revision": "9b90919d8f2b15460250802b9b7137f4"
+    "revision": "9a23821bf3e79e93c95ebf4eaf2add76"
   },
   {
     "url": "node_modules/@material/textfield/constants.js",
@@ -1403,23 +1423,23 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/textfield/dist/mdc.textfield.css",
-    "revision": "f3534d22d6a960a561eee1da3e3746e5"
+    "revision": "c0a2c7ecb1725160edb4074617e9dbb0"
   },
   {
     "url": "node_modules/@material/textfield/dist/mdc.textfield.js",
-    "revision": "3c93bec4d3eae2b203df421623c18789"
+    "revision": "f04904b4c735258ae10e1d82068276f1"
   },
   {
     "url": "node_modules/@material/textfield/dist/mdc.textfield.min.css",
-    "revision": "f281e7df9a04020e29d60605e9869f34"
+    "revision": "4bce24c117f1bf4a045ba097d7303298"
   },
   {
     "url": "node_modules/@material/textfield/dist/mdc.textfield.min.js",
-    "revision": "d4d0c35d4f1340155b8bb0e89b904102"
+    "revision": "b28261fc0a74d07c6ff0d9046ed72757"
   },
   {
     "url": "node_modules/@material/textfield/foundation.js",
-    "revision": "0f0474aa3366d862a825d8248a7aa937"
+    "revision": "c9d0b378321bbd147797b8ed93caefc7"
   },
   {
     "url": "node_modules/@material/textfield/helper-text/adapter.js",
@@ -1439,7 +1459,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/textfield/helper-text/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "b34f09b3dc078b3dd09e2afb007a1d03"
   },
   {
     "url": "node_modules/@material/textfield/icon/adapter.js",
@@ -1459,11 +1479,11 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/textfield/icon/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
+    "revision": "e35ff1d68f2e5e74730b87c11e0700ef"
   },
   {
     "url": "node_modules/@material/textfield/index.js",
-    "revision": "35896485f83caa300618a60a28199e92"
+    "revision": "af003ba344240d163762df7a5ecd9bb4"
   },
   {
     "url": "node_modules/@material/textfield/types.js",
@@ -1471,51 +1491,11 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/theme/dist/mdc.theme.css",
-    "revision": "a216e48501a4a2323a9250be53d68a89"
+    "revision": "1cd77f258cf9e5cc4c56eb2f0c13c5d1"
   },
   {
     "url": "node_modules/@material/theme/dist/mdc.theme.min.css",
-    "revision": "11310342d799d9f943c2a86f7bd57fa0"
-  },
-  {
-    "url": "node_modules/@material/toolbar/adapter.js",
-    "revision": "60159bf101a941770d1938be7937a641"
-  },
-  {
-    "url": "node_modules/@material/toolbar/component.js",
-    "revision": "bb0c944ff9b67246dcb48556085d56a2"
-  },
-  {
-    "url": "node_modules/@material/toolbar/constants.js",
-    "revision": "73122acc49c812f3ffbb6ea6666817e9"
-  },
-  {
-    "url": "node_modules/@material/toolbar/dist/mdc.toolbar.css",
-    "revision": "4a640bec3312e92d2da7c1968bc155b8"
-  },
-  {
-    "url": "node_modules/@material/toolbar/dist/mdc.toolbar.js",
-    "revision": "85bece02d7fd133b8af012bc9daa34a4"
-  },
-  {
-    "url": "node_modules/@material/toolbar/dist/mdc.toolbar.min.css",
-    "revision": "5abee576f9b2c1a3c2950ed0f9bf9423"
-  },
-  {
-    "url": "node_modules/@material/toolbar/dist/mdc.toolbar.min.js",
-    "revision": "e903382f8198023d87d340e507007ad4"
-  },
-  {
-    "url": "node_modules/@material/toolbar/foundation.js",
-    "revision": "59764c563417e0728aeb4498e893ab2d"
-  },
-  {
-    "url": "node_modules/@material/toolbar/index.js",
-    "revision": "561bcfc208c123bec621141941324f14"
-  },
-  {
-    "url": "node_modules/@material/toolbar/types.js",
-    "revision": "2a82fc31b646129ff6012e68297273c1"
+    "revision": "a2c1f4dd2c79448373cad094f585e1d9"
   },
   {
     "url": "node_modules/@material/top-app-bar/adapter.js",
@@ -1523,7 +1503,7 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/top-app-bar/component.js",
-    "revision": "3d9c5b28a0221becba7e71a2a28e7fc3"
+    "revision": "6a803f27652f8474bf57cdbd04910cdc"
   },
   {
     "url": "node_modules/@material/top-app-bar/constants.js",
@@ -1531,79 +1511,79 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/@material/top-app-bar/dist/mdc.top-app-bar.css",
-    "revision": "f3c3afc0aaaa3d5e1e4742354a3bb537"
+    "revision": "d06ad0600e33fc9f6a1cc16524a0c60c"
   },
   {
     "url": "node_modules/@material/top-app-bar/dist/mdc.top-app-bar.min.css",
-    "revision": "da114ce38671272e093ff620af89b460"
+    "revision": "c791280ac5b97c216456cbf1c6803bfc"
   },
   {
     "url": "node_modules/@material/top-app-bar/dist/mdc.topAppBar.js",
-    "revision": "a1387a5e0579e8651b4a9b5b7ba1abad"
+    "revision": "b604b932a92a74a4169ea2ee55b6119e"
   },
   {
     "url": "node_modules/@material/top-app-bar/dist/mdc.topAppBar.min.js",
-    "revision": "a0270f17f1fb3b1e99cdadc92e2605d1"
+    "revision": "9cad77ed653a3f8e169d518c340820a7"
   },
   {
     "url": "node_modules/@material/top-app-bar/fixed/foundation.js",
-    "revision": "3fe79215ec68328105c6860029bca6a5"
+    "revision": "636a28581256fbc247fdfcc06809a13b"
   },
   {
     "url": "node_modules/@material/top-app-bar/foundation.js",
-    "revision": "a288638f5524226621a7e8cd5c60aea5"
+    "revision": "3e7526849e80565b6b45383eadff24a6"
   },
   {
     "url": "node_modules/@material/top-app-bar/index.js",
-    "revision": "12769d10201b866b482cc77f653ad9a9"
+    "revision": "ad41dbca0b7ed26d314622c27d9d58f3"
   },
   {
     "url": "node_modules/@material/top-app-bar/short/foundation.js",
-    "revision": "f834da12d74bd73010e1e0e7df1c505c"
+    "revision": "661db6f67ad77fa01d1a445e19eb1d9a"
   },
   {
     "url": "node_modules/@material/top-app-bar/standard/foundation.js",
-    "revision": "451ff898262d48c973dd73b35a5a1a3b"
+    "revision": "86eca826ef2c0402a0dce72caadec0f3"
   },
   {
     "url": "node_modules/@material/typography/dist/mdc.typography.css",
-    "revision": "e5be85c75c4c293ba18c827ccf48182d"
+    "revision": "9c584d765a17b278b8753435d11a5fc4"
   },
   {
     "url": "node_modules/@material/typography/dist/mdc.typography.min.css",
-    "revision": "4565257909e47416bc9804dfa3e60ec5"
+    "revision": "d4a00c20372349133c98f82c6b21a46a"
   },
   {
     "url": "node_modules/focus-trap/dist/focus-trap.js",
-    "revision": "5e8088752ffa86d12b4095f3d8adc58a"
+    "revision": "02c9f22017326b13e40a7cdcceef08c1"
   },
   {
     "url": "node_modules/focus-trap/dist/focus-trap.min.js",
-    "revision": "ce3b113be82d26ed34511d2d4624ee2f"
+    "revision": "fdfdb8d38f27afe9377128ac9af86162"
   },
   {
     "url": "node_modules/focus-trap/index.js",
-    "revision": "bab563152a506e4d7cd290567338fa35"
+    "revision": "c064c2ad33e924bf2aa21f5e3db1a234"
   },
   {
     "url": "node_modules/material-components-web/dist/material-components-web.css",
-    "revision": "0e5f6b8963e27bb88473007c3f372707"
+    "revision": "ef4a28be070b36d6c9d4f6e617ffc46e"
   },
   {
     "url": "node_modules/material-components-web/dist/material-components-web.js",
-    "revision": "637fe263c3d5116aa641505e3aa3be91"
+    "revision": "c51ea7386abd0b919bb2890589c6d21b"
   },
   {
     "url": "node_modules/material-components-web/dist/material-components-web.min.css",
-    "revision": "ff3dbb58243a16f7d58433808b452032"
+    "revision": "44351f96bad47d0236dd5df25a224195"
   },
   {
     "url": "node_modules/material-components-web/dist/material-components-web.min.js",
-    "revision": "e4555f97f925e75a0e43debd41ec09b1"
+    "revision": "de6ff72c50b683134e142d501894d980"
   },
   {
     "url": "node_modules/material-components-web/index.js",
-    "revision": "2548d4056178f8ddf6cc820488c8d6f4"
+    "revision": "505106bc0b4fc73dae03ac0392241419"
   },
   {
     "url": "node_modules/tabbable/index.js",
@@ -1615,11 +1595,11 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/tslib/tslib.es6.js",
-    "revision": "c21bbcfd5c21e01451f94a8d9111d3fd"
+    "revision": "14abce4b192901398bad3732e02478eb"
   },
   {
     "url": "node_modules/tslib/tslib.js",
-    "revision": "def3e59b34244ad55f0b2b38ed454408"
+    "revision": "472b85acfc213f3b32f0e68ecad1e6b2"
   },
   {
     "url": "node_modules/xtend/immutable.js",
@@ -1631,27 +1611,27 @@ self.__precacheManifest = [
   },
   {
     "url": "node_modules/xtend/test.js",
-    "revision": "fa54f944abf4b8e0c8d1a92b31d0410e"
+    "revision": "9bc986ff5a5081702901358a040a98e2"
   },
   {
     "url": "privacy-policy.html",
-    "revision": "90923d9700bfd6211a1380ce45aacf15"
+    "revision": "955af517a7eeeb77eecad6e6b70790e6"
   },
   {
     "url": "projects.html",
-    "revision": "721c39cfeb4bfb1bfea5313f297a1797"
+    "revision": "b334fdcad2393165a8ebabffcf6cf061"
   },
   {
     "url": "til/algorithm/2019/01/31/greedy-algorithm.html",
-    "revision": "0fbb849fd7b3d845d217a389cfcd54a8"
+    "revision": "f7b0e40ac8825392aed418549deffa45"
   },
   {
     "url": "til/index.html",
-    "revision": "639ae563484d710f2aebd9a3b15fff7a"
+    "revision": "cad4fb99c41fefad5da65c2675511c48"
   },
   {
     "url": "til/stackoverflow/2019/02/06/stackoverflow-backtick.html",
-    "revision": "d42ab75bce4405261090a6055a714114"
+    "revision": "8e68dfc8281568bfcbdcc022ab39fbbc"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
