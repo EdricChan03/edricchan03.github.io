@@ -1,8 +1,10 @@
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <button role="button" class="material-icons-outlined mdc-top-app-bar__navigation-icon">menu</button>
-      <span class="mdc-top-app-bar__title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</span>
+      <button role="button"
+        class="material-icons-outlined mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+      <span
+        class="mdc-top-app-bar__title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</span>
     </section>
 
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar">
@@ -10,28 +12,37 @@
       {%- for button in page.toolbar_buttons -%}
       {%- if button.link -%}
       {%- if button.is_site_link and button.is_site_link == true -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
+      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" aria-label="{{ button.title }}"
+        title="{{ button.title }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
       {%- else -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
+      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" aria-label="{{ button.title }}"
+        title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
       {%- endif -%}
       {%- else -%}
-      <button class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" id="{%- if button.id -%}{{ button.id }}{%- else -%}button-{{ forloop.index }}{%- endif -%}">{{ button.icon }}</button>
+      <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-label="{{ button.title }}" title="{{ button.title }}"
+        id="{%- if button.id -%}{{ button.id }}{%- else -%}button-{{ forloop.index }}{%- endif -%}">{{ button.icon }}</button>
       {%- endif -%}
       {%- endfor -%}
       {%- elsif layout.toolbar_buttons -%}
       {%- for button in layout.toolbar_buttons -%}
       {%- if button.link -%}
       {%- if button.is_site_link and button.is_site_link == true -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
+      <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}"
+        title="{{ button.title }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
       {%- else -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
+      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" aria-label="{{ button.title }}"
+        title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
       {%- endif -%}
       {%- else -%}
-      <button class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}" title="{{ button.title }}" id="{%- if button.id -%}{{ button.id }}{%- else -%}button-{{ forloop.index }}{%- endif -%}">{{ button.icon }}</button>
+      <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-label="{{ button.title }}" title="{{ button.title }}"
+        id="{%- if button.id -%}{{ button.id }}{%- else -%}button-{{ forloop.index }}{%- endif -%}">{{ button.icon }}</button>
       {%- endif -%}
       {%- endfor -%}
       {%- endif -%}
-      <button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="Print this page" title="Print this page">print</button>
+      <button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-label="Print this page" title="Print this page">print</button>
     </section>
   </div>
 </header>
