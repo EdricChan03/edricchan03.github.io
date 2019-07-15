@@ -14,7 +14,7 @@
     rel='stylesheet' type='text/css' />
   <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>TIL: The greedy algorithm | Edric’s website</title>
-<meta name="generator" content="Jekyll v3.7.4" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="TIL: The greedy algorithm" />
 <meta name="author" content="Edric Chan" />
 <meta property="og:locale" content="en_US" />
@@ -26,7 +26,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-31T00:00:00+00:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Edric Chan"},"description":"Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if","mainEntityOfPage":{"@type":"WebPage","@id":"https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html"},"@type":"BlogPosting","url":"https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html","headline":"TIL: The greedy algorithm","dateModified":"2019-01-31T00:00:00+00:00","datePublished":"2019-01-31T00:00:00+00:00","@context":"http://schema.org"}</script>
+{"datePublished":"2019-01-31T00:00:00+00:00","description":"Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if","author":{"@type":"Person","name":"Edric Chan"},"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html"},"url":"https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html","headline":"TIL: The greedy algorithm","dateModified":"2019-01-31T00:00:00+00:00","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -84,11 +84,16 @@
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <button role="button" class="material-icons-outlined mdc-top-app-bar__navigation-icon">menu</button>
-      <span class="mdc-top-app-bar__title">TIL: The greedy algorithm</span>
+      <button role="button"
+        class="material-icons-outlined mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+      <span
+        class="mdc-top-app-bar__title">TIL: The greedy algorithm</span>
     </section>
 
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar"><button class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="Share&hellip;" title="Share&hellip;" id="share-button">share</button><button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="Print this page" title="Print this page">print</button>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar"><button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-label="Share&hellip;" title="Share&hellip;"
+        id="share-button">share</button><button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-label="Print this page" title="Print this page">print</button>
     </section>
   </div>
 </header>
