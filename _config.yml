@@ -6,7 +6,11 @@ url: https://edricchan03.github.io
 future: true
 sass:
   style: compressed
-  sass_dir: _sass/node_modules
+  sass_dir: _sass
+  # Note: GitHub Pages does not natively support this option.
+  load_paths:
+    - _sass
+    - node_modules
 defaults:
   -
     scope:
