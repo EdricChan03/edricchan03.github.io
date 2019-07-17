@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "048e2043d1b67be0de8195f737a1b868"
+    "revision": "316c067620e4474bc34eb88638815e1d"
   },
   {
     "url": "about.html",
-    "revision": "83549dd760a37e25464d5f65513e105b"
+    "revision": "07f78d8ec320fef7a9f33b4503286d4b"
   },
   {
     "url": "assets/code-snippet-of-the-week/header.png",
@@ -75,135 +75,123 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/2019/02/24/status-update.html",
-    "revision": "6274c35c24daf885baedb5ad3919c6aa"
+    "revision": "921d20fed27ebe1a797d1f952f88a5d2"
   },
   {
     "url": "blog/2019/04/21/easy-calculus-differentiation-integration.html",
-    "revision": "01f4c66226ffc631ca4b933bcd2f48b3"
+    "revision": "82ff462eac250a88a42b24375ebdfa6e"
   },
   {
     "url": "blog/authors.html",
-    "revision": "d42d8eea4b8b0f6ecd8a932626aee5fa"
+    "revision": "0cea6c2a93a8cc2039a4a2f85a61bbdd"
   },
   {
     "url": "blog/category/algorithm/index.html",
-    "revision": "ec6fe0f6563fb5deb41e6d1df11b2477"
+    "revision": "bd1126930e5980b92e9667a2e4dd983e"
   },
   {
     "url": "blog/category/blog/index.html",
-    "revision": "dc5f951aeb0f72fa5fc83e99d4d67de1"
+    "revision": "b1328d809f6742e35816fc5672eaa6c1"
   },
   {
     "url": "blog/category/programming/index.html",
-    "revision": "614fc49bd635dc1a42e43fc8fb85bc60"
+    "revision": "9f39467f18896fba34cb72eb0ba06f73"
   },
   {
     "url": "blog/category/stackoverflow/index.html",
-    "revision": "58994bbaa30c682069d587441d39bacf"
+    "revision": "d14db77dc2c1d354ccfe320317cd2287"
   },
   {
     "url": "blog/category/til/index.html",
-    "revision": "89365427f7f73fd32b2b7b303c7c20b5"
-  },
-  {
-    "url": "blog/category/website/index.html",
-    "revision": "9d99314121278b6726cb4884ad651582"
+    "revision": "6a243c90ee717314745dbd2029f405d5"
   },
   {
     "url": "blog/index.html",
-    "revision": "f2ebfff2b9df82d90d4151b073ed2977"
+    "revision": "59d22fffb16a9d5212e7c3f1179f968d"
   },
   {
     "url": "blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html",
-    "revision": "d820bd0e275d9ecf6bf96125370996d7"
+    "revision": "bf0d8e060fcf8397b3380625878afc8b"
   },
   {
     "url": "blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html",
-    "revision": "8572ff4c8371f54c98632e9ddffbb251"
+    "revision": "ef362b163234c2c82c67b106798e815e"
   },
   {
     "url": "blog/programming/2019/03/16/simplified-content-views.html",
-    "revision": "718e3f8052501df1abc3f722e500bcca"
+    "revision": "489a6c7d29eeff1563b46e456e2ddf53"
   },
   {
     "url": "blog/tagged/algorithm/index.html",
-    "revision": "a39da14527de2fdce8e513e7ffe23534"
+    "revision": "3a5fee56c0a41076e053224c11efd6cb"
   },
   {
     "url": "blog/tagged/android/index.html",
-    "revision": "89f0867f3cd62aad8fe767bf0200d31d"
+    "revision": "a44cf53491a087c57d8516e54bf9ebd3"
   },
   {
     "url": "blog/tagged/androidx/index.html",
-    "revision": "7098f5c8c3fa8faeb436be61ddf2409c"
+    "revision": "477837ba8ca3a626c50ecf39d2ff0329"
   },
   {
     "url": "blog/tagged/annotation/index.html",
-    "revision": "e25fbef6b60d288505899bb15cf4e714"
+    "revision": "752f15e0ee9bf2259f56b3b3fa65308c"
   },
   {
     "url": "blog/tagged/calculator/index.html",
-    "revision": "e5e7d945a72f878f004222eb2fb6ac54"
+    "revision": "41015be9c32377f50b04a9a072c22f4a"
   },
   {
     "url": "blog/tagged/calculus/index.html",
-    "revision": "4bd71109269cb000579e73d0eea81ab1"
+    "revision": "b7e7fd44cbea6d63184782d18d0962c1"
   },
   {
     "url": "blog/tagged/code-snippet-of-the-week/index.html",
-    "revision": "a98f3f26317f9270ee7b76880fa8a662"
+    "revision": "7fa4b97d99140a680dea35293b057e35"
   },
   {
     "url": "blog/tagged/differentiation/index.html",
-    "revision": "6c318c7cc08077c6acc01b8d814a244e"
+    "revision": "32e5681b8bd08849ed7ce44a14c7714d"
   },
   {
     "url": "blog/tagged/html/index.html",
-    "revision": "0d7886935fdcbb4ceaaa8c54679e7b35"
+    "revision": "41a171f6b2a25fc8029232caa8c55196"
   },
   {
     "url": "blog/tagged/integration/index.html",
-    "revision": "b8fbe8d1e5f78f8afb8e063353ef9164"
+    "revision": "ebde9a2ab95ee5eaa73a5c4b20d95333"
   },
   {
     "url": "blog/tagged/kotlin/index.html",
-    "revision": "4c1e00c3140d7b34008903fbc19e4f69"
+    "revision": "999979819cee94dcd3a8eecfcffa48cd"
   },
   {
     "url": "blog/tagged/markdown/index.html",
-    "revision": "6459639c4b8436ef5a4067d1917ef193"
+    "revision": "e7723535e95a17eb0720a5386a0c9bb4"
   },
   {
     "url": "blog/tagged/python/index.html",
-    "revision": "c386ad129235cf57475c806fefb129a9"
+    "revision": "5f297d6dce8b4a449efd41d5190160eb"
   },
   {
     "url": "blog/tagged/stackoverflow/index.html",
-    "revision": "b7e9203c90e604659c6e80410c035756"
+    "revision": "b0611860c86720edbff0858a6f168e4a"
   },
   {
     "url": "blog/tagged/status-update/index.html",
-    "revision": "ade9f917edfa857c61d215af47ab283f"
+    "revision": "2dfd7b46cc0983e0085f5e0f85efe465"
   },
   {
     "url": "blog/tagged/tip-of-the-day/index.html",
-    "revision": "7219829af20f742b4adf4be5141689bb"
+    "revision": "536afb2fcacbc612d0ddc6f39d06b486"
   },
   {
     "url": "blog/tagged/tip/index.html",
-    "revision": "740066721c2b96f7bc571990775f944e"
-  },
-  {
-    "url": "blog/tagged/updates/index.html",
-    "revision": "e16e4127af6974d2a2cb3e7379d27a26"
+    "revision": "d34600c2ae805f942344d5f71ae1d1c7"
   },
   {
     "url": "blog/tags.html",
-    "revision": "2d39c1dc366c2bfa2f33cbc9f5e3db44"
-  },
-  {
-    "url": "blog/website/2019/07/10/important-updates.html",
-    "revision": "476992ae7ec370364352985305a542af"
+    "revision": "b8f2946d5abe1185cc40d5ea0179c71c"
   },
   {
     "url": "collection/posts/index.html",
@@ -219,7 +207,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "92f1a6302e426f4c94ec2030032501fb"
+    "revision": "395c0a19c7ad8d06f09dadd63758e61b"
   },
   {
     "url": "js/site.js",
@@ -227,7 +215,7 @@ self.__precacheManifest = [
   },
   {
     "url": "mdc-test.html",
-    "revision": "bdff1f0f84cce53a1e222af411311342"
+    "revision": "94357ab6225b1e04d78679ab58c01118"
   },
   {
     "url": "node_modules/@material/animation/dist/mdc.animation.js",
@@ -1615,23 +1603,23 @@ self.__precacheManifest = [
   },
   {
     "url": "privacy-policy.html",
-    "revision": "955af517a7eeeb77eecad6e6b70790e6"
+    "revision": "dceca59eda91360a3369258bd1fef94c"
   },
   {
     "url": "projects.html",
-    "revision": "b334fdcad2393165a8ebabffcf6cf061"
+    "revision": "0739fdf3ec7d0a67548776ccec82edaf"
   },
   {
     "url": "til/algorithm/2019/01/31/greedy-algorithm.html",
-    "revision": "f7b0e40ac8825392aed418549deffa45"
+    "revision": "4834f311d5074067853ad719757c8ab3"
   },
   {
     "url": "til/index.html",
-    "revision": "cad4fb99c41fefad5da65c2675511c48"
+    "revision": "5c1cd0c74378e422f708612d0ae97e71"
   },
   {
     "url": "til/stackoverflow/2019/02/06/stackoverflow-backtick.html",
-    "revision": "8e68dfc8281568bfcbdcc022ab39fbbc"
+    "revision": "e1a9f71b77a8c038e3dff181fa5658e4"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
