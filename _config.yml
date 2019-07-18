@@ -1,4 +1,4 @@
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'package-lock.json', 'package.json', 'postinstall.sh', 'workbox-config.js', 'art/', 'docs/']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'package-lock.json', 'package.json', 'postinstall.sh', 'workbox-config.js', 'art/', 'docs/', 'node_modules/*.md']
 markdown: kramdown
 title: "Edric's website"
 url: https://edricchan03.github.io
