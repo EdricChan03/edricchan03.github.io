@@ -1602,12 +1602,16 @@ self.__precacheManifest = [
     "revision": "9bc986ff5a5081702901358a040a98e2"
   },
   {
+    "url": "portfolio.html",
+    "revision": "4e5b25e6f8d659a440378d4dfa8d382a"
+  },
+  {
     "url": "privacy-policy.html",
     "revision": "b37425b44ccc00664fdea4eb353aaa9f"
   },
   {
     "url": "projects.html",
-    "revision": "b7e77bf5024708f7864907da444d1e58"
+    "revision": "145ade2080a59cef9e89ed4949e4623e"
   },
   {
     "url": "til/algorithm/2019/01/31/greedy-algorithm.html",
