@@ -10,6 +10,7 @@ $mdc-theme-error: #f44336;
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
 @import "@material/chips/mdc-chips";
+@import "@material/data-table/mdc-data-table";
 @import "@material/dialog/mdc-dialog";
 @import "@material/drawer/mdc-drawer";
 @import "@material/icon-button/mdc-icon-button";
@@ -110,4 +111,8 @@ strong {
 
 #share-dialog-text-field {
   width: 100%;
+}
+
+.text-pre-wrap {
+  white-space: pre-wrap;
 }

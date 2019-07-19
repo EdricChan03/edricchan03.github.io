@@ -103,8 +103,8 @@ if (path === '/') {
         }
       })
   }
-} else if (path === '/') {
-  document.getElementById('home-list-item').classList.toggle(activeListItemClass);
+} else if (path === '/portfolio') {
+  toggleListItemActivated('portfolio-list-item');
 } else if (path === '/projects') {
   toggleListItemActivated('projects-list-item');
 } else if (path === '/privacy-policy') {
