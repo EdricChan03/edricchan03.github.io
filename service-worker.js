@@ -199,7 +199,7 @@ self.__precacheManifest = [
   },
   {
     "url": "css/site.css",
-    "revision": "75cb058ffcc2366d5c88d94464491096"
+    "revision": "93434e8661099d8008df2c0ea669ecda"
   },
   {
     "url": "favicon.ico",
@@ -1643,7 +1643,7 @@ self.__precacheManifest = [
   },
   {
     "url": "portfolio.html",
-    "revision": "0004c1da427960d57f993f727ab7d105"
+    "revision": "781930fcff12c218cba82be4fed3b126"
   },
   {
     "url": "privacy-policy.html",
