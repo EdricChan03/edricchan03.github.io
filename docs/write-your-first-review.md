@@ -56,7 +56,7 @@ game_supported_platforms:
 
 ## Book-related
 
-Frontmatter | Description
+Variable | Description
 ---|---
 `book_title` | The book's title (**required**)
 `book_isbn` | The book's ISBN code
