@@ -173,3 +173,36 @@
     link: https://github.com/EdricChan03/SCCLGame
   - name: Competition website
     link: https://appcompetition.tk.sg/
+- name: Edric's website
+  description: |
+    This project is essentially the website you're looking at right now.
+
+    The website uses the following technologies&#58;
+    * [Jekyll](https://jekyllrb.com) - The templating language that integrates with GitHub Pages
+    * [GitHub Pages](https://pages.github.com) - For hosting the website
+    * [Material Components for Web](https://material.io/develop/web/) - For the website's main interface (Material Design)
+    * HTML + CSS + JavaScript
+    * [GitHub Actions](https://github.com/features/actions) - For building and deploying the website for every new commit
+
+    This website is the 2nd iteration of the original website which used the following frameworks&#58;
+    * [AngularJS](https://angularjs.org)
+    * [AngularJS Material](https://material.angularjs.org) - Material Design for AngularJS
+    * HTML + CSS + JavaScript
+  labels:
+  - Website
+  - EdricChan03
+  - AngularJS
+  - AngularJS Material
+  - HTML
+  - CSS
+  - JavaScript
+  - Material Components for Web
+  - Material Design
+  - GitHub
+  - GitHub Actions
+  categories:
+  - Website
+  status: in development
+  links:
+  - name: Source code
+    link: https://github.com/EdricChan03/edricchan03.github.io
