@@ -374,7 +374,11 @@ ability to chat with your peers. This is the web version.</p>
       <h5 class="card__overline mdc-typography--overline">Library</h5>
       <h2 class="card__title mdc-typography--headline6">ngx-simple-http</h2><h3 class="card__subtitle mdc-typography--subtitle2">
         Status: in development
-      </h3></div><div class="card__secondary"><p>A wrapper of the HttpClient class provided by @angular/common/http which is simplified for easy use. Internally used by the ngx-ytd-api library.</p>
+      </h3></div><div class="card__secondary"><p>An Angular wrapper of the <a href="https://angular.io/api/common/http/HttpClient">HttpClient</a> class provided by <code class="highlighter-rouge">@angular/common/http</code>, but simplified to a few easy to understand methods. Also internally used by the <a href="https://github.com/EdricChan03/ngx-ytd-api">ngx-ytd-api</a> library.</p>
+
+<p><em>For more info about HttpClient, view <a href="https://angular.io/guide/http">the docs</a>.</em></p>
+
+<p><em>Note: Development for this Angular library may soon be stopped in favour of a better Angular library such as <a href="https://github.com/ngx-api-utils/ngx-api-utils"><code class="highlighter-rouge">ngx-api-utils</code></a>.</em></p>
 </div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/Chan4077/ngx-simple-http"
           data-mdc-auto-init="MDCRipple">
@@ -385,7 +389,20 @@ ability to chat with your peers. This is the web version.</p>
       <h5 class="card__overline mdc-typography--overline">Library</h5>
       <h2 class="card__title mdc-typography--headline6">ngx-ytd-api</h2><h3 class="card__subtitle mdc-typography--subtitle2">
         Status: in development
-      </h3></div><div class="card__secondary"><p>An unofficial Angular library wrapper of the YouTube Data v3 API.</p>
+      </h3></div><div class="card__secondary"><p>An unofficial Angular library wrapper of the <a href="https://developers.google.com/youtube/v3/">YouTube Data v3 API</a>.</p>
+
+<p>The wrapper currently supports the following APIs:</p>
+<ul>
+  <li>Comment threads/Comments (list/add/delete/edit comment threads/comments)</li>
+  <li>Search (search for videos and/or channels and/or playlists)</li>
+  <li>Videos (check if the specified video has been liked, list video’s details)</li>
+</ul>
+
+<p>This library uses the following libraries:</p>
+<ul>
+  <li><a href="https://github.com/EdricChan03/ngx-simple-http"><code class="highlighter-rouge">ngx-simple-http</code></a> (Simplified HTTP requests)</li>
+  <li><a href="https://github.com/ng-packagr/ng-packagr"><code class="highlighter-rouge">ng-packagr</code></a> (Used for packaging the library to be published to NPM)</li>
+</ul>
 </div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://ngx-ytd-api.firebaseapp.com/master"
           data-mdc-auto-init="MDCRipple">
