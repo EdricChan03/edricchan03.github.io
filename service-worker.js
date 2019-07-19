@@ -199,7 +199,7 @@ self.__precacheManifest = [
   },
   {
     "url": "css/site.css",
-    "revision": "2dbc1a04a6d872053c9ac162247a6a43"
+    "revision": "ed02cdd8d4f52cb0cc87d7d76455afe0"
   },
   {
     "url": "favicon.ico",
@@ -1643,7 +1643,7 @@ self.__precacheManifest = [
   },
   {
     "url": "portfolio.html",
-    "revision": "5dc83b48da3d651824b64fd76d840639"
+    "revision": "0004c1da427960d57f993f727ab7d105"
   },
   {
     "url": "privacy-policy.html",
@@ -1651,7 +1651,7 @@ self.__precacheManifest = [
   },
   {
     "url": "projects.html",
-    "revision": "8d29ce660e74ab24ab8c0e88d5b0539b"
+    "revision": "8b44279cf7bea5cd68da14c7869f756a"
   },
   {
     "url": "til/algorithm/2019/01/31/greedy-algorithm.html",
