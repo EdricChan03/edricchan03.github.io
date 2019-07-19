@@ -31,7 +31,7 @@ title: List of projects
     {%- if project.description or project.tags -%}
     <div class="card__secondary">
       {%- if project.description -%}
-      <p>{{ project.description }}</p>
+      {{ project.description | markdownify }}
       {%- endif -%}
       {%- if project.tags -%}
       <div class="mdc-chip-set">

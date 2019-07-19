@@ -1,7 +1,15 @@
 - name: Computing Performance Task 2018
-  description: "A student grouper for my Applied Subject's Performance Task. Based on an idea from my teachers."
+  description: |
+    A Python program that allows the user to group a list of students imported
+    from an Excel spreadsheet or a CSV (comma-separated value) file into groups,
+    which can be exported as an Excel spreadsheet/CSV file.
+    
+    This program is ideally meant to be run with Python v3.7.3 or higher. For
+    more info about the project and on how to start it, check out the README file 
+    ocated at the root of the source code.
   labels:
   - Python
+  - Tkinter
   - Computing
   - Applied Subject
   - Excel
@@ -12,12 +20,30 @@
   - name: Source code
     link: https://github.com/Chan4077/computing-pt
 - name: StudyBuddy for Android
-  description: An app that helps you in your studies and includes useful functions such as a task manager and the ability to have chat study groups. This is the Android version.
+  description: |
+    An app that helps you keep track of your tasks and events, as well as the
+    ability to chat with your peers and a usage manager that indicates how long
+    you've spent your time on your phone. This is the Android version.
+
+    The app uses the following products&#58;
+    
+    * Firebase
+      * Firebase Authentication - User authentication
+      * Firebase Crashlytics - To handle crashes
+      * Firebase Cloud Messaging - Message users
+      * Firebase Firestore - Store data
+    * AndroidX Libraries
+    * Material Components for Android
+
+    This app was based on an idea by the student counsellor of my school.
   labels:
   - Android
   - Kotlin
   - Java
   - StudyBuddy
+  - Firebase
+  - AndroidX
+  - Material Design
   categories:
   - Application
   status: in development
@@ -25,13 +51,28 @@
   - name: Source code
     link: https://github.com/Chan4077/StudyBuddy
 - name: StudyBuddy for web
-  description: An app that helps you in your studies and includes useful functions such as a task manager and the ability to have chat study groups. This is the web version.
+  description: |
+    An app that helps you keep track of your tasks and events, as well as the
+    ability to chat with your peers. This is the web version.
+
+    The app uses the following products&#58;
+    
+    * Firebase
+      * Firebase Authentication - User authentication
+      * Firebase Firestore - Store data
+      * Firebase Hosting - Hosting the web version
+    * Angular v8
+      * Angular Material
+    * HTML + CSS + TypeScript (which is compiled to JavaScript by the Angular CLI)
+
+    This app was based on an idea by the student counsellor of my school.
   labels:
   - Web
   - Angular
   - TypeScript
   - HTML
   - StudyBuddy
+  - Material Design
   categories:
   - Application
   status: in development
@@ -41,11 +82,21 @@
   - name: Source code
     link: https://github.com/Chan4077/StudyBuddy-web
 - name: RSS Reader
-  description: A typical RSS reader but with support for reading the current headlines of a specified country code and is fully open source.
+  description: |
+    An Angular app based on an example Angular app by [BeCompany GmbH](https://github.com/becompany/angular2-rss-reader-tutorial) and updated to
+    the latest version of Angular.
+    
+    The app also includes features such as the ability for the user to specify
+    a feed to be read into the RSS feed, as well as retrieving the headlines of a
+    country and a refreshed interface. (The original app only had a list of cards which could be clicked on.)
+
+    Unfortunately, work on the app has been temporarily ceased due to other
+    projects and the lack of time.
   labels:
   - Angular
   - RSS
   - RSS Reader
+  - Material Design
   categories:
   - Application
   status: deprecated
@@ -84,3 +135,26 @@
   links:
   - name: Source code
     link: https://github.com/Chan4077/ngx-simple-http
+- name: SCCLGame
+  description: |
+    An educational game made for the Singapore Chinese Centre of Learning Competition in 2017-2018 with two peers - Teo Wei Hao and Aakash Sanjay Mehtha.
+
+    The app's purpose was to aid children in primary schools in their Chinese studies and was supported on Android and iOS.
+
+    The project was submitted in late 2017 with a video showing how to play the game and a certificate of participation was awarded in late 2018.
+
+    The source code of the two apps was archived on 23 Aug 2018. Development of the apps has been ceased.
+  labels:
+  - SCCL
+  - Game
+  - Android
+  - iOS
+  categories:
+  - Application
+  - Game
+  status: archived
+  links:
+  - name: Source code
+    link: https://github.com/EdricChan03/SCCLGame
+  - name: Competition website
+    link: https://appcompetition.tk.sg/
