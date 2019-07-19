@@ -106,7 +106,17 @@
   - name: Source code
     link: https://github.com/Chan4077/rss-reader
 - name: ngx-ytd-api
-  description: An unofficial Angular library wrapper of the YouTube Data v3 API.
+  description: |
+    An unofficial Angular library wrapper of the [YouTube Data v3 API](https://developers.google.com/youtube/v3/).
+
+    The wrapper currently supports the following APIs&#58;
+    * Comment threads/Comments (list/add/delete/edit comment threads/comments)
+    * Search (search for videos and/or channels and/or playlists)
+    * Videos (check if the specified video has been liked, list video's details)
+
+    This library uses the following libraries&#58;
+    * [`ngx-simple-http`](https://github.com/EdricChan03/ngx-simple-http) (Simplified HTTP requests)
+    * [`ng-packagr`](https://github.com/ng-packagr/ng-packagr) (Used for packaging the library to be published to NPM)
   labels:
   - Angular
   - Library
@@ -122,7 +132,12 @@
   - name: Source code
     link: https://github.com/Chan4077/ngx-ytd-api
 - name: ngx-simple-http
-  description: A wrapper of the HttpClient class provided by @angular/common/http which is simplified for easy use. Internally used by the ngx-ytd-api library.
+  description: |
+    An Angular wrapper of the [HttpClient](https://angular.io/api/common/http/HttpClient) class provided by `@angular/common/http`, but simplified to a few easy to understand methods. Also internally used by the [ngx-ytd-api](https://github.com/EdricChan03/ngx-ytd-api) library.
+
+    _For more info about HttpClient, view [the docs](https://angular.io/guide/http)._
+
+    _Note&#58; Development for this Angular library may soon be stopped in favour of a better Angular library such as [`ngx-api-utils`](https://github.com/ngx-api-utils/ngx-api-utils)._
   labels:
   - Angular
   - Library
