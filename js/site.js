@@ -32,7 +32,18 @@ function copyText(text, inputEl, logDebugMsgs) {
     return false;
   }
 }
-var activeListItemClass = 'mdc-list-item--activated';
+/**
+ * Toggles the activated state of a list item
+ * @param {string} id The ID of the list item
+ */
+function toggleListItemActivated(id) {
+  if (document.getElementById(id) !== null) {
+    document.getElementById(id).classList.toggle(activatedListItemClass);
+  } else {
+    throw new Error('The ID specified is invalid!');
+  }
+}
+var activatedListItemClass = 'mdc-list-item--activated';
 var drawer = mdc.drawer.MDCDrawer.attachTo(document.getElementById('app-drawer'));
 var topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
 // topAppBar.setScrollTarget(document.getElementById('page-content'));
@@ -72,10 +83,12 @@ document.querySelectorAll('.mdc-icon-button')
 mdc.autoInit();
 
 var path = window.location.pathname;
-if (path === '/about') {
-  document.getElementById('about-list-item').classList.toggle(activeListItemClass);
+if (path === '/') {
+  toggleListItemActivated('home-list-item');
+} else if (path === '/about') {
+  toggleListItemActivated('about-list-item');
 } else if (path.indexOf('/blog/') > -1) {
-  document.getElementById('blog-list-item').classList.toggle(activeListItemClass);
+  toggleListItemActivated('blog-list-item');
   if (path === '/blog/authors') {
     document.querySelectorAll('.follow-author-menu')
       .forEach((element) => {
@@ -90,14 +103,14 @@ if (path === '/about') {
         }
       })
   }
-} else if (path === '/') {
-  document.getElementById('home-list-item').classList.toggle(activeListItemClass);
+} else if (path === '/portfolio') {
+  toggleListItemActivated('portfolio-list-item');
 } else if (path === '/projects') {
-  document.getElementById('projects-list-item').classList.toggle(activeListItemClass);
+  toggleListItemActivated('projects-list-item');
 } else if (path === '/privacy-policy') {
-  document.getElementById('privacy-policy-list-item').classList.toggle(activeListItemClass);
+  toggleListItemActivated('privacy-policy-list-item');
 } else if (path.indexOf('/til/') > -1) {
-  document.getElementById('til-list-item').classList.toggle(activeListItemClass);
+  toggleListItemActivated('til-list-item');
 }
 
 // Share functionality
