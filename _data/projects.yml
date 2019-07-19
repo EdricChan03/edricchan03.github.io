@@ -6,7 +6,7 @@
     
     This program is ideally meant to be run with Python v3.7.3 or higher. For
     more info about the project and on how to start it, check out the README file 
-    ocated at the root of the source code.
+    located at the root of the source code.
   labels:
   - Python
   - Tkinter
