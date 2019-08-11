@@ -1,0 +1,35 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches:
+      # Only build on the website-v2 branch
+      - website-v2
+
+jobs:
+  build:
+    name: Build site
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: website-v2
+   
+    # Used to setup NodeJS
+    - name: Setup NodeJS
+      uses: actions/setup-node@master
+      with:
+        version: 10.x
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build and deploy site
+      uses: EdricChan03/actions/githubPages@master
+      env:
+        GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+        GH_PAGES_BRANCH: master
+        GIT_FORCE: false
+        OVERRIDE_GH_PAGES_BRANCH: true
