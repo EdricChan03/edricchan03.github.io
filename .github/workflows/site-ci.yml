@@ -29,6 +29,7 @@ jobs:
     - name: Build and deploy site
       uses: EdricChan03/actions/githubPages@master
       env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
         GH_PAGES_BRANCH: master
         GIT_FORCE: false
