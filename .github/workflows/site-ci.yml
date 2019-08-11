@@ -37,4 +37,4 @@ jobs:
         GH_PAGES_BRANCH: master
         GIT_FORCE: false
         OVERRIDE_GH_PAGES_BRANCH: true
-        JEKYLL_BUILD_POST_COMMANDS: workbox generateSW
+        JEKYLL_BUILD_POST_COMMANDS: $(npm bin)/workbox generateSW
