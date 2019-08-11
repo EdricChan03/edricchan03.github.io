@@ -18,7 +18,7 @@
   status: done
   links:
   - name: Source code
-    link: https://github.com/Chan4077/computing-pt
+    link: https://github.com/EdricChan03/computing-pt
 - name: StudyBuddy for Android
   description: |
     An app that helps you keep track of your tasks and events, as well as the
@@ -49,7 +49,7 @@
   status: in development
   links:
   - name: Source code
-    link: https://github.com/Chan4077/StudyBuddy
+    link: https://github.com/EdricChan03/StudyBuddy
 - name: StudyBuddy for web
   description: |
     An app that helps you keep track of your tasks and events, as well as the
@@ -80,7 +80,7 @@
   - name: Website
     link: https://studybuddy-e5f46.firebaseapp.com
   - name: Source code
-    link: https://github.com/Chan4077/StudyBuddy-web
+    link: https://github.com/EdricChan03/StudyBuddy-web
 - name: RSS Reader
   description: |
     An Angular app based on an example Angular app by [BeCompany GmbH](https://github.com/becompany/angular2-rss-reader-tutorial) and updated to
@@ -102,9 +102,9 @@
   status: deprecated
   links:
   - name: Website
-    link: https://chan4077.github.io/rss-reader
+    link: https://edricchan03.github.io/rss-reader
   - name: Source code
-    link: https://github.com/Chan4077/rss-reader
+    link: https://github.com/EdricChan03/rss-reader
 - name: ngx-ytd-api
   description: |
     An unofficial Angular library wrapper of the [YouTube Data v3 API](https://developers.google.com/youtube/v3/).
@@ -130,7 +130,7 @@
   - name: Website
     link: https://ngx-ytd-api.firebaseapp.com/master
   - name: Source code
-    link: https://github.com/Chan4077/ngx-ytd-api
+    link: https://github.com/EdricChan03/ngx-ytd-api
 - name: ngx-simple-http
   description: |
     An Angular wrapper of the [HttpClient](https://angular.io/api/common/http/HttpClient) class provided by `@angular/common/http`, but simplified to a few easy to understand methods. Also internally used by the [ngx-ytd-api](https://github.com/EdricChan03/ngx-ytd-api) library.
@@ -149,7 +149,7 @@
   status: in development
   links:
   - name: Source code
-    link: https://github.com/Chan4077/ngx-simple-http
+    link: https://github.com/EdricChan03/ngx-simple-http
 - name: SCCLGame
   description: |
     An educational game made for the Singapore Chinese Centre of Learning Competition in 2017-2018 with two peers - Teo Wei Hao and Aakash Sanjay Mehtha.

@@ -1,7 +1,7 @@
 {
-  "name": "chan4077.github.io",
+  "name": "edricchan03.github.io",
   "version": "0.0.0",
-  "description": "The source code for chan4077.github.io",
+  "description": "The source code for edricchan03.github.io",
   "private": true,
   "main": ".",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chan4077/chan4077.github.io.git"
+    "url": "git+https://github.com/EdricChan03/edricchan03.github.io.git"
   },
-  "author": "Chan4077",
+  "author": "EdricChan03",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Chan4077/chan4077.github.io/issues"
+    "url": "https://github.com/EdricChan03/edricchan03.github.io/issues"
   },
-  "homepage": "https://github.com/Chan4077/chan4077.github.io#readme",
+  "homepage": "https://github.com/EdricChan03/edricchan03.github.io#readme",
   "dependencies": {
     "material-components-web": "^3.1.0-alpha.0"
   }

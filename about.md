@@ -161,16 +161,16 @@ So far, I've created quite a number of projects, including the following (in alp
 - StudyBuddy
   - A study buddy ideally for students
   - Includes the ability to create todos, chat with other students/teachers, submit tips and keep track of your assignment due dates!
-  - Available for [Android](https://github.com/Chan4077/StudyBuddy) (unfortunately not on the Google Play Store) and on the [web](https://github.com/Chan4077/StudyBuddy-web).
+  - Available for [Android](https://github.com/EdricChan03/StudyBuddy) (unfortunately not on the Google Play Store) and on the [web](https://github.com/EdricChan03/StudyBuddy-web).
   - Latest release (Android): `1.0.0-rc.503`
 - rss-reader
   - Angular Material RSS reader
   - Includes the ability to view news headlines and RSS feeds
-  - Available on the [web](https://github.com/Chan4077/rss-reader)
+  - Available on the [web](https://github.com/EdricChan03/rss-reader)
 - ngx-ytd-api
   - Unofficial YouTube Data v3 API for Angular
   - NOTE: The project is quite broken now. Looking for people who can help to troubleshoot/contributors who can help to maintain the repository.
-  - Available on [NPM](https://npmjs.com/package/ngx-ytd-api) as a installable Angular package; source code on [GitHub](https://github.com/Chan4077/ngx-ytd-api)
+  - Available on [NPM](https://npmjs.com/package/ngx-ytd-api) as a installable Angular package; source code on [GitHub](https://github.com/EdricChan03/ngx-ytd-api)
   - Latest release: `1.0.0-alpha.3`
 
 ## Books I've read
