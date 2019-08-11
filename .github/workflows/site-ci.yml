@@ -26,6 +26,9 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
+    - name: Globally install Workbox CLI
+      run: npm i -g workbox-cli
+
     - name: Build and deploy site
       uses: EdricChan03/actions/githubPages@master
       env:

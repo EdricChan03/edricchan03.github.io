@@ -20,7 +20,5 @@
   "dependencies": {
     "material-components-web": "^3.1.0-alpha.0"
   },
-  "devDependencies": {
-    "workbox-cli": "^4.3.1"
-  }
+  "devDependencies": {}
 }
