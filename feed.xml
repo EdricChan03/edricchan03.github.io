@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Edric's website</title>
-    <description>My personal Github pages website.</description>
-    <link>https://edricchan03.github.io/</link>
-    <atom:link href="https://edricchan03.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Aug 2019 16:07:51 +0000</pubDate>
-    <lastBuildDate>Sun, 11 Aug 2019 16:07:51 +0000</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
-    
-      <item>
-        <title>TOTD: Solve differentiation/integration equations with this web calculator</title>
-        <description>&lt;p&gt;&lt;em&gt;NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://edricchan03.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edricchan03.github.io/" rel="alternate" type="text/html" /><updated>2019-09-28T06:18:03+00:00</updated><id>https://edricchan03.github.io/feed.xml</id><title type="html">Edric’s website</title><subtitle>My personal Github pages website.</subtitle><entry><title type="html">TOTD: Solve differentiation/integration equations with this web calculator</title><link href="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html" rel="alternate" type="text/html" title="TOTD: Solve differentiation/integration equations with this web calculator" /><published>2019-04-21T00:00:00+00:00</published><updated>2019-04-21T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration</id><content type="html" xml:base="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html">&lt;p&gt;&lt;em&gt;NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I discovered the calculators when looking up for a solution to an integration question.&lt;/p&gt;
 
@@ -24,32 +11,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://derivative-calculator.net&quot;&gt;Deriative calculator&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://integral-calculator.com&quot;&gt;Integral calculator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-        <link>https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html</link>
-        <guid isPermaLink="true">https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html</guid>
-        
-        <category>calculator</category>
-        
-        <category>calculus</category>
-        
-        <category>differentiation</category>
-        
-        <category>integration</category>
-        
-        <category>tip</category>
-        
-        <category>tip-of-the-day</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>[Update: New syntax] Inflating layouts with the ContentView annotation</title>
-        <description>&lt;p&gt;In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the &lt;a href=&quot;https://developer.android.com/reference/androidx/annotation/ContentView&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ContentView&lt;/code&gt;&lt;/a&gt; annotation.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="calculator" /><category term="calculus" /><category term="differentiation" /><category term="integration" /><category term="tip" /><category term="tip-of-the-day" /><summary type="html">NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post. I discovered the calculators when looking up for a solution to an integration question. The calculators are made by David Scherfgen.</summary></entry><entry><title type="html">[Update: New syntax] Inflating layouts with the ContentView annotation</title><link href="https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html" rel="alternate" type="text/html" title="[Update: New syntax] Inflating layouts with the ContentView annotation" /><published>2019-03-16T00:00:00+00:00</published><updated>2019-03-16T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html">&lt;p&gt;In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the &lt;a href=&quot;https://developer.android.com/reference/androidx/annotation/ContentView&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ContentView&lt;/code&gt;&lt;/a&gt; annotation.&lt;/p&gt;
 
 &lt;!-- End of excerpt --&gt;
 
@@ -226,30 +188,7 @@
 &lt;ul&gt;
   &lt;li&gt;The ability to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;ContentView&lt;/code&gt; annotation on a class that extends &lt;a href=&quot;https://developer.android.com/reference/androidx/activity/ComponentActivity&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ComponentActivity&lt;/code&gt;&lt;/a&gt; (which &lt;a href=&quot;https://developer.android.com/reference/androidx/fragment/app/FragmentActivity&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;FragmentActivity&lt;/code&gt;&lt;/a&gt; directly and &lt;a href=&quot;https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AppCompatActivity&lt;/code&gt;&lt;/a&gt; indirectly inherit from) was introduced in &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.0-alpha04&lt;/code&gt; of the &lt;code class=&quot;highlighter-rouge&quot;&gt;androidx.activity:activity&lt;/code&gt; dependency. (See the &lt;a href=&quot;https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha04&quot;&gt;release notes&lt;/a&gt; for more info)&lt;/li&gt;
   &lt;li&gt;The ability to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;ContentView&lt;/code&gt; annotation on a class that extends &lt;a href=&quot;https://developer.android.com/reference/androidx/fragment/app/Fragment&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Fragment&lt;/code&gt;&lt;/a&gt; was introduced in &lt;code class=&quot;highlighter-rouge&quot;&gt;1.1.0-alpha04&lt;/code&gt; of the &lt;code class=&quot;highlighter-rouge&quot;&gt;androidx.fragment:fragment&lt;/code&gt; dependency. (See the &lt;a href=&quot;https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha04&quot;&gt;release notes&lt;/a&gt; for more info)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
-        <link>https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html</link>
-        <guid isPermaLink="true">https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html</guid>
-        
-        <category>kotlin</category>
-        
-        <category>androidx</category>
-        
-        <category>android</category>
-        
-        <category>annotation</category>
-        
-        
-        <category>blog</category>
-        
-        <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title>Status Update | February</title>
-        <description>&lt;p&gt;This is a new form of blog post where I cover what I’ve done so far and plans for the following month. Expect to see this at the end of each month starting from February!&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="kotlin" /><category term="androidx" /><category term="android" /><category term="annotation" /><summary type="html">In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the ContentView annotation.</summary></entry><entry><title type="html">Status Update | February</title><link href="https://edricchan03.github.io/blog/2019/02/24/status-update.html" rel="alternate" type="text/html" title="Status Update | February" /><published>2019-02-24T00:00:00+00:00</published><updated>2019-02-24T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2019/02/24/status-update</id><content type="html" xml:base="https://edricchan03.github.io/blog/2019/02/24/status-update.html">&lt;p&gt;This is a new form of blog post where I cover what I’ve done so far and plans for the following month. Expect to see this at the end of each month starting from February!&lt;/p&gt;
 
 &lt;!-- End of excerpt --&gt;
 
@@ -290,22 +229,7 @@
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Take a short break from programming&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
-        <link>https://edricchan03.github.io/blog/2019/02/24/status-update.html</link>
-        <guid isPermaLink="true">https://edricchan03.github.io/blog/2019/02/24/status-update.html</guid>
-        
-        <category>status-update</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>TIL: StackOverflow supports backticks</title>
-        <description>&lt;p&gt;Today I Learned that StackOverflow supports 3 backticks to create a code block, similar to a fenced code block in GitHub’s Flavoured Markdown.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="status-update" /><summary type="html">This is a new form of blog post where I cover what I’ve done so far and plans for the following month. Expect to see this at the end of each month starting from February!</summary></entry><entry><title type="html">TIL: StackOverflow supports backticks</title><link href="https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html" rel="alternate" type="text/html" title="TIL: StackOverflow supports backticks" /><published>2019-02-06T00:00:00+00:00</published><updated>2019-02-06T00:00:00+00:00</updated><id>https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick</id><content type="html" xml:base="https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html">&lt;p&gt;Today I Learned that StackOverflow supports 3 backticks to create a code block, similar to a fenced code block in GitHub’s Flavoured Markdown.&lt;/p&gt;
 
 &lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;sb&quot;&gt;```html
 &amp;lt;h1&amp;gt;Header!&amp;lt;/h1&amp;gt;
@@ -321,26 +245,7 @@
     &amp;lt;p id=&quot;paragraph1&quot;&amp;gt;Hello, HTML code!&amp;lt;/p&amp;gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;EDIT: I also learnt that it is possible to have 3 backticks in a code block. (See the source for this post for more info)&lt;/p&gt;
-</description>
-        <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
-        <link>https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html</link>
-        <guid isPermaLink="true">https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html</guid>
-        
-        <category>stackoverflow</category>
-        
-        <category>markdown</category>
-        
-        
-        <category>til</category>
-        
-        <category>stackoverflow</category>
-        
-      </item>
-    
-      <item>
-        <title>TIL: The greedy algorithm</title>
-        <description>&lt;p&gt;Today I Learned about the &lt;a href=&quot;https://brilliant.org/wiki/greedy-algorithm/&quot;&gt;Greedy Algorithm&lt;/a&gt;, which can be used to calculate the minimum elements required from a list that will sum up to a number.&lt;/p&gt;
+&lt;p&gt;EDIT: I also learnt that it is possible to have 3 backticks in a code block. (See the source for this post for more info)&lt;/p&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="stackoverflow" /><category term="markdown" /><summary type="html">Today I Learned that StackOverflow supports 3 backticks to create a code block, similar to a fenced code block in GitHub’s Flavoured Markdown. ```html &amp;lt;h1&amp;gt;Header!&amp;lt;/h1&amp;gt; &amp;lt;p id=&quot;paragraph1&quot;&amp;gt;Hello, HTML code!&amp;lt;/p&amp;gt; ``` And here’s the other form of syntax for a code block on StackOverflow: &amp;lt;!-- language: lang-html --&amp;gt; &amp;lt;h1&amp;gt;Header!&amp;lt;/h1&amp;gt; &amp;lt;p id=&quot;paragraph1&quot;&amp;gt;Hello, HTML code!&amp;lt;/p&amp;gt; EDIT: I also learnt that it is possible to have 3 backticks in a code block. (See the source for this post for more info)</summary></entry><entry><title type="html">TIL: The greedy algorithm</title><link href="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html" rel="alternate" type="text/html" title="TIL: The greedy algorithm" /><published>2019-01-31T00:00:00+00:00</published><updated>2019-01-31T00:00:00+00:00</updated><id>https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm</id><content type="html" xml:base="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html">&lt;p&gt;Today I Learned about the &lt;a href=&quot;https://brilliant.org/wiki/greedy-algorithm/&quot;&gt;Greedy Algorithm&lt;/a&gt;, which can be used to calculate the minimum elements required from a list that will sum up to a number.&lt;/p&gt;
 
 &lt;p&gt;For example:&lt;/p&gt;
 
@@ -373,26 +278,7 @@ Write a function to determine the minimum number of elements in list V that can 
   &lt;li&gt;First, the variables &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;V&lt;/code&gt; are passed in to the function which is called in the last line. (In this example, &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;V&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;[1,2,5]&lt;/code&gt;)&lt;/li&gt;
   &lt;li&gt;Next, the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; specified is checked if the number is &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;. This is an edge case as there can’t be any number of elements that can form &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;. (In this case, this zero check is skipped)&lt;/li&gt;
   &lt;li&gt;Next, the variable &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt; specified is checked if&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
-        <link>https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html</link>
-        <guid isPermaLink="true">https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html</guid>
-        
-        <category>python</category>
-        
-        <category>algorithm</category>
-        
-        
-        <category>til</category>
-        
-        <category>algorithm</category>
-        
-      </item>
-    
-      <item>
-        <title>Code snippet of the week - code/pre elements</title>
-        <description>&lt;p&gt;&lt;a name=&quot;top&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="python" /><category term="algorithm" /><summary type="html">Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &amp;lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if</summary></entry><entry><title type="html">Code snippet of the week - code/pre elements</title><link href="https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html" rel="alternate" type="text/html" title="Code snippet of the week - code/pre elements" /><published>2018-03-26T00:00:00+00:00</published><updated>2018-03-26T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html">&lt;p&gt;&lt;a name=&quot;top&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Note: This blog post originally appeared on my &lt;a href=&quot;https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html&quot;&gt;blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -460,26 +346,7 @@ Write a function to determine the minimum number of elements in list V that can 
 &lt;p data-height=&quot;307&quot; data-theme-id=&quot;31098&quot; data-slug-hash=&quot;MVEdgb&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;EdricChan03&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Code/ Pre Element&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/EdricChan03/pen/MVEdgb/&quot;&gt;Code/ Pre Element&lt;/a&gt; by Edric Chan (&lt;a href=&quot;https://codepen.io/EdricChan03&quot;&gt;@EdricChan03&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a class=&quot;mdc-button mdc-button--raised mdc-button--secondary&quot; href=&quot;https://codepen.io/EdricChan03/pen/MVEdgb&quot; target=&quot;_blank&quot; data-mdc-auto-init=&quot;MDCRipple&quot;&gt;&lt;svg style=&quot;height: 24px; width: 24px;&quot; viewbox=&quot;0 0 24 24&quot; class=&quot;mdc-button__icon&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M15.09,12L12,14.08V14.09L8.91,12L12,9.92V9.92L15.09,12M12,2C11.84,2 11.68,2.06 11.53,2.15L2.5,8.11C2.27,8.22 2.09,8.43 2,8.67V14.92C2,15.33 2,15.33 2.15,15.53L11.53,21.86C11.67,21.96 11.84,22 12,22C12.16,22 12.33,21.95 12.47,21.85L21.85,15.5C22,15.33 22,15.33 22,14.92V8.67C21.91,8.42 21.73,8.22 21.5,8.1L12.47,2.15C12.32,2.05 12.16,2 12,2M16.58,13L19.59,15.04L12.83,19.6V15.53L16.58,13M19.69,8.9L16.58,11L12.83,8.47V4.38L19.69,8.9M20.33,10.47V13.53L18.07,12L20.33,10.47M7.42,13L11.17,15.54V19.6L4.41,15.04L7.42,13M4.31,8.9L11.17,4.39V8.5L7.42,11L4.31,8.9M3.67,10.5L5.93,12L3.67,13.54V10.5Z&quot;&gt; &lt;/path&gt;&lt;/svg&gt; View Demo&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
-        <link>https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html</link>
-        <guid isPermaLink="true">https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html</guid>
-        
-        <category>code-snippet-of-the-week</category>
-        
-        <category>html</category>
-        
-        
-        <category>blog</category>
-        
-        <category>programming</category>
-        
-      </item>
-    
-      <item>
-        <title>Code snippet of the week | Unordered and Ordered lists</title>
-        <description>&lt;p&gt;&lt;em&gt;Note: This blog post originally appeared on my &lt;a href=&quot;https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html&quot;&gt;blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;mdc-button mdc-button--raised mdc-button--secondary&quot; href=&quot;https://codepen.io/EdricChan03/pen/MVEdgb&quot; target=&quot;_blank&quot; data-mdc-auto-init=&quot;MDCRipple&quot;&gt;&lt;svg style=&quot;height: 24px; width: 24px;&quot; viewbox=&quot;0 0 24 24&quot; class=&quot;mdc-button__icon&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M15.09,12L12,14.08V14.09L8.91,12L12,9.92V9.92L15.09,12M12,2C11.84,2 11.68,2.06 11.53,2.15L2.5,8.11C2.27,8.22 2.09,8.43 2,8.67V14.92C2,15.33 2,15.33 2.15,15.53L11.53,21.86C11.67,21.96 11.84,22 12,22C12.16,22 12.33,21.95 12.47,21.85L21.85,15.5C22,15.33 22,15.33 22,14.92V8.67C21.91,8.42 21.73,8.22 21.5,8.1L12.47,2.15C12.32,2.05 12.16,2 12,2M16.58,13L19.59,15.04L12.83,19.6V15.53L16.58,13M19.69,8.9L16.58,11L12.83,8.47V4.38L19.69,8.9M20.33,10.47V13.53L18.07,12L20.33,10.47M7.42,13L11.17,15.54V19.6L4.41,15.04L7.42,13M4.31,8.9L11.17,4.39V8.5L7.42,11L4.31,8.9M3.67,10.5L5.93,12L3.67,13.54V10.5Z&quot;&gt; &lt;/path&gt;&lt;/svg&gt; View Demo&lt;/a&gt;&lt;/p&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="code-snippet-of-the-week" /><category term="html" /><summary type="html">Note: This blog post originally appeared on my blog. Another code snippet! This week, I’ll be covering how to create code snippets with the &amp;lt;code&amp;gt; and &amp;lt;pre&amp;gt; HTML tags. Note: If you haven’t seen it, I’ve designed a new header image for these kind of posts! Look out for posts with the image on the top of the post!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" /></entry><entry><title type="html">Code snippet of the week | Unordered and Ordered lists</title><link href="https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html" rel="alternate" type="text/html" title="Code snippet of the week | Unordered and Ordered lists" /><published>2017-12-11T00:00:00+00:00</published><updated>2017-12-11T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html">&lt;p&gt;&lt;em&gt;Note: This blog post originally appeared on my &lt;a href=&quot;https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html&quot;&gt;blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Yes, it’s a code snippet! You heard that right. I’ll be trying to create a code snippet with pure HTML. (You can view the source code by pressing &lt;kbd&gt;Cmd&lt;/kbd&gt;+&lt;kbd&gt;Option&lt;/kbd&gt;+&lt;kbd&gt;U&lt;/kbd&gt; or &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;U&lt;/kbd&gt; if you’re on the desktop.)&lt;/p&gt;
 
@@ -547,22 +414,4 @@ Write a function to determine the minimum number of elements in list V that can 
 &lt;p data-height=&quot;307&quot; data-theme-id=&quot;31098&quot; data-slug-hash=&quot;zPdxPZ&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;EdricChan03&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Unordered &amp;amp; Ordered lists&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/EdricChan03/pen/zPdxPZ/&quot;&gt;Unordered &amp;amp; Ordered lists&lt;/a&gt; by Edric Chan (&lt;a href=&quot;https://codepen.io/EdricChan03&quot;&gt;@EdricChan03&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 &lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;a class=&quot;mdc-button mdc-button--raised mdc-button--secondary&quot; href=&quot;https://codepen.io/EdricChan03/pen/zPdxPZ&quot; target=&quot;_blank&quot; data-mdc-auto-init=&quot;MDCRipple&quot;&gt;&lt;svg style=&quot;height: 24px; width: 24px;&quot; viewbox=&quot;0 0 24 24&quot; class=&quot;mdc-button__icon&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M15.09,12L12,14.08V14.09L8.91,12L12,9.92V9.92L15.09,12M12,2C11.84,2 11.68,2.06 11.53,2.15L2.5,8.11C2.27,8.22 2.09,8.43 2,8.67V14.92C2,15.33 2,15.33 2.15,15.53L11.53,21.86C11.67,21.96 11.84,22 12,22C12.16,22 12.33,21.95 12.47,21.85L21.85,15.5C22,15.33 22,15.33 22,14.92V8.67C21.91,8.42 21.73,8.22 21.5,8.1L12.47,2.15C12.32,2.05 12.16,2 12,2M16.58,13L19.59,15.04L12.83,19.6V15.53L16.58,13M19.69,8.9L16.58,11L12.83,8.47V4.38L19.69,8.9M20.33,10.47V13.53L18.07,12L20.33,10.47M7.42,13L11.17,15.54V19.6L4.41,15.04L7.42,13M4.31,8.9L11.17,4.39V8.5L7.42,11L4.31,8.9M3.67,10.5L5.93,12L3.67,13.54V10.5Z&quot;&gt; &lt;/path&gt;&lt;/svg&gt; View Demo&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
-        <link>https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html</link>
-        <guid isPermaLink="true">https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html</guid>
-        
-        <category>code-snippet-of-the-week</category>
-        
-        <category>html</category>
-        
-        
-        <category>blog</category>
-        
-        <category>programming</category>
-        
-      </item>
-    
-  </channel>
-</rss>
+&lt;p&gt;&lt;a class=&quot;mdc-button mdc-button--raised mdc-button--secondary&quot; href=&quot;https://codepen.io/EdricChan03/pen/zPdxPZ&quot; target=&quot;_blank&quot; data-mdc-auto-init=&quot;MDCRipple&quot;&gt;&lt;svg style=&quot;height: 24px; width: 24px;&quot; viewbox=&quot;0 0 24 24&quot; class=&quot;mdc-button__icon&quot;&gt;&lt;path fill=&quot;none&quot; d=&quot;M0 0h24v24H0z&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M15.09,12L12,14.08V14.09L8.91,12L12,9.92V9.92L15.09,12M12,2C11.84,2 11.68,2.06 11.53,2.15L2.5,8.11C2.27,8.22 2.09,8.43 2,8.67V14.92C2,15.33 2,15.33 2.15,15.53L11.53,21.86C11.67,21.96 11.84,22 12,22C12.16,22 12.33,21.95 12.47,21.85L21.85,15.5C22,15.33 22,15.33 22,14.92V8.67C21.91,8.42 21.73,8.22 21.5,8.1L12.47,2.15C12.32,2.05 12.16,2 12,2M16.58,13L19.59,15.04L12.83,19.6V15.53L16.58,13M19.69,8.9L16.58,11L12.83,8.47V4.38L19.69,8.9M20.33,10.47V13.53L18.07,12L20.33,10.47M7.42,13L11.17,15.54V19.6L4.41,15.04L7.42,13M4.31,8.9L11.17,4.39V8.5L7.42,11L4.31,8.9M3.67,10.5L5.93,12L3.67,13.54V10.5Z&quot;&gt; &lt;/path&gt;&lt;/svg&gt; View Demo&lt;/a&gt;&lt;/p&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="code-snippet-of-the-week" /><category term="html" /><summary type="html">Note: This blog post originally appeared on my blog. Yes, it’s a code snippet! You heard that right. I’ll be trying to create a code snippet with pure HTML. (You can view the source code by pressing Cmd+Option+U or Ctrl+U if you’re on the desktop.)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" /></entry></feed>
