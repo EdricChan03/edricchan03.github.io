@@ -6,7 +6,7 @@ tags:
   - "html"
 categories:
   - "programming"
-hero_img: /assets/code-snippet-of-the-week/header.png
+image: /assets/code-snippet-of-the-week/header.png
 author: edric_chan
 ---
 

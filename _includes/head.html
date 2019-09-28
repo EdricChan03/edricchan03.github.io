@@ -11,14 +11,14 @@
   
   <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="manifest" href="/manifest.json">
-
+  
   {%- if paginator.page > 1 -%}
   <meta name="robots" content="noindex">
   {%- endif -%}
-
+  
   <link href='https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Roboto+Condensed:400,300,700|Roboto:300,400,500|Roboto+Mono:300'
-    rel='stylesheet' type='text/css' />
+  rel='stylesheet' type='text/css' />
+  {% feed_meta %}
   {% seo %}
 </head>

@@ -5,8 +5,8 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
       <div class="mdc-card card">
         <a class="mdc-card__primary-action" data-mdc-auto-init="MDCRipple" href="{{ post.url | prepend: site.baseurl }}">
-          {%- if post.hero_img -%}
-          <img class="mdc-card__media mdc-card__media--16-9 card__media" src="{{post.hero_img | prepend: site.baseurl}}">
+          {%- if post.image -%}
+          <img class="mdc-card__media mdc-card__media--16-9 card__media" src="{{post.image | prepend: site.baseurl}}">
           {%- endif -%}
           <div class="card__primary">
             {%- if post.categories -%}
