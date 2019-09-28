@@ -1,4 +1,4 @@
-FROM timbru31/ruby-node:slim
+FROM timbru31/ruby-node
 
 # Set the default locale so as to not cause issues in Jekyll
 ENV LC_ALL C.UTF-8
