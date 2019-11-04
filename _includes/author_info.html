@@ -1,0 +1,18 @@
+{%- assign author = site.data.authors[include.author] -%}
+<div class="mdc-card card card--horizontal">
+  {%- if author.image -%}
+  <img class="mdc-card__media--square"
+  src="{{ author.image | prepend: site.baseurl }}" alt="Author profile picture">
+  {%- endif -%}
+  <div class="card__primary">
+    <h2 class="card__title mdc-typography--headline6">About {{ author.name }}</h2>
+    {%- if author.is_site_owner and author.is_site_owner == true -%}
+    <h3 class="card__subtitle mdc-typography--subtitle2">(site owner)</h3>
+    {%- endif -%}
+    
+  </div>
+  <div class="card__secondary">
+    {%- assign bio = author.bio | default: "(This user has no bio!)" -%}
+    <p>{{ bio }}</p>
+  </div>
+</div>
