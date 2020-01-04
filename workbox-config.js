@@ -18,6 +18,8 @@ module.exports = {
   ],
   "swDest": "service-worker.js",
   "offlineGoogleAnalytics": true,
+  // Exclude URLs that are separate from the main site.
+  "navigationFallbackBlacklist": [/rss-reader/],
   // Define runtime caching rules.
   "runtimeCaching": [{
     // Match any request ends with .png, .jpg, .jpeg or .svg.
