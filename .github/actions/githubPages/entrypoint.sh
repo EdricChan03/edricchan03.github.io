@@ -58,7 +58,8 @@ GH_PAGES_ADD_NO_JEKYLL=${GH_PAGES_ADD_NO_JEKYLL:-true}
 
 echo "Installing gem bundle..."
 # Prevent installed dependencies messages from clogging the log
-bundle install > /dev/null 2>&1
+# bundle install > /dev/null 2>&1
+bundle install
 
 # Check if jekyll is installed
 bundle list | grep "jekyll ("
