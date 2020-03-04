@@ -35,3 +35,4 @@ jobs:
         gh_pages_branch: master
         git_force: 'false'
         override_gh_pages_branch: 'true'
+        show_bundle_log: 'true'
