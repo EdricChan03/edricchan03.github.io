@@ -55,8 +55,21 @@ autopages:
     permalink: '/blog/category/:cat'
   collection:
     enabled: false
+workbox:
+  sw_src_filepath: 'service-worker.js'
+  sw_dest_filename: 'service-worker.js'
+  precache_recent_posts_num: 5
+  precache_glob_directory: '_site'
+  precache_glob_patterns:
+    - '**/*.{html,png,css,ico,js}'
+  precache_glob_ignores:
+    # There aren't any _ prefixed directories when the site is built or when served
+    - '_*/**'
+    # We only want to cache CSS/JS files
+    - 'node_modules/**/*.{html,md}'
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-workbox-plugin

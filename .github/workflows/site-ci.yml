@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
       with:
         ref: website-v2
    
     # Used to setup NodeJS
     - name: Setup NodeJS
-      uses: actions/setup-node@master
+      uses: actions/setup-node@v1
       with:
         node-version: 10.x
     - name: Setup Ruby
@@ -30,15 +30,10 @@ jobs:
       run: gem install bundler -v '1.17.3'
     - name: Install dependencies
       run: npm ci
-
-    - name: Globally install Workbox CLI
-      run: npm i -g workbox-cli
-
     - name: Build and deploy site
-      uses: ./.github/actions/githubPages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
-        GH_PAGES_BRANCH: master
-        GIT_FORCE: false
-        OVERRIDE_GH_PAGES_BRANCH: true
+      uses: EdricChan03/actions-build-deploy-ghpages@v2
+      with:
+        github_token: ${{ github.token }}
+        gh_pages_branch: master
+        git_force: 'false'
+        override_gh_pages_branch: 'true'
