@@ -36,3 +36,4 @@ jobs:
         git_force: 'false'
         override_gh_pages_branch: 'true'
         show_bundle_log: 'true'
+        bundler_version: '2.1.4'
