@@ -1,6 +1,7 @@
 edric_chan:
   name: Edric Chan
   email: edric.chan.1997@gmail.com
+  avatar: https://github.com/EdricChan03.png
   social:
   - name: Instagram
     link: https://instagram.com/edric.js
@@ -10,5 +11,7 @@ edric_chan:
 #    link: https://plus.google.com/+EdricChan03
   - name: Reddit
     link: https://reddit.com/u/Chan4077
+  - name: GitHub
+    link: https://github.com/EdricChan03
   bio: A 16-year-old tech enthusiast since getting his first MacBook Pro 2015 in the year-end of 2015. When he's not at school, he usually works on small programming projects or reads technology-related books. He currently studies at School of Science & Technology, Singapore and will graduate in 2019 to pursue his post-secondary life.
   is_site_owner: true
