@@ -12,7 +12,7 @@
   <link rel="manifest" href="/manifest.json"><link href='https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Roboto+Condensed:400,300,700|Roboto:300,400,500|Roboto+Mono:300'
   rel='stylesheet' type='text/css' />
   <link type="application/atom+xml" rel="alternate" href="https://edricchan03.github.io/feed.xml" title="Edric's website" />
-  <!-- Begin Jekyll SEO tag v2.5.0 -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>[Update: New syntax] Inflating layouts with the ContentView annotation | Edric’s website</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="[Update: New syntax] Inflating layouts with the ContentView annotation" />
@@ -26,7 +26,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-03-16T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the ContentView annotation.","headline":"[Update: New syntax] Inflating layouts with the ContentView annotation","dateModified":"2019-03-16T00:00:00+00:00","datePublished":"2019-03-16T00:00:00+00:00","@type":"BlogPosting","url":"https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html"},"author":{"@type":"Person","name":"Edric Chan"},"@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html"},"datePublished":"2019-03-16T00:00:00+00:00","author":{"@type":"Person","name":"Edric Chan"},"headline":"[Update: New syntax] Inflating layouts with the ContentView annotation","dateModified":"2019-03-16T00:00:00+00:00","description":"In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the ContentView annotation.","url":"https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -106,15 +106,15 @@
   <div class="mdc-layout-grid__inner">
     <article class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 article">
       <h1 class="mdc-typography--headline2">[Update: New syntax] Inflating layouts with the ContentView annotation</h1>
-      <p>In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the <a href="https://developer.android.com/reference/androidx/annotation/ContentView"><code class="highlighter-rouge">ContentView</code></a> annotation.</p>
+      <p>In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the <a href="https://developer.android.com/reference/androidx/annotation/ContentView"><code class="language-plaintext highlighter-rouge">ContentView</code></a> annotation.</p>
 
 <!-- End of excerpt -->
 
-<p><em>Note: The <code class="highlighter-rouge">ContentView</code> annotation was introduced in version <code class="highlighter-rouge">1.1.0-alpha01</code> of the <code class="highlighter-rouge">androidx.annotation:annotation</code> library. See the <a href="https://developer.android.com/jetpack/androidx/releases/annotation#1.1.0-alpha01">release notes</a> for more info.</em></p>
+<p><em>Note: The <code class="language-plaintext highlighter-rouge">ContentView</code> annotation was introduced in version <code class="language-plaintext highlighter-rouge">1.1.0-alpha01</code> of the <code class="language-plaintext highlighter-rouge">androidx.annotation:annotation</code> library. See the <a href="https://developer.android.com/jetpack/androidx/releases/annotation#1.1.0-alpha01">release notes</a> for more info.</em></p>
 
 <h2 id="update-442019">Update (4/4/2019)</h2>
 
-<p>The <code class="highlighter-rouge">ContentView</code> annotation is now to be used as a constructor of <code class="highlighter-rouge">AppCompatActivity</code> or a <code class="highlighter-rouge">Fragment</code>. The former implementation has been removed in <a href="https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha06"><code class="highlighter-rouge">1.0.0-alpha06</code></a> of the <code class="highlighter-rouge">androidx.activity:activity</code> dependency and in <a href="https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha06"><code class="highlighter-rouge">1.1.0-alpha05</code></a> of the <code class="highlighter-rouge">androidx.fragment:fragment</code> dependency.</p>
+<p>The <code class="language-plaintext highlighter-rouge">ContentView</code> annotation is now to be used as a constructor of <code class="language-plaintext highlighter-rouge">AppCompatActivity</code> or a <code class="language-plaintext highlighter-rouge">Fragment</code>. The former implementation has been removed in <a href="https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha06"><code class="language-plaintext highlighter-rouge">1.0.0-alpha06</code></a> of the <code class="language-plaintext highlighter-rouge">androidx.activity:activity</code> dependency and in <a href="https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha06"><code class="language-plaintext highlighter-rouge">1.1.0-alpha05</code></a> of the <code class="language-plaintext highlighter-rouge">androidx.fragment:fragment</code> dependency.</p>
 
 <p>Instead, use the following syntax:</p>
 
@@ -123,11 +123,11 @@
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">androidx.fragment.app.Fragment</span><span class="o">;</span>
 <span class="c1">// ...</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="n">Fragment</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
   <span class="c1">// ...</span>
   <span class="kd">public</span> <span class="nf">HomeFragment</span><span class="o">()</span> <span class="o">{</span>
     <span class="c1">// Pass the layout resource ID to the super constructor</span>
-    <span class="kd">super</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">);</span>
+    <span class="kd">super</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
@@ -135,22 +135,22 @@
 <h3 id="kotlin-fragment">Kotlin (Fragment)</h3>
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">androidx.fragment.app.Fragment</span>
-<span class="c1">// ...
-</span>
-<span class="kd">class</span> <span class="nc">HomeFragment</span><span class="p">:</span> <span class="n">Fragment</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// ...
-</span><span class="p">}</span>
+<span class="c1">// ...</span>
+
+<span class="kd">class</span> <span class="nc">HomeFragment</span><span class="p">:</span> <span class="nc">Fragment</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <h3 id="java-activity">Java (Activity)</h3>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
   <span class="c1">// ...</span>
   <span class="kd">public</span> <span class="nf">MainActivity</span><span class="o">()</span> <span class="o">{</span>
     <span class="c1">// Pass the layout resource ID to the super constructor</span>
-    <span class="kd">super</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+    <span class="kd">super</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
@@ -159,14 +159,14 @@
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span>
 
-<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="n">AppCompatActivity</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// ...
-</span><span class="p">}</span>
+<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <hr />
 
-<p>This is probably what you use to inflate a layout - override the <code class="highlighter-rouge">onCreateView</code> to inflate a layout (for fragments) and return the instance, or to call <code class="highlighter-rouge">setContentView</code> in the <code class="highlighter-rouge">onCreate</code> method to set the layout.</p>
+<p>This is probably what you use to inflate a layout - override the <code class="language-plaintext highlighter-rouge">onCreateView</code> to inflate a layout (for fragments) and return the instance, or to call <code class="language-plaintext highlighter-rouge">setContentView</code> in the <code class="language-plaintext highlighter-rouge">onCreate</code> method to set the layout.</p>
 
 <h3 id="java-fragment-1">Java (Fragment)</h3>
 
@@ -177,11 +177,11 @@
 <span class="kn">import</span> <span class="nn">androidx.fragment.app.Fragment</span><span class="o">;</span>
 <span class="c1">// ...</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="n">Fragment</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
   <span class="c1">// ...</span>
   <span class="nd">@Override</span>
-  <span class="kd">public</span> <span class="n">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">return</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+  <span class="kd">public</span> <span class="nc">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="nc">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="nc">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
@@ -191,14 +191,14 @@
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">android.os.Bundle</span>
 <span class="k">import</span> <span class="nn">android.view.*</span>
 <span class="k">import</span> <span class="nn">androidx.fragment.app.Fragment</span>
-<span class="c1">// ...
-</span>
-<span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="p">:</span> <span class="n">Fragment</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreateView</span><span class="p">(</span><span class="n">inflater</span><span class="p">:</span> <span class="n">LayoutInflater</span><span class="p">,</span> <span class="n">container</span><span class="p">:</span> <span class="n">ViewGroup</span><span class="p">?,</span> <span class="n">savedInstanceState</span><span class="p">:</span> <span class="n">Bundle</span><span class="p">?):</span> <span class="n">View</span><span class="p">?</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">inflater</span><span class="p">.</span><span class="n">inflate</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">,</span> <span class="n">container</span><span class="p">,</span> <span class="k">false</span><span class="p">)</span>
+<span class="c1">// ...</span>
+
+<span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="p">:</span> <span class="nc">Fragment</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreateView</span><span class="p">(</span><span class="n">inflater</span><span class="p">:</span> <span class="nc">LayoutInflater</span><span class="p">,</span> <span class="n">container</span><span class="p">:</span> <span class="nc">ViewGroup</span><span class="p">?,</span> <span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?):</span> <span class="nc">View</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">inflater</span><span class="p">.</span><span class="nf">inflate</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">,</span> <span class="n">container</span><span class="p">,</span> <span class="k">false</span><span class="p">)</span>
   <span class="p">}</span>
-  <span class="c1">// ...
-</span><span class="p">}</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <h3 id="java-activity-1">Java (Activity)</h3>
@@ -206,11 +206,11 @@
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
   <span class="nd">@Override</span>
-  <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+  <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
     <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-    <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+    <span class="n">setContentView</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
@@ -220,15 +220,15 @@
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">android.os.Bundle</span>
 <span class="k">import</span> <span class="nn">androidx.appcompat.AppCompatActivity</span>
 
-<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="n">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="n">Bundle</span><span class="p">?)</span> <span class="p">{</span>
-    <span class="k">super</span><span class="p">.</span><span class="n">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
-    <span class="n">setContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span>
+<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">.</span><span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+    <span class="nf">setContentView</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>This can now be simplified with the <code class="highlighter-rouge">ContentView</code> annotation. Just specify the layout resource ID as the parameter of the annotation and use it on the class definition.</p>
+<p>This can now be simplified with the <code class="language-plaintext highlighter-rouge">ContentView</code> annotation. Just specify the layout resource ID as the parameter of the annotation and use it on the class definition.</p>
 
 <h3 id="java-fragment-2">Java (Fragment)</h3>
 
@@ -236,8 +236,8 @@
 <span class="kn">import</span> <span class="nn">androidx.fragment.app.Fragment</span><span class="o">;</span>
 <span class="c1">// ...</span>
 
-<span class="nd">@ContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">)</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="n">Fragment</span> <span class="o">{</span>
+<span class="nd">@ContentView</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
   <span class="c1">// ...</span>
 <span class="o">}</span>
 </code></pre></div></div>
@@ -246,12 +246,12 @@
 
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">androidx.annotation.ContentView</span>
 <span class="k">import</span> <span class="nn">androidx.fragment.app.Fragment</span>
-<span class="c1">// ...
-</span>
-<span class="n">@ContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">)</span>
-<span class="kd">class</span> <span class="nc">HomeFragment</span><span class="p">:</span> <span class="n">Fragment</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// ...
-</span><span class="p">}</span>
+<span class="c1">// ...</span>
+
+<span class="nd">@ContentView</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">)</span>
+<span class="kd">class</span> <span class="nc">HomeFragment</span><span class="p">:</span> <span class="nc">Fragment</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <h3 id="java-activity-2">Java (Activity)</h3>
@@ -259,8 +259,8 @@
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">androidx.annotation.ContentView</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
 
-<span class="nd">@ContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">)</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+<span class="nd">@ContentView</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
   <span class="c1">// ...</span>
 <span class="o">}</span>
 </code></pre></div></div>
@@ -270,10 +270,10 @@
 <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">androidx.annotation.ContentView</span>
 <span class="k">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span>
 
-<span class="n">@ContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span>
-<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="n">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// ...
-</span><span class="p">}</span>
+<span class="nd">@ContentView</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span>
+<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <hr />
@@ -281,13 +281,13 @@
 <h2 id="notes">Notes</h2>
 
 <ul>
-  <li>The ability to use the <code class="highlighter-rouge">ContentView</code> annotation on a class that extends <a href="https://developer.android.com/reference/androidx/activity/ComponentActivity"><code class="highlighter-rouge">ComponentActivity</code></a> (which <a href="https://developer.android.com/reference/androidx/fragment/app/FragmentActivity"><code class="highlighter-rouge">FragmentActivity</code></a> directly and <a href="https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity"><code class="highlighter-rouge">AppCompatActivity</code></a> indirectly inherit from) was introduced in <code class="highlighter-rouge">1.0.0-alpha04</code> of the <code class="highlighter-rouge">androidx.activity:activity</code> dependency. (See the <a href="https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha04">release notes</a> for more info)</li>
-  <li>The ability to use the <code class="highlighter-rouge">ContentView</code> annotation on a class that extends <a href="https://developer.android.com/reference/androidx/fragment/app/Fragment"><code class="highlighter-rouge">Fragment</code></a> was introduced in <code class="highlighter-rouge">1.1.0-alpha04</code> of the <code class="highlighter-rouge">androidx.fragment:fragment</code> dependency. (See the <a href="https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha04">release notes</a> for more info)</li>
+  <li>The ability to use the <code class="language-plaintext highlighter-rouge">ContentView</code> annotation on a class that extends <a href="https://developer.android.com/reference/androidx/activity/ComponentActivity"><code class="language-plaintext highlighter-rouge">ComponentActivity</code></a> (which <a href="https://developer.android.com/reference/androidx/fragment/app/FragmentActivity"><code class="language-plaintext highlighter-rouge">FragmentActivity</code></a> directly and <a href="https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity"><code class="language-plaintext highlighter-rouge">AppCompatActivity</code></a> indirectly inherit from) was introduced in <code class="language-plaintext highlighter-rouge">1.0.0-alpha04</code> of the <code class="language-plaintext highlighter-rouge">androidx.activity:activity</code> dependency. (See the <a href="https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha04">release notes</a> for more info)</li>
+  <li>The ability to use the <code class="language-plaintext highlighter-rouge">ContentView</code> annotation on a class that extends <a href="https://developer.android.com/reference/androidx/fragment/app/Fragment"><code class="language-plaintext highlighter-rouge">Fragment</code></a> was introduced in <code class="language-plaintext highlighter-rouge">1.1.0-alpha04</code> of the <code class="language-plaintext highlighter-rouge">androidx.fragment:fragment</code> dependency. (See the <a href="https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha04">release notes</a> for more info)</li>
 </ul>
 
     </article><div id="about-the-author" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"><div class="mdc-card card card--horizontal"><div class="card__primary">
     <h2 class="card__title mdc-typography--headline6">About Edric Chan</h2><h3 class="card__subtitle mdc-typography--subtitle2">(site owner)</h3></div>
-  <div class="card__secondary"><p>A 15-year-old tech enthusiast since getting his first MacBook Pro 2015 before 2016 started. When he's not at school, he usually works on small programming projects or reads technology-related books. He currently studies at School of Science & Technology, Singapore and will graduate in 2019 to pursue his post-secondary life.</p>
+  <div class="card__secondary"><p>A 16-year-old tech enthusiast since getting his first MacBook Pro 2015 in the year-end of 2015. When he's not at school, he usually works on small programming projects or reads technology-related books. He currently studies at School of Science & Technology, Singapore and will graduate in 2019 to pursue his post-secondary life.</p>
   </div>
 </div>
 </div><div id="disqus_thread" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"></div>
