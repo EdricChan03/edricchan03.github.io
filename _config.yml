@@ -69,6 +69,7 @@ workbox:
     - 'node_modules/**/*.{html,md}'
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap

@@ -87,6 +87,8 @@ if (path === '/') {
   toggleListItemActivated('home-list-item');
 } else if (path === '/about') {
   toggleListItemActivated('about-list-item');
+} else if (path === '/about/versions') {
+  toggleListItemActivated('about-versions-list-item');
 } else if (path.indexOf('/blog/') > -1) {
   toggleListItemActivated('blog-list-item');
   if (path === '/blog/authors') {

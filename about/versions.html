@@ -1,0 +1,57 @@
+---
+layout: page
+title: Site version info
+description: Lists the current versions used for the site.
+---
+
+<h2>Site versions</h2>
+
+<div class="mdc-data-table">
+  <table class="mdc-data-table__table" aria-label="Site versions">
+    <thead>
+      <tr class="mdc-data-table__header-row">
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Name</th>
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Version</th>
+      </tr>
+    </thead>
+    <tbody class="mdc-data-table__content">
+      {% for version in site.github.versions %}
+      <tr class="mdc-data-table__row">
+        <td class="mdc-data-table__cell"><code>{{ version | first }}</code></td>
+        <td class="mdc-data-table__cell"><code>{{ version | last }}</code></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h2>Site contributors</h2>
+
+<div class="mdc-data-table">
+  <table class="mdc-data-table__table" aria-label="Site contributors">
+    <thead>
+      <tr class="mdc-data-table__header-row">
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Avatar</th>
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">User</th>
+        <th class="mdc-data-table__header-cell" role="columnheader" scope="col">User type</th>
+        <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Contributions</th>
+      </tr>
+    </thead>
+    <tbody class="mdc-data-table__content">
+      {% for contributor in site.github.contributors %}
+      <tr class="mdc-data-table__row">
+        <td class="mdc-data-table__cell"><img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}'s avatar" width="60px" height="60px"></td>
+        <td class="mdc-data-table__cell"><a href="{{ contributor.html_url }}">{{ contributor.login }}</a></td>
+        <td class="mdc-data-table__cell">{{ contributor.type }}</td>
+        <td class="mdc-data-table__cell mdc-data-table__cell--numeric">{{ contributor.contributions }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h2><code>site.github</code> namespace</h2>
+
+{% highlight json %}
+{{ site.github }}
+{% endhighlight %}
