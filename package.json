@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/EdricChan03/edricchan03.github.io#readme",
   "dependencies": {
-    "material-components-web": "^3.2.0"
+    "material-components-web": "^11.0.0"
   },
   "devDependencies": {}
 }
