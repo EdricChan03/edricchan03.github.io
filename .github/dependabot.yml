@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+    timezone: Asia/Singapore
+  open-pull-requests-limit: 10
+  target-branch: website-v2
+  ignore:
+  - dependency-name: material-components-web
+    versions:
+    - 10.0.0
+    - 9.0.0
