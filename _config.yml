@@ -1,4 +1,20 @@
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'package-lock.json', 'package.json', 'postinstall.sh', 'workbox-config.js', 'art/', 'docs/', 'node_modules/*.md']
+exclude:
+  - README.md
+  # Gem files
+  - Gemfile
+  - Gemfile.lock
+  # Jekyll files - see https://jekyllrb.com/docs/troubleshooting/#configuration-problems
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # Node files
+  - package-lock.json
+  - package.json
+  - postinstall.sh
+  - workbox-config.js
+  - node_modules/*.md
+  - art/
 markdown: kramdown
 title: "Edric's website"
 url: https://edricchan03.github.io
