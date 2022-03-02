@@ -1,0 +1,24 @@
+version: 2
+
+updates:
+  # Maintain dependencies for GitHub Actions workflows
+  - package-ecosystem: github-actions
+    directory: /
+    # Check for updates daily at 12 midnight UTC
+    schedule:
+      interval: daily
+      time: '00:00'
+  # Maintain dependencies for Bundler
+  - package-ecosystem: bundler
+    directory: /
+    # Check for updates daily at 12 midnight UTC
+    schedule:
+      interval: daily
+      time: '00:00'
+  # Maintain dependencies for npm
+  - package-ecosystem: npm
+    directory: /
+    # Check for updates daily at 12 midnight UTC
+    schedule:
+      interval: daily
+      time: '00:00'
