@@ -12,9 +12,9 @@
   <link rel="manifest" href="/manifest.json"><link href='https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Roboto+Condensed:400,300,700|Roboto:300,400,500|Roboto+Mono:300'
   rel='stylesheet' type='text/css' />
   <link type="application/atom+xml" rel="alternate" href="https://edricchan03.github.io/feed.xml" title="Edric's website" />
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>TIL: The greedy algorithm | Edric’s website</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="TIL: The greedy algorithm" />
 <meta name="author" content="Edric Chan" />
 <meta property="og:locale" content="en_US" />
@@ -25,8 +25,10 @@
 <meta property="og:site_name" content="Edric’s website" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-01-31T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="TIL: The greedy algorithm" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html"},"datePublished":"2019-01-31T00:00:00+00:00","author":{"@type":"Person","name":"Edric Chan"},"headline":"TIL: The greedy algorithm","dateModified":"2019-01-31T00:00:00+00:00","description":"Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if","url":"https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html","@context":"https://schema.org"}</script>
+{"headline":"TIL: The greedy algorithm","dateModified":"2019-01-31T00:00:00+00:00","datePublished":"2019-01-31T00:00:00+00:00","url":"https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html"},"author":{"@type":"Person","name":"Edric Chan"},"@type":"BlogPosting","description":"Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
