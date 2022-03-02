@@ -13,26 +13,27 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         ref: website-v2
    
     # Used to setup NodeJS
     - name: Setup NodeJS
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
-        node-version: 10.x
+        node-version: 16
+        cache: npm
     - name: Setup Ruby
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.6'
+        ruby-version: 2.7
+        bundler-cache: true
     - name: Install dependencies
       run: npm ci
     - name: Build and deploy site
-      uses: EdricChan03/action-build-deploy-ghpages@v2
+      uses: EdricChan03/action-build-deploy-ghpages@v2.6.0
       with:
         github_token: ${{ github.token }}
-        gh_pages_branch: master
         git_force: 'false'
         override_gh_pages_branch: 'true'
         show_bundle_log: 'true'
