@@ -87,6 +87,7 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-paginate-v2
+  - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-workbox-plugin
