@@ -5,6 +5,8 @@ on:
     branches:
       # Only build on the website-v2 branch
       - website-v2
+  # Allow for manual deployments
+  workflow_dispatch:
 
 jobs:
   build:
