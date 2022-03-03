@@ -113,6 +113,18 @@ if (path === '/') {
   toggleListItemActivated('til-list-item');
 }
 
+// More actions
+var menuEl = document.getElementById('more-actions-menu');
+var menu = mdc.menu.MDCMenu.attachTo(menuEl);
+var menuButton = menuEl.parentElement.children[0];
+if (menuButton.nodeName !== 'BUTTON') {
+  console.error('The first child element of the more actions menu should be a button.');
+} else {
+  menuButton.addEventListener('click', () => {
+    menu.open = !menu.open;
+  })
+}
+
 // Share functionality
 if (document.getElementById('share-dialog') && document.getElementById('share-button')) {
   const shareDialog = mdc.dialog.MDCDialog.attachTo(document.getElementById('share-dialog'));
