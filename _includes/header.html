@@ -43,6 +43,17 @@
       {%- endif -%}
       <button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
         aria-label="Print this page" title="Print this page">print</button>
+      <div class="mdc-menu-surface--anchor">
+        <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" title="More actions">more_vert</button>
+        <div class="mdc-menu mdc-menu-surface" id="more-actions-menu">
+          <div class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+            <a class="mdc-list-item" href="{% github_edit_link %}" data-mdc-auto-init="MDCRipple">
+              <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">edit</span>
+              <span class="mdc-list-item__text">Edit this page on GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </header>

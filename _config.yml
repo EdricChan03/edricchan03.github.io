@@ -83,6 +83,9 @@ workbox:
     - '_*/**'
     # We only want to cache CSS/JS files
     - 'node_modules/**/*.{html,md}'
+github:
+  source:
+    branch: website-v2
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
