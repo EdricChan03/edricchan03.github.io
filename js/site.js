@@ -85,8 +85,8 @@ mdc.autoInit();
 var path = window.location.pathname;
 if (path === '/') {
   toggleListItemActivated('home-list-item');
-} else if (path === '/about/versions') {
-  toggleListItemActivated('about-versions-list-item');
+} else if (path === '/about/site') {
+  toggleListItemActivated('about-site-list-item');
 } else if (path.indexOf('/blog/') > -1) {
   toggleListItemActivated('blog-list-item');
   if (path === '/blog/authors') {
