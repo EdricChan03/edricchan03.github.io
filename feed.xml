@@ -1,421 +1,421 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://edricchan03.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edricchan03.github.io/" rel="alternate" type="text/html" /><updated>2022-03-04T09:13:50+00:00</updated><id>https://edricchan03.github.io/feed.xml</id><title type="html">Edric’s website</title><subtitle>My personal Github pages website.</subtitle><entry><title type="html">TOTD: Solve differentiation/integration equations with this web calculator</title><link href="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html" rel="alternate" type="text/html" title="TOTD: Solve differentiation/integration equations with this web calculator" /><published>2019-04-21T00:00:00+00:00</published><updated>2019-04-21T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration</id><content type="html" xml:base="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html">&lt;p&gt;&lt;em&gt;NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post.&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://edricchan03.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edricchan03.github.io/" rel="alternate" type="text/html" /><updated>2022-03-04T19:09:50+00:00</updated><id>https://edricchan03.github.io/feed.xml</id><title type="html">Edric’s website</title><subtitle>My personal Github pages website.</subtitle><entry><title type="html">TOTD: Solve differentiation/integration equations with this web calculator</title><link href="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html" rel="alternate" type="text/html" title="TOTD: Solve differentiation/integration equations with this web calculator" /><published>2019-04-21T00:00:00+00:00</published><updated>2019-04-21T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration</id><content type="html" xml:base="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html"><![CDATA[<p><em>NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post.</em></p>
 
-&lt;p&gt;I discovered the calculators when looking up for a solution to an integration question.&lt;/p&gt;
+<p>I discovered the calculators when looking up for a solution to an integration question.</p>
 
-&lt;p&gt;The calculators are made by David Scherfgen.&lt;/p&gt;
+<p>The calculators are made by David Scherfgen.</p>
 
-&lt;!-- End of excerpt --&gt;
+<!-- End of excerpt -->
 
-&lt;p&gt;The calculators can be accessed by visiting the following URLS:&lt;/p&gt;
+<p>The calculators can be accessed by visiting the following URLS:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://derivative-calculator.net&quot;&gt;Deriative calculator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://integral-calculator.com&quot;&gt;Integral calculator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="calculator" /><category term="calculus" /><category term="differentiation" /><category term="integration" /><category term="tip" /><category term="tip-of-the-day" /><summary type="html">NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post. I discovered the calculators when looking up for a solution to an integration question. The calculators are made by David Scherfgen.</summary></entry><entry><title type="html">[Update: New syntax] Inflating layouts with the ContentView annotation</title><link href="https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html" rel="alternate" type="text/html" title="[Update: New syntax] Inflating layouts with the ContentView annotation" /><published>2019-03-16T00:00:00+00:00</published><updated>2019-03-16T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html">&lt;p&gt;In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the &lt;a href=&quot;https://developer.android.com/reference/androidx/annotation/ContentView&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentView&lt;/code&gt;&lt;/a&gt; annotation.&lt;/p&gt;
+<ul>
+  <li><a href="https://derivative-calculator.net">Deriative calculator</a></li>
+  <li><a href="https://integral-calculator.com">Integral calculator</a></li>
+</ul>]]></content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="calculator" /><category term="calculus" /><category term="differentiation" /><category term="integration" /><category term="tip" /><category term="tip-of-the-day" /><summary type="html"><![CDATA[NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post. I discovered the calculators when looking up for a solution to an integration question. The calculators are made by David Scherfgen.]]></summary></entry><entry><title type="html">[Update: New syntax] Inflating layouts with the ContentView annotation</title><link href="https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html" rel="alternate" type="text/html" title="[Update: New syntax] Inflating layouts with the ContentView annotation" /><published>2019-03-16T00:00:00+00:00</published><updated>2019-03-16T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2019/03/16/simplified-content-views.html"><![CDATA[<p>In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the <a href="https://developer.android.com/reference/androidx/annotation/ContentView"><code class="language-plaintext highlighter-rouge">ContentView</code></a> annotation.</p>
 
-&lt;!-- End of excerpt --&gt;
+<!-- End of excerpt -->
 
-&lt;p&gt;&lt;em&gt;Note: The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentView&lt;/code&gt; annotation was introduced in version &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.1.0-alpha01&lt;/code&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;androidx.annotation:annotation&lt;/code&gt; library. See the &lt;a href=&quot;https://developer.android.com/jetpack/androidx/releases/annotation#1.1.0-alpha01&quot;&gt;release notes&lt;/a&gt; for more info.&lt;/em&gt;&lt;/p&gt;
+<p><em>Note: The <code class="language-plaintext highlighter-rouge">ContentView</code> annotation was introduced in version <code class="language-plaintext highlighter-rouge">1.1.0-alpha01</code> of the <code class="language-plaintext highlighter-rouge">androidx.annotation:annotation</code> library. See the <a href="https://developer.android.com/jetpack/androidx/releases/annotation#1.1.0-alpha01">release notes</a> for more info.</em></p>
 
-&lt;h2 id=&quot;update-442019&quot;&gt;Update (4/4/2019)&lt;/h2&gt;
+<h2 id="update-442019">Update (4/4/2019)</h2>
 
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentView&lt;/code&gt; annotation is now to be used as a constructor of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AppCompatActivity&lt;/code&gt; or a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fragment&lt;/code&gt;. The former implementation has been removed in &lt;a href=&quot;https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha06&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.0.0-alpha06&lt;/code&gt;&lt;/a&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;androidx.activity:activity&lt;/code&gt; dependency and in &lt;a href=&quot;https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha06&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.1.0-alpha05&lt;/code&gt;&lt;/a&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;androidx.fragment:fragment&lt;/code&gt; dependency.&lt;/p&gt;
+<p>The <code class="language-plaintext highlighter-rouge">ContentView</code> annotation is now to be used as a constructor of <code class="language-plaintext highlighter-rouge">AppCompatActivity</code> or a <code class="language-plaintext highlighter-rouge">Fragment</code>. The former implementation has been removed in <a href="https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha06"><code class="language-plaintext highlighter-rouge">1.0.0-alpha06</code></a> of the <code class="language-plaintext highlighter-rouge">androidx.activity:activity</code> dependency and in <a href="https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha06"><code class="language-plaintext highlighter-rouge">1.1.0-alpha05</code></a> of the <code class="language-plaintext highlighter-rouge">androidx.fragment:fragment</code> dependency.</p>
 
-&lt;p&gt;Instead, use the following syntax:&lt;/p&gt;
+<p>Instead, use the following syntax:</p>
 
-&lt;h3 id=&quot;java-fragment&quot;&gt;Java (Fragment)&lt;/h3&gt;
+<h3 id="java-fragment">Java (Fragment)</h3>
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.fragment.app.Fragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">androidx.fragment.app.Fragment</span><span class="o">;</span>
+<span class="c1">// ...</span>
 
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HomeFragment&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Fragment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;HomeFragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Pass the layout resource ID to the super constructor&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;frag_home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
+  <span class="c1">// ...</span>
+  <span class="kd">public</span> <span class="nf">HomeFragment</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// Pass the layout resource ID to the super constructor</span>
+    <span class="kd">super</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-&lt;h3 id=&quot;kotlin-fragment&quot;&gt;Kotlin (Fragment)&lt;/h3&gt;
+<h3 id="kotlin-fragment">Kotlin (Fragment)</h3>
 
-&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.fragment.app.Fragment&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">androidx.fragment.app.Fragment</span>
+<span class="c1">// ...</span>
 
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HomeFragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Fragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frag_home&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="kd">class</span> <span class="nc">HomeFragment</span><span class="p">:</span> <span class="nc">Fragment</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-&lt;h3 id=&quot;java-activity&quot;&gt;Java (Activity)&lt;/h3&gt;
+<h3 id="java-activity">Java (Activity)</h3>
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.appcompat.app.AppCompatActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
 
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppCompatActivity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MainActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Pass the layout resource ID to the super constructor&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
+  <span class="c1">// ...</span>
+  <span class="kd">public</span> <span class="nf">MainActivity</span><span class="o">()</span> <span class="o">{</span>
+    <span class="c1">// Pass the layout resource ID to the super constructor</span>
+    <span class="kd">super</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-&lt;h3 id=&quot;kotlin-activity&quot;&gt;Kotlin (Activity)&lt;/h3&gt;
+<h3 id="kotlin-activity">Kotlin (Activity)</h3>
 
-&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.appcompat.app.AppCompatActivity&lt;/span&gt;
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span>
 
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppCompatActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;p&gt;This is probably what you use to inflate a layout - override the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCreateView&lt;/code&gt; to inflate a layout (for fragments) and return the instance, or to call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setContentView&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCreate&lt;/code&gt; method to set the layout.&lt;/p&gt;
+<p>This is probably what you use to inflate a layout - override the <code class="language-plaintext highlighter-rouge">onCreateView</code> to inflate a layout (for fragments) and return the instance, or to call <code class="language-plaintext highlighter-rouge">setContentView</code> in the <code class="language-plaintext highlighter-rouge">onCreate</code> method to set the layout.</p>
 
-&lt;h3 id=&quot;java-fragment-1&quot;&gt;Java (Fragment)&lt;/h3&gt;
+<h3 id="java-fragment-1">Java (Fragment)</h3>
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.os.Bundle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.view.LayoutInflater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.view.View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.view.ViewGroup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.fragment.app.Fragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.LayoutInflater</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">android.view.ViewGroup</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.fragment.app.Fragment</span><span class="o">;</span>
+<span class="c1">// ...</span>
 
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HomeFragment&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Fragment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-  &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreateView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@NonNull&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LayoutInflater&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inflater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ViewGroup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inflater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;inflate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;frag_home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
+  <span class="c1">// ...</span>
+  <span class="nd">@Override</span>
+  <span class="kd">public</span> <span class="nc">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="nc">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="nc">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-&lt;h3 id=&quot;kotlin-fragment-1&quot;&gt;Kotlin (Fragment)&lt;/h3&gt;
+<h3 id="kotlin-fragment-1">Kotlin (Fragment)</h3>
 
-&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.os.Bundle&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.view.*&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.fragment.app.Fragment&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">android.os.Bundle</span>
+<span class="k">import</span> <span class="nn">android.view.*</span>
+<span class="k">import</span> <span class="nn">androidx.fragment.app.Fragment</span>
+<span class="c1">// ...</span>
 
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HomeFragment&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Fragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreateView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inflater&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LayoutInflater&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ViewGroup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?):&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inflater&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;inflate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frag_home&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;java-activity-1&quot;&gt;Java (Activity)&lt;/h3&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.os.Bundle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.appcompat.app.AppCompatActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppCompatActivity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;kotlin-activity-1&quot;&gt;Kotlin (Activity)&lt;/h3&gt;
-
-&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.os.Bundle&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.appcompat.AppCompatActivity&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppCompatActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This can now be simplified with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentView&lt;/code&gt; annotation. Just specify the layout resource ID as the parameter of the annotation and use it on the class definition.&lt;/p&gt;
-
-&lt;h3 id=&quot;java-fragment-2&quot;&gt;Java (Fragment)&lt;/h3&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.annotation.ContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.fragment.app.Fragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-
-&lt;span class=&quot;nd&quot;&gt;@ContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;frag_home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HomeFragment&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Fragment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;kotlin-fragment-2&quot;&gt;Kotlin (Fragment)&lt;/h3&gt;
-
-&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.annotation.ContentView&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.fragment.app.Fragment&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-
-&lt;span class=&quot;nd&quot;&gt;@ContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;frag_home&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HomeFragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Fragment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;java-activity-2&quot;&gt;Java (Activity)&lt;/h3&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.annotation.ContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.appcompat.app.AppCompatActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;nd&quot;&gt;@ContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppCompatActivity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;kotlin-activity-2&quot;&gt;Kotlin (Activity)&lt;/h3&gt;
-
-&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.annotation.ContentView&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;androidx.appcompat.app.AppCompatActivity&lt;/span&gt;
-
-&lt;span class=&quot;nd&quot;&gt;@ContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppCompatActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The ability to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentView&lt;/code&gt; annotation on a class that extends &lt;a href=&quot;https://developer.android.com/reference/androidx/activity/ComponentActivity&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ComponentActivity&lt;/code&gt;&lt;/a&gt; (which &lt;a href=&quot;https://developer.android.com/reference/androidx/fragment/app/FragmentActivity&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FragmentActivity&lt;/code&gt;&lt;/a&gt; directly and &lt;a href=&quot;https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AppCompatActivity&lt;/code&gt;&lt;/a&gt; indirectly inherit from) was introduced in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.0.0-alpha04&lt;/code&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;androidx.activity:activity&lt;/code&gt; dependency. (See the &lt;a href=&quot;https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha04&quot;&gt;release notes&lt;/a&gt; for more info)&lt;/li&gt;
-  &lt;li&gt;The ability to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentView&lt;/code&gt; annotation on a class that extends &lt;a href=&quot;https://developer.android.com/reference/androidx/fragment/app/Fragment&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fragment&lt;/code&gt;&lt;/a&gt; was introduced in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.1.0-alpha04&lt;/code&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;androidx.fragment:fragment&lt;/code&gt; dependency. (See the &lt;a href=&quot;https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha04&quot;&gt;release notes&lt;/a&gt; for more info)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="programming" /><category term="kotlin" /><category term="androidx" /><category term="android" /><category term="annotation" /><summary type="html">In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the ContentView annotation.</summary></entry><entry><title type="html">Status Update | February</title><link href="https://edricchan03.github.io/blog/2019/02/24/status-update.html" rel="alternate" type="text/html" title="Status Update | February" /><published>2019-02-24T00:00:00+00:00</published><updated>2019-02-24T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2019/02/24/status-update</id><content type="html" xml:base="https://edricchan03.github.io/blog/2019/02/24/status-update.html">&lt;p&gt;This is a new form of blog post where I cover what I’ve done so far and plans for the following month. Expect to see this at the end of each month starting from February!&lt;/p&gt;
-
-&lt;!-- End of excerpt --&gt;
-
-&lt;h2 id=&quot;what-ive-done-in-february&quot;&gt;What I’ve done in February&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I’ve enabled &lt;a href=&quot;https://dependabot.com&quot;&gt;Dependabot&lt;/a&gt; on most of my repositories. So far, it’s much better than my previous setup involving Greenkeeper (which does not automatically resolve merge conflicts/rebase with the current project’s files).&lt;/li&gt;
-  &lt;li&gt;I’ve created a few projects which include:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/EdricChan03/actions&quot;&gt;EdricChan03/actions&lt;/a&gt; - A list of GitHub Actions&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I’ve continued work on &lt;a href=&quot;https://github.com/EdricChan03/ngx-ytd-api&quot;&gt;EdricChan03/ngx-ytd-api&lt;/a&gt; including restructuring the library by extracting the core functionality to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;common&lt;/code&gt; entry point, enabled &lt;a href=&quot;https://dependabot.com&quot;&gt;Dependabot&lt;/a&gt; and added initial schematics (which are currently not committed).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;plans-for-march&quot;&gt;Plans for March&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Release of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.0.0-alpha.5&lt;/code&gt; for &lt;a href=&quot;https://github.com/EdricChan03/ngx-ytd-api&quot;&gt;EdricChan03/ngx-ytd-api&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Bump to beta&lt;/li&gt;
-      &lt;li&gt;Fix bugs&lt;/li&gt;
-      &lt;li&gt;Full schematic support&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Update my website
-    &lt;ul&gt;
-      &lt;li&gt;New blog posts&lt;/li&gt;
-      &lt;li&gt;Possible redesign of website&lt;/li&gt;
-      &lt;li&gt;Support dark mode&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;New release for &lt;a href=&quot;https://github.com/EdricChan03/StudyBuddy&quot;&gt;EdricChan03/StudyBuddy&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Initial API for &lt;a href=&quot;https://github.com/EdricChan03/StudyBuddy-web&quot;&gt;EdricChan03/StudyBuddy-web&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Update the hosted website&lt;/li&gt;
-      &lt;li&gt;TravisCI integration for automatic deploying&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Take a short break from programming&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="status-update" /><summary type="html">This is a new form of blog post where I cover what I’ve done so far and plans for the following month. Expect to see this at the end of each month starting from February!</summary></entry><entry><title type="html">TIL: StackOverflow supports backticks</title><link href="https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html" rel="alternate" type="text/html" title="TIL: StackOverflow supports backticks" /><published>2019-02-06T00:00:00+00:00</published><updated>2019-02-06T00:00:00+00:00</updated><id>https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick</id><content type="html" xml:base="https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html">&lt;p&gt;Today I Learned that StackOverflow supports 3 backticks to create a code block, similar to a fenced code block in GitHub’s Flavoured Markdown.&lt;/p&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;html
-&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Header!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;paragraph1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Hello, HTML code!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;And here’s the other form of syntax for a code block on StackOverflow:&lt;/p&gt;
-
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- language: lang-html --&amp;gt;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;
-
-    &amp;lt;h1&amp;gt;Header!&amp;lt;/h1&amp;gt;
-    &amp;lt;p id=&quot;paragraph1&quot;&amp;gt;Hello, HTML code!&amp;lt;/p&amp;gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;EDIT: I also learnt that it is possible to have 3 backticks in a code block. (See the source for this post for more info)&lt;/p&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="til" /><category term="stackoverflow" /><category term="stackoverflow" /><category term="markdown" /><summary type="html">Today I Learned that StackOverflow supports 3 backticks to create a code block, similar to a fenced code block in GitHub’s Flavoured Markdown. ```html &amp;lt;h1&amp;gt;Header!&amp;lt;/h1&amp;gt; &amp;lt;p id=&quot;paragraph1&quot;&amp;gt;Hello, HTML code!&amp;lt;/p&amp;gt; ``` And here’s the other form of syntax for a code block on StackOverflow: &amp;lt;!-- language: lang-html --&amp;gt; &amp;lt;h1&amp;gt;Header!&amp;lt;/h1&amp;gt; &amp;lt;p id=&quot;paragraph1&quot;&amp;gt;Hello, HTML code!&amp;lt;/p&amp;gt; EDIT: I also learnt that it is possible to have 3 backticks in a code block. (See the source for this post for more info)</summary></entry><entry><title type="html">TIL: The greedy algorithm</title><link href="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html" rel="alternate" type="text/html" title="TIL: The greedy algorithm" /><published>2019-01-31T00:00:00+00:00</published><updated>2019-01-31T00:00:00+00:00</updated><id>https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm</id><content type="html" xml:base="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html">&lt;p&gt;Today I Learned about the &lt;a href=&quot;https://brilliant.org/wiki/greedy-algorithm/&quot;&gt;Greedy Algorithm&lt;/a&gt;, which can be used to calculate the minimum elements required from a list that will sum up to a number.&lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# An integer
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# A list of integers
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;V&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+<span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="p">:</span> <span class="nc">Fragment</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreateView</span><span class="p">(</span><span class="n">inflater</span><span class="p">:</span> <span class="nc">LayoutInflater</span><span class="p">,</span> <span class="n">container</span><span class="p">:</span> <span class="nc">ViewGroup</span><span class="p">?,</span> <span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?):</span> <span class="nc">View</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">inflater</span><span class="p">.</span><span class="nf">inflate</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">,</span> <span class="n">container</span><span class="p">,</span> <span class="k">false</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="java-activity-1">Java (Activity)</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
+  <span class="nd">@Override</span>
+  <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+    <span class="n">setContentView</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="kotlin-activity-1">Kotlin (Activity)</h3>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">android.os.Bundle</span>
+<span class="k">import</span> <span class="nn">androidx.appcompat.AppCompatActivity</span>
+
+<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">override</span> <span class="k">fun</span> <span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">:</span> <span class="nc">Bundle</span><span class="p">?)</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">.</span><span class="nf">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">)</span>
+    <span class="nf">setContentView</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This can now be simplified with the <code class="language-plaintext highlighter-rouge">ContentView</code> annotation. Just specify the layout resource ID as the parameter of the annotation and use it on the class definition.</p>
+
+<h3 id="java-fragment-2">Java (Fragment)</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">androidx.annotation.ContentView</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.fragment.app.Fragment</span><span class="o">;</span>
+<span class="c1">// ...</span>
+
+<span class="nd">@ContentView</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">frag_home</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeFragment</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
+  <span class="c1">// ...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="kotlin-fragment-2">Kotlin (Fragment)</h3>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">androidx.annotation.ContentView</span>
+<span class="k">import</span> <span class="nn">androidx.fragment.app.Fragment</span>
+<span class="c1">// ...</span>
+
+<span class="nd">@ContentView</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">frag_home</span><span class="p">)</span>
+<span class="kd">class</span> <span class="nc">HomeFragment</span><span class="p">:</span> <span class="nc">Fragment</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="java-activity-2">Java (Activity)</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">androidx.annotation.ContentView</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span><span class="o">;</span>
+
+<span class="nd">@ContentView</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
+  <span class="c1">// ...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="kotlin-activity-2">Kotlin (Activity)</h3>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nn">androidx.annotation.ContentView</span>
+<span class="k">import</span> <span class="nn">androidx.appcompat.app.AppCompatActivity</span>
+
+<span class="nd">@ContentView</span><span class="p">(</span><span class="nc">R</span><span class="p">.</span><span class="n">layout</span><span class="p">.</span><span class="n">activity_main</span><span class="p">)</span>
+<span class="kd">class</span> <span class="nc">MainActivity</span> <span class="p">:</span> <span class="nc">AppCompatActivity</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>The ability to use the <code class="language-plaintext highlighter-rouge">ContentView</code> annotation on a class that extends <a href="https://developer.android.com/reference/androidx/activity/ComponentActivity"><code class="language-plaintext highlighter-rouge">ComponentActivity</code></a> (which <a href="https://developer.android.com/reference/androidx/fragment/app/FragmentActivity"><code class="language-plaintext highlighter-rouge">FragmentActivity</code></a> directly and <a href="https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity"><code class="language-plaintext highlighter-rouge">AppCompatActivity</code></a> indirectly inherit from) was introduced in <code class="language-plaintext highlighter-rouge">1.0.0-alpha04</code> of the <code class="language-plaintext highlighter-rouge">androidx.activity:activity</code> dependency. (See the <a href="https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha04">release notes</a> for more info)</li>
+  <li>The ability to use the <code class="language-plaintext highlighter-rouge">ContentView</code> annotation on a class that extends <a href="https://developer.android.com/reference/androidx/fragment/app/Fragment"><code class="language-plaintext highlighter-rouge">Fragment</code></a> was introduced in <code class="language-plaintext highlighter-rouge">1.1.0-alpha04</code> of the <code class="language-plaintext highlighter-rouge">androidx.fragment:fragment</code> dependency. (See the <a href="https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha04">release notes</a> for more info)</li>
+</ul>]]></content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="programming" /><category term="kotlin" /><category term="androidx" /><category term="android" /><category term="annotation" /><summary type="html"><![CDATA[In this post, I’ll be covering how to simplify inflating layouts in your fragments/activities with the ContentView annotation.]]></summary></entry><entry><title type="html">Status Update | February</title><link href="https://edricchan03.github.io/blog/2019/02/24/status-update.html" rel="alternate" type="text/html" title="Status Update | February" /><published>2019-02-24T00:00:00+00:00</published><updated>2019-02-24T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2019/02/24/status-update</id><content type="html" xml:base="https://edricchan03.github.io/blog/2019/02/24/status-update.html"><![CDATA[<p>This is a new form of blog post where I cover what I’ve done so far and plans for the following month. Expect to see this at the end of each month starting from February!</p>
+
+<!-- End of excerpt -->
+
+<h2 id="what-ive-done-in-february">What I’ve done in February</h2>
+
+<ul>
+  <li>I’ve enabled <a href="https://dependabot.com">Dependabot</a> on most of my repositories. So far, it’s much better than my previous setup involving Greenkeeper (which does not automatically resolve merge conflicts/rebase with the current project’s files).</li>
+  <li>I’ve created a few projects which include:
+    <ul>
+      <li><a href="https://github.com/EdricChan03/actions">EdricChan03/actions</a> - A list of GitHub Actions</li>
+    </ul>
+  </li>
+  <li>I’ve continued work on <a href="https://github.com/EdricChan03/ngx-ytd-api">EdricChan03/ngx-ytd-api</a> including restructuring the library by extracting the core functionality to a <code class="language-plaintext highlighter-rouge">common</code> entry point, enabled <a href="https://dependabot.com">Dependabot</a> and added initial schematics (which are currently not committed).</li>
+</ul>
+
+<h2 id="plans-for-march">Plans for March</h2>
+
+<ul>
+  <li>Release of <code class="language-plaintext highlighter-rouge">1.0.0-alpha.5</code> for <a href="https://github.com/EdricChan03/ngx-ytd-api">EdricChan03/ngx-ytd-api</a>
+    <ul>
+      <li>Bump to beta</li>
+      <li>Fix bugs</li>
+      <li>Full schematic support</li>
+    </ul>
+  </li>
+  <li>Update my website
+    <ul>
+      <li>New blog posts</li>
+      <li>Possible redesign of website</li>
+      <li>Support dark mode</li>
+    </ul>
+  </li>
+  <li>New release for <a href="https://github.com/EdricChan03/StudyBuddy">EdricChan03/StudyBuddy</a></li>
+  <li>Initial API for <a href="https://github.com/EdricChan03/StudyBuddy-web">EdricChan03/StudyBuddy-web</a>
+    <ul>
+      <li>Update the hosted website</li>
+      <li>TravisCI integration for automatic deploying</li>
+    </ul>
+  </li>
+  <li>Take a short break from programming</li>
+</ul>]]></content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="status-update" /><summary type="html"><![CDATA[This is a new form of blog post where I cover what I’ve done so far and plans for the following month. Expect to see this at the end of each month starting from February!]]></summary></entry><entry><title type="html">TIL: StackOverflow supports backticks</title><link href="https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html" rel="alternate" type="text/html" title="TIL: StackOverflow supports backticks" /><published>2019-02-06T00:00:00+00:00</published><updated>2019-02-06T00:00:00+00:00</updated><id>https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick</id><content type="html" xml:base="https://edricchan03.github.io/til/stackoverflow/2019/02/06/stackoverflow-backtick.html"><![CDATA[<p>Today I Learned that StackOverflow supports 3 backticks to create a code block, similar to a fenced code block in GitHub’s Flavoured Markdown.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">html
+</span><span class="nt">&lt;h1&gt;</span>Header!<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"paragraph1"</span><span class="nt">&gt;</span>Hello, HTML code!<span class="nt">&lt;/p&gt;</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<p>And here’s the other form of syntax for a code block on StackOverflow:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- language: lang-html --&gt;</span><span class="sb">
+
+    &lt;h1&gt;Header!&lt;/h1&gt;
+    &lt;p id="paragraph1"&gt;Hello, HTML code!&lt;/p&gt;
+</span></code></pre></div></div>
+
+<p>EDIT: I also learnt that it is possible to have 3 backticks in a code block. (See the source for this post for more info)</p>]]></content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="til" /><category term="stackoverflow" /><category term="stackoverflow" /><category term="markdown" /><summary type="html"><![CDATA[Today I Learned that StackOverflow supports 3 backticks to create a code block, similar to a fenced code block in GitHub’s Flavoured Markdown. ```html &lt;h1&gt;Header!&lt;/h1&gt; &lt;p id="paragraph1"&gt;Hello, HTML code!&lt;/p&gt; ``` And here’s the other form of syntax for a code block on StackOverflow: &lt;!-- language: lang-html --&gt; &lt;h1&gt;Header!&lt;/h1&gt; &lt;p id="paragraph1"&gt;Hello, HTML code!&lt;/p&gt; EDIT: I also learnt that it is possible to have 3 backticks in a code block. (See the source for this post for more info)]]></summary></entry><entry><title type="html">TIL: The greedy algorithm</title><link href="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html" rel="alternate" type="text/html" title="TIL: The greedy algorithm" /><published>2019-01-31T00:00:00+00:00</published><updated>2019-01-31T00:00:00+00:00</updated><id>https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm</id><content type="html" xml:base="https://edricchan03.github.io/til/algorithm/2019/01/31/greedy-algorithm.html"><![CDATA[<p>Today I Learned about the <a href="https://brilliant.org/wiki/greedy-algorithm/">Greedy Algorithm</a>, which can be used to calculate the minimum elements required from a list that will sum up to a number.</p>
+
+<p>For example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># An integer
+</span><span class="n">S</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="c1"># A list of integers
+</span><span class="n">V</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="s">"""
 Write a function to determine the minimum number of elements in list V that can be summed up to S
-&quot;&quot;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;minElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# V.sort()
-&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Edge case where there can only be one element
-&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+"""</span>
+<span class="k">def</span> <span class="nf">minElement</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">E</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+  <span class="c1"># V.sort()
+</span>  <span class="c1"># Edge case where there can only be one element
+</span>  <span class="k">if</span> <span class="n">S</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="mi">0</span>
+  <span class="k">if</span> <span class="n">S</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span> <span class="k">return</span> <span class="n">E</span>
+  <span class="n">E</span><span class="o">+=</span><span class="mi">1</span>
+  <span class="k">return</span> <span class="n">minElement</span><span class="p">(</span><span class="n">S</span><span class="o">-</span><span class="n">V</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">V</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
 
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="k">print</span><span class="p">(</span><span class="n">minElement</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">V</span><span class="p">))</span>
+</code></pre></div></div>
 
-&lt;p&gt;(Note that this is Python)&lt;/p&gt;
+<p>(Note that this is Python)</p>
 
-&lt;p&gt;The code above will output &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;.&lt;/p&gt;
+<p>The code above will output <code class="language-plaintext highlighter-rouge">3</code>.</p>
 
-&lt;p&gt;Here’s a detailed explanation of how the code works:&lt;/p&gt;
+<p>Here’s a detailed explanation of how the code works:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;First, the variables &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;V&lt;/code&gt; are passed in to the function which is called in the last line. (In this example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;11&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;V&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1,2,5]&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;Next, the variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S&lt;/code&gt; specified is checked if the number is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;. This is an edge case as there can’t be any number of elements that can form &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;. (In this case, this zero check is skipped)&lt;/li&gt;
-  &lt;li&gt;Next, the variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;S&lt;/code&gt; specified is checked if&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="til" /><category term="algorithm" /><category term="python" /><category term="algorithm" /><summary type="html">Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] &quot;&quot;&quot; Write a function to determine the minimum number of elements in list V that can be summed up to S &quot;&quot;&quot; def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &amp;lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if</summary></entry><entry><title type="html">Code snippet of the week - code/pre elements</title><link href="https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html" rel="alternate" type="text/html" title="Code snippet of the week - code/pre elements" /><published>2018-03-26T00:00:00+00:00</published><updated>2018-03-26T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html">&lt;p&gt;&lt;a name=&quot;top&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+<ol>
+  <li>First, the variables <code class="language-plaintext highlighter-rouge">S</code> and <code class="language-plaintext highlighter-rouge">V</code> are passed in to the function which is called in the last line. (In this example, <code class="language-plaintext highlighter-rouge">S</code> is <code class="language-plaintext highlighter-rouge">11</code> and <code class="language-plaintext highlighter-rouge">V</code> is <code class="language-plaintext highlighter-rouge">[1,2,5]</code>)</li>
+  <li>Next, the variable <code class="language-plaintext highlighter-rouge">S</code> specified is checked if the number is <code class="language-plaintext highlighter-rouge">0</code>. This is an edge case as there can’t be any number of elements that can form <code class="language-plaintext highlighter-rouge">0</code>. (In this case, this zero check is skipped)</li>
+  <li>Next, the variable <code class="language-plaintext highlighter-rouge">S</code> specified is checked if</li>
+</ol>]]></content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="til" /><category term="algorithm" /><category term="python" /><category term="algorithm" /><summary type="html"><![CDATA[Today I Learned about the Greedy Algorithm, which can be used to calculate the minimum elements required from a list that will sum up to a number. For example: # An integer S = 11 # A list of integers V = [1,2,5] """ Write a function to determine the minimum number of elements in list V that can be summed up to S """ def minElement(S, V, E=0): # V.sort() # Edge case where there can only be one element if S == 0: return 0 if S &lt; 1: return E E+=1 return minElement(S-V[-1], V, E) print(minElement(S, V)) (Note that this is Python) The code above will output 3. Here’s a detailed explanation of how the code works: First, the variables S and V are passed in to the function which is called in the last line. (In this example, S is 11 and V is [1,2,5]) Next, the variable S specified is checked if the number is 0. This is an edge case as there can’t be any number of elements that can form 0. (In this case, this zero check is skipped) Next, the variable S specified is checked if]]></summary></entry><entry><title type="html">Code snippet of the week - code/pre elements</title><link href="https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html" rel="alternate" type="text/html" title="Code snippet of the week - code/pre elements" /><published>2018-03-26T00:00:00+00:00</published><updated>2018-03-26T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2018/03/26/code-snippet-of-the-week-pre-code.html"><![CDATA[<p><a name="top"></a></p>
 
-&lt;p&gt;&lt;em&gt;Note: This blog post originally appeared on my &lt;a href=&quot;https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html&quot;&gt;blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+<p><em>Note: This blog post originally appeared on my <a href="https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html">blog</a>.</em></p>
 
-&lt;p&gt;Another code snippet! This week, I’ll be covering how to create code snippets with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; HTML tags.&lt;/p&gt;
+<p>Another code snippet! This week, I’ll be covering how to create code snippets with the <code class="language-plaintext highlighter-rouge">&lt;code&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;pre&gt;</code> HTML tags.</p>
 
-&lt;p&gt;&lt;em&gt;Note: If you haven’t seen it, I’ve designed a new header image for these kind of posts! Look out for posts with the image on the top of the post!&lt;/em&gt;&lt;/p&gt;
+<p><em>Note: If you haven’t seen it, I’ve designed a new header image for these kind of posts! Look out for posts with the image on the top of the post!</em></p>
 
-&lt;!-- End of excerpt --&gt;
+<!-- End of excerpt -->
 
-&lt;h1 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h1&gt;
+<h1 id="getting-started">Getting Started</h1>
 
-&lt;p&gt;To get started, ensure that you have a code editor (ideally &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;, &lt;a href=&quot;https://www.sublimetext.com/&amp;quot;&quot;&gt;Sublime Text&lt;/a&gt;, &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;, etc.).&lt;/p&gt;
+<p>To get started, ensure that you have a code editor (ideally <a href="https://code.visualstudio.com/">Visual Studio Code</a>, <a href="https://www.sublimetext.com/&quot;">Sublime Text</a>, <a href="https://atom.io/">Atom</a>, etc.).</p>
 
-&lt;ol&gt;
-  &lt;li&gt;Get started by downloading either of the coding editors as stated above (or you can search some online; &lt;strong&gt;don’t use your built-in text editor as this may screw things up in the encoding&lt;/strong&gt;)&lt;/li&gt;
-  &lt;li&gt;Next, open up the code editor and create a new file. We’ll name the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create the bare minimal for an HTML file. Copy the code below:&lt;/p&gt;
+<ol>
+  <li>Get started by downloading either of the coding editors as stated above (or you can search some online; <strong>don’t use your built-in text editor as this may screw things up in the encoding</strong>)</li>
+  <li>Next, open up the code editor and create a new file. We’ll name the file <code class="language-plaintext highlighter-rouge">index.html</code>.</li>
+  <li>
+    <p>Create the bare minimal for an HTML file. Copy the code below:</p>
 
-    &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- This is the line that is required in order for the page to work properly. --&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Document title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- I'm a comment! --&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Multiline comments
-     are&amp;lt;br&amp;gt;
-     okay too --&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Your page content goes here --&amp;gt;&lt;/span&gt;
-     &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">&lt;!DOCTYPE html&gt;</span> <span class="c">&lt;!-- This is the line that is required in order for the page to work properly. --&gt;</span>
+ <span class="nt">&lt;html&gt;</span>
+ <span class="nt">&lt;head&gt;</span>
+     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;title&gt;</span>Document title<span class="nt">&lt;/title&gt;</span>
+     <span class="c">&lt;!-- I'm a comment! --&gt;</span>
+     <span class="c">&lt;!-- Multiline comments
+     are&lt;br&gt;
+     okay too --&gt;</span>
+ <span class="nt">&lt;/head&gt;</span>
+ <span class="nt">&lt;body&gt;</span>
+     <span class="c">&lt;!-- Your page content goes here --&gt;</span>
+     <span class="nt">&lt;p&gt;</span>Hello, world!<span class="nt">&lt;/p&gt;</span>
+ <span class="nt">&lt;/html&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
 
-&lt;h2 id=&quot;creating-code&quot;&gt;Creating code&lt;/h2&gt;
+<h2 id="creating-code">Creating code</h2>
 
-&lt;p&gt;To create code, surround some text with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; (which can be optionally nested within a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+<p>To create code, surround some text with <code class="language-plaintext highlighter-rouge">&lt;code&gt;</code> (which can be optionally nested within a <code class="language-plaintext highlighter-rouge">&lt;pre&gt;</code>).</p>
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&lt;/span&gt;Hello, World! Here is some useful content in a code block!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code&gt;</span>Hello, World! Here is some useful content in a code block!<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
 
-&lt;p&gt;See the MDN web docs for more info:&lt;/p&gt;
+<p>See the MDN web docs for more info:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code"><code class="language-plaintext highlighter-rouge">&lt;code&gt;</code></a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"><code class="language-plaintext highlighter-rouge">&lt;pre&gt;</code></a></li>
+</ul>
 
-&lt;h2 id=&quot;highlightjs-example&quot;&gt;Highlight.js Example&lt;/h2&gt;
+<h2 id="highlightjs-example">Highlight.js Example</h2>
 
-&lt;p&gt;This example assumes that you’ve included &lt;a href=&quot;https://highlightjs.org&quot;&gt;Highlight.js&lt;/a&gt; and that you’ve initialized Highlight.js in your main HTML file.&lt;/p&gt;
+<p>This example assumes that you’ve included <a href="https://highlightjs.org">Highlight.js</a> and that you’ve initialized Highlight.js in your main HTML file.</p>
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;pre&amp;gt;&amp;lt;code&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lang-html&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;ni&quot;&gt;&amp;amp;amp;&lt;/span&gt;lt;p&lt;span class=&quot;ni&quot;&gt;&amp;amp;amp;&lt;/span&gt;gt;Displaying a code snippet within an actual code snippet? Codeception!&lt;span class=&quot;ni&quot;&gt;&amp;amp;amp;&lt;/span&gt;lt;/p&lt;span class=&quot;ni&quot;&gt;&amp;amp;amp;&lt;/span&gt;gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"lang-html"</span><span class="nt">&gt;</span>
+    <span class="ni">&amp;amp;</span>lt;p<span class="ni">&amp;amp;</span>gt;Displaying a code snippet within an actual code snippet? Codeception!<span class="ni">&amp;amp;</span>lt;/p<span class="ni">&amp;amp;</span>gt;
+<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div></div>
 
-&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
+<h2 id="demo">Demo</h2>
 
-&lt;p&gt;Here’s a working demo for you to play with!&lt;/p&gt;
+<p>Here’s a working demo for you to play with!</p>
 
-&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;html,result&quot; data-slug-hash=&quot;zPdxPZ&quot; data-user=&quot;Edric03&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
-  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/Edric03/pen/MVEdgb&quot;&gt;
-  Code/ Pre Element&lt;/a&gt; by Edric Chan (&lt;a href=&quot;https://codepen.io/Edric03&quot;&gt;@Edric03&lt;/a&gt;)
-  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="programming" /><category term="code-snippet-of-the-week" /><category term="html" /><summary type="html">Note: This blog post originally appeared on my blog. Another code snippet! This week, I’ll be covering how to create code snippets with the &amp;lt;code&amp;gt; and &amp;lt;pre&amp;gt; HTML tags. Note: If you haven’t seen it, I’ve designed a new header image for these kind of posts! Look out for posts with the image on the top of the post!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" /><media:content medium="image" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Code snippet of the week | Unordered and Ordered lists</title><link href="https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html" rel="alternate" type="text/html" title="Code snippet of the week | Unordered and Ordered lists" /><published>2017-12-11T00:00:00+00:00</published><updated>2017-12-11T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html">&lt;p&gt;&lt;em&gt;Note: This blog post originally appeared on my &lt;a href=&quot;https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html&quot;&gt;blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zPdxPZ" data-user="Edric03" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/Edric03/pen/MVEdgb">
+  Code/ Pre Element</a> by Edric Chan (<a href="https://codepen.io/Edric03">@Edric03</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>]]></content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="programming" /><category term="code-snippet-of-the-week" /><category term="html" /><summary type="html"><![CDATA[Note: This blog post originally appeared on my blog. Another code snippet! This week, I’ll be covering how to create code snippets with the &lt;code&gt; and &lt;pre&gt; HTML tags. Note: If you haven’t seen it, I’ve designed a new header image for these kind of posts! Look out for posts with the image on the top of the post!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" /><media:content medium="image" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Code snippet of the week | Unordered and Ordered lists</title><link href="https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html" rel="alternate" type="text/html" title="Code snippet of the week | Unordered and Ordered lists" /><published>2017-12-11T00:00:00+00:00</published><updated>2017-12-11T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li</id><content type="html" xml:base="https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html"><![CDATA[<p><em>Note: This blog post originally appeared on my <a href="https://edricchan03.blogspot.com/2018/03/code-snippet-of-week-code-pre-elements.html">blog</a>.</em></p>
 
-&lt;p&gt;Yes, it’s a code snippet! You heard that right. I’ll be trying to create a code snippet with pure HTML. (You can view the source code by pressing &lt;kbd&gt;Cmd&lt;/kbd&gt;+&lt;kbd&gt;Option&lt;/kbd&gt;+&lt;kbd&gt;U&lt;/kbd&gt; or &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;U&lt;/kbd&gt; if you’re on the desktop.)&lt;/p&gt;
+<p>Yes, it’s a code snippet! You heard that right. I’ll be trying to create a code snippet with pure HTML. (You can view the source code by pressing <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>U</kbd> or <kbd>Ctrl</kbd>+<kbd>U</kbd> if you’re on the desktop.)</p>
 
-&lt;!-- End of excerpt --&gt;
+<!-- End of excerpt -->
 
-&lt;h1 id=&quot;notices&quot;&gt;Notices&lt;/h1&gt;
+<h1 id="notices">Notices</h1>
 
-&lt;ul&gt;
-  &lt;li&gt;I won’t show the getting started section again anymore after this.&lt;/li&gt;
-  &lt;li&gt;I’ll be using a tab indent of 4 spaces. You can use any code indent you want. (To format a document in Visual Studio Code, use &lt;kbd&gt;Shift&lt;/kbd&gt;+&lt;kbd&gt;Option&lt;/kbd&gt;+&lt;kbd&gt;F&lt;/kbd&gt;)&lt;/li&gt;
-  &lt;li&gt;I’m assuming you have a computer. (If you don’t have one, then…)&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>I won’t show the getting started section again anymore after this.</li>
+  <li>I’ll be using a tab indent of 4 spaces. You can use any code indent you want. (To format a document in Visual Studio Code, use <kbd>Shift</kbd>+<kbd>Option</kbd>+<kbd>F</kbd>)</li>
+  <li>I’m assuming you have a computer. (If you don’t have one, then…)</li>
+</ul>
 
-&lt;h1 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h1&gt;
+<h1 id="getting-started">Getting Started</h1>
 
-&lt;p&gt;To get started, ensure that you have a code editor (ideally &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;, &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;, &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;, etc.).&lt;/p&gt;
+<p>To get started, ensure that you have a code editor (ideally <a href="https://code.visualstudio.com/">Visual Studio Code</a>, <a href="https://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>, etc.).</p>
 
-&lt;ol&gt;
-  &lt;li&gt;Get started by downloading either of the coding editors as stated above (or you can search some online; &lt;strong&gt;DON’T USE YOUR BUILT-IN NOTEPAD/TEXTEDIT!!&lt;/strong&gt;)&lt;/li&gt;
-  &lt;li&gt;Next, open up the code editor and create a new file. We’ll name the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Create the bare minimal for an HTML file. Copy the code below:&lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>Get started by downloading either of the coding editors as stated above (or you can search some online; <strong>DON’T USE YOUR BUILT-IN NOTEPAD/TEXTEDIT!!</strong>)</li>
+  <li>Next, open up the code editor and create a new file. We’ll name the file <code class="language-plaintext highlighter-rouge">index.html</code></li>
+  <li>Create the bare minimal for an HTML file. Copy the code below:</li>
+</ol>
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- This is the line that is required in order for the page to work properly. --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Document title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- I'm a comment! --&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Multiline comments
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span> <span class="c">&lt;!-- This is the line that is required in order for the page to work properly. --&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Document title<span class="nt">&lt;/title&gt;</span>
+    <span class="c">&lt;!-- I'm a comment! --&gt;</span>
+    <span class="c">&lt;!-- Multiline comments
     are
-    okay too --&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Your page content goes here --&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+    okay too --&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- Your page content goes here --&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hello, world!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
 
-&lt;h2 id=&quot;creating-an-unordered-list&quot;&gt;Creating an unordered list&lt;/h2&gt;
+<h2 id="creating-an-unordered-list">Creating an unordered list</h2>
 
-&lt;p&gt;To create an unordered list, simply use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; element and add some list items to it by using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;li&amp;gt;&lt;/code&gt; element.&lt;/p&gt;
+<p>To create an unordered list, simply use the <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> element and add some list items to it by using the <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code> element.</p>
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;List item contents&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item contents<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
 
-&lt;p&gt;Unordered lists can be used for example, shopping lists, etc.&lt;/p&gt;
+<p>Unordered lists can be used for example, shopping lists, etc.</p>
 
-&lt;h2 id=&quot;creating-an-ordered-list&quot;&gt;Creating an ordered list&lt;/h2&gt;
+<h2 id="creating-an-ordered-list">Creating an ordered list</h2>
 
-&lt;p&gt;To create an ordered list, simply use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; element and add some list items to it by using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;li&amp;gt;&lt;/code&gt; element.&lt;/p&gt;
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;List item contents&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<p>To create an ordered list, simply use the <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code> element and add some list items to it by using the <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code> element.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item contents<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
 
-&lt;p&gt;Ordered lists can be used for legal documentations, as well as questions, etc.&lt;/p&gt;
+<p>Ordered lists can be used for legal documentations, as well as questions, etc.</p>
 
-&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
+<h2 id="demo">Demo</h2>
 
-&lt;p&gt;Here’s a working demo for you to play with!&lt;/p&gt;
+<p>Here’s a working demo for you to play with!</p>
 
-&lt;p class=&quot;codepen&quot; data-height=&quot;300&quot; data-default-tab=&quot;html,result&quot; data-slug-hash=&quot;zPdxPZ&quot; data-user=&quot;Edric03&quot; style=&quot;height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
-  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/Edric03/pen/zPdxPZ&quot;&gt;
-  Unordered &amp;amp; Ordered lists&lt;/a&gt; by Edric Chan (&lt;a href=&quot;https://codepen.io/Edric03&quot;&gt;@Edric03&lt;/a&gt;)
-  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://cpwebassets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="programming" /><category term="code-snippet-of-the-week" /><category term="html" /><summary type="html">Note: This blog post originally appeared on my blog. Yes, it’s a code snippet! You heard that right. I’ll be trying to create a code snippet with pure HTML. (You can view the source code by pressing Cmd+Option+U or Ctrl+U if you’re on the desktop.)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" /><media:content medium="image" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zPdxPZ" data-user="Edric03" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/Edric03/pen/zPdxPZ">
+  Unordered &amp; Ordered lists</a> by Edric Chan (<a href="https://codepen.io/Edric03">@Edric03</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>]]></content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="programming" /><category term="code-snippet-of-the-week" /><category term="html" /><summary type="html"><![CDATA[Note: This blog post originally appeared on my blog. Yes, it’s a code snippet! You heard that right. I’ll be trying to create a code snippet with pure HTML. (You can view the source code by pressing Cmd+Option+U or Ctrl+U if you’re on the desktop.)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" /><media:content medium="image" url="https://edricchan03.github.io/assets/code-snippet-of-the-week/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
