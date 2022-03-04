@@ -3,11 +3,11 @@
     A Python program (made by me along with a peer for the purposes of a performance task that required us to work in pairs or groups to create a new program that would achieve a specific task) that allows the user to group a list of students imported
     from an Excel spreadsheet or a CSV (comma-separated value) file into groups,
     which can be exported as an Excel spreadsheet/CSV file.
-    
+
     This program is ideally meant to be run with Python v3.7.3 or higher. For
-    more info about the project and on how to start it, check out the README file 
+    more info about the project and on how to start it, check out the README file
     located at the root of the source code.
-  labels:
+  tags:
   - Python
   - Tkinter
   - Computing
@@ -26,7 +26,7 @@
     you've spent your time on your phone. This is the Android version.
 
     The app uses the following products&#58;
-    
+
     * Firebase
       * Firebase Authentication - User authentication
       * Firebase Crashlytics - To handle crashes
@@ -36,7 +36,7 @@
     * Material Components for Android
 
     This app was based on an idea by the student counsellor of my school.
-  labels:
+  tags:
   - Android
   - Kotlin
   - Java
@@ -56,7 +56,7 @@
     ability to chat with your peers. This is the web version.
 
     The app uses the following products&#58;
-    
+
     * Firebase
       * Firebase Authentication - User authentication
       * Firebase Firestore - Store data
@@ -66,7 +66,7 @@
     * HTML + CSS + TypeScript (which is compiled to JavaScript by the Angular CLI)
 
     This app was based on an idea by the student counsellor of my school.
-  labels:
+  tags:
   - Web
   - Angular
   - TypeScript
@@ -85,14 +85,14 @@
   description: |
     An Angular app based on an example Angular app by [BeCompany GmbH](https://github.com/becompany/angular2-rss-reader-tutorial) and updated to
     the latest version of Angular.
-    
+
     The app also includes features such as the ability for the user to specify
     a feed to be read into the RSS feed, as well as retrieving the headlines of a
     country and a refreshed interface. (The original app only had a list of cards which could be clicked on.)
 
     ~~Unfortunately, work on the app has been temporarily ceased due to other
     projects and the lack of time.~~ (EDIT - Work on the app has recently resumed with new features such as a release notes page, among bug fixes.)
-  labels:
+  tags:
   - Angular
   - RSS
   - RSS Reader
@@ -117,7 +117,7 @@
     This library uses the following libraries&#58;
     * [`ngx-simple-http`](https://github.com/EdricChan03/ngx-simple-http) (Simplified HTTP requests)
     * [`ng-packagr`](https://github.com/ng-packagr/ng-packagr) (Used for packaging the library to be published to NPM)
-  labels:
+  tags:
   - Angular
   - Library
   - Angular Library
@@ -138,7 +138,7 @@
     _For more info about HttpClient, view [the docs](https://angular.io/guide/http)._
 
     _Note&#58; Development for this Angular library may soon be stopped in favour of a better Angular library such as [`ngx-api-utils`](https://github.com/ngx-api-utils/ngx-api-utils)._
-  labels:
+  tags:
   - Angular
   - Library
   - Angular Library
@@ -159,7 +159,7 @@
     The project was submitted in late 2017 with a video showing how to play the game and a certificate of participation was awarded in late 2018.
 
     The source code of the two apps was archived on 23 Aug 2018. Development of the apps has been ceased.
-  labels:
+  tags:
   - SCCL
   - Game
   - Android
@@ -188,7 +188,7 @@
     * [AngularJS](https://angularjs.org)
     * [AngularJS Material](https://material.angularjs.org) - Material Design for AngularJS
     * HTML + CSS + JavaScript
-  labels:
+  tags:
   - Website
   - EdricChan03
   - AngularJS
@@ -215,7 +215,7 @@
     The project is currently at version 2.2.1. The former version (version 1) is no longer supported as GitHub Actions no longer support the former HCL workflow syntax.
 
     For more info about the project, check out the source code or the GitHub Marketplace listing for the Action.
-  labels:
+  tags:
   - GitHub
   - GitHub Pages
   - GitHub Action
