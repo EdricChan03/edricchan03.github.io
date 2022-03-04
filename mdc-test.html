@@ -15,18 +15,46 @@ description: A test to check if the components are working
 
 <hr>
 
-<button class="mdc-button">Button</button>
+<button class="mdc-button">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Button</span>
+</button>
 <br>
-<button class="mdc-button" data-mdc-auto-init="MDCRipple">Button with auto initialised ripple</button>
+<button class="mdc-button" data-mdc-auto-init="MDCRipple">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Button with auto initialised ripple</span>
+
+</button>
 <br>
-<button class="mdc-button mdc-button--raised">Raised button</button>
-<button class="mdc-button mdc-button--unelevated">Unelevated button</button>
-<button class="mdc-button mdc-button--outlined">Outlined button</button>
+<button class="mdc-button mdc-button--raised">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Raised button</span>
+</button>
+<button class="mdc-button mdc-button--unelevated">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Unelevated button</span>
+</button>
+<button class="mdc-button mdc-button--outlined">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Outlined button</span>
+</button>
 <br>
-<button class="mdc-button mdc-button--dense">Dense button</button>
-<button class="mdc-button mdc-button--raised mdc-button--dense">Dense raised button</button>
-<button class="mdc-button mdc-button--unelevated mdc-button--dense">Dense unelevated button</button>
-<button class="mdc-button mdc-button--outlined mdc-button--dense">Dense outlined button</button>
+<button class="mdc-button mdc-button--dense">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Dense button</span>
+</button>
+<button class="mdc-button mdc-button--raised mdc-button--dense">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Dense raised button</span>
+</button>
+<button class="mdc-button mdc-button--unelevated mdc-button--dense">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Dense unelevated button</span>
+</button>
+<button class="mdc-button mdc-button--outlined mdc-button--dense">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Dense outlined button</span>
+</button>
 <br>
 <button class="mdc-icon-button material-icons-outlined" title="Add">add</button>
 
@@ -40,9 +68,11 @@ description: A test to check if the components are working
   <div class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
       <button class="mdc-button mdc-card__action mdc-card__action--button" data-mdc-auto-init="MDCRipple">
+        <div class="mdc-button__ripple"></div>
         <span class="mdc-button__label">Read</span>
       </button>
       <button class="mdc-button mdc-card__action mdc-card__action--button" data-mdc-auto-init="MDCRipple">
+        <div class="mdc-button__ripple"></div>
         <span class="mdc-button__label">Bookmark</span>
       </button>
     </div>

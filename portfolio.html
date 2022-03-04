@@ -179,11 +179,14 @@ description: Edric's portfolio.
       {{ project.description | markdownify }}
       {%- endif -%}
       {%- if project.tags -%}
-      <div class="mdc-chip-set">
+      <div class="mdc-chip-set" role="grid">
         {%- for tag in project.tags -%}
-        <span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+        <span class="mdc-chip" role="row" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">{{ tag }}</div>
+          <span role="gridcell">
+            <span role="button" tabindex="0" class="mdc-chip__text">{{ tag }}</span>
+          </span>
         </span>
         {%- endfor -%}
       </div>
@@ -196,6 +199,7 @@ description: Edric's portfolio.
         {%- for link in project.links -%}
         <a class="mdc-button mdc-card__action mdc-card__action--button" href="{{ link.link }}"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">{{ link.name }}</span>
         </a>
         {%- endfor -%}
