@@ -141,7 +141,7 @@ if (document.getElementById('share-dialog') && document.getElementById('share-bu
   }
   document.getElementById('share-dialog-copy-link-button')
     .addEventListener('click', () => {
-      const copyVal = copyText(window.location.href, document.getElementById('share-dialog-text-field-input').value);
+      const copyVal = copyText(window.location.href, document.getElementById('share-dialog-text-field-input'));
       Promise.resolve(copyVal).then((value) => {
         if (typeof value === 'boolean') {
           if (value === true) {
