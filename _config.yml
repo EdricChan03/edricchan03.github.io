@@ -1,13 +1,5 @@
 exclude:
   - README.md
-  # Gem files
-  - Gemfile
-  - Gemfile.lock
-  # Jekyll files - see https://jekyllrb.com/docs/troubleshooting/#configuration-problems
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
   # Node files
   - package-lock.json
   - package.json
@@ -15,6 +7,9 @@ exclude:
   - workbox-config.js
   - node_modules/*.md
   - art/
+include:
+  # Explicitly include node_modules
+  - node_modules
 markdown: kramdown
 title: "Edric's website"
 url: https://edricchan03.github.io

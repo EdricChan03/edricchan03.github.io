@@ -1,9 +1,17 @@
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
 
-group :jekyll_plugins do
-  # Revert to v2.0.0 for now
-  gem 'jekyll-paginate-v2', '2.0.0'
-  # Gem to generate Workbox SW
-  gem 'jekyll-workbox-plugin'
-end
+# Use the latest version of Jekyll
+gem 'jekyll'
+
+# Pin sassc to 2.1.0
+# See https://github.com/sass/sassc-ruby/issues/189 for more info
+gem 'sassc', '~> 2.1.0'
+
+# Jekyll plugins
+gem 'jekyll-feed'
+gem 'jekyll-github-metadata'
+gem 'jekyll-paginate-v2'
+gem 'jekyll-redirect-from'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'jekyll-workbox-plugin'
