@@ -41,7 +41,7 @@ In this post, I'll cover what I've done so far in February 2022 and share my pla
 ##### New stuff
 
 * You may have noticed that the fonts look a bit different now. This is because I've recently changed them as the old default looked a bit boring to be honest. As of the time of this writing, the fonts chosen are:
-  * Default: [Scada](https://fonts.google.com/specimen/Scada)
+  * Default: [Rambla](https://fonts.google.com/specimen/Rambla)
   * Headlines: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
   * Code: [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)
 * Leave feedback down below on what you think of the new site! (And here's the [commit](https://github.com/EdricChan03/edricchan03.github.io/commit/2c1742d9e12bf20ce1b098c98966786e4bf7fd41), if you're interested)
