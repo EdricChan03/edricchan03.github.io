@@ -5,6 +5,7 @@
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
       <div class="mdc-card card">
         <a class="mdc-card__primary-action" data-mdc-auto-init="MDCRipple" href="{{ post.url | prepend: site.baseurl }}">
+          <div class="mdc-card__ripple"></div>
           {%- if post.image -%}
           <img class="mdc-card__media mdc-card__media--16-9 card__media" src="{{post.image | prepend: site.baseurl}}">
           {%- endif -%}
@@ -66,9 +67,15 @@
 <!-- Pagination links -->
 <div class="pagination mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
   {%- if paginator.previous_page -%}
-  <a href="{{ paginator.previous_page_path }}" class="mdc-icon-button material-icons-outlined">navigate_before</a>
+  <a href="{{ paginator.previous_page_path }}" class="mdc-icon-button material-icons-outlined">
+    <div class="mdc-icon-button__ripple"></div>
+    navigate_before
+  </a>
   {%- else -%}
-  <button class="mdc-icon-button material-icons-outlined" disabled>navigate_before</button>
+  <button class="mdc-icon-button material-icons-outlined" disabled>
+    <div class="mdc-icon-button__ripple"></div>
+    navigate_before
+  </button>
   {%- endif -%}
   {%- for pageNum in (1..paginator.total_pages) -%}
   {%- if paginator.page == pageNum -%}
@@ -81,8 +88,14 @@
   {%- endif -%}
   {%- endfor -%}
   {%- if paginator.next_page -%}
-  <a href="{{ paginator.next_page_path }}" class="mdc-icon-button material-icons-outlined">navigate_next</a>
+  <a href="{{ paginator.next_page_path }}" class="mdc-icon-button material-icons-outlined">
+    <div class="mdc-icon-button__ripple"></div>
+    navigate_next
+  </a>
   {%- else -%}
-  <button class="mdc-icon-button material-icons-outlined" disabled>navigate_next</button>
+  <button class="mdc-icon-button material-icons-outlined" disabled>
+    <div class="mdc-icon-button__ripple"></div>
+    navigate_next
+  </button>
   {%- endif -%}
 </div>
