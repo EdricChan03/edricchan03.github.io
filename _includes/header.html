@@ -2,15 +2,15 @@
 {% for button in page.toolbar_buttons -%}
 {%- if button.title and button.id -%}
 <div id="{{ button.id | slugify }}-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
-  <div class="mdc-tooltip__surface">{{ button.title }}</div>
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">{{ button.title }}</div>
 </div>
 {%- endif -%}
 {%- endfor -%}
 <div id="print-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
-  <div class="mdc-tooltip__surface">Print</div>
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">Print</div>
 </div>
 <div id="more-actions-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
-  <div class="mdc-tooltip__surface">More actions</div>
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">More actions</div>
 </div>
 <!-- Top app bar -->
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
