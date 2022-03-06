@@ -83,6 +83,9 @@ document.querySelectorAll('.mdc-icon-button')
 document.querySelectorAll('.mdc-chip-set')
   .forEach((element) => mdc.chips.MDCChipSet.attachTo(element));
 
+document.querySelectorAll('.mdc-tooltip')
+  .forEach((element) => mdc.tooltip.MDCTooltip.attachTo(element));
+
 mdc.autoInit();
 
 var path = window.location.pathname;
@@ -129,12 +132,12 @@ if (menuButton.nodeName !== 'BUTTON') {
 }
 
 // Share functionality
-if (document.getElementById('share-dialog') && document.getElementById('share-button')) {
+if (document.getElementById('share-dialog') && document.getElementById('share-btn')) {
   const shareDialog = mdc.dialog.MDCDialog.attachTo(document.getElementById('share-dialog'));
   const shareDialogSuccessSnackbar = mdc.snackbar.MDCSnackbar.attachTo(document.getElementById('share-dialog-success-snackbar'));
   const shareDialogFailureSnackbar = mdc.snackbar.MDCSnackbar.attachTo(document.getElementById('share-dialog-failure-snackbar'));
 
-  document.getElementById('share-button').addEventListener('click', () => {
+  document.getElementById('share-btn').addEventListener('click', () => {
     shareDialog.open();
   })
   if (document.querySelectorAll('.mdc-text-field')) {
