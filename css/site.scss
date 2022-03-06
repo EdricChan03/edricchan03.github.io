@@ -2,10 +2,12 @@
 ---
 @charset "utf-8";
 
-$mdc-theme-primary: #3948ab;
-$mdc-theme-secondary: #ff4081;
-$mdc-theme-background: #fafafa;
-$mdc-theme-error: #f44336;
+@use "@material/theme" with (
+  $primary: #3948ab,
+  $secondary: #ff4081,
+  $background: #fafafa,
+  $error: #f44336,
+);
 
 @use "@material/button/mdc-button";
 @use "@material/card/mdc-card";
@@ -21,7 +23,6 @@ $mdc-theme-error: #f44336;
 @use "@material/ripple/mdc-ripple";
 @use "@material/snackbar/mdc-snackbar";
 @use "@material/textfield/mdc-text-field";
-@use "@material/theme/mdc-theme";
 @use "@material/tooltip/styles";
 @use "@material/top-app-bar/mdc-top-app-bar";
 @use "@material/typography/mdc-typography";
