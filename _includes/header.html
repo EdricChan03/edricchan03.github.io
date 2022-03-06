@@ -1,5 +1,10 @@
+{%- if page.toolbar_buttons -%}
+{%- assign toolbar_buttons = page.toolbar_buttons -%}
+{%- elsif layout.toolbar_buttons -%}
+{%- assign toolbar_buttons = layout.toolbar_buttons -%}
+{%- endif -%}
 <!-- Tooltips -->
-{% for button in page.toolbar_buttons -%}
+{% for button in toolbar_buttons -%}
 {%- if button.title and button.id -%}
 <div id="{{ button.id | slugify }}-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
   <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">{{ button.title }}</div>
@@ -26,38 +31,13 @@
     </section>
 
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar">
-      {%- if page.toolbar_buttons -%}
-      {%- for button in page.toolbar_buttons -%}
+      {%- if toolbar_buttons -%}
+      {%- for button in toolbar_buttons -%}
       {%- capture button_id -%}{{ button.id | slugify }}{%- endcapture -%}
       {%- capture button_tooltip_id -%}{{ button_id }}-tooltip{%- endcapture -%}
       {%- if button.link -%}
       {%- if button.is_site_link and button.is_site_link == true -%}
       <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link | prepend: site.baseurl }}">
-        <div class="mdc-icon-button__ripple"></div>
-        {{ button.icon }}
-      </a>
-      {%- else -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link }}">
-        <div class="mdc-icon-button__ripple"></div>
-        {{ button.icon }}
-      </a>
-      {%- endif -%}
-      {%- else -%}
-      <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-describedby="{{ button_tooltip_id }}"
-        id="{{ button_id }}">
-        <div class="mdc-icon-button__ripple"></div>
-        {{ button.icon }}
-      </button>
-      {%- endif -%}
-      {%- endfor -%}
-      {%- elsif layout.toolbar_buttons -%}
-      {%- for button in layout.toolbar_buttons -%}
-      {%- if button.link -%}
-      {%- if button.is_site_link and button.is_site_link == true -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item"
         aria-describedby="{{ button_tooltip_id }}" href="{{ button.link | prepend: site.baseurl }}">
         <div class="mdc-icon-button__ripple"></div>
         {{ button.icon }}
