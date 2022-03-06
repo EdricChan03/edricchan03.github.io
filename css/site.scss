@@ -9,7 +9,7 @@
   $error: #f44336,
 );
 
-$app-font-family: unquote("Lato, Roboto, sans-serif");
+$app-font-family: unquote("Scada, Roboto, sans-serif");
 $headline-font-family: unquote("\"Work Sans\", \"Helvetica Neue\", sans-serif");
 @use "@material/typography" with (
   $font-family: $app-font-family,
