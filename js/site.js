@@ -80,6 +80,9 @@ document.querySelectorAll('.mdc-icon-button')
     iconButtonRipple.unbounded = true;
   });
 
+document.querySelectorAll('.mdc-chip-set')
+  .forEach((element) => mdc.chips.MDCChipSet.attachTo(element));
+
 mdc.autoInit();
 
 var path = window.location.pathname;
