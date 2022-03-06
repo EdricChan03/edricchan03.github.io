@@ -1,6 +1,8 @@
 - name: Computing Performance Task 2018
   description: |
-    A Python program (made by me along with a peer for the purposes of a performance task that required us to work in pairs or groups to create a new program that would achieve a specific task) that allows the user to group a list of students imported
+    A Python program (made by me along with a peer for the purposes of a performance \
+    task that required us to work in pairs or groups to create a new program that \
+    would achieve a specific task) that allows the user to group a list of students imported
     from an Excel spreadsheet or a CSV (comma-separated value) file into groups,
     which can be exported as an Excel spreadsheet/CSV file.
 
@@ -11,7 +13,6 @@
   - Python
   - Tkinter
   - Computing
-  - Applied Subject
   - Excel
   categories:
   - Application
@@ -39,17 +40,16 @@
   tags:
   - Android
   - Kotlin
-  - Java
   - StudyBuddy
   - Firebase
-  - AndroidX
+  - Android Jetpack
   - Material Design
   categories:
   - Application
   status: in development
   links:
   - name: Source code
-    link: https://github.com/EdricChan03/StudyBuddy
+    link: https://github.com/EdricChan03/StudyBuddy-android
 - name: StudyBuddy for web
   description: |
     An app that helps you keep track of your tasks and events, as well as the
@@ -67,11 +67,11 @@
 
     This app was based on an idea by the student counsellor of my school.
   tags:
-  - Web
+  - Web-dev
   - Angular
   - TypeScript
-  - HTML
   - StudyBuddy
+  - Firebase
   - Material Design
   categories:
   - Application
@@ -90,11 +90,10 @@
     a feed to be read into the RSS feed, as well as retrieving the headlines of a
     country and a refreshed interface. (The original app only had a list of cards which could be clicked on.)
 
-    ~~Unfortunately, work on the app has been temporarily ceased due to other
-    projects and the lack of time.~~ (EDIT - Work on the app has recently resumed with new features such as a release notes page, among bug fixes.)
+    Work on the app has been temporarily postponed for now.
   tags:
+  - Web-dev
   - Angular
-  - RSS
   - RSS Reader
   - Material Design
   categories:
@@ -120,15 +119,12 @@
   tags:
   - Angular
   - Library
-  - Angular Library
   - YouTube Data v3 API
   - API
   categories:
   - Library
-  status: in development
+  status: archived
   links:
-  - name: Website
-    link: https://ngx-ytd-api.firebaseapp.com/master
   - name: Source code
     link: https://github.com/EdricChan03/ngx-ytd-api
 - name: ngx-simple-http
@@ -141,12 +137,10 @@
   tags:
   - Angular
   - Library
-  - Angular Library
-  - HttpClient
-  - ngx-ytd-api
+  - HTTP
   categories:
   - Library
-  status: in development
+  status: archived
   links:
   - name: Source code
     link: https://github.com/EdricChan03/ngx-simple-http
@@ -189,16 +183,13 @@
     * [AngularJS Material](https://material.angularjs.org) - Material Design for AngularJS
     * HTML + CSS + JavaScript
   tags:
-  - Website
-  - EdricChan03
+  - Web-dev
   - AngularJS
   - AngularJS Material
-  - HTML
-  - CSS
   - JavaScript
   - Material Components for Web
   - Material Design
-  - GitHub
+  - GitHub Pages
   - GitHub Actions
   categories:
   - Website
@@ -208,28 +199,36 @@
     link: https://github.com/EdricChan03/edricchan03.github.io
 - name: Build and deploy to GitHub Pages (GitHub Action)
   description: |
-    As what the project name indicates, this is a GitHub Action with the intention of building and deploying a Jekyll site to GitHub Pages. (Note - this was specifically created to workaround the problems of GitHub not supporting specific plugins in GitHub Pages by manually building the Jekyll site instead of being automatically built by GitHub Pages.)
+    As what the project name indicates, this is a GitHub Action with the intention of
+    building and deploying a Jekyll site to GitHub Pages. (Note - this was specifically
+    created to workaround the problems of GitHub not supporting specific plugins in GitHub
+    Pages by manually building the Jekyll site instead of being automatically built by
+    GitHub Pages.)
 
-    This project was heavily inspired by previous GitHub Actions which would perform a similar task but were outdated. My project also allows for additional options to be specified such as the ability to invoke the `--force` flag when pushing the built site to GitHub Pages, which would override any old changes for the branch, as well as supporting user pages that only allow deployment via the `master` branch or the `docs` folder.
+    This project was heavily inspired by previous GitHub Actions which would perform a
+    similar task but were outdated. My project also allows for additional options to be
+    specified such as&#58;
+    * the ability to invoke the `--force` flag when pushing the built
+    site to GitHub Pages, which would override any old changes for the branch
+    * supporting user pages that only allow deployment via the `master` branch or the
+    `docs` folder.
 
-    The project is currently at version 2.2.1. The former version (version 1) is no longer supported as GitHub Actions no longer support the former HCL workflow syntax.
+    The project is currently at version 2.6.0. The former version (version 1) is no longer
+    supported as GitHub Actions no longer supports the former HCL workflow syntax.
 
-    For more info about the project, check out the source code or the GitHub Marketplace listing for the Action.
+    For more info about the project, check out the source code or the GitHub Marketplace
+    listing for the Action.
   tags:
-  - GitHub
   - GitHub Pages
-  - GitHub Action
-  - GitHub Action workflow
+  - GitHub Actions
   - Jekyll
   - Build and Deploy
   - Continuous Integration
-  - CI
-  - YML
   categories:
   - GitHub Action
   status: in development
   links:
   - name: Source code
     link: https://github.com/EdricChan03/action-build-deploy-ghpages
-#  - name: GitHub Marketplace listing
-#    link: # TODO
+  - name: GitHub Marketplace listing
+    link: https://github.com/marketplace/actions/build-and-deploy-to-github-pages
