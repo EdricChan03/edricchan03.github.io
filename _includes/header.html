@@ -17,7 +17,10 @@
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
       <button role="button"
-        class="material-icons-outlined mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+        class="material-icons-outlined mdc-top-app-bar__navigation-icon mdc-icon-button">
+        <div class="mdc-icon-button__ripple"></div>
+        menu
+      </button>
       <span
         class="mdc-top-app-bar__title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</span>
     </section>
@@ -30,15 +33,24 @@
       {%- if button.link -%}
       {%- if button.is_site_link and button.is_site_link == true -%}
       <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
+        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link | prepend: site.baseurl }}">
+        <div class="mdc-icon-button__ripple"></div>
+        {{ button.icon }}
+      </a>
       {%- else -%}
       <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link }}">{{ button.icon }}</a>
+        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link }}">
+        <div class="mdc-icon-button__ripple"></div>
+        {{ button.icon }}
+      </a>
       {%- endif -%}
       {%- else -%}
       <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
         aria-describedby="{{ button_tooltip_id }}"
-        id="{{ button_id }}">{{ button.icon }}</button>
+        id="{{ button_id }}">
+        <div class="mdc-icon-button__ripple"></div>
+        {{ button.icon }}
+      </button>
       {%- endif -%}
       {%- endfor -%}
       {%- elsif layout.toolbar_buttons -%}
@@ -46,23 +58,38 @@
       {%- if button.link -%}
       {%- if button.is_site_link and button.is_site_link == true -%}
       <a class="material-icons-outlined mdc-top-app-bar__action-item"
-        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
+        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link | prepend: site.baseurl }}">
+        <div class="mdc-icon-button__ripple"></div>
+        {{ button.icon }}
+      </a>
       {%- else -%}
       <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link }}">{{ button.icon }}</a>
+        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link }}">
+        <div class="mdc-icon-button__ripple"></div>
+        {{ button.icon }}
+      </a>
       {%- endif -%}
       {%- else -%}
       <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
         aria-describedby="{{ button_tooltip_id }}"
-        id="{{ button_id }}">{{ button.icon }}</button>
+        id="{{ button_id }}">
+        <div class="mdc-icon-button__ripple"></div>
+        {{ button.icon }}
+      </button>
       {%- endif -%}
       {%- endfor -%}
       {%- endif -%}
       <button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-describedby="print-btn-tooltip">print</button>
+        aria-describedby="print-btn-tooltip">
+        <div class="mdc-icon-button__ripple"></div>
+        print
+      </button>
       <div class="mdc-menu-surface--anchor">
         <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-          aria-describedby="more-actions-btn-tooltip">more_vert</button>
+          aria-describedby="more-actions-btn-tooltip">
+          <div class="mdc-icon-button__ripple"></div>
+          more_vert
+        </button>
         <div class="mdc-menu mdc-menu-surface" id="more-actions-menu">
           <div class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
             <a class="mdc-list-item" href="{% github_edit_link %}" data-mdc-auto-init="MDCRipple">
