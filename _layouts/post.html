@@ -52,12 +52,13 @@ toolbar_buttons:
    -->
       </h2>
       <div class="mdc-dialog__content" id="share-dialog-content">
-        <div class="mdc-text-field" id="share-dialog-text-field">
+        <label class="mdc-text-field" id="share-dialog-text-field">
+          <span class="mdc-text-field__ripple"></span>
           <input type="text" id="share-dialog-text-field-input" class="mdc-text-field__input"
             value="{{site.url}}{{page.url}}" readonly>
-          <label class="mdc-floating-label" for="my-text-field">URL</label>
-          <div class="mdc-line-ripple"></div>
-        </div>
+          <span class="mdc-floating-label" id="share-dialog-text-field-input">URL</span>
+          <span class="mdc-line-ripple"></span>
+        </label>
       </div>
       <footer class="mdc-dialog__actions">
         <button type="button" class="mdc-button mdc-dialog__button" id="share-dialog-copy-link-button">
