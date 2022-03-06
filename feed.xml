@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://edricchan03.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edricchan03.github.io/" rel="alternate" type="text/html" /><updated>2022-03-06T16:32:17+00:00</updated><id>https://edricchan03.github.io/feed.xml</id><title type="html">Edric’s website</title><subtitle>My personal Github pages website.</subtitle><entry><title type="html">TOTD: Solve differentiation/integration equations with this web calculator</title><link href="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html" rel="alternate" type="text/html" title="TOTD: Solve differentiation/integration equations with this web calculator" /><published>2019-04-21T00:00:00+00:00</published><updated>2019-04-21T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration</id><content type="html" xml:base="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html"><![CDATA[<p><em>NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post.</em></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://edricchan03.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edricchan03.github.io/" rel="alternate" type="text/html" /><updated>2022-03-06T18:38:13+00:00</updated><id>https://edricchan03.github.io/feed.xml</id><title type="html">Edric’s website</title><subtitle>My personal Github pages website.</subtitle><entry><title type="html">Status Update | February 2022</title><link href="https://edricchan03.github.io/blog/2022/03/07/status-update.html" rel="alternate" type="text/html" title="Status Update | February 2022" /><published>2022-03-07T00:00:00+00:00</published><updated>2022-03-07T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2022/03/07/status-update</id><content type="html" xml:base="https://edricchan03.github.io/blog/2022/03/07/status-update.html"><![CDATA[<p>Look ma it’s another status update about 3 years later!
+In this post, I’ll cover what I’ve done so far in February 2022 and share my plans for the following month.</p>
+
+<!-- End of excerpt -->
+
+<h2 id="what-ive-done-this-month">What I’ve done this month</h2>
+
+<ul>
+  <li>I’ve been mostly working on <a href="https://github.com/EdricChan03/StudyBuddy-android">StudyBuddy for Android</a>.</li>
+  <li>I’ve also setup some initial project management tools that should hopefully help in reducing the amount of workload.</li>
+</ul>
+
+<h3 id="existing-projects">Existing projects</h3>
+
+<h4 id="studybuddy-for-android"><a href="https://github.com/EdricChan03/StudyBuddy-android">StudyBuddy for Android</a></h4>
+
+<ul>
+  <li>I’ve updated the dependency version management to use <a href="https://docs.gradle.org/current/userguide/platforms.html">Gradle 7’s Version Catalogs</a> - <a href="https://github.com/EdricChan03/StudyBuddy-android/pull/349">corresponding pull request</a></li>
+  <li>I’ve switched to using <a href="https://coil-kt.github.io/coil/">(Kotlin) Coroutines Image Loader</a> to load images - <a href="https://github.com/EdricChan03/StudyBuddy-android/pull/351">corresponding pull request</a></li>
+  <li>Did some slight tidying up of the codebase:
+    <ul>
+      <li>Used singleton classes where possible - <a href="https://github.com/EdricChan03/StudyBuddy-android/commit/65693884958877758ee240af39f62fad0690154a">corresponding commit</a></li>
+      <li>Improved the continuous integration configuration - <a href="https://github.com/EdricChan03/StudyBuddy-android/commit/d203e76256dc8ac97bccd7ba210dc8fcad4dfa3a">corresponding commit</a></li>
+      <li>Updated the Gradle build scripts to use repository settings (see https://developer.android.com/studio/releases/gradle-plugin for more info) - <a href="https://github.com/EdricChan03/StudyBuddy-android/commit/ee7ccae79a20aaa35d209359f2a384103a75815f">corresponding commit</a></li>
+      <li>And bumped Gradle to v7.4 - <a href="https://github.com/EdricChan03/StudyBuddy-android/commit/12f7cf808b280a08324d5d3c0f88aefdc0a16ca0">corresponding commit</a></li>
+    </ul>
+  </li>
+  <li>I’ve also renamed the default branch to use “main” instead</li>
+</ul>
+
+<h4 id="rss-reader"><a href="https://github.com/EdricChan03/rss-reader-angular">RSS Reader</a></h4>
+
+<ul>
+  <li>I’ve mostly merged some pull requests related to dependency updates</li>
+  <li>I’ve also renamed the repository to “rss-reader-angular” as I’m planning to maybe work on a <a href="https://svelte.dev/">Svelte</a> version of the app - stay tuned! :P
+    <ul>
+      <li>Note: Existing links to the site should work as expected, but not deep links unfortunately (so for example, https://edricchan03.github.io/rss-reader would redirect as expected, but not https://edricchan03.github.io/rss-reader/feed)</li>
+    </ul>
+  </li>
+  <li>I’ve also attempted to update the dependencies in this app (for e.g. Angular v11 -&gt; v13), but as I’ve not worked on it for a while, there’s been multiple issues (such as version incompatibilities, and an old <code class="language-plaintext highlighter-rouge">package-lock.json</code> file) that are blocking me from continuing.</li>
+</ul>
+
+<h4 id="my-site"><a href="https://github.com/EdricChan03/edricchan03.github.io">My site</a></h4>
+
+<h5 id="new-stuff">New stuff</h5>
+
+<ul>
+  <li>You may have noticed that the fonts look a bit different now. This is because I’ve recently changed them as the old default looked a bit boring to be honest. Right now, the fonts chosen are:
+    <ul>
+      <li>Default: <a href="https://fonts.google.com/specimen/Roboto">Roboto</a></li>
+      <li>Headlines: <a href="https://fonts.google.com/specimen/Work+Sans">Work Sans</a></li>
+      <li>Code: <a href="https://fonts.google.com/specimen/JetBrains+Mono">JetBrains Mono</a></li>
+    </ul>
+  </li>
+  <li>Leave feedback down below on what you think of the new site! (And here’s the <a href="https://github.com/EdricChan03/edricchan03.github.io/commit/2c1742d9e12bf20ce1b098c98966786e4bf7fd41">commit</a>, if you’re interested)</li>
+  <li>And I’ve also added support for editing the page you’re currently seeing on GitHub, if you so choose. (<a href="https://github.com/EdricChan03/edricchan03.github.io/commit/4f65dc011060f70d66d1269b10ada92824f0e792">commit</a>)</li>
+  <li>I’ve added tooltips to buttons on the top right of the page. (<a href="https://github.com/EdricChan03/edricchan03.github.io/commit/d2a597723f41afecb3dc6af0fe8cc85a3962b183">commit</a>)</li>
+</ul>
+
+<h5 id="changes">Changes</h5>
+
+<ul>
+  <li>I’ve finally updated the metadata on this website, as well as updated the version of <a href="https://material.io/components/web/">Material Components for Web</a> to the latest (as of this writing), v13.</li>
+  <li>I’ve also bumped the version of Jekyll used to v4 (<a href="https://github.com/EdricChan03/edricchan03.github.io/commit/cf4cabd4ca554176e36c14b5e8c34956f26f76fb">see commit</a>)</li>
+</ul>
+
+<h5 id="bug-fixes">Bug fixes</h5>
+
+<ul>
+  <li>Fixed a derp where the list of project tags weren’t showing as expected (<a href="https://github.com/EdricChan03/edricchan03.github.io/commit/2d959d3dd535e21411be0235c22248e8a66a45f6">commit</a>)</li>
+  <li>Simplifies the way that toolbar buttons are done in the template (<a href="https://github.com/EdricChan03/edricchan03.github.io/commit/98d18f47309a029f76b592a65cbe9b34585955ad">commit</a>)</li>
+</ul>
+
+<hr />
+
+<h3 id="new-projects-">New projects 😜</h3>
+
+<ul>
+  <li>I’ve been working on a Svelte version of the hit-game <a href="https://ivark.github.io">Antimatter Dimensions</a>, but temporarily stopped working on it to focus on other projects.</li>
+</ul>
+
+<hr />
+
+<h2 id="what-i-plan-to-do-next-month">What I plan to do next month</h2>
+
+<h3 id="projects">Projects</h3>
+
+<ul>
+  <li>Work on <a href="https://github.com/EdricChan03/StudyBuddy-web">StudyBuddy for Web</a> and <a href="https://github.com/EdricChan03/StudyBuddy-android">StudyBuddy for Android</a>
+    <ul>
+      <li>Work on improving the app architecture, as well as the overall user interface/experience</li>
+      <li>Work on improving the performance of the app</li>
+    </ul>
+  </li>
+  <li>Work on <a href="https://github.com/EdricChan03/rss-reader-angular">RSS Reader Angular</a> and maybe a Svelte version as well
+    <ul>
+      <li>Add some features like podcast support, and maybe a “read later” feature</li>
+    </ul>
+  </li>
+  <li>Fix up any other bugs present on this site
+    <ul>
+      <li>Update the metadata on this site</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="general">General</h3>
+
+<ul>
+  <li>Learn a new programming language/framework (Svelte/SvelteKit maybe?)</li>
+  <li>Improve my project management skills</li>
+  <li>Write more blog posts 😜</li>
+</ul>
+
+<hr />
+
+<p>That’s mostly all, folks! See ya next month!</p>]]></content><author><name>Edric Chan</name><email>edric.chan.1997@gmail.com</email></author><category term="blog" /><category term="status-update" /><summary type="html"><![CDATA[Look ma it’s another status update about 3 years later! In this post, I’ll cover what I’ve done so far in February 2022 and share my plans for the following month.]]></summary></entry><entry><title type="html">TOTD: Solve differentiation/integration equations with this web calculator</title><link href="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html" rel="alternate" type="text/html" title="TOTD: Solve differentiation/integration equations with this web calculator" /><published>2019-04-21T00:00:00+00:00</published><updated>2019-04-21T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration</id><content type="html" xml:base="https://edricchan03.github.io/blog/2019/04/21/easy-calculus-differentiation-integration.html"><![CDATA[<p><em>NOTE: This is not a sponsored post. I was not requested by the author of this website to write this post.</em></p>
 
 <p>I discovered the calculators when looking up for a solution to an integration question.</p>
 
