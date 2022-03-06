@@ -9,7 +9,7 @@ $mdc-theme-error: #f44336;
 
 @use "@material/button/mdc-button";
 @use "@material/card/mdc-card";
-@use "@material/chips/mdc-chips";
+@use "@material/chips/deprecated/mdc-chips";
 @use "@material/data-table/mdc-data-table";
 @use "@material/dialog/mdc-dialog";
 @use "@material/drawer/mdc-drawer";
