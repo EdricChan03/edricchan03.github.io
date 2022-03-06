@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://edricchan03.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edricchan03.github.io/" rel="alternate" type="text/html" /><updated>2022-03-06T18:51:56+00:00</updated><id>https://edricchan03.github.io/feed.xml</id><title type="html">Edric’s website</title><subtitle>My personal Github pages website.</subtitle><entry><title type="html">Status Update | February 2022</title><link href="https://edricchan03.github.io/blog/2022/03/07/status-update.html" rel="alternate" type="text/html" title="Status Update | February 2022" /><published>2022-03-07T00:00:00+00:00</published><updated>2022-03-07T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2022/03/07/status-update</id><content type="html" xml:base="https://edricchan03.github.io/blog/2022/03/07/status-update.html"><![CDATA[<p>Look ma it’s another status update about 3 years later!
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://edricchan03.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://edricchan03.github.io/" rel="alternate" type="text/html" /><updated>2022-03-06T18:55:47+00:00</updated><id>https://edricchan03.github.io/feed.xml</id><title type="html">Edric’s website</title><subtitle>My personal Github pages website.</subtitle><entry><title type="html">Status Update | February 2022</title><link href="https://edricchan03.github.io/blog/2022/03/07/status-update.html" rel="alternate" type="text/html" title="Status Update | February 2022" /><published>2022-03-07T00:00:00+00:00</published><updated>2022-03-07T00:00:00+00:00</updated><id>https://edricchan03.github.io/blog/2022/03/07/status-update</id><content type="html" xml:base="https://edricchan03.github.io/blog/2022/03/07/status-update.html"><![CDATA[<p>Look ma it’s another status update about 3 years later!
 In this post, I’ll cover what I’ve done so far in February 2022 and share my plans for the following month.</p>
 
 <!-- End of excerpt -->
@@ -47,7 +47,7 @@ In this post, I’ll cover what I’ve done so far in February 2022 and share my
 <ul>
   <li>You may have noticed that the fonts look a bit different now. This is because I’ve recently changed them as the old default looked a bit boring to be honest. As of the time of this writing, the fonts chosen are:
     <ul>
-      <li>Default: <a href="https://fonts.google.com/specimen/Scada">Scada</a></li>
+      <li>Default: <a href="https://fonts.google.com/specimen/Rambla">Rambla</a></li>
       <li>Headlines: <a href="https://fonts.google.com/specimen/Work+Sans">Work Sans</a></li>
       <li>Code: <a href="https://fonts.google.com/specimen/JetBrains+Mono">JetBrains Mono</a></li>
     </ul>
