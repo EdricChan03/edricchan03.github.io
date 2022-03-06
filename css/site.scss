@@ -22,6 +22,7 @@ $mdc-theme-error: #f44336;
 @use "@material/snackbar/mdc-snackbar";
 @use "@material/textfield/mdc-text-field";
 @use "@material/theme/mdc-theme";
+@use "@material/tooltip/styles";
 @use "@material/top-app-bar/mdc-top-app-bar";
 @use "@material/typography/mdc-typography";
 @import "syntax-highlighting";
@@ -82,7 +83,7 @@ strong {
   .card__title, .card__subtitle, .card__overline {
     margin: 0;
   }
-  
+
   .card__secondary, .card__subtitle {
     color: var(--mdc-theme-text-secondary-on-background, rgba(0,0,0,.54));
   }
@@ -115,4 +116,8 @@ strong {
 
 .text-pre-wrap {
   white-space: pre-wrap;
+}
+
+.app-tooltip {
+  z-index: 999;
 }

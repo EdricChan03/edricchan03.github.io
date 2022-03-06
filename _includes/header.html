@@ -1,3 +1,18 @@
+<!-- Tooltips -->
+{% for button in page.toolbar_buttons -%}
+{%- if button.title and button.id -%}
+<div id="{{ button.id | slugify }}-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface">{{ button.title }}</div>
+</div>
+{%- endif -%}
+{%- endfor -%}
+<div id="print-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface">Print</div>
+</div>
+<div id="more-actions-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface">More actions</div>
+</div>
+<!-- Top app bar -->
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
@@ -10,41 +25,44 @@
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar">
       {%- if page.toolbar_buttons -%}
       {%- for button in page.toolbar_buttons -%}
+      {%- capture button_id -%}{{ button.id | slugify }}{%- endcapture -%}
+      {%- capture button_tooltip_id -%}{{ button_id }}-tooltip{%- endcapture -%}
       {%- if button.link -%}
       {%- if button.is_site_link and button.is_site_link == true -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" aria-label="{{ button.title }}"
-        title="{{ button.title }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
+      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
       {%- else -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" aria-label="{{ button.title }}"
-        title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
+      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link }}">{{ button.icon }}</a>
       {%- endif -%}
       {%- else -%}
       <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-label="{{ button.title }}" title="{{ button.title }}"
-        id="{%- if button.id -%}{{ button.id }}{%- else -%}button-{{ forloop.index }}{%- endif -%}">{{ button.icon }}</button>
+        aria-describedby="{{ button_tooltip_id }}"
+        id="{{ button_id }}">{{ button.icon }}</button>
       {%- endif -%}
       {%- endfor -%}
       {%- elsif layout.toolbar_buttons -%}
       {%- for button in layout.toolbar_buttons -%}
       {%- if button.link -%}
       {%- if button.is_site_link and button.is_site_link == true -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item" aria-label="{{ button.title }}"
-        title="{{ button.title }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
+      <a class="material-icons-outlined mdc-top-app-bar__action-item"
+        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link | prepend: site.baseurl }}">{{ button.icon }}</a>
       {%- else -%}
-      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" aria-label="{{ button.title }}"
-        title="{{ button.title }}" href="{{ button.link }}">{{ button.icon }}</a>
+      <a class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-describedby="{{ button_tooltip_id }}" href="{{ button.link }}">{{ button.icon }}</a>
       {%- endif -%}
       {%- else -%}
       <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-label="{{ button.title }}" title="{{ button.title }}"
-        id="{%- if button.id -%}{{ button.id }}{%- else -%}button-{{ forloop.index }}{%- endif -%}">{{ button.icon }}</button>
+        aria-describedby="{{ button_tooltip_id }}"
+        id="{{ button_id }}">{{ button.icon }}</button>
       {%- endif -%}
       {%- endfor -%}
       {%- endif -%}
       <button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-label="Print this page" title="Print this page">print</button>
+        aria-describedby="print-btn-tooltip">print</button>
       <div class="mdc-menu-surface--anchor">
-        <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" title="More actions">more_vert</button>
+        <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+          aria-describedby="more-actions-btn-tooltip">more_vert</button>
         <div class="mdc-menu mdc-menu-surface" id="more-actions-menu">
           <div class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
             <a class="mdc-list-item" href="{% github_edit_link %}" data-mdc-auto-init="MDCRipple">
