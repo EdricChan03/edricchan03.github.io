@@ -109,8 +109,6 @@ if (path === '/') {
         }
       })
   }
-} else if (path === '/portfolio') {
-  toggleListItemActivated('portfolio-list-item');
 } else if (path === '/projects') {
   toggleListItemActivated('projects-list-item');
 } else if (path === '/privacy-policy') {
