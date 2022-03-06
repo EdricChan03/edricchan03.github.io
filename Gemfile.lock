@@ -34,6 +34,7 @@ GEM
     faraday-retry (1.0.3)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
+    google-protobuf (3.19.4)
     http_parser.rb (0.8.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
@@ -86,6 +87,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
+    rake (13.0.6)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -93,6 +95,9 @@ GEM
     rouge (3.28.0)
     ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
+    sass-embedded (1.0.8)
+      google-protobuf (~> 3.19.0)
+      rake
     sassc (2.1.0)
       ffi (~> 1.9)
     sawyer (0.8.2)
@@ -114,6 +119,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-workbox-plugin
+  sass-embedded
   sassc (~> 2.1.0)
 
 BUNDLED WITH
