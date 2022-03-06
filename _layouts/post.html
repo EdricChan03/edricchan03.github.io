@@ -8,8 +8,34 @@ toolbar_buttons:
 <div class="mdc-layout-grid">
   <div class="mdc-layout-grid__inner">
     <article class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 article">
-      <h1 class="mdc-typography--headline2">{{page.title}}</h1>
-      {{content}}
+      <header class="post--header">
+        <div class="mdc-chip-set post--header-tags" role="grid">
+          {%- for tag in page.tags -%}
+          <a class="mdc-chip" role="row" href="/blog/tagged/{{ tag }}">
+            <div class="mdc-chip__ripple"></div>
+            <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
+            <span role="gridcell">
+              <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                <span class="mdc-chip__text">{{ tag }}</span>
+              </span>
+            </span>
+          </a>
+          {%- endfor -%}
+        </div>
+        <h1 class="mdc-typography--headline2">{{ page.title }}</h1>
+        <!-- Author info -->
+        <div class="post--header-info">
+          <span class="post--header-info__author">
+            <span class="mdc-typography--caption">by</span>
+            {%- assign author = site.authors | where: 'short_name', page.author | first %}
+            <a href="{{ author.url }}">{{ author.name }}</a>
+          </span>
+          <span class="post--header-info__date">
+            <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time>
+          </span>
+        </div>
+      </header>
+      {{ content }}
     </article>
     {%- if page.hide_author_bio != true and page.author -%}
     <div id="about-the-author" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">

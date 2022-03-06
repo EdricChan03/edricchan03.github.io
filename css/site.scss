@@ -93,6 +93,23 @@ strong {
   p:not([class]), li:not([class]) {
     @extend .mdc-typography--body1;
   }
+
+  .post--header {
+    h1 {
+      margin: 0;
+    }
+
+    .post--header-tags {
+      margin-bottom: 8px;
+    }
+
+    .post--header-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      border-bottom: 1px solid gray;
+    }
+  }
 }
 
 .card {
