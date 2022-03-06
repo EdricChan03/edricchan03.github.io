@@ -1,4 +1,4 @@
-{%- assign author = site.data.authors[include.author] -%}
+{%- assign author = site.authors | where: 'short_name', include.author | first -%}
 <div class="mdc-card card card--horizontal">
   {%- if author.image -%}
   <img class="mdc-card__media--square"
@@ -9,10 +9,10 @@
     {%- if author.is_site_owner and author.is_site_owner == true -%}
     <h3 class="card__subtitle mdc-typography--subtitle2">(site owner)</h3>
     {%- endif -%}
-    
+
   </div>
   <div class="card__secondary">
-    {%- assign bio = author.bio | default: "(This user has no bio!)" -%}
+    {%- assign bio = author.content | default: "(This user has no bio!)" -%}
     <p>{{ bio }}</p>
   </div>
 </div>

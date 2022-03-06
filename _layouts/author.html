@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1 class="mdc-typography--headline2">Author: {{ page.name }}</h1>
+
+{{ content }}
+
+<h2 class="mdc-typography--headline3">Posts authored</h2>
+{% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+<ul class="mdc-typography--body1">
+  {% for post in filtered_posts -%}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {%- endfor %}
+</ul>

@@ -49,6 +49,12 @@ defaults:
       # Whether to show an excerpt of the post
       # Default: false (hides excerpt)
       show_excerpt: false
+  # Authors
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
 pagination:
   # debug: true
   enabled: true
@@ -58,6 +64,10 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+collections:
+  authors:
+    output: true
+    permalink: /blog/authors/:name
 autopages:
   # Use default configuration
   enabled: true

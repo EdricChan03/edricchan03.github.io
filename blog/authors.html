@@ -6,63 +6,10 @@ description: A list of all authors of the blog
 
 <div class="mdc-layout-grid">
   <div class="mdc-layout-grid__inner">
-    {%- if site.data.authors -%}
-    {%- for dataAuthor in site.data.authors -%}
-    {%- assign author = dataAuthor[1] -%}
+    {%- for author in site.authors -%}
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-      <div class="mdc-card card">
-        <div class="card__primary">
-          {%- if author.is_site_owner == true -%}
-          <h5 class="card__overline mdc-typography--overline">Site Owner</h5>
-          {%- endif -%}
-          <h2 class="card__title mdc-typography--headline6">About {{author.name}}</h2>
-        </div>
-        <div class="card__secondary">
-          {%- if author.bio -%}
-          <p>{{author.bio}}</p>
-          {%- else -%}
-          <p><em>This author has no bio!</em></p>
-          {%- endif -%}
-        </div>
-        {%- if author.email or author.social -%}
-        <div class="mdc-card__actions">
-          {%- if author.email -%}
-          <div class="mdc-card__action-buttons">
-            <a class="mdc-button mdc-card__action mdc-card__action--button" href="mailto:{{author.email}}"
-              data-mdc-auto-init="MDCRipple">
-              <span class="material-icons-outlined mdc-button__icon" aria-hidden="true">email</span>
-              <div class="mdc-button__ripple"></div>
-              <span class="mdc-button__label">Email author</span>
-            </a>
-          </div>
-          {%- endif -%}
-          {%- if author.social -%}
-          <div class="mdc-card__action-icons">
-            <div class="mdc-menu-surface--anchor">
-              <button class="material-icons-outlined mdc-icon-button mdc-card__action mdc-card__action--icon"
-                title="Follow author on&hellip;">
-                <div class="mdc-icon-button__ripple"></div>
-                person_add
-              </button>
-              <div class="mdc-menu mdc-menu-surface follow-author-menu">
-                <div class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
-                  {%- for link in author.social -%}
-                  <a class="mdc-deprecated-list-item" href="{{link.link}}" aria-selected="true" data-mdc-auto-init="MDCRipple">
-                    <span class="mdc-deprecated-list-item__ripple"></span>
-                    <span class="mdc-deprecated-list-item__text">{{link.name}}</span>
-                  </a>
-                  {%- endfor -%}
-                </div>
-              </div>
-            </div>
-          </div>
-          {%- endif -%}
-        </div>
-        {%- endif -%}
-        </a>
-      </div>
+      {% include author_info.html author=author %}
     </div>
     {%- endfor -%}
-    {%- endif -%}
   </div>
 </div>
