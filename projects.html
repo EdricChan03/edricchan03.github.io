@@ -38,71 +38,98 @@
     <h6 class="mdc-drawer__subtitle">email@material.io</h6>
   </div> -->
   <div class="mdc-drawer__content">
-    <nav class="mdc-list">
-      <h6 class="mdc-list-group__subheader">Links</h6>
-      <a class="mdc-list-item" href="/" aria-selected="true" data-mdc-auto-init="MDCRipple" id="home-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">home</span>
-        <span class="mdc-list-item__text">Home</span>
+    <nav class="mdc-deprecated-list">
+      <h6 class="mdc-deprecated-list-group__subheader">Links</h6>
+      <a class="mdc-deprecated-list-item" href="/" aria-selected="true" data-mdc-auto-init="MDCRipple" id="home-list-item" tabindex="0">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">home</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Home</span>
       </a>
-      <a class="mdc-list-item" href="/blog" data-mdc-auto-init="MDCRipple" id="blog-list-item">
+      <a class="mdc-deprecated-list-item" href="/blog" data-mdc-auto-init="MDCRipple" id="blog-list-item">
         <!-- See https://materialdesignicons.com/icon/book-open-page-variant -->
-        <svg class="mdc-list-item__graphic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+        <svg class="mdc-deprecated-list-item__graphic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V13L12,8.5V6.5C10.55,5.4 8.45,5 6.5,5V5Z" />
         </svg>
-        <span class="mdc-list-item__text">Blog</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Blog</span>
       </a>
-      <a href="/til" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="til-list-item">
-        <svg class="mdc-list-item__graphic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+      <a href="/til" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="til-list-item">
+        <svg class="mdc-deprecated-list-item__graphic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
           <path d="M20,11H23V13H20V11M1,11H4V13H1V11M13,1V4H11V1H13M4.92,3.5L7.05,5.64L5.63,7.05L3.5,4.93L4.92,3.5M16.95,5.63L19.07,3.5L20.5,4.93L18.37,7.05L16.95,5.63M12,6A6,6 0 0,1 18,12C18,14.22 16.79,16.16 15,17.2V19A1,1 0 0,1 14,20H10A1,1 0 0,1 9,19V17.2C7.21,16.16 6,14.22 6,12A6,6 0 0,1 12,6M14,21V22A1,1 0 0,1 13,23H11A1,1 0 0,1 10,22V21H14M11,18H13V15.87C14.73,15.43 16,13.86 16,12A4,4 0 0,0 12,8A4,4 0 0,0 8,12C8,13.86 9.27,15.43 11,15.87V18Z" />
         </svg>
-        <span class="mdc-list-item__text">Today I Learned (TIL)</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Today I Learned (TIL)</span>
       </a>
-      <a href="/projects" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="projects-list-item">
+      <a href="/projects" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="projects-list-item">
         <!-- See https://materialdesignicons.com/icon/flask -->
-        <svg class="mdc-list-item__graphic" aria-hidden="true">
+        <svg class="mdc-deprecated-list-item__graphic" aria-hidden="true">
           <path d="M6,22A3,3 0 0,1 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V6A1,1 0 0,1 8,5V4A2,2 0 0,1 10,2H14A2,2 0 0,1 16,4V5A1,1 0 0,1 15,6V7.81L20.5,17.37C20.82,17.84 21,18.4 21,19A3,3 0 0,1 18,22H6M5,19A1,1 0 0,0 6,20H18A1,1 0 0,0 19,19C19,18.79 18.93,18.59 18.82,18.43L16.53,14.47L14,17L8.93,11.93L5.18,18.43C5.07,18.59 5,18.79 5,19M13,10A1,1 0 0,0 12,11A1,1 0 0,0 13,12A1,1 0 0,0 14,11A1,1 0 0,0 13,10Z" />
         </svg>
-        <span class="mdc-list-item__text">Projects</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Projects</span>
       </a>
-      <a href="/portfolio" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="portfolio-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">work_outline</span>
-        <span class="mdc-list-item__text">Portfolio</span>
+      <a href="/portfolio" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="portfolio-list-item">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">work_outline</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Portfolio</span>
       </a>
-      <a href="/privacy-policy" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="privacy-policy-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">lock</span>
-        <span class="mdc-list-item__text">Privacy policy</span>
+      <a href="/privacy-policy" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="privacy-policy-list-item">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">lock</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Privacy policy</span>
       </a>
-      <hr class="mdc-list-divider">
-      <a href="https://github.com/EdricChan03/edricchan03.github.io" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="source-code-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">code</span>
-        <span class="mdc-list-item__text">View source code</span>
+      <hr class="mdc-deprecated-list-divider">
+      <a href="https://github.com/EdricChan03/edricchan03.github.io" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="source-code-list-item">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">code</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">View source code</span>
       </a>
-      <a href="/about/site" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="about-site-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">info</span>
-        <span class="mdc-list-item__text">Site info</span>
+      <a href="/about/site" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="about-site-list-item">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">info</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Site info</span>
       </a>
     </nav>
   </div>
 </aside>
 <div class="mdc-drawer-scrim"></div>
+<!-- Tooltips -->
+<div id="print-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">Print</div>
+</div>
+<div id="more-actions-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">More actions</div>
+</div>
+<!-- Top app bar -->
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
       <button role="button"
-        class="material-icons-outlined mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+        class="material-icons-outlined mdc-top-app-bar__navigation-icon mdc-icon-button">
+        <div class="mdc-icon-button__ripple"></div>
+        menu
+      </button>
       <span
         class="mdc-top-app-bar__title">List of projects</span>
     </section>
 
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar"><button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-label="Print this page" title="Print this page">print</button>
+        aria-describedby="print-btn-tooltip">
+        <div class="mdc-icon-button__ripple"></div>
+        print
+      </button>
       <div class="mdc-menu-surface--anchor">
-        <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" title="More actions">more_vert</button>
+        <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+          aria-describedby="more-actions-btn-tooltip">
+          <div class="mdc-icon-button__ripple"></div>
+          more_vert
+        </button>
         <div class="mdc-menu mdc-menu-surface" id="more-actions-menu">
           <div class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
-            <a class="mdc-list-item" href="https://github.com/EdricChan03/edricchan03.github.io/edit/website-v2/projects.html" data-mdc-auto-init="MDCRipple">
-              <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">edit</span>
-              <span class="mdc-list-item__text">Edit this page on GitHub</span>
+            <a class="mdc-deprecated-list-item" href="https://github.com/EdricChan03/edricchan03.github.io/edit/website-v2/projects.html" data-mdc-auto-init="MDCRipple">
+              <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">edit</span>
+              <span class="mdc-deprecated-list-item__ripple"></span>
+              <span class="mdc-deprecated-list-item__text">Edit this page on GitHub</span>
             </a>
           </div>
         </div>
@@ -128,24 +155,50 @@ which can be exported as an Excel spreadsheet/CSV file.</p>
 <p>This program is ideally meant to be run with Python v3.7.3 or higher. For
 more info about the project and on how to start it, check out the README file
 located at the root of the source code.</p>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Python</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Python</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Tkinter</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Tkinter</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Computing</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Computing</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Applied Subject</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Applied Subject</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Excel</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Excel</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/computing-pt"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a></div>
     </div></div><div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
@@ -173,30 +226,66 @@ you’ve spent your time on your phone. This is the Android version.</p>
 </ul>
 
 <p>This app was based on an idea by the student counsellor of my school.</p>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Android</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Android</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Kotlin</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Kotlin</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Java</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Java</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">StudyBuddy</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">StudyBuddy</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Firebase</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Firebase</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">AndroidX</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">AndroidX</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Material Design</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Material Design</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/StudyBuddy"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a></div>
     </div></div><div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
@@ -226,30 +315,62 @@ ability to chat with your peers. This is the web version.</p>
 </ul>
 
 <p>This app was based on an idea by the student counsellor of my school.</p>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Web</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Web</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Angular</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Angular</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">TypeScript</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">TypeScript</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">HTML</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">HTML</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">StudyBuddy</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">StudyBuddy</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Material Design</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Material Design</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://studybuddy-e5f46.firebaseapp.com"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Website</span>
         </a><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/StudyBuddy-web"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a></div>
     </div></div><div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
@@ -266,24 +387,46 @@ country and a refreshed interface. (The original app only had a list of cards wh
 
 <p><del>Unfortunately, work on the app has been temporarily ceased due to other
 projects and the lack of time.</del> (EDIT - Work on the app has recently resumed with new features such as a release notes page, among bug fixes.)</p>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Angular</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Angular</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">RSS</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">RSS</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">RSS Reader</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">RSS Reader</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Material Design</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Material Design</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://edricchan03.github.io/rss-reader"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Website</span>
         </a><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/rss-reader"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a></div>
     </div></div><div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
@@ -305,27 +448,54 @@ projects and the lack of time.</del> (EDIT - Work on the app has recently resume
   <li><a href="https://github.com/EdricChan03/ngx-simple-http"><code class="language-plaintext highlighter-rouge">ngx-simple-http</code></a> (Simplified HTTP requests)</li>
   <li><a href="https://github.com/ng-packagr/ng-packagr"><code class="language-plaintext highlighter-rouge">ng-packagr</code></a> (Used for packaging the library to be published to NPM)</li>
 </ul>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Angular</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Angular</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Library</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Library</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Angular Library</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Angular Library</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">YouTube Data v3 API</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">YouTube Data v3 API</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">API</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">API</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://ngx-ytd-api.firebaseapp.com/master"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Website</span>
         </a><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/ngx-ytd-api"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a></div>
     </div></div><div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
@@ -338,24 +508,50 @@ projects and the lack of time.</del> (EDIT - Work on the app has recently resume
 <p><em>For more info about HttpClient, view <a href="https://angular.io/guide/http">the docs</a>.</em></p>
 
 <p><em>Note: Development for this Angular library may soon be stopped in favour of a better Angular library such as <a href="https://github.com/ngx-api-utils/ngx-api-utils"><code class="language-plaintext highlighter-rouge">ngx-api-utils</code></a>.</em></p>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Angular</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Angular</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Library</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Library</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Angular Library</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Angular Library</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">HttpClient</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">HttpClient</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">ngx-ytd-api</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">ngx-ytd-api</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/ngx-simple-http"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a></div>
     </div></div><div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
@@ -370,24 +566,46 @@ projects and the lack of time.</del> (EDIT - Work on the app has recently resume
 <p>The project was submitted in late 2017 with a video showing how to play the game and a certificate of participation was awarded in late 2018.</p>
 
 <p>The source code of the two apps was archived on 23 Aug 2018. Development of the apps has been ceased.</p>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">SCCL</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">SCCL</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Game</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Game</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Android</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Android</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">iOS</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">iOS</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/SCCLGame"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://appcompetition.tk.sg/"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Competition website</span>
         </a></div>
     </div></div><div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
@@ -412,42 +630,98 @@ projects and the lack of time.</del> (EDIT - Work on the app has recently resume
   <li><a href="https://material.angularjs.org">AngularJS Material</a> - Material Design for AngularJS</li>
   <li>HTML + CSS + JavaScript</li>
 </ul>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Website</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Website</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">EdricChan03</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">EdricChan03</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">AngularJS</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">AngularJS</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">AngularJS Material</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">AngularJS Material</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">HTML</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">HTML</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">CSS</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">CSS</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">JavaScript</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">JavaScript</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Material Components for Web</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Material Components for Web</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Material Design</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Material Design</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">GitHub</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">GitHub</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">GitHub Actions</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">GitHub Actions</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/edricchan03.github.io"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a></div>
     </div></div><div class="mdc-card card mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
@@ -462,36 +736,82 @@ projects and the lack of time.</del> (EDIT - Work on the app has recently resume
 <p>The project is currently at version 2.2.1. The former version (version 1) is no longer supported as GitHub Actions no longer support the former HCL workflow syntax.</p>
 
 <p>For more info about the project, check out the source code or the GitHub Marketplace listing for the Action.</p>
-<div class="mdc-chip-set"><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+<div class="mdc-chip-set" role="grid"><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">GitHub</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">GitHub</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">GitHub Pages</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">GitHub Pages</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">GitHub Action</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">GitHub Action</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">GitHub Action workflow</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">GitHub Action workflow</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Jekyll</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Jekyll</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Build and Deploy</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Build and Deploy</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">Continuous Integration</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">Continuous Integration</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">CI</div>
-        </span><span class="mdc-chip" tabindex="0" data-mdc-auto-init="MDCRipple">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">CI</span>
+            </span>
+          </span>
+        </div><div class="mdc-chip" role="row">
+          <div class="mdc-chip__ripple"></div>
           <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
-          <div class="mdc-chip__text">YML</div>
-        </span></div></div><div class="mdc-card__actions">
+          <span role="gridcell">
+            <span class="mdc-chip__primary-action">
+              <span class="mdc-chip__text">YML</span>
+            </span>
+          </span>
+        </div></div></div><div class="mdc-card__actions">
       <div class="mdc-card__action-buttons"><a class="mdc-button mdc-card__action mdc-card__action--button" href="https://github.com/EdricChan03/action-build-deploy-ghpages"
           data-mdc-auto-init="MDCRipple">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Source code</span>
         </a></div>
     </div></div></div>
@@ -501,19 +821,25 @@ projects and the lack of time.</del> (EDIT - Work on the app has recently resume
   </div>
 </div>
 
-    </main><div class="mdc-snackbar" id="update-available-snackbar">
-  <div class="mdc-snackbar__surface">
-    <div class="mdc-snackbar__label"
-         role="status"
-         aria-live="polite">
+    </main><aside class="mdc-snackbar" id="update-available-snackbar">
+  <div class="mdc-snackbar__surface" role="status" aria-relevant="additions">
+    <div class="mdc-snackbar__label" aria-atomic="false">
       An update is available!
     </div>
-    <div class="mdc-snackbar__actions">
-      <button type="button" class="mdc-button mdc-snackbar__action" data-mdc-auto-init="MDCRipple">Update</button>
-      <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined" title="Dismiss" data-mdc-auto-init="MDCRipple">close</button>
+    <div class="mdc-snackbar__actions" aria-atomic="true">
+      <button type="button" class="mdc-button mdc-snackbar__action"
+        data-mdc-auto-init="MDCRipple">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Update</span>
+      </button>
+      <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined"
+        title="Dismiss" data-mdc-auto-init="MDCRipple">
+        <div class="mdc-icon-button__ripple"></div>
+        close
+      </button>
     </div>
   </div>
-</div>
+</aside>
 </body><script
   src="/node_modules/material-components-web/dist/material-components-web.min.js"></script>
 <script src="/js/site.js"></script>

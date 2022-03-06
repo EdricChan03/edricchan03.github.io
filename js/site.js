@@ -43,14 +43,14 @@ function toggleListItemActivated(id) {
     throw new Error('The ID specified is invalid!');
   }
 }
-var activatedListItemClass = 'mdc-list-item--activated';
+var activatedListItemClass = 'mdc-deprecated-list-item--activated';
 var drawer = mdc.drawer.MDCDrawer.attachTo(document.getElementById('app-drawer'));
 var topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
 // topAppBar.setScrollTarget(document.getElementById('page-content'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
   drawer.open = !drawer.open;
 });
-var listEl = document.querySelector('.mdc-drawer .mdc-list');
+var listEl = document.querySelector('.mdc-drawer .mdc-deprecated-list');
 var mainContentEl = document.getElementById('page-content');
 var scrimEl = document.querySelector('.mdc-drawer-scrim');
 
@@ -79,6 +79,12 @@ document.querySelectorAll('.mdc-icon-button')
     var iconButtonRipple = mdc.ripple.MDCRipple.attachTo(element);
     iconButtonRipple.unbounded = true;
   });
+
+document.querySelectorAll('.mdc-chip-set')
+  .forEach((element) => mdc.chips.MDCChipSet.attachTo(element));
+
+document.querySelectorAll('.mdc-tooltip')
+  .forEach((element) => mdc.tooltip.MDCTooltip.attachTo(element));
 
 mdc.autoInit();
 
@@ -126,12 +132,12 @@ if (menuButton.nodeName !== 'BUTTON') {
 }
 
 // Share functionality
-if (document.getElementById('share-dialog') && document.getElementById('share-button')) {
+if (document.getElementById('share-dialog') && document.getElementById('share-btn')) {
   const shareDialog = mdc.dialog.MDCDialog.attachTo(document.getElementById('share-dialog'));
   const shareDialogSuccessSnackbar = mdc.snackbar.MDCSnackbar.attachTo(document.getElementById('share-dialog-success-snackbar'));
   const shareDialogFailureSnackbar = mdc.snackbar.MDCSnackbar.attachTo(document.getElementById('share-dialog-failure-snackbar'));
 
-  document.getElementById('share-button').addEventListener('click', () => {
+  document.getElementById('share-btn').addEventListener('click', () => {
     shareDialog.open();
   })
   if (document.querySelectorAll('.mdc-text-field')) {

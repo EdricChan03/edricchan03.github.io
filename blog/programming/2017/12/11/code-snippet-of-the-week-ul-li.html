@@ -42,73 +42,105 @@
     <h6 class="mdc-drawer__subtitle">email@material.io</h6>
   </div> -->
   <div class="mdc-drawer__content">
-    <nav class="mdc-list">
-      <h6 class="mdc-list-group__subheader">Links</h6>
-      <a class="mdc-list-item" href="/" aria-selected="true" data-mdc-auto-init="MDCRipple" id="home-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">home</span>
-        <span class="mdc-list-item__text">Home</span>
+    <nav class="mdc-deprecated-list">
+      <h6 class="mdc-deprecated-list-group__subheader">Links</h6>
+      <a class="mdc-deprecated-list-item" href="/" aria-selected="true" data-mdc-auto-init="MDCRipple" id="home-list-item" tabindex="0">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">home</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Home</span>
       </a>
-      <a class="mdc-list-item" href="/blog" data-mdc-auto-init="MDCRipple" id="blog-list-item">
+      <a class="mdc-deprecated-list-item" href="/blog" data-mdc-auto-init="MDCRipple" id="blog-list-item">
         <!-- See https://materialdesignicons.com/icon/book-open-page-variant -->
-        <svg class="mdc-list-item__graphic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+        <svg class="mdc-deprecated-list-item__graphic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V13L12,8.5V6.5C10.55,5.4 8.45,5 6.5,5V5Z" />
         </svg>
-        <span class="mdc-list-item__text">Blog</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Blog</span>
       </a>
-      <a href="/til" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="til-list-item">
-        <svg class="mdc-list-item__graphic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+      <a href="/til" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="til-list-item">
+        <svg class="mdc-deprecated-list-item__graphic" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
           <path d="M20,11H23V13H20V11M1,11H4V13H1V11M13,1V4H11V1H13M4.92,3.5L7.05,5.64L5.63,7.05L3.5,4.93L4.92,3.5M16.95,5.63L19.07,3.5L20.5,4.93L18.37,7.05L16.95,5.63M12,6A6,6 0 0,1 18,12C18,14.22 16.79,16.16 15,17.2V19A1,1 0 0,1 14,20H10A1,1 0 0,1 9,19V17.2C7.21,16.16 6,14.22 6,12A6,6 0 0,1 12,6M14,21V22A1,1 0 0,1 13,23H11A1,1 0 0,1 10,22V21H14M11,18H13V15.87C14.73,15.43 16,13.86 16,12A4,4 0 0,0 12,8A4,4 0 0,0 8,12C8,13.86 9.27,15.43 11,15.87V18Z" />
         </svg>
-        <span class="mdc-list-item__text">Today I Learned (TIL)</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Today I Learned (TIL)</span>
       </a>
-      <a href="/projects" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="projects-list-item">
+      <a href="/projects" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="projects-list-item">
         <!-- See https://materialdesignicons.com/icon/flask -->
-        <svg class="mdc-list-item__graphic" aria-hidden="true">
+        <svg class="mdc-deprecated-list-item__graphic" aria-hidden="true">
           <path d="M6,22A3,3 0 0,1 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V6A1,1 0 0,1 8,5V4A2,2 0 0,1 10,2H14A2,2 0 0,1 16,4V5A1,1 0 0,1 15,6V7.81L20.5,17.37C20.82,17.84 21,18.4 21,19A3,3 0 0,1 18,22H6M5,19A1,1 0 0,0 6,20H18A1,1 0 0,0 19,19C19,18.79 18.93,18.59 18.82,18.43L16.53,14.47L14,17L8.93,11.93L5.18,18.43C5.07,18.59 5,18.79 5,19M13,10A1,1 0 0,0 12,11A1,1 0 0,0 13,12A1,1 0 0,0 14,11A1,1 0 0,0 13,10Z" />
         </svg>
-        <span class="mdc-list-item__text">Projects</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Projects</span>
       </a>
-      <a href="/portfolio" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="portfolio-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">work_outline</span>
-        <span class="mdc-list-item__text">Portfolio</span>
+      <a href="/portfolio" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="portfolio-list-item">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">work_outline</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Portfolio</span>
       </a>
-      <a href="/privacy-policy" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="privacy-policy-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">lock</span>
-        <span class="mdc-list-item__text">Privacy policy</span>
+      <a href="/privacy-policy" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="privacy-policy-list-item">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">lock</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Privacy policy</span>
       </a>
-      <hr class="mdc-list-divider">
-      <a href="https://github.com/EdricChan03/edricchan03.github.io" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="source-code-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">code</span>
-        <span class="mdc-list-item__text">View source code</span>
+      <hr class="mdc-deprecated-list-divider">
+      <a href="https://github.com/EdricChan03/edricchan03.github.io" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="source-code-list-item">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">code</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">View source code</span>
       </a>
-      <a href="/about/site" class="mdc-list-item" data-mdc-auto-init="MDCRipple" id="about-site-list-item">
-        <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">info</span>
-        <span class="mdc-list-item__text">Site info</span>
+      <a href="/about/site" class="mdc-deprecated-list-item" data-mdc-auto-init="MDCRipple" id="about-site-list-item">
+        <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">info</span>
+        <span class="mdc-deprecated-list-item__ripple"></span>
+        <span class="mdc-deprecated-list-item__text">Site info</span>
       </a>
     </nav>
   </div>
 </aside>
 <div class="mdc-drawer-scrim"></div>
+<!-- Tooltips -->
+<div id="share-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">Share&hellip;</div>
+</div><div id="print-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">Print</div>
+</div>
+<div id="more-actions-btn-tooltip" class="mdc-tooltip app-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">More actions</div>
+</div>
+<!-- Top app bar -->
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
   <div class="mdc-top-app-bar__row">
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
       <button role="button"
-        class="material-icons-outlined mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+        class="material-icons-outlined mdc-top-app-bar__navigation-icon mdc-icon-button">
+        <div class="mdc-icon-button__ripple"></div>
+        menu
+      </button>
       <span
         class="mdc-top-app-bar__title">Code snippet of the week | Unordered and Ordered lists</span>
     </section>
 
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-typography" role="toolbar"><button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-label="Share&hellip;" title="Share&hellip;"
-        id="share-button">share</button><button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
-        aria-label="Print this page" title="Print this page">print</button>
+        aria-describedby="share-btn-tooltip"
+        id="share-btn">
+        <div class="mdc-icon-button__ripple"></div>
+        share
+      </button><button id="print-btn" class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+        aria-describedby="print-btn-tooltip">
+        <div class="mdc-icon-button__ripple"></div>
+        print
+      </button>
       <div class="mdc-menu-surface--anchor">
-        <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button" title="More actions">more_vert</button>
+        <button class="material-icons-outlined mdc-top-app-bar__action-item mdc-icon-button"
+          aria-describedby="more-actions-btn-tooltip">
+          <div class="mdc-icon-button__ripple"></div>
+          more_vert
+        </button>
         <div class="mdc-menu mdc-menu-surface" id="more-actions-menu">
           <div class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
-            <a class="mdc-list-item" href="https://github.com/EdricChan03/edricchan03.github.io/edit/website-v2/blog/_posts/2017-12-11-code-snippet-of-the-week-ul-li.md" data-mdc-auto-init="MDCRipple">
-              <span class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">edit</span>
-              <span class="mdc-list-item__text">Edit this page on GitHub</span>
+            <a class="mdc-deprecated-list-item" href="https://github.com/EdricChan03/edricchan03.github.io/edit/website-v2/blog/_posts/2017-12-11-code-snippet-of-the-week-ul-li.md" data-mdc-auto-init="MDCRipple">
+              <span class="material-icons-outlined mdc-deprecated-list-item__graphic" aria-hidden="true">edit</span>
+              <span class="mdc-deprecated-list-item__ripple"></span>
+              <span class="mdc-deprecated-list-item__text">Edit this page on GitHub</span>
             </a>
           </div>
         </div>
@@ -232,15 +264,17 @@
    -->
       </h2>
       <div class="mdc-dialog__content" id="share-dialog-content">
-        <div class="mdc-text-field" id="share-dialog-text-field">
+        <label class="mdc-text-field mdc-text-field--filled" id="share-dialog-text-field">
+          <span class="mdc-text-field__ripple"></span>
           <input type="text" id="share-dialog-text-field-input" class="mdc-text-field__input"
             value="https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html" readonly>
-          <label class="mdc-floating-label" for="my-text-field">URL</label>
-          <div class="mdc-line-ripple"></div>
-        </div>
+          <span class="mdc-floating-label" id="share-dialog-text-field-input">URL</span>
+          <span class="mdc-line-ripple"></span>
+        </label>
       </div>
       <footer class="mdc-dialog__actions">
         <button type="button" class="mdc-button mdc-dialog__button" id="share-dialog-copy-link-button">
+          <div class="mdc-button__ripple"></div>
           <span class="mdc-button__label">Copy link</span>
         </button>
       </footer>
@@ -255,7 +289,10 @@
     </div>
     <div class="mdc-snackbar__actions">
       <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined" title="Dismiss"
-        data-mdc-auto-init="MDCRipple">close</button>
+        data-mdc-auto-init="MDCRipple">
+        <div class="mdc-icon-button__ripple"></div>
+        close
+      </button>
     </div>
   </div>
 </div>
@@ -266,24 +303,33 @@
     </div>
     <div class="mdc-snackbar__actions">
       <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined" title="Dismiss"
-        data-mdc-auto-init="MDCRipple">close</button>
+        data-mdc-auto-init="MDCRipple">
+        <div class="mdc-icon-button__ripple"></div>
+        close
+      </button>
     </div>
   </div>
 </div>
 
-    </main><div class="mdc-snackbar" id="update-available-snackbar">
-  <div class="mdc-snackbar__surface">
-    <div class="mdc-snackbar__label"
-         role="status"
-         aria-live="polite">
+    </main><aside class="mdc-snackbar" id="update-available-snackbar">
+  <div class="mdc-snackbar__surface" role="status" aria-relevant="additions">
+    <div class="mdc-snackbar__label" aria-atomic="false">
       An update is available!
     </div>
-    <div class="mdc-snackbar__actions">
-      <button type="button" class="mdc-button mdc-snackbar__action" data-mdc-auto-init="MDCRipple">Update</button>
-      <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined" title="Dismiss" data-mdc-auto-init="MDCRipple">close</button>
+    <div class="mdc-snackbar__actions" aria-atomic="true">
+      <button type="button" class="mdc-button mdc-snackbar__action"
+        data-mdc-auto-init="MDCRipple">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Update</span>
+      </button>
+      <button class="mdc-icon-button mdc-snackbar__dismiss material-icons-outlined"
+        title="Dismiss" data-mdc-auto-init="MDCRipple">
+        <div class="mdc-icon-button__ripple"></div>
+        close
+      </button>
     </div>
   </div>
-</div>
+</aside>
 </body><script
   src="/node_modules/material-components-web/dist/material-components-web.min.js"></script>
 <script src="/js/site.js"></script>
