@@ -43,14 +43,14 @@ function toggleListItemActivated(id) {
     throw new Error('The ID specified is invalid!');
   }
 }
-var activatedListItemClass = 'mdc-list-item--activated';
+var activatedListItemClass = 'mdc-deprecated-list-item--activated';
 var drawer = mdc.drawer.MDCDrawer.attachTo(document.getElementById('app-drawer'));
 var topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
 // topAppBar.setScrollTarget(document.getElementById('page-content'));
 topAppBar.listen('MDCTopAppBar:nav', () => {
   drawer.open = !drawer.open;
 });
-var listEl = document.querySelector('.mdc-drawer .mdc-list');
+var listEl = document.querySelector('.mdc-drawer .mdc-deprecated-list');
 var mainContentEl = document.getElementById('page-content');
 var scrimEl = document.querySelector('.mdc-drawer-scrim');
 

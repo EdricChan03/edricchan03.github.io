@@ -47,9 +47,9 @@ description: A list of all authors of the blog
               <div class="mdc-menu mdc-menu-surface follow-author-menu">
                 <div class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
                   {%- for link in author.social -%}
-                  <a class="mdc-list-item" href="{{link.link}}" aria-selected="true" data-mdc-auto-init="MDCRipple">
-                    <span class="mdc-list-item__ripple"></span>
-                    <span class="mdc-list-item__text">{{link.name}}</span>
+                  <a class="mdc-deprecated-list-item" href="{{link.link}}" aria-selected="true" data-mdc-auto-init="MDCRipple">
+                    <span class="mdc-deprecated-list-item__ripple"></span>
+                    <span class="mdc-deprecated-list-item__text">{{link.name}}</span>
                   </a>
                   {%- endfor -%}
                 </div>
