@@ -37,7 +37,7 @@
         </a>
         <div class="mdc-chip-set" role="grid">
           {%- for tag in post.tags -%}
-          <a class="mdc-chip" role="row" tabindex="0" href="/blog/tagged/{{tag}}" data-mdc-auto-init="MDCRipple">
+          <a class="mdc-chip" role="row" href="/blog/tagged/{{tag}}">
             <div class="mdc-chip__ripple"></div>
             <span class="material-icons-outlined mdc-chip__icon mdc-chip__icon--leading">label</span>
             <span role="gridcell">
