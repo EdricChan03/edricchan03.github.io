@@ -10,11 +10,15 @@ exclude:
 include:
   # Explicitly include node_modules
   - node_modules
+
 markdown: kramdown
 title: "Edric's website"
 url: https://edricchan03.github.io
+
 # Enable future posts
 future: true
+
+# Sass config
 sass:
   implementation: sass-embedded
   style: compressed
@@ -23,14 +27,17 @@ sass:
   load_paths:
     - _sass
     - node_modules
+
+# Front matter defaults
 defaults:
-  -
-    scope:
+  # node_modules
+  - scope:
       path: 'node_modules'
     values:
+      # Exclude them from the sitemap
       sitemap: false
-  -
-    scope:
+  # All posts
+  - scope:
       path: ''
       type: 'posts'
     values:
@@ -41,8 +48,8 @@ defaults:
       comments: true
       # The default author of a post if unset
       author: edric_chan
-  -
-    scope:
+  # TIL posts
+  - scope:
       path: 'til'
       type: 'posts'
     values:
@@ -55,6 +62,8 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+
+# Pagination config
 pagination:
   # debug: true
   enabled: true
@@ -64,10 +73,15 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+
+# Collections config
 collections:
   authors:
+    # Output each file in the collection to _site
     output: true
     permalink: /blog/authors/:name
+
+# Autopages config
 autopages:
   # Use default configuration
   enabled: true
@@ -77,6 +91,8 @@ autopages:
     permalink: '/blog/category/:cat'
   collection:
     enabled: false
+
+# Workbox.js config
 workbox:
   sw_src_filepath: 'service-worker.js'
   sw_dest_filename: 'service-worker.js'
@@ -89,9 +105,13 @@ workbox:
     - '_*/**'
     # We only want to cache CSS/JS files
     - 'node_modules/**/*.{html,md}'
+
+# GitHub metadata config
 github:
   source:
     branch: website-v2
+
+# Plugins to use
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
