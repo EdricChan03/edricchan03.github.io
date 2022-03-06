@@ -9,6 +9,30 @@
   $error: #f44336,
 );
 
+$app-font-family: unquote("Lato, Roboto, sans-serif");
+$headline-font-family: unquote("\"Work Sans\", \"Helvetica Neue\", sans-serif");
+@use "@material/typography" with (
+  $font-family: $app-font-family,
+  $styles-headline1: (
+    font-family: $headline-font-family
+  ),
+  $styles-headline2: (
+    font-family: $headline-font-family
+  ),
+  $styles-headline3: (
+    font-family: $headline-font-family
+  ),
+  $styles-headline4: (
+    font-family: $headline-font-family
+  ),
+  $styles-headline5: (
+    font-family: $headline-font-family
+  ),
+  $styles-headline6: (
+    font-family: $headline-font-family
+  )
+);
+
 @use "@material/button/mdc-button";
 @use "@material/card/mdc-card";
 @use "@material/chips/deprecated/mdc-chips";
@@ -38,7 +62,7 @@ body {
 }
 
 code, kbd, samp, pre, var {
-  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
   white-space: pre-wrap;
 }
 
