@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://edricchan03.github.io/blog/authors/edric-chan</loc>
+<lastmod>2022-03-07T06:56:43+00:00</lastmod>
+</url>
+<url>
 <loc>https://edricchan03.github.io/blog/programming/2017/12/11/code-snippet-of-the-week-ul-li.html</loc>
 <lastmod>2017-12-11T00:00:00+00:00</lastmod>
 </url>
@@ -121,5 +125,8 @@
 </url>
 <url>
 <loc>https://edricchan03.github.io/collection/posts/</loc>
+</url>
+<url>
+<loc>https://edricchan03.github.io/collection/authors/</loc>
 </url>
 </urlset>
