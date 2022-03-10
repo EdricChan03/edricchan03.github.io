@@ -98,7 +98,7 @@ GEM
     sass-embedded (1.0.17)
       google-protobuf (~> 3.19.0)
       rake (>= 12.3.0)
-    sassc (2.1.0)
+    sassc (2.4.0)
       ffi (~> 1.9)
     sawyer (0.8.2)
       addressable (>= 2.3.5)
@@ -120,7 +120,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-workbox-plugin
   sass-embedded
-  sassc (~> 2.1.0)
+  sassc (~> 2.4.0)
 
 BUNDLED WITH
    2.1.4

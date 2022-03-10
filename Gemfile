@@ -5,7 +5,7 @@ gem 'jekyll'
 
 # Pin sassc to 2.1.0
 # See https://github.com/sass/sassc-ruby/issues/189 for more info
-gem 'sassc', '~> 2.1.0'
+gem 'sassc', '~> 2.4.0'
 
 # Use sass-embedded instead of sassc (as it's deprecated)
 gem 'sass-embedded'
