@@ -33,7 +33,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Build and deploy site
-      uses: EdricChan03/action-build-deploy-ghpages@v2.6.0
+      uses: EdricChan03/action-build-deploy-ghpages@v3.1.0
       with:
         github_token: ${{ github.token }}
         git_force: 'false'
